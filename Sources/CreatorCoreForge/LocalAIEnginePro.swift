@@ -24,4 +24,15 @@ public final class LocalAIEnginePro {
             completion(.success(vector))
         }
     }
+
+    /// Returns a short summary using the first sentence of the text.
+    /// - Parameters:
+    ///   - text: Input text to summarize.
+    ///   - completion: Completion handler with summary.
+    public func summarize(_ text: String, completion: @escaping (Result<String, Error>) -> Void) {
+        DispatchQueue.global().asyncAfter(deadline: .now() + 0.1) {
+            let firstSentence = text.split(separator: ".").first.map(String.init) ?? text
+            completion(.success(firstSentence.trimmingCharacters(in: .whitespacesAndNewlines)))
+        }
+    }
 }

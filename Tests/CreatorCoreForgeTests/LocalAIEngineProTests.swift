@@ -32,4 +32,19 @@ final class LocalAIEngineProTests: XCTestCase {
         }
         wait(for: [expectation], timeout: 1)
     }
+
+    func testSummarizeReturnsFirstSentence() {
+        let engine = LocalAIEnginePro()
+        let expectation = XCTestExpectation(description: "summary")
+        engine.summarize("First. Second.") { result in
+            switch result {
+            case .success(let summary):
+                XCTAssertEqual(summary, "First")
+            case .failure:
+                XCTFail("Unexpected failure")
+            }
+            expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: 1)
+    }
 }
