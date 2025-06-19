@@ -10,6 +10,9 @@ public final class FusionEngine {
     private let engine: AIEngine
     private let parallelEngines: [AIEngine]?
 
+    public let voiceMemory: VoiceMemoryManager
+    public let sceneGenerator: SceneGenerator
+
     public let memory: ContextualMemory
     public let emotionGraph: EmotionGraph
     public var sandboxEnabled: Bool = false
@@ -17,9 +20,13 @@ public final class FusionEngine {
     /// Initializes the engine using `AIEngineFactory` based on the given mode.
     public init(mode: Mode = .remote,
                 memory: ContextualMemory = ContextualMemory(),
-                emotionGraph: EmotionGraph = EmotionGraph()) {
+                emotionGraph: EmotionGraph = EmotionGraph(),
+                voiceMemory: VoiceMemoryManager = .shared,
+                sceneGenerator: SceneGenerator = SceneGenerator()) {
         self.memory = memory
         self.emotionGraph = emotionGraph
+        self.voiceMemory = voiceMemory
+        self.sceneGenerator = sceneGenerator
         self.parallelEngines = nil
         switch mode {
         case .local:
@@ -32,12 +39,16 @@ public final class FusionEngine {
     /// Initializes the engine with a custom list of engines for parallel execution.
     public init(parallelEngines: [AIEngine],
                 memory: ContextualMemory = ContextualMemory(),
-                emotionGraph: EmotionGraph = EmotionGraph()) {
+                emotionGraph: EmotionGraph = EmotionGraph(),
+                voiceMemory: VoiceMemoryManager = .shared,
+                sceneGenerator: SceneGenerator = SceneGenerator()) {
         precondition(!parallelEngines.isEmpty, "parallelEngines must not be empty")
         self.engine = parallelEngines[0]
         self.parallelEngines = parallelEngines
         self.memory = memory
         self.emotionGraph = emotionGraph
+        self.voiceMemory = voiceMemory
+        self.sceneGenerator = sceneGenerator
     }
 
     /// Convenience initializer that checks the `USE_LOCAL_AI` environment variable.
@@ -57,6 +68,11 @@ public final class FusionEngine {
     /// Retrieves an embedding vector using the underlying engine.
     public func sendEmbedding(_ text: String, completion: @escaping (Result<[Double], Error>) -> Void) {
         engine.sendEmbeddingRequest(text: text, completion: completion)
+    }
+
+    /// Generate a short summary using the active engine.
+    public func summarize(_ text: String, completion: @escaping (Result<String, Error>) -> Void) {
+        engine.summarize(text, completion: completion)
     }
 
     /// Combines memory context and optional sandbox prefix before sending.
@@ -108,6 +124,21 @@ public final class FusionEngine {
     /// Record an emotion intensity in the shared emotion graph.
     public func recordEmotion(_ emotion: String, intensity: Double) {
         emotionGraph.record(emotion: emotion, intensity: intensity)
+    }
+
+    /// Assign a voice ID to a character in a series for cross-app reuse.
+    public func assignVoice(_ voiceID: String, to character: String, in series: String) {
+        voiceMemory.assign(voiceID: voiceID, to: character, in: series)
+    }
+
+    /// Retrieve the assigned voice ID for a character if available.
+    public func voiceID(for character: String, in series: String) -> String? {
+        voiceMemory.voiceID(for: character, in: series)
+    }
+
+    /// Generate simple storyboard scenes from a text block.
+    public func generateScenes(from text: String, limit: Int = 3) -> [String] {
+        sceneGenerator.generateScenes(from: text, maxScenes: limit)
     }
 }
 

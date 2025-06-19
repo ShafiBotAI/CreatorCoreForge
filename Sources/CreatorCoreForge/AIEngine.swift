@@ -4,6 +4,8 @@ import Foundation
 public protocol AIEngine {
     func sendPrompt(_ prompt: String, completion: @escaping (Result<String, Error>) -> Void)
     func sendEmbeddingRequest(text: String, completion: @escaping (Result<[Double], Error>) -> Void)
+    /// Returns a short summary of the provided text if supported by the engine.
+    func summarize(_ text: String, completion: @escaping (Result<String, Error>) -> Void)
 }
 
 extension OpenAIService: AIEngine {}

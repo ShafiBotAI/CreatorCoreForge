@@ -10,6 +10,9 @@ final class FusionEngineAdvancedTests: XCTestCase {
         func sendEmbeddingRequest(text: String, completion: @escaping (Result<[Double], Error>) -> Void) {
             completion(.success([]))
         }
+        func summarize(_ text: String, completion: @escaping (Result<String, Error>) -> Void) {
+            completion(.success("summary"))
+        }
     }
 
     func testPromptWithMemoryStoresHistory() {
