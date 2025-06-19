@@ -106,4 +106,10 @@ public final class OpenAIService {
         }
         task.resume()
     }
+
+    /// Produce a short summary of the given text using the chat endpoint.
+    public func summarize(_ text: String, completion: @escaping (Result<String, Error>) -> Void) {
+        let prompt = "Summarize in one sentence: \(text)"
+        sendPrompt(prompt, completion: completion)
+    }
 }

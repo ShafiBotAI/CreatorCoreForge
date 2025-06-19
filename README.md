@@ -167,6 +167,7 @@
 - **Creator Dashboard:** Toggle Voice Memory, Emotion Graphs, Plugin Builder, AI Studio, Genesis, Global Unlock, and Sandbox tools across apps
 - **EmotionGraph:** Cross-app tracker for character emotion intensity
 - **SceneGenerator:** Converts text into basic storyboard scenes
+- **VoiceMemoryManager:** Shares voice assignments across apps
 - **PluginBuilder:** Generates basic plugin templates for new dashboard modules
 - **AIStudioMode:** Adds a studio prefix to prompts when testing features
 - **GenesisModeEngine:** Produces variant ideas for apps and content
@@ -255,7 +256,7 @@ For production releases, trigger `upload-appstore.yml` which calls the
 
 See `docs/AI-Prompt-Migration.md` for integrating the new OpenAI prompt interface across apps.
 All apps now include a `VideoShareManager` for posting generated videos directly to social media.
-The new `FusionEngine` wrapper automatically selects between `LocalAIEnginePro` and `OpenAIService` for each app, enabling offline-first development when `USE_LOCAL_AI` is set. It now supports contextual memory, parallel execution across multiple engines, emotion tracking, and a sandbox mode for isolated testing.
+The new `FusionEngine` wrapper automatically selects between `LocalAIEnginePro` and `OpenAIService` for each app, enabling offline-first development when `USE_LOCAL_AI` is set. It now supports contextual memory, parallel execution across multiple engines, emotion tracking, sandbox mode for isolated testing, cross-app voice memory, on-device summarization, and quick scene generation helpers.
 
 
 ## OpenAI Setup
