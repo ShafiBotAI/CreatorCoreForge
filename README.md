@@ -1,3 +1,212 @@
+# 🔥 CreatorCoreForge
+
+**CreatorCoreForge** is a suite of next-generation AI-powered creative, productivity, health, and monetization applications. Built for creators, entrepreneurs, educators, and enterprises, this platform empowers users to generate world-class audio, video, books, mental health experiences, financial strategies, and content—with no external API dependencies.
+
+---
+
+## 🏢 Master Company
+**Brand Name:** `CreatorCoreForge`  
+**Domain:** `CreatorCoreForge.com`  
+**Focus:** AI-first tools across entertainment, wellness, publishing, education, productivity, and finance.
+
+---
+
+## 🔧 Technology Stack
+- LocalAIEngine Pro (OpenAI replacement)
+- LocalVoiceAI Advanced Mode (ElevenLabs replacement)
+- FusionEngine™ (modular adaptive AI framework)
+- QuantumConnector™ (real/simulated quantum support)
+- Electron.js (cross-platform PC builds)
+- Swift (iOS), Kotlin (Android), Unity (Games)
+
+---
+
+## 📦 App Modules
+
+### 🎙 CoreForge Audio *(formerly VocalVerse)*
+- **Use Case:** Audiobook generation, voice studio, narration platform
+- **Key Features:**
+  - Voice cloning, multilingual support, emotion arcs
+  - NSFW toggle, narrator marketplace, book upload
+  - Offline TTS, phoneme control, lipsync, stealth vault
+- **Build Status:** Electron PC build in testing
+
+---
+
+### 🎥 CoreForge Visual *(formerly Lore Forge AI)*
+- **Use Case:** Book-to-video cinematic AI dramatization
+- **Key Features:**
+  - Scene adaptation (anime, live-action, fantasy, etc.)
+  - ElevenLabs → LocalVoiceAI switch
+  - Auto voice sync, character memory, cross-book AI
+- **Build Status:** Installer prep phase, full module integration
+
+---
+
+### 📊 CoreForge Market *(formerly TradeMind AI)*
+- **Use Case:** AI-powered trading automation and analysis
+- **Key Features:**
+  - Titan Engine, Shadow Trading, Whale Wallet Monitoring
+  - Insider Flow, Arbitrage Finder, Strategy Blending
+  - Optional Tokenomics, Predictive Heatmaps
+- **Build Status:** Source files completed, build pending
+
+---
+
+### ✍️ CoreForge Writer *(formerly Inkwell AI)*
+- **Use Case:** AI-powered novel and nonfiction book authoring
+- **Key Features:**
+  - Adaptive writing style engine, genre presets, twist generator
+  - Plot arcs, multilingual export, publishing-ready output
+- **Build Status:** Agent tasks ready, core models staged
+
+---
+
+### 🧑‍🎤 CoreForge Studio *(formerly VocalVision)*
+- **Use Case:** Voice acting, video editing, and AI content studio
+- **Key Features:**
+  - Auto lip sync, NSFW toggle, split testing, facecam insert
+  - Audio+video sync, shortform generation, batch mode
+- **Build Status:** Midway through development (Phase 2)
+
+---
+
+### 🧠 CoreForge Mind *(formerly MindForge)*
+- **Use Case:** Men's AI-based wellness and mental health platform
+- **Key Features:**
+  - AI therapy, sound healing, erotic wellness (18+), journaling AI
+  - Always-on companion mode, goal tracking
+- **Build Status:** UI prototype in planning
+
+---
+
+### 🌸 CoreForge Bloom *(formerly HerMind)*
+- **Use Case:** AI-powered health & empowerment for women
+- **Key Features:**
+  - AI coaching, sexual health, hormone sync, wellness analytics
+  - Creator monetization, avatar therapy, sound tools
+- **Build Status:** Roadmap and feature model complete
+
+---
+
+### 🎶 CoreForge Music *(formerly VerseForge AI)*
+- **Use Case:** Songwriting, beatmaking, and vocal tool
+- **Key Features:**
+  - Hook generator, AI vocals, beat marketplace
+  - Voice studio, licensing engine, virality toolkit
+- **Build Status:** UI and fusion agent completed
+
+---
+
+### 🧬 CoreForge DNA *(formerly Voice DNA Visualizer)*
+- **Use Case:** Visualize, fork, and evolve AI voices across characters
+- **Key Features:**
+  - Tree UI, multiverse memory, scene tagging, emotion graphs
+- **Build Status:** Standalone version in pipeline
+
+---
+
+### 🧪 CoreForge Voice Lab *(formerly Voice Studio AI)*
+- **Use Case:** Upload, train, and fine-tune custom AI voices
+- **Key Features:**
+  - Voice-to-voice transfer, tone control, phoneme editing
+  - Style-preserving translation, NSFW tone synthesis
+- **Build Status:** Embedded version complete; standalone in progress
+
+---
+
+### 🧩 CoreForge Build *(formerly AppForge AI)*
+- **Use Case:** Low-code AI-driven app builder for creators
+- **Key Features:**
+  - Templates, plugin generator, AI agent builder
+  - White label deployment, monetization toggles
+- **Build Status:** Agents.md + structure in progress
+
+---
+
+### 🧠 CoreForge Leads *(formerly DataForge AI)*
+- **Use Case:** AI B2B lead generation, sales automation & analytics
+- **Key Features:**
+  - AI deal coach, lead scoring, retargeting, lead resale exchange
+  - CRM integrations, tokenomics, affiliate dashboards
+- **Build Status:** Launch bundle assembling now
+
+---
+
+### 🧠 CoreForge Quest *(formerly Crush Quest)*
+- **Use Case:** Puzzle game + AI assistant + viral reward engine
+- **Key Features:**
+  - $25M Level 1M Challenge, map vault, offline vault
+  - Creator leaderboards, reward monetization
+- **Build Status:** Unity build + legal/promo kit bundled
+
+---
+
+## 🔮 Shared Modules & Features
+
+- **FusionEngine™:** Master AI layer handling:
+  - Contextual memory, parallel cores, emotional logic, sandbox AI
+- **LocalVoiceAI:** Full ElevenLabs replacement with advanced cloning and emotion modulation
+- **LocalAIEngine Pro:** OpenAI-free LLM for text, dialogue, and logic
+- **QuantumConnector:** Optional quantum computing toggle
+- **Virality Engine:** Trend detector, loop optimizer, replay bait, shock factor enhancer
+- **Auto-Updater:** Keeps local builds current and secure
+
+---
+
+## 📄 Repo Instructions for Codex & Devs
+
+- Every `/AppFolder` contains:
+  - `README.md` = summary, roadmap
+  - `agents.md` = Codex task list (Phase 1–7)
+  - `/source` = current code base
+- All AI engines run locally or via in-app download (no 3rd-party APIs required)
+
+---
+
+## 🔐 Licensing & Monetization
+
+- Creator, Pro, Enterprise, White Label tiers per app
+- In-app credits, NSFW add-ons, voice packs, templates
+- Referral, affiliate, and creator monetization models included
+
+---
+
+## 🚧 Current Build Status
+
+| App               | PC Build | Mobile Build | AI Modules | Installer Ready |
+|------------------|----------|--------------|------------|-----------------|
+| CoreForge Audio   | 🟨 In Progress | 🟥 Not Started | ✅ Complete | 🟨 Testing     |
+| CoreForge Visual  | 🟨 In Progress | 🟥 Not Started | ✅ Complete | 🟨 Testing     |
+| CoreForge Market  | 🟥 Not Started | 🟥 Not Started | ✅ Embedded | ⬜ Planned     |
+| CoreForge Writer  | 🟥 Not Started | 🟥 Not Started | 🟨 Drafting | ⬜ Planned     |
+| CoreForge Studio  | 🟨 Mid Dev     | 🟥 Not Started | 🟨 Partial  | ⬜ Planned     |
+| CoreForge Mind    | 🟥 Not Started | 🟥 Not Started | 🟨 Planned  | ⬜ Planned     |
+| CoreForge Bloom   | 🟥 Not Started | 🟥 Not Started | 🟨 Planned  | ⬜ Planned     |
+| CoreForge Leads   | 🟨 Finalizing  | 🟥 Not Started | ✅ Complete | 🟨 Compiling   |
+| CoreForge Quest   | 🟨 Unity Build | 🟨 Mobile Test | ✅ Complete | 🟨 Unity       |
+
+---
+
+## 🧠 Codex Developer Instructions
+
+See `/agents.md` in each folder for:
+- Feature-level tasks
+- Build flags (✅ = done, 🟨 = in dev, 🟥 = not started)
+- Milestone goals (Phase 1 to Phase 7)
+
+> If you’re a new developer joining this project, start with `CoreForge Audio` and `CoreForge Visual`.
+
+---
+
+## 📬 Contact & Admin
+
+- Master Brand: **CreatorCoreForge**
+- Lead: Sarmed Shafi (Director)
+- GitHub: [github.com/ShafiBotAI](https://github.com/ShafiBotAI)
+- Drive Folder: `CreatorCoreForge`
+- AI: FusionEngine™ / LocalAIEngine Pro / LocalVoiceAI Advanced
+
 # -ios-apps
 
 This repository collects multiple experimental iOS projects that integrate AI-driven features. Each app lives under `apps/`.
