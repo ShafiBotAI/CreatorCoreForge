@@ -108,7 +108,6 @@ final class OpenAIService {
         }
         task.resume()
     }
-}
 
     func sendPromptStreaming(_ prompt: String,
                              onToken: @escaping (String) -> Void,
