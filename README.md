@@ -1,77 +1,47 @@
-# 🔥 CreatorCoreForge
+# -ios-apps
 
-Welcome to **CreatorCoreForge** — a next-generation suite of AI-powered applications designed to revolutionize content creation, education, finance, publishing, entertainment, and productivity across all platforms. This is the master repository housing the source code, documentation, and development tasks for all apps in the CreatorCoreForge ecosystem.
+This repository collects multiple experimental iOS projects that integrate AI-driven features. Each app lives under `apps/`.
 
----
+- **LoreForgeAI** – video and story creation suite. See `apps/LoreForgeAI/README.md`.
+- **VocalVerse** – voice-controlled reader with offline vault. See `apps/VocalVerse/README.md`.
+- **DataForgeAI** – data analysis utilities. See `apps/DataForgeAI/README.md`.
+- **VerseForgeAI** – beat and hook generation tools. See `apps/VerseForgeAI/README.md`.
+- **InkwellAI** – book publishing assistant. See `apps/InkwellAI/README.md`.
+- **TradeMindAI** – trading strategy companion. See `apps/TradeMindAI/README.md`.
 
-## 🚀 Mission
+Recent updates introduce advanced AI stubs across all apps to prepare for next-generation features.
+The shared `VoiceMemoryManager` now supports exporting and importing assignments
+so creators can sync character voice selections across apps.
 
-Empower creators, educators, entrepreneurs, and developers with cutting-edge AI tools that:
-- Work offline-first
-- Require no external API dependencies (e.g., OpenAI, ElevenLabs)
-- Scale globally with multilingual support
-- Include enterprise, white-label, and creator monetization systems
-- Deliver studio-grade audio, video, story, and business intelligence creation
+TestFlight workflows are provided under `.github/workflows` for continuous delivery.
+Pushes to `main` automatically run `fastlane-testflight.yml` which builds the iOS
+projects (VocalVerse, LoreForgeAI, and InkwellAI) and uploads them to TestFlight
+using the `build_and_upload` lane. Configure `APPSTORECONNECT_*` secrets in your
+repository so the workflow can authenticate with App Store Connect. You can also
+manually trigger `upload-testflight.yml` from the Actions tab when a one-off
+build is ready for distribution.
 
----
+For production releases, trigger `upload-appstore.yml` which calls the
+`build_and_deliver` lane to submit the apps directly to App Store Connect.
 
-## 🧱 App Ecosystem
+See `docs/AI-Prompt-Migration.md` for integrating the new OpenAI prompt interface across apps.
+All apps now include a `VideoShareManager` for posting generated videos directly to social media.
+The new `FusionEngine` wrapper automatically selects between `LocalAIEnginePro` and `OpenAIService` for each app, enabling offline-first development when `USE_LOCAL_AI` is set.
 
-| App Name             | Description                                                             |
-|----------------------|-------------------------------------------------------------------------|
-| **CoreForge Audio**   | AI-powered audiobook studio with voice cloning, emotion control, and TTS |
-| **CoreForge Visual**  | Book-to-video dramatization with anime/live-action styles               |
-| **CoreForge Writer**  | AI co-authoring platform for writing, editing, and publishing            |
-| **CoreForge Market**  | Real-time AI trading assistant with Titan forecasting engine             |
-| **CoreForge Studio**  | Multimodal creator suite for short-form video, music, and voice         |
-| **CoreForge Leads**   | AI-driven lead generation, targeting, CRM enrichment, and monetization  |
-| **CoreForge Quest**   | 1M-level puzzle game with $25M prize challenge and viral gameplay        |
-| **CoreForge Music**   | Hit songwriting engine with AI voice, beat marketplace, and virality AI |
-| **CoreForge Mind**    | Men’s health app: AI therapy, sound/meditation/sexual health tools       |
-| **CoreForge Bloom**   | Women’s health app: mental wellness, cycle tracking, AI journaling      |
-| **CoreForge DNA**     | AI voice DNA tree visualizer + multiverse-linked voice identities        |
-| **CoreForge VoiceLab**| Custom AI voice creation, real-time TTS, voice training + NSFW tools     |
-| **CoreForge Build**   | Auto app creator for any platform with AI coding and deployment support  |
 
----
+## OpenAI Setup
 
-## 🔩 Core Technologies
+Copy `.env.example` to `.env` and provide your `OPENAI_API_KEY` before running any app or tests. The shared `OpenAIService` reads this value at runtime.
+A shared `ContentPolicyManager` now manages NSFW filtering across apps.
+For offline development you can set `USE_LOCAL_AI=1` in the environment to enable `LocalAIEnginePro`, a lightweight local model stub that replaces OpenAI calls.
 
-- `LocalAIEngine Pro`: Offline-first LLM module replacing OpenAI
-- `LocalVoiceAI Advanced`: Local TTS + voice cloning, emotion, lipsync, style adaptation
-- `FusionEngine`: App orchestration and upgrade management across all modules
-- `QuantumConnector`: Real/simulated quantum AI boost for optimization and speed
-- `Virality Engine`: Built-in toolset for creating 10M+ view optimized content
-- `Codex Assistant`: GitHub-integrated task planner for AI developer agents
+## Global Missing Items
 
----
+The following components are planned across all apps but are still works in progress:
 
-## 🌍 Key Features Across All Apps
+- [x] Shared `AutoUpdater.swift` module
+- [ ] Programmatically generated `.pbxproj` project files
+- [ ] App Store assets (`AppIcon.appiconset`, LaunchScreens)
+- [ ] Final production UI polish
+- [ ] `.dmg` and `.exe` installers following `.ipa` builds
 
-- Offline-first AI processing (no cloud/API required)
-- Global language & currency support
-- Creator monetization systems
-- NSFW toggle with adult voice/scene tools
-- Auto-update system for bug fixes and feature upgrades
-- App auto-sync across PC, Mac, iOS, Android, and Web
-- Admin Dashboard (Creator-only) to manage features and pricing
-
----
-
-## 📁 Repo Structure
-
-```bash
-CreatorCoreForge/
-├── CoreForgeAudio/
-├── CoreForgeVisual/
-├── CoreForgeWriter/
-├── CoreForgeMarket/
-├── CoreForgeStudio/
-├── CoreForgeLeads/
-├── CoreForgeMind/
-├── CoreForgeBloom/
-├── CoreForgeMusic/
-├── CoreForgeQuest/
-├── CoreForgeDNA/
-├── CoreForgeVoiceLab/
-├── CoreForgeBuild/
