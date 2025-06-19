@@ -12,8 +12,8 @@
 ---
 
 ## 🔧 Technology Stack
-- LocalAIEngine Pro (OpenAI replacement)
-- LocalVoiceAI Advanced Mode (ElevenLabs replacement)
+- LocalAIEngine Pro – local text engine with embeddings and summarization
+- LocalVoiceAI Advanced Mode – offline voice cloning with emotion control
 - FusionEngine™ (modular adaptive AI framework)
 - QuantumConnector™ (real/simulated quantum support)
 - Electron.js (cross-platform PC builds)
@@ -158,8 +158,8 @@
 
 - **FusionEngine™:** Master AI layer handling:
   - Contextual memory, parallel cores, emotional logic, sandbox AI
-- **LocalVoiceAI:** Full ElevenLabs replacement with advanced cloning and emotion modulation
-- **LocalAIEngine Pro:** OpenAI-free LLM for text, dialogue, and logic
+- **LocalVoiceAI:** Full ElevenLabs replacement with advanced cloning and emotion modulation. Includes offline voice cloning and synthesis APIs.
+- **LocalAIEngine Pro:** OpenAI-free LLM for text, dialogue, logic, and local summarization.
 - **QuantumConnector:** Optional quantum computing toggle
 - **Virality Engine:** Trend detector, loop optimizer, replay bait, shock factor enhancer
 - **Auto-Updater:** Keeps local builds current and secure
