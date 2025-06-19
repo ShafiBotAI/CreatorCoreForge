@@ -151,6 +151,7 @@
 - **QuantumConnector:** Optional quantum computing toggle
 - **Virality Engine:** Trend detector, loop optimizer, replay bait, shock factor enhancer
 - **Auto-Updater:** Keeps local builds current and secure
+- **Creator Dashboard:** Toggle Voice Memory, Emotion Graphs, Plugin Builder, AI Studio, and Genesis modes across apps
 
 ---
 
