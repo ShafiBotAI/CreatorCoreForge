@@ -1,5 +1,8 @@
 #if canImport(Combine)
 import Foundation
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 import Combine
 
 /// Download queue with pause and resume support for offline mode.
@@ -108,14 +111,69 @@ private extension URLSession {
 
 #else
 import Foundation
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 /// Placeholder implementation when Combine is unavailable.
 public final class OfflineDownloadQueue {
-    public init(destination: URL? = nil, session: Any? = nil) {}
-    public func enqueue(_ url: URL, completion: ((URL) -> Void)? = nil) {}
-    public func start() {}
-    public func pause() {}
-    public func resume() {}
-    public func clearLocalStorage() {}
+    private var queue: [URL] = []
+    private var completions: [URL: (URL) -> Void] = [:]
+    private var isPaused = false
+    private var currentTask: URLSessionTask?
+    private let session: URLSession
+    private let destination: URL
+
+    public init(destination: URL? = nil, session: URLSession = .shared) {
+        self.session = session
+        let dir = destination ?? FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        self.destination = dir.appendingPathComponent("OfflineDownloads", isDirectory: true)
+        try? FileManager.default.createDirectory(at: self.destination, withIntermediateDirectories: true)
+    }
+
+    public func enqueue(_ url: URL, completion: ((URL) -> Void)? = nil) {
+        if !queue.contains(url) {
+            queue.append(url)
+            completions[url] = completion ?? { _ in }
+        }
+    }
+
+    public func start() {
+        guard currentTask == nil else { return }
+        processNext()
+    }
+
+    public func pause() {
+        isPaused = true
+        currentTask?.cancel()
+    }
+
+    public func resume() {
+        guard isPaused else { return }
+        isPaused = false
+        if currentTask == nil { processNext() }
+    }
+
+    public func clearLocalStorage() {
+        try? FileManager.default.removeItem(at: destination)
+        try? FileManager.default.createDirectory(at: destination, withIntermediateDirectories: true)
+    }
+
+    private func processNext() {
+        guard !queue.isEmpty, !isPaused else { return }
+        let url = queue.removeFirst()
+        currentTask = session.downloadTask(with: url) { [weak self] temp, _, _ in
+            guard let self = self else { return }
+            defer { self.currentTask = nil; self.processNext() }
+            guard let temp = temp else { return }
+            let dest = self.destination.appendingPathComponent(url.lastPathComponent)
+            try? FileManager.default.removeItem(at: dest)
+            try? FileManager.default.moveItem(at: temp, to: dest)
+            let completion = self.completions[url] ?? { _ in }
+            self.completions[url] = nil
+            completion(dest)
+        }
+        currentTask?.resume()
+    }
 }
 #endif
