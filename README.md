@@ -29,6 +29,8 @@
   - Voice cloning, multilingual support, emotion arcs
   - NSFW toggle, narrator marketplace, book upload
   - Offline TTS, phoneme control, lipsync, stealth vault
+  - GPT-based chapter segmentation and ElevenLabs voice streaming
+  - Downloadable audiobooks with bookmarkable playback
 - **Build Status:** Electron PC build in testing
 
 ---
@@ -39,6 +41,8 @@
   - Scene adaptation (anime, live-action, fantasy, etc.)
   - ElevenLabs → LocalVoiceAI switch
   - Auto voice sync, character memory, cross-book AI
+  - GPT-4 streaming previews and virality engine
+  - Scene builder UI with auto-upload scheduler
 - **Build Status:** Installer prep phase, full module integration
 
 ---
@@ -49,6 +53,8 @@
   - Titan Engine, Shadow Trading, Whale Wallet Monitoring
   - Insider Flow, Arbitrage Finder, Strategy Blending
   - Optional Tokenomics, Predictive Heatmaps
+  - Chart screenshot analysis with emotion-aware journal
+  - Multi-market scanning powered by Titan Engine alerts
 - **Build Status:** Source files completed, build pending
 
 ---
@@ -58,6 +64,8 @@
 - **Key Features:**
   - Adaptive writing style engine, genre presets, twist generator
   - Plot arcs, multilingual export, publishing-ready output
+  - Bestseller structure engine with multi-book support
+  - Scene builder with NSFW filters and parental locks
 - **Build Status:** Agent tasks ready, core models staged
 
 ---
@@ -67,6 +75,7 @@
 - **Key Features:**
   - Auto lip sync, NSFW toggle, split testing, facecam insert
   - Audio+video sync, shortform generation, batch mode
+  - Downloadable formats with "What If" cutscene mode
 - **Build Status:** Midway through development (Phase 2)
 
 ---
@@ -94,6 +103,7 @@
 - **Key Features:**
   - Hook generator, AI vocals, beat marketplace
   - Voice studio, licensing engine, virality toolkit
+  - Voice cloning with commercial export and label pitch tools
 - **Build Status:** UI and fusion agent completed
 
 ---
@@ -120,6 +130,7 @@
 - **Key Features:**
   - Templates, plugin generator, AI agent builder
   - White label deployment, monetization toggles
+  - Trend-based app ideation and Figma-driven UI builder
 - **Build Status:** Agents.md + structure in progress
 
 ---
@@ -129,6 +140,7 @@
 - **Key Features:**
   - AI deal coach, lead scoring, retargeting, lead resale exchange
   - CRM integrations, tokenomics, affiliate dashboards
+  - Real-time signal tracking with multilingual targeting
 - **Build Status:** Launch bundle assembling now
 
 ---
@@ -151,7 +163,7 @@
 - **QuantumConnector:** Optional quantum computing toggle
 - **Virality Engine:** Trend detector, loop optimizer, replay bait, shock factor enhancer
 - **Auto-Updater:** Keeps local builds current and secure
-- **Creator Dashboard:** Toggle Voice Memory, Emotion Graphs, Plugin Builder, AI Studio, and Genesis modes across apps
+- **Creator Dashboard:** Toggle Voice Memory, Emotion Graphs, Plugin Builder, AI Studio, Genesis, Global Unlock, and Sandbox tools across apps
 
 ---
 
