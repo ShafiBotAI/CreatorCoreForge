@@ -4,9 +4,9 @@
 <plist version="1.0">
 <dict>
     <key>CFBundleIdentifier</key>
-    <string>com.fwdthinking.vocalverse</string>
+    <string>com.creatorcoreforge.audio</string>
     <key>CFBundleName</key>
-    <string>VocalVerse</string>
+    <string>CoreForge Audio</string>
     <key>CFBundleVersion</key>
     <string>1</string>
     <key>CFBundleShortVersionString</key>

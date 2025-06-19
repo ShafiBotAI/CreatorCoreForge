@@ -26,7 +26,7 @@ jobs:
 
       - name: Build and Upload LoreForgeAI
         env:
-          PROJECT_PATH: apps/LoreForgeAI/LoreForgeAIFull/LoreForgeAI.xcodeproj
+          PROJECT_PATH: apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI.xcodeproj
           SCHEME: LoreForgeAI
           APPSTORECONNECT_KEY_ID: ${{ secrets.APPSTORECONNECT_KEY_ID }}
           APPSTORECONNECT_ISSUER_ID: ${{ secrets.APPSTORECONNECT_ISSUER_ID }}

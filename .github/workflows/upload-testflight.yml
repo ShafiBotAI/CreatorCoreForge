@@ -10,13 +10,13 @@ jobs:
       matrix:
         app:
           - name: CoreForge Audio
-            path: apps/VocalVerse/VocalVerseFull
+            path: apps/CoreForgeAudio/VocalVerseFull
             scheme: VocalVerse
           - name: CoreForge Visual
-            path: apps/LoreForgeAI/LoreForgeAIFull
+            path: apps/CoreForgeVisual/LoreForgeAIFull
             scheme: LoreForgeAI
           - name: CoreForge Writer
-            path: apps/InkwellAI/InkwellAIFull
+            path: apps/CoreForgeWriter/InkwellAIFull
             scheme: InkwellAI
 
     steps:

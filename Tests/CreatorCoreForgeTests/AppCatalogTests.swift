@@ -5,7 +5,7 @@ final class AppCatalogTests: XCTestCase {
     func testInfoLookup() {
         let info = AppCatalog.info(for: "CoreForge Visual")
         XCTAssertNotNil(info)
-        XCTAssertEqual(info?.path, "apps/LoreForgeAI")
+        XCTAssertEqual(info?.path, "apps/CoreForgeVisual")
     }
 
     func testCatalogCount() {
@@ -15,6 +15,6 @@ final class AppCatalogTests: XCTestCase {
     func testBuildInfo() {
         let info = AppCatalog.info(for: "CoreForge Build")
         XCTAssertNotNil(info)
-        XCTAssertEqual(info?.path, "apps/AppForgeAI")
+        XCTAssertEqual(info?.path, "apps/CoreForgeBuild")
     }
 }
