@@ -14,6 +14,10 @@ public final class CreatorDashboard {
         public static let pluginBuilder      = Features(rawValue: 1 << 2)
         public static let aiStudioMode       = Features(rawValue: 1 << 3)
         public static let genesisMode        = Features(rawValue: 1 << 4)
+        /// Unlocks all Creator-tier features across apps.
+        public static let globalUnlock       = Features(rawValue: 1 << 5)
+        /// Enables sandbox and experimental modules for power users.
+        public static let sandboxTools       = Features(rawValue: 1 << 6)
     }
 
     private let key = "CreatorDashboardFeatures"
@@ -52,7 +56,15 @@ public final class CreatorDashboard {
 
     /// Enable all dashboard features.
     public func enableAll() {
-        features = [.voiceMemoryControl, .emotionGraphs, .pluginBuilder, .aiStudioMode, .genesisMode]
+        features = [
+            .voiceMemoryControl,
+            .emotionGraphs,
+            .pluginBuilder,
+            .aiStudioMode,
+            .genesisMode,
+            .globalUnlock,
+            .sandboxTools
+        ]
         persist()
     }
 
