@@ -254,7 +254,7 @@ For production releases, trigger `upload-appstore.yml` which calls the
 
 See `docs/AI-Prompt-Migration.md` for integrating the new OpenAI prompt interface across apps.
 All apps now include a `VideoShareManager` for posting generated videos directly to social media.
-The new `FusionEngine` wrapper automatically selects between `LocalAIEnginePro` and `OpenAIService` for each app, enabling offline-first development when `USE_LOCAL_AI` is set.
+The new `FusionEngine` wrapper automatically selects between `LocalAIEnginePro` and `OpenAIService` for each app, enabling offline-first development when `USE_LOCAL_AI` is set. It now supports contextual memory, parallel execution across multiple engines, emotion tracking, and a sandbox mode for isolated testing.
 
 
 ## OpenAI Setup
