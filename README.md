@@ -164,6 +164,8 @@
 - **Virality Engine:** Trend detector, loop optimizer, replay bait, shock factor enhancer
 - **Auto-Updater:** Keeps local builds current and secure
 - **Creator Dashboard:** Toggle Voice Memory, Emotion Graphs, Plugin Builder, AI Studio, Genesis, Global Unlock, and Sandbox tools across apps
+- **EmotionGraph:** Cross-app tracker for character emotion intensity
+- **SceneGenerator:** Converts text into basic storyboard scenes
 
 ---
 
