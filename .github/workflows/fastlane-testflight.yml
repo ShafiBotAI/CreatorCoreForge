@@ -1,0 +1,49 @@
+name: Deploy iOS Apps to TestFlight with Fastlane
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-upload:
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        app:
+          - name: VocalVerse
+            project: apps/VocalVerse/VocalVerseFull/VocalVerse.xcodeproj
+            scheme: VocalVerse
+          - name: LoreForgeAI
+            project: apps/LoreForgeAI/LoreForgeAIFull/LoreForgeAI.xcodeproj
+            scheme: LoreForgeAI
+          - name: InkwellAI
+            project: apps/InkwellAI/InkwellAIFull/InkwellAI.xcodeproj
+            scheme: InkwellAI
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: "15.0"
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1
+
+      - name: Install Fastlane
+        run: gem install fastlane
+
+      - name: Build and Upload ${{ matrix.app.name }}
+        env:
+          PROJECT_PATH: ${{ matrix.app.project }}
+          SCHEME: ${{ matrix.app.scheme }}
+          APPSTORECONNECT_KEY_ID: ${{ secrets.APPSTORECONNECT_KEY_ID }}
+          APPSTORECONNECT_ISSUER_ID: ${{ secrets.APPSTORECONNECT_ISSUER_ID }}
+          APPSTORECONNECT_API_KEY: ${{ secrets.APPSTORECONNECT_API_KEY }}
+          APPSTORECONNECT_TEAM_ID: ${{ secrets.APPSTORECONNECT_TEAM_ID }}
+        run: fastlane build_and_upload

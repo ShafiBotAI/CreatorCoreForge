@@ -1,0 +1,4 @@
+[
+  {"name": "sentiment", "text": "Analyze the market sentiment for {ticker}."},
+  {"name": "strategy", "text": "Suggest a trading strategy for {ticker}."}
+]

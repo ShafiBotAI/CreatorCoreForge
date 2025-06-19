@@ -1,0 +1,4 @@
+[
+  {"name": "hookSuggestion", "text": "Generate three catchy hooks for a song about {topic}."},
+  {"name": "matchBeatMood", "text": "Suggest a vocal style that matches a beat described as {mood}."}
+]

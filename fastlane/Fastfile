@@ -1,0 +1,58 @@
+fastlane_version "2.212.0"
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Build and upload to TestFlight"
+  lane :build_and_upload do
+    project_path = ENV["PROJECT_PATH"]
+    scheme = ENV["SCHEME"]
+    api_key = {
+      key_id: ENV.fetch("APPSTORECONNECT_KEY_ID", ENV["APPSTORE_CONNECT_API_KEY_ID"]),
+      issuer_id: ENV.fetch("APPSTORECONNECT_ISSUER_ID", ENV["APPSTORE_CONNECT_API_KEY_ISSUER_ID"]),
+      key: ENV.fetch("APPSTORECONNECT_API_KEY", ENV["APPSTORE_CONNECT_API_KEY"])
+    }
+
+    build_app(
+      project: project_path,
+      scheme: scheme,
+      export_options: "fastlane/ExportOptions.plist",
+      output_directory: "build/#{scheme}",
+      output_name: "#{scheme}.ipa"
+    )
+
+    pilot(
+      api_key: api_key,
+      team_id: ENV.fetch("APPSTORECONNECT_TEAM_ID", ENV["APPSTORE_CONNECT_TEAM_ID"]),
+      skip_waiting_for_build_processing: true,
+      ipa: "build/#{scheme}/#{scheme}.ipa"
+    )
+  end
+
+  desc "Build and deliver to App Store Connect"
+  lane :build_and_deliver do
+    project_path = ENV["PROJECT_PATH"]
+    scheme = ENV["SCHEME"]
+    api_key = {
+      key_id: ENV.fetch("APPSTORECONNECT_KEY_ID", ENV["APPSTORE_CONNECT_API_KEY_ID"]),
+      issuer_id: ENV.fetch("APPSTORECONNECT_ISSUER_ID", ENV["APPSTORE_CONNECT_API_KEY_ISSUER_ID"]),
+      key: ENV.fetch("APPSTORECONNECT_API_KEY", ENV["APPSTORE_CONNECT_API_KEY"])
+    }
+
+    build_app(
+      project: project_path,
+      scheme: scheme,
+      export_options: "fastlane/ExportOptions.plist",
+      output_directory: "build/#{scheme}",
+      output_name: "#{scheme}.ipa"
+    )
+
+    upload_to_app_store(
+      api_key: api_key,
+      team_id: ENV.fetch("APPSTORECONNECT_TEAM_ID", ENV["APPSTORE_CONNECT_TEAM_ID"]),
+      skip_screenshots: true,
+      skip_metadata: true,
+      ipa: "build/#{scheme}/#{scheme}.ipa"
+    )
+  end
+end

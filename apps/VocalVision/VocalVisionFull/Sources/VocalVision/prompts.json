@@ -1,0 +1,4 @@
+[
+  {"name": "sceneScript", "text": "Draft a short narration for a scene describing: {scene}."},
+  {"name": "voiceCasting", "text": "Suggest voice casting for characters: {characters}."}
+]

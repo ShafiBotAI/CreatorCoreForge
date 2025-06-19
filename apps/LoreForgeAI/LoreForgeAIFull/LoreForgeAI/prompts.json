@@ -1,0 +1,4 @@
+[
+  {"name": "sceneBreakdown", "text": "Break down this chapter into short scene descriptions: {chapter}."},
+  {"name": "titleHashtags", "text": "Suggest a catchy video title and hashtags for: {description}."}
+]

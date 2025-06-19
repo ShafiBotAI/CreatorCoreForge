@@ -1,0 +1,4 @@
+[
+  {"name": "chapterOutline", "text": "Create a chapter outline for the plot summary: {summary}."},
+  {"name": "mimicStyle", "text": "Rewrite the following paragraph in the style of {author}: {paragraph}"}
+]
