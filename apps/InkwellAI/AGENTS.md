@@ -1,5 +1,5 @@
-# Agent: Full Feature Integration – Inkwell AI
-## App: Inkwell AI
+# Agent: Full Feature Integration – CoreForge Writer
+## App: CoreForge Writer
 Platform: iOS, Android, macOS, Windows
 Language: SwiftUI (iOS), Electron/.NET MAUI (PC)
 Build: GitHub Actions → TestFlight / PC Installer
@@ -74,4 +74,4 @@ Advanced AI writing assistant for creating books, series, and self-help guides w
 - [ ] Integrate reader relatability + pacing metrics
 - [ ] Enable Book-to-Pitch feature (TV/Film pitch toolkit)
 - [ ] Add NSFW content mode dial (slow, medium, extreme)
-- [ ] Export script to VocalVision with assigned voices
+- [ ] Export script to CoreForge Studio with assigned voices

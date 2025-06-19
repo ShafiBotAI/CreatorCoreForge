@@ -1,6 +1,6 @@
-# VerseForge AI
+# CoreForge Music
 
-VerseForge AI helps musicians craft hooks, lyrics, and beats. The package is
+CoreForge Music helps musicians craft hooks, lyrics, and beats. The package is
 implemented in Swift and designed for cross-platform use, including a DAW plugin
 in future releases.
 

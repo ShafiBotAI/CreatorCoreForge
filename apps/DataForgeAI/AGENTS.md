@@ -1,4 +1,4 @@
-# Agent: Full Feature Integration – DataForge AI
+# Agent: Full Feature Integration – CoreForge Leads
 Platform: iOS, Android, Web, PC
 Purpose: Next-gen AI tool for lead generation, prospecting, and B2B intelligence
 

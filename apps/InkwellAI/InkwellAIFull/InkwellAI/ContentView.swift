@@ -5,7 +5,7 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
-            Text("Inkwell AI")
+            Text("CoreForge Writer")
                 .padding()
             Button("Settings") { showSettings.toggle() }
                 .buttonStyle(.bordered)

@@ -1,6 +1,6 @@
 # OpenAI Integration Guide
 
-This document outlines the steps to integrate OpenAI services for the TradeMind AI app.
+This document outlines the steps to integrate OpenAI services for the CoreForge Market app.
 
 ## Account Setup
 1. Ensure an OpenAI organization with billing enabled.

@@ -3,7 +3,7 @@ import XCTest
 
 final class AppCatalogTests: XCTestCase {
     func testInfoLookup() {
-        let info = AppCatalog.info(for: "LoreForgeAI")
+        let info = AppCatalog.info(for: "CoreForge Visual")
         XCTAssertNotNil(info)
         XCTAssertEqual(info?.path, "apps/LoreForgeAI")
     }
@@ -12,8 +12,8 @@ final class AppCatalogTests: XCTestCase {
         XCTAssertGreaterThanOrEqual(AppCatalog.all.count, 5)
     }
 
-    func testAppForgeInfo() {
-        let info = AppCatalog.info(for: "AppForgeAI")
+    func testBuildInfo() {
+        let info = AppCatalog.info(for: "CoreForge Build")
         XCTAssertNotNil(info)
         XCTAssertEqual(info?.path, "apps/AppForgeAI")
     }

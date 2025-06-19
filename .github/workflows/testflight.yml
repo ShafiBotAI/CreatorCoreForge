@@ -9,13 +9,13 @@ jobs:
     strategy:
       matrix:
         app:
-          - name: VocalVerse
+          - name: CoreForge Audio
             project: apps/VocalVerse/VocalVerseFull/VocalVerse.xcodeproj
             scheme: VocalVerse
-          - name: LoreForgeAI
+          - name: CoreForge Visual
             project: apps/LoreForgeAI/LoreForgeAIFull/LoreForgeAI.xcodeproj
             scheme: LoreForgeAI
-          - name: InkwellAI
+          - name: CoreForge Writer
             project: apps/InkwellAI/InkwellAIFull/InkwellAI.xcodeproj
             scheme: InkwellAI
     steps:

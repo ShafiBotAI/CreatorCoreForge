@@ -1,5 +1,5 @@
-# Agent: Full Feature Integration – VocalVision
-## App: VocalVision
+# Agent: Full Feature Integration – CoreForge Studio
+## App: CoreForge Studio
 Platform: iOS, Android, PC
 Purpose: Converts full books into dramatized AI-generated cinematic videos
 

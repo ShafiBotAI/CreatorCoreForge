@@ -1,6 +1,6 @@
-# TradeMind AI
+# CoreForge Market
 
-TradeMind AI assists traders with strategy ideas and market sentiment analysis.
+CoreForge Market assists traders with strategy ideas and market sentiment analysis.
 The project uses Swift packages to interact with the OpenAI API and other
 services.
 
@@ -20,6 +20,6 @@ services.
 2. Configure `OPENAI_API_KEY` for integration tests when needed.
 
 ## Offline Mode
-TradeMind AI can operate without network connectivity. Set `USE_LOCAL_AI=1`
+CoreForge Market can operate without network connectivity. Set `USE_LOCAL_AI=1`
 before running to route prompts through `LocalAIEnginePro` via `FusionEngine`.
 

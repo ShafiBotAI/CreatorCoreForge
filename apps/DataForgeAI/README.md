@@ -1,6 +1,6 @@
-# DataForge AI
+# CoreForge Leads
 
-DataForge AI provides intelligent lead generation and prospecting tools.
+CoreForge Leads provides intelligent lead generation and prospecting tools.
 The iOS framework is built with Swift and includes workflow automation
 for scoring leads and tracking signals.
 

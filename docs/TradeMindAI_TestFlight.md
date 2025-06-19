@@ -1,12 +1,12 @@
-# TradeMind AI TestFlight Guide
+# CoreForge Market TestFlight Guide
 
-This document outlines the steps to distribute TradeMind AI via TestFlight.
+This document outlines the steps to distribute CoreForge Market via TestFlight.
 
 1. **API Keys**: Set `OPENAI_API_KEY` in the Beta scheme environment variables.
 2. **Info.plist**: Ensure network permissions are configured for HTTPS.
 3. **Archive**: Use Xcode's *Product → Archive* with the Beta scheme.
 4. **Upload**: Upload the build to App Store Connect and create a TestFlight build.
-5. **Testers**: Invite testers and share instructions for setting the API key under Settings → TradeMind AI.
+5. **Testers**: Invite testers and share instructions for setting the API key under Settings → CoreForge Market.
 
 Once your App Store Connect credentials are stored as repository secrets, you can
 trigger the **Upload Apps to TestFlight** workflow from the GitHub Actions tab.

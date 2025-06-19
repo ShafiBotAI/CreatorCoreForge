@@ -1,7 +1,7 @@
-# Agent: Full Feature Integration – VocalVerse
+# Agent: Full Feature Integration – CoreForge Audio
 
 ## Description
-This agent is responsible for building, validating, and maintaining every core feature of the VocalVerse application. It ensures integration with all APIs, complete UI/UX polish, platform parity, and seamless data flows for users and backend services. This file provides a full checklist of all features required for code completion and OpenAI Codex agent collaboration.
+This agent is responsible for building, validating, and maintaining every core feature of the CoreForge Audio application. It ensures integration with all APIs, complete UI/UX polish, platform parity, and seamless data flows for users and backend services. This file provides a full checklist of all features required for code completion and OpenAI Codex agent collaboration.
 
 ## Objectives
 - Complete app functionality end-to-end

@@ -1,6 +1,6 @@
-# Agent: Full Feature Integration – VerseForge AI
+# Agent: Full Feature Integration – CoreForge Music
 
-## App: VerseForge AI
+## App: CoreForge Music
 Platform: iOS, Android, Web, PC, DAW Plugin
 Purpose: Hit songwriting engine with AI beat matching, hooks, and lyric generation
 
