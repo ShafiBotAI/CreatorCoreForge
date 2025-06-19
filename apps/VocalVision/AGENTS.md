@@ -1,0 +1,76 @@
+# Agent: Full Feature Integration – VocalVision
+## App: VocalVision
+Platform: iOS, Android, PC
+Purpose: Converts full books into dramatized AI-generated cinematic videos
+
+### Core Features:
+- [x] Scene-by-scene AI dramatization
+- [x] Visuals auto-generated (anime/live action)
+- [x] Book-to-video rendering with voices
+- [ ] Downloadable & shareable formats (Codex)
+- [ ] NSFW toggle, offline access, multilingual (Codex)
+
+### AI Agent Tasks:
+- [x] Parse books into scenes with action/setting
+- [x] Match camera angles and style presets
+- [x] Assign character voices per scene
+- [x] Render 2hr+ videos while managing memory
+- [ ] Enable "What If" cutscene mode (Codex)
+- [ ] Fix and complete the `.pbxproj` project file (Codex)
+
+### Files of Interest:
+- `VideoSceneGenerator.swift`
+- `VoiceCastingEngine.swift`
+- `RendererControl.swift`
+
+### Global Missing Items
+- [x] Integrate shared `autoUpdater.swift`
+- [ ] Generate full `.pbxproj` project
+- [ ] Provide App Store assets and launch screens
+- [ ] Finalize production UI components
+- [ ] Build `.dmg` and `.exe` installers
+
+
+### Phase 4 Features
+#### Visual Innovation
+- [ ] Smart wardrobe generator per scene tone
+- [ ] AI casting director tool (fictional actor/voice matching)
+- [ ] Fan cameo generator (render fan avatars into scenes)
+- [ ] Scene lighting synced to emotion
+
+#### Cinematic Intelligence
+- [ ] Hybrid visual style merger (anime/noir/fantasy combos)
+- [ ] NSFW blur/unblur toggle (age gated)
+- [ ] Directorial note system for each scene or shot
+- [ ] Action rhythm controller (tempo pacing for dynamic scenes)
+- [ ] Audiovisual director diary (scene logs)
+
+#### Accessibility + Reuse
+- [ ] Subtitle dialect localizer (slang, accents, formal, etc.)
+- [ ] Trigger warning detector (auto flag sensitive content)
+- [ ] Overlay FX editor for text and post-processing
+- [ ] Location soundscape auto-generator
+- [ ] Emotion layer system (alternate tone variants per scene)
+
+#### Playback + Prediction
+- [ ] "Mood Mix" export filter (emotional highlights only)
+- [ ] Scene performance estimator (views, replays, saves)
+- [ ] Alternate ending generator
+- [ ] Interactive video QTE (viewer-triggered choices)
+- [ ] Self-rating engine (scene quality based on AI criteria)
+- [ ] Replay prediction engine (likely rewatch scenes)
+=======
+### Upcoming Features
+- [ ] Add AI Scene Editor Timeline View
+- [ ] Build Smart Camera Direction AI (zoom/pan/hold)
+- [ ] Add Lip Sync + Voice Sync to Visuals
+- [ ] Auto-add crowd and ambient SFX
+- [ ] Enable Style Export: Anime, Noir, Realistic, Fantasy
+- [ ] Build Emotion Arc Visualizer for cinematic flow
+- [ ] Add Live Dubbing Room + Creator Voice Import
+- [ ] Enable Multiverse Director toggle (alternate render styles)
+- [ ] Sync with NSFW enhancer (whispers, breathing, camera pacing)
+- [ ] Add What-If Mode for branching episode possibilities
+- [ ] Create Auto-Publish pipeline to YouTube/TikTok with metadata
+- [ ] Auto-generate Trailer + Behind-the-Scenes packs
+- [ ] Add voice/scene-to-video alignment overlays

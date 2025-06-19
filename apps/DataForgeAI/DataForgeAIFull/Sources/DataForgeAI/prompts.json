@@ -1,0 +1,4 @@
+[
+  {"name": "scoreLead", "text": "Score the following lead for conversion probability: {lead}."},
+  {"name": "personalizeScript", "text": "Generate a personalized outreach line for {name} at {company}."}
+]

@@ -2,14 +2,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "iOSApps",
+    name: "CreatorCoreForge",
     platforms: [ .iOS(.v14) ],
     products: [
-        .library(name: "iOSApps", targets: ["iOSApps"])
+        .library(name: "CreatorCoreForge", targets: ["CreatorCoreForge"])
     ],
     dependencies: [],
     targets: [
-        .target(name: "iOSApps", path: "Sources/iOSApps"),
-        .testTarget(name: "iOSAppsTests", dependencies: ["iOSApps"], path: "Tests/iOSAppsTests")
+        .target(name: "CreatorCoreForge", path: "Sources/CreatorCoreForge"),
+        .testTarget(name: "CreatorCoreForgeTests", dependencies: ["CreatorCoreForge"], path: "Tests/CreatorCoreForgeTests")
     ]
 )

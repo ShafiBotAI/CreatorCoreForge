@@ -1,0 +1,17 @@
+import XCTest
+@testable import CreatorCoreForge
+
+final class CommunityFilterTests: XCTestCase {
+    func testPinToggle() {
+        let suite = UserDefaults(suiteName: "CFTest")!
+        var filter = CommunityFilter(userDefaults: suite)
+        XCTAssertTrue(filter.enableNSFW(pin: "1234"))
+        XCTAssertEqual(filter.filter("nsfw text"), "nsfw text")
+        filter.disableNSFW()
+        XCTAssertNotEqual(filter.filter("nsfw text"), "nsfw text")
+        filter = CommunityFilter(userDefaults: suite)
+        XCTAssertFalse(filter.enableNSFW(pin: "wrong"))
+        XCTAssertTrue(filter.enableNSFW(pin: "1234"))
+        suite.removePersistentDomain(forName: "CFTest")
+    }
+}

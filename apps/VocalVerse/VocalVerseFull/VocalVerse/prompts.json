@@ -1,0 +1,4 @@
+[
+  {"name": "chapterSummary", "text": "Summarize this chapter in two sentences: {chapter}."},
+  {"name": "voiceSuggestion", "text": "Recommend a narrator voice for a story set in {setting}."}
+]
