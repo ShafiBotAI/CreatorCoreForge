@@ -157,7 +157,8 @@
 ## 🔮 Shared Modules & Features
 
 - **FusionEngine™:** Master AI layer handling:
-  - Contextual memory, parallel cores, emotional logic, sandbox AI
+  - Contextual memory, voice memory, scene generation, parallel cores,
+    emotional logic, AI Studio & Genesis hooks, sandbox AI
 - **LocalVoiceAI:** Full ElevenLabs replacement with advanced cloning and emotion modulation
 - **LocalAIEngine Pro:** OpenAI-free LLM for text, dialogue, and logic
 - **QuantumConnector:** Optional quantum computing toggle
@@ -239,7 +240,9 @@ This repository collects multiple experimental iOS projects that integrate AI-dr
 
 Recent updates introduce advanced AI stubs across all apps to prepare for next-generation features.
 The shared `VoiceMemoryManager` now supports exporting and importing assignments
-so creators can sync character voice selections across apps.
+so creators can sync character voice selections across apps. `FusionEngine`
+exposes this manager along with a built-in `SceneGenerator` and hooks for
+`AIStudioMode` and `GenesisModeEngine` so each app can reuse the same logic.
 
 TestFlight workflows are provided under `.github/workflows` for continuous delivery.
 Pushes to `main` automatically run `fastlane-testflight.yml` which builds the iOS
