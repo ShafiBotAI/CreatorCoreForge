@@ -166,6 +166,9 @@
 - **Creator Dashboard:** Toggle Voice Memory, Emotion Graphs, Plugin Builder, AI Studio, Genesis, Global Unlock, and Sandbox tools across apps
 - **EmotionGraph:** Cross-app tracker for character emotion intensity
 - **SceneGenerator:** Converts text into basic storyboard scenes
+- **PluginBuilder:** Generates basic plugin templates for new dashboard modules
+- **AIStudioMode:** Adds a studio prefix to prompts when testing features
+- **GenesisModeEngine:** Produces variant ideas for apps and content
 
 ---
 
