@@ -212,12 +212,12 @@ See `/agents.md` in each folder for:
 
 This repository collects multiple experimental iOS projects that integrate AI-driven features. Each app lives under `apps/`.
 
-- **CoreForge Visual** – video and story creation suite. See `apps/LoreForgeAI/README.md`.
-- **CoreForge Audio** – voice-controlled reader with offline vault. See `apps/VocalVerse/README.md`.
-- **CoreForge Leads** – data analysis utilities. See `apps/DataForgeAI/README.md`.
-- **CoreForge Music** – beat and hook generation tools. See `apps/VerseForgeAI/README.md`.
-- **CoreForge Writer** – book publishing assistant. See `apps/InkwellAI/README.md`.
-- **CoreForge Market** – trading strategy companion. See `apps/TradeMindAI/README.md`.
+- **CoreForge Visual** – video and story creation suite. See `apps/CoreForgeVisual/README.md`.
+- **CoreForge Audio** – voice-controlled reader with offline vault. See `apps/CoreForgeAudio/README.md`.
+- **CoreForge Leads** – data analysis utilities. See `apps/CoreForgeLeads/README.md`.
+- **CoreForge Music** – beat and hook generation tools. See `apps/CoreForgeMusic/README.md`.
+- **CoreForge Writer** – book publishing assistant. See `apps/CoreForgeWriter/README.md`.
+- **CoreForge Market** – trading strategy companion. See `apps/CoreForgeMarket/README.md`.
 
 Recent updates introduce advanced AI stubs across all apps to prepare for next-generation features.
 The shared `VoiceMemoryManager` now supports exporting and importing assignments
