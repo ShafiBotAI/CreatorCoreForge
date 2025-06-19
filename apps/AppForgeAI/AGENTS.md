@@ -1,13 +1,13 @@
-# Agent: Full Feature Integration – AppForge AI
+# Agent: Full Feature Integration – CoreForge Build
 
-## App: AppForge AI
+## App: CoreForge Build
 Platform: iOS, Android, PC, VR, Web
 Purpose: AI-driven app builder with automated code generation and packaging
 
 ### Core Features:
 - [ ] App idea generator based on trends (Codex)
 - [ ] UI builder using Figma/code templates (Codex)
-- [ ] AppForge Codex writes Swift, Kotlin, Python, Unity, JS (Codex)
+- [ ] Build Codex writes Swift, Kotlin, Python, Unity, JS (Codex)
 - [ ] Auto-connect to GitHub, Xcode, Android Studio (Codex)
 - [ ] Pull code and plugins from public sources (Codex)
 - [ ] Next-gen AI reasoning engine for debugging and enhancements (Codex)

@@ -1,4 +1,4 @@
-name: Upload VocalVerse to TestFlight
+name: Upload CoreForge Audio to TestFlight
 
 on:
   workflow_dispatch:
@@ -24,7 +24,7 @@ jobs:
       - name: Install Fastlane
         run: gem install fastlane
 
-      - name: Build and Upload VocalVerse
+      - name: Build and Upload CoreForge Audio
         env:
           PROJECT_PATH: apps/VocalVerse/VocalVerseFull/VocalVerse.xcodeproj
           SCHEME: VocalVerse

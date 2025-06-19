@@ -1,4 +1,4 @@
-name: Upload InkwellAI to TestFlight
+name: Upload CoreForge Writer to TestFlight
 
 on:
   workflow_dispatch:
@@ -24,7 +24,7 @@ jobs:
       - name: Install Fastlane
         run: gem install fastlane
 
-      - name: Build and Upload InkwellAI
+      - name: Build and Upload CoreForge Writer
         env:
           PROJECT_PATH: apps/InkwellAI/InkwellAIFull/InkwellAI.xcodeproj
           SCHEME: InkwellAI

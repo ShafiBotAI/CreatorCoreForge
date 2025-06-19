@@ -23,7 +23,7 @@
 
 ## 📦 App Modules
 
-### 🎙 CoreForge Audio *(formerly VocalVerse)*
+### 🎙 CoreForge Audio
 - **Use Case:** Audiobook generation, voice studio, narration platform
 - **Key Features:**
   - Voice cloning, multilingual support, emotion arcs
@@ -33,7 +33,7 @@
 
 ---
 
-### 🎥 CoreForge Visual *(formerly Lore Forge AI)*
+### 🎥 CoreForge Visual
 - **Use Case:** Book-to-video cinematic AI dramatization
 - **Key Features:**
   - Scene adaptation (anime, live-action, fantasy, etc.)
@@ -43,7 +43,7 @@
 
 ---
 
-### 📊 CoreForge Market *(formerly TradeMind AI)*
+### 📊 CoreForge Market
 - **Use Case:** AI-powered trading automation and analysis
 - **Key Features:**
   - Titan Engine, Shadow Trading, Whale Wallet Monitoring
@@ -53,7 +53,7 @@
 
 ---
 
-### ✍️ CoreForge Writer *(formerly Inkwell AI)*
+### ✍️ CoreForge Writer
 - **Use Case:** AI-powered novel and nonfiction book authoring
 - **Key Features:**
   - Adaptive writing style engine, genre presets, twist generator
@@ -62,7 +62,7 @@
 
 ---
 
-### 🧑‍🎤 CoreForge Studio *(formerly VocalVision)*
+### 🧑‍🎤 CoreForge Studio
 - **Use Case:** Voice acting, video editing, and AI content studio
 - **Key Features:**
   - Auto lip sync, NSFW toggle, split testing, facecam insert
@@ -71,7 +71,7 @@
 
 ---
 
-### 🧠 CoreForge Mind *(formerly MindForge)*
+### 🧠 CoreForge Mind
 - **Use Case:** Men's AI-based wellness and mental health platform
 - **Key Features:**
   - AI therapy, sound healing, erotic wellness (18+), journaling AI
@@ -80,7 +80,7 @@
 
 ---
 
-### 🌸 CoreForge Bloom *(formerly HerMind)*
+### 🌸 CoreForge Bloom
 - **Use Case:** AI-powered health & empowerment for women
 - **Key Features:**
   - AI coaching, sexual health, hormone sync, wellness analytics
@@ -89,7 +89,7 @@
 
 ---
 
-### 🎶 CoreForge Music *(formerly VerseForge AI)*
+### 🎶 CoreForge Music
 - **Use Case:** Songwriting, beatmaking, and vocal tool
 - **Key Features:**
   - Hook generator, AI vocals, beat marketplace
@@ -98,7 +98,7 @@
 
 ---
 
-### 🧬 CoreForge DNA *(formerly Voice DNA Visualizer)*
+### 🧬 CoreForge DNA
 - **Use Case:** Visualize, fork, and evolve AI voices across characters
 - **Key Features:**
   - Tree UI, multiverse memory, scene tagging, emotion graphs
@@ -106,7 +106,7 @@
 
 ---
 
-### 🧪 CoreForge Voice Lab *(formerly Voice Studio AI)*
+### 🧪 CoreForge Voice Lab
 - **Use Case:** Upload, train, and fine-tune custom AI voices
 - **Key Features:**
   - Voice-to-voice transfer, tone control, phoneme editing
@@ -115,7 +115,7 @@
 
 ---
 
-### 🧩 CoreForge Build *(formerly AppForge AI)*
+### 🧩 CoreForge Build
 - **Use Case:** Low-code AI-driven app builder for creators
 - **Key Features:**
   - Templates, plugin generator, AI agent builder
@@ -212,12 +212,12 @@ See `/agents.md` in each folder for:
 
 This repository collects multiple experimental iOS projects that integrate AI-driven features. Each app lives under `apps/`.
 
-- **LoreForgeAI** – video and story creation suite. See `apps/LoreForgeAI/README.md`.
-- **VocalVerse** – voice-controlled reader with offline vault. See `apps/VocalVerse/README.md`.
-- **DataForgeAI** – data analysis utilities. See `apps/DataForgeAI/README.md`.
-- **VerseForgeAI** – beat and hook generation tools. See `apps/VerseForgeAI/README.md`.
-- **InkwellAI** – book publishing assistant. See `apps/InkwellAI/README.md`.
-- **TradeMindAI** – trading strategy companion. See `apps/TradeMindAI/README.md`.
+- **CoreForge Visual** – video and story creation suite. See `apps/LoreForgeAI/README.md`.
+- **CoreForge Audio** – voice-controlled reader with offline vault. See `apps/VocalVerse/README.md`.
+- **CoreForge Leads** – data analysis utilities. See `apps/DataForgeAI/README.md`.
+- **CoreForge Music** – beat and hook generation tools. See `apps/VerseForgeAI/README.md`.
+- **CoreForge Writer** – book publishing assistant. See `apps/InkwellAI/README.md`.
+- **CoreForge Market** – trading strategy companion. See `apps/TradeMindAI/README.md`.
 
 Recent updates introduce advanced AI stubs across all apps to prepare for next-generation features.
 The shared `VoiceMemoryManager` now supports exporting and importing assignments
@@ -225,7 +225,7 @@ so creators can sync character voice selections across apps.
 
 TestFlight workflows are provided under `.github/workflows` for continuous delivery.
 Pushes to `main` automatically run `fastlane-testflight.yml` which builds the iOS
-projects (VocalVerse, LoreForgeAI, and InkwellAI) and uploads them to TestFlight
+projects (CoreForge Audio, CoreForge Visual, and CoreForge Writer) and uploads them to TestFlight
 using the `build_and_upload` lane. Configure `APPSTORECONNECT_*` secrets in your
 repository so the workflow can authenticate with App Store Connect. You can also
 manually trigger `upload-testflight.yml` from the Actions tab when a one-off

@@ -1,6 +1,6 @@
-# Lore Forge AI
+# CoreForge Visual
 
-Lore Forge AI is a cross-platform tool for generating video and story content. The iOS client is written in **SwiftUI** while the desktop version targets Electron and .NET MAUI.
+CoreForge Visual is a cross-platform tool for generating video and story content. The iOS client is written in **SwiftUI** while the desktop version targets Electron and .NET MAUI.
 
 ## Key Features
 - **AI scene dramatization engine** for turning text into short clips
@@ -26,5 +26,5 @@ Configure these variables or files before building:
 - Include `GoogleService-Info.plist` for Firebase
 
 ## Offline Mode
-Lore Forge AI supports offline development. Set `USE_LOCAL_AI=1` to activate
+CoreForge Visual supports offline development. Set `USE_LOCAL_AI=1` to activate
 `LocalAIEnginePro` via `FusionEngine` and bypass the OpenAI API.

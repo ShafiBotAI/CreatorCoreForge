@@ -1,6 +1,6 @@
-# VocalVerse
+# CoreForge Audio
 
-VocalVerse is a voice-driven reader that supports offline playback and a secure
+CoreForge Audio is a voice-driven reader that supports offline playback and a secure
 vault system. It is written in SwiftUI and will expand to additional platforms.
 
 ## Key Features

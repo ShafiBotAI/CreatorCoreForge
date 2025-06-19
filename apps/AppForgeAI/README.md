@@ -1,6 +1,6 @@
-# AppForge AI
+# CoreForge Build
 
-AppForge AI is an AI-powered app builder that generates code and bundles for multiple platforms. It integrates with Figma, GitHub, and popular IDEs to streamline development.
+CoreForge Build is an AI-powered app builder that generates code and bundles for multiple platforms. It integrates with Figma, GitHub, and popular IDEs to streamline development.
 
 ## Key Features
 - **App idea generator** that analyzes trending topics
