@@ -24,7 +24,7 @@ This file is a full checklist of every feature required for code completion and 
 - [x] NSFW content toggle with age/parental PIN lock, region/country filtering
 - [x] Voice upload, cloning, and voiceprint signature
 - [x] Scene-based ambient sound and FX generator (rain, fire, footsteps, etc.)
-- [ ] Cross-device library and playback position sync
+- [x] Cross-device library and playback position sync
 
 ### AI & API Integration
 - [x] OpenAI/LocalAI-based smart chapter segmentation, summarization, and narration
