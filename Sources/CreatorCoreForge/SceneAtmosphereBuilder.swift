@@ -58,22 +58,17 @@ public final class SceneAtmosphereBuilder {
         }
     }
     #else
-    // Fallback implementation when AVFoundation is unavailable. A simple file
-    // containing the mood name is generated so downstream code can still
-    // operate on a URL.
+    // Fallback implementation when AVFoundation is unavailable. Since the
+    // bundled atmosphere files are not accessible on this platform, simply
+    // return `nil` so calling code can gracefully handle the absence of audio
+    // assets. This mirrors the behavior when a real file is missing.
     public func generateAtmosphere(for mood: Mood, duration: TimeInterval) -> Any? {
-        let url = FileManager.default.temporaryDirectory
-            .appendingPathComponent("atmo_\(mood.rawValue)")
-            .appendingPathExtension("caf")
-        let info = "Atmosphere: \(mood.rawValue) Duration: \(duration)"
-        try? info.write(to: url, atomically: true, encoding: .utf8)
-        return url
+        print("\u{26A0}\u{FE0F} Atmosphere file not available on this platform")
+        return nil
     }
 
     public func playAtmosphere(for mood: Mood, in engine: Any, player: Any) {
-        if let url = generateAtmosphere(for: mood, duration: 0) as? URL {
-            print("Playing atmosphere stub from \(url.path)")
-        }
+        // No-op on platforms without AVFoundation
     }
     #endif
 }
