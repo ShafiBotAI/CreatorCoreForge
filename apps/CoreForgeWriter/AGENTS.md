@@ -24,12 +24,12 @@ Advanced AI writing assistant for creating books, series, and self-help guides w
 - [x] Enhance continuity AI in `MemoryTracker.swift`
 - [x] Connect to publishing dashboard via `PublishBridge.swift`
 - [x] Persist promo codes across launches
-- [ ] Fix and complete the `.pbxproj` project file (Codex)
+- [x] Fix and complete the `.pbxproj` project file (Codex)
 
 ### Global Missing Items
 - [x] Integrate shared `autoUpdater.swift`
-- [ ] Generate full `.pbxproj` project
-- [ ] Provide App Store assets and launch screens
+- [x] Generate full `.pbxproj` project
+- [x] Provide App Store assets and launch screens
 - [ ] Finalize production UI components
 - [x] Build `.dmg` and `.exe` installers
 
