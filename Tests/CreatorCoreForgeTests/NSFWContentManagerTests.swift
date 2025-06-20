@@ -26,4 +26,10 @@ final class NSFWContentManagerTests: XCTestCase {
         XCTAssertTrue(manager.isSceneAllowed(.softcore))
         XCTAssertFalse(manager.isSceneAllowed(.hardcore))
     }
+
+    func testModeSetting() {
+        let manager = NSFWContentManager.shared
+        manager.setMode(.medium)
+        XCTAssertEqual(manager.contentMode, .medium)
+    }
 }

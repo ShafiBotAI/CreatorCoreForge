@@ -73,5 +73,5 @@ Advanced AI writing assistant for creating books, series, and self-help guides w
 - [ ] Embed Booktok Trailer Generator + auto-caption tool
 - [ ] Integrate reader relatability + pacing metrics
 - [ ] Enable Book-to-Pitch feature (TV/Film pitch toolkit)
-- [ ] Add NSFW content mode dial (slow, medium, extreme)
+ - [x] Add NSFW content mode dial (slow, medium, extreme)
 - [ ] Export script to CoreForge Studio with assigned voices

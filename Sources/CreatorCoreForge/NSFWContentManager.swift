@@ -12,9 +12,14 @@ public final class NSFWContentManager: ObservableObject {
     @Published public var unlocked: Bool = false
     @Published public var nsfwSceneLog: [NSFWScene] = []
     @Published public var contentIntensity: NSFWIntensity = .softcore
+    @Published public var contentMode: NSFWContentMode = .slow
 
     public enum NSFWIntensity: String, Codable, CaseIterable {
         case off, softcore, sensual, rough, hardcore
+    }
+
+    public enum NSFWContentMode: String, Codable, CaseIterable {
+        case slow, medium, extreme
     }
 
     public struct NSFWScene: Identifiable, Codable {
@@ -50,6 +55,10 @@ public final class NSFWContentManager: ObservableObject {
 
     public func setIntensity(level: NSFWIntensity) {
         self.contentIntensity = level
+    }
+
+    public func setMode(_ mode: NSFWContentMode) {
+        self.contentMode = mode
     }
 
     public func isSceneAllowed(_ intensity: NSFWIntensity) -> Bool {
@@ -70,9 +79,14 @@ public final class NSFWContentManager {
     public var unlocked: Bool = false
     public var nsfwSceneLog: [NSFWScene] = []
     public var contentIntensity: NSFWIntensity = .softcore
+    public var contentMode: NSFWContentMode = .slow
 
     public enum NSFWIntensity: String, Codable, CaseIterable {
         case off, softcore, sensual, rough, hardcore
+    }
+
+    public enum NSFWContentMode: String, Codable, CaseIterable {
+        case slow, medium, extreme
     }
 
     public struct NSFWScene: Identifiable, Codable {
@@ -110,6 +124,10 @@ public final class NSFWContentManager {
         self.contentIntensity = level
     }
 
+    public func setMode(_ mode: NSFWContentMode) {
+        self.contentMode = mode
+    }
+
     public func isSceneAllowed(_ intensity: NSFWIntensity) -> Bool {
         guard unlocked else { return false }
         let levels = NSFWIntensity.allCases
@@ -122,4 +140,7 @@ public final class NSFWContentManager {
 }
 #endif
 
-// Usage: unlock(with: "creatoraccess"), setIntensity(level: .hardcore), isSceneAllowed(.rough)
+// Usage: unlock(with: "creatoraccess"),
+//        setIntensity(level: .hardcore),
+//        setMode(.extreme),
+//        isSceneAllowed(.rough)
