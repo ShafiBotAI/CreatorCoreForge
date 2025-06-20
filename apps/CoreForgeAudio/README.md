@@ -13,6 +13,7 @@ vault system. It is written in SwiftUI and will expand to additional platforms.
 - **Import ePub, PDF, and TXT files** via `EbookImporter`
 - **Video sharing** to social networks
 - **NSFW content manager** to log and filter explicit scenes
+- **NSFW habit behavior simulator** for character-specific response sounds
 
 - **Audiobook compilation** with `AudiobookCompiler` for zipped exports
 - **Scene memory simulator** for replaying chapters in different moods

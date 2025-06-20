@@ -13,6 +13,7 @@ CoreForge Writer is a writing assistant focused on book creation. The iOS client
 - **Multi-book generation** supporting large series
 - **Import ePub, PDF, and TXT files** via `EbookImporter`
 - **NSFW toggle with parental PIN lock**
+- **NSFW habit behavior simulator** for vocal reactions during narration
 
 ## Building (iOS)
 1. Open `InkwellAIFull/InkwellAI.xcodeproj` in Xcode.

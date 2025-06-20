@@ -275,6 +275,7 @@ The new `FusionEngine` wrapper automatically selects between `LocalAIEnginePro` 
 Copy `.env.example` to `.env` and provide your `OPENAI_API_KEY` before running any app or tests. The shared `OpenAIService` reads this value at runtime.
 A shared `ContentPolicyManager` now manages NSFW filtering across apps.
 The new `NSFWManager` tags sensitive voice clips and enables stealth exports when unlocked.
+The `NSFWHabitBehaviorSimulator` lets characters respond with custom audio cues when certain keywords are spoken.
 For offline development you can set `USE_LOCAL_AI=1` in the environment to enable `LocalAIEnginePro`, a lightweight local model stub that replaces OpenAI calls.
 
 ## Global Missing Items
