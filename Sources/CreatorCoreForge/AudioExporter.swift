@@ -46,7 +46,7 @@ public final class AudioExporter {
         let zipPath = exportDirectory.appendingPathComponent(zipName).appendingPathExtension("zip")
         print("\u{1F4DC} Compressing files into: \(zipPath.path)")
         // Simplified implementation: just create an empty zip placeholder
-        FileManager.default.createFile(atPath: zipPath.path, contents: nil)
+        _ = FileManager.default.createFile(atPath: zipPath.path, contents: nil)
         return zipPath.path
     }
 }
