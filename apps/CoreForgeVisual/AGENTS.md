@@ -1,116 +1,117 @@
 # Agent: Full Feature Integration – CoreForge Visual
 
 ## Description
-This agent is responsible for building, validating, and maintaining every core feature of the CoreForge Visual application. It ensures integration with all APIs, complete UI/UX polish, platform parity, and seamless data flows for users and backend services. This file provides a full checklist of all features required for code completion and OpenAI Codex agent collaboration.
+This agent is responsible for building, validating, and maintaining every feature of the CoreForge Visual application. It ensures seamless book-to-video adaptation, multi-style rendering, advanced memory, AI director, monetization, privacy, and next-gen NSFW video.
 
 ## Objectives
-- Complete app functionality end-to-end
-- Match all described features in the app's design specification
-- Support for iOS, Android, PC, macOS, and Web platforms
-- Enable multilingual support, NSFW gating, offline content, and monetization systems
+- [ ] End-to-end cinematic video creation from text/book/script input
+- [ ] Persistent character/scene memory across books and series
+- [ ] Support for iOS, Android, PC, macOS, and Web
+- [ ] Multilingual, NSFW gating, offline content, marketplace, AR/VR, social/viral, and creator features
+
+---
 
 ## Core Features (Detailed)
 
 ### Core Functionalities
-- [ ] Convert book chapters into visual scene breakdowns (Codex)
-- [ ] Stream scene previews using GPT-4 (Codex)
-- [ ] Auto-generate metadata, titles, hashtags (Codex)
-- [ ] Upload to social platforms (TikTok, YouTube, X) (Codex)
-- [ ] Enable NSFW content toggle + auto-stealth mode (Codex)
+- [ ] Import ePub/PDF/text and auto-adapt to storyboard scenes
+- [ ] AI character detection and persistent visual/voice memory
+- [ ] Scene-by-scene video dramatization, export/download
+- [ ] Multi-style rendering (anime, live, fantasy, etc.)
+- [ ] Adaptive soundtrack and voice SFX per scene
+- [ ] Drag-and-drop scene, shot, and effect editor
+- [ ] In-app streaming and offline playback
+- [ ] Subscription, credits, and in-app purchases
+- [ ] Auto social/creator upload, promo code system
 
 ### AI & API Integration
-- [ ] OpenAI GPT-4 streaming prompt engine (Codex)
-- [x] AI visual style selector (anime, noir, cinematic)
-- [ ] Virality Engine module (loop, caption, shock) (Codex)
+- [ ] LocalAI/VisualAI-based scene gap-filling and animation
+- [ ] Emotional arc, tone/genre adaptation
+- [ ] Scene auto-tagging, timeline heatmap
+- [ ] FusionEngine plugin/modular tools, macro automations
+- [ ] Creator/Admin dashboard: credits, usage, analytics
+- [ ] Cross-app memory/asset sharing (character, scene, voice, style)
+- [ ] Real-time AI director for storyboarding, shot/voice suggestions
 
 ### UX/UI Components
-- [ ] Scene builder UI (Codex)
-- [ ] Visual style selector (Codex)
-- [ ] Auto-upload dashboard and scheduler (Codex)
+- [ ] Storyboard editor and shot timeline UI
+- [ ] Dark mode, accessibility themes
+- [ ] Settings for visual style, voices, NSFW gating
+- [ ] Drag-and-drop scene, shot, SFX, overlay builder
+- [ ] Live emotion/tone heatmap visualization
+- [ ] Group “Watch” rooms for live viewing, chat, and voting
+- [ ] User dashboard: assets, purchases, progress, achievements
+
+---
 
 ## System Integration Requirements
-- [ ] OpenAI API integration (with prompt templating, key management, streaming where needed) (Codex)
-- [ ] Firebase integration (Auth, Firestore, Storage) (Codex)
-- [ ] ElevenLabs voice API (where applicable) (Codex)
-- [ ] Platform-specific permissions and environment configuration (Codex)
-- [ ] Secure API key handling and compliance with data protection policies (Codex)
-- [ ] Fix and complete the `.pbxproj` project file (Codex)
-- [ ] OpenAI API integration (with prompt templating, key management, streaming where needed)
-- [ ] Firebase integration (Auth, Firestore, Storage)
-- [ ] ElevenLabs voice API (where applicable)
-- [ ] Platform-specific permissions and environment configuration
-- [ ] Secure API key handling and compliance with data protection policies
-- [x] Fix and complete the `.pbxproj` project file
+- [ ] LocalAI/VisualAI engine, prompt templating, animation pipeline
+- [ ] Secure API keys, GDPR/CCPA/COPPA compliance
+- [ ] Firebase (or equivalent): Auth, Storage, Analytics
+- [ ] Auto-updater embedded for all builds
+- [ ] Platform-specific permissions/configuration for all platforms
+- [ ] Export to all major video formats (MP4, MOV, GIF, etc.)
+- [ ] Complete `.pbxproj` and project files (all platforms)
+- [ ] App Store, Google Play, Microsoft Store, Web compliance
 
+---
 
 ## Testing Requirements
-- [ ] Unit tests for all critical functions (Codex)
-- [ ] Integration tests for API workflows (Codex)
-- [ ] Prompt validation with example inputs/outputs (Codex)
-- [ ] UI interaction tests (iOS, Android, Web) (Codex)
-- [ ] Performance and latency benchmarks (Codex)
-- [ ] Security audit for data handling and API access (Codex)
+- [ ] Unit/integration tests for scene rendering, memory, export
+- [ ] UI/UX interaction tests (all platforms)
+- [ ] Stress and performance tests (ultra-long video, multi-scene)
+- [ ] Security/privacy audits, NSFW gating tests
+- [ ] Accessibility validation (subtitles, voiceover, visual clarity)
+
+---
 
 ## Deployment & CI/CD
-- [ ] GitHub Actions for multi-platform builds (iOS, Android, PC, Mac) (Codex)
-- [ ] Version tagging and changelogs (Codex)
-- [ ] TestFlight, Play Store internal, and Google Drive delivery automation (Google Drive script added) (Codex)
-- [ ] Auto-updater system embedded in all installers (Codex)
+- [ ] GitHub Actions for multi-platform builds
+- [ ] Version tagging, changelogs
+- [ ] Automated deployment to TestFlight, Play Store, Google Drive
+- [ ] Smart auto-updater for models/assets
+- [ ] App store policy compliance (export, NSFW, region lock)
 
-## Documentation
-- [x] README.md per app
-- [x] PromptTemplates.md with sample prompts
-- [x] APISetup.md for all third-party keys and integrations
-- [x] DeveloperSetup.md for local environment instructions
+---
 
-### Global Missing Items
-- [x] Integrate shared `autoUpdater.swift`
-- [ ] Generate full `.pbxproj` project
-- [ ] Provide App Store assets and launch screens
-- [ ] Finalize production UI components
-- [ ] Build `.dmg` and `.exe` installers
+## Documentation & Developer Assets
+- [ ] README.md, APISetup.md, PromptTemplates.md, DeveloperSetup.md
+- [ ] App store/launch assets (icons, screens, promo)
+- [ ] Privacy, NSFW policy, parental docs, user guide
 
+---
 
-### Phase 4 Features
-#### Worldbuilding Enhancements
-- [ ] AI map narrator for guided world tours
-- [ ] Add character stat tracker (RPG-style)
-- [ ] Culture simulator engine (rituals, religions, language)
-- [ ] Scene visualizer (low-res preview of all scenes)
-- [ ] Conflict matrix to track power struggles
+## Next-Gen & Phase 8 Features
+- [ ] Quantum scene switcher, alternate universe generator
+- [ ] Live scene gap-filling from AI/AR/VR overlays
+- [ ] Visual memory engine, cross-project timelines
+- [ ] Fan engagement, live voting, interactive overlays
+- [ ] Meme/video generator, social sharing templates
+- [ ] Team portals, collab editing, marketplace for templates/assets
+- [ ] Ultra-long export, custom watermarks, secure publishing
+- [ ] Emotion/genre/tone heatmaps, viral templates
+- [ ] Creator/director commentary export, podcast mode
 
-#### Lore Visualization + Simulation
-- [ ] Royal family or ancestry lineage visualizer
-- [ ] Character evolution chart
-- [ ] Magic artifact tracker
-- [ ] Spin-off and side mission generator
-- [ ] Lore compression tool (summarizer)
+---
 
-#### Engagement Tools
-- [ ] Power balance indicator across factions
-- [ ] Shared object memory for cross-series item tracking
-- [ ] Realtime war simulator (strategy engine)
-- [ ] Fan prediction engine with multiverse pathing
-- [ ] Convert mythic systems to scientific logic
+## NSFW Features & Expansion (If Enabled)
+- [ ] Age-gated, auto-censored erotic/explicit video generation
+- [ ] NSFW overlays, intensity dial, haptic/AR/VR integration
+- [ ] Private/secret video rooms, encrypted sharing, pay-per-view
+- [ ] NSFW fan clubs, tip jars, premium unlocks
+- [ ] Group live NSFW video, live collab acting rooms
+- [ ] Consent tracking, aftercare, moderation, decoy/stealth mode
 
-#### AI Simulation & Exports
-- [ ] Lore debate simulator (characters argue beliefs)
-- [ ] Alternate POV retelling engine
-- [ ] Fandom toolkit exporter (wiki, PDF, avatars)
-- [ ] Fanfiction permission UI (creator-defined boundaries)
-- [ ] Lore DNA exporter for universe sharing
-=======
-### Upcoming Features
-- [ ] Add AI scene script builder with visual prompts
-- [ ] Build Lore Map Generator (visual + data)
-- [ ] Integrate AI trailer script creator
-- [ ] Create alternate timeline + multiverse plot support
-- [ ] Add Character Evolution Tracker
-- [ ] Implement Auto-Wiki + Export-to-Wiki tool
-- [ ] Build Lore Validation Engine (faction, power, consistency)
-- [ ] Add Emotion Arc Graph across entire story
-- [ ] Add Smart Lore PDF Generator (with visuals + metadata)
-- [ ] Enable AI test audience simulator + fan feedback engine
-- [ ] Auto-score lore creativity, depth, uniqueness
-- [ ] Sync all scene/character info with multiverse memory
-- [ ] Embed Recast AI Engine for alternate version generation
+---
+
+## Global Missing/Launch Items
+- [ ] All `.pbxproj`/multi-platform project files
+- [ ] Final UI/UX and accessibility polish
+- [ ] Launch/test `.dmg`, `.exe` installers
+- [ ] Tutorial/help flows, onboarding, CI/CD live test
+- [ ] Full asset and compliance review
+
+---
+
+## Codex/AI Agent Note
+Every unchecked item is a top-priority task. Use this file as the app's full requirements for completion, verification, and compliance.
