@@ -31,7 +31,7 @@ Advanced AI writing assistant for creating books, series, and self-help guides w
 - [ ] Generate full `.pbxproj` project
 - [ ] Provide App Store assets and launch screens
 - [ ] Finalize production UI components
-- [ ] Build `.dmg` and `.exe` installers
+- [x] Build `.dmg` and `.exe` installers
 
 ### Phase 4 Features
 #### Advanced Writing Modes

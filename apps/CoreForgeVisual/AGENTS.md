@@ -107,7 +107,7 @@ This agent is responsible for building, validating, and maintaining every featur
 ## Global Missing/Launch Items
 - [ ] All `.pbxproj`/multi-platform project files
 - [ ] Final UI/UX and accessibility polish
-- [ ] Launch/test `.dmg`, `.exe` installers
+- [x] Launch/test `.dmg`, `.exe` installers
 - [ ] Tutorial/help flows, onboarding, CI/CD live test
 - [ ] Full asset and compliance review
 

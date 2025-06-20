@@ -177,7 +177,7 @@ This file is a full checklist of every feature required for code completion and 
 - [ ] Generate and verify all `.pbxproj`, `.xcodeproj`, and multi-platform project files
 - [ ] Provide, review, and test App Store/Google Play/Windows/MacOS/Web launch assets and screens
 - [ ] Finalize all production UI, polish, and accessibility passes
-- [ ] Build, notarize, and test `.dmg` (Mac), `.exe` (PC) installers
+- [x] Build, notarize, and test `.dmg` (Mac), `.exe` (PC) installers
 - [ ] Automated onboarding, tutorial, and help flows for all user tiers
 - [ ] Full CI/CD pipeline from GitHub to all app stores/platforms
 

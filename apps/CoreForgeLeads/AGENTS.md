@@ -34,4 +34,4 @@ Purpose: Next-gen AI tool for lead generation, prospecting, and B2B intelligence
 - [ ] Generate full `.pbxproj` project
 - [ ] Provide App Store assets and launch screens
 - [ ] Finalize production UI components
-- [ ] Build `.dmg` and `.exe` installers
+- [x] Build `.dmg` and `.exe` installers

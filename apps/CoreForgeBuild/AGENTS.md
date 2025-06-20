@@ -20,4 +20,4 @@ Purpose: AI-driven app builder with automated code generation and packaging
 - [ ] Generate full `.pbxproj` project
 - [ ] Provide App Store assets and launch screens
 - [ ] Finalize production UI components
-- [ ] Build `.dmg` and `.exe` installers
+- [x] Build `.dmg` and `.exe` installers
