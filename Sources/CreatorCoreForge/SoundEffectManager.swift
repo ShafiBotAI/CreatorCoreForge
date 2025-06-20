@@ -1,9 +1,16 @@
 #if canImport(Combine)
+
 import Combine
+
 import Foundation
 #if canImport(AVFoundation)
 import AVFoundation
 #endif
+
+
+import Combine
+
+#if canImport(AVFoundation)
 
 /// Manages ambient sound effects for immersive playback.
 public final class SoundEffectManager: ObservableObject {
