@@ -211,15 +211,47 @@ import Foundation
 import AVFoundation
 #endif
 
-/// Minimal placeholder when Combine is unavailable.
+/// Basic sound effect manager used when Combine is unavailable.
 public final class SoundEffectManager {
     public static let shared = SoundEffectManager()
+#if canImport(AVFoundation)
+    private var ambiencePlayers: [String: AVAudioPlayer] = [:]
+#endif
     public private(set) var currentAmbience: String = "None"
 
-    public func playAmbience(named name: String) { currentAmbience = name }
-    public func stopAllAmbience() { currentAmbience = "None" }
+    public func playAmbience(named name: String) {
+        currentAmbience = name
+#if canImport(AVFoundation)
+        if let url = Bundle.main.url(forResource: name, withExtension: "mp3"),
+           let player = try? AVAudioPlayer(contentsOf: url) {
+            player.numberOfLoops = -1
+            player.play()
+            ambiencePlayers[name] = player
+        } else {
+            print("[SoundEffectManager] Missing ambience \(name)")
+        }
+#else
+        print("[SoundEffectManager] Playing ambience \(name)")
+#endif
+    }
+
+    public func stopAllAmbience() {
+        currentAmbience = "None"
+#if canImport(AVFoundation)
+        ambiencePlayers.values.forEach { $0.stop() }
+        ambiencePlayers.removeAll()
+#endif
+    }
+
     public func preloadAmbiences() {}
-    public func triggerReverbPreset(preset: ReverbStyle) {}
+
+    public func triggerReverbPreset(preset: ReverbStyle) {
+#if canImport(AVFoundation)
+        print("[SoundEffectManager] Applying reverb \(preset.rawValue)")
+#else
+        print("Applying reverb preset \(preset.rawValue)")
+#endif
+    }
 }
 #endif
 

@@ -66,17 +66,35 @@ public final class CharacterQuirkEngine: ObservableObject {
 #else
 import Foundation
 
-/// Minimal placeholder when Combine is unavailable.
+/// Fallback implementation when Combine is unavailable. This engine
+/// keeps a simple in-memory map of character quirks and logs when
+/// they are triggered.
 public final class CharacterQuirkEngine {
     public static let shared = CharacterQuirkEngine()
+    private var quirkMap: [String: [QuirkType]] = [:]
+
     private init() {}
 
     public enum QuirkType: String, Codable, CaseIterable {
         case sigh, sniff, giggle, cough, whisper, stutter, lipSmack, breathy, grunt, mumble
     }
 
-    public func assignQuirks(to character: String, quirks: [QuirkType]) {}
-    public func triggerQuirks(for character: String) {}
-    public func stopAllQuirks() {}
+    /// Assign quirks to a character.
+    public func assignQuirks(to character: String, quirks: [QuirkType]) {
+        quirkMap[character] = quirks
+    }
+
+    /// Trigger any quirks associated with the character.
+    public func triggerQuirks(for character: String) {
+        guard let quirks = quirkMap[character] else { return }
+        for quirk in quirks {
+            print("[Quirk] \(character) performs \(quirk.rawValue)")
+        }
+    }
+
+    /// Remove all quirks from memory.
+    public func stopAllQuirks() {
+        quirkMap.removeAll()
+    }
 }
 #endif

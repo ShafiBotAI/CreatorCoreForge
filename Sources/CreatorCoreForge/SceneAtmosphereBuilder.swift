@@ -20,7 +20,7 @@ public final class SceneAtmosphereBuilder {
     /// Load the atmosphere audio file for the given mood.
     /// - Parameters:
     ///   - mood: desired atmosphere mood.
-    ///   - duration: expected playback duration (unused placeholder).
+    ///   - duration: expected playback duration.
     /// - Returns: `AVAudioFile` if found.
     public func generateAtmosphere(for mood: Mood, duration: TimeInterval) -> AVAudioFile? {
         let filename = "atmo_\(mood.rawValue).caf"
@@ -58,9 +58,23 @@ public final class SceneAtmosphereBuilder {
         }
     }
     #else
-    // Fallback stubs when AVFoundation is unavailable.
-    public func generateAtmosphere(for mood: Mood, duration: TimeInterval) -> Any? { nil }
-    public func playAtmosphere(for mood: Mood, in engine: Any, player: Any) {}
+    // Fallback implementation when AVFoundation is unavailable. A simple file
+    // containing the mood name is generated so downstream code can still
+    // operate on a URL.
+    public func generateAtmosphere(for mood: Mood, duration: TimeInterval) -> Any? {
+        let url = FileManager.default.temporaryDirectory
+            .appendingPathComponent("atmo_\(mood.rawValue)")
+            .appendingPathExtension("caf")
+        let info = "Atmosphere: \(mood.rawValue) Duration: \(duration)"
+        try? info.write(to: url, atomically: true, encoding: .utf8)
+        return url
+    }
+
+    public func playAtmosphere(for mood: Mood, in engine: Any, player: Any) {
+        if let url = generateAtmosphere(for: mood, duration: 0) as? URL {
+            print("Playing atmosphere stub from \(url.path)")
+        }
+    }
     #endif
 }
 
