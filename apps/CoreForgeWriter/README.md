@@ -25,7 +25,7 @@ This agent is responsible for building, validating, and maintaining every featur
 
 ### AI & API Integration
 - [ ] OpenAI/LocalAI creative, genre, and plot modeling
-- [ ] FusionEngine macro scripting, plugin extensions
+- [x] FusionEngine macro scripting, plugin extensions
 - [ ] Prompt enhancer, style adaptation, memory linking
 - [ ] Cross-app asset/memory import/export
 - [ ] Admin dashboard: usage, quota, reporting, moderation

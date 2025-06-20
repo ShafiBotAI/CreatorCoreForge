@@ -28,7 +28,7 @@ This agent is responsible for building, validating, and maintaining every featur
 - [ ] LocalAI/VisualAI-based scene gap-filling and animation
 - [ ] Emotional arc, tone/genre adaptation
 - [ ] Scene auto-tagging, timeline heatmap
-- [ ] FusionEngine plugin/modular tools, macro automations
+- [x] FusionEngine plugin/modular tools, macro automations
 - [ ] Creator/Admin dashboard: credits, usage, analytics
 - [ ] Cross-app memory/asset sharing (character, scene, voice, style)
 - [ ] Real-time AI director for storyboarding, shot/voice suggestions

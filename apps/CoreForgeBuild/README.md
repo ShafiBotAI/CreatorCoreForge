@@ -24,7 +24,7 @@ This agent is responsible for building, validating, and maintaining all features
 
 ### AI & API Integration
 - [ ] LocalAI/BuildAI code generator (UI, logic, assets)
-- [ ] FusionEngine macro scripting and plugin automation
+- [x] FusionEngine macro scripting and plugin automation
 - [ ] Smart prompt templates for apps, workflows
 - [ ] AI agent library: reusable, composable logic blocks
 - [ ] Admin dashboard: quotas, analytics, CI/CD control
