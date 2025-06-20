@@ -173,6 +173,7 @@
 - **AIStateTracker:** Learns from prompt history locally for adaptive responses
 - **Creator Dashboard:** Toggle Voice Memory, Emotion Graphs, Plugin Builder, AI Studio, Genesis, Global Unlock, and Sandbox tools across apps
 - **EmotionGraph:** Cross-app tracker for character emotion intensity
+- **EmotionalArcTracker:** Records emotion intensity for characters over time
 - **SceneGenerator:** Converts text into basic storyboard scenes
 - **VoiceMemoryManager:** Shares voice assignments across apps
 - **VoiceTrainer:** Uploads and trains custom voice models locally for offline voice synthesis.
