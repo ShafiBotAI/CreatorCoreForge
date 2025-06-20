@@ -1,12 +1,19 @@
 #if canImport(SwiftUI)
 import SwiftUI
+import CreatorCoreForge
 
 struct SettingsView: View {
     @AppStorage("nsfwEnabled") private var nsfwEnabled = false
     @AppStorage("parentalPIN") private var parentalPIN = ""
+    @AppStorage("nsfwMode") private var nsfwModeRaw = NSFWContentMode.slow.rawValue
     @State private var showPinPrompt = false
     @State private var inputPIN = ""
     @State private var showIncorrectAlert = false
+
+    private var nsfwMode: NSFWContentMode {
+        get { NSFWContentMode(rawValue: nsfwModeRaw) ?? .slow }
+        set { nsfwModeRaw = newValue.rawValue }
+    }
 
     var body: some View {
         NavigationView {
@@ -21,6 +28,15 @@ struct SettingsView: View {
                                 nsfwEnabled = false
                             }
                         }))
+                    if nsfwEnabled {
+                        Picker("NSFW Mode", selection: Binding(
+                            get: { nsfwMode },
+                            set: { nsfwMode = $0 })) {
+                            ForEach(NSFWContentMode.allCases, id: \.self) { mode in
+                                Text(mode.rawValue.capitalized).tag(mode)
+                            }
+                        }
+                    }
                 }
                 Section(header: Text("Security")) {
                     Button("Change PIN") { showPinPrompt = true }

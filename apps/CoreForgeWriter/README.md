@@ -91,6 +91,7 @@ This agent is responsible for building, validating, and maintaining every featur
 - [ ] Paywall, tip jar, premium NSFW stories
 - [ ] Community moderation, age/ID controls
 - [ ] NSFW sandbox, decoy/stealth mode
+- [x] NSFW content mode dial (slow, medium, extreme)
 
 ---
 
