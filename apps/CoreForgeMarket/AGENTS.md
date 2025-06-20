@@ -1,66 +1,87 @@
 # Agent: Full Feature Integration – CoreForge Market
 
 ## Description
-This agent is responsible for building, validating, and maintaining every core feature of the CoreForge Market application. It ensures integration with all APIs, complete UI/UX polish, platform parity, and seamless data flows for users and backend services. This file provides a full checklist of all features required for code completion and OpenAI Codex agent collaboration.
+This agent is responsible for building, validating, and maintaining all features of CoreForge Market: AI trading, signals, risk management, automation, compliance, and team/enterprise tools.
 
 ## Objectives
-- Complete app functionality end-to-end
-- Match all described features in the app's design specification
-- Support for iOS, Android, PC, macOS, and Web platforms
-- Enable multilingual support, NSFW gating, offline content, and monetization systems
+- [ ] Fully functional AI trading, alerts, analytics, multi-platform
+- [ ] Persistent memory, multi-strategy, social trading, and dashboards
+- [ ] Compliance, risk management, and white label/enterprise features
+
+---
 
 ## Core Features (Detailed)
 
 ### Core Functionalities
-- [x] Real-time market sentiment detection
-- [x] AI-powered strategy builder from typed prompts (Codex)
-- [ ] Embedded chart screenshot analysis (Codex)
-- [ ] Trading journal with feedback and emotion detection (Codex)
-- [ ] Multi-market scanning and smart money detection (Codex)
+- [ ] Adaptive AI trading strategy engine
+- [ ] Real-time sentiment, event, and technical analysis
+- [ ] Portfolio management, auto-rebalancing
+- [ ] Shadow trading, copy trading, arbitrage finder
+- [ ] Cross-platform API integration, alerts, dashboards
+- [ ] FusionEngine plugin, marketplace for bots/strategies
+- [ ] Admin controls: quotas, reporting, compliance
 
 ### AI & API Integration
-- [x] OpenAI GPT-3.5 + Embeddings usage for financial NLP
-- [ ] Firebase for journal storage, auth, and cloud sync (Codex)
-- [ ] Titan Engine integration (flow tracking, alerts) (Codex)
+- [ ] Multi-brain AI core (logic, speed, quality)
+- [ ] Quantum/Hybrid AI strategy modules
+- [ ] OpenAI/LocalAI for sentiment/news, risk analytics
+- [ ] Secure exchange integration (API keys, encryption)
+- [ ] Real-time bot marketplace and plugin extension
 
 ### UX/UI Components
-- [ ] Real-time sentiment heatmap (Codex)
-- [ ] Strategy editor interface (Codex)
-- [ ] Chart upload and markup tools (Codex)
+- [ ] Portfolio and analytics dashboards
+- [ ] Settings for risk, strategy, notifications
+- [ ] Dark/light mode, accessibility
+- [ ] Copy trading, social sharing, leaderboards
+- [ ] Alerts, notifications, trade confirmation UI
 
+---
 
 ## System Integration Requirements
-- [ ] OpenAI API integration (with prompt templating, key management, streaming where needed) (Codex)
-- [ ] Firebase integration (Auth, Firestore, Storage) (Codex)
-- [ ] ElevenLabs voice API (where applicable) (Codex)
-- [ ] Platform-specific permissions and environment configuration (Codex)
-- [ ] Secure API key handling and compliance with data protection policies (Codex)
-- [ ] Fix and complete the `.pbxproj` project file (Codex)
+- [ ] LocalAI, plugin modules, secure API keys
+- [ ] GDPR, CCPA, KYC/AML compliance
+- [ ] Firebase/Firestore: Auth, Data, Analytics
+- [ ] Auto-updater, platform config, app store compliance
+- [ ] Export: CSV, PDF, JSON
+- [ ] All platform project files
+
+---
 
 ## Testing Requirements
-- [ ] Unit tests for all critical functions (Codex)
-- [ ] Integration tests for API workflows (Codex)
-- [ ] Prompt validation with example inputs/outputs (Codex)
-- [ ] UI interaction tests (iOS, Android, Web) (Codex)
-- [ ] Performance and latency benchmarks (Codex)
-- [ ] Security audit for data handling and API access (Codex)
+- [ ] Unit/integration (AI trading, import/export)
+- [ ] UI/UX (all platforms)
+- [ ] Performance, compliance, risk, security
+- [ ] API integration tests (real and sandbox)
+
+---
 
 ## Deployment & CI/CD
-- [ ] GitHub Actions for multi-platform builds (iOS, Android, PC, Mac) (Codex)
-- [ ] Version tagging and changelogs (Codex)
-- [ ] TestFlight, Play Store internal, and Google Drive delivery automation (Google Drive script added) (Codex)
-- [ ] Auto-updater system embedded in all installers (Codex)
+- [ ] GitHub Actions, tagging, changelogs, auto-deploy
+- [ ] App store asset and compliance review
 
-## Documentation
-- [x] README.md per app
-- [x] PromptTemplates.md with sample prompts
-- [x] APISetup.md for all third-party keys and integrations
-- [x] DeveloperSetup.md for local environment instructions
+---
 
-### Global Missing Items
-- [x] Integrate shared `autoUpdater.swift`
-- [ ] Generate full `.pbxproj` project
-- [ ] Provide App Store assets and launch screens
-- [ ] Finalize production UI components
-- [ ] Build `.dmg` and `.exe` installers
+## Documentation & Developer Assets
+- [ ] README.md, APISetup.md, PromptTemplates.md, DeveloperSetup.md
+- [ ] App store/launch assets, compliance/user guides
 
+---
+
+## Next-Gen & Phase 8 Features
+- [ ] Quantum/AI hybrid mode, parallel simulation, anomaly detection
+- [ ] Multibrain risk/speed/profit settings
+- [ ] Team/group trading, portfolio sharing, leaderboards
+- [ ] Marketplace for bots, plugins, signals, analytics
+- [ ] API for external tools, compliance/legal automation
+
+---
+
+## Global Missing/Launch Items
+- [ ] All platform project files
+- [ ] Final UI polish, onboarding, tutorial flows
+- [ ] Full CI/CD deployment test, compliance review
+
+---
+
+## Codex/AI Agent Note
+Treat every unchecked item as a high-priority deliverable. Use as requirements for completion, testing, and launch.
