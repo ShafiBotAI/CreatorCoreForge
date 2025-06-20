@@ -168,7 +168,7 @@ This file is a full checklist of every feature required for code completion and 
 - [ ] Premium NSFW voice/FX asset packs
 - [ ] Multi-language and accent erotic narration
 - [ ] NSFW sandbox and community moderation features
-- [ ] Haptic suit/toy API and device pairing
+ - [x] Haptic suit/toy API and device pairing
 
 ---
 
