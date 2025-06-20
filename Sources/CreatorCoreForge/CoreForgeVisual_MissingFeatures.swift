@@ -4,10 +4,19 @@ import Foundation
 public struct CoreForgeVisualFeatures {
     public init() {}
 
-    /// Verify age and enable NSFW access using a PIN. Returns true on success.
+    /// Verify age and optional ID then enable NSFW access using a PIN.
+    /// Returns true on success.
     @discardableResult
     public func verifyAgeAndEnableNSFW(birthdate: Date, pin: String) -> Bool {
         guard DOBCheck.isOfAge(birthdate: birthdate) else { return false }
+        return CommunityFilter.shared.enableNSFW(pin: pin)
+    }
+
+    /// Verify age and ID then enable NSFW access using a PIN.
+    @discardableResult
+    public func verifyAgeIDAndEnableNSFW(birthdate: Date, idNumber: String, pin: String) -> Bool {
+        let verifier = AgeIDVerifier()
+        guard verifier.verify(birthdate: birthdate, idNumber: idNumber) else { return false }
         return CommunityFilter.shared.enableNSFW(pin: pin)
     }
 
