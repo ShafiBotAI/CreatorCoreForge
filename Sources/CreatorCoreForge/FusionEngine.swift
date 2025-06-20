@@ -9,6 +9,7 @@ public final class FusionEngine {
 
     private let engine: AIEngine
     private let parallelEngines: [AIEngine]?
+    private var plugins: [FusionEnginePlugin]
 
     public let voiceMemory: VoiceMemoryManager
     public let sceneGenerator: SceneGenerator
@@ -22,11 +23,13 @@ public final class FusionEngine {
                 memory: ContextualMemory = ContextualMemory(),
                 emotionGraph: EmotionGraph = EmotionGraph(),
                 voiceMemory: VoiceMemoryManager = .shared,
-                sceneGenerator: SceneGenerator = SceneGenerator()) {
+                sceneGenerator: SceneGenerator = SceneGenerator(),
+                plugins: [FusionEnginePlugin] = []) {
         self.memory = memory
         self.emotionGraph = emotionGraph
         self.voiceMemory = voiceMemory
         self.sceneGenerator = sceneGenerator
+        self.plugins = plugins
         self.parallelEngines = nil
         switch mode {
         case .local:
@@ -41,7 +44,8 @@ public final class FusionEngine {
                 memory: ContextualMemory = ContextualMemory(),
                 emotionGraph: EmotionGraph = EmotionGraph(),
                 voiceMemory: VoiceMemoryManager = .shared,
-                sceneGenerator: SceneGenerator = SceneGenerator()) {
+                sceneGenerator: SceneGenerator = SceneGenerator(),
+                plugins: [FusionEnginePlugin] = []) {
         precondition(!parallelEngines.isEmpty, "parallelEngines must not be empty")
         self.engine = parallelEngines[0]
         self.parallelEngines = parallelEngines
@@ -49,6 +53,23 @@ public final class FusionEngine {
         self.emotionGraph = emotionGraph
         self.voiceMemory = voiceMemory
         self.sceneGenerator = sceneGenerator
+        self.plugins = plugins
+    }
+
+    /// Initializes the engine with a fully custom AI engine implementation.
+    public init(engine: AIEngine,
+                memory: ContextualMemory = ContextualMemory(),
+                emotionGraph: EmotionGraph = EmotionGraph(),
+                voiceMemory: VoiceMemoryManager = .shared,
+                sceneGenerator: SceneGenerator = SceneGenerator(),
+                plugins: [FusionEnginePlugin] = []) {
+        self.engine = engine
+        self.parallelEngines = nil
+        self.memory = memory
+        self.emotionGraph = emotionGraph
+        self.voiceMemory = voiceMemory
+        self.sceneGenerator = sceneGenerator
+        self.plugins = plugins
     }
 
     /// Convenience initializer that checks the `USE_LOCAL_AI` environment variable.
@@ -62,7 +83,16 @@ public final class FusionEngine {
 
     /// Passes a prompt to the underlying AI engine.
     public func sendPrompt(_ prompt: String, completion: @escaping (Result<String, Error>) -> Void) {
-        engine.sendPrompt(prompt, completion: completion)
+        let processed = plugins.reduce(prompt) { $1.processPrompt($0) }
+        engine.sendPrompt(processed) { [plugins = self.plugins] result in
+            switch result {
+            case .success(let text):
+                let output = plugins.reduce(text) { $1.processResponse($0) }
+                completion(.success(output))
+            case .failure:
+                completion(result)
+            }
+        }
     }
 
     /// Retrieves an embedding vector using the underlying engine.
@@ -85,11 +115,16 @@ public final class FusionEngine {
         if sandboxEnabled {
             finalPrompt = "[Sandbox] " + finalPrompt
         }
-        engine.sendPrompt(finalPrompt) { [weak self] result in
-            if case .success(let response) = result {
+        let processed = plugins.reduce(finalPrompt) { $1.processPrompt($0) }
+        engine.sendPrompt(processed) { [weak self, plugins = self.plugins] result in
+            switch result {
+            case .success(let response):
                 self?.memory.add(prompt: prompt, response: response)
+                let output = plugins.reduce(response) { $1.processResponse($0) }
+                completion(.success(output))
+            case .failure:
+                completion(result)
             }
-            completion(result)
         }
     }
 
@@ -107,10 +142,12 @@ public final class FusionEngine {
             group.enter()
             var p = prompt
             if sandboxEnabled { p = "[Sandbox] " + p }
-            engine.sendPrompt(p) { result in
+            p = plugins.reduce(p) { $1.processPrompt($0) }
+            engine.sendPrompt(p) { [plugins = self.plugins] result in
                 if case .success(let text) = result {
+                    let output = plugins.reduce(text) { $1.processResponse($0) }
                     lock.lock()
-                    results.append(text)
+                    results.append(output)
                     lock.unlock()
                 }
                 group.leave()
@@ -139,6 +176,16 @@ public final class FusionEngine {
     /// Generate simple storyboard scenes from a text block.
     public func generateScenes(from text: String, limit: Int = 3) -> [String] {
         sceneGenerator.generateScenes(from: text, maxScenes: limit)
+    }
+
+    /// Registers a new plugin that will process prompts and responses.
+    public func registerPlugin(_ plugin: FusionEnginePlugin) {
+        plugins.append(plugin)
+    }
+
+    /// Removes all registered plugins.
+    public func removeAllPlugins() {
+        plugins.removeAll()
     }
 }
 

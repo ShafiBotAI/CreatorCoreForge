@@ -25,7 +25,7 @@ This agent is responsible for building, validating, and maintaining all features
 
 ### AI & API Integration
 - [ ] LocalAI/SignalAI intent modeling and scoring
-- [ ] FusionEngine macros, plugin builder for automations
+- [x] FusionEngine macros, plugin builder for automations
 - [ ] Smart prompt templates, multi-lingual support
 - [ ] Global data enrichment and compliance API sync
 - [ ] Admin dashboard: quotas, reporting, compliance tools
