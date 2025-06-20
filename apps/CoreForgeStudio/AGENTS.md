@@ -7,8 +7,8 @@ Purpose: Converts full books into dramatized AI-generated cinematic videos
 - [x] Scene-by-scene AI dramatization
 - [x] Visuals auto-generated (anime/live action)
 - [x] Book-to-video rendering with voices
-- [ ] Downloadable & shareable formats (Codex)
-- [ ] NSFW toggle, offline access, multilingual (Codex)
+- [x] Downloadable & shareable formats (Codex)
+- [x] NSFW toggle, offline access, multilingual (Codex)
 
 ### AI Agent Tasks:
 - [x] Parse books into scenes with action/setting

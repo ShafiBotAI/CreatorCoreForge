@@ -15,28 +15,28 @@ This file is a full checklist of every feature required for code completion and 
 ## Core Features (Detailed)
 
 ### Core Functionalities
-- [ ] Import ePub, PDF, TXT, and detect/parse chapters
-- [ ] Assign voices to characters (manual & AI-detected)
-- [ ] Persistent character voice memory across all user projects and book series
-- [ ] Downloadable, high-fidelity audiobook export (MP3, WAV, SRT, etc.)
-- [ ] Offline playback and encrypted personal vault system
-- [ ] Public domain book import, auto-tagging, and metadata extraction
-- [ ] NSFW content toggle with age/parental PIN lock, region/country filtering
-- [ ] Voice upload, cloning, and voiceprint signature
-- [ ] Scene-based ambient sound and FX generator (rain, fire, footsteps, etc.)
+- [x] Import ePub, PDF, TXT, and detect/parse chapters
+- [x] Assign voices to characters (manual & AI-detected)
+- [x] Persistent character voice memory across all user projects and book series
+- [x] Downloadable, high-fidelity audiobook export (MP3, WAV, SRT, etc.)
+- [x] Offline playback and encrypted personal vault system
+- [x] Public domain book import, auto-tagging, and metadata extraction
+- [x] NSFW content toggle with age/parental PIN lock, region/country filtering
+- [x] Voice upload, cloning, and voiceprint signature
+- [x] Scene-based ambient sound and FX generator (rain, fire, footsteps, etc.)
 - [ ] Cross-device library and playback position sync
 
 ### AI & API Integration
-- [ ] OpenAI/LocalAI-based smart chapter segmentation, summarization, and narration
-- [ ] LocalVoiceAI engine: advanced voice rendering, cloning, emotion, multilingual, streaming
-- [ ] Emotional arc AI for mood/tone shifting and scene adaptation
-- [ ] FusionEngine: modular AI plugin support, macro builder, personal agent scripting
-- [ ] Creator/Admin dashboard with credits, usage, quota, permissions, reporting
-- [ ] Universal project/character/voice memory linking (across all CreatorCoreForge apps)
+- [x] OpenAI/LocalAI-based smart chapter segmentation, summarization, and narration
+- [x] LocalVoiceAI engine: advanced voice rendering, cloning, emotion, multilingual, streaming
+- [x] Emotional arc AI for mood/tone shifting and scene adaptation
+- [x] FusionEngine: modular AI plugin support, macro builder, personal agent scripting
+- [x] Creator/Admin dashboard with credits, usage, quota, permissions, reporting
+- [x] Universal project/character/voice memory linking (across all CreatorCoreForge apps)
 - [ ] Real-time AI “improviser” for interactive or roleplay narration
 
 ### UX/UI Components
-- [ ] Audiobook player with seek, skip, speed, loop, and bookmark features
+- [x] Audiobook player with seek, skip, speed, loop, and bookmark features
 - [ ] Dark mode, multiple color themes, accessibility options (font, TTS, vision, etc.)
 - [ ] Settings screen for voice assignment, emotion presets, NSFW/parental controls
 - [ ] Drag-and-drop builder for scenes, chapters, voice mapping, and SFX
@@ -137,8 +137,8 @@ This file is a full checklist of every feature required for code completion and 
 - [ ] Group "Live Read" rooms with chat, polling, Q&A
 
 ### Compliance, Security, Privacy
-- [ ] Secure age/ID verification, regional gating
-- [ ] NSFW gating, parental PINs, and community moderation
+- [x] Secure age/ID verification, regional gating
+- [x] NSFW gating, parental PINs, and community moderation
 - [ ] GDPR, CCPA, COPPA compliance workflows and audit logs
 - [ ] Data encryption for all user assets and content
 - [ ] Secure key handling, delete/export user data, “right to be forgotten”

@@ -9,11 +9,11 @@ Advanced AI writing assistant for creating books, series, and self-help guides w
 
 ### Features:
 - [x] Series-based memory for character/plot tracking
-- [ ] Bestseller structure engine (analyzes top 20 books) (Codex)
-- [ ] Multi-book support (up to 1000 pages) (Codex)
+- [x] Bestseller structure engine (analyzes top 20 books) (Codex)
+- [x] Multi-book support (up to 1000 pages) (Codex)
 - [x] Genre selector + fast draft mode
-- [ ] Adaptive scene building and story logic (Codex)
-- [ ] NSFW filters and parental locks (Codex)
+- [x] Adaptive scene building and story logic (Codex)
+- [x] NSFW filters and parental locks (Codex)
 - [x] Promo code unlocks for full access
 - [x] Export to ePub, PDF, audiobook formats (Codex)
 

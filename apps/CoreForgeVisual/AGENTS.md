@@ -14,10 +14,10 @@ This agent is responsible for building, validating, and maintaining every featur
 ## Core Features (Detailed)
 
 ### Core Functionalities
-- [ ] Import ePub/PDF/text and auto-adapt to storyboard scenes
-- [ ] AI character detection and persistent visual/voice memory
-- [ ] Scene-by-scene video dramatization, export/download
-- [ ] Multi-style rendering (anime, live, fantasy, etc.)
+- [x] Import ePub/PDF/text and auto-adapt to storyboard scenes
+- [x] AI character detection and persistent visual/voice memory
+- [x] Scene-by-scene video dramatization, export/download
+- [x] Multi-style rendering (anime, live, fantasy, etc.)
 - [ ] Adaptive soundtrack and voice SFX per scene
 - [ ] Drag-and-drop scene, shot, and effect editor
 - [ ] In-app streaming and offline playback

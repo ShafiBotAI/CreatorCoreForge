@@ -6,9 +6,9 @@ Purpose: Next-gen AI tool for lead generation, prospecting, and B2B intelligence
 - [x] Real-time signal tracking + AI lead scoring
 
  - [x] Automated prospecting workflows
- - [x] Lead marketplace and monetization tools
- - [x] Multilingual and regional targeting
-- [ ] CRM integration and DF Signal API
+- [x] Lead marketplace and monetization tools
+- [x] Multilingual and regional targeting
+- [x] CRM integration and DF Signal API
 
 - [x] Automated prospecting workflows
 - [x] Lead marketplace and monetization tools
