@@ -10,6 +10,7 @@ vault system. It is written in SwiftUI and will expand to additional platforms.
 - **Offline download queue management**
 - **Import ePub, PDF, and TXT files** via `EbookImporter`
 - **Video sharing** to social networks
+- **NSFW content manager** to log and filter explicit scenes
 
 When Stealth Vault is enabled in the Settings screen, downloaded audio is
 stored in a hidden directory so it won't appear in the Files app.
