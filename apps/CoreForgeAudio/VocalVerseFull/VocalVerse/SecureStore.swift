@@ -24,4 +24,25 @@ struct SecureStore {
         #endif
         return nil
     }
+
+    /// Stores the provided API key in the Keychain under the given name.
+    /// If a value already exists it will be replaced.
+    @discardableResult
+    static func storeApiKey(_ key: String, named name: String) -> Bool {
+        #if canImport(Security)
+        let query: [String: Any] = [
+            kSecClass as String: kSecClassGenericPassword,
+            kSecAttrAccount as String: name
+        ]
+        SecItemDelete(query as CFDictionary)
+        let attributes: [String: Any] = [
+            kSecClass as String: kSecClassGenericPassword,
+            kSecAttrAccount as String: name,
+            kSecValueData as String: key.data(using: .utf8) ?? Data()
+        ]
+        return SecItemAdd(attributes as CFDictionary, nil) == errSecSuccess
+        #else
+        return false
+        #endif
+    }
 }
