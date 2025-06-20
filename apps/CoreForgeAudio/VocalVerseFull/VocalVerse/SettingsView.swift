@@ -1,5 +1,6 @@
 #if canImport(SwiftUI)
 import SwiftUI
+import CreatorCoreForge
 
 struct SettingsView: View {
     @AppStorage("selectedVoice") private var selectedVoice = "Default"
@@ -31,6 +32,7 @@ struct SettingsView: View {
                                 showPinPrompt = true
                             } else {
                                 nsfwEnabled = false
+                                NSFWSoundFXEngine.shared.stopAll()
                             }
                         }))
                 }
@@ -53,9 +55,15 @@ struct SettingsView: View {
     private func handlePinEntry() {
         if inputPIN == parentalPIN {
             nsfwEnabled = true
+            NSFWSoundFXEngine.shared.playNSFWScene(
+                basePattern: ["moan_soft", "thrust_gentle", "breath_female"],
+                intensity: .soft)
         } else if parentalPIN.isEmpty { // set new pin
             parentalPIN = inputPIN
             nsfwEnabled = true
+            NSFWSoundFXEngine.shared.playNSFWScene(
+                basePattern: ["moan_soft", "thrust_gentle", "breath_female"],
+                intensity: .soft)
         } else {
             showIncorrectAlert = true
         }

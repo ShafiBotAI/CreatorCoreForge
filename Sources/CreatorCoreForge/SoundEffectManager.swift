@@ -1,19 +1,24 @@
 #if canImport(Combine)
+
+import Combine
+
 import Foundation
 #if canImport(AVFoundation)
 import AVFoundation
 #endif
+
+
 import Combine
 
 #if canImport(AVFoundation)
+
 /// Manages ambient sound effects for immersive playback.
 public final class SoundEffectManager: ObservableObject {
     /// Shared singleton instance.
     public static let shared = SoundEffectManager()
 
-    /// Name of the currently playing ambience, or "None".
+    #if canImport(AVFoundation)
     @Published public private(set) var currentAmbience: String = "None"
-
     private var audioPlayers: [String: AVAudioPlayer] = [:]
     private let ambienceFiles: [String: String] = [
         "Rain": "rain_loop",
@@ -46,9 +51,7 @@ public final class SoundEffectManager: ObservableObject {
 
     /// Stop all currently playing ambience tracks.
     public func stopAllAmbience() {
-        for (_, player) in audioPlayers {
-            player.stop()
-        }
+        for (_, player) in audioPlayers { player.stop() }
         audioPlayers.removeAll()
         currentAmbience = "None"
     }
@@ -69,20 +72,14 @@ public final class SoundEffectManager: ObservableObject {
         reverb.wetDryMix = 50.0
         return reverb
     }
-}
-#else
-/// Minimal placeholder for platforms without AVFoundation.
-public final class SoundEffectManager: ObservableObject {
-    public static let shared = SoundEffectManager()
+    #else
     @Published public private(set) var currentAmbience: String = "None"
-
     public func playAmbience(named name: String) { currentAmbience = name }
     public func stopAllAmbience() { currentAmbience = "None" }
     public func preloadAmbiences() {}
     public func triggerReverbPreset(preset: ReverbStyle) {}
+    #endif
 }
-#endif
-
 #else
 import Foundation
 #if canImport(AVFoundation)
@@ -104,7 +101,7 @@ public final class SoundEffectManager {
 /// Supported reverb styles for ambience effects.
 public enum ReverbStyle: String, CaseIterable, Codable {
     case cathedral, cave, underwater, hall, dreamlike
-#if canImport(AVFoundation)
+    #if canImport(AVFoundation)
     var avPreset: AVAudioUnitReverbPreset {
         switch self {
         case .cathedral: return .cathedral
@@ -114,6 +111,5 @@ public enum ReverbStyle: String, CaseIterable, Codable {
         case .dreamlike: return .plate
         }
     }
-#endif
+    #endif
 }
-
