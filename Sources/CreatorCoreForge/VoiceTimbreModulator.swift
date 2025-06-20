@@ -40,6 +40,12 @@ public final class VoiceTimbreModulator: ObservableObject {
         return copy
     }
 
+    /// Convenience overload using a non-optional profile parameter.
+    public func applyTimbre(to buffer: AVAudioPCMBuffer,
+                            profile: TimbreProfile) -> AVAudioPCMBuffer {
+        applyTimbre(to: buffer, with: profile, intensity: nil)
+    }
+
     /// Update the active timbre profile.
     public func setProfile(_ profile: TimbreProfile) {
         activeProfile = profile
@@ -82,6 +88,12 @@ public final class VoiceTimbreModulator {
             return audioBuffer
         }
         return copy
+    }
+
+    /// Convenience overload using a non-optional profile parameter.
+    public func applyTimbre(to buffer: AVAudioPCMBuffer,
+                            profile: TimbreProfile) -> AVAudioPCMBuffer {
+        applyTimbre(to: buffer, with: profile, intensity: nil)
     }
 #else
     public func applyTimbre(to audioBuffer: Any,
