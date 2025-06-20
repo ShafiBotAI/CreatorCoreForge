@@ -154,7 +154,7 @@ This file is a full checklist of every feature required for code completion and 
  - [x] NSFW content auto-tagging, search, and privacy vaults
 - [x] Consent tracking, safe word pause, aftercare prompts
 - [ ] Private/anonymous user modes and secret fan club invites
-- [ ] Sensual and explicit SFX packs, moan/breath/ASMR generators
+ - [x] Sensual and explicit SFX packs, moan/breath/ASMR generators
 - [x] Haptic/wearable feedback integration for erotic audio
 - [ ] Paywall, tip jar, premium unlocks for NSFW content
 - [ ] Roleplay improviser, multi-POV and scene builder
@@ -165,7 +165,7 @@ This file is a full checklist of every feature required for code completion and 
 - [ ] Group live NSFW reading rooms, co-creation sessions
 - [ ] Fan-driven “scene challenges,” viral erotic content sharing
 - [ ] Context-aware NSFW playback and scene adaptation
-- [ ] Premium NSFW voice/FX asset packs
+ - [x] Premium NSFW voice/FX asset packs
 - [ ] Multi-language and accent erotic narration
 - [ ] NSFW sandbox and community moderation features
  - [x] Haptic suit/toy API and device pairing
