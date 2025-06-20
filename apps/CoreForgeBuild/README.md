@@ -47,8 +47,8 @@ This agent is responsible for building, validating, and maintaining all features
 
 ---
 
-## Testing Requirements
-- [ ] Unit/integration tests (export, UI, logic)
+-## Testing Requirements
+- [x] Unit/integration tests (export, UI, logic)
 - [ ] UI/UX and drag-and-drop flows (all platforms)
 - [ ] Security/privacy, role/access, template/plugin import
 - [ ] Performance (large projects, real-time edits)

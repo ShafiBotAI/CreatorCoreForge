@@ -52,7 +52,7 @@ This agent is responsible for building, validating, and maintaining every featur
 ---
 
 ## Testing Requirements
-- [ ] Unit/integration tests (AI writing, memory, import/export)
+- [x] Unit/integration tests (AI writing, memory, import/export)
 - [ ] UI/UX tests (all platforms)
 - [ ] Accessibility (screen readers, vision)
 - [ ] Performance (large docs, fast AI, low-latency)

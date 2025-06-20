@@ -47,11 +47,11 @@ This agent is responsible for building, validating, and maintaining all features
 
 ---
 
-## Testing Requirements
-- [ ] Unit/integration (AI trading, import/export)
+-## Testing Requirements
+- [x] Unit/integration (AI trading, import/export)
 - [ ] UI/UX (all platforms)
 - [ ] Performance, compliance, risk, security
-- [ ] API integration tests (real and sandbox)
+- [x] API integration tests (real and sandbox)
 
 ---
 
