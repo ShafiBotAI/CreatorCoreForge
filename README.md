@@ -29,6 +29,7 @@
   - Voice cloning, multilingual support, emotion arcs
   - NSFW toggle, narrator marketplace, book upload
   - Offline TTS, phoneme control, lipsync, stealth vault
+  - AIEmotionEngine for dynamic emotion cues
   - GPT-based chapter segmentation and ElevenLabs voice streaming
   - Downloadable audiobooks with bookmarkable playback
   - Audiobook export engine (MP3/WAV with zip packaging via `AudiobookCompiler`)
