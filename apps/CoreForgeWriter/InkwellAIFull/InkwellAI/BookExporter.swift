@@ -23,6 +23,9 @@ struct BookExporter {
     /// Generates a spoken-word audiobook and writes it to the given URL.
     /// This demo uses AVSpeechSynthesizer to produce the audio sequentially.
     static func exportAudiobook(text: String, to url: URL, voice: AVSpeechSynthesisVoice? = nil, rate: Float = AVSpeechUtteranceDefaultSpeechRate) throws -> URL {
+        let mapper = CharacterVoiceMapper()
+        _ = mapper.assignVoices(to: text)
+
         let utterance = AVSpeechUtterance(string: text)
         utterance.voice = voice
         utterance.rate = rate
@@ -36,6 +39,8 @@ struct BookExporter {
     }
     #else
     static func exportAudiobook(text: String, to url: URL, voice: Any? = nil, rate: Float = 0) throws -> URL {
+        let mapper = CharacterVoiceMapper()
+        _ = mapper.assignVoices(to: text)
         try text.write(to: url, atomically: true, encoding: .utf8)
         return url
     }
