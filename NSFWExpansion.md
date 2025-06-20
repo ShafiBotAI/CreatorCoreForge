@@ -14,6 +14,7 @@ The CreatorCoreForge ecosystem offers optional NSFW capabilities across apps. Ph
 - Live NSFW collaboration rooms with invite-only access
 - Haptic device integration for immersive experiences
 - NSFW analytics including mood heatmaps
+- `NSFWMoodHeatmap` module logs scene intensity levels and normalizes them for analytics
 - Premium unlocks, tipping, and pay-per-minute billing
 - Decoy or stealth modes for privacy
 
