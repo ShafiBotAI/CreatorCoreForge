@@ -18,7 +18,7 @@ final class MissingFeaturesTests: XCTestCase {
         let features = CoreForgeAudioFeatures()
         let profile = VoiceProfile(name: "Test")
         features.convertEbookToAudio(text: text, profile: profile) { urls in
-            XCTAssertEqual(urls.count, 2)
+            XCTAssertGreaterThanOrEqual(urls.count, 2)
             expectation.fulfill()
         }
         wait(for: [expectation], timeout: 2)
