@@ -29,4 +29,4 @@ Purpose: Hit songwriting engine with AI beat matching, hooks, and lyric generati
 - [ ] Generate full `.pbxproj` project
 - [ ] Provide App Store assets and launch screens
 - [ ] Finalize production UI components
-- [ ] Build `.dmg` and `.exe` installers
+- [x] Build `.dmg` and `.exe` installers

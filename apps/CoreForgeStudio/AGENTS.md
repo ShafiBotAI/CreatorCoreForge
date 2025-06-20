@@ -28,7 +28,7 @@ Purpose: Converts full books into dramatized AI-generated cinematic videos
 - [ ] Generate full `.pbxproj` project
 - [ ] Provide App Store assets and launch screens
 - [ ] Finalize production UI components
-- [ ] Build `.dmg` and `.exe` installers
+- [x] Build `.dmg` and `.exe` installers
 
 
 ### Phase 4 Features

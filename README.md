@@ -295,5 +295,12 @@ The following components are planned across all apps but are still works in prog
 - [ ] Programmatically generated `.pbxproj` project files
 - [ ] App Store assets (`AppIcon.appiconset`, LaunchScreens)
 - [ ] Final production UI polish
-- [ ] `.dmg` and `.exe` installers following `.ipa` builds
+- [x] `.dmg` and `.exe` installers following `.ipa` builds
+
+## Desktop Build Script
+
+Cross-platform builds can be generated using `electron-builder`. Run
+`./scripts/build_desktop.sh` on macOS or Windows to produce `.dmg` and
+`.exe` installers for apps that include a `Desktop` project. See
+`docs/CrossPlatformBuild.md` for details.
 

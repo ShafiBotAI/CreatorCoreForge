@@ -16,7 +16,7 @@ This agent is responsible for building, validating, and maintaining all features
 ### Core Functionalities
 - [ ] Drag-and-drop UI/logic builder (blocks, templates, plugins)
 - [ ] App templates: browse/import/export, community marketplace
-- [ ] Full cross-platform export: .ipa, .apk, .exe, .dmg, web bundle
+- [x] Full cross-platform export: .ipa, .apk, .exe, .dmg, web bundle
 - [ ] App store asset generator (icons, screenshots, launch screens)
 - [ ] Subscription, in-app credits, affiliate/white label options
 - [ ] Team collaboration, roles, access controls, branded exports
