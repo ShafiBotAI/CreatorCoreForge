@@ -1,5 +1,6 @@
 #if canImport(SwiftUI)
 import SwiftUI
+import CreatorCoreForge
 
 struct ContentView: View {
     @State private var text = ""
@@ -160,6 +161,10 @@ struct ContentView: View {
             let voice = Voice(id: map.assignedVoice.lowercased(), name: map.assignedVoice)
             CharacterVoiceMemory.shared.assignVoice(voice, to: map.name)
         }
+
+        // Demo quirk playback for the main narrator
+        CharacterQuirkEngine.shared.assignQuirks(to: "Narrator", quirks: [.sigh, .whisper])
+        CharacterQuirkEngine.shared.triggerQuirks(for: "Narrator")
 
         // Open the first recording in the vault when available
         if let first = recordings.first,
