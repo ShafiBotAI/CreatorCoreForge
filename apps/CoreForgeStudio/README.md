@@ -6,7 +6,7 @@ utilities.
 
 ## Key Features
 - **Scene-by-scene dramatization**
-- **Voice casting engine** for characters
+ - **Voice casting engine** with `CharacterVoiceMapper` integration
 - **Book-to-video rendering** with style presets
 - **Share rendered videos** to social media
 

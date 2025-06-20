@@ -30,6 +30,7 @@ struct ContentView: View {
     }
 
     private let voices = VoiceConfig.voices.map { $0.name }
+    private let voiceMapper = CharacterVoiceMapper()
 
     var body: some View {
         NavigationView {
@@ -152,6 +153,14 @@ struct ContentView: View {
     }
 
     private func playAudio() {
+        // Map character voices from the current text
+        let mappings = voiceMapper.assignVoices(to: text)
+        for map in mappings {
+            VoiceConfig.addVoice(id: map.assignedVoice.lowercased(), name: map.assignedVoice)
+            let voice = Voice(id: map.assignedVoice.lowercased(), name: map.assignedVoice)
+            CharacterVoiceMemory.shared.assignVoice(voice, to: map.name)
+        }
+
         // Open the first recording in the vault when available
         if let first = recordings.first,
            let url = vault.retrieve(named: first) {
