@@ -5,6 +5,7 @@ vault system. It is written in SwiftUI and will expand to additional platforms.
 
 ## Key Features
  - **Voice assignment** for characters via `CharacterVoiceMapper`
+ - **Voice variant creation** with `VoiceDNAForker`
 - **Dark mode** and theme toggles
 - **Offline audio storage** with stealth vault option
 - **Offline download queue management**
