@@ -10,6 +10,7 @@ vault system. It is written in SwiftUI and will expand to additional platforms.
 - **Offline download queue management**
 - **Import ePub, PDF, and TXT files** via `EbookImporter`
 - **Video sharing** to social networks
+- **Audiobook compilation** with `AudiobookCompiler` for zipped exports
 
 When Stealth Vault is enabled in the Settings screen, downloaded audio is
 stored in a hidden directory so it won't appear in the Files app.
@@ -39,3 +40,5 @@ that Xcode archives can pass initial App Store validation. Permissions for
 microphone access and photo library usage are defined in `Info.plist`, and API
 keys can be securely stored using `SecureStore.storeApiKey` which writes the
 value to the iOS Keychain.
+An `AppStoreAssets` directory provides placeholders for screenshots and
+additional artwork required by the store.
