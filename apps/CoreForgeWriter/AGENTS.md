@@ -68,7 +68,7 @@ Advanced AI writing assistant for creating books, series, and self-help guides w
 - [ ] Add writing mood tuner (slow burn, fast-paced, dark, comedic)
 - [ ] Build AI Sandbox co-author tool
 - [ ] Add auto-expand subplots + side character arcs
-- [ ] Auto-generate blurb, synopsis, back cover copy
+- [x] Auto-generate blurb, synopsis, back cover copy
 - [ ] Add Royalty-Free Illustration bundle creator
 - [ ] Embed Booktok Trailer Generator + auto-caption tool
 - [ ] Integrate reader relatability + pacing metrics
