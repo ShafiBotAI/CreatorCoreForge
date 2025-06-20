@@ -32,4 +32,20 @@ final class NSFWContentManagerTests: XCTestCase {
         manager.setMode(.medium)
         XCTAssertEqual(manager.contentMode, .medium)
     }
+
+    func testConsentAndPause() {
+        let manager = NSFWContentManager.shared
+        manager.logConsent(userID: "u1", consent: true)
+        XCTAssertNotNil(ConsentTracker.shared.lastConsent(for: "u1"))
+        ConsentTracker.shared.safeWord = "pause"
+        XCTAssertTrue(manager.shouldPause(for: "please PAUSE now"))
+    }
+
+    func testAftercarePrompt() {
+        let manager = NSFWContentManager.shared
+        let first = manager.nextAftercarePrompt()
+        let second = manager.nextAftercarePrompt()
+        XCTAssertNotEqual(first, "")
+        XCTAssertNotEqual(second, "")
+    }
 }

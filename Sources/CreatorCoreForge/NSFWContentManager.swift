@@ -9,6 +9,14 @@ import Combine
 public final class NSFWContentManager: ObservableObject {
     public static let shared = NSFWContentManager()
 
+    private let consentTracker = ConsentTracker.shared
+    private var aftercareIndex = 0
+    public var aftercarePrompts: [String] = [
+        "Take a moment to breathe and hydrate.",
+        "Remember to respect boundaries and communicate.",
+        "Consider a gentle cool-down or aftercare routine."
+    ]
+
     @Published public var unlocked: Bool = false
     @Published public var nsfwSceneLog: [NSFWScene] = []
     @Published public var contentIntensity: NSFWIntensity = .softcore
@@ -33,7 +41,23 @@ public final class NSFWContentManager: ObservableObject {
     public func unlock(with promoCode: String) {
         if promoCode.lowercased() == "creatoraccess" {
             unlocked = true
+            consentTracker.logConsent(userID: "local", consent: true)
         }
+    }
+
+    public func logConsent(userID: String, consent: Bool) {
+        consentTracker.logConsent(userID: userID, consent: consent)
+    }
+
+    public func shouldPause(for text: String) -> Bool {
+        consentTracker.containsSafeWord(text)
+    }
+
+    public func nextAftercarePrompt() -> String {
+        guard !aftercarePrompts.isEmpty else { return "" }
+        let prompt = aftercarePrompts[aftercareIndex % aftercarePrompts.count]
+        aftercareIndex += 1
+        return prompt
     }
 
     public func logScene(chapter: String, label: String, intensity: NSFWIntensity) {
@@ -76,6 +100,14 @@ public final class NSFWContentManager: ObservableObject {
 public final class NSFWContentManager {
     public static let shared = NSFWContentManager()
 
+    private let consentTracker = ConsentTracker.shared
+    private var aftercareIndex = 0
+    public var aftercarePrompts: [String] = [
+        "Take a moment to breathe and hydrate.",
+        "Remember to respect boundaries and communicate.",
+        "Consider a gentle cool-down or aftercare routine."
+    ]
+
     public var unlocked: Bool = false
     public var nsfwSceneLog: [NSFWScene] = []
     public var contentIntensity: NSFWIntensity = .softcore
@@ -100,7 +132,23 @@ public final class NSFWContentManager {
     public func unlock(with promoCode: String) {
         if promoCode.lowercased() == "creatoraccess" {
             unlocked = true
+            consentTracker.logConsent(userID: "local", consent: true)
         }
+    }
+
+    public func logConsent(userID: String, consent: Bool) {
+        consentTracker.logConsent(userID: userID, consent: consent)
+    }
+
+    public func shouldPause(for text: String) -> Bool {
+        consentTracker.containsSafeWord(text)
+    }
+
+    public func nextAftercarePrompt() -> String {
+        guard !aftercarePrompts.isEmpty else { return "" }
+        let prompt = aftercarePrompts[aftercareIndex % aftercarePrompts.count]
+        aftercareIndex += 1
+        return prompt
     }
 
     public func logScene(chapter: String, label: String, intensity: NSFWIntensity) {
