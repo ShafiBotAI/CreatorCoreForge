@@ -1,11 +1,14 @@
+import Foundation
 #if canImport(SwiftUI)
 import SwiftUI
+#endif
 #if canImport(FirebaseCore)
 import FirebaseCore
 #endif
 
+#if canImport(SwiftUI)
 @main
-struct VocalVerseApp: App {
+struct CoreForgeVisualApp: App {
     init() {
 #if canImport(FirebaseCore)
         FirebaseApp.configure()
@@ -19,5 +22,5 @@ struct VocalVerseApp: App {
     }
 }
 #else
-struct VocalVerseApp {}
+struct CoreForgeVisualApp {}
 #endif
