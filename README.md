@@ -233,6 +233,7 @@ See `/agents.md` in each folder for:
 - Feature-level tasks
 - Build flags (✅ = done, 🟨 = in dev, 🟥 = not started)
 - Milestone goals (Phase 1 to Phase 7)
+- Phase 8 tasks are tracked in `docs/PHASE_EIGHT.md`
 
 > If you’re a new developer joining this project, start with `CoreForge Audio` and `CoreForge Visual`.
 
