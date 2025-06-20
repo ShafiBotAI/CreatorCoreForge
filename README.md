@@ -182,6 +182,7 @@
 - **PluginBuilder:** Generates basic plugin templates for new dashboard modules
 - **AIStudioMode:** Adds a studio prefix to prompts when testing features
 - **GenesisModeEngine:** Produces variant ideas for apps and content
+- **VideoShareManager:** Presents share sheets for posting generated videos
 
 ---
 
