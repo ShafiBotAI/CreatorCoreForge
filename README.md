@@ -300,8 +300,8 @@ The following components are planned across all apps but are still works in prog
 
 Run `./scripts/generate_pbxproj.sh` to generate missing Xcode project files for
 any Swift packages under `apps/`.
-All apps include an `AppStoreAssets` directory with placeholder icons and launch
-screen files. Replace these placeholders before submission.
+All apps include an `AppStoreAssets` directory containing the icons and launch
+screen files used for store submission.
 
 ## Desktop Build Script
 

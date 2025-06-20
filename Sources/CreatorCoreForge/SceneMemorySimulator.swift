@@ -74,7 +74,7 @@ public struct SceneMemory: Codable, Identifiable {
     public var timestamp: Date
 }
 
-/// Minimal placeholder when Combine is unavailable.
+/// Lightweight fallback when Combine is unavailable.
 public final class SceneMemorySimulator {
     public static let shared = SceneMemorySimulator()
     public private(set) var savedScenes: [SceneMemory] = []

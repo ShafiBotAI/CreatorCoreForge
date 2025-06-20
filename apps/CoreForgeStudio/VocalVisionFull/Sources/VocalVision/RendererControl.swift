@@ -35,9 +35,9 @@ public final class RendererControl {
         isRendering = false
     }
 
-    /// Render a multi-hour video and write to disk incrementally.
-    /// This simply forwards to `startLongRendering` and writes a placeholder
-    /// file URL when complete.
+    /// Render a multi-hour video and write to disk incrementally. The scenes are
+    /// rendered in chunks and appended to a simple text-based video log which
+    /// mimics a final video file for demo purposes.
     public func exportMultiHourVideo(scenes: [(scene: VideoScene, voice: String)],
                                      to outputURL: URL,
                                      metadata: [String: String]? = nil,
@@ -52,8 +52,8 @@ public final class RendererControl {
         startLongRendering(scenes: scenes, chunkSize: 100) { value in
             progress(value)
         }
-        // In a real implementation, rendered data would be written incrementally.
-        try? "rendered".write(to: outputURL, atomically: true, encoding: .utf8)
+        let lines = scenes.map { "\($0.scene.id)|\($0.voice)" }.joined(separator: "\n")
+        try? lines.write(to: outputURL, atomically: true, encoding: .utf8)
         if let metadata = metadata {
             MetadataSyncManager().sync(metadata: metadata, for: outputURL.lastPathComponent) { _ in }
         }

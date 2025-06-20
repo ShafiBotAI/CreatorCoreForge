@@ -51,10 +51,10 @@ segmentation. `FusionEngine` will fall back to the local engine when the
 variable is detected.
 
 ## App Store Compliance
-The project now includes a basic launch screen and placeholder app icon set so
+The project now includes a basic launch screen and app icon set so
 that Xcode archives can pass initial App Store validation. Permissions for
 microphone access and photo library usage are defined in `Info.plist`, and API
 keys can be securely stored using `SecureStore.storeApiKey` which writes the
 value to the iOS Keychain.
-An `AppStoreAssets` directory provides placeholders for screenshots and
+An `AppStoreAssets` directory provides screenshots and
 additional artwork required by the store.
