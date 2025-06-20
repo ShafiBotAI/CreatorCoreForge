@@ -9,6 +9,7 @@ import AVFoundation
 
 
 
+
 /// Manages short sound effects for the FusionEngine apps.
 /// Provides async fade-out control when stopping effects.
 /// Simple manager for playing short audio clips. ObservableObject is avoided
@@ -129,11 +130,11 @@ public final class SoundEffectManager {
 // Example FX file names to be used:
 // - "wind_gust", "rain_loop", "heartbeat_slow", "cave_echo", "footstep_gravel", "battle_distant", "crowd_chatter"
 // These can be tied to tagged scenes or characters using the EnvironmentLayer engine.
-=======
 
 import Combine
 
 #if canImport(AVFoundation)
+
 
 /// Manages ambient sound effects for immersive playback.
 public final class SoundEffectManager: ObservableObject {
