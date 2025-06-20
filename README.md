@@ -31,7 +31,7 @@
   - Offline TTS, phoneme control, lipsync, stealth vault
   - GPT-based chapter segmentation and ElevenLabs voice streaming
   - Downloadable audiobooks with bookmarkable playback
-  - Audiobook export engine (MP3/WAV with zip packaging)
+  - Audiobook export engine (MP3/WAV with zip packaging via `AudiobookCompiler`)
 - **Build Status:** Electron PC build in testing
 
 ---
