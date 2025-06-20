@@ -36,7 +36,7 @@ Advanced AI writing assistant for creating books, series, and self-help guides w
 ### Phase 4 Features
 #### Advanced Writing Modes
 - [ ] Scene temperature dial for delivery mood (cold/neutral/hot)
-- [ ] AI trope detector and enhancer/breaker
+ - [x] AI trope detector and enhancer/breaker
 - [ ] Meta writing mode (4th-wall awareness)
 - [ ] Book-to-song interlude generator
 
