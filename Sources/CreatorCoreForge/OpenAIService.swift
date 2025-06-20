@@ -42,8 +42,7 @@ public final class OpenAIService {
 
     /// Basic text completion using the chat endpoint.
     public func sendPrompt(_ prompt: String, completion: @escaping (Result<String, Error>) -> Void) {
-        var attempt = 0
-        func makeRequest() {
+        @Sendable func makeRequest(attempt: Int) {
             var request = URLRequest(url: baseURL.appendingPathComponent("chat/completions"))
             request.httpMethod = "POST"
             request.addValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
@@ -57,8 +56,7 @@ public final class OpenAIService {
             let task = self.session.dataTask(with: request) { data, response, error in
                 if let error = error {
                     if attempt < self.retries {
-                        attempt += 1
-                        makeRequest()
+                        makeRequest(attempt: attempt + 1)
                     } else {
                         completion(.failure(error))
                     }
@@ -77,7 +75,7 @@ public final class OpenAIService {
             }
             task.resume()
         }
-        makeRequest()
+        makeRequest(attempt: 0)
     }
 
     /// Retrieve an embedding vector for a piece of text.
