@@ -22,6 +22,14 @@ vault system. It is written in SwiftUI and will expand to additional platforms.
 When Stealth Vault is enabled in the Settings screen, downloaded audio is
 stored in a hidden directory so it won't appear in the Files app.
 
+## Core Library Integration
+
+CoreForge Audio reuses modules from the shared `CreatorCoreForge` package. If
+you notice missing playback or export features, ensure the package is linked in
+Xcode and reference `Sources/CreatorCoreForge/CoreForgeAudio_MissingFeatures.swift`
+for additional helper functions. These utilities provide an offline download
+queue and an eBook–to–audio converter that complement the app's own classes.
+
 ## Building (iOS)
 1. Open `VocalVerseFull/VocalVerse.xcodeproj` in Xcode.
 2. If the **VocalVerse** scheme is missing, create a new scheme that targets the
