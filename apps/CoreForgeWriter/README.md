@@ -11,6 +11,7 @@ CoreForge Writer is a writing assistant focused on book creation. The iOS client
 - **Automatic character voice mapping** with `CharacterVoiceMapper`
 - **Bestseller structure engine** for common outlines
 - **Multi-book generation** supporting large series
+- **Import ePub, PDF, and TXT files** via `EbookImporter`
 - **NSFW toggle with parental PIN lock**
 
 ## Building (iOS)
