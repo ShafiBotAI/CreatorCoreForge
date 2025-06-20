@@ -173,9 +173,9 @@ This file is a full checklist of every feature required for code completion and 
 ---
 
 ## Global Missing/Launch Items
-- [ ] Integrate and test shared `autoUpdater.swift`
-- [ ] Generate and verify all `.pbxproj`, `.xcodeproj`, and multi-platform project files
-- [ ] Provide, review, and test App Store/Google Play/Windows/MacOS/Web launch assets and screens
+- [x] Integrate and test shared `autoUpdater.swift`
+- [x] Generate and verify all `.pbxproj`, `.xcodeproj`, and multi-platform project files
+- [x] Provide, review, and test App Store/Google Play/Windows/MacOS/Web launch assets and screens
 - [ ] Finalize all production UI, polish, and accessibility passes
 - [x] Build, notarize, and test `.dmg` (Mac), `.exe` (PC) installers
 - [ ] Automated onboarding, tutorial, and help flows for all user tiers

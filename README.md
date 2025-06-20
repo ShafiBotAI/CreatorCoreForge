@@ -292,10 +292,15 @@ For offline development you can set `USE_LOCAL_AI=1` in the environment to enabl
 The following components are planned across all apps but are still works in progress:
 
 - [x] Shared `AutoUpdater.swift` module
-- [ ] Programmatically generated `.pbxproj` project files
-- [ ] App Store assets (`AppIcon.appiconset`, LaunchScreens)
+- [x] Programmatically generated `.pbxproj` project files
+- [x] App Store assets (`AppIcon.appiconset`, LaunchScreens)
 - [ ] Final production UI polish
 - [x] `.dmg` and `.exe` installers following `.ipa` builds
+
+Run `./scripts/generate_pbxproj.sh` to generate missing Xcode project files for
+any Swift packages under `apps/`.
+All apps include an `AppStoreAssets` directory with placeholder icons and launch
+screen files. Replace these placeholders before submission.
 
 ## Desktop Build Script
 
