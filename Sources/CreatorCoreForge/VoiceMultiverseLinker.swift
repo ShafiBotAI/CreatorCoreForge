@@ -30,6 +30,11 @@ public final class VoiceMultiverseLinker: ObservableObject {
         links.append(link)
     }
 
+    /// Convenience helper to link voices using default context.
+    public func linkVoices(primaryID: String, secondaryID: String) {
+        linkVoices(source: primaryID, linked: secondaryID, project: "global", reason: "direct link")
+    }
+
     /// Return all links associated with the given voice ID as source or target.
     public func getLinks(for voiceID: String) -> [VoiceLink] {
         links.filter { $0.sourceVoiceID == voiceID || $0.linkedVoiceID == voiceID }
@@ -70,6 +75,11 @@ public final class VoiceMultiverseLinker {
     public func linkVoices(source: String, linked: String, project: String, reason: String) {
         let link = VoiceLink(sourceVoiceID: source, linkedVoiceID: linked, projectContext: project, reason: reason)
         links.append(link)
+    }
+
+    /// Convenience helper to link voices using default context.
+    public func linkVoices(primaryID: String, secondaryID: String) {
+        linkVoices(source: primaryID, linked: secondaryID, project: "global", reason: "direct link")
     }
 
     public func getLinks(for voiceID: String) -> [VoiceLink] {

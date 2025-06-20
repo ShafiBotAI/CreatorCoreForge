@@ -57,6 +57,11 @@ public final class VoiceDNAForge {
         dnaRegistry[characterID]
     }
 
+    /// Returns the voice profile for a given character if available.
+    public func getVoiceProfile(for characterID: String) -> VoiceDNA? {
+        getDNA(for: characterID)
+    }
+
     public func linkCharacters(primaryID: String, linkedID: String) {
         guard var primaryDNA = dnaRegistry[primaryID] else { return }
         if !primaryDNA.linkedCharacters.contains(linkedID) {
