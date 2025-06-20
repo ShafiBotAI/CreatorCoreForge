@@ -1,0 +1,66 @@
+{
+  "tierFeatures": {
+    "Free": [
+      "Core functionality across apps",
+      "Limited export options",
+      "Access to community templates"
+    ],
+    "Creator": [
+      "Advanced AI tools",
+      "Voice cloning and adaptive scene builders",
+      "Personal dashboards and statistics"
+    ],
+    "Enterprise": [
+      "Team collaboration and permissions",
+      "White label deployment",
+      "Analytics and compliance reports"
+    ],
+    "NSFW": [
+      "Explicit content toggle",
+      "Consent logs and vaults",
+      "Premium NSFW packs"
+    ]
+  },
+  "phase8Features": {
+    "CoreForgeAudio": [
+      "Real-time emotion adaptation",
+      "Voice DNA visualization",
+      "Quantum AI mode"
+    ],
+    "CoreForgeVisual": [
+      "Adaptive scene completion",
+      "AR/VR playback",
+      "Quantum reality switcher"
+    ],
+    "CoreForgeWriter": [
+      "Memory pinning",
+      "Quantum-choice plotting",
+      "Community marketplace"
+    ],
+    "CoreForgeMarket": [
+      "Hybrid quantum trading engine",
+      "Team trading and leaderboards",
+      "Bot marketplace"
+    ],
+    "CoreForgeBuild": [
+      "Figma-driven UI builder",
+      "Auto bundler for all platforms",
+      "Debugging assistant"
+    ],
+    "CoreForgeStudio": [
+      "Real-time ensemble acting",
+      "Quantum edit mode",
+      "Template monetization"
+    ],
+    "CoreForgeMusic": [
+      "AI vocal production",
+      "Commercial export tools",
+      "Voice cloning"
+    ],
+    "CoreForgeLeads": [
+      "Marketplace credit system",
+      "Global lead exchange",
+      "Advanced scoring"
+    ]
+  }
+}
