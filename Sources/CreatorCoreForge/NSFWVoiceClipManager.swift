@@ -32,6 +32,20 @@ public final class NSFWManager {
         return nsfwVault
     }
 
+    /// Search vault clips by matching character name or text.
+    public func searchClips(keyword: String) -> [VoiceClip] {
+        let lower = keyword.lowercased()
+        return nsfwVault.filter { clip in
+            clip.character.lowercased().contains(lower) ||
+                clip.text.lowercased().contains(lower)
+        }
+    }
+
+    /// Remove all stored NSFW clips.
+    public func clearVault() {
+        nsfwVault.removeAll()
+    }
+
     /// Enable exporting of NSFW clips when the correct password is provided.
     @discardableResult
     public func enableStealthExport(password: String) -> Bool {
