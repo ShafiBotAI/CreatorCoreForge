@@ -17,6 +17,7 @@ public struct CoreForgeAudioFeatures {
         let voiceAI = LocalVoiceAI()
         var urls: [URL] = []
         let group = DispatchGroup()
+        let syncQueue = DispatchQueue(label: "audio.urls.queue")
         for (index, chapter) in chapters.enumerated() {
             group.enter()
             voiceAI.synthesize(text: chapter, with: profile) { result in
@@ -24,7 +25,7 @@ public struct CoreForgeAudioFeatures {
                     let url = FileManager.default.temporaryDirectory
                         .appendingPathComponent("chapter\(index).wav")
                     try? data.write(to: url)
-                    urls.append(url)
+                    syncQueue.sync { urls.append(url) }
                 }
                 group.leave()
             }
@@ -64,7 +65,7 @@ public struct CoreForgeAudioFeatures {
                     chapters.append(chunk)
                 }
             }
-            last = mRange.lowerBound
+            last = mRange.upperBound
         }
         let tail = String(text[last...])
         if !tail.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
