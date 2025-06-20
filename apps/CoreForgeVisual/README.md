@@ -12,6 +12,7 @@ CoreForge Visual is a cross-platform tool for generating video and story content
 - **Virality Engine** with a publishing scheduler
 - **Lore compression tool** for summarizing long passages
 - **Character stat tracker** to manage RPG-style attributes
+- **Import ePub, PDF, and TXT files** via `EbookImporter`
 
 ## Building (iOS)
 1. Open `LoreForgeAI.xcodeproj` found in `LoreForgeAIFull`.

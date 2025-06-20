@@ -8,6 +8,7 @@ utilities.
 - **Scene-by-scene dramatization**
 - **Voice casting engine** for characters
 - **Book-to-video rendering** with style presets
+- **Import ePub, PDF, and TXT books** via `EbookImporter`
 - **Share rendered videos** to social media
 
 ## Building (Swift Package)

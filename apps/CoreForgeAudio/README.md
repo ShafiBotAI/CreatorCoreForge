@@ -8,6 +8,7 @@ vault system. It is written in SwiftUI and will expand to additional platforms.
 - **Dark mode** and theme toggles
 - **Offline audio storage** with stealth vault option
 - **Offline download queue management**
+- **Import ePub, PDF, and TXT files** via `EbookImporter`
 - **Video sharing** to social networks
 
 When Stealth Vault is enabled in the Settings screen, downloaded audio is
