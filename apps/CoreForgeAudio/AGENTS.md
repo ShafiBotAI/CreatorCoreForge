@@ -152,7 +152,7 @@ This file is a full checklist of every feature required for code completion and 
 - [ ] Age/ID verification for all explicit content
 - [ ] NSFW content toggle and region filtering
 - [ ] NSFW content auto-tagging, search, and privacy vaults
-- [ ] Consent tracking, safe word pause, aftercare prompts
+- [x] Consent tracking, safe word pause, aftercare prompts
 - [ ] Private/anonymous user modes and secret fan club invites
 - [ ] Sensual and explicit SFX packs, moan/breath/ASMR generators
 - [ ] Haptic/wearable feedback integration for erotic audio
