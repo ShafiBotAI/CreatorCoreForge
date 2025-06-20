@@ -9,9 +9,16 @@ let package = Package(
     products: [
         .library(name: "DataForgeAI", targets: ["DataForgeAI"])
     ],
-    dependencies: [],
+    dependencies: [
+        .package(name: "CreatorCoreForge", path: "../../..")
+    ],
     targets: [
-        .target(name: "DataForgeAI"),
+        .target(
+            name: "DataForgeAI",
+            dependencies: [
+                .product(name: "CreatorCoreForge", package: "CreatorCoreForge")
+            ]
+        ),
         .testTarget(name: "DataForgeAITests", dependencies: ["DataForgeAI"])
     ]
 )

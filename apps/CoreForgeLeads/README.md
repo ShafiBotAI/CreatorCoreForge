@@ -20,3 +20,6 @@ for scoring leads and tracking signals.
 When `USE_LOCAL_AI=1` is set in the environment, DataForge AI will use
 `LocalAIEnginePro` through the shared `FusionEngine` for all AI prompts. This
 allows lead generation features to work without network connectivity.
+
+## Shared Module
+DataForgeAI depends on the **CreatorCoreForge** Swift package for utilities like `AutoUpdater`. Ensure the package path `../../..` is included when building.

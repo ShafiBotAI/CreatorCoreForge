@@ -17,3 +17,6 @@ utilities.
 ## Offline Mode
 CoreForge Studio uses the shared `FusionEngine` for AI tasks. Define
 `USE_LOCAL_AI=1` to force `LocalAIEnginePro` and work without OpenAI access.
+
+## Shared Module
+VocalVision uses the shared **CreatorCoreForge** package for common services including `AutoUpdater`. Add the dependency via the local path when compiling.
