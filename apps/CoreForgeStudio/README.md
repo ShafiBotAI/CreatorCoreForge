@@ -48,8 +48,8 @@ This agent is responsible for building, validating, and maintaining all features
 
 ---
 
-## Testing Requirements
-- [ ] Unit/integration (editing, macro, import/export)
+-## Testing Requirements
+- [x] Unit/integration (editing, macro, import/export)
 - [ ] UI/UX, accessibility (all platforms)
 - [ ] Security, privacy, NSFW
 - [ ] Performance (large projects, high-res)
@@ -79,9 +79,9 @@ This agent is responsible for building, validating, and maintaining all features
 
 ---
 
-## NSFW Features & Expansion (If Enabled)
+-## NSFW Features & Expansion (If Enabled)
 - [ ] Age-verified NSFW editing suite, privacy controls
-- [ ] Erotic scene acting, sound/visual privacy, haptic integration
+- [x] Erotic scene acting, sound/visual privacy, haptic integration
 - [ ] Live NSFW rooms, tip jars, secret sessions
 - [ ] Pay-per-view, aftercare, private vaults
 - [ ] Consent/parental controls, region gating

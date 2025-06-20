@@ -57,7 +57,7 @@ This agent is responsible for building, validating, and maintaining every featur
 ---
 
 ## Testing Requirements
-- [ ] Unit/integration tests for scene rendering, memory, export
+- [x] Unit/integration tests for scene rendering, memory, export
 - [ ] UI/UX interaction tests (all platforms)
 - [ ] Stress and performance tests (ultra-long video, multi-scene)
 - [ ] Security/privacy audits, NSFW gating tests
@@ -96,7 +96,7 @@ This agent is responsible for building, validating, and maintaining every featur
 
 ## NSFW Features & Expansion (If Enabled)
 - [ ] Age-gated, auto-censored erotic/explicit video generation
-- [ ] NSFW overlays, intensity dial, haptic/AR/VR integration
+- [x] NSFW overlays, intensity dial, haptic/AR/VR integration
 - [ ] Private/secret video rooms, encrypted sharing, pay-per-view
 - [ ] NSFW fan clubs, tip jars, premium unlocks
 - [ ] Group live NSFW video, live collab acting rooms
