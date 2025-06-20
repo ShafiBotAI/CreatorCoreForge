@@ -94,8 +94,8 @@ This file is a full checklist of every feature required for code completion and 
 ## Next-Gen & Phase 8 Features
 
 ### Audio Personalization & Immersive
-- [ ] Replay analytics (per line/scene: replay, skip, loop stats)
-- [ ] Sleep Read Mode (ambient fade, user timer)
+- [x] Replay analytics (per line/scene: replay, skip, loop stats)
+- [x] Sleep Read Mode (ambient fade, user timer)
 - [ ] Emotion-shift graph/tracker for narration
 - [ ] User voice rating/review and feedback system
 - [ ] Auto-casting engine for genre/tone optimal voice selection
