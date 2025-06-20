@@ -34,6 +34,10 @@
   - GPT-based chapter segmentation and ElevenLabs voice streaming
   - Downloadable audiobooks with bookmarkable playback
   - Audiobook export engine (MP3/WAV with zip packaging via `AudiobookCompiler`)
+  - OfflineTTSCache for local voice caching
+  - AnalyticsLogger for basic event tracking
+  - PerformanceModeSelector to switch rendering presets
+  - FusionVoiceController orchestrates LocalVoiceAI and emotion cues
   - Extra helpers in `Sources/CreatorCoreForge/CoreForgeAudio_MissingFeatures.swift`
     provide offline download and eBook conversion utilities for the app.
 - **Build Status:** Electron PC build in testing
