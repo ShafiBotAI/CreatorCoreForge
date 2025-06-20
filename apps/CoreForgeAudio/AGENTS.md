@@ -150,7 +150,7 @@ This file is a full checklist of every feature required for code completion and 
 
 ### NSFW Core
 - [ ] Age/ID verification for all explicit content
-- [ ] NSFW content toggle and region filtering
+ - [x] NSFW content toggle and region filtering
 - [ ] NSFW content auto-tagging, search, and privacy vaults
 - [x] Consent tracking, safe word pause, aftercare prompts
 - [ ] Private/anonymous user modes and secret fan club invites
