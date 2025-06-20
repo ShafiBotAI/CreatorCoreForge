@@ -37,8 +37,8 @@ This file is a full checklist of every feature required for code completion and 
 
 ### UX/UI Components
 - [x] Audiobook player with seek, skip, speed, loop, and bookmark features
-- [ ] Dark mode, multiple color themes, accessibility options (font, TTS, vision, etc.)
-- [ ] Settings screen for voice assignment, emotion presets, NSFW/parental controls
+- [x] Dark mode, multiple color themes, accessibility options (font, TTS, vision, etc.)
+- [x] Settings screen for voice assignment, emotion presets, NSFW/parental controls
 - [ ] Drag-and-drop builder for scenes, chapters, voice mapping, and SFX
 - [ ] Scene and voice tagging UI, live emotion indicators
 - [ ] Group "Live Read" rooms with chat, co-narration, and moderator controls
@@ -50,7 +50,7 @@ This file is a full checklist of every feature required for code completion and 
 
 ## System Integration Requirements
 - [x] LocalAI/LocalVoiceAI engine integration (prompt templating, streaming, local/offline)
-- [ ] Secure API key handling and compliance with GDPR, CCPA, COPPA, and local privacy laws
+- [x] Secure API key handling and compliance with GDPR, CCPA, COPPA, and local privacy laws
 - [ ] Firebase or equivalent backend (Auth, Firestore, Storage, Analytics)
 - [ ] Auto-updater embedded in all installers (Mac, PC, iOS, Android)
 - [ ] Platform-specific permissions, entitlement, and environment config for all platforms
@@ -149,9 +149,9 @@ This file is a full checklist of every feature required for code completion and 
 ## NSFW Features & Expansion (If Enabled)
 
 ### NSFW Core
-- [ ] Age/ID verification for all explicit content
+ - [x] Age/ID verification for all explicit content
  - [x] NSFW content toggle and region filtering
-- [ ] NSFW content auto-tagging, search, and privacy vaults
+ - [x] NSFW content auto-tagging, search, and privacy vaults
 - [x] Consent tracking, safe word pause, aftercare prompts
 - [ ] Private/anonymous user modes and secret fan club invites
 - [ ] Sensual and explicit SFX packs, moan/breath/ASMR generators
