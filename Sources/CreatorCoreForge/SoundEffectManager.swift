@@ -203,6 +203,7 @@ public final class SoundEffectManager: ObservableObject {
     public func triggerReverbPreset(preset: ReverbStyle) {}
     #endif
 }
+#endif
 #else
 import Foundation
 #if canImport(AVFoundation)

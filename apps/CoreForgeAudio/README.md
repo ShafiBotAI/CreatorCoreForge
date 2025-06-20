@@ -11,6 +11,7 @@ vault system. It is written in SwiftUI and will expand to additional platforms.
 - **Dynamic emotion cues** with `AIEmotionEngine`
 - **Import ePub, PDF, and TXT files** via `EbookImporter`
 - **Video sharing** to social networks
+- **NSFW content manager** to log and filter explicit scenes
 
 - **Audiobook compilation** with `AudiobookCompiler` for zipped exports
 - **Scene memory simulator** for replaying chapters in different moods
