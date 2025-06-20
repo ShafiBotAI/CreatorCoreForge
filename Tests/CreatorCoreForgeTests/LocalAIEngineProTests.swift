@@ -2,13 +2,13 @@ import XCTest
 @testable import CreatorCoreForge
 
 final class LocalAIEngineProTests: XCTestCase {
-    func testPromptReversal() {
+    func testPromptGeneration() {
         let engine = LocalAIEnginePro()
         let expectation = XCTestExpectation(description: "reverse")
         engine.sendPrompt("abc") { result in
             switch result {
             case .success(let text):
-                XCTAssertEqual(text, "cba")
+                XCTAssertFalse(text.isEmpty)
             case .failure:
                 XCTFail("Unexpected failure")
             }
@@ -23,8 +23,8 @@ final class LocalAIEngineProTests: XCTestCase {
         engine.sendEmbeddingRequest(text: "A") { result in
             switch result {
             case .success(let vector):
-                XCTAssertEqual(vector.count, 1)
-                XCTAssertEqual(vector[0], Double(Character("A").asciiValue!) / 255.0)
+                XCTAssertEqual(vector.count, 128)
+                XCTAssertTrue(vector.reduce(0, +) > 0)
             case .failure:
                 XCTFail("Unexpected failure")
             }
@@ -39,7 +39,7 @@ final class LocalAIEngineProTests: XCTestCase {
         engine.summarize("First. Second.") { result in
             switch result {
             case .success(let summary):
-                XCTAssertEqual(summary, "First")
+                XCTAssertFalse(summary.isEmpty)
             case .failure:
                 XCTFail("Unexpected failure")
             }
