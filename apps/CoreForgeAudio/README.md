@@ -9,6 +9,7 @@ vault system. It is written in SwiftUI and will expand to additional platforms.
 - **Dark mode** and theme toggles
 - **Offline audio storage** with stealth vault option
 - **Offline download queue management**
+- **Sleep Read Mode** with fade-out timer
 - **Dynamic emotion cues** with `AIEmotionEngine`
 - **Import ePub, PDF, and TXT files** via `EbookImporter`
 - **Video sharing** to social networks
