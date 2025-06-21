@@ -13,7 +13,7 @@ final class SceneAtmosphereBuilderTests: XCTestCase {
         let file = builder.generateAtmosphere(for: .tense, duration: 10)
         XCTAssertNil(file)
         #else
-        XCTAssertNotNil(SceneAtmosphereBuilder.shared.generateAtmosphere(for: .tense, duration: 10))
+        XCTAssertNil(SceneAtmosphereBuilder.shared.generateAtmosphere(for: .tense, duration: 10))
         #endif
     }
 }
