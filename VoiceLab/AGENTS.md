@@ -4,11 +4,11 @@
 Language: TypeScript
 Purpose: Voice analysis and transcription components
 
-### Tasks
-- [ ] Ensure voice training scripts run via CI
-- [ ] Keep React components typed and tested
+-### Tasks
+- [x] Ensure voice training scripts run via CI
+- [x] Keep React components typed and tested
 - [ ] Integrate with OpenAI service
-- [ ] Document new APIs
+- [x] Document new APIs
 - [x] Catalog admin troubleshooting tips
 
 ---
