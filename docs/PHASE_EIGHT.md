@@ -12,6 +12,7 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 ## Application Feature Goals
 
 ### CoreForgeAudio
+- [ ] UnifiedAudioEngine
 - [ ] Real-time emotion adaptation
 - [ ] Voice DNA visualization
 - [ ] Quantum AI mode
@@ -50,6 +51,7 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 - [ ] PronunciationDictionary
 
 ### CoreForgeVisual
+- [ ] UnifiedAudioEngine
 - [ ] Adaptive scene completion
 - [ ] AR/VR playback
 - [ ] Quantum reality switcher
@@ -65,31 +67,37 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 - [ ] RenderAnalyticsDashboard
 
 ### CoreForgeWriter
+- [ ] UnifiedAudioEngine
 - [ ] Memory pinning
 - [ ] Quantum-choice plotting
 - [ ] Community marketplace
 
 ### CoreForgeMarket
+- [ ] UnifiedAudioEngine
 - [ ] Hybrid quantum trading engine
 - [ ] Team trading and leaderboards
 - [ ] Bot marketplace
 
 ### CoreForgeBuild
+- [ ] UnifiedAudioEngine
 - [ ] Figma-driven UI builder
 - [ ] Auto bundler for all platforms
 - [ ] Debugging assistant
 
 ### CoreForgeStudio
+- [ ] UnifiedAudioEngine
 - [ ] Real-time ensemble acting
 - [ ] Quantum edit mode
 - [ ] Template monetization
 
 ### CoreForgeMusic
+- [ ] UnifiedAudioEngine
 - [ ] AI vocal production
 - [ ] Commercial export tools
 - [ ] Voice cloning
 
 ### CoreForgeLeads
+- [ ] UnifiedAudioEngine
 - [ ] Marketplace credit system
 - [ ] Global lead exchange
 - [ ] Advanced scoring
