@@ -47,7 +47,7 @@ This agent is responsible for building, validating, and maintaining all features
 
 ---
 
--## Testing Requirements
+## Testing Requirements
 - [x] Unit/integration (AI trading, import/export)
 - [ ] UI/UX (all platforms)
 - [ ] Performance, compliance, risk, security

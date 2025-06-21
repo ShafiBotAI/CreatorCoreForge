@@ -335,3 +335,7 @@ cd .. && swift test
 
 This ensures `jest`, `ts-node`, and other dev tools are available.
 
+
+## CI/CD
+The repository uses GitHub Actions workflows for building, testing, and releasing the apps across platforms. See the files in [.github/workflows](./.github/workflows) for details.
+
