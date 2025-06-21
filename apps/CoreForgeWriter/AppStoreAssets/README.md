@@ -1,3 +1,3 @@
 # App Store Assets
 
-Placeholder icons and launch screens for CoreForgeWriter. Replace these files with final artwork before submitting to the App Store.
+This directory contains the icons, launch screens, and screenshots needed to submit CoreForgeWriter to various app stores. Replace the placeholder media with final production assets.

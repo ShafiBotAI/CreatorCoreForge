@@ -1,1 +1,3 @@
-Placeholder screenshot images for CoreForgeWriter
+# Screenshots
+
+Place marketing screenshots for CoreForgeWriter in this directory. These images appear in store listings for each platform.

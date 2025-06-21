@@ -1,1 +1,3 @@
-Placeholder launch screen images for CoreForgeAudio
+# Launch Screens
+
+Use this folder to store the splash screens for CoreForgeAudio on all target platforms. Replace the placeholder images with the final designs.
