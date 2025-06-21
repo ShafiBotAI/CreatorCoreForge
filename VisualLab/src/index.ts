@@ -17,4 +17,15 @@ export * from './errorRecoveryService.ts';
 export * from './thumbnailGenerator.ts';
 export * from './LivePreviewComponent.tsx';
 export * from './performanceProfiler.ts';
+export * from './ARService.ts';
+export * from './GPUVideoRenderer.ts';
+export * from './CacheService.ts';
+export * from './PerformanceService.ts';
+export * from './TileStreamer.ts';
+export * from './ChromaKeyService.ts';
+export * from './BatchJobService.ts';
+export * from './SignLanguageService.ts';
+export * from './LocalizationService.ts';
+export * from './DRMService.ts';
+=======
 export * from './streamingService.ts';

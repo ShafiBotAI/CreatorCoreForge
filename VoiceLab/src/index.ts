@@ -21,4 +21,14 @@ export * from './notificationService';
 export { PerformanceMonitor } from './PerformanceMonitor';
 export { TranscriptGenerator } from './transcriptGenerator';
 export { SyncHighlight, TranscriptSegment } from './syncHighlight';
+export { GroupListenService, Room } from './groupListenService';
+export { DeviceSyncManager } from './deviceSyncManager';
+export { AudioEffectService, AudioChain } from './audioEffectService';
+export { AudioProcessor, AudioBlob as CompressedAudioBlob } from './dynamicRangeCompressor';
+export { EncryptionService } from './audioEncryptionService';
+export { ACXExporter } from './acxExporter';
+export { RSSService, Episode } from './rssService';
+export { PronunciationEditor } from './pronunciationEditor';
+export { PronunciationService, Phoneme } from './pronunciationService';
+export { BookmarkService } from './bookmarkService';
 
