@@ -13,6 +13,8 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 
 ### CoreForgeAudio
 - [ ] UnifiedAudioEngine
+- [ ] UnifiedVideoEngine
+- [ ] AdaptiveLearningEngine
 - [ ] AudioEffectsPipeline
 - [ ] Real-time emotion adaptation
 - [ ] Voice DNA visualization
@@ -53,6 +55,8 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 
 ### CoreForgeVisual
 - [x] UnifiedAudioEngine
+- [x] UnifiedVideoEngine
+- [x] AdaptiveLearningEngine
 - [x] AudioEffectsPipeline
 - [ ] Adaptive scene completion
 - [x] AR/VR playback
@@ -70,6 +74,8 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 
 ### CoreForgeWriter
 - [ ] UnifiedAudioEngine
+- [ ] UnifiedVideoEngine
+- [ ] AdaptiveLearningEngine
 - [ ] AudioEffectsPipeline
 - [ ] Memory pinning
 - [ ] Quantum-choice plotting
@@ -77,6 +83,8 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 
 ### CoreForgeMarket
 - [ ] UnifiedAudioEngine
+- [ ] UnifiedVideoEngine
+- [ ] AdaptiveLearningEngine
 - [ ] AudioEffectsPipeline
 - [ ] Hybrid quantum trading engine
 - [ ] Team trading and leaderboards
@@ -84,6 +92,8 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 
 ### CoreForgeBuild
 - [ ] UnifiedAudioEngine
+- [ ] UnifiedVideoEngine
+- [ ] AdaptiveLearningEngine
 - [ ] AudioEffectsPipeline
 - [ ] Figma-driven UI builder
 - [ ] Auto bundler for all platforms
@@ -91,6 +101,8 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 
 ### CoreForgeStudio
 - [ ] UnifiedAudioEngine
+- [ ] UnifiedVideoEngine
+- [ ] AdaptiveLearningEngine
 - [ ] AudioEffectsPipeline
 - [ ] Real-time ensemble acting
 - [ ] Quantum edit mode
@@ -98,6 +110,8 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 
 ### CoreForgeMusic
 - [ ] UnifiedAudioEngine
+- [ ] UnifiedVideoEngine
+- [ ] AdaptiveLearningEngine
 - [ ] AudioEffectsPipeline
 - [ ] AI vocal production
 - [ ] Commercial export tools
@@ -105,6 +119,8 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 
 ### CoreForgeLeads
 - [ ] UnifiedAudioEngine
+- [ ] UnifiedVideoEngine
+- [ ] AdaptiveLearningEngine
 - [ ] AudioEffectsPipeline
 - [ ] Marketplace credit system
 - [ ] Global lead exchange

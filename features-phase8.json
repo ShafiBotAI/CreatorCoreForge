@@ -24,6 +24,8 @@
   "phase8Features": {
     "CoreForgeAudio": [
       "UnifiedAudioEngine",
+      "UnifiedVideoEngine",
+      "AdaptiveLearningEngine",
       "Real-time emotion adaptation",
       "Voice DNA visualization",
       "Quantum AI mode",
@@ -65,6 +67,8 @@
     ],
     "CoreForgeVisual": [
       "UnifiedAudioEngine",
+      "UnifiedVideoEngine",
+      "AdaptiveLearningEngine",
       "Adaptive scene completion",
       "AR/VR playback",
       "Quantum reality switcher",
@@ -83,6 +87,8 @@
     ],
     "CoreForgeWriter": [
       "UnifiedAudioEngine",
+      "UnifiedVideoEngine",
+      "AdaptiveLearningEngine",
       "Memory pinning",
       "Quantum-choice plotting",
       "Community marketplace",
@@ -91,6 +97,8 @@
     ],
     "CoreForgeMarket": [
       "UnifiedAudioEngine",
+      "UnifiedVideoEngine",
+      "AdaptiveLearningEngine",
       "Hybrid quantum trading engine",
       "Team trading and leaderboards",
       "Bot marketplace",
@@ -99,6 +107,8 @@
     ],
     "CoreForgeBuild": [
       "UnifiedAudioEngine",
+      "UnifiedVideoEngine",
+      "AdaptiveLearningEngine",
       "Figma-driven UI builder",
       "Auto bundler for all platforms",
       "Debugging assistant",
@@ -107,6 +117,8 @@
     ],
     "CoreForgeStudio": [
       "UnifiedAudioEngine",
+      "UnifiedVideoEngine",
+      "AdaptiveLearningEngine",
       "Real-time ensemble acting",
       "Quantum edit mode",
       "Template monetization",
@@ -115,6 +127,8 @@
     ],
     "CoreForgeMusic": [
       "UnifiedAudioEngine",
+      "UnifiedVideoEngine",
+      "AdaptiveLearningEngine",
       "AI vocal production",
       "Commercial export tools",
       "Voice cloning",
@@ -123,6 +137,8 @@
     ],
     "CoreForgeLeads": [
       "UnifiedAudioEngine",
+      "UnifiedVideoEngine",
+      "AdaptiveLearningEngine",
       "Marketplace credit system",
       "Global lead exchange",
       "Advanced scoring",

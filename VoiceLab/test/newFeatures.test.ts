@@ -1,4 +1,4 @@
-import { GroupListenService, PronunciationService, UnifiedAudioEngine } from '../src';
+import { GroupListenService, PronunciationService, UnifiedAudioEngine, UnifiedVideoEngine, AdaptiveLearningEngine } from '../src';
 
 test('GroupListenService can create room', async () => {
   const svc = new GroupListenService();
@@ -22,4 +22,17 @@ test('UnifiedAudioEngine volume clamp', () => {
   const levels = engine.fadeVolumeTo(0.5, 2);
   expect(levels.length).toBe(2);
   expect(levels[levels.length - 1]).toBeCloseTo(0.5);
+});
+
+test('UnifiedVideoEngine renders frames', async () => {
+  const engine = UnifiedVideoEngine.shared;
+  const clip = await engine.render(['a'], { width: 1, height: 1 });
+  expect(clip.frames.length).toBe(1);
+});
+
+test('AdaptiveLearningEngine records progress', () => {
+  const engine = AdaptiveLearningEngine.shared;
+  engine.reset();
+  engine.recordCompletion('l');
+  expect(engine.completionCount('l')).toBe(1);
 });

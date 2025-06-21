@@ -197,6 +197,8 @@
 - **VoiceDNAForker:** Creates pitch and speed-based voice variations from a base profile.
 - **VoiceDNAForge:** Stores voice DNA profiles including pitch, cadence, style tags, emotion ranges, and linked characters.
 - **UnifiedAudioEngine:** Global volume and mute control with fade transitions for all apps
+- **UnifiedVideoEngine:** Cross-platform video rendering wrapper
+- **AdaptiveLearningEngine:** Tracks lesson progress for personalized learning
 - **PluginBuilder:** Generates basic plugin templates for new dashboard modules
 - **AIStudioMode:** Adds a studio prefix to prompts when testing features
 - **GenesisModeEngine:** Produces variant ideas for apps and content
