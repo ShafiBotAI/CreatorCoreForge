@@ -29,8 +29,12 @@ public struct SceneGapFiller {
         group.notify(queue: .main) { completion(result) }
     }
 
-    /// Produce placeholder animation frame names for a scene.
+    /// Produce simple animation frame names derived from the scene text.
+    /// Whitespace is trimmed and replaced so frame names are predictable.
     public func generateAnimationFrames(for scene: String) -> [String] {
-        ["\(scene)-frame1.png", "\(scene)-frame2.png", "\(scene)-frame3.png"]
+        let base = scene.replacingOccurrences(of: "\\s+", with: "_",
+                                              options: .regularExpression)
+                          .lowercased()
+        return ["\(base)_frame1.png", "\(base)_frame2.png", "\(base)_frame3.png"]
     }
 }
