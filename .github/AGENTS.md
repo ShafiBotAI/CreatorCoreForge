@@ -4,9 +4,9 @@
 Purpose: CI workflows and GitHub settings
 
 ### Tasks
-- [ ] Update workflow scripts for new platforms
-- [ ] Maintain issue templates and PR checks
-- [ ] Document CI usage in README
+- [x] Update workflow scripts for new platforms
+- [x] Maintain issue templates and PR checks
+- [x] Document CI usage in README
 
 ---
 
