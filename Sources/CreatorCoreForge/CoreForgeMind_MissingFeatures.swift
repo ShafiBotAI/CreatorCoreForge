@@ -21,3 +21,8 @@ public final class PrivateVault {
     public func save(key: String, value: String) { store[key] = value }
     public func fetch(key: String) -> String? { store[key] }
 }
+
+/// Utility access to the shared emotion database for wellness tracking.
+public func emotionInfo(for label: String) -> EmotionRecord? {
+    EmotionDatabase.shared.record(for: label)
+}

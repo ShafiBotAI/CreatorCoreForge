@@ -76,6 +76,11 @@ public struct CoreForgeVisualFeatures {
         "Uploaded \(url.lastPathComponent) to \(platform)"
     }
 
+    /// Retrieve emotion details from the shared database for scene tuning.
+    public func emotionInfo(for label: String) -> EmotionRecord? {
+        EmotionDatabase.shared.record(for: label)
+    }
+
     #if canImport(AVFoundation)
     private static func makePixelBuffer(text: String, font: CTFont) -> CVPixelBuffer? {
         let attrs: [CFString: Any] = [

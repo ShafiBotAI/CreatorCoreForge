@@ -185,6 +185,8 @@
 - **EmotionalArcTracker:** Records emotion intensity for characters over time
 
 - **EmotionHeatmap:** Generates normalized emotion intensity heatmaps from text
+- **EmotionDatabase:** Shared dictionary of emotion records and synonyms used by
+  CoreForge Audio, Visual, Writer, and Mind for emotion cues
 
 - **NSFWMoodHeatmap:** Normalizes logged NSFW intensity levels for analytics
 
