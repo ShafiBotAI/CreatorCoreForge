@@ -57,13 +57,13 @@ This agent is responsible for building, validating, and maintaining all features
 
 ## Deployment & CI/CD
 - [ ] GitHub Actions, tagging, changelogs, auto-deploy
-- [ ] App store asset and compliance review
+ - [x] App store asset and compliance review
 
 ---
 
 ## Documentation & Developer Assets
 - [ ] README.md, APISetup.md, PromptTemplates.md, DeveloperSetup.md
-- [ ] App store/launch assets, compliance/user guides
+ - [x] App store/launch assets, compliance/user guides
 
 ---
 
