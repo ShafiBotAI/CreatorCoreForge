@@ -52,7 +52,7 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 - [ ] PronunciationDictionary
 
 ### CoreForgeVisual
-- [ ] UnifiedAudioEngine
+- [x] UnifiedAudioEngine
 - [ ] AudioEffectsPipeline
 - [ ] Adaptive scene completion
 - [ ] AR/VR playback

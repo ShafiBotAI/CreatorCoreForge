@@ -38,5 +38,13 @@ generateSubtitles('hello');
 
 React.createElement(BranchingPathsUI, { options: [] });
 React.createElement(RenderAnalyticsDashboard, { metrics: [] });
+import { UnifiedAudioEngine } from "../src/index.ts";
+const engine = UnifiedAudioEngine.shared;
+engine.setVolume(1.5);
+assert.strictEqual(engine.currentVolume(), 1);
+engine.mute();
+assert.ok(engine.isMuted());
+
 
 console.log('New features tests passed');
+
