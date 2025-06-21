@@ -62,18 +62,15 @@ public final class SceneAtmosphereBuilder {
     // containing the mood name is generated so downstream code can still
     // operate on a URL.
     public func generateAtmosphere(for mood: Mood, duration: TimeInterval) -> Any? {
-        let url = FileManager.default.temporaryDirectory
-            .appendingPathComponent("atmo_\(mood.rawValue)")
-            .appendingPathExtension("caf")
-        let info = "Atmosphere: \(mood.rawValue) Duration: \(duration)"
-        try? info.write(to: url, atomically: true, encoding: .utf8)
-        return url
+        // Without AVFoundation we cannot generate audio, so just log and return nil
+        print("Atmosphere generation skipped for \(mood.rawValue) — AVFoundation unavailable")
+        return nil
     }
 
     public func playAtmosphere(for mood: Mood, in engine: Any, player: Any) {
-        if let url = generateAtmosphere(for: mood, duration: 0) as? URL {
-            print("Playing atmosphere stub from \(url.path)")
-        }
+        // Simply log the call since playback isn't supported without AVFoundation
+        _ = generateAtmosphere(for: mood, duration: 0)
+        print("Atmosphere playback skipped — AVFoundation unavailable")
     }
     #endif
 }
