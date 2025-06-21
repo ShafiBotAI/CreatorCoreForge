@@ -132,6 +132,10 @@ Detailed breakdowns for Market (trading signals, strategy AI, event auto-trading
 
 ---
 
+## Admin Tasks
+
+- [x] Repo-wide AGENTS checklists reviewed and updated
+
 ## Notes
 
 - **All features are tiered by Free, Creator, Enterprise, NSFW (see features-phase8.json).**
