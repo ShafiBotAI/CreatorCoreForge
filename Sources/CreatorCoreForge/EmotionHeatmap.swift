@@ -1,6 +1,12 @@
 import Foundation
 
 
+/// Generates a real-time emotion heatmap from logged intensities.
+public final class EmotionHeatmap {
+    private var intensities: [Double] = []
+    private var labels: [String] = []
+=======
+
 /// Generates a real-time emotion heatmap from text or logged intensity values.
 public final class EmotionHeatmap {
     private let analyzer: EmotionAnalyzer
@@ -31,6 +37,7 @@ public final class EmotionHeatmap {
         let profile = analyzer.analyzeEmotion(from: text)
         log(emotion: profile.emotion, intensity: Double(profile.intensity))
     }
+
 
     /// Log an explicit emotion label and intensity.
 

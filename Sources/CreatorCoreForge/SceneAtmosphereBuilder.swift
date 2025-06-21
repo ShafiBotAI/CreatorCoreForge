@@ -66,13 +66,22 @@ public final class SceneAtmosphereBuilder {
             FileManager.default.createFile(atPath: fileURL.path, contents: Data(), attributes: nil)
         }
 
+        print("Atmosphere generation skipped for \(mood.rawValue) — AVFoundation unavailable")
+        print("\u{26A0}\u{FE0F} Atmosphere file not available on this platform")
+=======
+
 =======
         print("Atmosphere generation skipped for \(mood.rawValue) — AVFoundation unavailable")
+
 
         return fileURL
     }
 
     public func playAtmosphere(for mood: Mood, in engine: Any, player: Any) {
+
+        // Simply log the call since playback isn't supported without AVFoundation
+=======
+
         _ = generateAtmosphere(for: mood, duration: 0)
         print("Atmosphere playback skipped — AVFoundation unavailable")
     }
