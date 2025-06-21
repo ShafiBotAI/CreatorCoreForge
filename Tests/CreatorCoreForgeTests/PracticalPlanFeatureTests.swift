@@ -75,4 +75,109 @@ final class PracticalPlanFeatureTests: XCTestCase {
         let frames = export.export(frames: ["f"], watermark: "wm")
         XCTAssertEqual(frames.first, "f-wm(wm)")
     }
+    func testFigmaImporter() {
+        let build = CoreForgeBuildFeatures()
+        let parts = build.importFigma(file: "A,B")
+        XCTAssertEqual(parts, ["A", "B"])
+    }
+
+    func testUniversalBundler() {
+        let build = CoreForgeBuildFeatures()
+        let out = build.bundle(platforms: ["iOS"])
+        XCTAssertEqual(out, ["iOS_bundle"])
+    }
+
+    func testDebugAssistant() {
+        let build = CoreForgeBuildFeatures()
+        let hints = build.debugHints(for: "Error")
+        XCTAssertTrue(hints.first?.contains("Error") ?? false)
+    }
+
+    func testDNATreeUI() {
+        let child = DNATreeNode(name: "Child")
+        let root = DNATreeNode(name: "Root", children: [child])
+        let features = CoreForgeDNAFeatures()
+        XCTAssertEqual(features.visualize(root), ["Root", "Child"])
+    }
+
+    func testDNACrossAppSync() {
+        let features = CoreForgeDNAFeatures()
+        let data = features.export(profile: ["a": "b"])
+        let profile = features.importProfile(data: data)
+        XCTAssertEqual(profile["a"], "b")
+    }
+
+    func testDNAMultiverseMerge() {
+        let features = CoreForgeDNAFeatures()
+        let merged = features.merge(timelineA: ["A"], timelineB: ["B"])
+        XCTAssertEqual(Set(merged), ["A", "B"])
+    }
+
+    func testMusicFeatures() {
+        let music = CoreForgeMusicFeatures()
+        XCTAssertEqual(music.produceVocals(track: "beat", voice: "vox"), "beat-vocals-vox")
+        XCTAssertEqual(music.exportCommercial(track: "song", license: "cc"), "song-licensed(cc)")
+        XCTAssertTrue(music.publishHook(name: "hook"))
+    }
+
+    func testLeadsFeatures() {
+        let ledger = CreditLedger()
+        ledger.add(10)
+        XCTAssertTrue(ledger.bill(5))
+        let exchange = GlobalExchange()
+        XCTAssertTrue(exchange.trade(id: "L1", for: 5).contains("L1"))
+        let scoring = ScoringEngine()
+        XCTAssertEqual(scoring.score(leads: [1,3]), 2.0)
+    }
+
+    func testMindFeatures() {
+        let journal = MoodJournal()
+        journal.addEntry("hi")
+        XCTAssertEqual(journal.count, 1)
+        XCTAssertEqual(GuidedSessions().play(session: "med"), "Playing med")
+        let vault = PrivateVault()
+        vault.save(key: "k", value: "v")
+        XCTAssertEqual(vault.fetch(key: "k"), "v")
+    }
+
+    func testBloomFeatures() {
+        let tracker = CycleTracker()
+        let next = tracker.predict(last: Date(timeIntervalSince1970: 0), cycleLength: 28)
+        XCTAssertTrue(next > Date(timeIntervalSince1970: 0))
+        XCTAssertEqual(WellnessReminder().remind("stretch"), "Reminder: stretch")
+        XCTAssertEqual(WearableSync().sync(data: ["steps": 5, "cal": 5]), 10)
+    }
+
+    func testLearnFeatures() {
+        let builder = CurriculumBuilder()
+        let lesson = builder.makeLesson(from: "A. B.")
+        XCTAssertEqual(lesson, ["A", "B"])
+        XCTAssertEqual(AITutor().feedback(score: 90), "Great job")
+        var sync = OfflineSync()
+        sync.add("x")
+        XCTAssertEqual(sync.count, 1)
+    }
+
+    func testQuestFeatures() {
+        let gen = ChallengeGenerator()
+        XCTAssertEqual(gen.generate(from: "go north"), ["go", "north"])
+        XCTAssertEqual(LeaderboardEvents().rank(scores: [1,3,2]), [3,2,1])
+        XCTAssertEqual(MarketplaceItems().trade(item: "sword", for: 5), "sword-for-5")
+    }
+
+    func testVoiceLabFeatures() {
+        let rec = RecordingTools()
+        XCTAssertEqual(rec.trim([1,2,3], to: 2), [1,2])
+        XCTAssertTrue(TrainingPipeline().prepare(samples: [0.1]))
+        XCTAssertEqual(ExportHooks().send(name: "voice"), "Sent voice")
+    }
+
+    func testMarketFeatures() {
+        let engine = QuantumTradingEngine()
+        XCTAssertEqual(engine.analyze(prices: [1.0, 3.0]), 2.0)
+        let team = TeamTrading()
+        team.addTrade("buy")
+        XCTAssertEqual(team.trades.count, 1)
+        XCTAssertTrue(BotMarketplace().publish(bot: "bot"))
+    }
 }
