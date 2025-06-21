@@ -68,7 +68,7 @@ Purpose: Converts full books into dramatized AI-generated cinematic videos
 - [ ] Build Emotion Arc Visualizer for cinematic flow
 - [ ] Add Live Dubbing Room + Creator Voice Import
  - [x] Enable Multiverse Director toggle (alternate render styles)
-- [ ] Sync with NSFW enhancer (whispers, breathing, camera pacing)
+ - [x] Sync with NSFW enhancer (whispers, breathing, camera pacing)
 - [ ] Add What-If Mode for branching episode possibilities
 - [ ] Create Auto-Publish pipeline to YouTube/TikTok with metadata
 - [ ] Auto-generate Trailer + Behind-the-Scenes packs

@@ -8,7 +8,7 @@ Purpose: AI mental health companion with journaling, therapy sessions, and welln
 - [ ] Daily mood journal with AI analysis
 - [ ] Guided meditation and soundscapes
 - [ ] Secure vault for private entries
-- [ ] Optional NSFW wellness modules
+ - [x] Optional NSFW wellness modules
 
 ### Global Missing Items
 - [x] Integrate shared `autoUpdater.swift`
