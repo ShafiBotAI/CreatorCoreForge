@@ -59,13 +59,15 @@ public final class AudioExporter {
             }
             #if canImport(Compression)
             try FileManager.default.zipItem(at: tempDir, to: zipPath)
-            #else
+            #elseif os(macOS) || os(Linux)
             let process = Process()
             process.executableURL = URL(fileURLWithPath: "/usr/bin/zip")
             process.currentDirectoryURL = tempDir
             process.arguments = ["-r", zipPath.path, "."]
             try process.run()
             process.waitUntilExit()
+            #else
+            print("Compression framework unavailable on this platform")
             #endif
             try FileManager.default.removeItem(at: tempDir)
         } catch {

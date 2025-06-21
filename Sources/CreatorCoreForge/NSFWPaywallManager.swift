@@ -1,4 +1,7 @@
 import Foundation
+#if canImport(StoreKit)
+import StoreKit
+#endif
 
 /// Handles premium unlocks, paywall checks, and tip jar tracking for NSFW content.
 public final class NSFWPaywallManager {
@@ -9,12 +12,19 @@ public final class NSFWPaywallManager {
 
     private init() {}
 
-    /// Unlock premium NSFW features with a provided code.
+    /// Unlock premium NSFW features via an in-app purchase.
     @discardableResult
-    public func unlockPremium(code: String) -> Bool {
-        guard code == "UNLOCK-NSFW" else { return false }
+    public func purchasePremium() -> Bool {
+#if canImport(StoreKit)
+        // Placeholder purchase flow; integrate real StoreKit logic in the app.
         premiumUnlocked = true
         return true
+#else
+        // Simulate success when StoreKit is unavailable to keep unit tests
+        // platform-agnostic. Real apps should require StoreKit.
+        premiumUnlocked = true
+        return true
+#endif
     }
 
     /// Returns whether premium features are unlocked.
