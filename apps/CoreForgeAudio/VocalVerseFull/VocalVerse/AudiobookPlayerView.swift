@@ -1,6 +1,7 @@
 #if canImport(SwiftUI)
 import SwiftUI
 import AVFoundation
+import CreatorCoreForge
 
 /// Simple audiobook player with seek and bookmark support.
 struct AudiobookPlayerView: View {
@@ -10,6 +11,11 @@ struct AudiobookPlayerView: View {
     @State private var progress: Double = 0
     @State private var bookmarks: [Double] = []
     @State private var duration: Double = 1
+    @State private var isPlaying = false
+#if canImport(CoreHaptics)
+    @State private var hapticsPrepared = false
+#endif
+    @State private var showError = false
 
     private var timeObserver: Any?
 
@@ -26,13 +32,11 @@ struct AudiobookPlayerView: View {
             .padding()
 
             HStack(spacing: 40) {
-                Button(action: { player?.play() }) {
-                    Image(systemName: "play.fill")
+                Button(action: togglePlayback) {
+                    Image(systemName: isPlaying ? "pause.fill" : "play.fill")
                         .font(.largeTitle)
-                }
-                Button(action: { player?.pause() }) {
-                    Image(systemName: "pause.fill")
-                        .font(.largeTitle)
+                        .scaleEffect(isPlaying ? 1.2 : 1)
+                        .animation(.easeInOut(duration: 0.2), value: isPlaying)
                 }
                 Button(action: addBookmark) {
                     Image(systemName: "bookmark")
@@ -52,9 +56,29 @@ struct AudiobookPlayerView: View {
         .onAppear(perform: setup)
         .onDisappear { cleanup() }
         .navigationTitle("Player")
+        .alert("Failed to load audio", isPresented: $showError) {
+            Button("OK", role: .cancel) { }
+        }
+    }
+
+    private func togglePlayback() {
+        if isPlaying {
+            player?.pause()
+        } else {
+            player?.play()
+        }
+        isPlaying.toggle()
+#if canImport(CoreHaptics)
+        prepareHapticsIfNeeded()
+        _ = HapticDeviceManager.shared.sendVibration(to: "default", intensity: 0.5, duration: 0.1)
+#endif
     }
 
     private func setup() {
+        guard FileManager.default.fileExists(atPath: url.path) else {
+            showError = true
+            return
+        }
         player = AVPlayer(url: url)
         duration = player?.currentItem?.asset.duration.seconds ?? 1
         let interval = CMTime(seconds: 0.5, preferredTimescale: 600)
@@ -78,5 +102,13 @@ struct AudiobookPlayerView: View {
         let cm = CMTime(seconds: time, preferredTimescale: 600)
         player?.seek(to: cm)
     }
+
+#if canImport(CoreHaptics)
+    private func prepareHapticsIfNeeded() {
+        guard !hapticsPrepared else { return }
+        _ = HapticDeviceManager.shared.pairDevice(id: "default", name: "Default")
+        hapticsPrepared = true
+    }
+#endif
 }
 #endif
