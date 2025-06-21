@@ -1,4 +1,18 @@
-import { ARService, GPUVideoRenderer } from '../src/index.ts';
+import {
+  ARService,
+  GPUVideoRenderer,
+  TimelineEditor,
+  ColorGradingEngine,
+  BranchingPathsUI,
+  FaceTrackerService,
+  CrowdSimulator,
+  export360VR,
+  stabilizeCamera,
+  applyWatermark,
+  generateSubtitles,
+  RenderAnalyticsDashboard
+} from '../src/index.ts';
+import React from 'react';
 import assert from 'node:assert';
 
 const svc = new ARService();
@@ -7,5 +21,22 @@ await svc.previewScene({ id: '1' });
 const gpu = new GPUVideoRenderer();
 const clip = await gpu.render([], { width: 100, height: 100 });
 assert.strictEqual(clip.frames.length, 0);
+
+const editor = new TimelineEditor<string>();
+editor.addClip('intro');
+assert.deepStrictEqual(editor.getTimeline(), ['intro']);
+
+const grader = new ColorGradingEngine();
+grader.apply([[1]], 'warm');
+
+new FaceTrackerService().track({});
+new CrowdSimulator().simulate(3);
+export360VR([]);
+stabilizeCamera([]);
+applyWatermark('f', 'wm');
+generateSubtitles('hello');
+
+React.createElement(BranchingPathsUI, { options: [] });
+React.createElement(RenderAnalyticsDashboard, { metrics: [] });
 
 console.log('New features tests passed');
