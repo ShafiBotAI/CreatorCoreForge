@@ -59,8 +59,9 @@
       "PersonalizedGreetingService",
       "AdvancedTimelineEditor",
       "BrailleOutputService",
-      "PronunciationDictionary"
-      , "VideoEffectsPipeline"
+      "PronunciationDictionary",
+      "VideoEffectsPipeline",
+      "UniversalVideoGenerator"
     ],
     "CoreForgeVisual": [
       "UnifiedAudioEngine",
@@ -77,49 +78,56 @@
       "WatermarkService",
       "SubtitleGenerator",
       "RenderAnalyticsDashboard",
-      "VideoEffectsPipeline"
+      "VideoEffectsPipeline",
+      "UniversalVideoGenerator"
     ],
     "CoreForgeWriter": [
       "UnifiedAudioEngine",
       "Memory pinning",
       "Quantum-choice plotting",
       "Community marketplace",
-      "VideoEffectsPipeline"
+      "VideoEffectsPipeline",
+      "UniversalVideoGenerator"
     ],
     "CoreForgeMarket": [
       "UnifiedAudioEngine",
       "Hybrid quantum trading engine",
       "Team trading and leaderboards",
       "Bot marketplace",
-      "VideoEffectsPipeline"
+      "VideoEffectsPipeline",
+      "UniversalVideoGenerator"
     ],
     "CoreForgeBuild": [
       "UnifiedAudioEngine",
       "Figma-driven UI builder",
       "Auto bundler for all platforms",
       "Debugging assistant",
-      "VideoEffectsPipeline"
+      "VideoEffectsPipeline",
+      "UniversalVideoGenerator"
     ],
     "CoreForgeStudio": [
       "UnifiedAudioEngine",
       "Real-time ensemble acting",
       "Quantum edit mode",
       "Template monetization",
-      "VideoEffectsPipeline"
+      "VideoEffectsPipeline",
+      "UniversalVideoGenerator"
     ],
     "CoreForgeMusic": [
       "UnifiedAudioEngine",
       "AI vocal production",
       "Commercial export tools",
       "Voice cloning",
-      "VideoEffectsPipeline"
+      "VideoEffectsPipeline",
+      "UniversalVideoGenerator"
     ],
     "CoreForgeLeads": [
       "UnifiedAudioEngine",
       "Marketplace credit system",
       "Global lead exchange",
       "Advanced scoring",
-      "VideoEffectsPipeline"
+      "VideoEffectsPipeline",
+      "UniversalVideoGenerator"
     ]
   }
 }

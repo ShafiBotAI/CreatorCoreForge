@@ -49,6 +49,7 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 - [ ] AdvancedTimelineEditor
 - [ ] BrailleOutputService
 - [ ] PronunciationDictionary
+- [ ] UniversalVideoGenerator
 
 ### CoreForgeVisual
 - [ ] UnifiedAudioEngine
@@ -65,41 +66,48 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 - [ ] WatermarkService
 - [ ] SubtitleGenerator
 - [ ] RenderAnalyticsDashboard
+- [ ] UniversalVideoGenerator
 
 ### CoreForgeWriter
 - [ ] UnifiedAudioEngine
 - [ ] Memory pinning
 - [ ] Quantum-choice plotting
 - [ ] Community marketplace
+- [ ] UniversalVideoGenerator
 
 ### CoreForgeMarket
 - [ ] UnifiedAudioEngine
 - [ ] Hybrid quantum trading engine
 - [ ] Team trading and leaderboards
 - [ ] Bot marketplace
+- [ ] UniversalVideoGenerator
 
 ### CoreForgeBuild
 - [ ] UnifiedAudioEngine
 - [ ] Figma-driven UI builder
 - [ ] Auto bundler for all platforms
 - [ ] Debugging assistant
+- [ ] UniversalVideoGenerator
 
 ### CoreForgeStudio
 - [ ] UnifiedAudioEngine
 - [ ] Real-time ensemble acting
 - [ ] Quantum edit mode
 - [ ] Template monetization
+- [ ] UniversalVideoGenerator
 
 ### CoreForgeMusic
 - [ ] UnifiedAudioEngine
 - [ ] AI vocal production
 - [ ] Commercial export tools
 - [ ] Voice cloning
+- [ ] UniversalVideoGenerator
 
 ### CoreForgeLeads
 - [ ] UnifiedAudioEngine
 - [ ] Marketplace credit system
 - [ ] Global lead exchange
 - [ ] Advanced scoring
+- [ ] UniversalVideoGenerator
 
 Use this checklist to track progress as we implement Phase 8 capabilities across every app.
