@@ -20,7 +20,7 @@ public final class SceneAtmosphereBuilder {
     /// Load the atmosphere audio file for the given mood.
     /// - Parameters:
     ///   - mood: desired atmosphere mood.
-    ///   - duration: expected playback duration (unused placeholder).
+    ///   - duration: expected playback duration.
     /// - Returns: `AVAudioFile` if found.
     public func generateAtmosphere(for mood: Mood, duration: TimeInterval) -> AVAudioFile? {
         let filename = "atmo_\(mood.rawValue).caf"
@@ -58,9 +58,18 @@ public final class SceneAtmosphereBuilder {
         }
     }
     #else
-    // Fallback stubs when AVFoundation is unavailable.
-    public func generateAtmosphere(for mood: Mood, duration: TimeInterval) -> Any? { nil }
-    public func playAtmosphere(for mood: Mood, in engine: Any, player: Any) {}
+    // Fallback implementation when AVFoundation is unavailable. Since the
+    // bundled atmosphere files are not accessible on this platform, simply
+    // return `nil` so calling code can gracefully handle the absence of audio
+    // assets. This mirrors the behavior when a real file is missing.
+    public func generateAtmosphere(for mood: Mood, duration: TimeInterval) -> Any? {
+        print("\u{26A0}\u{FE0F} Atmosphere file not available on this platform")
+        return nil
+    }
+
+    public func playAtmosphere(for mood: Mood, in engine: Any, player: Any) {
+        // No-op on platforms without AVFoundation
+    }
     #endif
 }
 

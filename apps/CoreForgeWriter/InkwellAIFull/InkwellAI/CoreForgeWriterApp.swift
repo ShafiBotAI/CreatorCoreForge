@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct InkwellAIApp: App {
+struct CoreForgeWriterApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

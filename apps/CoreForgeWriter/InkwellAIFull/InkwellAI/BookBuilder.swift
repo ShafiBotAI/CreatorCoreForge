@@ -15,9 +15,8 @@ final class BookBuilder {
         }
     }
     /// Build a full book using the provided chapters. When `fastDraft` is true
-    /// only short placeholder text is inserted for each chapter. A
-    /// `MemoryTracker` can be passed to keep track of generated content for
-    /// continuity checks.
+    /// only a short summary of each chapter is inserted. A `MemoryTracker` can
+    /// be passed to keep track of generated content for continuity checks.
     func generateBook(title: String,
                       seriesTitle: String? = nil,
                       chapters: [String],

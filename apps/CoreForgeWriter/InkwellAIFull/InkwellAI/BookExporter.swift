@@ -2,20 +2,38 @@ import Foundation
 #if canImport(AVFoundation)
 import AVFoundation
 #endif
+#if canImport(UIKit)
+import UIKit
+#endif
 
 /// Handles exporting books to various formats like ePub, PDF and audiobook.
-/// These implementations are simplified placeholders for demo purposes.
 struct BookExporter {
     /// Saves the book text as an ePub at the given URL. Returns the file URL.
     static func exportEPUB(text: String, to url: URL) throws -> URL {
-        try text.write(to: url, atomically: true, encoding: .utf8)
+        let tempDir = url.deletingLastPathComponent()
+            .appendingPathComponent(UUID().uuidString, isDirectory: true)
+        try FileManager.default.createDirectory(at: tempDir,
+                                                withIntermediateDirectories: true)
+        let html = "<html><body>\n" + text.replacingOccurrences(of: "\n", with: "<br>") + "\n</body></html>"
+        try html.write(to: tempDir.appendingPathComponent("index.html"),
+                       atomically: true, encoding: .utf8)
+        try FileManager.default.zipItem(at: tempDir, to: url)
+        try FileManager.default.removeItem(at: tempDir)
         return url
     }
 
     /// Saves the book text as a PDF at the given URL. Returns the file URL.
     static func exportPDF(text: String, to url: URL) throws -> URL {
-        let data = Data(text.utf8)
-        try data.write(to: url)
+#if canImport(UIKit)
+        let renderer = UIGraphicsPDFRenderer(bounds: CGRect(x: 0, y: 0, width: 612, height: 792))
+        try renderer.writePDF(to: url) { ctx in
+            ctx.beginPage()
+            let attrs = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12)]
+            text.draw(in: CGRect(x: 20, y: 20, width: 572, height: 752), withAttributes: attrs)
+        }
+#else
+        try text.write(to: url, atomically: true, encoding: .utf8)
+#endif
         return url
     }
 
@@ -30,11 +48,12 @@ struct BookExporter {
         utterance.voice = voice
         utterance.rate = rate
         let synthesizer = AVSpeechSynthesizer()
-        let output = AVAudioFile()
-        // Real implementation would record synthesizer output to file
-        synthesizer.speak(utterance)
-        // Placeholder: write the original text so unit tests can verify output
-        try text.write(to: url, atomically: true, encoding: .utf8)
+        let engine = AVAudioEngine()
+        let output = try AVAudioFile(forWriting: url, settings: engine.outputNode.outputFormat(forBus: 0).settings)
+        synthesizer.write(utterance) { buffer in
+            guard let pcm = buffer as? AVAudioPCMBuffer else { return }
+            try? output.write(from: pcm)
+        }
         return url
     }
     #else

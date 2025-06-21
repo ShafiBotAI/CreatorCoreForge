@@ -40,7 +40,7 @@ Purpose: Converts full books into dramatized AI-generated cinematic videos
 
 #### Cinematic Intelligence
 - [ ] Hybrid visual style merger (anime/noir/fantasy combos)
-- [ ] NSFW blur/unblur toggle (age gated)
+ - [x] NSFW blur/unblur toggle (age gated)
 - [ ] Directorial note system for each scene or shot
 - [ ] Action rhythm controller (tempo pacing for dynamic scenes)
 - [ ] Audiovisual director diary (scene logs)
@@ -53,7 +53,7 @@ Purpose: Converts full books into dramatized AI-generated cinematic videos
 - [ ] Emotion layer system (alternate tone variants per scene)
 
 #### Playback + Prediction
-- [ ] "Mood Mix" export filter (emotional highlights only)
+ - [x] "Mood Mix" export filter (emotional highlights only)
 - [ ] Scene performance estimator (views, replays, saves)
 - [ ] Alternate ending generator
 - [ ] Interactive video QTE (viewer-triggered choices)
@@ -68,7 +68,7 @@ Purpose: Converts full books into dramatized AI-generated cinematic videos
 - [ ] Enable Style Export: Anime, Noir, Realistic, Fantasy
 - [ ] Build Emotion Arc Visualizer for cinematic flow
 - [ ] Add Live Dubbing Room + Creator Voice Import
-- [ ] Enable Multiverse Director toggle (alternate render styles)
+ - [x] Enable Multiverse Director toggle (alternate render styles)
 - [ ] Sync with NSFW enhancer (whispers, breathing, camera pacing)
 - [ ] Add What-If Mode for branching episode possibilities
 - [ ] Create Auto-Publish pipeline to YouTube/TikTok with metadata

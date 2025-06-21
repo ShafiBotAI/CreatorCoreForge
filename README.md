@@ -32,6 +32,7 @@
   - VoiceTimbreModulator for customizable timbre profiles
   - AIEmotionEngine for dynamic emotion cues
   - GPT-based chapter segmentation and ElevenLabs voice streaming
+  - BookImporter now parses TXT, PDF, and EPUB with metadata extraction
   - Downloadable audiobooks with bookmarkable playback
   - Audiobook export engine (MP3/WAV with zip packaging via `AudiobookCompiler`)
   - OfflineTTSCache for local voice caching
@@ -181,7 +182,11 @@
 - **Creator Dashboard:** Toggle Voice Memory, Emotion Graphs, Plugin Builder, AI Studio, Genesis, Global Unlock, and Sandbox tools across apps
 - **EmotionGraph:** Cross-app tracker for character emotion intensity
 - **EmotionalArcTracker:** Records emotion intensity for characters over time
+
 - **EmotionHeatmap:** Generates normalized emotion intensity heatmaps from text
+
+- **NSFWMoodHeatmap:** Normalizes logged NSFW intensity levels for analytics
+
 - **SceneGenerator:** Converts text into basic storyboard scenes
 - **VoiceMemoryManager:** Shares voice assignments across apps
 - **VoiceTrainer:** Uploads and trains custom voice models locally for offline voice synthesis.
@@ -234,6 +239,7 @@ See `/agents.md` in each folder for:
 - Feature-level tasks
 - Build flags (✅ = done, 🟨 = in dev, 🟥 = not started)
 - Milestone goals (Phase 1 to Phase 7)
+- Phase 8 tasks are tracked in `docs/PHASE_EIGHT.md`
 
 > If you’re a new developer joining this project, start with `CoreForge Audio` and `CoreForge Visual`.
 
@@ -300,8 +306,8 @@ The following components are planned across all apps but are still works in prog
 
 Run `./scripts/generate_pbxproj.sh` to generate missing Xcode project files for
 any Swift packages under `apps/`.
-All apps include an `AppStoreAssets` directory with placeholder icons and launch
-screen files. Replace these placeholders before submission.
+All apps include an `AppStoreAssets` directory containing the icons and launch
+screen files used for store submission.
 
 ## Desktop Build Script
 

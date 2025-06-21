@@ -43,10 +43,34 @@ public final class AudioExporter {
     /// Compress a set of file paths into a zip archive in the export directory.
     /// - Returns: Path to the created zip file.
     public func compressToZip(filePaths: [String], zipName: String) -> String {
-        let zipPath = exportDirectory.appendingPathComponent(zipName).appendingPathExtension("zip")
+        let zipPath = exportDirectory
+            .appendingPathComponent(zipName)
+            .appendingPathExtension("zip")
         print("\u{1F4DC} Compressing files into: \(zipPath.path)")
-        // Simplified implementation: just create an empty zip placeholder
-        _ = FileManager.default.createFile(atPath: zipPath.path, contents: nil)
+        let tempDir = exportDirectory
+            .appendingPathComponent(UUID().uuidString, isDirectory: true)
+        do {
+            try FileManager.default.createDirectory(at: tempDir,
+                                                    withIntermediateDirectories: true)
+            for path in filePaths {
+                let src = URL(fileURLWithPath: path)
+                let dst = tempDir.appendingPathComponent(src.lastPathComponent)
+                try FileManager.default.copyItem(at: src, to: dst)
+            }
+            #if canImport(Compression)
+            try FileManager.default.zipItem(at: tempDir, to: zipPath)
+            #else
+            let process = Process()
+            process.launchPath = "/usr/bin/zip"
+            process.currentDirectoryURL = tempDir
+            process.arguments = ["-r", zipPath.path, "."]
+            process.launch()
+            process.waitUntilExit()
+            #endif
+            try FileManager.default.removeItem(at: tempDir)
+        } catch {
+            print("Failed to zip files: \(error)")
+        }
         return zipPath.path
     }
 }

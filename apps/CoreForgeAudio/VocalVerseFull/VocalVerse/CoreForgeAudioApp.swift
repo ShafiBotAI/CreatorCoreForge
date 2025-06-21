@@ -1,14 +1,11 @@
-import Foundation
 #if canImport(SwiftUI)
 import SwiftUI
-#endif
 #if canImport(FirebaseCore)
 import FirebaseCore
 #endif
 
-#if canImport(SwiftUI)
 @main
-struct LoreForgeAIApp: App {
+struct CoreForgeAudioApp: App {
     init() {
 #if canImport(FirebaseCore)
         FirebaseApp.configure()
@@ -22,5 +19,5 @@ struct LoreForgeAIApp: App {
     }
 }
 #else
-struct LoreForgeAIApp {}
+struct CoreForgeAudioApp {}
 #endif

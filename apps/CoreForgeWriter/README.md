@@ -32,7 +32,7 @@ This agent is responsible for building, validating, and maintaining every featur
 
 ### UX/UI Components
 - [ ] Drag-and-drop scene/chapter/plot editor
-- [ ] Settings for style, NSFW filter, accessibility
+- [x] Settings for style, NSFW filter, accessibility
 - [ ] Dark/light mode, multiple fonts, focus mode
 - [ ] Version history, backup/restore, undo/redo
 - [ ] Feedback/review UI, progress dashboard
@@ -52,7 +52,7 @@ This agent is responsible for building, validating, and maintaining every featur
 ---
 
 ## Testing Requirements
-- [ ] Unit/integration tests (AI writing, memory, import/export)
+- [x] Unit/integration tests (AI writing, memory, import/export)
 - [ ] UI/UX tests (all platforms)
 - [ ] Accessibility (screen readers, vision)
 - [ ] Performance (large docs, fast AI, low-latency)

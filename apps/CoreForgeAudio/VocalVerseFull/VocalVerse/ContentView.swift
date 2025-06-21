@@ -114,7 +114,7 @@ struct ContentView: View {
                 }
                 .padding(.top, 10)
             }
-            .navigationTitle("VocalVerse")
+            .navigationTitle("CoreForge Audio")
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
                     Button(action: playAudio) {

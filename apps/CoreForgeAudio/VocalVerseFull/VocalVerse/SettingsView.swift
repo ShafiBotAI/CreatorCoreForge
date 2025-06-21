@@ -6,8 +6,10 @@ struct SettingsView: View {
     @AppStorage("selectedVoice") private var selectedVoice = "Default"
     @AppStorage("nsfwEnabled") private var nsfwEnabled = false
     @AppStorage("parentalPIN") private var parentalPIN = "1234"
+    @AppStorage("birthDate") private var birthDateString = ""
     @AppStorage("stealthMode") private var stealthMode = false
     @State private var showPinPrompt = false
+    @State private var showAgeSheet = false
     @State private var inputPIN = ""
     @State private var showIncorrectAlert = false
 
@@ -29,7 +31,7 @@ struct SettingsView: View {
                         get: { nsfwEnabled },
                         set: { newValue in
                             if newValue {
-                                showPinPrompt = true
+                                showAgeSheet = true
                             } else {
                                 nsfwEnabled = false
                                 NSFWSoundFXEngine.shared.stopAll()
@@ -46,6 +48,14 @@ struct SettingsView: View {
             .alert("Incorrect PIN", isPresented: $showIncorrectAlert) {
                 Button("OK", role: .cancel) { }
             }
+            .sheet(isPresented: $showAgeSheet) {
+                AgeVerificationView(isPresented: $showAgeSheet) { date in
+                    let formatter = DateFormatter()
+                    formatter.dateFormat = "yyyy-MM-dd"
+                    birthDateString = formatter.string(from: date)
+                    showPinPrompt = true
+                }
+            }
             .sheet(isPresented: $showPinPrompt) {
                 PinEntryView(pin: $inputPIN, onDone: handlePinEntry)
             }
@@ -53,6 +63,12 @@ struct SettingsView: View {
     }
 
     private func handlePinEntry() {
+        guard !birthDateString.isEmpty else {
+            showAgeSheet = true
+            inputPIN = ""
+            showPinPrompt = false
+            return
+        }
         if inputPIN == parentalPIN {
             nsfwEnabled = true
             NSFWSoundFXEngine.shared.playNSFWScene(
