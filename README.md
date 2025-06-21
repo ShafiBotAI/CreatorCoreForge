@@ -179,6 +179,8 @@
     even when offline. `QuantumConnector` performs simple data transformations
     when quantum mode is enabled.
 - **Auto-Updater:** Keeps local builds current and secure
+- **NetworkInfoProvider:** Retrieves real-time data from remote JSON endpoints
+  with a simple API.
 - **AIStateTracker:** Learns from prompt history locally for adaptive responses
 - **Creator Dashboard:** Toggle Voice Memory, Emotion Graphs, Plugin Builder, AI Studio, Genesis, Global Unlock, and Sandbox tools across apps
 - **EmotionGraph:** Cross-app tracker for character emotion intensity
