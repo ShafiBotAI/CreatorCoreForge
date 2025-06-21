@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+      - run: |
+          cd VoiceLab
+          npm ci
+          npm run lint
+          npm run build
+          npm test
+      - uses: swift-actions/setup-swift@v1
+        with:
+          swift-version: '5.7'
+      - run: swift test

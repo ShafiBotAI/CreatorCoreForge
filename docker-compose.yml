@@ -1,0 +1,15 @@
+version: '3'
+services:
+  api:
+    image: node:20
+    command: node server.js
+    volumes:
+      - .:/app
+    working_dir: /app
+  firebase:
+    image: firebase/emulator
+    ports:
+      - "4000:4000"
+  tts:
+    image: node:20
+    command: node mock-tts.js

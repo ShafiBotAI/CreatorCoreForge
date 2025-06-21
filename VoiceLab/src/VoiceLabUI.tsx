@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { VoiceAnalyticsService } from './VoiceAnalyticsService';
+import { VoiceAnalyticsService, VoiceMetrics } from './VoiceAnalyticsService';
 
 export const VoiceLabUI: React.FC = () => {
-  const [metrics, setMetrics] = useState<ReturnType<VoiceAnalyticsService['analyze']> | null>(null);
+  const [metrics, setMetrics] = useState<VoiceMetrics | null>(null);
   const service = new VoiceAnalyticsService();
 
   const handleAudioChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
