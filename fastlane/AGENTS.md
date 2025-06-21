@@ -4,9 +4,9 @@
 Purpose: Manage build and distribution pipelines for iOS/macOS
 
 ### Tasks
-- [ ] Maintain Fastfile lanes for all apps
-- [ ] Update ExportOptions.plist for new entitlements
-- [ ] Document usage in README
+- [x] Maintain Fastfile lanes for all apps
+- [x] Update ExportOptions.plist for new entitlements
+- [x] Document usage in README
 - [x] Outline admin release protocols
 
 ---
