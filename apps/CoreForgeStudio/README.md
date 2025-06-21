@@ -6,7 +6,7 @@ This agent is responsible for building, validating, and maintaining all features
 ## Objectives
 - [ ] Full AI-powered multi-track audio/video production suite
 - [ ] Persistent voice/scene memory, macro builder, team dashboard
-- [ ] Support iOS, Android, PC, macOS, Web
+ - [x] Support iOS, Android, PC, macOS, Web
 - [ ] Multi-language, NSFW gating, offline-first, viral/social creator tools
 
 ---
