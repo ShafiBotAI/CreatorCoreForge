@@ -9,6 +9,7 @@ Purpose: Experimental video rendering utilities and testbed
 - [ ] Update dependencies and tsconfig
 - [ ] Sync features with CoreForge Visual
 - [ ] Document advanced usage in README
+- [x] Record admin oversight procedures
 
 ---
 

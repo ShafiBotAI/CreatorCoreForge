@@ -7,6 +7,7 @@ Purpose: Utility scripts for building and auditing CreatorCoreForge
 - [ ] Keep bash and Python scripts cross-platform
 - [ ] Ensure templates generate valid pbxproj files
 - [ ] Expand feature audit logic
+- [x] List admin script execution steps
 
 ---
 
