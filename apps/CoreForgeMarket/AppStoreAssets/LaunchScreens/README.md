@@ -1,1 +1,3 @@
-Placeholder launch screen images for CoreForgeMarket.
+# Launch Screens
+
+Use this folder to store the splash screens for CoreForgeMarket on all target platforms. Replace the placeholder images with the final designs.
