@@ -1,0 +1,9 @@
+{
+  "app_name": "CoreForge Mind",
+  "version": "1.0.0",
+  "bundle_id": "com.creatorcoreforge.mind",
+  "keywords": ["mental health", "AI therapy", "journaling", "wellness"],
+  "developer": "CreatorCoreForge",
+  "category": "Health & Fitness",
+  "platforms": ["iOS", "Android", "Windows", "macOS", "Web"]
+}

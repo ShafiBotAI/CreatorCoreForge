@@ -1,0 +1,9 @@
+{
+  "app_name": "CoreForge Leads",
+  "version": "1.0.0",
+  "bundle_id": "com.creatorcoreforge.leads",
+  "keywords": ["lead generation", "AI scoring", "CRM", "automation"],
+  "developer": "CreatorCoreForge",
+  "category": "Business",
+  "platforms": ["iOS", "Android", "Windows", "macOS", "Web"]
+}
