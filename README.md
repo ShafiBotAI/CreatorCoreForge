@@ -182,7 +182,11 @@
 - **Creator Dashboard:** Toggle Voice Memory, Emotion Graphs, Plugin Builder, AI Studio, Genesis, Global Unlock, and Sandbox tools across apps
 - **EmotionGraph:** Cross-app tracker for character emotion intensity
 - **EmotionalArcTracker:** Records emotion intensity for characters over time
+
+- **EmotionHeatmap:** Generates normalized emotion intensity heatmaps from text
+
 - **NSFWMoodHeatmap:** Normalizes logged NSFW intensity levels for analytics
+
 - **SceneGenerator:** Converts text into basic storyboard scenes
 - **VoiceMemoryManager:** Shares voice assignments across apps
 - **VoiceTrainer:** Uploads and trains custom voice models locally for offline voice synthesis.
