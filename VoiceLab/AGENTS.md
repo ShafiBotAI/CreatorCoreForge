@@ -7,7 +7,7 @@ Purpose: Voice analysis and transcription components
 -### Tasks
 - [x] Ensure voice training scripts run via CI
 - [x] Keep React components typed and tested
-- [ ] Integrate with OpenAI service
+- [x] Integrate with OpenAI service
 - [x] Document new APIs
 - [x] Catalog admin troubleshooting tips
 
