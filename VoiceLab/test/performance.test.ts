@@ -1,6 +1,7 @@
-import { PerformanceMonitor } from '../src/PerformanceMonitor.ts';
-import assert from 'node:assert';
+import { PerformanceMonitor } from '../src/PerformanceMonitor';
 
-const monitor = new PerformanceMonitor();
-monitor.record('testMetric', 123);
-assert.ok(true); // if no error thrown, test passes
+test('PerformanceMonitor records metrics', () => {
+  const monitor = new PerformanceMonitor();
+  monitor.record('testMetric', 123);
+  expect(true).toBe(true);
+});

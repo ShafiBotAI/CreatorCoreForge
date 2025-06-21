@@ -8,9 +8,6 @@
 
     "test": "rm -rf dist && jest",
     "lint": "eslint 'src/**/*.{ts,tsx}'"
-=======
-    "test": "node --loader ts-node/esm test/index.test.ts && node --loader ts-node/esm test/performance.test.ts && node --loader ts-node/esm test/transcript.test.ts && node --loader ts-node/esm test/syncHighlight.test.tsx"
-
   },
   "devDependencies": {
     "@types/jest": "^29.5.4",
@@ -25,10 +22,7 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-
-    "graphql": "^16.8.1"
-=======
+    "graphql": "^16.8.1",
     "@sentry/node": "^7.92.0"
-
   }
 }
