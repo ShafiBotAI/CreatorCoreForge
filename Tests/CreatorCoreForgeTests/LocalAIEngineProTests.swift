@@ -47,4 +47,16 @@ final class LocalAIEngineProTests: XCTestCase {
         }
         wait(for: [expectation], timeout: 1)
     }
+
+    func testAnalyzeSentimentDetectsPositive() {
+        let engine = LocalAIEnginePro()
+        let sentiment = engine.analyzeSentiment("This is great and wonderful")
+        XCTAssertEqual(sentiment, .positive)
+    }
+
+    func testAnalyzeSentimentDetectsNegative() {
+        let engine = LocalAIEnginePro()
+        let sentiment = engine.analyzeSentiment("This is awful and terrible")
+        XCTAssertEqual(sentiment, .negative)
+    }
 }
