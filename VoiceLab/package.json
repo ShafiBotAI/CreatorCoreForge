@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "type": "module",
   "main": "dist/index.js",
-  "scripts": {
-    "build": "tsc",
-    "test": "rimraf dist && jest",
-    "lint": "eslint 'src/**/*.{ts,tsx}'"
-  },
+    "scripts": {
+    "pretest": "npm install",
+      "build": "tsc",
+      "test": "rimraf dist && jest",
+      "lint": "eslint 'src/**/*.{ts,tsx}'"
+    },
   "devDependencies": {
     "@types/jest": "^29.5.4",
     "@types/react": "^19.1.8",
