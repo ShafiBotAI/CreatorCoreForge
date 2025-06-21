@@ -1,6 +1,6 @@
-import assert from 'node:assert';
-import { TranscriptGenerator } from '../src/transcriptGenerator.ts';
+import { TranscriptGenerator } from '../src/transcriptGenerator';
 
-const generator = new TranscriptGenerator({ apiKey: 'test-key' });
-assert.ok(typeof generator.generateTranscript === 'function');
-console.log('TranscriptGenerator basic test passed');
+test('TranscriptGenerator has generate function', () => {
+  const generator = new TranscriptGenerator({ apiKey: 'test-key' });
+  expect(typeof generator.generateTranscript).toBe('function');
+});
