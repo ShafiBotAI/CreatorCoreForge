@@ -61,7 +61,6 @@ Advanced AI writing assistant for creating books, series, and self-help guides w
 - [ ] Monetization-split tracking per co-author
 - [ ] Accessibility scoring and feedback panel
 - [ ] Emotional writing boost generator (mood-based prompts)
-=======
 ### Upcoming Features
 - [ ] Add Genre Mimicry Engine and Thematic Analyzer
 - [ ] Build AI outline → full manuscript generator

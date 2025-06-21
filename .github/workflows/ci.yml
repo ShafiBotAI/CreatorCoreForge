@@ -23,7 +23,6 @@ jobs:
         with:
           swift-version: '5.7'
       - run: swift test
-=======
     branches: [ main ]
 
 jobs:
