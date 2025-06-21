@@ -32,6 +32,7 @@
   - VoiceTimbreModulator for customizable timbre profiles
   - AIEmotionEngine for dynamic emotion cues
   - GPT-based chapter segmentation and ElevenLabs voice streaming
+  - BookImporter now parses TXT, PDF, and EPUB with metadata extraction
   - Downloadable audiobooks with bookmarkable playback
   - Audiobook export engine (MP3/WAV with zip packaging via `AudiobookCompiler`)
   - OfflineTTSCache for local voice caching

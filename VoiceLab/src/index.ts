@@ -3,6 +3,7 @@ export { VoiceAnalyticsService, VoiceMetrics } from './VoiceAnalyticsService';
 export { VoiceLabUI } from './VoiceLabUI';
 
 export * from './importer';
+export * from './bookImporter';
 export * from './segmentation';
 export * from './voiceMap';
 export * from './ttsService';
