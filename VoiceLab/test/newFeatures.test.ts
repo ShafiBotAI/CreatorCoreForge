@@ -1,4 +1,4 @@
-import { GroupListenService, PronunciationService } from '../src';
+import { GroupListenService, PronunciationService, UnifiedAudioEngine } from '../src';
 
 test('GroupListenService can create room', async () => {
   const svc = new GroupListenService();
@@ -10,4 +10,12 @@ test('PronunciationService suggests phonemes', async () => {
   const svc = new PronunciationService();
   const result = await svc.suggestCorrections('Hello World');
   expect(result).toEqual(['hello', 'world']);
+});
+
+test('UnifiedAudioEngine volume clamp', () => {
+  const engine = UnifiedAudioEngine.shared;
+  engine.setVolume(2);
+  expect(engine.currentVolume()).toBe(1);
+  engine.mute();
+  expect(engine.isMuted()).toBe(true);
 });

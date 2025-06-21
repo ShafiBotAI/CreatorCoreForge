@@ -32,3 +32,5 @@ export { PronunciationEditor } from './pronunciationEditor';
 export { PronunciationService, Phoneme } from './pronunciationService';
 export { BookmarkService } from './bookmarkService';
 
+export { UnifiedAudioEngine } from './UnifiedAudioEngine';
+
