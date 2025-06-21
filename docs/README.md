@@ -8,3 +8,4 @@ Additional guides and phase planning documents for the CreatorCoreForge ecosyste
 - `ModuleMigrationGuide.md` – updating projects to use shared Phase 8 modules.
 - `audiobook_topics.csv` – reference list of audiobook development topics.
 - `NextGenSoundFX.md` – script usage for generating simple SFX
+- `NextGenAdaptiveMusic.md` – create short mood-based music loops
