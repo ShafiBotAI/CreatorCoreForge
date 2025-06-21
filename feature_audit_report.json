@@ -89,6 +89,25 @@
       "**Refer to features-phase8.json and NSFWExpansion.md for raw task breakdowns.**"
     ]
   },
+  "Sources": {
+    "implemented": [
+      "Add unit tests for new engines"
+    ],
+    "missing": [
+      "Keep Package.swift targets up to date",
+      "Maintain cross-app modules in CreatorCoreForge",
+      "Create admin onboarding docs"
+    ]
+  },
+  "scripts": {
+    "implemented": [],
+    "missing": [
+      "Keep bash and Python scripts cross-platform",
+      "Ensure templates generate valid pbxproj files",
+      "Expand feature audit logic",
+      "List admin script execution steps"
+    ]
+  },
   "docs": {
     "implemented": [],
     "missing": [
@@ -96,6 +115,15 @@
       "Update migration guides for new modules",
       "Review diagrams and images for accuracy",
       "Document admin responsibilities and contacts"
+    ]
+  },
+  "fastlane": {
+    "implemented": [],
+    "missing": [
+      "Maintain Fastfile lanes for all apps",
+      "Update ExportOptions.plist for new entitlements",
+      "Document usage in README",
+      "Outline admin release protocols"
     ]
   },
   ".github": {
@@ -107,14 +135,14 @@
       "Add admin automation guidelines"
     ]
   },
-  "VoiceLab": {
+  "VisualLab": {
     "implemented": [],
     "missing": [
-      "Ensure voice training scripts run via CI",
-      "Keep React components typed and tested",
-      "Integrate with OpenAI service",
-      "Document new APIs",
-      "Catalog admin troubleshooting tips"
+      "Maintain CI workflow for `npm test`",
+      "Update dependencies and tsconfig",
+      "Sync features with CoreForge Visual",
+      "Document advanced usage in README",
+      "Record admin oversight procedures"
     ]
   },
   "apps": {
@@ -126,15 +154,166 @@
       "Centralize admin contacts for app teams"
     ]
   },
-  "CoreForgeVoiceLab": {
+  "CoreForgeBuild": {
     "implemented": [],
     "missing": [
-      "Voice recording and analysis tools",
-      "Training pipeline for custom voices",
-      "Quality metrics and tuning controls",
-      "Export to CoreForge Audio or Music",
+      "App idea generator based on trends (Codex)",
+      "UI builder using Figma/code templates (Codex)",
+      "Build Codex writes Swift, Kotlin, Python, Unity, JS (Codex)",
+      "Auto-connect to GitHub, Xcode, Android Studio (Codex)",
+      "Pull code and plugins from public sources (Codex)",
+      "Next-gen AI reasoning engine for debugging and enhancements (Codex)",
+      "Monetization logic builder (subscriptions, IAPs) (Codex)",
+      "Virality engine with upload integration (Codex)",
+      "Auto bundler for iOS, Android, PC, VR (Codex)",
+      "Integrate shared `autoUpdater.swift`",
+      "Generate full `.pbxproj` project",
+      "Provide App Store assets and launch screens",
+      "Finalize production UI components",
+      "Build `.dmg` and `.exe` installers"
+    ]
+  },
+  "CoreForgeVisual": {
+    "implemented": [
+      "Import ePub/PDF/text and auto-adapt to storyboard scenes",
+      "Subscription, credits, and in-app purchases",
+      "UI/UX interaction tests (all platforms)",
+      "UI/UX interaction tests (all platforms)"
+    ],
+    "missing": [
+      "End-to-end cinematic video creation from text/book/script input",
+      "Persistent character/scene memory across books and series",
+      "Support for iOS, Android, PC, macOS, and Web",
+      "Multilingual, NSFW gating, offline content, marketplace, AR/VR, social/viral, and creator features",
+      "AI character detection and persistent visual/voice memory",
+      "Scene-by-scene video dramatization, export/download",
+      "Multi-style rendering (anime, live, fantasy, etc.)",
+      "Adaptive soundtrack and voice SFX per scene",
+      "Drag-and-drop scene, shot, and effect editor",
+      "In-app streaming and offline playback",
+      "Auto social/creator upload, promo code system",
+      "LocalAI/VisualAI-based scene gap-filling and animation",
+      "Emotional arc, tone/genre adaptation",
+      "Scene auto-tagging, timeline heatmap",
+      "FusionEngine plugin/modular tools, macro automations",
+      "Creator/Admin dashboard: credits, usage, analytics",
+      "Cross-app memory/asset sharing (character, scene, voice, style)",
+      "Real-time AI director for storyboarding, shot/voice suggestions",
+      "Storyboard editor and shot timeline UI",
+      "Dark mode, accessibility themes",
+      "Settings for visual style, voices, NSFW gating",
+      "Drag-and-drop scene, shot, SFX, overlay builder",
+      "Live emotion/tone heatmap visualization",
+      "Group \u201cWatch\u201d rooms for live viewing, chat, and voting",
+      "User dashboard: assets, purchases, progress, achievements",
+      "LocalAI/VisualAI engine, prompt templating, animation pipeline",
+      "Secure API keys, GDPR/CCPA/COPPA compliance",
+      "Firebase (or equivalent): Auth, Storage, Analytics",
+      "Auto-updater embedded for all builds",
+      "Platform-specific permissions/configuration for all platforms",
+      "Export to all major video formats (MP4, MOV, GIF, etc.)",
+      "Complete `.pbxproj` and project files (all platforms)",
+      "App Store, Google Play, Microsoft Store, Web compliance",
+      "Unit/integration tests for scene rendering, memory, export",
+      "Stress and performance tests (ultra-long video, multi-scene)",
+      "Security/privacy audits, NSFW gating tests",
+      "Accessibility validation (subtitles, voiceover, visual clarity)",
+      "Stress and performance tests (ultra-long video, multi-scene)",
+      "Security/privacy audits, NSFW gating tests",
+      "Accessibility validation (subtitles, voiceover, visual clarity)",
+      "GitHub Actions for multi-platform builds",
+      "Version tagging, changelogs",
+      "Automated deployment to TestFlight, Play Store, Google Drive",
+      "Smart auto-updater for models/assets",
+      "App store policy compliance (export, NSFW, region lock)",
+      "README.md, APISetup.md, PromptTemplates.md, DeveloperSetup.md",
+      "App store/launch assets (icons, screens, promo)",
+      "Privacy, NSFW policy, parental docs, user guide",
+      "Quantum scene switcher, alternate universe generator",
+      "Live scene gap-filling from AI/AR/VR overlays",
+      "Visual memory engine, cross-project timelines",
+      "Fan engagement, live voting, interactive overlays",
+      "Meme/video generator, social sharing templates",
+      "Team portals, collab editing, marketplace for templates/assets",
+      "Ultra-long export, custom watermarks, secure publishing",
+      "Emotion/genre/tone heatmaps, viral templates",
+      "Creator/director commentary export, podcast mode",
+      "Age-gated, auto-censored erotic/explicit video generation",
+      "NSFW overlays, intensity dial, haptic/AR/VR integration",
+      "Private/secret video rooms, encrypted sharing, pay-per-view",
+      "NSFW fan clubs, tip jars, premium unlocks",
+      "Group live NSFW video, live collab acting rooms",
+      "Consent tracking, aftercare, moderation, decoy/stealth mode",
+      "Age-gated, auto-censored erotic/explicit video generation",
+      "NSFW overlays, intensity dial, haptic/AR/VR integration",
+      "Private/secret video rooms, encrypted sharing, pay-per-view",
+      "NSFW fan clubs, tip jars, premium unlocks",
+      "Group live NSFW video, live collab acting rooms",
+      "Consent tracking, aftercare, moderation, decoy/stealth mode",
+      "All `.pbxproj`/multi-platform project files",
+      "Final UI/UX and accessibility polish",
+      "Launch/test `.dmg`, `.exe` installers",
+      "Tutorial/help flows, onboarding, CI/CD live test",
+      "Full asset and compliance review"
+    ]
+  },
+  "CoreForgeMind": {
+    "implemented": [],
+    "missing": [
+      "Daily mood journal with AI analysis",
+      "Guided meditation and soundscapes",
+      "Secure vault for private entries",
+      "Optional NSFW wellness modules",
       "Integrate shared `autoUpdater.swift`",
       "Finalize production UI components"
+    ]
+  },
+  "CoreForgeMarket": {
+    "implemented": [
+      "Adaptive AI trading strategy engine",
+      "Export: CSV, PDF, JSON",
+      "UI/UX (all platforms)"
+    ],
+    "missing": [
+      "Fully functional AI trading, alerts, analytics, multi-platform",
+      "Persistent memory, multi-strategy, social trading, and dashboards",
+      "Compliance, risk management, and white label/enterprise features",
+      "Real-time sentiment, event, and technical analysis",
+      "Portfolio management, auto-rebalancing",
+      "Shadow trading, copy trading, arbitrage finder",
+      "Cross-platform API integration, alerts, dashboards",
+      "FusionEngine plugin, marketplace for bots/strategies",
+      "Admin controls: quotas, reporting, compliance",
+      "Multi-brain AI core (logic, speed, quality)",
+      "Quantum/Hybrid AI strategy modules",
+      "OpenAI/LocalAI for sentiment/news, risk analytics",
+      "Secure exchange integration (API keys, encryption)",
+      "Real-time bot marketplace and plugin extension",
+      "Portfolio and analytics dashboards",
+      "Settings for risk, strategy, notifications",
+      "Dark/light mode, accessibility",
+      "Copy trading, social sharing, leaderboards",
+      "Alerts, notifications, trade confirmation UI",
+      "LocalAI, plugin modules, secure API keys",
+      "GDPR, CCPA, KYC/AML compliance",
+      "Firebase/Firestore: Auth, Data, Analytics",
+      "Auto-updater, platform config, app store compliance",
+      "All platform project files",
+      "Unit/integration (AI trading, import/export)",
+      "Performance, compliance, risk, security",
+      "API integration tests (real and sandbox)",
+      "GitHub Actions, tagging, changelogs, auto-deploy",
+      "App store asset and compliance review",
+      "README.md, APISetup.md, PromptTemplates.md, DeveloperSetup.md",
+      "App store/launch assets, compliance/user guides",
+      "Quantum/AI hybrid mode, parallel simulation, anomaly detection",
+      "Multibrain risk/speed/profit settings",
+      "Team/group trading, portfolio sharing, leaderboards",
+      "Marketplace for bots, plugins, signals, analytics",
+      "API for external tools, compliance/legal automation",
+      "All platform project files",
+      "Final UI polish, onboarding, tutorial flows",
+      "Full CI/CD deployment test, compliance review"
     ]
   },
   "CoreForgeWriter": {
@@ -253,96 +432,26 @@
       "Add voice/scene-to-video alignment overlays"
     ]
   },
-  "CoreForgeMarket": {
-    "implemented": [
-      "Adaptive AI trading strategy engine",
-      "Export: CSV, PDF, JSON",
-      "UI/UX (all platforms)"
-    ],
-    "missing": [
-      "Fully functional AI trading, alerts, analytics, multi-platform",
-      "Persistent memory, multi-strategy, social trading, and dashboards",
-      "Compliance, risk management, and white label/enterprise features",
-      "Real-time sentiment, event, and technical analysis",
-      "Portfolio management, auto-rebalancing",
-      "Shadow trading, copy trading, arbitrage finder",
-      "Cross-platform API integration, alerts, dashboards",
-      "FusionEngine plugin, marketplace for bots/strategies",
-      "Admin controls: quotas, reporting, compliance",
-      "Multi-brain AI core (logic, speed, quality)",
-      "Quantum/Hybrid AI strategy modules",
-      "OpenAI/LocalAI for sentiment/news, risk analytics",
-      "Secure exchange integration (API keys, encryption)",
-      "Real-time bot marketplace and plugin extension",
-      "Portfolio and analytics dashboards",
-      "Settings for risk, strategy, notifications",
-      "Dark/light mode, accessibility",
-      "Copy trading, social sharing, leaderboards",
-      "Alerts, notifications, trade confirmation UI",
-      "LocalAI, plugin modules, secure API keys",
-      "GDPR, CCPA, KYC/AML compliance",
-      "Firebase/Firestore: Auth, Data, Analytics",
-      "Auto-updater, platform config, app store compliance",
-      "All platform project files",
-      "Unit/integration (AI trading, import/export)",
-      "Performance, compliance, risk, security",
-      "API integration tests (real and sandbox)",
-      "GitHub Actions, tagging, changelogs, auto-deploy",
-      "App store asset and compliance review",
-      "README.md, APISetup.md, PromptTemplates.md, DeveloperSetup.md",
-      "App store/launch assets, compliance/user guides",
-      "Quantum/AI hybrid mode, parallel simulation, anomaly detection",
-      "Multibrain risk/speed/profit settings",
-      "Team/group trading, portfolio sharing, leaderboards",
-      "Marketplace for bots, plugins, signals, analytics",
-      "API for external tools, compliance/legal automation",
-      "All platform project files",
-      "Final UI polish, onboarding, tutorial flows",
-      "Full CI/CD deployment test, compliance review"
-    ]
-  },
-  "CoreForgeMusic": {
-    "implemented": [
-      "Match vocals to beat tempo/mood",
-      "Split-test hooks for virality",
-      "`HookCrafter.swift`",
-      "`VocalEnginePro.swift`",
-      "`BeatMatcher.swift`"
-    ],
-    "missing": [
-      "Hook generator + song structure templates",
-      "Voice cloning & AI vocal production (Codex)",
-      "Beat marketplace + licensing",
-      "Commercial export + label pitch toolkit (Codex)",
-      "NSFW/Explicit lyric toggle",
-      "Detect trending styles and key phrases",
-      "Suggest bridge/chorus transitions",
-      "Flag explicit lyrics and apply filters",
-      "Fix and complete the `.pbxproj` project file (Codex)",
-      "Integrate shared `autoUpdater.swift`",
-      "Generate full `.pbxproj` project",
-      "Provide App Store assets and launch screens",
-      "Finalize production UI components",
-      "Build `.dmg` and `.exe` installers"
-    ]
-  },
-  "CoreForgeBuild": {
+  "CoreForgeDNA": {
     "implemented": [],
     "missing": [
-      "App idea generator based on trends (Codex)",
-      "UI builder using Figma/code templates (Codex)",
-      "Build Codex writes Swift, Kotlin, Python, Unity, JS (Codex)",
-      "Auto-connect to GitHub, Xcode, Android Studio (Codex)",
-      "Pull code and plugins from public sources (Codex)",
-      "Next-gen AI reasoning engine for debugging and enhancements (Codex)",
-      "Monetization logic builder (subscriptions, IAPs) (Codex)",
-      "Virality engine with upload integration (Codex)",
-      "Auto bundler for iOS, Android, PC, VR (Codex)",
+      "Character DNA tree and visualization",
+      "Memory linking across apps",
+      "Export and import DNA profiles",
+      "Multiverse DNA merges and comparisons",
       "Integrate shared `autoUpdater.swift`",
-      "Generate full `.pbxproj` project",
-      "Provide App Store assets and launch screens",
-      "Finalize production UI components",
-      "Build `.dmg` and `.exe` installers"
+      "Complete `.pbxproj` project file"
+    ]
+  },
+  "CoreForgeVoiceLab": {
+    "implemented": [],
+    "missing": [
+      "Voice recording and analysis tools",
+      "Training pipeline for custom voices",
+      "Quality metrics and tuning controls",
+      "Export to CoreForge Audio or Music",
+      "Integrate shared `autoUpdater.swift`",
+      "Finalize production UI components"
     ]
   },
   "CoreForgeAudio": {
@@ -471,123 +580,6 @@
       "Full CI/CD pipeline from GitHub to all app stores/platforms"
     ]
   },
-  "CoreForgeMind": {
-    "implemented": [],
-    "missing": [
-      "Daily mood journal with AI analysis",
-      "Guided meditation and soundscapes",
-      "Secure vault for private entries",
-      "Optional NSFW wellness modules",
-      "Integrate shared `autoUpdater.swift`",
-      "Finalize production UI components"
-    ]
-  },
-  "CoreForgeBloom": {
-    "implemented": [],
-    "missing": [
-      "Cycle tracking and predictions",
-      "Sexual wellness insights and reminders",
-      "Private vault with consent logs",
-      "Wearable data integration",
-      "Integrate shared `autoUpdater.swift`",
-      "Finalize production UI components"
-    ]
-  },
-  "CoreForgeVisual": {
-    "implemented": [
-      "Import ePub/PDF/text and auto-adapt to storyboard scenes",
-      "Subscription, credits, and in-app purchases",
-      "UI/UX interaction tests (all platforms)",
-      "UI/UX interaction tests (all platforms)"
-    ],
-    "missing": [
-      "End-to-end cinematic video creation from text/book/script input",
-      "Persistent character/scene memory across books and series",
-      "Support for iOS, Android, PC, macOS, and Web",
-      "Multilingual, NSFW gating, offline content, marketplace, AR/VR, social/viral, and creator features",
-      "AI character detection and persistent visual/voice memory",
-      "Scene-by-scene video dramatization, export/download",
-      "Multi-style rendering (anime, live, fantasy, etc.)",
-      "Adaptive soundtrack and voice SFX per scene",
-      "Drag-and-drop scene, shot, and effect editor",
-      "In-app streaming and offline playback",
-      "Auto social/creator upload, promo code system",
-      "LocalAI/VisualAI-based scene gap-filling and animation",
-      "Emotional arc, tone/genre adaptation",
-      "Scene auto-tagging, timeline heatmap",
-      "FusionEngine plugin/modular tools, macro automations",
-      "Creator/Admin dashboard: credits, usage, analytics",
-      "Cross-app memory/asset sharing (character, scene, voice, style)",
-      "Real-time AI director for storyboarding, shot/voice suggestions",
-      "Storyboard editor and shot timeline UI",
-      "Dark mode, accessibility themes",
-      "Settings for visual style, voices, NSFW gating",
-      "Drag-and-drop scene, shot, SFX, overlay builder",
-      "Live emotion/tone heatmap visualization",
-      "Group \u201cWatch\u201d rooms for live viewing, chat, and voting",
-      "User dashboard: assets, purchases, progress, achievements",
-      "LocalAI/VisualAI engine, prompt templating, animation pipeline",
-      "Secure API keys, GDPR/CCPA/COPPA compliance",
-      "Firebase (or equivalent): Auth, Storage, Analytics",
-      "Auto-updater embedded for all builds",
-      "Platform-specific permissions/configuration for all platforms",
-      "Export to all major video formats (MP4, MOV, GIF, etc.)",
-      "Complete `.pbxproj` and project files (all platforms)",
-      "App Store, Google Play, Microsoft Store, Web compliance",
-      "Unit/integration tests for scene rendering, memory, export",
-      "Stress and performance tests (ultra-long video, multi-scene)",
-      "Security/privacy audits, NSFW gating tests",
-      "Accessibility validation (subtitles, voiceover, visual clarity)",
-      "Stress and performance tests (ultra-long video, multi-scene)",
-      "Security/privacy audits, NSFW gating tests",
-      "Accessibility validation (subtitles, voiceover, visual clarity)",
-      "GitHub Actions for multi-platform builds",
-      "Version tagging, changelogs",
-      "Automated deployment to TestFlight, Play Store, Google Drive",
-      "Smart auto-updater for models/assets",
-      "App store policy compliance (export, NSFW, region lock)",
-      "README.md, APISetup.md, PromptTemplates.md, DeveloperSetup.md",
-      "App store/launch assets (icons, screens, promo)",
-      "Privacy, NSFW policy, parental docs, user guide",
-      "Quantum scene switcher, alternate universe generator",
-      "Live scene gap-filling from AI/AR/VR overlays",
-      "Visual memory engine, cross-project timelines",
-      "Fan engagement, live voting, interactive overlays",
-      "Meme/video generator, social sharing templates",
-      "Team portals, collab editing, marketplace for templates/assets",
-      "Ultra-long export, custom watermarks, secure publishing",
-      "Emotion/genre/tone heatmaps, viral templates",
-      "Creator/director commentary export, podcast mode",
-      "Age-gated, auto-censored erotic/explicit video generation",
-      "NSFW overlays, intensity dial, haptic/AR/VR integration",
-      "Private/secret video rooms, encrypted sharing, pay-per-view",
-      "NSFW fan clubs, tip jars, premium unlocks",
-      "Group live NSFW video, live collab acting rooms",
-      "Consent tracking, aftercare, moderation, decoy/stealth mode",
-      "Age-gated, auto-censored erotic/explicit video generation",
-      "NSFW overlays, intensity dial, haptic/AR/VR integration",
-      "Private/secret video rooms, encrypted sharing, pay-per-view",
-      "NSFW fan clubs, tip jars, premium unlocks",
-      "Group live NSFW video, live collab acting rooms",
-      "Consent tracking, aftercare, moderation, decoy/stealth mode",
-      "All `.pbxproj`/multi-platform project files",
-      "Final UI/UX and accessibility polish",
-      "Launch/test `.dmg`, `.exe` installers",
-      "Tutorial/help flows, onboarding, CI/CD live test",
-      "Full asset and compliance review"
-    ]
-  },
-  "CoreForgeDNA": {
-    "implemented": [],
-    "missing": [
-      "Character DNA tree and visualization",
-      "Memory linking across apps",
-      "Export and import DNA profiles",
-      "Multiverse DNA merges and comparisons",
-      "Integrate shared `autoUpdater.swift`",
-      "Complete `.pbxproj` project file"
-    ]
-  },
   "CoreForgeLearn": {
     "implemented": [],
     "missing": [
@@ -629,6 +621,17 @@
       "Build `.dmg` and `.exe` installers"
     ]
   },
+  "CoreForgeBloom": {
+    "implemented": [],
+    "missing": [
+      "Cycle tracking and predictions",
+      "Sexual wellness insights and reminders",
+      "Private vault with consent logs",
+      "Wearable data integration",
+      "Integrate shared `autoUpdater.swift`",
+      "Finalize production UI components"
+    ]
+  },
   "CoreForgeQuest": {
     "implemented": [],
     "missing": [
@@ -640,14 +643,33 @@
       "Finalize production UI components"
     ]
   },
-  "VisualLab": {
-    "implemented": [],
+  "CoreForgeMusic": {
+    "implemented": [
+      "Match vocals to beat tempo/mood",
+      "Split-test hooks for virality",
+      "`HookCrafter.swift`",
+      "`VocalEnginePro.swift`",
+      "`BeatMatcher.swift`"
+    ],
     "missing": [
-      "Maintain CI workflow for `npm test`",
-      "Update dependencies and tsconfig",
-      "Sync features with CoreForge Visual",
-      "Document advanced usage in README",
-      "Record admin oversight procedures"
+      "Hook generator + song structure templates",
+      "Voice cloning & AI vocal production (Codex)",
+      "Beat marketplace + licensing",
+      "Commercial export + label pitch toolkit (Codex)",
+      "NSFW/Explicit lyric toggle",
+      "Detect trending styles and key phrases",
+      "Suggest bridge/chorus transitions",
+      "Flag explicit lyrics and apply filters",
+      "Fix and complete the `.pbxproj` project file (Codex)",
+      "Integrate sha
+   - Keep React components typed and tested
+   - Integrate with OpenAI service
+   - Document new APIs
+   - Catalog admin troubleshooting tips
+
+==================================================
+
+nstallers"
     ]
   },
   "Tests": {
@@ -659,32 +681,14 @@
       "Provide admin test access instructions"
     ]
   },
-  "fastlane": {
+  "VoiceLab": {
     "implemented": [],
     "missing": [
-      "Maintain Fastfile lanes for all apps",
-      "Update ExportOptions.plist for new entitlements",
-      "Document usage in README",
-      "Outline admin release protocols"
-    ]
-  },
-  "scripts": {
-    "implemented": [],
-    "missing": [
-      "Keep bash and Python scripts cross-platform",
-      "Ensure templates generate valid pbxproj files",
-      "Expand feature audit logic",
-      "List admin script execution steps"
-    ]
-  },
-  "Sources": {
-    "implemented": [
-      "Add unit tests for new engines"
-    ],
-    "missing": [
-      "Keep Package.swift targets up to date",
-      "Maintain cross-app modules in CreatorCoreForge",
-      "Create admin onboarding docs"
+      "Ensure voice training scripts run via CI",
+      "Keep React components typed and tested",
+      "Integrate with OpenAI service",
+      "Document new APIs",
+      "Catalog admin troubleshooting tips"
     ]
   }
 }

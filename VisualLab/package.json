@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
+    "pretest": "npm install",
     "test": "TS_NODE_TRANSPILE_ONLY=1 node --loader ts-node/esm test/index.test.ts && TS_NODE_TRANSPILE_ONLY=1 node --loader ts-node/esm test/newFeatures.test.ts"
   },
   "devDependencies": {

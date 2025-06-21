@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
+    "pretest": "npm install",
     "test": "rm -rf dist && jest",
     "lint": "eslint 'src/**/*.{ts,tsx}'"
   },
