@@ -17,7 +17,6 @@ export * from './performance';
 export * from './theming';
 export * from './graphql';
 export * from './notificationService';
-=======
 export { PerformanceMonitor } from './PerformanceMonitor';
 export { TranscriptGenerator } from './transcriptGenerator';
 export { SyncHighlight, TranscriptSegment } from './syncHighlight';
