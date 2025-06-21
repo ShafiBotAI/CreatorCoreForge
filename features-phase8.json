@@ -36,7 +36,9 @@
       "AudioSearchIndex",
       "ProfanityFilter",
       "VoiceCloneShare",
-      "DynamicChapterTransitions"
+      "DynamicChapterTransitions",
+      "HeatmapAnalytics",
+      "VersionedExports"
     ],
     "CoreForgeVisual": [
       "Adaptive scene completion",
