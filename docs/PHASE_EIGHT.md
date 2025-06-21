@@ -50,6 +50,7 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 - [ ] AdvancedTimelineEditor
 - [ ] BrailleOutputService
 - [ ] PronunciationDictionary
+- [ ] CrossPlatformVideoGenerator
 
 ### CoreForgeVisual
 - [x] UnifiedAudioEngine
@@ -67,6 +68,7 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 - [x] WatermarkService
 - [x] SubtitleGenerator
 - [x] RenderAnalyticsDashboard
+- [ ] CrossPlatformVideoGenerator
 
 ### CoreForgeWriter
 - [ ] UnifiedAudioEngine
@@ -74,6 +76,7 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 - [ ] Memory pinning
 - [ ] Quantum-choice plotting
 - [ ] Community marketplace
+- [ ] CrossPlatformVideoGenerator
 
 ### CoreForgeMarket
 - [ ] UnifiedAudioEngine
@@ -81,6 +84,7 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 - [ ] Hybrid quantum trading engine
 - [ ] Team trading and leaderboards
 - [ ] Bot marketplace
+- [ ] CrossPlatformVideoGenerator
 
 ### CoreForgeBuild
 - [ ] UnifiedAudioEngine
@@ -88,6 +92,7 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 - [ ] Figma-driven UI builder
 - [ ] Auto bundler for all platforms
 - [ ] Debugging assistant
+- [ ] CrossPlatformVideoGenerator
 
 ### CoreForgeStudio
 - [ ] UnifiedAudioEngine
@@ -95,6 +100,7 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 - [ ] Real-time ensemble acting
 - [ ] Quantum edit mode
 - [ ] Template monetization
+- [ ] CrossPlatformVideoGenerator
 
 ### CoreForgeMusic
 - [ ] UnifiedAudioEngine
@@ -102,6 +108,7 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 - [ ] AI vocal production
 - [ ] Commercial export tools
 - [ ] Voice cloning
+- [ ] CrossPlatformVideoGenerator
 
 ### CoreForgeLeads
 - [ ] UnifiedAudioEngine
@@ -109,5 +116,13 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 - [ ] Marketplace credit system
 - [ ] Global lead exchange
 - [ ] Advanced scoring
+- [ ] CrossPlatformVideoGenerator
+
+### CoreForgeLearn
+- [ ] UnifiedAudioEngine
+- [ ] AdaptiveLearningEngine
+- [ ] CrossPlatformVideoGenerator
+- [ ] VideoEffectsPipeline
+- [ ] AudioEffectsPipeline
 
 Use this checklist to track progress as we implement Phase 8 capabilities across every app.

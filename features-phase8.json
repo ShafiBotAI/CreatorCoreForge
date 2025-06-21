@@ -60,6 +60,7 @@
       "AdvancedTimelineEditor",
       "BrailleOutputService",
       "PronunciationDictionary",
+      "CrossPlatformVideoGenerator",
       "VideoEffectsPipeline",
       "AudioEffectsPipeline"
     ],
@@ -78,6 +79,7 @@
       "WatermarkService",
       "SubtitleGenerator",
       "RenderAnalyticsDashboard",
+      "CrossPlatformVideoGenerator",
       "VideoEffectsPipeline",
       "AudioEffectsPipeline"
     ],
@@ -86,6 +88,7 @@
       "Memory pinning",
       "Quantum-choice plotting",
       "Community marketplace",
+      "CrossPlatformVideoGenerator",
       "VideoEffectsPipeline",
       "AudioEffectsPipeline"
     ],
@@ -94,6 +97,7 @@
       "Hybrid quantum trading engine",
       "Team trading and leaderboards",
       "Bot marketplace",
+      "CrossPlatformVideoGenerator",
       "VideoEffectsPipeline",
       "AudioEffectsPipeline"
     ],
@@ -102,6 +106,7 @@
       "Figma-driven UI builder",
       "Auto bundler for all platforms",
       "Debugging assistant",
+      "CrossPlatformVideoGenerator",
       "VideoEffectsPipeline",
       "AudioEffectsPipeline"
     ],
@@ -110,6 +115,7 @@
       "Real-time ensemble acting",
       "Quantum edit mode",
       "Template monetization",
+      "CrossPlatformVideoGenerator",
       "VideoEffectsPipeline",
       "AudioEffectsPipeline"
     ],
@@ -118,6 +124,7 @@
       "AI vocal production",
       "Commercial export tools",
       "Voice cloning",
+      "CrossPlatformVideoGenerator",
       "VideoEffectsPipeline",
       "AudioEffectsPipeline"
     ],
@@ -126,6 +133,14 @@
       "Marketplace credit system",
       "Global lead exchange",
       "Advanced scoring",
+      "CrossPlatformVideoGenerator",
+      "VideoEffectsPipeline",
+      "AudioEffectsPipeline"
+    ],
+    "CoreForgeLearn": [
+      "UnifiedAudioEngine",
+      "AdaptiveLearningEngine",
+      "CrossPlatformVideoGenerator",
       "VideoEffectsPipeline",
       "AudioEffectsPipeline"
     ]
