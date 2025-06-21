@@ -2,6 +2,7 @@ name: CI
 
 on:
   pull_request:
+
     branches: [main]
 
 jobs:
@@ -22,3 +23,45 @@ jobs:
         with:
           swift-version: '5.7'
       - run: swift test
+=======
+    branches: [ main ]
+
+jobs:
+  build-test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install Node dependencies
+        working-directory: VoiceLab
+        run: npm install
+
+      - name: Node lint
+        working-directory: VoiceLab
+        run: npx eslint . --ext .ts,.tsx || true
+
+      - name: Node build
+        working-directory: VoiceLab
+        run: npm run build
+
+      - name: Node test
+        working-directory: VoiceLab
+        run: npm test
+
+      - name: Install SwiftFormat
+        run: brew install swiftformat
+
+      - name: Swift lint
+        run: swiftformat . --lint
+
+      - name: Swift build
+        run: swift build
+
+      - name: Swift test
+        run: swift test --enable-code-coverage
+
