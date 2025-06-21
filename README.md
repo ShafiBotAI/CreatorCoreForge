@@ -30,6 +30,7 @@
   - NSFW toggle, narrator marketplace, book upload
   - Offline TTS, phoneme control, lipsync, stealth vault
   - VoiceTimbreModulator for customizable timbre profiles
+  - MultiLanguageAccentNarrator enables multi-language and accent erotic narration
   - AIEmotionEngine for dynamic emotion cues
   - GPT-based chapter segmentation and ElevenLabs voice streaming
   - BookImporter now parses TXT, PDF, and EPUB with metadata extraction

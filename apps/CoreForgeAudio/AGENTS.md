@@ -166,7 +166,7 @@ This file is a full checklist of every feature required for code completion and 
 - [ ] Fan-driven “scene challenges,” viral erotic content sharing
 - [ ] Context-aware NSFW playback and scene adaptation
  - [x] Premium NSFW voice/FX asset packs
-- [ ] Multi-language and accent erotic narration
+ - [x] Multi-language and accent erotic narration
 - [ ] NSFW sandbox and community moderation features
  - [x] Haptic suit/toy API and device pairing
 
