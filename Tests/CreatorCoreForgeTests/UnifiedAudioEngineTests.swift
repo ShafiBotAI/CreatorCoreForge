@@ -15,5 +15,9 @@ final class UnifiedAudioEngineTests: XCTestCase {
         engine.unmute()
         engine.mute()
         XCTAssertTrue(engine.isMuted)
+        engine.unmute()
+        let levels = engine.fadeVolume(to: 0.5, steps: 2)
+        XCTAssertEqual(levels.count, 2)
+        XCTAssertEqual(levels.last ?? 0.0, 0.5, accuracy: 0.0001)
     }
 }

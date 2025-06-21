@@ -44,6 +44,10 @@ engine.setVolume(1.5);
 assert.strictEqual(engine.currentVolume(), 1);
 engine.mute();
 assert.ok(engine.isMuted());
+engine.unmute();
+const steps = engine.fadeVolumeTo(0.3, 2);
+assert.strictEqual(steps.length, 2);
+assert.ok(Math.abs(steps[steps.length - 1] - 0.3) < 0.001);
 
 
 console.log('New features tests passed');
