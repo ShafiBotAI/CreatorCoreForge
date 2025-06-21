@@ -289,6 +289,7 @@ For production releases, trigger `upload-appstore.yml` which calls the
 `build_and_deliver` lane to submit the apps directly to App Store Connect.
 
 See `docs/AI-Prompt-Migration.md` for integrating the new OpenAI prompt interface across apps.
+See `docs/LocalOpenAIReplacement.md` for a primer on using the LocalAI engines to mimic OpenAI features without an internet connection.
 See `docs/VoiceTrainerGuide.md` for using the local voice training engine.
 See `docs/ModuleMigrationGuide.md` for adopting shared Phase 8 modules across apps.
 All apps now include a `VideoShareManager` for posting generated videos directly to social media.
