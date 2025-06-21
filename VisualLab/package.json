@@ -1,0 +1,19 @@
+{
+  "name": "visual-lab",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "node --loader ts-node/esm test/index.test.ts"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.8",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "@sentry/node": "^7.92.0"
+  }
+}
