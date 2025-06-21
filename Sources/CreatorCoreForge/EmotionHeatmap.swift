@@ -1,47 +1,33 @@
 import Foundation
 
-
-/// Generates a real-time emotion heatmap from text input.
+/// Generates a real-time emotion heatmap from logged intensities or raw text.
 public final class EmotionHeatmap {
     private let analyzer: EmotionAnalyzer
-    private var intensities: [Float] = []
+    private var intensities: [Double] = []
 
     public init(analyzer: EmotionAnalyzer = EmotionAnalyzer()) {
         self.analyzer = analyzer
     }
 
-    /// Log a new text string and record its emotion intensity.
+    /// Analyze a text snippet and log its emotion intensity.
     public func log(_ text: String) {
         let profile = analyzer.analyzeEmotion(from: text)
-        let clamped = max(0, min(1, profile.intensity))
-        intensities.append(clamped)
+        log(emotion: profile.emotion, intensity: Double(profile.intensity))
     }
 
-    /// Normalize the most recent emotion intensities to the 0-1 range.
-    /// - Parameter window: Number of latest intensities to include.
-    public func generateHeatmap(window: Int = 10) -> [Float] {
-=======
-/// Generates a real-time emotion heatmap from logged intensities.
-public final class EmotionHeatmap {
-    private var intensities: [Double] = []
-    private var labels: [String] = []
-
-    public init() {}
-
-    /// Log an emotion with the given intensity.
+    /// Log an explicit emotion label and intensity.
     public func log(emotion: String, intensity: Double) {
-        labels.append(emotion)
-        intensities.append(intensity)
+        let clamped = max(0.0, min(1.0, intensity))
+        intensities.append(clamped)
     }
 
     /// Normalize recent intensities in the 0-1 range.
     /// - Parameter window: The number of latest entries to include.
     public func generateHeatmap(window: Int = 10) -> [Double] {
-
         let slice = intensities.suffix(window)
-        guard let min = slice.min(), let max = slice.max(), max > min else {
+        guard let minVal = slice.min(), let maxVal = slice.max(), maxVal > minVal else {
             return Array(slice)
         }
-        return slice.map { ($0 - min) / (max - min) }
+        return slice.map { ($0 - minVal) / (maxVal - minVal) }
     }
 }

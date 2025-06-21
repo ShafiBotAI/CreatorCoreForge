@@ -30,11 +30,16 @@ public final class MultiMarketScanner {
         group.notify(queue: .main) { completion(results) }
     }
 
-    /// Simple heuristic: average volume of given markets compared to price movement.
-    /// Placeholder returning 0-1 score based on price variance.
+    /// Simple heuristic that returns a normalized score based on price volatility.
+    /// Higher variance relative to the average price yields a score closer to 1.
     public func smartMoneyScore(prices: [Double]) -> Double {
-        guard let max = prices.max(), let min = prices.min(), max > 0 else { return 0 }
-        return (max - min) / max
+        guard prices.count > 1 else { return 0 }
+        let avg = prices.reduce(0, +) / Double(prices.count)
+        guard avg > 0 else { return 0 }
+        let variance = prices.reduce(0) { $0 + pow($1 - avg, 2) } / Double(prices.count)
+        let stdDev = sqrt(variance)
+        let normalized = min(stdDev / avg, 1)
+        return normalized
     }
 }
 
