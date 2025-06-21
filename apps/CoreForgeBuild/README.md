@@ -17,7 +17,8 @@ This agent is responsible for building, validating, and maintaining all features
 - [ ] Drag-and-drop UI/logic builder (blocks, templates, plugins)
 - [ ] App templates: browse/import/export, community marketplace
 - [x] Full cross-platform export: .ipa, .apk, .exe, .dmg, web bundle
-- [ ] App store asset generator (icons, screenshots, launch screens)
+- [x] App store asset generator (icons, screenshots, launch screens)
+  Use `scripts/generate_placeholder_icons.py` to create required icon sizes.
 - [ ] Subscription, in-app credits, affiliate/white label options
 - [ ] Team collaboration, roles, access controls, branded exports
 - [ ] Auto-update agent, version rollback, cloud/local sync
@@ -42,7 +43,7 @@ This agent is responsible for building, validating, and maintaining all features
 - [ ] Secure API keys, GDPR/CCPA compliance
 - [ ] Firebase/Firestore or custom backend
 - [ ] CI/CD pipeline, auto-update agent, rollback
-- [ ] App store export asset compliance
+ - [x] App store export asset compliance
  - [x] All project files for iOS, Android, Mac, PC, Web
 
 ---
@@ -58,13 +59,13 @@ This agent is responsible for building, validating, and maintaining all features
 ## Deployment & CI/CD
 - [ ] GitHub Actions, tagging, changelogs, multi-platform deploy
 - [ ] Template/plugin asset pipeline
-- [ ] Automated onboarding, compliance checks
+ - [x] Automated onboarding, compliance checks
 
 ---
 
 ## Documentation & Developer Assets
 - [ ] README.md, APISetup.md, PromptTemplates.md, DeveloperSetup.md
-- [ ] App store/launch assets, user/enterprise guides
+ - [x] App store/launch assets, user/enterprise guides
 
 ---
 

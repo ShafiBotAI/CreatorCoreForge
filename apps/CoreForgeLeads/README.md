@@ -65,7 +65,7 @@ This agent is responsible for building, validating, and maintaining all features
 
 ## Documentation & Developer Assets
 - [ ] README.md, APISetup.md, PromptTemplates.md, DeveloperSetup.md
-- [ ] App store/launch assets, privacy/NSFW docs, affiliate guides
+ - [x] App store/launch assets, privacy/NSFW docs, affiliate guides
 
 ---
 
