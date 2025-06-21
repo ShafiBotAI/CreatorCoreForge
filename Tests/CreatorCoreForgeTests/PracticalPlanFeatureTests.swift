@@ -188,4 +188,24 @@ final class PracticalPlanFeatureTests: XCTestCase {
         XCTAssertEqual(team.trades.count, 1)
         XCTAssertTrue(BotMarketplace().publish(bot: "bot"))
     }
+
+    func testWriterFeatures() {
+        var tracker = SeriesMemoryTracker()
+        tracker.record(book: "Book1", events: ["A"])
+        XCTAssertEqual(tracker.allEvents(), ["A"])
+        let handler = PromoCodeHandler()
+        XCTAssertEqual(handler.apply(code: "FREE100", to: 10), 0)
+        let tuner = WritingMoodTuner()
+        XCTAssertEqual(tuner.tune(text: "Hello", mood: "Happy"), "Happy: Hello")
+    }
+
+    func testStudioFeatures() {
+        let director = SmartCameraDirector()
+        XCTAssertEqual(director.suggestAngles(for: "scene").count, 3)
+        let alt = WhatIfCutsceneMode().alternateScenes(scene: "Scene1")
+        XCTAssertEqual(alt.last, "What if Scene1?")
+        let pipeline = AutoPublishPipeline()
+        let url = URL(fileURLWithPath: "video.mp4")
+        XCTAssertTrue(pipeline.publish(video: url).contains("video.mp4"))
+    }
 }
