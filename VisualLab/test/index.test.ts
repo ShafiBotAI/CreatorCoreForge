@@ -16,6 +16,7 @@ import {
   thumbnailGenerator,
   PerformanceProfiler
 } from '../src/index.ts';
+import { VideoStreamingService } from '../src/streamingService.ts';
 import assert from 'node:assert';
 
 assert.strictEqual(generateBackground('happy'), 'blue-sky');
@@ -33,4 +34,9 @@ await queue.runNext();
 new ErrorRecoveryService();
 thumbnailGenerator([Buffer.from('a')]);
 new PerformanceProfiler().end();
+const streaming = new VideoStreamingService(1000);
+streaming.registerProject('p', [Buffer.from('f1'), Buffer.from('f2')]);
+const recv: Buffer[] = [];
+for await (const c of await streaming.stream('p')) recv.push(c);
+assert.strictEqual(Buffer.concat(recv).toString(), 'f1f2');
 console.log('VisualLab tests passed');

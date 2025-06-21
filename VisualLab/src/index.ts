@@ -17,3 +17,4 @@ export * from './errorRecoveryService.ts';
 export * from './thumbnailGenerator.ts';
 export * from './LivePreviewComponent.tsx';
 export * from './performanceProfiler.ts';
+export * from './streamingService.ts';
