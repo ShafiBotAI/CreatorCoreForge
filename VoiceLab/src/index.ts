@@ -33,4 +33,6 @@ export { PronunciationService, Phoneme } from './pronunciationService';
 export { BookmarkService } from './bookmarkService';
 
 export { UnifiedAudioEngine } from './UnifiedAudioEngine';
+export { UnifiedVideoEngine } from './UnifiedVideoEngine';
+export { AdaptiveLearningEngine } from './AdaptiveLearningEngine';
 
