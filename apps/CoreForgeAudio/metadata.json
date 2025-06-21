@@ -1,0 +1,9 @@
+{
+  "app_name": "CoreForge Audio",
+  "version": "1.0.0",
+  "bundle_id": "com.creatorcoreforge.audio",
+  "keywords": ["audiobooks", "AI narration", "voice mapping", "immersive audio"],
+  "developer": "CreatorCoreForge",
+  "category": "Books & Reference",
+  "platforms": ["iOS", "Android", "Windows", "macOS", "Web"]
+}
