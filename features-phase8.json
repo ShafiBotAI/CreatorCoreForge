@@ -73,7 +73,8 @@
       "CameraStabilizer",
       "WatermarkService",
       "SubtitleGenerator",
-      "RenderAnalyticsDashboard"
+      "RenderAnalyticsDashboard",
+      "Hero spotlight background (wide format)"
     ],
     "CoreForgeWriter": [
       "Memory pinning",

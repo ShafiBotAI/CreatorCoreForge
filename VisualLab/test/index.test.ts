@@ -14,7 +14,8 @@ import {
   RenderQueueManager,
   ErrorRecoveryService,
   thumbnailGenerator,
-  PerformanceProfiler
+  PerformanceProfiler,
+  generateHeroSpotlightWideBackground
 } from '../src/index.ts';
 import { VideoStreamingService } from '../src/streamingService.ts';
 import assert from 'node:assert';
@@ -39,4 +40,5 @@ streaming.registerProject('p', [Buffer.from('f1'), Buffer.from('f2')]);
 const recv: Buffer[] = [];
 for await (const c of await streaming.stream('p')) recv.push(c);
 assert.strictEqual(Buffer.concat(recv).toString(), 'f1f2');
+assert.strictEqual(generateHeroSpotlightWideBackground('hero', 'happy'), 'blue-sky-hero-hero-soft-spotlight-wide');
 console.log('VisualLab tests passed');

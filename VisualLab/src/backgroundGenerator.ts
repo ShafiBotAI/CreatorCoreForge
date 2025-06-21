@@ -6,3 +6,8 @@ export function generateBackground(mood: string): string {
   };
   return map[mood] ?? 'default-background';
 }
+
+export function generateHeroSpotlightWideBackground(hero: string, mood = 'neutral'): string {
+  const base = generateBackground(mood);
+  return `${base}-hero-${hero}-soft-spotlight-wide`;
+}

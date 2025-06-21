@@ -20,6 +20,7 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 - [ ] Adaptive scene completion
 - [ ] AR/VR playback
 - [ ] Quantum reality switcher
+- [ ] Hero spotlight background (wide format)
 
 ### CoreForge Writer
 - [ ] Memory pinning
