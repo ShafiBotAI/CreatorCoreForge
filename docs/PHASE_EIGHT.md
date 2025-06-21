@@ -67,6 +67,7 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 - [x] WatermarkService
 - [x] SubtitleGenerator
 - [x] RenderAnalyticsDashboard
+- [ ] FrameInterpolationService
 
 ### CoreForgeWriter
 - [ ] UnifiedAudioEngine

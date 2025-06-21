@@ -39,4 +39,5 @@ export * from './WatermarkService.ts';
 export * from './SubtitleGenerator.ts';
 export * from './RenderAnalyticsDashboard.tsx';
 export { UnifiedAudioEngine } from './UnifiedAudioEngine.ts';
+export * from './frameInterpolator.ts';
 

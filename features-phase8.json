@@ -79,6 +79,7 @@
       "SubtitleGenerator",
       "RenderAnalyticsDashboard",
       "VideoEffectsPipeline",
+      "FrameInterpolationService",
       "AudioEffectsPipeline"
     ],
     "CoreForgeWriter": [
