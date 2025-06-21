@@ -125,5 +125,6 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 - [ ] Marketplace credit system
 - [ ] Global lead exchange
 - [ ] Advanced scoring
+- [ ] AdaptiveDocScanner module
 
 Use this checklist to track progress as we implement Phase 8 capabilities across every app.
