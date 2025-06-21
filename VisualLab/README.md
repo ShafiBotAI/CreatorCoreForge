@@ -19,4 +19,4 @@ node dist/demo.js
 ```
 
 This will generate `demo.mp4` in the `dist` directory with default settings. Customize the `src/demo.ts` file to experiment with different scenes and transitions.
-- **UnifiedAudioEngine** provides global volume control shared across apps.
+- **UnifiedAudioEngine** provides global volume control with fade transitions shared across apps.

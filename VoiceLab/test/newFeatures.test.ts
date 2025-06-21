@@ -18,4 +18,8 @@ test('UnifiedAudioEngine volume clamp', () => {
   expect(engine.currentVolume()).toBe(1);
   engine.mute();
   expect(engine.isMuted()).toBe(true);
+  engine.unmute();
+  const levels = engine.fadeVolumeTo(0.5, 2);
+  expect(levels.length).toBe(2);
+  expect(levels[levels.length - 1]).toBeCloseTo(0.5);
 });
