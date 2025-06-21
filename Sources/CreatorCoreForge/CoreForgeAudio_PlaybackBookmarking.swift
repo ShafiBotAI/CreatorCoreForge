@@ -2,10 +2,16 @@ import Foundation
 
 /// Manages chapter-based audio playback with simple bookmarking support.
 public struct Chapter {
+    /// Title of the chapter if known.
     public let title: String
-    public let audioURL: String
-    public init(title: String, audioURL: String) {
+    /// Raw text contents for narration or analysis.
+    public let text: String
+    /// Optional URL to pre-rendered audio for playback.
+    public var audioURL: String?
+
+    public init(title: String, text: String, audioURL: String? = nil) {
         self.title = title
+        self.text = text
         self.audioURL = audioURL
     }
 }
@@ -35,7 +41,11 @@ public final class PlaybackManager {
         }
         isPlaying = true
         let chapter = chapters[currentIndex]
-        print("▶️ Playing Chapter \(currentIndex + 1): \(chapter.title) at \(chapter.audioURL)")
+        if let url = chapter.audioURL {
+            print("▶️ Playing Chapter \(currentIndex + 1): \(chapter.title) at \(url)")
+        } else {
+            print("▶️ Playing Chapter \(currentIndex + 1): \(chapter.title)")
+        }
         return true
     }
 
