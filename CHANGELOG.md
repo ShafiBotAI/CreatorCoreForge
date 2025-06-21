@@ -9,3 +9,4 @@
 - Replaced placeholder implementations for `DynamicChapterTransitions`, `AdaptiveMusicGenerator`,
   `PronunciationEditor`, `VoiceControlService`, and `AdvancedTimelineEditor` with
   functional modules.
+- Added cross-app `VideoEffectsPipeline` with fade transitions and watermark support. Updated `features-phase8.json` and documentation.

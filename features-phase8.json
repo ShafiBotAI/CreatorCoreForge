@@ -60,6 +60,7 @@
       "AdvancedTimelineEditor",
       "BrailleOutputService",
       "PronunciationDictionary"
+      , "VideoEffectsPipeline"
     ],
     "CoreForgeVisual": [
       "UnifiedAudioEngine",
@@ -75,43 +76,50 @@
       "CameraStabilizer",
       "WatermarkService",
       "SubtitleGenerator",
-      "RenderAnalyticsDashboard"
+      "RenderAnalyticsDashboard",
+      "VideoEffectsPipeline"
     ],
     "CoreForgeWriter": [
       "UnifiedAudioEngine",
       "Memory pinning",
       "Quantum-choice plotting",
-      "Community marketplace"
+      "Community marketplace",
+      "VideoEffectsPipeline"
     ],
     "CoreForgeMarket": [
       "UnifiedAudioEngine",
       "Hybrid quantum trading engine",
       "Team trading and leaderboards",
-      "Bot marketplace"
+      "Bot marketplace",
+      "VideoEffectsPipeline"
     ],
     "CoreForgeBuild": [
       "UnifiedAudioEngine",
       "Figma-driven UI builder",
       "Auto bundler for all platforms",
-      "Debugging assistant"
+      "Debugging assistant",
+      "VideoEffectsPipeline"
     ],
     "CoreForgeStudio": [
       "UnifiedAudioEngine",
       "Real-time ensemble acting",
       "Quantum edit mode",
-      "Template monetization"
+      "Template monetization",
+      "VideoEffectsPipeline"
     ],
     "CoreForgeMusic": [
       "UnifiedAudioEngine",
       "AI vocal production",
       "Commercial export tools",
-      "Voice cloning"
+      "Voice cloning",
+      "VideoEffectsPipeline"
     ],
     "CoreForgeLeads": [
       "UnifiedAudioEngine",
       "Marketplace credit system",
       "Global lead exchange",
-      "Advanced scoring"
+      "Advanced scoring",
+      "VideoEffectsPipeline"
     ]
   }
 }
