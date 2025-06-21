@@ -1,16 +1,4 @@
 {
-
-  "name": "coreforge-audio-desktop",
-  "version": "1.0.0",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron .",
-    "build": "electron-builder --mac --win"
-  },
-  "devDependencies": {
-    "electron": "^28.2.2",
-    "electron-builder": "^26.0.0"
-=======
   "name": "CoreForgeAudio-desktop",
   "version": "0.1.0",
   "main": "main.js",
@@ -28,6 +16,5 @@
     "files": ["**/*"],
     "mac": {"target": "dmg"},
     "win": {"target": "nsis"}
-
   }
 }

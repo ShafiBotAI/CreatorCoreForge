@@ -65,6 +65,10 @@ public final class SceneAtmosphereBuilder {
         if !FileManager.default.fileExists(atPath: fileURL.path) {
             FileManager.default.createFile(atPath: fileURL.path, contents: Data(), attributes: nil)
         }
+
+=======
+        print("Atmosphere generation skipped for \(mood.rawValue) — AVFoundation unavailable")
+
         return fileURL
     }
 
