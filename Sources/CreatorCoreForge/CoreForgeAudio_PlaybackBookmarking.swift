@@ -1,17 +1,27 @@
 import Foundation
 
 /// Manages chapter-based audio playback with simple bookmarking support.
-public struct Chapter {
+public struct Chapter: Codable {
     /// Title of the chapter if known.
     public let title: String
     /// Raw text contents for narration or analysis.
     public let text: String
+    /// Order within the book. Defaults to zero when unspecified.
+    public let order: Int
+    /// Optional additional metadata for the chapter.
+    public var metadata: [String: String]?
     /// Optional URL to pre-rendered audio for playback.
     public var audioURL: String?
 
-    public init(title: String, text: String, audioURL: String? = nil) {
+    public init(title: String,
+                text: String,
+                order: Int = 0,
+                metadata: [String: String]? = nil,
+                audioURL: String? = nil) {
         self.title = title
         self.text = text
+        self.order = order
+        self.metadata = metadata
         self.audioURL = audioURL
     }
 }
