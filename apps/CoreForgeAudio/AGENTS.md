@@ -46,7 +46,6 @@ This file is a full checklist of every feature required for code completion and 
 - [x] Voice glossary/bookmark UI for in-app notes
 - [x] Scene tagging and visual timeline editor
 - [x] User profile dashboard with achievements, history, and sharing
-=======
 - [ ] Drag-and-drop builder for scenes, chapters, voice mapping, and SFX
 - [ ] Scene and voice tagging UI, live emotion indicators
  - [x] Group "Live Read" rooms with chat, co-narration, and moderator controls
@@ -118,7 +117,6 @@ This file is a full checklist of every feature required for code completion and 
 - [x] Accessibility output to Braille printer, voice commands
 - [x] Apple Watch/mini controller sync for playback
 - [x] In-book voice/tone polls (live user voting)
-=======
  - [x] Emotion-shift graph/tracker for narration
 - [ ] User voice rating/review and feedback system
 - [ ] Auto-casting engine for genre/tone optimal voice selection
