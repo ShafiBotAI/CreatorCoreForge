@@ -316,3 +316,6 @@ Cross-platform builds can be generated using `electron-builder`. Run
 `.exe` installers for apps that include a `Desktop` project. See
 `docs/CrossPlatformBuild.md` for details.
 
+An initial Electron setup lives under `apps/CoreForgeAudio/Desktop` to help you
+get started.
+
