@@ -31,7 +31,7 @@ public final class EbookConverter {
         for (index, chapter) in chapters.enumerated() {
             group.enter()
             let tempURL = FileManager.default.temporaryDirectory
-                .appendingPathComponent("chapter_\(index + 1)")
+                .appendingPathComponent("chapter\(index + 1)")
                 .appendingPathExtension("wav")
 
             voiceAI.synthesize(text: chapter, with: voice) { result in
