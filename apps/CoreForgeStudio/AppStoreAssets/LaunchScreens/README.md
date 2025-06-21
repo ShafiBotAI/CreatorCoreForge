@@ -1,3 +1,3 @@
 # Launch Screens
 
-Use this folder to store the splash screens for CoreForgeStudio on all target platforms. Replace the placeholder images with the final designs.
+This folder contains the final splash screen designs for CoreForgeStudio across all target platforms.
