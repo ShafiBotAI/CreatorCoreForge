@@ -53,20 +53,20 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 
 ### CoreForgeVisual
 - [x] UnifiedAudioEngine
-- [ ] AudioEffectsPipeline
+- [x] AudioEffectsPipeline
 - [ ] Adaptive scene completion
-- [ ] AR/VR playback
-- [ ] Quantum reality switcher
-- [ ] TimelineEditor
-- [ ] ColorGradingEngine
-- [ ] BranchingPathsUI
-- [ ] FaceTrackerService
-- [ ] CrowdSimulator
-- [ ] Export360VR
-- [ ] CameraStabilizer
-- [ ] WatermarkService
-- [ ] SubtitleGenerator
-- [ ] RenderAnalyticsDashboard
+- [x] AR/VR playback
+- [x] Quantum reality switcher
+- [x] TimelineEditor
+- [x] ColorGradingEngine
+- [x] BranchingPathsUI
+- [x] FaceTrackerService
+- [x] CrowdSimulator
+- [x] Export360VR
+- [x] CameraStabilizer
+- [x] WatermarkService
+- [x] SubtitleGenerator
+- [x] RenderAnalyticsDashboard
 
 ### CoreForgeWriter
 - [ ] UnifiedAudioEngine
