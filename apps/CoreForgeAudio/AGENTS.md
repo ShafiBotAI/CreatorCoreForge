@@ -42,17 +42,6 @@ This file is a full checklist of every feature required for code completion and 
 
 - [x] Drag-and-drop builder for scenes, chapters, voice mapping, and SFX
 - [x] Scene and voice tagging UI, live emotion indicators
-- [x] Group "Live Read" rooms with chat, co-narration, and moderator controls
-- [x] Voice glossary/bookmark UI for in-app notes
-- [x] Scene tagging and visual timeline editor
-- [x] User profile dashboard with achievements, history, and sharing
-=======
-- [ ] Drag-and-drop builder for scenes, chapters, voice mapping, and SFX
-- [ ] Scene and voice tagging UI, live emotion indicators
- - [x] Group "Live Read" rooms with chat, co-narration, and moderator controls
-- [ ] Voice glossary/bookmark UI for in-app notes
-- [ ] Scene tagging and visual timeline editor
-- [ ] User profile dashboard with achievements, history, and sharing
 
 
 ---
@@ -118,19 +107,6 @@ This file is a full checklist of every feature required for code completion and 
 - [x] Accessibility output to Braille printer, voice commands
 - [x] Apple Watch/mini controller sync for playback
 - [x] In-book voice/tone polls (live user voting)
-=======
- - [x] Emotion-shift graph/tracker for narration
-- [ ] User voice rating/review and feedback system
-- [ ] Auto-casting engine for genre/tone optimal voice selection
- - [x] Pronunciation override with phoneme editor per word
-- [ ] User-scheduled narration tasks by time zone
-- [ ] 3D spatial audio, binaural/ASMR modes, custom FX layering
-- [ ] Emotion pacing editor (by paragraph, chapter, user mood)
-- [ ] Smart ambient mixer (rain, wind, fire, user SFX presets)
-- [ ] Auto-remix mode: shuffle POVs, playback order, or scene cuts
-- [ ] Accessibility output to Braille printer, voice commands
-- [ ] Apple Watch/mini controller sync for playback
-- [ ] In-book voice/tone polls (live user voting)
 
 - [x] Heart-rate integration for adaptive emotion (wearables)
  - [x] Unlockable voice skins, accents, FX presets
