@@ -67,7 +67,15 @@ final class PracticalPlanFeatureTests: XCTestCase {
     func testMacroWorkflowEngine() {
         let engine = MacroWorkflowEngine()
         engine.record("tap")
+        engine.record("swipe")
+        XCTAssertEqual(engine.replay(), ["tap", "swipe"])
+        XCTAssertEqual(engine.count, 2)
+        XCTAssertEqual(engine.undo(), "swipe")
         XCTAssertEqual(engine.replay(), ["tap"])
+        XCTAssertEqual(engine.count, 1)
+        engine.clear()
+        XCTAssertEqual(engine.replay(), [])
+        XCTAssertEqual(engine.count, 0)
     }
 
     func testExportProduction() {
