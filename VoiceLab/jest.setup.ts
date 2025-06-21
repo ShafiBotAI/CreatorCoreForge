@@ -1,3 +1,5 @@
+import { jest } from '@jest/globals';
+
 jest.mock('./src/ttsService', () => ({
   renderSegment: jest.fn(async () => new Blob(['audio']))
 }));
