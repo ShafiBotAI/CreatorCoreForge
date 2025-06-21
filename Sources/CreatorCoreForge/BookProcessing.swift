@@ -15,12 +15,13 @@ public struct Segment {
 
 /// Utilities for importing books, segmenting chapters, and assigning voices.
 public enum BookProcessing {
-    /// Import a book from disk using `EbookImporter` and return chapters.
+    /// Import a book from disk using `EbookImporter` and return chapters with
+    /// text metadata. `audioURL` will be `nil` until synthesis occurs.
     public static func importBook(filePath: String) -> [Chapter] {
         let importer = EbookImporter()
         let rawChapters = importer.importEbook(from: filePath)
         return rawChapters.enumerated().map { idx, text in
-            Chapter(title: "Chapter \(idx + 1)", audioURL: text)
+            Chapter(title: "Chapter \(idx + 1)", text: text)
         }
     }
 
@@ -33,15 +34,15 @@ public enum BookProcessing {
         let queue = DispatchQueue(label: "segment.queue")
         for chapter in chapters {
             group.enter()
-            engine.summarize(chapter.audioURL) { result in
-                let text: String
+            engine.summarize(chapter.text) { result in
+                let summaryText: String
                 switch result {
                 case .success(let summary):
-                    text = summary
+                    summaryText = summary
                 case .failure:
-                    text = chapter.audioURL
+                    summaryText = chapter.text
                 }
-                queue.sync { results.append(Segment(text: text)) }
+                queue.sync { results.append(Segment(text: summaryText)) }
                 group.leave()
             }
         }

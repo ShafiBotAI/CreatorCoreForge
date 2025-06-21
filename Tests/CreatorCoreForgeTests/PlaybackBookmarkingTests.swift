@@ -5,8 +5,8 @@ final class PlaybackBookmarkingTests: XCTestCase {
     func testBookmarkAndResume() {
         let manager = PlaybackManager()
         let chapters = [
-            Chapter(title: "One", audioURL: "1.mp3"),
-            Chapter(title: "Two", audioURL: "2.mp3")
+            Chapter(title: "One", text: "A", audioURL: "1.mp3"),
+            Chapter(title: "Two", text: "B", audioURL: "2.mp3")
         ]
         manager.loadChapters(chapters)
         XCTAssertTrue(manager.playCurrentChapter())
@@ -19,7 +19,7 @@ final class PlaybackBookmarkingTests: XCTestCase {
 
     func testPreviousChapterBounds() {
         let manager = PlaybackManager()
-        manager.loadChapters([Chapter(title: "A", audioURL: "a.mp3")])
+        manager.loadChapters([Chapter(title: "A", text: "", audioURL: "a.mp3")])
         XCTAssertFalse(manager.previousChapter())
     }
 }
