@@ -65,7 +65,7 @@ This agent is responsible for building, validating, and maintaining every featur
 - [x] Accessibility validation (subtitles, voiceover, visual clarity)
 - [ ] UI/UX interaction tests (all platforms)
 - [ ] Stress and performance tests (ultra-long video, multi-scene)
-- [ ] Security/privacy audits, NSFW gating tests
+ - [x] Security/privacy audits, NSFW gating tests
 - [ ] Accessibility validation (subtitles, voiceover, visual clarity)
 
 
