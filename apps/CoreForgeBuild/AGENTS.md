@@ -6,7 +6,7 @@ Purpose: AI-driven app builder with automated code generation and packaging
 
 ### Core Features:
 - [x] App idea generator based on trends (Codex)
-- [ ] UI builder using Figma/code templates (Codex)
+ - [x] UI builder using Figma/code templates (Codex)
 - [ ] Build Codex writes Swift, Kotlin, Python, Unity, JS (Codex)
 - [ ] Auto-connect to GitHub, Xcode, Android Studio (Codex)
 - [ ] Pull code and plugins from public sources (Codex)

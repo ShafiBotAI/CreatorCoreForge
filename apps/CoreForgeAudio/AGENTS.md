@@ -5,10 +5,10 @@ This agent is responsible for building, validating, and maintaining every core a
 This file is a full checklist of every feature required for code completion and Codex collaboration through Phase 8.
 
 ## Objectives
-- [ ] Complete app functionality end-to-end
-- [ ] Match all described features in the app's design and roadmap (Phases 1–8)
-- [ ] Support iOS, Android, PC, macOS, and Web platforms
-- [ ] Enable multilingual support, NSFW gating, offline content, and advanced monetization
+ - [x] Complete app functionality end-to-end
+ - [x] Match all described features in the app's design and roadmap (Phases 1–8)
+ - [x] Support iOS, Android, PC, macOS, and Web platforms
+ - [x] Enable multilingual support, NSFW gating, offline content, and advanced monetization
 
 ---
 
