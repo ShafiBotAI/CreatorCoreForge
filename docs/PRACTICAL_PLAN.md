@@ -40,6 +40,66 @@ This document outlines a phased plan for implementing the key features across th
 3. **Macro Workflow Engine** – record UI actions and replay as scripts.
 4. **Export Production** – output MP4/MOV/WAV/MP3 with optional watermarks.
 
+## 6. CoreForge Market
+
+1. **Quantum Trading Engine** – build the hybrid trading module for multi-market analysis.
+2. **Team Trading** – implement shared strategies and leaderboards.
+3. **Bot Marketplace** – allow upload and monetization of trading bots.
+
+## 7. CoreForge Build
+
+1. **Figma Importer** – convert designs into layout templates.
+2. **Universal Bundler** – automate iOS, Android, and desktop builds.
+3. **Debug Assistant** – provide interactive troubleshooting for generated code.
+
+## 8. CoreForge DNA
+
+1. **DNA Tree UI** – visualize character and voice relationships.
+2. **Cross-App Sync** – export/import DNA profiles across projects.
+3. **Multiverse Merge** – compare and combine alternate timelines.
+
+## 9. CoreForge Music
+
+1. **Vocal Production** – integrate voice cloning with beat creation.
+2. **Commercial Export** – add licensing and label-ready exports.
+3. **Hook Marketplace** – enable sharing and selling of song templates.
+
+## 10. CoreForge Leads
+
+1. **Credit Ledger** – track and bill lead purchases.
+2. **Global Exchange** – build API for cross-user lead trading.
+3. **Scoring Engine** – refine AI ranking with real-time signals.
+
+## 11. CoreForge Mind
+
+1. **Mood Journal** – schedule daily entries with sentiment tracking.
+2. **Guided Sessions** – deliver meditation and therapy audio.
+3. **Private Vault** – secure personal data with optional NSFW modules.
+
+## 12. CoreForge Bloom
+
+1. **Cycle Tracking** – predict and visualize health insights.
+2. **Wellness Reminders** – provide AI tips and sexual health notes.
+3. **Wearable Sync** – integrate data from smart devices.
+
+## 13. CoreForge Learn
+
+1. **Curriculum Builder** – create lessons and quizzes via GPT.
+2. **AI Tutor** – analyze progress and adapt challenges.
+3. **Offline Sync** – maintain course data across devices.
+
+## 14. CoreForge Quest
+
+1. **Challenge Generator** – produce procedural quests.
+2. **Leaderboard Events** – manage multiplayer rewards and rankings.
+3. **Marketplace Items** – trade avatars and gear.
+
+## 15. CoreForge Voice Lab
+
+1. **Recording Tools** – capture and trim training audio.
+2. **Training Pipeline** – automate dataset prep and voice cloning.
+3. **Export Hooks** – send voices to Audio and Music apps.
+
 ## Next Steps
 
 - Tackle one feature at a time, starting with the Audio importer and chapter detection.
