@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-APPS=(CoreForgeAudio CoreForgeVisual CoreForgeWriter CoreForgeStudio CoreForgeLeads CoreForgeMusic CoreForgeBuild CoreForgeMarket)
+APPS=(CoreForgeAudio CoreForgeVisual CoreForgeWriter CoreForgeStudio CoreForgeLeads CoreForgeMusic CoreForgeBuild CoreForgeMarket CoreForgeLearn)
 
 for APP in "${APPS[@]}"; do
   APP_DIR="apps/${APP}/Desktop"
