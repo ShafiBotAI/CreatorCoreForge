@@ -7,6 +7,7 @@ Purpose: CI workflows and GitHub settings
 - [x] Update workflow scripts for new platforms
 - [x] Maintain issue templates and PR checks
 - [x] Document CI usage in README
+- [x] Add admin automation guidelines
 
 ---
 
