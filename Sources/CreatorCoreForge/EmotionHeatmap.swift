@@ -1,5 +1,12 @@
 import Foundation
 
+
+/// Generates a real-time emotion heatmap from text or logged intensity values.
+public final class EmotionHeatmap {
+    private let analyzer: EmotionAnalyzer
+    private var intensities: [Double] = []
+    private var labels: [String] = []
+=======
 /// Generates a real-time emotion heatmap from logged intensities or raw text.
 public final class EmotionHeatmap {
     private let analyzer: EmotionAnalyzer
@@ -9,6 +16,16 @@ public final class EmotionHeatmap {
         self.analyzer = analyzer
     }
 
+    /// Log a text snippet and capture its analyzed intensity.
+    public func log(_ text: String) {
+        let profile = analyzer.analyzeEmotion(from: text)
+        let clamped = max(0, min(1, profile.intensity))
+        labels.append(profile.emotion)
+        intensities.append(Double(clamped))
+    }
+
+    /// Log an emotion with the given intensity manually.
+=======
     /// Analyze a text snippet and log its emotion intensity.
     public func log(_ text: String) {
         let profile = analyzer.analyzeEmotion(from: text)
@@ -16,6 +33,7 @@ public final class EmotionHeatmap {
     }
 
     /// Log an explicit emotion label and intensity.
+
     public func log(emotion: String, intensity: Double) {
         let clamped = max(0.0, min(1.0, intensity))
         intensities.append(clamped)
