@@ -2,10 +2,16 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>CreatorCoreForge Desktop</title>
+  <title>CoreForge Music Desktop</title>
+  <script>
+    function launch() {
+      document.getElementById('status').textContent = 'Launcher active.';
+    }
+  </script>
 </head>
 <body>
-  <h1>CreatorCoreForge Desktop</h1>
-  <p>This is a placeholder desktop application.</p>
+  <h1>CoreForge Music</h1>
+  <p id="status">Desktop launcher ready.</p>
+  <button onclick="launch()">Launch</button>
 </body>
 </html>
