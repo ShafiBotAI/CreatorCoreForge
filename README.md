@@ -182,7 +182,11 @@
 - **Creator Dashboard:** Toggle Voice Memory, Emotion Graphs, Plugin Builder, AI Studio, Genesis, Global Unlock, and Sandbox tools across apps
 - **EmotionGraph:** Cross-app tracker for character emotion intensity
 - **EmotionalArcTracker:** Records emotion intensity for characters over time
+
+- **EmotionHeatmap:** Generates normalized emotion intensity heatmaps from text
+
 - **NSFWMoodHeatmap:** Normalizes logged NSFW intensity levels for analytics
+
 - **SceneGenerator:** Converts text into basic storyboard scenes
 - **VoiceMemoryManager:** Shares voice assignments across apps
 - **VoiceTrainer:** Uploads and trains custom voice models locally for offline voice synthesis.
@@ -235,6 +239,7 @@ See `/agents.md` in each folder for:
 - Feature-level tasks
 - Build flags (✅ = done, 🟨 = in dev, 🟥 = not started)
 - Milestone goals (Phase 1 to Phase 7)
+- Phase 8 tasks are tracked in `docs/PHASE_EIGHT.md`
 
 > If you’re a new developer joining this project, start with `CoreForge Audio` and `CoreForge Visual`.
 
