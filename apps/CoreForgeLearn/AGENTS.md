@@ -1,7 +1,7 @@
 # Agent: Full Feature Integration – CoreForge Learn
 
 ## App: CoreForge Learn
-Platform: iOS, Android, Web
+Platform: iOS, Android, Windows, macOS, Web
 Purpose: Gamified adaptive learning environment with AI-generated lessons and quizzes.
 
 ### Core Features
@@ -12,4 +12,4 @@ Purpose: Gamified adaptive learning environment with AI-generated lessons and qu
 
 ### Global Missing Items
 - [x] Integrate shared `autoUpdater.swift`
-- [ ] Build `.dmg` and `.exe` installers
+- [x] Build `.dmg` and `.exe` installers
