@@ -1,3 +1,7 @@
 # Documentation
 
 Additional guides and phase planning documents for the CreatorCoreForge ecosystem live here.
+
+- `PRACTICAL_PLAN.md` – initial TODO list across apps.
+- `PRODUCTION_ROADMAP.md` – high level approach for bringing every app to production.
+- `PHASE_EIGHT.md` – checklist of Phase 8 feature goals.
