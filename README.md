@@ -287,6 +287,7 @@ See `docs/AI-Prompt-Migration.md` for integrating the new OpenAI prompt interfac
 See `docs/VoiceTrainerGuide.md` for using the local voice training engine.
 See `docs/ModuleMigrationGuide.md` for adopting shared Phase 8 modules across apps.
 All apps now include a `VideoShareManager` for posting generated videos directly to social media.
+An accompanying `VideoEffectsPipeline` adds fade transitions and watermarking so every generated clip looks professional across apps.
 The new `FusionEngine` wrapper automatically selects between `LocalAIEnginePro` and `OpenAIService` for each app, enabling offline-first development when `USE_LOCAL_AI` is set. It now supports contextual memory, parallel execution across multiple engines, emotion tracking, sandbox mode for isolated testing, cross-app voice memory, on-device summarization, and quick scene generation helpers.
 
 
