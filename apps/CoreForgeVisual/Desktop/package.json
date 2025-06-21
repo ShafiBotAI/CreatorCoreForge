@@ -1,0 +1,20 @@
+{
+  "name": "CoreForgeVisual-desktop",
+  "version": "0.1.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-builder --mac --win"
+  },
+  "devDependencies": {
+    "electron": "^28.2.0",
+    "electron-builder": "^24.6.0"
+  },
+  "build": {
+    "appId": "com.creatorcoreforge.coreforgevisual",
+    "productName": "CoreForgeVisual",
+    "files": ["**/*"],
+    "mac": {"target": "dmg"},
+    "win": {"target": "nsis"}
+  }
+}
