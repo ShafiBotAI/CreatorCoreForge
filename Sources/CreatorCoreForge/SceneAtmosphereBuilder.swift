@@ -63,12 +63,23 @@ public final class SceneAtmosphereBuilder {
     // return `nil` so calling code can gracefully handle the absence of audio
     // assets. This mirrors the behavior when a real file is missing.
     public func generateAtmosphere(for mood: Mood, duration: TimeInterval) -> Any? {
+
+        // Without AVFoundation we cannot generate audio, so just log and return nil
+        print("Atmosphere generation skipped for \(mood.rawValue) — AVFoundation unavailable")
+=======
         print("\u{26A0}\u{FE0F} Atmosphere file not available on this platform")
+
         return nil
     }
 
     public func playAtmosphere(for mood: Mood, in engine: Any, player: Any) {
+
+        // Simply log the call since playback isn't supported without AVFoundation
+        _ = generateAtmosphere(for: mood, duration: 0)
+        print("Atmosphere playback skipped — AVFoundation unavailable")
+=======
         // No-op on platforms without AVFoundation
+
     }
     #endif
 }
