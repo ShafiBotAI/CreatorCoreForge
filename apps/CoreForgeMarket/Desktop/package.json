@@ -1,5 +1,5 @@
 {
-  "name": "CoreForgeAudio-desktop",
+  "name": "CoreForgeMarket-desktop",
   "version": "0.1.0",
   "main": "main.js",
   "scripts": {
@@ -11,10 +11,10 @@
     "electron-builder": "^24.6.0"
   },
   "build": {
-    "appId": "com.creatorcoreforge.coreforgeaudio",
-    "productName": "CoreForgeAudio",
+    "appId": "com.creatorcoreforge.coreforgemarket",
+    "productName": "CoreForgeMarket",
     "files": ["**/*"],
-    "mac": {"target": "dmg"},
-    "win": {"target": "nsis"}
+    "mac": { "target": "dmg" },
+    "win": { "target": "nsis" }
   }
 }

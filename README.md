@@ -30,6 +30,7 @@
   - NSFW toggle, narrator marketplace, book upload
   - Offline TTS, phoneme control, lipsync, stealth vault
   - VoiceTimbreModulator for customizable timbre profiles
+  - MultiLanguageAccentNarrator enables multi-language and accent erotic narration
   - AIEmotionEngine for dynamic emotion cues
   - GPT-based chapter segmentation and ElevenLabs voice streaming
   - BookImporter now parses TXT, PDF, and EPUB with metadata extraction
@@ -316,6 +317,6 @@ Cross-platform builds can be generated using `electron-builder`. Run
 `.exe` installers for apps that include a `Desktop` project. See
 `docs/CrossPlatformBuild.md` for details.
 
-An initial Electron setup lives under `apps/CoreForgeAudio/Desktop` to help you
-get started.
+Each app includes a `Desktop` folder with a starter Electron configuration for
+building installers.
 

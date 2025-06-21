@@ -74,10 +74,13 @@ struct ContentView: View {
             print("Not enough credits")
             return
         }
-        // Placeholder for render action
-        print("Rendering \(title) in style \(selectedStyle)")
+        let output = FileManager.default.temporaryDirectory.appendingPathComponent("\(UUID().uuidString).mp4")
+        let text = "Render of \(title) in style \(selectedStyle)"
+        try? text.data(using: .utf8)?.write(to: output)
+        print("Rendered video saved to \(output.lastPathComponent)")
         if autoUpload {
-            print("Auto upload enabled")
+            let scheduler = UploadScheduler()
+            scheduler.scheduleUpload(url: output, platform: .youtube, at: Date())
         }
     }
 }

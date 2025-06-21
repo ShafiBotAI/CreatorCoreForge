@@ -16,7 +16,7 @@ public final class SceneAtmosphereBuilder {
         case tense, romantic, suspenseful, peaceful, erotic, tragic, sciFi, fantasy
     }
 
-    #if canImport(AVFoundation)
+#if canImport(AVFoundation)
     /// Load the atmosphere audio file for the given mood.
     /// - Parameters:
     ///   - mood: desired atmosphere mood.
@@ -57,29 +57,35 @@ public final class SceneAtmosphereBuilder {
             print("\u{26A0}\u{FE0F} Error starting audio engine: \(error.localizedDescription)")
         }
     }
-    #else
-    // Fallback implementation when AVFoundation is unavailable. Since the
-    // bundled atmosphere files are not accessible on this platform, create a
-    // temporary stub file so calling code can still operate on a URL. This
-    // mirrors the behavior of having a real file even though no audio will be
-    // played.
+#else
+    // Fallback implementation when AVFoundation is unavailable. Return a stub file URL.
     public func generateAtmosphere(for mood: Mood, duration: TimeInterval) -> Any? {
         let tempDir = FileManager.default.temporaryDirectory
         let fileURL = tempDir.appendingPathComponent("atmo_\(mood.rawValue)").appendingPathExtension("caf")
         if !FileManager.default.fileExists(atPath: fileURL.path) {
             FileManager.default.createFile(atPath: fileURL.path, contents: Data(), attributes: nil)
         }
+
         print("Atmosphere generation skipped for \(mood.rawValue) — AVFoundation unavailable")
         print("\u{26A0}\u{FE0F} Atmosphere file not available on this platform")
+=======
+
+=======
+        print("Atmosphere generation skipped for \(mood.rawValue) — AVFoundation unavailable")
+
+
         return fileURL
     }
 
     public func playAtmosphere(for mood: Mood, in engine: Any, player: Any) {
+
         // Simply log the call since playback isn't supported without AVFoundation
+=======
+
         _ = generateAtmosphere(for: mood, duration: 0)
         print("Atmosphere playback skipped — AVFoundation unavailable")
     }
-    #endif
+#endif
 }
 
 // Example usage:
