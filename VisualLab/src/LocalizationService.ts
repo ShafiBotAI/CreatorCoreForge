@@ -1,7 +1,10 @@
-export interface VideoClip { frames: any[]; }
+export interface LocalizationClip { frames: any[]; }
 
 export class LocalizationService {
-  async translateClip(clip: VideoClip, targetLang: string): Promise<VideoClip> {
+  async translateClip(
+    clip: LocalizationClip,
+    targetLang: string
+  ): Promise<LocalizationClip> {
     return clip;
   }
 }
