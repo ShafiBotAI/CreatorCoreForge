@@ -63,6 +63,13 @@ public final class NSFWContentManager: ObservableObject {
     public func logScene(chapter: String, label: String, intensity: NSFWIntensity) {
         let entry = NSFWScene(chapter: chapter, sceneLabel: label, intensity: intensity, timestamp: Date())
         nsfwSceneLog.append(entry)
+        let dbEntry = NSFWEntry(label: label,
+                                type: .text,
+                                tags: [chapter],
+                                timestamp: entry.timestamp,
+                                filePath: nil,
+                                notes: "Logged from NSFWContentManager")
+        NSFWDatabase.shared.add(dbEntry)
     }
 
     public func getRecentScenes(limit: Int = 10) -> [NSFWScene] {
@@ -154,6 +161,13 @@ public final class NSFWContentManager {
     public func logScene(chapter: String, label: String, intensity: NSFWIntensity) {
         let entry = NSFWScene(chapter: chapter, sceneLabel: label, intensity: intensity, timestamp: Date())
         nsfwSceneLog.append(entry)
+        let dbEntry = NSFWEntry(label: label,
+                                type: .text,
+                                tags: [chapter],
+                                timestamp: entry.timestamp,
+                                filePath: nil,
+                                notes: "Logged from NSFWContentManager")
+        NSFWDatabase.shared.add(dbEntry)
     }
 
     public func getRecentScenes(limit: Int = 10) -> [NSFWScene] {
