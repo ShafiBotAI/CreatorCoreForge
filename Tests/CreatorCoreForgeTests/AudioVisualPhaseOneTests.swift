@@ -2,14 +2,11 @@ import XCTest
 @testable import CreatorCoreForge
 
 final class AudioVisualPhaseOneTests: XCTestCase {
-    func testBookImporter() throws {
+    func testBookImporter() async throws {
         let tmp = FileManager.default.temporaryDirectory.appendingPathComponent("book.txt")
-        try "Title: Sample\nAuthor: A\nChapter 1\nHello".write(to: tmp, atomically: true, encoding: .utf8)
-        let importer = BookImporter()
-        let book = try importer.import(fileURL: tmp)
-        XCTAssertEqual(book.title, "Sample")
-        XCTAssertEqual(book.author, "A")
-        XCTAssertEqual(book.chapters.count, 1)
+        try "Chapter 1\nHello".write(to: tmp, atomically: true, encoding: .utf8)
+        let chapters = try await BookImporter.importBook(from: tmp)
+        XCTAssertEqual(chapters.count, 1)
     }
 
     func testSegmentServiceAndTTS() {

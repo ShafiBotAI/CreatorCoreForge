@@ -1,83 +1,110 @@
 import Foundation
+#if canImport(PDFKit)
+import PDFKit
+#endif
 
-/// Result of importing a text file into chapters with metadata.
-public struct ImportedBook {
-    public let title: String
-    public let author: String?
-    public let chapters: [Chapter]
-
-    public init(title: String, author: String?, chapters: [Chapter]) {
-        self.title = title
-        self.author = author
-        self.chapters = chapters
-    }
+/// Supported import errors.
+public enum BookImportError: Error {
+    case unsupportedFormat
+    case readFailure
+    case parsingFailure
+    case noChaptersFound
 }
 
-/// Parses raw text into `Chapter` objects by blank lines.
-public struct ChapterParser {
-    public static func parse(_ text: String) -> [Chapter] {
-        let normalized = text.replacingOccurrences(of: "\r\n", with: "\n")
-        let blocks = normalized.components(separatedBy: "\n\n")
-            .filter { !$0.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }
+/// Main Book Importer for EPUB, PDF, TXT
+public class BookImporter {
+    
+    /// Import a book file and extract normalized chapters.
+    /// - Parameter fileURL: URL to the file (local or temp)
+    /// - Returns: An array of Chapter objects.
+    public static func importBook(from fileURL: URL) async throws -> [Chapter] {
+        let ext = fileURL.pathExtension.lowercased()
+        switch ext {
+        case "epub":
+            return try await importEpub(from: fileURL)
+        case "pdf":
+            return try await importPdf(from: fileURL)
+        case "txt":
+            return try await importTxt(from: fileURL)
+        default:
+            throw BookImportError.unsupportedFormat
+        }
+    }
+    
+    private static func importEpub(from url: URL) async throws -> [Chapter] {
+        // Placeholder — Replace with real EPUB parser integration
+        // Simulate async fetch and split
+        // For production: Use FolioReaderKit or similar Swift EPUB library
+        throw BookImportError.unsupportedFormat // Remove after real implementation
+    }
+    
+    #if canImport(PDFKit)
+    private static func importPdf(from url: URL) async throws -> [Chapter] {
+        guard let pdf = PDFDocument(url: url) else {
+            throw BookImportError.readFailure
+        }
         var chapters: [Chapter] = []
-        var idx = 1
-        for b in blocks {
-            let lines = b.split(separator: "\n")
-            guard let first = lines.first else { continue }
-            var title = String(first).trimmingCharacters(in: .whitespaces)
-            var start = 1
-            if !title.lowercased().hasPrefix("chapter") {
-                title = "Chapter \(idx)"
-                start = 0
-            }
-            let body = lines.dropFirst(start).joined(separator: " ")
-            if body.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty { continue }
-            chapters.append(Chapter(title: title, text: body))
-            idx += 1
+        let fullText = (0..<pdf.pageCount)
+            .compactMap { pdf.page(at: $0)?.string }
+            .joined(separator: "\n")
+        let boundaries = detectChapterBoundaries(text: fullText)
+        for (idx, boundary) in boundaries.enumerated() {
+            chapters.append(
+                Chapter(
+                    title: boundary.title,
+                    text: boundary.text,
+                    order: idx,
+                    metadata: nil
+                )
+            )
+        }
+        if chapters.isEmpty {
+            throw BookImportError.noChaptersFound
         }
         return chapters
     }
-}
-
-/// Imports TXT, PDF, and EPUB files from disk.
-public final class BookImporter {
-    public init() {}
-
-    public func `import`(fileURL: URL) throws -> ImportedBook {
-        let ext = fileURL.pathExtension.lowercased()
-        let raw = try String(contentsOf: fileURL)
-        let meta = Self.extractMetadata(from: raw, fileName: fileURL.lastPathComponent)
-        let body = meta.body
-        let chapters: [Chapter]
-        switch ext {
-        case "txt":
-            chapters = ChapterParser.parse(body)
-        case "pdf", "epub":
-            chapters = [Chapter(title: "Chapter 1", text: body.replacingOccurrences(of: "\n", with: " "))]
-        default:
-            throw NSError(domain: "BookImporter", code: 1)
-        }
-        return ImportedBook(title: meta.title, author: meta.author, chapters: chapters)
+    #else
+    private static func importPdf(from url: URL) async throws -> [Chapter] {
+        throw BookImportError.unsupportedFormat
     }
-
-    private static func extractMetadata(from text: String, fileName: String) -> (title: String, author: String?, body: String) {
-        let lines = text.replacingOccurrences(of: "\r\n", with: "\n").split(separator: "\n")
-        var title = fileName.replacingOccurrences(of: "." + fileName.split(separator: ".").last!, with: "")
-        var author: String?
-        var index = 0
-        if index < lines.count, lines[index].lowercased().hasPrefix("title:") {
-            title = lines[index].dropFirst(6).trimmingCharacters(in: .whitespaces)
-            index += 1
-        } else if index < lines.count, lines[index].hasPrefix("#") {
-            title = lines[index].trimmingCharacters(in: CharacterSet(charactersIn: "# "))
-            index += 1
+    #endif
+    
+    private static func importTxt(from url: URL) async throws -> [Chapter] {
+        guard let rawText = try? String(contentsOf: url, encoding: .utf8) else {
+            throw BookImportError.readFailure
         }
-        if index < lines.count, lines[index].lowercased().hasPrefix("author:") {
-            author = lines[index].dropFirst(7).trimmingCharacters(in: .whitespaces)
-            index += 1
+        let boundaries = detectChapterBoundaries(text: rawText)
+        let chapters = boundaries.enumerated().map { idx, boundary in
+            Chapter(
+                title: boundary.title,
+                text: boundary.text,
+                order: idx,
+                metadata: nil
+            )
         }
-        let body = lines.dropFirst(index).joined(separator: "\n")
-        return (title, author, body)
+        if chapters.isEmpty {
+            throw BookImportError.noChaptersFound
+        }
+        return chapters
+    }
+    
+    /// Heuristic rule-based chapter splitter.
+    private static func detectChapterBoundaries(text: String) -> [(title: String, text: String)] {
+        let regex = try! NSRegularExpression(pattern: #"(?m)^((CHAPTER|Chapter|Section|BOOK)[^\n]{0,40})$"#)
+        let nsText = text as NSString
+        let matches = regex.matches(in: text, range: NSRange(location: 0, length: nsText.length))
+        guard matches.count > 1 else {
+            return [(title: "Chapter 1", text: text)]
+        }
+        var boundaries: [(title: String, range: NSRange)] = []
+        for (idx, match) in matches.enumerated() {
+            let title = nsText.substring(with: match.range)
+            let start = match.range.location
+            let end = (idx < matches.count - 1) ? matches[idx + 1].range.location : nsText.length
+            boundaries.append((title: title, range: NSRange(location: start, length: end - start)))
+        }
+        return boundaries.map {
+            (title: $0.title, text: nsText.substring(with: $0.range).trimmingCharacters(in: .whitespacesAndNewlines))
+        }
     }
 }
-
