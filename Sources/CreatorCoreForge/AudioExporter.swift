@@ -61,10 +61,10 @@ public final class AudioExporter {
             try FileManager.default.zipItem(at: tempDir, to: zipPath)
             #else
             let process = Process()
-            process.launchPath = "/usr/bin/zip"
+            process.executableURL = URL(fileURLWithPath: "/usr/bin/zip")
             process.currentDirectoryURL = tempDir
             process.arguments = ["-r", zipPath.path, "."]
-            process.launch()
+            try process.run()
             process.waitUntilExit()
             #endif
             try FileManager.default.removeItem(at: tempDir)

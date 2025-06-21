@@ -63,7 +63,7 @@ public final class SceneAtmosphereBuilder {
         let tempDir = FileManager.default.temporaryDirectory
         let fileURL = tempDir.appendingPathComponent("atmo_\(mood.rawValue)").appendingPathExtension("caf")
         if !FileManager.default.fileExists(atPath: fileURL.path) {
-            FileManager.default.createFile(atPath: fileURL.path, contents: Data(), attributes: nil)
+            _ = FileManager.default.createFile(atPath: fileURL.path, contents: Data(), attributes: nil)
         }
 
         print("Atmosphere generation skipped for \(mood.rawValue) — AVFoundation unavailable")
