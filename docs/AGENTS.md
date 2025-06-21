@@ -5,7 +5,7 @@ Purpose: Guides and phase roadmaps for CreatorCoreForge
 
 ### Tasks
 - [x] Keep PHASE_EIGHT.md synced with features-phase8.json
-- [ ] Update migration guides for new modules
+- [x] Update migration guides for new modules
 - [ ] Review diagrams and images for accuracy
 
 ---
