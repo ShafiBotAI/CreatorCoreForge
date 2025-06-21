@@ -16,7 +16,7 @@
 		55E609C5E08C87BC3395301A /* RenderConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4BADB2F9A07DD30E44CDFF /* RenderConfig.swift */; };
 		77FA2EDD21447A42A6A5E2CD /* AdaptiveReasoner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2B3C842D613171C76204B3 /* AdaptiveReasoner.swift */; };
 		7FB2B1DFAACBD66ABF92C589 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C9C3013442B1BFD45CA405 /* OpenAIService.swift */; };
-		85E82BACF8D9237932D2F774 /* LoreForgeAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC93FD96D7B2D8B3E156A06 /* LoreForgeAIApp.swift */; };
+               85E82BACF8D9237932D2F774 /* CoreForgeVisualApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC93FD96D7B2D8B3E156A06 /* CoreForgeVisualApp.swift */; };
 		A6BCAFC0926B9C887F64E49E /* RecapEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0770B5F655F58730B763A1 /* RecapEngine.swift */; };
 		AB771314EDE7D77B73C20B20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD170866BC06317B40969A9E /* ContentView.swift */; };
 		E7049B9988297943D1F0C30A /* PromptTemplateLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A50EAE8982E8D5A19FDEA /* PromptTemplateLoader.swift */; };
@@ -34,7 +34,7 @@
 		BD170866BC06317B40969A9E /* ContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BE2B3C842D613171C76204B3 /* AdaptiveReasoner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AdaptiveReasoner.swift; sourceTree = "<group>"; };
 		C7AEFDB2B6E64BB6F3EAEFE3 /* ContentPolicyManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContentPolicyManager.swift; sourceTree = "<group>"; };
-		CBC93FD96D7B2D8B3E156A06 /* LoreForgeAIApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoreForgeAIApp.swift; sourceTree = "<group>"; };
+               CBC93FD96D7B2D8B3E156A06 /* CoreForgeVisualApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CoreForgeVisualApp.swift; sourceTree = "<group>"; };
 		CC4BADB2F9A07DD30E44CDFF /* RenderConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RenderConfig.swift; sourceTree = "<group>"; };
 		D32E9D948634B636F3909256 /* VideoShareManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VideoShareManager.swift; sourceTree = "<group>"; };
 		F82A50EAE8982E8D5A19FDEA /* PromptTemplateLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PromptTemplateLoader.swift; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 				C7AEFDB2B6E64BB6F3EAEFE3 /* ContentPolicyManager.swift */,
 				BD170866BC06317B40969A9E /* ContentView.swift */,
 				B49C0C413A5CCF1FD38E167A /* LangSelector.swift */,
-				CBC93FD96D7B2D8B3E156A06 /* LoreForgeAIApp.swift */,
+                               CBC93FD96D7B2D8B3E156A06 /* CoreForgeVisualApp.swift */,
 				86C9C3013442B1BFD45CA405 /* OpenAIService.swift */,
 				F82A50EAE8982E8D5A19FDEA /* PromptTemplateLoader.swift */,
 				7E0770B5F655F58730B763A1 /* RecapEngine.swift */,
@@ -172,7 +172,7 @@
 				2A3829037A84220F1B740FE2 /* ContentPolicyManager.swift in Sources */,
 				AB771314EDE7D77B73C20B20 /* ContentView.swift in Sources */,
 				20F6B740B41D0C72E5FA4342 /* LangSelector.swift in Sources */,
-				85E82BACF8D9237932D2F774 /* LoreForgeAIApp.swift in Sources */,
+                               85E82BACF8D9237932D2F774 /* CoreForgeVisualApp.swift in Sources */,
 				7FB2B1DFAACBD66ABF92C589 /* OpenAIService.swift in Sources */,
 				E7049B9988297943D1F0C30A /* PromptTemplateLoader.swift in Sources */,
 				A6BCAFC0926B9C887F64E49E /* RecapEngine.swift in Sources */,

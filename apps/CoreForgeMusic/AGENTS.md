@@ -26,7 +26,7 @@ Purpose: Hit songwriting engine with AI beat matching, hooks, and lyric generati
 
 ### Global Missing Items
 - [x] Integrate shared `autoUpdater.swift`
-- [ ] Generate full `.pbxproj` project
-- [ ] Provide App Store assets and launch screens
+- [x] Generate full `.pbxproj` project
+- [x] Provide App Store assets and launch screens
 - [ ] Finalize production UI components
 - [x] Build `.dmg` and `.exe` installers

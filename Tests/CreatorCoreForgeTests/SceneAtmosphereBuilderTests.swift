@@ -13,7 +13,11 @@ final class SceneAtmosphereBuilderTests: XCTestCase {
         let file = builder.generateAtmosphere(for: .tense, duration: 10)
         XCTAssertNil(file)
         #else
-        XCTAssertNil(SceneAtmosphereBuilder.shared.generateAtmosphere(for: .tense, duration: 10))
+        // On platforms without AVFoundation a stub URL is created so the
+        // caller can still operate on an atmosphere file. Ensure a URL is
+        // returned instead of `nil`.
+        let url = SceneAtmosphereBuilder.shared.generateAtmosphere(for: .tense, duration: 10)
+        XCTAssertNotNil(url)
         #endif
     }
 }

@@ -1,3 +1,5 @@
 *.zip
 .build/
 .env
+node_modules/
+VoiceLab/node_modules/

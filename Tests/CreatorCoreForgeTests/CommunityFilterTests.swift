@@ -17,9 +17,9 @@ final class CommunityFilterTests: XCTestCase {
 
     func testRegionGating() {
         let suite = UserDefaults(suiteName: "CFRegionTest")!
-        var filter = CommunityFilter(userDefaults: suite,
+        let filter = CommunityFilter(userDefaults: suite,
                                      region: "US",
-                                     blockedRegions: ["US"]) 
+                                     blockedRegions: ["US"])
         XCTAssertFalse(filter.enableNSFW(pin: "1111"))
         filter.setRegion("CA")
         XCTAssertTrue(filter.enableNSFW(pin: "1111"))

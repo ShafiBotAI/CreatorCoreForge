@@ -17,4 +17,15 @@ final class NSFWManagerTests: XCTestCase {
         let files = manager.exportNSFWClips()
         XCTAssertTrue(files.isEmpty)
     }
+
+    func testSearchAndClearVault() {
+        let manager = NSFWManager()
+        manager.clearVault()
+        _ = manager.tagVoiceClip(character: "Hero", text: "moan softly", file: "/tmp/moan.wav")
+        _ = manager.tagVoiceClip(character: "Villain", text: "touch gently", file: "/tmp/touch.wav")
+        let results = manager.searchClips(keyword: "touch")
+        XCTAssertEqual(results.count, 1)
+        manager.clearVault()
+        XCTAssertTrue(manager.listNSFWClips().isEmpty)
+    }
 }

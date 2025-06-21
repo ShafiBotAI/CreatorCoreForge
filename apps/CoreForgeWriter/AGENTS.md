@@ -24,12 +24,12 @@ Advanced AI writing assistant for creating books, series, and self-help guides w
 - [x] Enhance continuity AI in `MemoryTracker.swift`
 - [x] Connect to publishing dashboard via `PublishBridge.swift`
 - [x] Persist promo codes across launches
-- [ ] Fix and complete the `.pbxproj` project file (Codex)
+- [x] Fix and complete the `.pbxproj` project file (Codex)
 
 ### Global Missing Items
 - [x] Integrate shared `autoUpdater.swift`
-- [ ] Generate full `.pbxproj` project
-- [ ] Provide App Store assets and launch screens
+- [x] Generate full `.pbxproj` project
+- [x] Provide App Store assets and launch screens
 - [ ] Finalize production UI components
 - [x] Build `.dmg` and `.exe` installers
 
@@ -68,7 +68,7 @@ Advanced AI writing assistant for creating books, series, and self-help guides w
 - [ ] Add writing mood tuner (slow burn, fast-paced, dark, comedic)
 - [ ] Build AI Sandbox co-author tool
 - [ ] Add auto-expand subplots + side character arcs
-- [ ] Auto-generate blurb, synopsis, back cover copy
+- [x] Auto-generate blurb, synopsis, back cover copy
 - [ ] Add Royalty-Free Illustration bundle creator
 - [ ] Embed Booktok Trailer Generator + auto-caption tool
 - [ ] Integrate reader relatability + pacing metrics

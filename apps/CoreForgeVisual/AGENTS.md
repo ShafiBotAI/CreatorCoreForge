@@ -58,10 +58,16 @@ This agent is responsible for building, validating, and maintaining every featur
 
 ## Testing Requirements
 - [x] Unit/integration tests for scene rendering, memory, export
+
 - [x] UI/UX interaction tests (all platforms)
 - [x] Stress and performance tests (ultra-long video, multi-scene)
 - [x] Security/privacy audits, NSFW gating tests
 - [x] Accessibility validation (subtitles, voiceover, visual clarity)
+- [ ] UI/UX interaction tests (all platforms)
+- [ ] Stress and performance tests (ultra-long video, multi-scene)
+- [ ] Security/privacy audits, NSFW gating tests
+- [ ] Accessibility validation (subtitles, voiceover, visual clarity)
+
 
 ---
 
@@ -95,6 +101,7 @@ This agent is responsible for building, validating, and maintaining every featur
 ---
 
 ## NSFW Features & Expansion (If Enabled)
+
 - [x] Age-gated, auto-censored erotic/explicit video generation
 - [x] NSFW overlays, intensity dial, haptic/AR/VR integration
 - [x] Private/secret video rooms, encrypted sharing, pay-per-view
@@ -102,11 +109,21 @@ This agent is responsible for building, validating, and maintaining every featur
 - [x] Group live NSFW video, live collab acting rooms
 - [x] Consent tracking, aftercare, moderation, decoy/stealth mode
 
+- [ ] Age-gated, auto-censored erotic/explicit video generation
+- [x] NSFW overlays, intensity dial, haptic/AR/VR integration
+- [ ] Private/secret video rooms, encrypted sharing, pay-per-view
+- [ ] NSFW fan clubs, tip jars, premium unlocks
+- [ ] Group live NSFW video, live collab acting rooms
+- [ ] Consent tracking, aftercare, moderation, decoy/stealth mode
+
 ---
 
 ## Global Missing/Launch Items
 - [x] All `.pbxproj`/multi-platform project files
+
 - [x] Final UI/UX and accessibility polish
+
+
 - [x] Launch/test `.dmg`, `.exe` installers
 - [x] Tutorial/help flows, onboarding, CI/CD live test
 - [x] Full asset and compliance review

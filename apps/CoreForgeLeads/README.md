@@ -16,7 +16,7 @@ This agent is responsible for building, validating, and maintaining all features
 ### Core Functionalities
 - [ ] Import/export CSV, XLSX, JSON, API sync
 - [ ] AI signal extraction, intent prediction, lead scoring
-- [ ] CRM integration (Salesforce, HubSpot, etc.)
+- [x] CRM integration (Salesforce, HubSpot, etc.)
 - [ ] Real-time lead enrichment (contact, company, social)
 - [ ] Team dashboards, multi-user assignment, lead pools
 - [ ] Drag-and-drop campaign builder, segment automation
@@ -49,7 +49,7 @@ This agent is responsible for building, validating, and maintaining all features
 ---
 
 ## Testing Requirements
-- [ ] Unit/integration tests (lead import, scoring, sync)
+- [x] Unit/integration tests (lead import, scoring, sync)
 - [ ] UI/UX and workflow tests (all platforms)
 - [ ] Security/privacy/compliance, access levels
 - [ ] Performance and scaling (large data sets)

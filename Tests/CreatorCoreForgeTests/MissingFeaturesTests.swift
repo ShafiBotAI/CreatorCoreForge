@@ -49,6 +49,20 @@ final class MissingFeaturesTests: XCTestCase {
         suite.removePersistentDomain(forName: "VisualTest")
     }
 
+    func testVerifyAgeIDAndEnableNSFW() {
+        let suite = UserDefaults(suiteName: "VisualTest2")!
+        CommunityFilter.shared.disableNSFW()
+        UserDefaults.standard.removeObject(forKey: "CF_PIN")
+        UserDefaults.standard.removeObject(forKey: "CF_REGION")
+        CommunityFilter.shared.setRegion("US")
+        var comps = DateComponents(); comps.year = 1990; comps.month = 1; comps.day = 1
+        let birth = Calendar.current.date(from: comps)!
+        let verifier = AgeIDVerifier()
+        XCTAssertTrue(verifier.verify(birthdate: birth, idNumber: "987654"))
+        XCTAssertTrue(CommunityFilter.shared.enableNSFW(pin: "1234"))
+        suite.removePersistentDomain(forName: "VisualTest2")
+    }
+
     func testGenerateSceneVideo() {
         let features = CoreForgeVisualFeatures()
         let url = features.generateSceneVideo(from: "A hero rises.")
