@@ -48,6 +48,11 @@ public struct CoreForgeAudioFeatures {
         return VoiceProfile(name: "Narrator", emotion: "neutral")
     }
 
+    /// Access the shared emotion database for additional emotion context.
+    public func emotionInfo(for label: String) -> EmotionRecord? {
+        EmotionDatabase.shared.record(for: label)
+    }
+
     private static func detectChapters(in text: String) -> [String] {
         let pattern = "(?i)chapter\\s+\\d+"
         guard let regex = try? NSRegularExpression(pattern: pattern) else { return [text] }
