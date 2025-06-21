@@ -6,6 +6,7 @@ This document explains how to generate macOS `.dmg` and Windows `.exe` installer
 - Node.js 18 or later
 - `electron-builder` (installed automatically by the build script)
 - macOS and Windows build runners for signing and packaging
+- `wine` and `mono` (required on macOS/Linux hosts to build Windows installers)
 
 ## Usage
 Run the helper script from the repository root:

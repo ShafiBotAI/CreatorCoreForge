@@ -320,7 +320,9 @@ screen files used for store submission.
 
 Cross-platform builds can be generated using `electron-builder`. Run
 `./scripts/build_desktop.sh` on macOS or Windows to produce `.dmg` and
-`.exe` installers for apps that include a `Desktop` project. See
+`.exe` installers for apps that include a `Desktop` project. macOS and Linux
+hosts must have `wine` and `mono` installed to generate the Windows builds.
+See
 `docs/CrossPlatformBuild.md` for details.
 
 Each app includes a `Desktop` folder with a starter Electron configuration for

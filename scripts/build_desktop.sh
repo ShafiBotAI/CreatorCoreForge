@@ -32,8 +32,27 @@ for APP in "${APPS[@]}"; do
 
   PLATFORM="$(uname -s)"
   case "$PLATFORM" in
-    Darwin*) TARGETS="--mac --win" ;;
-    MINGW*|MSYS*|CYGWIN*|Windows_NT) TARGETS="--win" ;;
+    Darwin*)
+      TARGETS="--mac"
+      if command -v wine >/dev/null 2>&1; then
+        TARGETS="$TARGETS --win"
+      else
+        echo "wine not found; Windows build skipped."
+      fi
+      ;;
+    MINGW*|MSYS*|CYGWIN*|Windows_NT)
+      TARGETS="--win"
+      ;;
+    Linux*)
+      if command -v wine >/dev/null 2>&1; then
+        TARGETS="--win"
+      else
+        echo "Unsupported platform $PLATFORM. Skipping build."
+        popd >/dev/null
+        echo "-----"
+        continue
+      fi
+      ;;
     *)
       echo "Unsupported platform $PLATFORM. Skipping build."
       popd >/dev/null
