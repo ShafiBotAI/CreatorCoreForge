@@ -16,6 +16,8 @@ Run the helper script from the repository root:
 
 The script searches each app folder for a `Desktop` project containing a `package.json` file. If found, it installs dependencies and invokes `electron-builder` to create installers for both macOS and Windows.
 
+An example desktop package is provided under `apps/CoreForgeAudio/Desktop`. Use it as a template when adding desktop builds for other apps.
+
 Artifacts are generated under each app's `Desktop/dist` directory. Upload these installers to your distribution channel or attach them to a release.
 
 ## Continuous Integration
