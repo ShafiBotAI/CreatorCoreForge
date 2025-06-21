@@ -4,51 +4,93 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 
 ## Tier Features
 
-- [ ] **Free** – Core functionality, limited export options, community templates
-- [ ] **Creator** – Advanced AI tools, voice cloning, adaptive scene builders, personal dashboards
-- [ ] **Enterprise** – Team collaboration, white label deployments, analytics and compliance reports
-- [ ] **NSFW** – Explicit content toggle, consent logging and vaults, premium NSFW packs
+- [ ] **Free** – Core functionality across apps, Limited export options, Access to community templates
+- [ ] **Creator** – Advanced AI tools, Voice cloning and adaptive scene builders, Personal dashboards and statistics
+- [ ] **Enterprise** – Team collaboration and permissions, White label deployment, Analytics and compliance reports
+- [ ] **NSFW** – Explicit content toggle, Consent logs and vaults, Premium NSFW packs
 
 ## Application Feature Goals
 
-### CoreForge Audio
+### CoreForgeAudio
 - [ ] Real-time emotion adaptation
 - [ ] Voice DNA visualization
 - [ ] Quantum AI mode
+- [ ] NSFW mood heatmap analytics
+- [ ] SoundLayerEngine
+- [ ] ChapterAnalyticsService
+- [ ] UserAnnotations
+- [ ] VoiceControlService integration
+- [ ] AdaptiveMusicGenerator
+- [ ] CommunityReviews
+- [ ] AudioSearchIndex
+- [ ] ProfanityFilter
+- [ ] VoiceCloneShare
+- [ ] DynamicChapterTransitions
+- [ ] HeatmapAnalytics
+- [ ] VersionedExports
+- [ ] ReplayAnalyticsService
+- [ ] SleepReadMode
+- [ ] EmotionShiftTracker
+- [ ] VoiceReviewSystem
+- [ ] AutoCastingEngine
+- [ ] PronunciationEditor
+- [ ] NarrationScheduler
+- [ ] SpatialAudioSupport
+- [ ] EmotionPacingEditor
+- [ ] SmartAmbientMixer
+- [ ] AutoRemixMode
+- [ ] AccessibilityOutput
+- [ ] WatchSyncService
+- [ ] VoicePolls
+- [ ] HeartRateAdaptiveAudio
+- [ ] UnlockableVoiceSkins
+- [ ] PersonalizedGreetingService
+- [ ] AdvancedTimelineEditor
+- [ ] BrailleOutputService
+- [ ] PronunciationDictionary
 
-### CoreForge Visual
+### CoreForgeVisual
 - [ ] Adaptive scene completion
 - [ ] AR/VR playback
 - [ ] Quantum reality switcher
+- [ ] TimelineEditor
+- [ ] ColorGradingEngine
+- [ ] BranchingPathsUI
+- [ ] FaceTrackerService
+- [ ] CrowdSimulator
+- [ ] Export360VR
+- [ ] CameraStabilizer
+- [ ] WatermarkService
+- [ ] SubtitleGenerator
+- [ ] RenderAnalyticsDashboard
 
-### CoreForge Writer
+### CoreForgeWriter
 - [ ] Memory pinning
 - [ ] Quantum-choice plotting
 - [ ] Community marketplace
 
-### CoreForge Market
+### CoreForgeMarket
 - [ ] Hybrid quantum trading engine
 - [ ] Team trading and leaderboards
 - [ ] Bot marketplace
 
-### CoreForge Build
+### CoreForgeBuild
 - [ ] Figma-driven UI builder
 - [ ] Auto bundler for all platforms
 - [ ] Debugging assistant
 
-### CoreForge Studio
+### CoreForgeStudio
 - [ ] Real-time ensemble acting
 - [ ] Quantum edit mode
 - [ ] Template monetization
 
-### CoreForge Music
+### CoreForgeMusic
 - [ ] AI vocal production
 - [ ] Commercial export tools
 - [ ] Voice cloning
 
-### CoreForge Leads
+### CoreForgeLeads
 - [ ] Marketplace credit system
 - [ ] Global lead exchange
 - [ ] Advanced scoring
 
-Use this checklist to track progress as we implement Phase 8 capabilities across every app.

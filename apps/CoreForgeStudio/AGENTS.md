@@ -59,7 +59,6 @@ Purpose: Converts full books into dramatized AI-generated cinematic videos
 - [ ] Interactive video QTE (viewer-triggered choices)
 - [ ] Self-rating engine (scene quality based on AI criteria)
 - [ ] Replay prediction engine (likely rewatch scenes)
-=======
 ### Upcoming Features
 - [ ] Add AI Scene Editor Timeline View
 - [ ] Build Smart Camera Direction AI (zoom/pan/hold)
