@@ -26,19 +26,22 @@ public final class EbookConverter {
         let chapters = ebookText.components(separatedBy: "\n\n")
         var results: [AudioSegment] = []
         let group = DispatchGroup()
+        let lock = DispatchQueue(label: "ebook.converter.lock")
 
         for (index, chapter) in chapters.enumerated() {
             group.enter()
             let tempURL = FileManager.default.temporaryDirectory
-                .appendingPathComponent("chapter\(index + 1)")
+                .appendingPathComponent("chapter_\(index + 1)")
                 .appendingPathExtension("wav")
 
             voiceAI.synthesize(text: chapter, with: voice) { result in
                 if case .success(let data) = result {
                     try? data.write(to: tempURL)
                 }
-                results.append(AudioSegment(chapter: chapter,
-                                            audioFileURL: tempURL.path))
+                lock.sync {
+                    results.append(AudioSegment(chapter: chapter,
+                                                audioFileURL: tempURL.path))
+                }
                 group.leave()
             }
         }

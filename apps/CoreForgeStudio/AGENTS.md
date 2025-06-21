@@ -53,7 +53,7 @@ Purpose: Converts full books into dramatized AI-generated cinematic videos
 - [ ] Emotion layer system (alternate tone variants per scene)
 
 #### Playback + Prediction
-- [ ] "Mood Mix" export filter (emotional highlights only)
+ - [x] "Mood Mix" export filter (emotional highlights only)
 - [ ] Scene performance estimator (views, replays, saves)
 - [ ] Alternate ending generator
 - [ ] Interactive video QTE (viewer-triggered choices)

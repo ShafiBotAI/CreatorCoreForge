@@ -2,10 +2,16 @@
 import SwiftUI
 import CreatorCoreForge
 
+enum WritingStyle: String, CaseIterable {
+    case standard, formal, casual
+}
+
 struct SettingsView: View {
     @AppStorage("nsfwEnabled") private var nsfwEnabled = false
     @AppStorage("parentalPIN") private var parentalPIN = ""
     @AppStorage("nsfwMode") private var nsfwModeRaw = NSFWContentMode.slow.rawValue
+    @AppStorage("writingStyle") private var writingStyleRaw = WritingStyle.standard.rawValue
+    @AppStorage("largeText") private var largeTextEnabled = false
     @State private var showPinPrompt = false
     @State private var inputPIN = ""
     @State private var showIncorrectAlert = false
@@ -13,6 +19,11 @@ struct SettingsView: View {
     private var nsfwMode: NSFWContentMode {
         get { NSFWContentMode(rawValue: nsfwModeRaw) ?? .slow }
         set { nsfwModeRaw = newValue.rawValue }
+    }
+
+    private var writingStyle: WritingStyle {
+        get { WritingStyle(rawValue: writingStyleRaw) ?? .standard }
+        set { writingStyleRaw = newValue.rawValue }
     }
 
     var body: some View {
@@ -37,6 +48,18 @@ struct SettingsView: View {
                             }
                         }
                     }
+                }
+                Section(header: Text("Style")) {
+                    Picker("Writing Style", selection: Binding(
+                        get: { writingStyle },
+                        set: { writingStyle = $0 })) {
+                        ForEach(WritingStyle.allCases, id: \.self) { style in
+                            Text(style.rawValue.capitalized).tag(style)
+                        }
+                    }
+                }
+                Section(header: Text("Accessibility")) {
+                    Toggle("Large Text", isOn: $largeTextEnabled)
                 }
                 Section(header: Text("Security")) {
                     Button("Change PIN") { showPinPrompt = true }
