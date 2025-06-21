@@ -6,7 +6,7 @@ This agent is responsible for building, validating, and maintaining every featur
 ## Objectives
 - [ ] End-to-end AI writing studio (books, scripts, stories)
 - [ ] Persistent character/world memory and creative DNA
-- [ ] Support for iOS, Android, PC, macOS, Web
+ - [x] Support for iOS, Android, PC, macOS, Web
 - [ ] Multilingual, NSFW gating, offline writing, community/marketplace
 
 ---

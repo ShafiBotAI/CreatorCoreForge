@@ -6,7 +6,7 @@ This agent is responsible for building, validating, and maintaining all features
 ## Objectives
 - [ ] End-to-end lead generation, scoring, enrichment, and CRM sync
 - [ ] Persistent memory, custom agent builder, AI automation, and analytics
-- [ ] Multi-platform support: iOS, Android, Web, PC, Mac
+ - [x] Multi-platform support: iOS, Android, Web, PC, Mac
 - [ ] Global languages, NSFW gating, offline, marketplace, affiliate features
 
 ---
