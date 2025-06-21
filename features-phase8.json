@@ -26,12 +26,32 @@
       "Real-time emotion adaptation",
       "Voice DNA visualization",
       "Quantum AI mode",
-      "NSFW mood heatmap analytics"
+      "NSFW mood heatmap analytics",
+      "SoundLayerEngine",
+      "ChapterAnalyticsService",
+      "UserAnnotations",
+      "VoiceControlService integration",
+      "AdaptiveMusicGenerator",
+      "CommunityReviews",
+      "AudioSearchIndex",
+      "ProfanityFilter",
+      "VoiceCloneShare",
+      "DynamicChapterTransitions"
     ],
     "CoreForgeVisual": [
       "Adaptive scene completion",
       "AR/VR playback",
-      "Quantum reality switcher"
+      "Quantum reality switcher",
+      "TimelineEditor",
+      "ColorGradingEngine",
+      "BranchingPathsUI",
+      "FaceTrackerService",
+      "CrowdSimulator",
+      "Export360VR",
+      "CameraStabilizer",
+      "WatermarkService",
+      "SubtitleGenerator",
+      "RenderAnalyticsDashboard"
     ],
     "CoreForgeWriter": [
       "Memory pinning",
