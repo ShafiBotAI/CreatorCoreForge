@@ -320,3 +320,15 @@ Cross-platform builds can be generated using `electron-builder`. Run
 Each app includes a `Desktop` folder with a starter Electron configuration for
 building installers.
 
+## Running Tests
+
+Install Node dependencies for the labs before running the test suites:
+
+```bash
+cd VoiceLab && npm install && npm test
+cd ../VisualLab && npm install && npm test
+cd .. && swift test
+```
+
+This ensures `jest`, `ts-node`, and other dev tools are available.
+
