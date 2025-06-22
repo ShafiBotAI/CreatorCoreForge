@@ -12,3 +12,4 @@
   functional modules.
 - Added cross-app `VideoEffectsPipeline` with fade transitions and watermark support. Updated `features-phase8.json` and documentation.
 - Added cross-app `AudioEffectsPipeline` with echo and pitch-shift utilities. Updated `features-phase8.json` and documentation.
+- Added `AmbientFXEngine` and `FXLibrary` modules to manage immersive ambient playback for CoreForge Audio Phase 3.
