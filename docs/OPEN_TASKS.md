@@ -471,7 +471,6 @@
    - Import ePub/PDF/text and auto-adapt to storyboard scenes
    - Subscription, credits, and in-app purchases
    - UI/UX interaction tests (all platforms)
-   - UI/UX interaction tests (all platforms)
 
 ❌ Missing or Incomplete Features: 74
    - End-to-end cinematic video creation from text/book/script input
@@ -511,9 +510,6 @@
    - Stress and performance tests (ultra-long video, multi-scene)
    - Security/privacy audits, NSFW gating tests
    - Accessibility validation (subtitles, voiceover, visual clarity)
-   - Stress and performance tests (ultra-long video, multi-scene)
-   - Security/privacy audits, NSFW gating tests
-   - Accessibility validation (subtitles, voiceover, visual clarity)
    - GitHub Actions for multi-platform builds
    - Version tagging, changelogs
    - Automated deployment to TestFlight, Play Store, Google Drive
@@ -531,12 +527,6 @@
    - Ultra-long export, custom watermarks, secure publishing
    - Emotion/genre/tone heatmaps, viral templates
    - Creator/director commentary export, podcast mode
-   - Age-gated, auto-censored erotic/explicit video generation
-   - NSFW overlays, intensity dial, haptic/AR/VR integration
-   - Private/secret video rooms, encrypted sharing, pay-per-view
-   - NSFW fan clubs, tip jars, premium unlocks
-   - Group live NSFW video, live collab acting rooms
-   - Consent tracking, aftercare, moderation, decoy/stealth mode
    - Age-gated, auto-censored erotic/explicit video generation
    - NSFW overlays, intensity dial, haptic/AR/VR integration
    - Private/secret video rooms, encrypted sharing, pay-per-view
@@ -653,7 +643,6 @@
 ✅ Implemented Features: 9
    - Multilingual and regional targeting (`apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/LeadRegionalTargeter.swift`)
    - CRM integration and DF Signal API
-   - Multilingual and regional targeting (`apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/LeadRegionalTargeter.swift`)
    - Analyze user’s target market
    - Auto-personalize outreach scripts (`apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/ProspectingWorkflow.swift`)
    - `LeadMiner.swift`
@@ -663,8 +652,6 @@
 
 ❌ Missing or Incomplete Features: 15
    - Real-time signal tracking + AI lead scoring
-   - Automated prospecting workflows
-   - Lead marketplace and monetization tools
    - Automated prospecting workflows
    - Lead marketplace and monetization tools
    - CRM integration and DF Signal API (Codex)
