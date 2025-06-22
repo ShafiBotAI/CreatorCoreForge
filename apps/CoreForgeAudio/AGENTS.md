@@ -359,28 +359,28 @@ Key points from `README.md`:
 - [ ] Provide parsing logs and error highlighting to the creator
 
 ### Phase 2 – Voice Assignment & TTS Logic
-- [ ] Assign default narrator voice for books with single-voice rendering
-- [ ] Detect and tag character dialogue blocks for multi-voice casting
-- [ ] Link recurring character names to voice profiles using memory system
-- [ ] Enable user-defined cast templates with role-to-voice mapping
-- [ ] Detect tone of character dialogue (angry, sad, joyful) using emotion AI
-- [ ] Integrate LocalVoiceAI and ElevenLabs fallback TTS renderers
-- [ ] Add emotion-to-pitch/pace modulation (e.g., sad = slower, lower)
-- [ ] Support voice blending for internal monologue vs. external dialogue
-- [ ] Allow users to test voice preview samples per character before rendering
-- [ ] Add automatic narrator voice adjustments during high-tension scenes
-- [ ] Fork voices into alternate variants for multiverse or memory arcs
-- [ ] Tag first-person vs. third-person POV to determine voice switching
-- [ ] Support voice regional accents (British, Australian, Indian, etc.)
-- [ ] Voice delivery pacing optimized for line length and context complexity
-- [ ] Adjust pause duration between lines based on speaker change
-- [ ] Integrate pronunciation dictionaries per character for name consistency
-- [ ] Implement voice style presets: fantasy, sci-fi, horror, romance
-- [ ] Use AI to recommend voices based on genre and writing style
-- [ ] Visual cast map UI to display all character-voice assignments
-- [ ] Real-time rendering monitor to preview TTS results as generated
-- [ ] Save voice assignments in user profiles for cross-book persistence
-- [ ] Detect overlapping voices and adjust timing to simulate conversation
+- [x] Assign default narrator voice for books with single-voice rendering
+- [x] Detect and tag character dialogue blocks for multi-voice casting
+- [x] Link recurring character names to voice profiles using memory system
+- [x] Enable user-defined cast templates with role-to-voice mapping
+- [x] Detect tone of character dialogue (angry, sad, joyful) using emotion AI
+- [x] Integrate LocalVoiceAI and ElevenLabs fallback TTS renderers
+- [x] Add emotion-to-pitch/pace modulation (e.g., sad = slower, lower)
+- [x] Support voice blending for internal monologue vs. external dialogue
+- [x] Allow users to test voice preview samples per character before rendering
+- [x] Add automatic narrator voice adjustments during high-tension scenes
+- [x] Fork voices into alternate variants for multiverse or memory arcs
+- [x] Tag first-person vs. third-person POV to determine voice switching
+- [x] Support voice regional accents (British, Australian, Indian, etc.)
+- [x] Voice delivery pacing optimized for line length and context complexity
+- [x] Adjust pause duration between lines based on speaker change
+- [x] Integrate pronunciation dictionaries per character for name consistency
+- [x] Implement voice style presets: fantasy, sci-fi, horror, romance
+- [x] Use AI to recommend voices based on genre and writing style
+- [x] Visual cast map UI to display all character-voice assignments
+- [x] Real-time rendering monitor to preview TTS results as generated
+- [x] Save voice assignments in user profiles for cross-book persistence
+- [x] Detect overlapping voices and adjust timing to simulate conversation
 
 ### Phase 3 – Immersive Playback & Ambient Systems
 - [ ] Design ambient FX engine to layer audio environments under narration
