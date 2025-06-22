@@ -73,6 +73,7 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 - [x] WatermarkService
 - [x] SubtitleGenerator
 - [x] RenderAnalyticsDashboard
+- [ ] 4KVideoExport
 
 ### CoreForgeWriter
 - [ ] UnifiedAudioEngine
