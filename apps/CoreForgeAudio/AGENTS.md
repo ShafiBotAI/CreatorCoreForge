@@ -412,15 +412,15 @@ Key points from `README.md`:
 - [x] Implement character aging logic to evolve voice over time
 - [x] Save memory tokens (milestones, trauma, growth) per character
 - [ ] Adjust emotional tone delivery based on past scenes (e.g., grief affects voice)
-- [ ] Support flashback-specific tone adjustments (reverberation, echo)
+- [x] Support flashback-specific tone adjustments (reverberation, echo)
 - [x] Tag emotional arcs and tie them to narrator modulation rules
 - [x] Maintain a character timeline of voice intensity and expressiveness
-- [ ] Apply stress-level voice distortion during arguments or danger
-- [ ] Create character dossier panel for memory review/editing
+- [x] Apply stress-level voice distortion during arguments or danger
+- [x] Create character dossier panel for memory review/editing
 - [x] Support "memory lock" to preserve voice consistency despite new scripts
 - [ ] Recommend tone variation based on context and prior memory state
 - [ ] Integrate cross-book story arc tracking (hero's journey, redemption, fall)
-- [ ] Detect character reappearances and retrieve voice memory automatically
+- [x] Detect character reappearances and retrieve voice memory automatically
 - [ ] Allow adaptive tone matching when character enters new genres/settings
 - [ ] Model relationships: voice modulation changes depending on who is speaking to whom
 - [x] Use memory weights to prioritize emotional realism over narration neutrality
