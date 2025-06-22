@@ -9,9 +9,9 @@ Purpose: AI-driven app builder with automated code generation and packaging
  - [x] UI builder using Figma/code templates (Codex)
  - [x] Build Codex writes Swift, Kotlin, Python, Unity, JS (Codex)
  - [x] Auto-connect to GitHub, Xcode, Android Studio (Codex)
-- [ ] Pull code and plugins from public sources (Codex)
+- [x] Pull code and plugins from public sources (Codex)
 - [ ] Next-gen AI reasoning engine for debugging and enhancements (Codex)
-- [ ] Monetization logic builder (subscriptions, IAPs) (Codex)
+- [x] Monetization logic builder (subscriptions, IAPs) (Codex)
 - [x] Virality engine with upload integration (Codex)
  - [x] Auto bundler for iOS, Android, PC, VR (Codex)
 

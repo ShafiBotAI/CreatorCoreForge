@@ -5,7 +5,7 @@ Platform: iOS, Android, Windows, macOS, Web
 Purpose: AI-powered cycle tracking and wellness coach with private modes.
 
 ### Core Features
-- [ ] Cycle tracking and predictions
+- [x] Cycle tracking and predictions
 - [ ] Sexual wellness insights and reminders
 - [ ] Private vault with consent logs
 - [ ] Wearable data integration
