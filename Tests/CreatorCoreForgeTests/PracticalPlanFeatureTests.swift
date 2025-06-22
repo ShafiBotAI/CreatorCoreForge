@@ -140,8 +140,12 @@ final class PracticalPlanFeatureTests: XCTestCase {
 
     func testMindFeatures() {
         let journal = MoodJournal()
-        journal.addEntry("hi")
-        XCTAssertEqual(journal.count, 1)
+        journal.addEntry("I am sad")
+        journal.addEntry("This is amazing!")
+        let breakdown = journal.moodBreakdown()
+        XCTAssertEqual(journal.count, 2)
+        XCTAssertEqual(breakdown["somber"], 1)
+        XCTAssertEqual(breakdown["excited"], 1)
         XCTAssertEqual(GuidedSessions().play(session: "med"), "Playing med")
         let vault = PrivateVault()
         vault.save(key: "k", value: "v")

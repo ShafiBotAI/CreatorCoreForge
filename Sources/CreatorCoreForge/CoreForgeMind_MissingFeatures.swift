@@ -7,6 +7,19 @@ public final class MoodJournal {
         entries[date] = text
     }
     public var count: Int { entries.count }
+
+    /// Return a simple emotion breakdown for all journal entries using
+    /// `EmotionAnalyzer`. The result maps the recommended tone to the
+    /// number of occurrences.
+    public func moodBreakdown() -> [String: Int] {
+        let analyzer = EmotionAnalyzer()
+        var counts: [String: Int] = [:]
+        for text in entries.values {
+            let tone = analyzer.recommendTone(for: text)
+            counts[tone, default: 0] += 1
+        }
+        return counts
+    }
 }
 
 public struct GuidedSessions {
