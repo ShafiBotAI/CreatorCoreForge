@@ -32,10 +32,11 @@ public class BookImporter {
     }
     
     private static func importEpub(from url: URL) async throws -> [Chapter] {
-        // Placeholder — Replace with real EPUB parser integration
-        // Simulate async fetch and split
-        // For production: Use FolioReaderKit or similar Swift EPUB library
-        throw BookImportError.unsupportedFormat // Remove after real implementation
+        // Use ZIPFoundation to unzip the EPUB and parse chapters.
+        // Example extraction code adapted from ZIPFoundation README:
+        // let fileManager = FileManager()
+        // try fileManager.unzipItem(at: sourceURL, to: destinationURL)
+        return try EPUBParser.chapters(from: url)
     }
     
     #if canImport(PDFKit)
