@@ -28,6 +28,8 @@ Only a subset of those features are shown below for brevity.
 - [x] AISummaryChatService
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
+- [x] DocumentParser
+- [x] OCRScanMode
 - [x] VideoEffectsPipeline
 - [x] Real-time emotion adaptation
 - [x] Voice DNA visualization
