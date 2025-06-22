@@ -1,16 +1,5 @@
 # Global Task Summary
 
-## Tests
-- Expand coverage for AI engines ✅
-- Ensure continuous integration runs pass ✅
-- Add regression tests for bug fixes ✅
-
-## VoiceLab
-- Ensure voice training scripts run via CI
-- Keep React components typed and tested
-- Integrate with OpenAI service ✅
-- Document new APIs
-
 ## apps
 - Keep each subfolder in sync with master roadmap
 - Maintain per-app AGENTS.md files
@@ -24,7 +13,6 @@
 - Finalize production UI components
 
 ## apps/CoreForgeBuild
-- Pull code and plugins from public sources (Codex)
 - Next-gen AI reasoning engine for debugging and enhancements (Codex)
 - Monetization logic builder (subscriptions, IAPs) (Codex)
 - Finalize production UI components
@@ -171,9 +159,4 @@
 - Integrate reader relatability + pacing metrics
 - Enable Book-to-Pitch feature (TV/Film pitch toolkit)
 - Export script to CoreForge Studio with assigned voices
-
-## fastlane
-- Maintain Fastfile lanes for all apps
-- Update ExportOptions.plist for new entitlements
-- Document usage in README
 

@@ -59,7 +59,8 @@ This agent is responsible for building, validating, and maintaining all features
 ## Deployment & CI/CD
 - [ ] GitHub Actions, tagging, changelogs, multi-platform deploy
 - [ ] Template/plugin asset pipeline
- - [x] Automated onboarding, compliance checks
+  Use `scripts/pull_plugins.py` to download plugin archives from GitHub.
+- [x] Automated onboarding, compliance checks
 
 ---
 
