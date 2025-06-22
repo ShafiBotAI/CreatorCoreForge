@@ -348,6 +348,9 @@ A snapshot of the open source `ebook2audiobook` project is included under `apps/
 ```
 
 This invokes the Python pipeline to generate WAV files in the given directory.
+## AI Video Generator Integration
+A trimmed snapshot of the open source `ai-video-generator` project is included under `apps/AI_VideoGenerator`. Run `python server.py` in that folder to start the FastAPI backend for generating text-to-video clips.
+
 
 ## Chatterbox Script Conversion
 Use `scripts/chatterbox_bridge.py` to generate a narrated play from a simple `SPEAKER: line` script. Place `speaker.mp3` samples next to your script and set `CHATTERBOX_API_URL` before running:
