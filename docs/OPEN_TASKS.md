@@ -351,7 +351,7 @@
    - UI builder using Figma/code templates (Codex)
    - Build Codex writes Swift, Kotlin, Python, Unity, JS (Codex)
    - Auto-connect to GitHub, Xcode, Android Studio (Codex)
-   - Pull code and plugins from public sources (Codex)
+   - Pull code and plugins from public sources (Codex) ✅
    - Next-gen AI reasoning engine for debugging and enhancements (Codex)
    - Monetization logic builder (subscriptions, IAPs) (Codex)
    - Virality engine with upload integration (Codex)
