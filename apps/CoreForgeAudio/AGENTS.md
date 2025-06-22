@@ -431,32 +431,32 @@ Key points from `README.md`:
 - [x] Embed character memory files as part of export metadata for continuity
 
 ### Phase 5 – Multiverse & Timeline-Aware Audio Narration
-- [ ] Introduce multiverse tagging for alternate character arcs and scenes
-- [ ] Fork voice profiles to support divergent personalities per timeline
-- [ ] Tag chapters with timeline markers (A, B, Prime, Dark, etc.)
-- [ ] Sync multiverse tags with persistent voice and emotional memory
-- [ ] Create branching logic visualizer to display multiverse path options
-- [ ] Enable user selection of which timeline to follow during playback
-- [ ] Allow creator-defined scene forks with different FX and voice tones
-- [ ] Track listener path choices and feed into character memory
-- [ ] Adjust ambient and pacing based on multiverse setting (e.g., dystopia = slower)
+- [x] Introduce multiverse tagging for alternate character arcs and scenes
+- [x] Fork voice profiles to support divergent personalities per timeline
+- [x] Tag chapters with timeline markers (A, B, Prime, Dark, etc.)
+- [x] Sync multiverse tags with persistent voice and emotional memory
+- [x] Create branching logic visualizer to display multiverse path options
+- [x] Enable user selection of which timeline to follow during playback
+- [x] Allow creator-defined scene forks with different FX and voice tones
+- [x] Track listener path choices and feed into character memory
+- [x] Adjust ambient and pacing based on multiverse setting (e.g., dystopia = slower)
 - [ ] Support "multiverse collapse" audio effect when timelines converge
 - [ ] Enable alternate endings per timeline with unique tonal conclusions
-- [ ] Fork narrator tone for speculative/what-if chapters
-- [ ] Store multiverse path data in playback history and sync across devices
-- [ ] Integrate "director notes" mode to highlight multiverse scenes
+- [x] Fork narrator tone for speculative/what-if chapters
+- [x] Store multiverse path data in playback history and sync across devices
+- [x] Integrate "director notes" mode to highlight multiverse scenes
 - [ ] Allow hidden timeline unlocks based on listener behavior
 - [ ] Provide multiverse context summaries for catching up mid-path
 - [ ] Support flashback-within-alternate-timeline scenes
 - [ ] Build multiverse continuity checker for tone, character, and FX
-- [ ] Auto-adjust emotion modulation when characters encounter variants of themselves
+- [x] Auto-adjust emotion modulation when characters encounter variants of themselves
 - [ ] Embed multiverse state tags into export files for advanced metadata
 - [ ] Allow experimental rendering mode with parallel timeline mix
-- [ ] Enable Creator sandbox to test and preview all forks side-by-side
+- [x] Enable Creator sandbox to test and preview all forks side-by-side
 
 - [x] Enable export to MP3, WAV, FLAC formats with metadata embedding
 - [x] Auto-tag files with narrator, chapter, genre, and FX metadata
-- [ ] Support segmented export (chapter-by-chapter or full-book)
+- [x] Support segmented export (chapter-by-chapter or full-book)
 - [ ] Allow users to include/exclude ambient and NSFW layers in export
 - [ ] Enable fingerprinted voice tagging for IP verification
 - [x] Provide real-time export preview and file size estimation
