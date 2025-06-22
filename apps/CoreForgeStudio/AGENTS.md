@@ -91,3 +91,11 @@ Purpose: Converts full books into dramatized AI-generated cinematic videos
 - [x] AISummaryChatService
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
+
+### App Capabilities
+
+- UnifiedAudioEngine
+- UnifiedVideoEngine
+- AdaptiveLearningEngine
+- Real-time ensemble acting
+- Quantum edit mode

@@ -53,3 +53,11 @@ Purpose: Next-gen AI tool for lead generation, prospecting, and B2B intelligence
 - [x] AISummaryChatService
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
+
+### App Capabilities
+
+- UnifiedAudioEngine
+- UnifiedVideoEngine
+- AdaptiveLearningEngine
+- Marketplace credit system
+- Global lead exchange

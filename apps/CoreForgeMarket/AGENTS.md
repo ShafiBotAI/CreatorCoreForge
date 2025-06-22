@@ -103,3 +103,11 @@ This agent is responsible for building, validating, and maintaining all features
 
 ## Codex/AI Agent Note
 Treat every unchecked item as a high-priority deliverable. Use as requirements for completion, testing, and launch.
+
+### App Capabilities
+
+- UnifiedAudioEngine
+- UnifiedVideoEngine
+- AdaptiveLearningEngine
+- Hybrid quantum trading engine
+- Team trading and leaderboards
