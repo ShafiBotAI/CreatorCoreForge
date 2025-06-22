@@ -39,3 +39,11 @@ Purpose: AI-driven app builder with automated code generation and packaging
 - [x] AISummaryChatService
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
+
+### App Capabilities
+
+- UnifiedAudioEngine
+- UnifiedVideoEngine
+- AdaptiveLearningEngine
+- Figma-driven UI builder
+- Auto bundler for all platforms

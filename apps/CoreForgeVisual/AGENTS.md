@@ -161,3 +161,11 @@ This agent is responsible for building, validating, and maintaining every featur
 
 ## Codex/AI Agent Note
 Every unchecked item is a top-priority task. Use this file as the app's full requirements for completion, verification, and compliance.
+
+### App Capabilities
+
+- UnifiedAudioEngine
+- UnifiedVideoEngine
+- AdaptiveLearningEngine
+- Adaptive scene completion
+- AR/VR playback

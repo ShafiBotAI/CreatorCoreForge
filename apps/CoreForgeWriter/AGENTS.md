@@ -92,3 +92,11 @@ Advanced AI writing assistant for creating books, series, and self-help guides w
 - [x] AISummaryChatService
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
+
+### App Capabilities
+
+- UnifiedAudioEngine
+- UnifiedVideoEngine
+- AdaptiveLearningEngine
+- Memory pinning
+- Quantum-choice plotting

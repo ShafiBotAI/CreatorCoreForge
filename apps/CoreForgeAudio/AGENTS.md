@@ -237,3 +237,11 @@ This file is a full checklist of every feature required for code completion and 
 ## Codex/AI Agent Note
 Treat every unchecked item as a high-priority deliverable. Use this file as the definitive requirements list for app completion, verification, and compliance.  
 **Upon completion, all items must be checked and validated in the corresponding GitHub repo.**
+
+### App Capabilities
+
+- UnifiedAudioEngine
+- UnifiedVideoEngine
+- AdaptiveLearningEngine
+- Real-time emotion adaptation
+- Voice DNA visualization

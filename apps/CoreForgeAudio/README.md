@@ -61,3 +61,12 @@ keys can be securely stored using `SecureStore.storeApiKey` which writes the
 value to the iOS Keychain.
 An `AppStoreAssets` directory provides screenshots and
 additional artwork required by the store.
+
+## App Capabilities
+
+Highlighted capabilities from `features-phase8.json`:
+- UnifiedAudioEngine
+- UnifiedVideoEngine
+- AdaptiveLearningEngine
+- Real-time emotion adaptation
+- Voice DNA visualization

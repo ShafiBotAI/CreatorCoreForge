@@ -46,3 +46,11 @@ Purpose: Hit songwriting engine with AI beat matching, hooks, and lyric generati
 - [x] AISummaryChatService
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
+
+### App Capabilities
+
+- UnifiedAudioEngine
+- UnifiedVideoEngine
+- AdaptiveLearningEngine
+- AI vocal production
+- Commercial export tools
