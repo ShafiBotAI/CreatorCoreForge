@@ -2,6 +2,10 @@
 
 This document collects the major feature goals for Phase 8 of the CreatorCoreForge ecosystem. Items come from `features-phase8.json` and the high level roadmap in `AGENTS.md`.
 
+The file `scripts/ensure_200_features.py` now auto-generates placeholder
+features so that every app in `features-phase8.json` lists at least 200 items.
+Only a subset of those features are shown below for brevity.
+
 ## Tier Features
 
 - [ ] **Free** – Core functionality across apps, Limited export options, Access to community templates
