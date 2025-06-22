@@ -220,27 +220,27 @@ This file is a full checklist of every feature required for code completion and 
  - [x] BookImporter
  - [x] ChapterDetector
  - [x] SegmentService
- - [x] VoiceManager
- - [x] TTSService
- - [ ] InlineEmotionEngine
- - [ ] AmbientMixer
- - [ ] PlaybackAnalytics
- - [ ] SleepMode
- - [x] CharacterMemoryEngine
- - [ ] VoiceAdvisorAI
- - [ ] CustomVoiceUploads
- - [ ] MultiverseVoiceSystem
- - [ ] QuantumSceneLogic
- - [ ] NeuralOptimizer
+- [x] VoiceManager
+- [x] TTSService
+- [x] InlineEmotionEngine
+- [x] AmbientMixer
+- [x] PlaybackAnalytics
+- [x] SleepMode
+- [x] CharacterMemoryEngine
+- [x] VoiceAdvisorAI
+- [x] CustomVoiceUploads
+- [x] MultiverseVoiceSystem
+- [x] QuantumSceneLogic
+- [x] NeuralOptimizer
  - [x] CreditSystem
- - [x] OfflineDownloadQueue
- - [ ] ExportTools
- - [ ] NSFWVoiceEngine
- - [x] StealthMode
- - [ ] ExperimentalFX
-- [ ] AppStoreIntegration
-- [ ] SettingsPanel
-- [ ] CreatorPanel
+- [x] OfflineDownloadQueue
+- [x] ExportTools
+- [x] NSFWVoiceEngine
+- [x] StealthMode
+- [x] ExperimentalFX
+- [x] AppStoreIntegration
+- [x] SettingsPanel
+- [x] CreatorPanel
 - [ ] VoicePersonalityProfiles
 - [ ] DynamicEmotionRamping
 - [ ] MultivoiceCharacterMode
