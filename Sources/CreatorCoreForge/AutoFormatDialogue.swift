@@ -18,7 +18,9 @@ public struct AutoFormatDialogue {
             let speaker = String(line[..<range.lowerBound]).trimmingCharacters(in: .whitespaces)
             let utterance = String(line[range.upperBound...]).trimmingCharacters(in: .whitespaces)
             if speaker != currentSpeaker {
-                if !result.isEmpty { result += "\n" }
+                if !result.isEmpty && !result.hasSuffix("\n") {
+                    result += "\n"
+                }
                 result += "\(speaker):\n"
                 currentSpeaker = speaker
             }
