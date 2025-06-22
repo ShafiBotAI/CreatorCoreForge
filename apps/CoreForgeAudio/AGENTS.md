@@ -199,6 +199,24 @@ This file is a full checklist of every feature required for code completion and 
 - [x] AISummaryChatService
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
+- [ ] DocumentParser
+- [ ] OCRScanMode
+- [ ] BatchImportTool
+- [ ] AutoFormatDialogue
+- [ ] TraitMemoryPersistence
+- [ ] CanonMemoryGraph
+- [ ] MemoryAnchorService
+- [ ] MultiverseBookLinker
+- [ ] AutoTranslateService
+- [ ] AccentSwitcher
+- [ ] MultilingualVoiceBlend
+- [ ] SemanticSegmenter
+- [ ] SceneIndexGenerator
+- [ ] LongFormPacingEngine
+- [ ] FullBookRender
+- [ ] AudiobookStoreExporter
+- [ ] PublishingReportGenerator
+- [ ] SeriesManager
 - [ ] BookImporter
 - [ ] ChapterDetector
 - [ ] SegmentService
@@ -223,6 +241,39 @@ This file is a full checklist of every feature required for code completion and 
 - [ ] AppStoreIntegration
 - [ ] SettingsPanel
 - [ ] CreatorPanel
+- [ ] VoicePersonalityProfiles
+- [ ] DynamicEmotionRamping
+- [ ] MultivoiceCharacterMode
+- [ ] CharacterTics
+- [ ] VoiceReactivity
+- [ ] CharacterVoiceAging
+- [ ] AccentGenerator
+- [ ] CadenceModulation
+- [ ] InterruptSimulation
+- [ ] StutterLaughGenerator
+- [ ] InlineWhisperSupport
+- [ ] MidSentenceToneSwitching
+- [ ] SceneVolumeDynamics
+- [ ] SpatialPositioning
+- [ ] RoomSimulation
+- [ ] AmbientLayerFX
+- [ ] CrossSceneFXLinking
+- [ ] SceneDensityTuner
+- [ ] MultiTrackExport
+- [ ] EmotionCurveVisualizer
+- [ ] VoiceAwarePacing
+- [ ] ToneConsistencyChecker
+- [ ] ConflictFXEnhancer
+- [ ] MoodColorCoder
+- [ ] AICastingDirector
+- [ ] VoiceApprovalWorkflow
+- [ ] ScriptSnippetInjector
+- [ ] CreatorSandboxMode
+- [ ] DualNarratorToggle
+- [ ] VoiceDNAForking
+- [ ] FlashbackSceneEngine
+- [ ] ContinuityChecker
+- [ ] CrossoverEngine
 ## NSFW Features & Expansion (If Enabled)
 
 ### NSFW Core
