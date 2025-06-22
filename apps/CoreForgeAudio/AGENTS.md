@@ -199,8 +199,8 @@ This file is a full checklist of every feature required for code completion and 
 - [x] AISummaryChatService
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
-- [ ] DocumentParser
-- [ ] OCRScanMode
+- [x] DocumentParser
+- [x] OCRScanMode
 - [ ] BatchImportTool
 - [ ] AutoFormatDialogue
 - [ ] TraitMemoryPersistence
