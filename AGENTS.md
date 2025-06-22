@@ -58,6 +58,7 @@ This document details all AI agent capabilities, engine modules, and next-genera
 - Safe word pause, explicit emotion/mood heatmap
 - Erotic audio gifts, tip jar, pay-per-minute NSFW
 - NSFW AI sandbox, decoy modes, fan-only unlocks
+- Full Phase checklist now maintained in `apps/CoreForgeAudio/AGENTS.md` (Phases 1–9)
 
 ---
 
