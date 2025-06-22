@@ -335,28 +335,28 @@ Key points from `README.md`:
 ## Full Phase Checklist (Phases 1–9)
 
 ### Phase 1 – Universal Book Import & Structure Engine
-- [ ] Parse EPUB, PDF, DOCX, TXT, and HTML formats into chapter-based objects
-- [ ] Auto-detect chapter boundaries using AI and manual fallback
-- [ ] Normalize titles, author metadata, and language encoding
-- [ ] Sanitize raw text and remove formatting artifacts for narration
-- [ ] Store source format metadata for export integrity
-- [ ] Enable real-time drag-and-drop multi-book import
-- [ ] Allow manual override and merge/split of chapter segments
-- [ ] Integrate OCR scanning for image-based books or comics
-- [ ] Highlight dialogue vs. narration during parsing
-- [ ] Auto-tag genre and tone during structural scan
-- [ ] Support parsing for poetry, stageplay, and hybrid book types
-- [ ] Save parsed state for recovery and version history
-- [ ] Embed book-level content warnings and safety tags
-- [ ] Parse footnotes, indexes, and references for narrator adaptation
-- [ ] Identify languages used per section and prepare multilingual routing
-- [ ] Allow preview of parsed structure before committing to render
-- [ ] Detect pacing shifts (action vs. reflection) in text flow
-- [ ] Extract scene-based summaries for quick rendering
-- [ ] Offer import templates for common formats (Kindle, Smashwords, etc.)
-- [ ] Support 100MB+ file sizes with chunked asynchronous parsing
-- [ ] Validate file encoding and handle legacy or corrupted files
-- [ ] Provide parsing logs and error highlighting to the creator
+- [x] Parse EPUB, PDF, DOCX, TXT, and HTML formats into chapter-based objects
+- [x] Auto-detect chapter boundaries using AI and manual fallback
+- [x] Normalize titles, author metadata, and language encoding
+- [x] Sanitize raw text and remove formatting artifacts for narration
+- [x] Store source format metadata for export integrity
+- [x] Enable real-time drag-and-drop multi-book import
+- [x] Allow manual override and merge/split of chapter segments
+- [x] Integrate OCR scanning for image-based books or comics
+- [x] Highlight dialogue vs. narration during parsing
+- [x] Auto-tag genre and tone during structural scan
+- [x] Support parsing for poetry, stageplay, and hybrid book types
+- [x] Save parsed state for recovery and version history
+- [x] Embed book-level content warnings and safety tags
+- [x] Parse footnotes, indexes, and references for narrator adaptation
+- [x] Identify languages used per section and prepare multilingual routing
+- [x] Allow preview of parsed structure before committing to render
+- [x] Detect pacing shifts (action vs. reflection) in text flow
+- [x] Extract scene-based summaries for quick rendering
+- [x] Offer import templates for common formats (Kindle, Smashwords, etc.)
+- [x] Support 100MB+ file sizes with chunked asynchronous parsing
+- [x] Validate file encoding and handle legacy or corrupted files
+- [x] Provide parsing logs and error highlighting to the creator
 
 ### Phase 2 – Voice Assignment & TTS Logic
 - [ ] Assign default narrator voice for books with single-voice rendering
