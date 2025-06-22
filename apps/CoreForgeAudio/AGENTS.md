@@ -225,7 +225,7 @@ This file is a full checklist of every feature required for code completion and 
  - [ ] InlineEmotionEngine
  - [ ] AmbientMixer
  - [ ] PlaybackAnalytics
- - [ ] SleepMode
+ - [x] SleepMode
  - [x] CharacterMemoryEngine
  - [ ] VoiceAdvisorAI
  - [ ] CustomVoiceUploads
