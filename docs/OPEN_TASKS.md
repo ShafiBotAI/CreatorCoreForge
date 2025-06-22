@@ -152,9 +152,9 @@
 
 📦 App: CoreForgeWriter
 ✅ Implemented Features: 3
-   - Add new genre templates in `GenreConfig.swift`
-   - Connect to publishing dashboard via `PublishBridge.swift`
-   - Historical time period checker
+   - Add new genre templates in `apps/CoreForgeWriter/InkwellAIFull/InkwellAI/GenreConfig.swift`
+   - Connect to publishing dashboard via `apps/CoreForgeWriter/InkwellAIFull/InkwellAI/PublishBridge.swift`
+   - Historical time period checker (`Sources/CreatorCoreForge/HistoricalTimePeriodChecker.swift`)
 
 ❌ Missing or Incomplete Features: 49
    - Series-based memory for character/plot tracking
@@ -215,9 +215,9 @@
    - Book-to-video rendering with voices
    - Parse books into scenes with action/setting
    - Assign character voices per scene
-   - `VideoSceneGenerator.swift`
-   - `VoiceCastingEngine.swift`
-   - `RendererControl.swift`
+   - `apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/VideoSceneGenerator.swift`
+   - `apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/VoiceCastingEngine.swift`
+   - `apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/RendererControl.swift`
    - "Mood Mix" export filter (emotional highlights only)
 
 ❌ Missing or Incomplete Features: 44
@@ -321,9 +321,9 @@
 ✅ Implemented Features: 5
    - Match vocals to beat tempo/mood
    - Split-test hooks for virality
-   - `HookCrafter.swift`
-   - `VocalEnginePro.swift`
-   - `BeatMatcher.swift`
+   - `apps/CoreForgeMusic/VerseForgeAIFull/Sources/VerseForgeAI/HookCrafter.swift`
+   - `apps/CoreForgeMusic/VerseForgeAIFull/Sources/VerseForgeAI/VocalEnginePro.swift`
+   - `apps/CoreForgeMusic/VerseForgeAIFull/Sources/VerseForgeAI/BeatMatcher.swift`
 
 ❌ Missing or Incomplete Features: 14
    - Hook generator + song structure templates
@@ -636,10 +636,10 @@
    - Multilingual and regional targeting
    - Analyze user’s target market
    - Auto-personalize outreach scripts
-   - `LeadMiner.swift`
-   - `SignalTracker.swift`
-   - `AIAgentScoring.swift`
-   - `MarketplaceCreditSystem.swift`
+   - `apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/LeadMiner.swift`
+   - `apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/SignalTracker.swift`
+   - `apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/AIAgentScoring.swift`
+   - `apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/MarketplaceCreditSystem.swift`
 
 ❌ Missing or Incomplete Features: 15
    - Real-time signal tracking + AI lead scoring
@@ -719,12 +719,12 @@
 ==================================================
 
 📦 App: Sources
-✅ Implemented Features: 1
+✅ Implemented Features: 2
    - Add unit tests for new engines
-
-❌ Missing or Incomplete Features: 3
-   - Keep Package.swift targets up to date
    - Maintain cross-app modules in CreatorCoreForge
+
+❌ Missing or Incomplete Features: 2
+   - Keep Package.swift targets up to date
    - Create admin onboarding docs
 
 ==================================================
