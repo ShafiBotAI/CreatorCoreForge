@@ -358,6 +358,8 @@ Use `scripts/chatterbox_bridge.py` to generate a narrated play from a simple `SP
 ./scripts/chatterbox_bridge.py script.txt
 ```
 
+Run `scripts/progress_bot.py` to view app progress and optionally generate code.
+See `docs/progress_bot.md` for usage details.
 ## Running Tests
 
 Install Node dependencies for the labs before running the test suites:

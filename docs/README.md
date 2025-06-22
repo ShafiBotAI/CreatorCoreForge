@@ -11,3 +11,5 @@ Additional guides and phase planning documents for the CreatorCoreForge ecosyste
 - `NextGenAdaptiveMusic.md` – create short mood-based music loops
 - `AdaptiveDocScanner.md` – overview of the AI document scanner
 - `DocVideoScanner.md` – document and video scanning utilities
+- `progress_bot.py` – calculates app progress from `OPEN_TASKS.md` and optionally suggests code using OpenAI.
+- `progress_bot.md` – additional usage notes for the progress bot script
