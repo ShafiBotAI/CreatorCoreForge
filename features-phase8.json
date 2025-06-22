@@ -82,6 +82,7 @@
       "WatermarkService",
       "SubtitleGenerator",
       "RenderAnalyticsDashboard",
+      "4KVideoExport",
       "VideoEffectsPipeline",
       "AudioEffectsPipeline"
     ],

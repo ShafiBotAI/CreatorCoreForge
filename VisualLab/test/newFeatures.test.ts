@@ -38,7 +38,12 @@ generateSubtitles('hello');
 
 React.createElement(BranchingPathsUI, { options: [] });
 React.createElement(RenderAnalyticsDashboard, { metrics: [] });
-import { UnifiedAudioEngine, UnifiedVideoEngine, AdaptiveLearningEngine } from "../src/index.ts";
+import {
+  UnifiedAudioEngine,
+  UnifiedVideoEngine,
+  AdaptiveLearningEngine,
+  PerformanceService
+} from "../src/index.ts";
 const engine = UnifiedAudioEngine.shared;
 engine.setVolume(1.5);
 assert.strictEqual(engine.currentVolume(), 1);
@@ -57,6 +62,10 @@ const learn = AdaptiveLearningEngine.shared;
 learn.reset();
 learn.recordCompletion('l1');
 assert.strictEqual(learn.completionCount('l1'), 1);
+
+const perf = new PerformanceService();
+const opt = perf.adjustSettings({ gpuScore: 9, memory: 16 });
+assert.strictEqual(opt.resolution, 2160);
 
 
 console.log('New features tests passed');
