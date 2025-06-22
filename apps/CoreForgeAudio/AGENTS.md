@@ -392,14 +392,14 @@ Key points from `README.md`:
 - [x] Use low-frequency rumble or musical drones for tension buildup
 - [x] Enable environmental reverb and echo based on scene size (hall vs. closet)
 - [x] Layer background conversation FX for crowds or taverns
-- [ ] Auto-detect ambient transitions in narration and apply FX changes
+ - [x] Auto-detect ambient transitions in narration and apply FX changes
 - [x] Introduce weather-specific layers (thunder, rain, desert wind)
-- [ ] Support 3D spatial panning of sound FX for immersive headset playback
-- [ ] Scene FX presets (e.g., "Haunted Mansion", "Rainy Battlefield") with auto-load
+ - [x] Support 3D spatial panning of sound FX for immersive headset playback
+ - [x] Scene FX presets (e.g., "Haunted Mansion", "Rainy Battlefield") with auto-load
 - [x] Allow creators to toggle immersive mode on/off per book or chapter
-- [ ] Sync ambient playback to narrator pacing and pause intervals
+ - [x] Sync ambient playback to narrator pacing and pause intervals
 - [x] Design UI switch to mute FX while preserving speech
-- [ ] Add sandbox preview of ambient + voice mix per scene
+ - [x] Add sandbox preview of ambient + voice mix per scene
 - [x] Generate FX track separately for export as audio stem
 - [x] Tag FX layers for accessibility filtering (e.g., no thunder for noise-sensitive)
 - [x] Allow user-uploaded FX packs with tagging support

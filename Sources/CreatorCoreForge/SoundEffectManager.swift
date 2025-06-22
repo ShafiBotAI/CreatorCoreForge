@@ -21,13 +21,15 @@ public final class SoundEffectManager {
 
     #if canImport(AVFoundation)
     private var audioPlayers: [String: AVAudioPlayer] = [:]
+    private var panValues: [String: Float] = [:]
     private let environmentQueue = DispatchQueue(label: "sound.environment.queue")
 
     /// Play a sound effect using AVAudioPlayer on a background queue.
     public func playEffect(named name: String,
                            fileExtension: String = "mp3",
                            loop: Bool = false,
-                           volume: Float = 1.0) {
+                           volume: Float = 1.0,
+                           pan: Float = 0.0) {
         environmentQueue.async {
             guard let url = Bundle.main.url(forResource: name, withExtension: fileExtension) else {
                 print("[SoundEffectManager] Missing file: \(name).\(fileExtension)")
@@ -36,12 +38,14 @@ public final class SoundEffectManager {
             do {
                 let player = try AVAudioPlayer(contentsOf: url)
                 player.volume = volume
+                player.pan = max(-1.0, min(pan, 1.0))
                 player.numberOfLoops = loop ? -1 : 0
                 player.prepareToPlay()
                 player.play()
 
                 DispatchQueue.main.async { [weak self] in
                     self?.audioPlayers[name] = player
+                    self?.panValues[name] = pan
                 }
             } catch {
                 print("[SoundEffectManager] Failed to play \(name): \(error.localizedDescription)")
@@ -106,24 +110,33 @@ public final class SoundEffectManager {
     public func isEffectPlaying(_ name: String) -> Bool {
         audioPlayers[name]?.isPlaying ?? false
     }
+
+    /// Get the current pan value for a sound effect.
+    public func currentPan(for name: String) -> Float? {
+        panValues[name]
+    }
     #else
     // Placeholder implementations for platforms without AVFoundation
     private var audioPlayers: [String: Int] = [:]
+    private var panValues: [String: Float] = [:]
 
     public func playEffect(named name: String,
                            fileExtension: String = "mp3",
                            loop: Bool = false,
-                           volume: Float = 1.0) {}
+                           volume: Float = 1.0,
+                           pan: Float = 0.0) { panValues[name] = pan }
 
     public func stopEffect(named name: String, fadeOutDuration: TimeInterval = 0) {}
 
-    public func stopAll(fadeOutDuration: TimeInterval = 0) {}
+    public func stopAll(fadeOutDuration: TimeInterval = 0) { panValues.removeAll() }
 
     public func preloadEffects(names: [String], fileExtension: String = "mp3") {}
 
     public func setVolume(for name: String, volume: Float) {}
 
     public func isEffectPlaying(_ name: String) -> Bool { false }
+
+    public func currentPan(for name: String) -> Float? { panValues[name] }
     #endif
 }
 
@@ -217,7 +230,28 @@ public final class SoundEffectManager {
 #if canImport(AVFoundation)
     private var ambiencePlayers: [String: AVAudioPlayer] = [:]
 #endif
+    private var effectPan: [String: Float] = [:]
+#if canImport(AVFoundation)
+#endif
     public private(set) var currentAmbience: String = "None"
+
+    public func playEffect(named name: String,
+                           fileExtension: String = "mp3",
+                           loop: Bool = false,
+                           volume: Float = 1.0,
+                           pan: Float = 0.0) {
+#if canImport(AVFoundation)
+        if let url = Bundle.main.url(forResource: name, withExtension: fileExtension),
+           let player = try? AVAudioPlayer(contentsOf: url) {
+            player.numberOfLoops = loop ? -1 : 0
+            player.volume = volume
+            player.pan = max(-1.0, min(pan, 1.0))
+            player.play()
+            ambiencePlayers[name] = player
+        }
+#endif
+        effectPan[name] = pan
+    }
 
     public func playAmbience(named name: String) {
         currentAmbience = name
@@ -251,6 +285,10 @@ public final class SoundEffectManager {
 #else
         print("Applying reverb preset \(preset.rawValue)")
 #endif
+    }
+
+    public func currentPan(for name: String) -> Float? {
+        effectPan[name]
     }
 }
 #endif

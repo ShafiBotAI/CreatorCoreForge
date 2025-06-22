@@ -64,6 +64,31 @@ public final class AmbientFXEngine {
         }
     }
 
+    /// Detect ambient changes from narration and apply a new effect.
+    @discardableResult
+    public func detectAndApplyTransition(narrationLine: String) -> String? {
+        let line = narrationLine.lowercased()
+        let map: [String: FXLibrary.Category] = [
+            "forest": .forest,
+            "city": .city,
+            "tavern": .tavern,
+            "ship": .spaceship
+        ]
+        for (keyword, category) in map {
+            if line.contains(keyword) {
+                let fx = library.fx(for: category).first ?? ""
+                crossfade(to: fx)
+                return fx
+            }
+        }
+        return nil
+    }
+
+    /// Sync ambient playback with narrator pauses.
+    public func syncWithNarrationPause(_ paused: Bool) {
+        isMuted = paused
+    }
+
     private func selectCategory(tone: String, location: String) -> FXLibrary.Category {
         if location.lowercased().contains("forest") { return .forest }
         if location.lowercased().contains("city") { return .city }
