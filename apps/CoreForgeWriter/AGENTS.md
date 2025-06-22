@@ -74,3 +74,21 @@ Advanced AI writing assistant for creating books, series, and self-help guides w
 - [ ] Enable Book-to-Pitch feature (TV/Film pitch toolkit)
  - [x] Add NSFW content mode dial (slow, medium, extreme)
 - [ ] Export script to CoreForge Studio with assigned voices
+
+### Additional Phase 8 Features (from features-phase8.json)
+- [ ] UnifiedAudioEngine
+- [ ] UnifiedVideoEngine
+- [ ] AdaptiveLearningEngine
+- [ ] Memory pinning
+- [ ] Quantum-choice plotting
+- [ ] Community marketplace
+- [ ] VideoEffectsPipeline
+- [ ] AudioEffectsPipeline
+- [ ] HighQualityVoiceLibrary
+- [ ] GlobalLanguageSupport
+- [ ] OfflineMP3Downloader
+- [ ] TenTimesPlaybackSpeed
+- [ ] AdvancedSkipImport
+- [ ] AISummaryChatService
+- [ ] DocVideoScanner
+- [ ] BookScanAnalyzer

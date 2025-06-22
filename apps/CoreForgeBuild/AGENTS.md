@@ -21,3 +21,21 @@ Purpose: AI-driven app builder with automated code generation and packaging
 - [x] Provide App Store assets and launch screens
 - [ ] Finalize production UI components
 - [x] Build `.dmg` and `.exe` installers
+
+### Additional Phase 8 Features (from features-phase8.json)
+- [ ] UnifiedAudioEngine
+- [ ] UnifiedVideoEngine
+- [ ] AdaptiveLearningEngine
+- [ ] Figma-driven UI builder
+- [ ] Auto bundler for all platforms
+- [ ] Debugging assistant
+- [ ] VideoEffectsPipeline
+- [ ] AudioEffectsPipeline
+- [ ] HighQualityVoiceLibrary
+- [ ] GlobalLanguageSupport
+- [ ] OfflineMP3Downloader
+- [ ] TenTimesPlaybackSpeed
+- [ ] AdvancedSkipImport
+- [ ] AISummaryChatService
+- [ ] DocVideoScanner
+- [ ] BookScanAnalyzer

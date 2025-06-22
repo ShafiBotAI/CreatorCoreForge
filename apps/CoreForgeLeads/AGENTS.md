@@ -35,3 +35,21 @@ Purpose: Next-gen AI tool for lead generation, prospecting, and B2B intelligence
 - [x] Provide App Store assets and launch screens
 - [ ] Finalize production UI components
 - [x] Build `.dmg` and `.exe` installers
+
+### Additional Phase 8 Features (from features-phase8.json)
+- [ ] UnifiedAudioEngine
+- [ ] UnifiedVideoEngine
+- [ ] AdaptiveLearningEngine
+- [ ] Marketplace credit system
+- [ ] Global lead exchange
+- [ ] Advanced scoring
+- [ ] VideoEffectsPipeline
+- [ ] AudioEffectsPipeline
+- [ ] HighQualityVoiceLibrary
+- [ ] GlobalLanguageSupport
+- [ ] OfflineMP3Downloader
+- [ ] TenTimesPlaybackSpeed
+- [ ] AdvancedSkipImport
+- [ ] AISummaryChatService
+- [ ] DocVideoScanner
+- [ ] BookScanAnalyzer

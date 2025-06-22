@@ -73,3 +73,21 @@ Purpose: Converts full books into dramatized AI-generated cinematic videos
 - [ ] Create Auto-Publish pipeline to YouTube/TikTok with metadata
 - [ ] Auto-generate Trailer + Behind-the-Scenes packs
 - [ ] Add voice/scene-to-video alignment overlays
+
+### Additional Phase 8 Features (from features-phase8.json)
+- [ ] UnifiedAudioEngine
+- [ ] UnifiedVideoEngine
+- [ ] AdaptiveLearningEngine
+- [ ] Real-time ensemble acting
+- [ ] Quantum edit mode
+- [ ] Template monetization
+- [ ] VideoEffectsPipeline
+- [ ] AudioEffectsPipeline
+- [ ] HighQualityVoiceLibrary
+- [ ] GlobalLanguageSupport
+- [ ] OfflineMP3Downloader
+- [ ] TenTimesPlaybackSpeed
+- [ ] AdvancedSkipImport
+- [ ] AISummaryChatService
+- [ ] DocVideoScanner
+- [ ] BookScanAnalyzer
