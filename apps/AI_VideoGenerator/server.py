@@ -38,12 +38,12 @@ uploads_dir.mkdir(exist_ok=True)
 class VideoGenerationRequest(BaseModel):
     prompt: str
     style: str  # realistic, anime, cartoon, surreal, talking_image
-    duration: int = Field(default=7, ge=5, le=10)
+    duration: int = Field(default=7, ge=5, le=3600)
     nsfw_enabled: bool = Field(default=False)
 
 class ImageToVideoRequest(BaseModel):
     style: str  # character_animation, movement_overlay, talking_face
-    duration: int = Field(default=7, ge=5, le=10)
+    duration: int = Field(default=7, ge=5, le=3600)
     nsfw_enabled: bool = Field(default=False)
 
 class VideoResponse(BaseModel):
@@ -163,7 +163,7 @@ async def generate_text_to_video(request: VideoGenerationRequest):
 async def generate_image_to_video(
     file: UploadFile = File(...),
     style: str = Form(...),
-    duration: int = Form(7),
+    duration: int = Form(7, ge=5, le=3600),
     nsfw_enabled: bool = Form(False)
 ):
     """Generate video from uploaded image"""
