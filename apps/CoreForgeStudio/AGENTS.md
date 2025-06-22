@@ -15,8 +15,8 @@ Purpose: Converts full books into dramatized AI-generated cinematic videos
 - [x] Match camera angles and style presets
 - [x] Assign character voices per scene
 - [x] Render 2hr+ videos while managing memory
-- [ ] Enable "What If" cutscene mode (Codex)
-- [ ] Fix and complete the `.pbxproj` project file (Codex)
+ - [x] Enable "What If" cutscene mode (Codex)
+ - [x] Fix and complete the `.pbxproj` project file (Codex)
 
 ### Files of Interest:
 - `VideoSceneGenerator.swift`
@@ -27,16 +27,16 @@ Purpose: Converts full books into dramatized AI-generated cinematic videos
 - [x] Integrate shared `autoUpdater.swift`
 - [x] Generate full `.pbxproj` project
 - [x] Provide App Store assets and launch screens
-- [ ] Finalize production UI components
+ - [ ] Finalize production UI components
 - [x] Build `.dmg` and `.exe` installers
 
 
 ### Phase 4 Features
 #### Visual Innovation
-- [ ] Smart wardrobe generator per scene tone
-- [ ] AI casting director tool (fictional actor/voice matching)
-- [ ] Fan cameo generator (render fan avatars into scenes)
-- [ ] Scene lighting synced to emotion
+ - [x] Smart wardrobe generator per scene tone
+ - [x] AI casting director tool (fictional actor/voice matching)
+ - [x] Fan cameo generator (render fan avatars into scenes)
+ - [x] Scene lighting synced to emotion
 
 #### Cinematic Intelligence
 - [ ] Hybrid visual style merger (anime/noir/fantasy combos)
