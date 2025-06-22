@@ -167,3 +167,7 @@ Key points from `README.md`:
 - **Adaptive AI memory** to maintain story and character continuity
 - **NSFW toggle** with a stealth vault for private content
 
+- **NSFW habit behavior simulator** for triggering custom SFX cues
+- **Virality Engine** with a publishing scheduler
+- **Lore compression tool** for summarizing long passages
+- **Character stat tracker** to manage RPG-style attributes
