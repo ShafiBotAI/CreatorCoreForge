@@ -14,9 +14,10 @@ def parse_open_tasks(filepath: str):
     app = None
     implemented = defaultdict(int)
     missing = defaultdict(int)
+    package_emoji = "\U0001F4E6"  # 📦
     with open(filepath, 'r', encoding='utf-8') as f:
         for line in f:
-            app_match = re.match(r'^\s*\xf0\x9f\x93\xa6 App: (.+)', line)
+            app_match = re.match(rf'^\s*{package_emoji} App: (.+)', line)
             if app_match:
                 app = app_match.group(1).strip()
                 continue
