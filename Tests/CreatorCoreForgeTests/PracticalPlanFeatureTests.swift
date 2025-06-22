@@ -164,6 +164,14 @@ final class PracticalPlanFeatureTests: XCTestCase {
         var sync = OfflineSync()
         sync.add("x")
         XCTAssertEqual(sync.count, 1)
+
+        var quiz = QuizBuilder()
+        quiz.add(prompt: "1+1?", answer: "2")
+        XCTAssertEqual(quiz.grade(responses: ["2"]), 1)
+
+        var market = CourseMarketplace()
+        market.publish(course: "Swift")
+        XCTAssertEqual(market.list(), ["Swift"])
     }
 
     func testQuestFeatures() {
