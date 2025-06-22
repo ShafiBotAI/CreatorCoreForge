@@ -13,3 +13,7 @@ Purpose: Shared Swift libraries powering CreatorCoreForge apps
 
 ## Codex/AI Agent Note
 Central Swift code belongs here; keep interfaces stable.
+
+### Phase Features Summary
+- Refer to README for details.
+

@@ -13,3 +13,7 @@ Purpose: Consolidate all CreatorCoreForge application packages
 
 ## Codex/AI Agent Note
 Use this checklist when auditing app-level progress.
+
+### Phase Features Summary
+- Refer to README for details.
+

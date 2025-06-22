@@ -13,3 +13,7 @@ Purpose: AI mental health companion with journaling, therapy sessions, and welln
 ### Global Missing Items
 - [x] Integrate shared `autoUpdater.swift`
 - [ ] Finalize production UI components
+
+### Phase Features Summary
+- Refer to README for details.
+

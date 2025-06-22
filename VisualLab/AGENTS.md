@@ -15,3 +15,9 @@ Purpose: Experimental video rendering utilities and testbed
 
 ## Codex/AI Agent Note
 Keep this file updated as VisualLab evolves.
+
+### Phase Features Summary
+Key points from `README.md`:
+- **UnifiedAudioEngine** provides global volume control with fade transitions shared across apps.
+- **PerformanceService** now supports automatic 4K rendering when hardware allows.
+
