@@ -9,7 +9,7 @@
 - AdvancedSkipImport
 - DocumentParser
 - OCRScanMode
-- BatchImportTool
+- BatchImportTool ✅
 - AutoFormatDialogue
 - TraitMemoryPersistence
 - CanonMemoryGraph

@@ -201,7 +201,7 @@ This file is a full checklist of every feature required for code completion and 
 - [x] BookScanAnalyzer
 - [x] DocumentParser
 - [x] OCRScanMode
-- [ ] BatchImportTool
+ - [x] BatchImportTool
 - [ ] AutoFormatDialogue
 - [ ] TraitMemoryPersistence
 - [ ] CanonMemoryGraph
