@@ -10,3 +10,4 @@ Additional guides and phase planning documents for the CreatorCoreForge ecosyste
 - `NextGenSoundFX.md` – script usage for generating simple SFX
 - `NextGenAdaptiveMusic.md` – create short mood-based music loops
 - `AdaptiveDocScanner.md` – overview of the AI document scanner
+- `DocVideoScanner.md` – document and video scanning utilities

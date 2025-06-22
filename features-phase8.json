@@ -67,9 +67,11 @@
       "HighQualityVoiceLibrary",
       "GlobalLanguageSupport",
       "OfflineMP3Downloader",
-      "FiveTimesPlaybackSpeed",
+      "TenTimesPlaybackSpeed",
       "AdvancedSkipImport",
-      "AISummaryChatService"
+      "AISummaryChatService",
+      "DocVideoScanner",
+      "BookScanAnalyzer"
     ],
     "CoreForgeVisual": [
       "UnifiedAudioEngine",
@@ -94,9 +96,11 @@
       "HighQualityVoiceLibrary",
       "GlobalLanguageSupport",
       "OfflineMP3Downloader",
-      "FiveTimesPlaybackSpeed",
+      "TenTimesPlaybackSpeed",
       "AdvancedSkipImport",
-      "AISummaryChatService"
+      "AISummaryChatService",
+      "DocVideoScanner",
+      "BookScanAnalyzer"
     ],
     "CoreForgeWriter": [
       "UnifiedAudioEngine",
@@ -110,9 +114,11 @@
       "HighQualityVoiceLibrary",
       "GlobalLanguageSupport",
       "OfflineMP3Downloader",
-      "FiveTimesPlaybackSpeed",
+      "TenTimesPlaybackSpeed",
       "AdvancedSkipImport",
-      "AISummaryChatService"
+      "AISummaryChatService",
+      "DocVideoScanner",
+      "BookScanAnalyzer"
     ],
     "CoreForgeMarket": [
       "UnifiedAudioEngine",
@@ -126,9 +132,11 @@
       "HighQualityVoiceLibrary",
       "GlobalLanguageSupport",
       "OfflineMP3Downloader",
-      "FiveTimesPlaybackSpeed",
+      "TenTimesPlaybackSpeed",
       "AdvancedSkipImport",
-      "AISummaryChatService"
+      "AISummaryChatService",
+      "DocVideoScanner",
+      "BookScanAnalyzer"
     ],
     "CoreForgeBuild": [
       "UnifiedAudioEngine",
@@ -142,9 +150,11 @@
       "HighQualityVoiceLibrary",
       "GlobalLanguageSupport",
       "OfflineMP3Downloader",
-      "FiveTimesPlaybackSpeed",
+      "TenTimesPlaybackSpeed",
       "AdvancedSkipImport",
-      "AISummaryChatService"
+      "AISummaryChatService",
+      "DocVideoScanner",
+      "BookScanAnalyzer"
     ],
     "CoreForgeStudio": [
       "UnifiedAudioEngine",
@@ -158,9 +168,11 @@
       "HighQualityVoiceLibrary",
       "GlobalLanguageSupport",
       "OfflineMP3Downloader",
-      "FiveTimesPlaybackSpeed",
+      "TenTimesPlaybackSpeed",
       "AdvancedSkipImport",
-      "AISummaryChatService"
+      "AISummaryChatService",
+      "DocVideoScanner",
+      "BookScanAnalyzer"
     ],
     "CoreForgeMusic": [
       "UnifiedAudioEngine",
@@ -174,9 +186,11 @@
       "HighQualityVoiceLibrary",
       "GlobalLanguageSupport",
       "OfflineMP3Downloader",
-      "FiveTimesPlaybackSpeed",
+      "TenTimesPlaybackSpeed",
       "AdvancedSkipImport",
-      "AISummaryChatService"
+      "AISummaryChatService",
+      "DocVideoScanner",
+      "BookScanAnalyzer"
     ],
     "CoreForgeLeads": [
       "UnifiedAudioEngine",
@@ -190,9 +204,11 @@
       "HighQualityVoiceLibrary",
       "GlobalLanguageSupport",
       "OfflineMP3Downloader",
-      "FiveTimesPlaybackSpeed",
+      "TenTimesPlaybackSpeed",
       "AdvancedSkipImport",
-      "AISummaryChatService"
+      "AISummaryChatService",
+      "DocVideoScanner",
+      "BookScanAnalyzer"
     ]
   }
 }
