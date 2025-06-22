@@ -105,9 +105,9 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
 - [x] VideoEffectsPipeline
-- [ ] Memory pinning
-- [ ] Quantum-choice plotting
-- [ ] Community marketplace
+- [x] Memory pinning
+- [x] Quantum-choice plotting
+- [x] Community marketplace
 
 ### CoreForgeMarket
 - [x] UnifiedAudioEngine
@@ -123,9 +123,9 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
 - [x] VideoEffectsPipeline
-- [ ] Hybrid quantum trading engine
-- [ ] Team trading and leaderboards
-- [ ] Bot marketplace
+- [x] Hybrid quantum trading engine
+- [x] Team trading and leaderboards
+- [x] Bot marketplace
 
 ### CoreForgeBuild
 - [x] UnifiedAudioEngine
@@ -160,8 +160,8 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 - [x] BookScanAnalyzer
 - [x] VideoEffectsPipeline
 - [ ] Real-time ensemble acting
-- [ ] Quantum edit mode
-- [ ] Template monetization
+- [x] Quantum edit mode
+- [x] Template monetization
 
 ### CoreForgeMusic
 - [x] UnifiedAudioEngine
