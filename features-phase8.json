@@ -63,7 +63,13 @@
       "BrailleOutputService",
       "PronunciationDictionary",
       "VideoEffectsPipeline",
-      "AudioEffectsPipeline"
+      "AudioEffectsPipeline",
+      "HighQualityVoiceLibrary",
+      "GlobalLanguageSupport",
+      "OfflineMP3Downloader",
+      "FiveTimesPlaybackSpeed",
+      "AdvancedSkipImport",
+      "AISummaryChatService"
     ],
     "CoreForgeVisual": [
       "UnifiedAudioEngine",
@@ -84,7 +90,13 @@
       "RenderAnalyticsDashboard",
       "4KVideoExport",
       "VideoEffectsPipeline",
-      "AudioEffectsPipeline"
+      "AudioEffectsPipeline",
+      "HighQualityVoiceLibrary",
+      "GlobalLanguageSupport",
+      "OfflineMP3Downloader",
+      "FiveTimesPlaybackSpeed",
+      "AdvancedSkipImport",
+      "AISummaryChatService"
     ],
     "CoreForgeWriter": [
       "UnifiedAudioEngine",
@@ -94,7 +106,13 @@
       "Quantum-choice plotting",
       "Community marketplace",
       "VideoEffectsPipeline",
-      "AudioEffectsPipeline"
+      "AudioEffectsPipeline",
+      "HighQualityVoiceLibrary",
+      "GlobalLanguageSupport",
+      "OfflineMP3Downloader",
+      "FiveTimesPlaybackSpeed",
+      "AdvancedSkipImport",
+      "AISummaryChatService"
     ],
     "CoreForgeMarket": [
       "UnifiedAudioEngine",
@@ -104,7 +122,13 @@
       "Team trading and leaderboards",
       "Bot marketplace",
       "VideoEffectsPipeline",
-      "AudioEffectsPipeline"
+      "AudioEffectsPipeline",
+      "HighQualityVoiceLibrary",
+      "GlobalLanguageSupport",
+      "OfflineMP3Downloader",
+      "FiveTimesPlaybackSpeed",
+      "AdvancedSkipImport",
+      "AISummaryChatService"
     ],
     "CoreForgeBuild": [
       "UnifiedAudioEngine",
@@ -114,7 +138,13 @@
       "Auto bundler for all platforms",
       "Debugging assistant",
       "VideoEffectsPipeline",
-      "AudioEffectsPipeline"
+      "AudioEffectsPipeline",
+      "HighQualityVoiceLibrary",
+      "GlobalLanguageSupport",
+      "OfflineMP3Downloader",
+      "FiveTimesPlaybackSpeed",
+      "AdvancedSkipImport",
+      "AISummaryChatService"
     ],
     "CoreForgeStudio": [
       "UnifiedAudioEngine",
@@ -124,7 +154,13 @@
       "Quantum edit mode",
       "Template monetization",
       "VideoEffectsPipeline",
-      "AudioEffectsPipeline"
+      "AudioEffectsPipeline",
+      "HighQualityVoiceLibrary",
+      "GlobalLanguageSupport",
+      "OfflineMP3Downloader",
+      "FiveTimesPlaybackSpeed",
+      "AdvancedSkipImport",
+      "AISummaryChatService"
     ],
     "CoreForgeMusic": [
       "UnifiedAudioEngine",
@@ -134,7 +170,13 @@
       "Commercial export tools",
       "Voice cloning",
       "VideoEffectsPipeline",
-      "AudioEffectsPipeline"
+      "AudioEffectsPipeline",
+      "HighQualityVoiceLibrary",
+      "GlobalLanguageSupport",
+      "OfflineMP3Downloader",
+      "FiveTimesPlaybackSpeed",
+      "AdvancedSkipImport",
+      "AISummaryChatService"
     ],
     "CoreForgeLeads": [
       "UnifiedAudioEngine",
@@ -144,7 +186,13 @@
       "Global lead exchange",
       "Advanced scoring",
       "VideoEffectsPipeline",
-      "AudioEffectsPipeline"
+      "AudioEffectsPipeline",
+      "HighQualityVoiceLibrary",
+      "GlobalLanguageSupport",
+      "OfflineMP3Downloader",
+      "FiveTimesPlaybackSpeed",
+      "AdvancedSkipImport",
+      "AISummaryChatService"
     ]
   }
 }
