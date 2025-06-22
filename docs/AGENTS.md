@@ -8,6 +8,7 @@ Purpose: Guides and phase roadmaps for CreatorCoreForge
 - [x] Update migration guides for new modules
 - [x] Review diagrams and images for accuracy
 - [x] Document admin responsibilities and contacts
+- [ ] Cross-reference new API guides
 
 ---
 
