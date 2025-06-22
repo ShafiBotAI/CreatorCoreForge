@@ -1,56 +1,39 @@
 # Global Task Summary
 
-## Tests
-- Expand coverage for AI engines ✅
-- Ensure continuous integration runs pass ✅
-- Add regression tests for bug fixes ✅
-
-## VoiceLab
-- Ensure voice training scripts run via CI
-- Keep React components typed and tested
-- Integrate with OpenAI service ✅
-- Document new APIs
-
 ## apps
 - Keep each subfolder in sync with master roadmap
-- Maintain per-app AGENTS.md files
 - Coordinate shared assets and templates
 
+## apps/CoreForgeAudio
+- AdvancedSkipImport
+
 ## apps/CoreForgeBloom
-- Cycle tracking and predictions
-- Sexual wellness insights and reminders
-- Private vault with consent logs
-- Wearable data integration
 - Finalize production UI components
 
 ## apps/CoreForgeBuild
-- Pull code and plugins from public sources (Codex) ✅
-- Next-gen AI reasoning engine for debugging and enhancements (Codex)
-- Monetization logic builder (subscriptions, IAPs) (Codex)
 - Finalize production UI components
+- AdvancedSkipImport
+- End-to-end drag-and-drop AI app builder, export to all platforms
+- Persistent creative DNA, team and white label controls, template marketplace
+- Multilingual, NSFW gating, cloud/local deploy, CI/CD auto-update
+- Drag-and-drop UI/logic builder (blocks, templates, plugins)
 
 ## apps/CoreForgeDNA
-- Character DNA tree and visualization
-- Memory linking across apps
-- Export and import DNA profiles
-- Multiverse DNA merges and comparisons
 - Complete `.pbxproj` project file
 
 ## apps/CoreForgeLeads
 - Fix and complete the `.pbxproj` project file (Codex)
 - Finalize production UI components
-
-## apps/CoreForgeLearn
-- Curriculum designer and quiz builder
-- AI tutor and progress analytics
-- Course marketplace and user sharing
-- Offline mode with cross-device sync
+- AdvancedSkipImport
+- End-to-end lead generation, scoring, enrichment, and CRM sync
+- Persistent memory, custom agent builder, AI automation, and analytics
+- Global languages, NSFW gating, offline, marketplace, affiliate features
+- Import/export CSV, XLSX, JSON, API sync
 
 ## apps/CoreForgeMarket
 - Fully functional AI trading, alerts, analytics, multi-platform
 - Persistent memory, multi-strategy, social trading, and dashboards
 - Compliance, risk management, and white label/enterprise features
-- Real-time bot marketplace and plugin extension
 - Portfolio and analytics dashboards
 - Settings for risk, strategy, notifications
 - Dark/light mode, accessibility
@@ -71,37 +54,26 @@
 - Team/group trading, portfolio sharing, leaderboards
 - Marketplace for bots, plugins, signals, analytics
 - API for external tools, compliance/legal automation
+- HighQualityVoiceLibrary
+- GlobalLanguageSupport
+- AdvancedSkipImport
 - All platform project files
 - Final UI polish, onboarding, tutorial flows
 - Full CI/CD deployment test, compliance review
 
 ## apps/CoreForgeMind
-- Daily mood journal with AI analysis
-- Guided meditation and soundscapes
-- Secure vault for private entries
 - Finalize production UI components
 
 ## apps/CoreForgeMusic
-- Voice cloning & AI vocal production (Codex)
-- Commercial export + label pitch toolkit (Codex)
 - Fix and complete the `.pbxproj` project file (Codex)
 - Finalize production UI components
+- AdvancedSkipImport
 
 ## apps/CoreForgeQuest
-- Procedural challenge generator
-- Multiplayer events and leaderboards
-- Reward marketplace for avatars and items
-- Cross-platform progress sync
 - Finalize production UI components
 
 ## apps/CoreForgeStudio
-- Enable "What If" cutscene mode (Codex)
-- Fix and complete the `.pbxproj` project file (Codex)
 - Finalize production UI components
-- Smart wardrobe generator per scene tone
-- AI casting director tool (fictional actor/voice matching)
-- Fan cameo generator (render fan avatars into scenes)
-- Scene lighting synced to emotion
 - Hybrid visual style merger (anime/noir/fantasy combos)
 - Directorial note system for each scene or shot
 - Action rhythm controller (tempo pacing for dynamic scenes)
@@ -127,17 +99,23 @@
 - Create Auto-Publish pipeline to YouTube/TikTok with metadata
 - Auto-generate Trailer + Behind-the-Scenes packs
 - Add voice/scene-to-video alignment overlays
+- Real-time ensemble acting
+- HighQualityVoiceLibrary
+- GlobalLanguageSupport
+- AdvancedSkipImport
+- Full AI-powered multi-track audio/video production suite
+- Persistent voice/scene memory, macro builder, team dashboard
+- Multi-language, NSFW gating, offline-first, viral/social creator tools
+- Multi-track AI audio/video editor (all formats)
 
 ## apps/CoreForgeVisual
 - UI/UX interaction tests (all platforms)
 - Stress and performance tests (ultra-long video, multi-scene)
 - Accessibility validation (subtitles, voiceover, visual clarity)
+- Adaptive scene completion
+- AdvancedSkipImport
 
 ## apps/CoreForgeVoiceLab
-- Voice recording and analysis tools
-- Training pipeline for custom voices
-- Quality metrics and tuning controls
-- Export to CoreForge Audio or Music
 - Finalize production UI components
 
 ## apps/CoreForgeWriter
@@ -148,7 +126,6 @@
 - Dual-edit co-author editor with live AI collaboration
 - Timeline visualizer of all story events
 - Serialized release engine (auto episodic drop)
-- ~~Historical time period checker~~
 - Romance path visual heatmap
 - Real dialogue tone checker (based on real speech data)
 - Tag/tracker for literary symbols and metaphors
@@ -171,9 +148,11 @@
 - Integrate reader relatability + pacing metrics
 - Enable Book-to-Pitch feature (TV/Film pitch toolkit)
 - Export script to CoreForge Studio with assigned voices
-
-## fastlane
-- Maintain Fastfile lanes for all apps
-- Update ExportOptions.plist for new entitlements
-- Document usage in README
+- HighQualityVoiceLibrary
+- GlobalLanguageSupport
+- AdvancedSkipImport
+- End-to-end AI writing studio (books, scripts, stories)
+- Persistent character/world memory and creative DNA
+- Multilingual, NSFW gating, offline writing, community/marketplace
+- Import/export PDF, ePub, TXT, Docx
 
