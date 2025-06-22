@@ -169,3 +169,12 @@ Every unchecked item is a top-priority task. Use this file as the app's full req
 - AdaptiveLearningEngine
 - Adaptive scene completion
 - AR/VR playback
+
+### Phase Features Summary
+Key points from `README.md`:
+- **AI scene dramatization engine** for turning text into short clips
+- **Cinematic rendering styles** such as anime, live action, and storyboard
+- **Multilingual content generation** with automatic language selection
+- **Adaptive AI memory** to maintain story and character continuity
+- **NSFW toggle** with a stealth vault for private content
+

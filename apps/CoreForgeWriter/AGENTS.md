@@ -100,3 +100,12 @@ Advanced AI writing assistant for creating books, series, and self-help guides w
 - AdaptiveLearningEngine
 - Memory pinning
 - Quantum-choice plotting
+
+### Phase Features Summary
+Key points from `README.md`:
+- [ ] End-to-end AI writing studio (books, scripts, stories)
+- [ ] Persistent character/world memory and creative DNA
+- [x] Support for iOS, Android, PC, macOS, Web
+- [ ] Multilingual, NSFW gating, offline writing, community/marketplace
+- [ ] Import/export PDF, ePub, TXT, Docx
+

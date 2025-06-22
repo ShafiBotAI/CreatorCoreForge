@@ -141,3 +141,12 @@ Detailed breakdowns for Market (trading signals, strategy AI, event auto-trading
 - **All features are tiered by Free, Creator, Enterprise, NSFW (see features-phase8.json).**
 - **This document is updated for every phase, feature, and compliance requirement.**
 - **Refer to features-phase8.json and NSFWExpansion.md for raw task breakdowns.**
+
+### Phase Features Summary
+Key points from `README.md`:
+- LocalAIEngine Pro – local text engine with embeddings, summarization, and simple sentiment analysis
+- LocalVoiceAI Advanced Mode – offline voice cloning with emotion control
+- FusionEngine™ (modular adaptive AI framework)
+- QuantumConnector™ (real/simulated quantum support)
+- Electron.js (cross-platform PC builds)
+

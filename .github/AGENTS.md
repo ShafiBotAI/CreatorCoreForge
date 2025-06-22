@@ -13,3 +13,7 @@ Purpose: CI workflows and GitHub settings
 
 ## Codex/AI Agent Note
 Repository automation must stay functional across phases.
+
+### Phase Features Summary
+- Refer to README for details.
+

@@ -13,3 +13,7 @@ Purpose: Gamified adaptive learning environment with AI-generated lessons and qu
 ### Global Missing Items
 - [x] Integrate shared `autoUpdater.swift`
 - [x] Build `.dmg` and `.exe` installers
+
+### Phase Features Summary
+- Refer to README for details.
+

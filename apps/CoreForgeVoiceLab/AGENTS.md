@@ -13,3 +13,7 @@ Purpose: Toolkit for voice analysis, cloning, and dataset management.
 ### Global Missing Items
 - [x] Integrate shared `autoUpdater.swift`
 - [ ] Finalize production UI components
+
+### Phase Features Summary
+- Refer to README for details.
+

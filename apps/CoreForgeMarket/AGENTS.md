@@ -111,3 +111,12 @@ Treat every unchecked item as a high-priority deliverable. Use as requirements f
 - AdaptiveLearningEngine
 - Hybrid quantum trading engine
 - Team trading and leaderboards
+
+### Phase Features Summary
+Key points from `README.md`:
+- **Financial NLP** powered by OpenAI
+- **Sentiment detector** with chart markup tools
+- **Trading journal** with offline sentiment scoring
+- **Chart screenshot analysis** for quick trend detection
+- **Multi-market scanner** with basic smart money metrics
+

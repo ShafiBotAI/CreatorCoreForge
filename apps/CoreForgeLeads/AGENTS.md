@@ -61,3 +61,12 @@ Purpose: Next-gen AI tool for lead generation, prospecting, and B2B intelligence
 - AdaptiveLearningEngine
 - Marketplace credit system
 - Global lead exchange
+
+### Phase Features Summary
+Key points from `README.md`:
+- [ ] End-to-end lead generation, scoring, enrichment, and CRM sync
+- [ ] Persistent memory, custom agent builder, AI automation, and analytics
+- [x] Multi-platform support: iOS, Android, Web, PC, Mac
+- [ ] Global languages, NSFW gating, offline, marketplace, affiliate features
+- [ ] Import/export CSV, XLSX, JSON, API sync
+

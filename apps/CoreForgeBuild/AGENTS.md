@@ -47,3 +47,12 @@ Purpose: AI-driven app builder with automated code generation and packaging
 - AdaptiveLearningEngine
 - Figma-driven UI builder
 - Auto bundler for all platforms
+
+### Phase Features Summary
+Key points from `README.md`:
+- [ ] End-to-end drag-and-drop AI app builder, export to all platforms
+- [ ] Persistent creative DNA, team and white label controls, template marketplace
+- [x] Multi-platform: iOS, Android, PC, Mac, Web
+- [ ] Multilingual, NSFW gating, cloud/local deploy, CI/CD auto-update
+- [ ] Drag-and-drop UI/logic builder (blocks, templates, plugins)
+
