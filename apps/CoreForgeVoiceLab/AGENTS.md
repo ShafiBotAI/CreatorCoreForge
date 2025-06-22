@@ -7,8 +7,8 @@ Purpose: Toolkit for voice analysis, cloning, and dataset management.
 ### Core Features
  - [x] Voice recording and analysis tools
  - [x] Training pipeline for custom voices
-- [ ] Quality metrics and tuning controls
-- [ ] Export to CoreForge Audio or Music
+- [x] Quality metrics and tuning controls
+- [x] Export to CoreForge Audio or Music
 
 ### Global Missing Items
 - [x] Integrate shared `autoUpdater.swift`

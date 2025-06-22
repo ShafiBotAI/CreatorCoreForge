@@ -7,8 +7,8 @@ Purpose: Visualize and manage character DNA across projects and multiverse timel
 ### Core Features
  - [x] Character DNA tree and visualization
  - [x] Memory linking across apps
-- [ ] Export and import DNA profiles
-- [ ] Multiverse DNA merges and comparisons
+- [x] Export and import DNA profiles
+- [x] Multiverse DNA merges and comparisons
 
 ### Global Missing Items
 - [x] Integrate shared `autoUpdater.swift`

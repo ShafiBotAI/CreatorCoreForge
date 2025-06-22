@@ -5,10 +5,10 @@ Platform: iOS, Android, Windows, macOS, Web
 Purpose: Infinite AI-driven quests and challenges with procedural worlds and multiplayer events.
 
 ### Core Features
- - [x] Procedural challenge generator
+- [x] Procedural challenge generator
  - [x] Multiplayer events and leaderboards
-- [ ] Reward marketplace for avatars and items
-- [ ] Cross-platform progress sync
+- [x] Reward marketplace for avatars and items
+- [x] Cross-platform progress sync
 
 ### Global Missing Items
 - [x] Integrate shared `autoUpdater.swift`

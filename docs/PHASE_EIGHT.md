@@ -20,8 +20,8 @@ Only a subset of those features are shown below for brevity.
 - [x] UnifiedVideoEngine
 - [x] AdaptiveLearningEngine
 - [x] AudioEffectsPipeline
-- [ ] HighQualityVoiceLibrary
-- [ ] GlobalLanguageSupport
+- [x] HighQualityVoiceLibrary
+- [x] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
 - [x] TenTimesPlaybackSpeed
 - [ ] AdvancedSkipImport
@@ -71,8 +71,8 @@ Only a subset of those features are shown below for brevity.
 - [x] UnifiedVideoEngine
 - [x] AdaptiveLearningEngine
 - [x] AudioEffectsPipeline
-- [ ] HighQualityVoiceLibrary
-- [ ] GlobalLanguageSupport
+- [x] HighQualityVoiceLibrary
+- [x] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
 - [x] TenTimesPlaybackSpeed
 - [ ] AdvancedSkipImport
@@ -100,8 +100,8 @@ Only a subset of those features are shown below for brevity.
 - [x] UnifiedVideoEngine
 - [x] AdaptiveLearningEngine
 - [x] AudioEffectsPipeline
-- [ ] HighQualityVoiceLibrary
-- [ ] GlobalLanguageSupport
+- [x] HighQualityVoiceLibrary
+- [x] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
 - [x] TenTimesPlaybackSpeed
 - [ ] AdvancedSkipImport
@@ -118,8 +118,8 @@ Only a subset of those features are shown below for brevity.
 - [x] UnifiedVideoEngine
 - [x] AdaptiveLearningEngine
 - [x] AudioEffectsPipeline
-- [ ] HighQualityVoiceLibrary
-- [ ] GlobalLanguageSupport
+- [x] HighQualityVoiceLibrary
+- [x] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
 - [x] TenTimesPlaybackSpeed
 - [ ] AdvancedSkipImport
@@ -136,8 +136,8 @@ Only a subset of those features are shown below for brevity.
 - [x] UnifiedVideoEngine
 - [x] AdaptiveLearningEngine
 - [x] AudioEffectsPipeline
-- [ ] HighQualityVoiceLibrary
-- [ ] GlobalLanguageSupport
+- [x] HighQualityVoiceLibrary
+- [x] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
 - [x] TenTimesPlaybackSpeed
 - [ ] AdvancedSkipImport
@@ -154,8 +154,8 @@ Only a subset of those features are shown below for brevity.
 - [x] UnifiedVideoEngine
 - [x] AdaptiveLearningEngine
 - [x] AudioEffectsPipeline
-- [ ] HighQualityVoiceLibrary
-- [ ] GlobalLanguageSupport
+- [x] HighQualityVoiceLibrary
+- [x] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
 - [x] TenTimesPlaybackSpeed
 - [ ] AdvancedSkipImport
@@ -172,8 +172,8 @@ Only a subset of those features are shown below for brevity.
 - [x] UnifiedVideoEngine
 - [x] AdaptiveLearningEngine
 - [x] AudioEffectsPipeline
-- [ ] HighQualityVoiceLibrary
-- [ ] GlobalLanguageSupport
+- [x] HighQualityVoiceLibrary
+- [x] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
 - [x] TenTimesPlaybackSpeed
 - [ ] AdvancedSkipImport
@@ -190,8 +190,8 @@ Only a subset of those features are shown below for brevity.
 - [x] UnifiedVideoEngine
 - [x] AdaptiveLearningEngine
 - [x] AudioEffectsPipeline
-- [ ] HighQualityVoiceLibrary
-- [ ] GlobalLanguageSupport
+- [x] HighQualityVoiceLibrary
+- [x] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
 - [x] TenTimesPlaybackSpeed
 - [ ] AdvancedSkipImport
