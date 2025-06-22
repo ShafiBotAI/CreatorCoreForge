@@ -6,12 +6,12 @@ The focus of this phase is **Full-Cast Audio Mastering & Creator Intelligence**.
 
 ## CoreForgeAudio Goals
 
-- [ ] Assign separate audio tracks to each character and narrator for post-mix mastering
-- [ ] Generate multitrack session files for DAWs (e.g., Logic, Pro Tools, Audition)
-- [ ] Sync ambient layers, voice tracks, and FX on a shared scene timeline
+- [x] Assign separate audio tracks to each character and narrator for post-mix mastering
+- [x] Generate multitrack session files for DAWs (e.g., Logic, Pro Tools, Audition)
+- [x] Sync ambient layers, voice tracks, and FX on a shared scene timeline
 - [ ] Enable per-character equalization, pitch adjustment, and compression
 - [ ] Simulate stereo spatial positioning per voice (left/right, near/far)
-- [ ] Build emotion intensity heatmap per scene to guide tone balancing
+- [x] Build emotion intensity heatmap per scene to guide tone balancing
 - [ ] Create a full-cast preview mode with toggles for each voice track
 - [ ] Add creator-defined vocal layering for crowd and background dialogue
 - [ ] Offer toggle for "narrator override" mode for consistency across multi-voice scenes
