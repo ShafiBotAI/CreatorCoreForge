@@ -383,28 +383,28 @@ Key points from `README.md`:
 - [x] Detect overlapping voices and adjust timing to simulate conversation
 
 ### Phase 3 – Immersive Playback & Ambient Systems
-- [ ] Design ambient FX engine to layer audio environments under narration
-- [ ] Create FX libraries categorized by genre (forest, city, tavern, spaceship)
-- [ ] Match ambient background to scene tone and location description
-- [ ] Add footstep, door, paper, wind, and cloth motion FX by context
-- [ ] Control ambient volume scaling by scene intensity (whispers vs. battle)
-- [ ] Implement ambient crossfade logic between chapters and locations
-- [ ] Use low-frequency rumble or musical drones for tension buildup
-- [ ] Enable environmental reverb and echo based on scene size (hall vs. closet)
-- [ ] Layer background conversation FX for crowds or taverns
+- [x] Design ambient FX engine to layer audio environments under narration
+- [x] Create FX libraries categorized by genre (forest, city, tavern, spaceship)
+- [x] Match ambient background to scene tone and location description
+- [x] Add footstep, door, paper, wind, and cloth motion FX by context
+- [x] Control ambient volume scaling by scene intensity (whispers vs. battle)
+- [x] Implement ambient crossfade logic between chapters and locations
+- [x] Use low-frequency rumble or musical drones for tension buildup
+- [x] Enable environmental reverb and echo based on scene size (hall vs. closet)
+- [x] Layer background conversation FX for crowds or taverns
 - [ ] Auto-detect ambient transitions in narration and apply FX changes
-- [ ] Introduce weather-specific layers (thunder, rain, desert wind)
+- [x] Introduce weather-specific layers (thunder, rain, desert wind)
 - [ ] Support 3D spatial panning of sound FX for immersive headset playback
 - [ ] Scene FX presets (e.g., "Haunted Mansion", "Rainy Battlefield") with auto-load
-- [ ] Allow creators to toggle immersive mode on/off per book or chapter
+- [x] Allow creators to toggle immersive mode on/off per book or chapter
 - [ ] Sync ambient playback to narrator pacing and pause intervals
-- [ ] Design UI switch to mute FX while preserving speech
+- [x] Design UI switch to mute FX while preserving speech
 - [ ] Add sandbox preview of ambient + voice mix per scene
-- [ ] Generate FX track separately for export as audio stem
-- [ ] Tag FX layers for accessibility filtering (e.g., no thunder for noise-sensitive)
-- [ ] Allow user-uploaded FX packs with tagging support
-- [ ] Record listener reactions to FX scenes for future personalization
-- [ ] Enable real-time ambient FX updates during streaming TTS playback
+- [x] Generate FX track separately for export as audio stem
+- [x] Tag FX layers for accessibility filtering (e.g., no thunder for noise-sensitive)
+- [x] Allow user-uploaded FX packs with tagging support
+- [x] Record listener reactions to FX scenes for future personalization
+- [x] Enable real-time ambient FX updates during streaming TTS playback
 
 ### Phase 4 – Long-Term Character Memory & Tone Control
 - [x] Establish persistent memory profiles for each major character
