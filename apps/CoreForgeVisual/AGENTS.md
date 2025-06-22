@@ -63,10 +63,6 @@ This agent is responsible for building, validating, and maintaining every featur
 - [x] Stress and performance tests (ultra-long video, multi-scene)
 - [x] Security/privacy audits, NSFW gating tests
 - [x] Accessibility validation (subtitles, voiceover, visual clarity)
-- [ ] UI/UX interaction tests (all platforms)
-- [ ] Stress and performance tests (ultra-long video, multi-scene)
- - [x] Security/privacy audits, NSFW gating tests
-- [ ] Accessibility validation (subtitles, voiceover, visual clarity)
 
 
 ---
@@ -137,13 +133,6 @@ This agent is responsible for building, validating, and maintaining every featur
 - [x] NSFW fan clubs, tip jars, premium unlocks
 - [x] Group live NSFW video, live collab acting rooms
 - [x] Consent tracking, aftercare, moderation, decoy/stealth mode
-
- - [x] Age-gated, auto-censored erotic/explicit video generation
- - [x] NSFW overlays, intensity dial, haptic/AR/VR integration
- - [x] Private/secret video rooms, encrypted sharing, pay-per-view
- - [x] NSFW fan clubs, tip jars, premium unlocks
- - [x] Group live NSFW video, live collab acting rooms
- - [x] Consent tracking, aftercare, moderation, decoy/stealth mode
 
 ---
 
