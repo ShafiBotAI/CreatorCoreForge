@@ -40,6 +40,8 @@
   - AnalyticsLogger for basic event tracking
   - PerformanceModeSelector to switch rendering presets
   - FusionVoiceController orchestrates LocalVoiceAI and emotion cues
+  - MultiCastAudiobookGenerator enables ensemble narration
+  - DramatizedAudiobookProducer creates immersive dramatized audiobooks
   - Extra helpers in `Sources/CreatorCoreForge/CoreForgeAudio_MissingFeatures.swift`
     provide offline download and eBook conversion utilities for the app.
 - **Build Status:** Electron PC build in testing
