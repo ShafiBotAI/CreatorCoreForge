@@ -407,28 +407,28 @@ Key points from `README.md`:
 - [ ] Enable real-time ambient FX updates during streaming TTS playback
 
 ### Phase 4 – Long-Term Character Memory & Tone Control
-- [ ] Establish persistent memory profiles for each major character
-- [ ] Track voice usage, tone, and traits across multiple books
-- [ ] Implement character aging logic to evolve voice over time
-- [ ] Save memory tokens (milestones, trauma, growth) per character
+- [x] Establish persistent memory profiles for each major character
+- [x] Track voice usage, tone, and traits across multiple books
+- [x] Implement character aging logic to evolve voice over time
+- [x] Save memory tokens (milestones, trauma, growth) per character
 - [ ] Adjust emotional tone delivery based on past scenes (e.g., grief affects voice)
 - [ ] Support flashback-specific tone adjustments (reverberation, echo)
-- [ ] Tag emotional arcs and tie them to narrator modulation rules
-- [ ] Maintain a character timeline of voice intensity and expressiveness
+- [x] Tag emotional arcs and tie them to narrator modulation rules
+- [x] Maintain a character timeline of voice intensity and expressiveness
 - [ ] Apply stress-level voice distortion during arguments or danger
 - [ ] Create character dossier panel for memory review/editing
-- [ ] Support "memory lock" to preserve voice consistency despite new scripts
+- [x] Support "memory lock" to preserve voice consistency despite new scripts
 - [ ] Recommend tone variation based on context and prior memory state
 - [ ] Integrate cross-book story arc tracking (hero's journey, redemption, fall)
 - [ ] Detect character reappearances and retrieve voice memory automatically
 - [ ] Allow adaptive tone matching when character enters new genres/settings
 - [ ] Model relationships: voice modulation changes depending on who is speaking to whom
-- [ ] Use memory weights to prioritize emotional realism over narration neutrality
-- [ ] Enable timeline visualization of a character’s voice evolution
+- [x] Use memory weights to prioritize emotional realism over narration neutrality
+- [x] Enable timeline visualization of a character’s voice evolution
 - [ ] Cross-link tone history with voice fingerprint DNA across the series
 - [ ] Support tone comparison mode between books for authorial analysis
 - [ ] Highlight inconsistencies in voice delivery across books for correction
-- [ ] Embed character memory files as part of export metadata for continuity
+- [x] Embed character memory files as part of export metadata for continuity
 
 ### Phase 5 – Multiverse & Timeline-Aware Audio Narration
 - [ ] Introduce multiverse tagging for alternate character arcs and scenes
