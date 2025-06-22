@@ -151,11 +151,12 @@
 ==================================================
 
 📦 App: CoreForgeWriter
-✅ Implemented Features: 2
+✅ Implemented Features: 3
    - Add new genre templates in `GenreConfig.swift`
    - Connect to publishing dashboard via `PublishBridge.swift`
+   - Historical time period checker
 
-❌ Missing or Incomplete Features: 50
+❌ Missing or Incomplete Features: 49
    - Series-based memory for character/plot tracking
    - Bestseller structure engine (analyzes top 20 books) (Codex)
    - Multi-book support (up to 1000 pages) (Codex)
@@ -181,7 +182,6 @@
    - Dual-edit co-author editor with live AI collaboration
    - Timeline visualizer of all story events
    - Serialized release engine (auto episodic drop)
-   - Historical time period checker
    - Romance path visual heatmap
    - Real dialogue tone checker (based on real speech data)
    - Tag/tracker for literary symbols and metaphors

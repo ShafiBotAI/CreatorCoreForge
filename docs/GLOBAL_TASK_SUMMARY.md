@@ -148,7 +148,7 @@
 - Dual-edit co-author editor with live AI collaboration
 - Timeline visualizer of all story events
 - Serialized release engine (auto episodic drop)
-- Historical time period checker
+- ~~Historical time period checker~~
 - Romance path visual heatmap
 - Real dialogue tone checker (based on real speech data)
 - Tag/tracker for literary symbols and metaphors
