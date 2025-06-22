@@ -340,6 +340,15 @@ calls the appropriate tools when present.
 Each app includes a `Desktop` folder with a starter Electron configuration for
 building installers.
 
+## Ebook2Audiobook Integration
+A snapshot of the open source `ebook2audiobook` project is included under `apps/ebook2audiobook`. Use the helper script `scripts/ebook2audiobook_bridge.py` to convert eBooks to narrated audio from any CoreForge app:
+
+```bash
+./scripts/ebook2audiobook_bridge.py MyBook.epub -o output_audio
+```
+
+This invokes the Python pipeline to generate WAV files in the given directory.
+
 ## Running Tests
 
 Install Node dependencies for the labs before running the test suites:
@@ -355,4 +364,3 @@ This ensures `jest`, `ts-node`, and other dev tools are available.
 
 ## CI/CD
 The repository uses GitHub Actions workflows for building, testing, and releasing the apps across platforms. See the files in [.github/workflows](./.github/workflows) for details.
-

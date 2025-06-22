@@ -30,6 +30,7 @@ you notice missing playback or export features, ensure the package is linked in
 Xcode and reference `Sources/CreatorCoreForge/CoreForgeAudio_MissingFeatures.swift`
 for additional helper functions. These utilities provide an offline download
 queue and an eBook–to–audio converter that complement the app's own classes.
+For advanced conversions using the Python pipeline, run `../../scripts/ebook2audiobook_bridge.py MyBook.epub`.
 
 ## Building (iOS)
 1. Open `VocalVerseFull/VocalVerse.xcodeproj` in Xcode.
