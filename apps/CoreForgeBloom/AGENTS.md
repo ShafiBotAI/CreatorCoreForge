@@ -6,9 +6,9 @@ Purpose: AI-powered cycle tracking and wellness coach with private modes.
 
 ### Core Features
 - [x] Cycle tracking and predictions
-- [ ] Sexual wellness insights and reminders
+- [x] Sexual wellness insights and reminders
  - [x] Private vault with consent logs
-- [ ] Wearable data integration
+- [x] Wearable data integration
 
 ### Global Missing Items
 - [x] Integrate shared `autoUpdater.swift`

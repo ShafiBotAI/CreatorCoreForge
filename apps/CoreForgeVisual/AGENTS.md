@@ -121,8 +121,8 @@ This agent is responsible for building, validating, and maintaining every featur
 - [x] 4KVideoExport
 - [x] VideoEffectsPipeline
 - [x] AudioEffectsPipeline
-- [ ] HighQualityVoiceLibrary
-- [ ] GlobalLanguageSupport
+- [x] HighQualityVoiceLibrary
+- [x] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
 - [x] TenTimesPlaybackSpeed
 - [ ] AdvancedSkipImport

@@ -189,8 +189,8 @@ This file is a full checklist of every feature required for code completion and 
 - [x] PronunciationDictionary
 - [x] VideoEffectsPipeline
 - [x] AudioEffectsPipeline
-- [ ] HighQualityVoiceLibrary
-- [ ] GlobalLanguageSupport
+- [x] HighQualityVoiceLibrary
+- [x] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
 - [x] TenTimesPlaybackSpeed
 - [ ] AdvancedSkipImport

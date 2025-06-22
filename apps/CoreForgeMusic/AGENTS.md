@@ -6,9 +6,9 @@ Purpose: Hit songwriting engine with AI beat matching, hooks, and lyric generati
 
 ### Core Features:
 - [x] Hook generator + song structure templates
-- [ ] Voice cloning & AI vocal production (Codex)
+- [x] Voice cloning & AI vocal production (Codex)
 - [x] Beat marketplace + licensing
-- [ ] Commercial export + label pitch toolkit (Codex)
+- [x] Commercial export + label pitch toolkit (Codex)
 - [x] NSFW/Explicit lyric toggle
 
 ### AI Agent Tasks:
@@ -35,11 +35,11 @@ Purpose: Hit songwriting engine with AI beat matching, hooks, and lyric generati
 - [x] UnifiedAudioEngine
 - [x] UnifiedVideoEngine
 - [x] AdaptiveLearningEngine
-- [ ] Commercial export tools
+- [x] Commercial export tools
 - [x] VideoEffectsPipeline
 - [x] AudioEffectsPipeline
-- [ ] HighQualityVoiceLibrary
-- [ ] GlobalLanguageSupport
+- [x] HighQualityVoiceLibrary
+- [x] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
 - [x] TenTimesPlaybackSpeed
 - [ ] AdvancedSkipImport
