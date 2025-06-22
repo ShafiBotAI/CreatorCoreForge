@@ -49,27 +49,35 @@ def scan_repo(repo_path: str, extensions=None, ignore_dirs=None):
                     lines = f.readlines()
                     features = parse_features(lines)
                 feature_results[app_name] = {"implemented": [], "missing": []}
-                # Combine all source code in this folder
+                file_cache = {}
                 code_blob = ""
                 for subroot, _, code_files in os.walk(root):
                     for code_file in code_files:
                         if any(code_file.endswith(ext) for ext in extensions):
+                            path = os.path.join(subroot, code_file)
                             try:
-                                with open(
-                                    os.path.join(subroot, code_file),
-                                    "r",
-                                    encoding="utf-8",
-                                ) as cf:
-                                    code_blob += cf.read().lower()
+                                with open(path, "r", encoding="utf-8") as cf:
+                                    text = cf.read().lower()
+                                    file_cache[path] = text
+                                    code_blob += text
                             except Exception:
                                 continue
+
                 for feature in features:
-                    keywords = extract_keywords(feature)
-                    found = all(
-                        kw in code_blob for kw in keywords if len(kw) > 3
-                    )
+                    keywords = [kw for kw in extract_keywords(feature) if len(kw) > 3]
+                    found = all(kw in code_blob for kw in keywords)
                     if found:
-                        feature_results[app_name]["implemented"].append(feature)
+                        found_path = None
+                        for path, text in file_cache.items():
+                            if all(kw in text for kw in keywords):
+                                found_path = os.path.relpath(path, repo_path)
+                                break
+                        if found_path:
+                            feature_results[app_name]["implemented"].append(
+                                f"{feature} (`{found_path}`)"
+                            )
+                        else:
+                            feature_results[app_name]["implemented"].append(feature)
                     else:
                         feature_results[app_name]["missing"].append(feature)
     return feature_results
