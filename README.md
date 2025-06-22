@@ -307,6 +307,9 @@ A shared `ContentPolicyManager` now manages NSFW filtering across apps.
 The new `NSFWManager` tags sensitive voice clips and enables stealth exports when unlocked.
 The `NSFWHabitBehaviorSimulator` lets characters respond with custom audio cues when certain keywords are spoken.
 For offline development you can set `USE_LOCAL_AI=1` in the environment to enable `LocalAIEnginePro`, a lightweight local model stub that replaces OpenAI calls.
+When this flag is active, both audio and video generation rely entirely on the
+local engines (`LocalVoiceAI` and the video routines in `CreatorCoreForge`), so
+clips and narration can be produced without any network connection.
 
 ## Global Missing Items
 
