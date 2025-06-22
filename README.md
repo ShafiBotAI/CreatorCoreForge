@@ -172,6 +172,7 @@
 - **FusionEngine™:** Master AI layer handling:
   - Contextual memory, parallel cores, emotional logic, sandbox AI
 - **LocalVoiceAI:** Full ElevenLabs replacement with advanced cloning and emotion modulation. Includes offline voice cloning and synthesis APIs.
+- **LocalElevenLabsClient:** Mirrors the ElevenLabs API surface to run entirely offline by delegating to `LocalVoiceAI`.
  - **LocalAIEngine Pro:** OpenAI-free LLM for text, dialogue, logic, local summarization, and basic sentiment analysis.
 - **QuantumConnector:** Optional quantum computing toggle
 - **Virality Engine:** Trend detector, loop optimizer, replay bait, shock factor enhancer
