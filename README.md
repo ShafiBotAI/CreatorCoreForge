@@ -333,7 +333,9 @@ Cross-platform builds can be generated using `electron-builder`. Run
 `.exe` installers for apps that include a `Desktop` project. macOS and Linux
 hosts must have `wine` and `mono` installed to generate the Windows builds.
 See
-`docs/CrossPlatformBuild.md` for details.
+`docs/CrossPlatformBuild.md` for details. For a full multi-platform build (iOS,
+Android, Web, Chrome, and Edge) execute `./scripts/universal_build.sh` which
+calls the appropriate tools when present.
 
 Each app includes a `Desktop` folder with a starter Electron configuration for
 building installers.
