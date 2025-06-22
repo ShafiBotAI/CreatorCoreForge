@@ -13,5 +13,6 @@ Additional guides and phase planning documents for the CreatorCoreForge ecosyste
 - `DocVideoScanner.md` – document and video scanning utilities
 - `progress_bot.py` – calculates app progress from `OPEN_TASKS.md` and optionally suggests code using OpenAI.
 - `progress_bot.md` – additional usage notes for the progress bot script
+- `ADMIN_AUTOMATION.md` – automation guidelines and script execution steps
 
 - `APISetup.md` files in each app folder document required API keys and config steps.
