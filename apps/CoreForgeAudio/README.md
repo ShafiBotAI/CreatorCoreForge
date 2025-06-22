@@ -31,6 +31,8 @@ Xcode and reference `Sources/CreatorCoreForge/CoreForgeAudio_MissingFeatures.swi
 for additional helper functions. These utilities provide an offline download
 queue and an eBook–to–audio converter that complement the app's own classes.
 For advanced conversions using the Python pipeline, run `../../scripts/ebook2audiobook_bridge.py MyBook.epub`.
+You can also turn a dialogue script into audio using `../../scripts/chatterbox_bridge.py script.txt` once your Chatterbox API endpoint is configured.
+
 
 ## Building (iOS)
 1. Open `VocalVerseFull/VocalVerse.xcodeproj` in Xcode.

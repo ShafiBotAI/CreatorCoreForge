@@ -349,6 +349,12 @@ A snapshot of the open source `ebook2audiobook` project is included under `apps/
 
 This invokes the Python pipeline to generate WAV files in the given directory.
 
+## Chatterbox Script Conversion
+Use `scripts/chatterbox_bridge.py` to generate a narrated play from a simple `SPEAKER: line` script. Place `speaker.mp3` samples next to your script and set `CHATTERBOX_API_URL` before running:
+```bash
+./scripts/chatterbox_bridge.py script.txt
+```
+
 ## Running Tests
 
 Install Node dependencies for the labs before running the test suites:
