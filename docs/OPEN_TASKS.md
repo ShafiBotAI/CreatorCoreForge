@@ -92,39 +92,6 @@
 
 ==================================================
 
-📦 App: scripts
-✅ Implemented Features: 0
-
-❌ Missing or Incomplete Features: 4
-   - Keep bash and Python scripts cross-platform
-   - Ensure templates generate valid pbxproj files
-   - Expand feature audit logic
-   - List admin script execution steps
-
-==================================================
-
-📦 App: fastlane
-✅ Implemented Features: 0
-
-❌ Missing or Incomplete Features: 4
-   - Maintain Fastfile lanes for all apps
-   - Update ExportOptions.plist for new entitlements
-   - Document usage in README
-   - Outline admin release protocols
-
-==================================================
-
-📦 App: .github
-✅ Implemented Features: 0
-
-❌ Missing or Incomplete Features: 4
-   - Update workflow scripts for new platforms
-   - Maintain issue templates and PR checks
-   - Document CI usage in README
-   - Add admin automation guidelines
-
-==================================================
-
 📦 App: Sources
 ✅ Implemented Features: 2
    - Maintain cross-app modules in CreatorCoreForge
@@ -133,6 +100,17 @@
 ❌ Missing or Incomplete Features: 2
    - Keep Package.swift targets up to date
    - Create admin onboarding docs
+
+==================================================
+
+📦 App: docs
+✅ Implemented Features: 0
+
+❌ Missing or Incomplete Features: 4
+   - Keep PHASE_EIGHT.md synced with features-phase8.json
+   - Update migration guides for new modules
+   - Review diagrams and images for accuracy
+   - Document admin responsibilities and contacts
 
 ==================================================
 
@@ -159,6 +137,28 @@
 
 ==================================================
 
+📦 App: scripts
+✅ Implemented Features: 0
+
+❌ Missing or Incomplete Features: 4
+   - Keep bash and Python scripts cross-platform
+   - Ensure templates generate valid pbxproj files
+   - Expand feature audit logic
+   - List admin script execution steps
+
+==================================================
+
+📦 App: .github
+✅ Implemented Features: 0
+
+❌ Missing or Incomplete Features: 4
+   - Update workflow scripts for new platforms
+   - Maintain issue templates and PR checks
+   - Document CI usage in README
+   - Add admin automation guidelines
+
+==================================================
+
 📦 App: VoiceLab
 ✅ Implemented Features: 0
 
@@ -168,17 +168,6 @@
    - Integrate with OpenAI service
    - Document new APIs
    - Catalog admin troubleshooting tips
-
-==================================================
-
-📦 App: docs
-✅ Implemented Features: 0
-
-❌ Missing or Incomplete Features: 4
-   - Keep PHASE_EIGHT.md synced with features-phase8.json
-   - Update migration guides for new modules
-   - Review diagrams and images for accuracy
-   - Document admin responsibilities and contacts
 
 ==================================================
 
@@ -193,29 +182,44 @@
 
 ==================================================
 
-📦 App: CoreForgeMusic
-✅ Implemented Features: 5
-   - Match vocals to beat tempo/mood
-   - Split-test hooks for virality (`apps/CoreForgeMusic/VerseForgeAIFull/Sources/VerseForgeAI/HookCrafter.swift`)
-   - `HookCrafter.swift`
-   - `VocalEnginePro.swift`
-   - `BeatMatcher.swift`
+📦 App: ebook2audiobook
+✅ Implemented Features: 0
+
+❌ Missing or Incomplete Features: 0
+
+==================================================
+
+📦 App: CoreForgeBuild
+✅ Implemented Features: 0
 
 ❌ Missing or Incomplete Features: 14
-   - Hook generator + song structure templates
-   - Voice cloning & AI vocal production (Codex)
-   - Beat marketplace + licensing
-   - Commercial export + label pitch toolkit (Codex)
-   - NSFW/Explicit lyric toggle
-   - Detect trending styles and key phrases
-   - Suggest bridge/chorus transitions
-   - Flag explicit lyrics and apply filters
-   - Fix and complete the `.pbxproj` project file (Codex)
+   - App idea generator based on trends (Codex)
+   - UI builder using Figma/code templates (Codex)
+   - Build Codex writes Swift, Kotlin, Python, Unity, JS (Codex)
+   - Auto-connect to GitHub, Xcode, Android Studio (Codex)
+   - Pull code and plugins from public sources (Codex)
+   - Next-gen AI reasoning engine for debugging and enhancements (Codex)
+   - Monetization logic builder (subscriptions, IAPs) (Codex)
+   - Virality engine with upload integration (Codex)
+   - Auto bundler for iOS, Android, PC, VR (Codex)
    - Integrate shared `autoUpdater.swift`
    - Generate full `.pbxproj` project
    - Provide App Store assets and launch screens
    - Finalize production UI components
    - Build `.dmg` and `.exe` installers
+
+==================================================
+
+📦 App: CoreForgeDNA
+✅ Implemented Features: 0
+
+❌ Missing or Incomplete Features: 6
+   - Character DNA tree and visualization
+   - Memory linking across apps
+   - Export and import DNA profiles
+   - Multiverse DNA merges and comparisons
+   - Integrate shared `autoUpdater.swift`
+   - Complete `.pbxproj` project file
 
 ==================================================
 
@@ -347,186 +351,10 @@
 
 ==================================================
 
-📦 App: CoreForgeVoiceLab
-✅ Implemented Features: 0
-
-❌ Missing or Incomplete Features: 6
-   - Voice recording and analysis tools
-   - Training pipeline for custom voices
-   - Quality metrics and tuning controls
-   - Export to CoreForge Audio or Music
-   - Integrate shared `autoUpdater.swift`
-   - Finalize production UI components
-
-==================================================
-
-📦 App: CoreForgeStudio
-✅ Implemented Features: 8
-   - Scene-by-scene AI dramatization (`apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/VideoSceneGenerator.swift`)
-   - Book-to-video rendering with voices
-   - Parse books into scenes with action/setting
-   - Assign character voices per scene (`apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/VoiceCastingEngine.swift`)
-   - `VideoSceneGenerator.swift` (`apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/VideoSceneGenerator.swift`)
-   - `VoiceCastingEngine.swift`
-   - `RendererControl.swift` (`apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/RendererControl.swift`)
-   - "Mood Mix" export filter (emotional highlights only) (`apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/VideoExportManager.swift`)
-
-❌ Missing or Incomplete Features: 44
-   - Visuals auto-generated (anime/live action)
-   - Downloadable & shareable formats (Codex)
-   - NSFW toggle, offline access, multilingual (Codex)
-   - Match camera angles and style presets
-   - Render 2hr+ videos while managing memory
-   - Enable "What If" cutscene mode (Codex)
-   - Fix and complete the `.pbxproj` project file (Codex)
-   - Integrate shared `autoUpdater.swift`
-   - Generate full `.pbxproj` project
-   - Provide App Store assets and launch screens
-   - Finalize production UI components
-   - Build `.dmg` and `.exe` installers
-   - Smart wardrobe generator per scene tone
-   - AI casting director tool (fictional actor/voice matching)
-   - Fan cameo generator (render fan avatars into scenes)
-   - Scene lighting synced to emotion
-   - Hybrid visual style merger (anime/noir/fantasy combos)
-   - NSFW blur/unblur toggle (age gated)
-   - Directorial note system for each scene or shot
-   - Action rhythm controller (tempo pacing for dynamic scenes)
-   - Audiovisual director diary (scene logs)
-   - Subtitle dialect localizer (slang, accents, formal, etc.)
-   - Trigger warning detector (auto flag sensitive content)
-   - Overlay FX editor for text and post-processing
-   - Location soundscape auto-generator
-   - Emotion layer system (alternate tone variants per scene)
-   - Scene performance estimator (views, replays, saves)
-   - Alternate ending generator
-   - Interactive video QTE (viewer-triggered choices)
-   - Self-rating engine (scene quality based on AI criteria)
-   - Replay prediction engine (likely rewatch scenes)
-   - Add AI Scene Editor Timeline View
-   - Build Smart Camera Direction AI (zoom/pan/hold)
-   - Add Lip Sync + Voice Sync to Visuals
-   - Auto-add crowd and ambient SFX
-   - Enable Style Export: Anime, Noir, Realistic, Fantasy
-   - Build Emotion Arc Visualizer for cinematic flow
-   - Add Live Dubbing Room + Creator Voice Import
-   - Enable Multiverse Director toggle (alternate render styles)
-   - Sync with NSFW enhancer (whispers, breathing, camera pacing)
-   - Add What-If Mode for branching episode possibilities
-   - Create Auto-Publish pipeline to YouTube/TikTok with metadata
-   - Auto-generate Trailer + Behind-the-Scenes packs
-   - Add voice/scene-to-video alignment overlays
-
-==================================================
-
-📦 App: CoreForgeMind
-✅ Implemented Features: 0
-
-❌ Missing or Incomplete Features: 6
-   - Daily mood journal with AI analysis
-   - Guided meditation and soundscapes
-   - Secure vault for private entries
-   - Optional NSFW wellness modules
-   - Integrate shared `autoUpdater.swift`
-   - Finalize production UI components
-
-==================================================
-
-📦 App: ebook2audiobook
+📦 App: AI_VideoGenerator
 ✅ Implemented Features: 0
 
 ❌ Missing or Incomplete Features: 0
-
-==================================================
-
-📦 App: CoreForgeLearn
-✅ Implemented Features: 0
-
-❌ Missing or Incomplete Features: 6
-   - Curriculum designer and quiz builder
-   - AI tutor and progress analytics
-   - Course marketplace and user sharing
-   - Offline mode with cross-device sync
-   - Integrate shared `autoUpdater.swift`
-   - Build `.dmg` and `.exe` installers
-
-==================================================
-
-📦 App: CoreForgeQuest
-✅ Implemented Features: 0
-
-❌ Missing or Incomplete Features: 6
-   - Procedural challenge generator
-   - Multiplayer events and leaderboards
-   - Reward marketplace for avatars and items
-   - Cross-platform progress sync
-   - Integrate shared `autoUpdater.swift`
-   - Finalize production UI components
-
-==================================================
-
-📦 App: CoreForgeBuild
-✅ Implemented Features: 0
-
-❌ Missing or Incomplete Features: 14
-   - App idea generator based on trends (Codex)
-   - UI builder using Figma/code templates (Codex)
-   - Build Codex writes Swift, Kotlin, Python, Unity, JS (Codex)
-   - Auto-connect to GitHub, Xcode, Android Studio (Codex)
-   - Pull code and plugins from public sources (Codex)
-   - Next-gen AI reasoning engine for debugging and enhancements (Codex)
-   - Monetization logic builder (subscriptions, IAPs) (Codex)
-   - Virality engine with upload integration (Codex)
-   - Auto bundler for iOS, Android, PC, VR (Codex)
-   - Integrate shared `autoUpdater.swift`
-   - Generate full `.pbxproj` project
-   - Provide App Store assets and launch screens
-   - Finalize production UI components
-   - Build `.dmg` and `.exe` installers
-
-==================================================
-
-📦 App: CoreForgeDNA
-✅ Implemented Features: 0
-
-❌ Missing or Incomplete Features: 6
-   - Character DNA tree and visualization
-   - Memory linking across apps
-   - Export and import DNA profiles
-   - Multiverse DNA merges and comparisons
-   - Integrate shared `autoUpdater.swift`
-   - Complete `.pbxproj` project file
-
-==================================================
-
-📦 App: CoreForgeLeads
-✅ Implemented Features: 9
-   - Multilingual and regional targeting (`apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/LeadRegionalTargeter.swift`)
-   - CRM integration and DF Signal API
-   - Multilingual and regional targeting (`apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/LeadRegionalTargeter.swift`)
-   - Analyze user’s target market
-   - Auto-personalize outreach scripts (`apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/ProspectingWorkflow.swift`)
-   - `LeadMiner.swift`
-   - `SignalTracker.swift`
-   - `AIAgentScoring.swift`
-   - `MarketplaceCreditSystem.swift`
-
-❌ Missing or Incomplete Features: 15
-   - Real-time signal tracking + AI lead scoring
-   - Automated prospecting workflows
-   - Lead marketplace and monetization tools
-   - Automated prospecting workflows
-   - Lead marketplace and monetization tools
-   - CRM integration and DF Signal API (Codex)
-   - Enrich leads with real-time firmographics
-   - Score and qualify lead segments
-   - Recommend high-converting personas
-   - Fix and complete the `.pbxproj` project file (Codex)
-   - Integrate shared `autoUpdater.swift`
-   - Generate full `.pbxproj` project
-   - Provide App Store assets and launch screens
-   - Finalize production UI components
-   - Build `.dmg` and `.exe` installers
 
 ==================================================
 
@@ -589,16 +417,52 @@
 
 ==================================================
 
-📦 App: CoreForgeBloom
-✅ Implemented Features: 0
+📦 App: CoreForgeMarket
+✅ Implemented Features: 3
+   - Adaptive AI trading strategy engine
+   - Export: CSV, PDF, JSON
+   - UI/UX (all platforms) (`apps/CoreForgeMarket/TradeMindAIFull/Package.swift`)
 
-❌ Missing or Incomplete Features: 6
-   - Cycle tracking and predictions
-   - Sexual wellness insights and reminders
-   - Private vault with consent logs
-   - Wearable data integration
-   - Integrate shared `autoUpdater.swift`
-   - Finalize production UI components
+❌ Missing or Incomplete Features: 39
+   - Fully functional AI trading, alerts, analytics, multi-platform
+   - Persistent memory, multi-strategy, social trading, and dashboards
+   - Compliance, risk management, and white label/enterprise features
+   - Real-time sentiment, event, and technical analysis
+   - Portfolio management, auto-rebalancing
+   - Shadow trading, copy trading, arbitrage finder
+   - Cross-platform API integration, alerts, dashboards
+   - FusionEngine plugin, marketplace for bots/strategies
+   - Admin controls: quotas, reporting, compliance
+   - Multi-brain AI core (logic, speed, quality)
+   - Quantum/Hybrid AI strategy modules
+   - OpenAI/LocalAI for sentiment/news, risk analytics
+   - Secure exchange integration (API keys, encryption)
+   - Real-time bot marketplace and plugin extension
+   - Portfolio and analytics dashboards
+   - Settings for risk, strategy, notifications
+   - Dark/light mode, accessibility
+   - Copy trading, social sharing, leaderboards
+   - Alerts, notifications, trade confirmation UI
+   - LocalAI, plugin modules, secure API keys
+   - GDPR, CCPA, KYC/AML compliance
+   - Firebase/Firestore: Auth, Data, Analytics
+   - Auto-updater, platform config, app store compliance
+   - All platform project files
+   - Unit/integration (AI trading, import/export)
+   - Performance, compliance, risk, security
+   - API integration tests (real and sandbox)
+   - GitHub Actions, tagging, changelogs, auto-deploy
+   - App store asset and compliance review
+   - README.md, APISetup.md, PromptTemplates.md, DeveloperSetup.md
+   - App store/launch assets, compliance/user guides
+   - Quantum/AI hybrid mode, parallel simulation, anomaly detection
+   - Multibrain risk/speed/profit settings
+   - Team/group trading, portfolio sharing, leaderboards
+   - Marketplace for bots, plugins, signals, analytics
+   - API for external tools, compliance/legal automation
+   - All platform project files
+   - Final UI polish, onboarding, tutorial flows
+   - Full CI/CD deployment test, compliance review
 
 ==================================================
 
@@ -687,59 +551,195 @@
 
 ==================================================
 
-📦 App: CoreForgeMarket
-✅ Implemented Features: 3
-   - Adaptive AI trading strategy engine
-   - Export: CSV, PDF, JSON
-   - UI/UX (all platforms) (`apps/CoreForgeMarket/TradeMindAIFull/Package.swift`)
+📦 App: CoreForgeStudio
+✅ Implemented Features: 8
+   - Scene-by-scene AI dramatization (`apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/VideoExportManager.swift`)
+   - Book-to-video rendering with voices
+   - Parse books into scenes with action/setting
+   - Assign character voices per scene (`apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/VoiceCastingEngine.swift`)
+   - `VideoSceneGenerator.swift` (`apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/VideoSceneGenerator.swift`)
+   - `VoiceCastingEngine.swift`
+   - `RendererControl.swift` (`apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/RendererControl.swift`)
+   - "Mood Mix" export filter (emotional highlights only) (`apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/VideoExportManager.swift`)
 
-❌ Missing or Incomplete Features: 39
-   - Fully functional AI trading, alerts, analytics, multi-platform
-   - Persistent memory, multi-strategy, social trading, and dashboards
-   - Compliance, risk management, and white label/enterprise features
-   - Real-time sentiment, event, and technical analysis
-   - Portfolio management, auto-rebalancing
-   - Shadow trading, copy trading, arbitrage finder
-   - Cross-platform API integration, alerts, dashboards
-   - FusionEngine plugin, marketplace for bots/strategies
-   - Admin controls: quotas, reporting, compliance
-   - Multi-brain AI core (logic, speed, quality)
-   - Quantum/Hybrid AI strategy modules
-   - OpenAI/LocalAI for sentiment/news, risk analytics
-   - Secure exchange integration (API keys, encryption)
-   - Real-time bot marketplace and plugin extension
-   - Portfolio and analytics dashboards
-   - Settings for risk, strategy, notifications
-   - Dark/light mode, accessibility
-   - Copy trading, social sharing, leaderboards
-   - Alerts, notifications, trade confirmation UI
-   - LocalAI, plugin modules, secure API keys
-   - GDPR, CCPA, KYC/AML compliance
-   - Firebase/Firestore: Auth, Data, Analytics
-   - Auto-updater, platform config, app store compliance
-   - All platform project files
-   - Unit/integration (AI trading, import/export)
-   - Performance, compliance, risk, security
-   - API integration tests (real and sandbox)
-   - GitHub Actions, tagging, changelogs, auto-deploy
-   - App store asset and compliance review
-   - README.md, APISetup.md, PromptTemplates.md, DeveloperSetup.md
-   - App store/launch assets, compliance/user guides
-   - Quantum/AI hybrid mode, parallel simulation, anomaly detection
-   - Multibrain risk/speed/profit settings
-   - Team/group trading, portfolio sharing, leaderboards
-   - Marketplace for bots, plugins, signals, analytics
-   - API for external tools, compliance/legal automation
-   - All platform project files
-   - Final UI polish, onboarding, tutorial flows
-   - Full CI/CD deployment test, compliance review
+❌ Missing or Incomplete Features: 44
+   - Visuals auto-generated (anime/live action)
+   - Downloadable & shareable formats (Codex)
+   - NSFW toggle, offline access, multilingual (Codex)
+   - Match camera angles and style presets
+   - Render 2hr+ videos while managing memory
+   - Enable "What If" cutscene mode (Codex)
+   - Fix and complete the `.pbxproj` project file (Codex)
+   - Integrate shared `autoUpdater.swift`
+   - Generate full `.pbxproj` project
+   - Provide App Store assets and launch screens
+   - Finalize production UI components
+   - Build `.dmg` and `.exe` installers
+   - Smart wardrobe generator per scene tone
+   - AI casting director tool (fictional actor/voice matching)
+   - Fan cameo generator (render fan avatars into scenes)
+   - Scene lighting synced to emotion
+   - Hybrid visual style merger (anime/noir/fantasy combos)
+   - NSFW blur/unblur toggle (age gated)
+   - Directorial note system for each scene or shot
+   - Action rhythm controller (tempo pacing for dynamic scenes)
+   - Audiovisual director diary (scene logs)
+   - Subtitle dialect localizer (slang, accents, formal, etc.)
+   - Trigger warning detector (auto flag sensitive content)
+   - Overlay FX editor for text and post-processing
+   - Location soundscape auto-generator
+   - Emotion layer system (alternate tone variants per scene)
+   - Scene performance estimator (views, replays, saves)
+   - Alternate ending generator
+   - Interactive video QTE (viewer-triggered choices)
+   - Self-rating engine (scene quality based on AI criteria)
+   - Replay prediction engine (likely rewatch scenes)
+   - Add AI Scene Editor Timeline View
+   - Build Smart Camera Direction AI (zoom/pan/hold)
+   - Add Lip Sync + Voice Sync to Visuals
+   - Auto-add crowd and ambient SFX
+   - Enable Style Export: Anime, Noir, Realistic, Fantasy
+   - Build Emotion Arc Visualizer for cinematic flow
+   - Add Live Dubbing Room + Creator Voice Import
+   - Enable Multiverse Director toggle (alternate render styles)
+   - Sync with NSFW enhancer (whispers, breathing, camera pacing)
+   - Add What-If Mode for branching episode possibilities
+   - Create Auto-Publish pipeline to YouTube/TikTok with metadata
+   - Auto-generate Trailer + Behind-the-Scenes packs
+   - Add voice/scene-to-video alignment overlays
 
 ==================================================
 
-📦 App: AI_VideoGenerator
+📦 App: CoreForgeBloom
 ✅ Implemented Features: 0
 
-❌ Missing or Incomplete Features: 0
+❌ Missing or Incomplete Features: 6
+   - Cycle tracking and predictions
+   - Sexual wellness insights and reminders
+   - Private vault with consent logs
+   - Wearable data integration
+   - Integrate shared `autoUpdater.swift`
+   - Finalize production UI components
+
+==================================================
+
+📦 App: CoreForgeMind
+✅ Implemented Features: 0
+
+❌ Missing or Incomplete Features: 6
+   - Daily mood journal with AI analysis
+   - Guided meditation and soundscapes
+   - Secure vault for private entries
+   - Optional NSFW wellness modules
+   - Integrate shared `autoUpdater.swift`
+   - Finalize production UI components
+
+==================================================
+
+📦 App: CoreForgeQuest
+✅ Implemented Features: 0
+
+❌ Missing or Incomplete Features: 6
+   - Procedural challenge generator
+   - Multiplayer events and leaderboards
+   - Reward marketplace for avatars and items
+   - Cross-platform progress sync
+   - Integrate shared `autoUpdater.swift`
+   - Finalize production UI components
+
+==================================================
+
+📦 App: CoreForgeLeads
+✅ Implemented Features: 9
+   - Multilingual and regional targeting (`apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/LeadRegionalTargeter.swift`)
+   - CRM integration and DF Signal API
+   - Multilingual and regional targeting (`apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/LeadRegionalTargeter.swift`)
+   - Analyze user’s target market
+   - Auto-personalize outreach scripts (`apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/ProspectingWorkflow.swift`)
+   - `LeadMiner.swift`
+   - `SignalTracker.swift`
+   - `AIAgentScoring.swift`
+   - `MarketplaceCreditSystem.swift`
+
+❌ Missing or Incomplete Features: 15
+   - Real-time signal tracking + AI lead scoring
+   - Automated prospecting workflows
+   - Lead marketplace and monetization tools
+   - Automated prospecting workflows
+   - Lead marketplace and monetization tools
+   - CRM integration and DF Signal API (Codex)
+   - Enrich leads with real-time firmographics
+   - Score and qualify lead segments
+   - Recommend high-converting personas
+   - Fix and complete the `.pbxproj` project file (Codex)
+   - Integrate shared `autoUpdater.swift`
+   - Generate full `.pbxproj` project
+   - Provide App Store assets and launch screens
+   - Finalize production UI components
+   - Build `.dmg` and `.exe` installers
+
+==================================================
+
+📦 App: CoreForgeVoiceLab
+✅ Implemented Features: 0
+
+❌ Missing or Incomplete Features: 6
+   - Voice recording and analysis tools
+   - Training pipeline for custom voices
+   - Quality metrics and tuning controls
+   - Export to CoreForge Audio or Music
+   - Integrate shared `autoUpdater.swift`
+   - Finalize production UI components
+
+==================================================
+
+📦 App: CoreForgeMusic
+✅ Implemented Features: 5
+   - Match vocals to beat tempo/mood
+   - Split-test hooks for virality (`apps/CoreForgeMusic/VerseForgeAIFull/Sources/VerseForgeAI/HookCrafter.swift`)
+   - `HookCrafter.swift`
+   - `VocalEnginePro.swift`
+   - `BeatMatcher.swift`
+
+❌ Missing or Incomplete Features: 14
+   - Hook generator + song structure templates
+   - Voice cloning & AI vocal production (Codex)
+   - Beat marketplace + licensing
+   - Commercial export + label pitch toolkit (Codex)
+   - NSFW/Explicit lyric toggle
+   - Detect trending styles and key phrases
+   - Suggest bridge/chorus transitions
+   - Flag explicit lyrics and apply filters
+   - Fix and complete the `.pbxproj` project file (Codex)
+   - Integrate shared `autoUpdater.swift`
+   - Generate full `.pbxproj` project
+   - Provide App Store assets and launch screens
+   - Finalize production UI components
+   - Build `.dmg` and `.exe` installers
+
+==================================================
+
+📦 App: CoreForgeLearn
+✅ Implemented Features: 0
+
+❌ Missing or Incomplete Features: 6
+   - Curriculum designer and quiz builder
+   - AI tutor and progress analytics
+   - Course marketplace and user sharing
+   - Offline mode with cross-device sync
+   - Integrate shared `autoUpdater.swift`
+   - Build `.dmg` and `.exe` installers
+
+==================================================
+
+📦 App: fastlane
+✅ Implemented Features: 0
+
+❌ Missing or Incomplete Features: 4
+   - Maintain Fastfile lanes for all apps
+   - Update ExportOptions.plist for new entitlements
+   - Document usage in README
+   - Outline admin release protocols
 
 ==================================================
 
