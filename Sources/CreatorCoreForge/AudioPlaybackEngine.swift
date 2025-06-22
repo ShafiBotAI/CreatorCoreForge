@@ -39,7 +39,7 @@ public final class AudioPlaybackEngine {
     }
 
     public func setSpeed(_ rate: Double) {
-        speed = max(0.5, min(rate, 5.0))
+        speed = max(0.5, min(rate, 10.0))
         print("⚡️ Speed set to \(speed)x")
     }
 

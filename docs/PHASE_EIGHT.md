@@ -19,7 +19,7 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 - [ ] HighQualityVoiceLibrary
 - [ ] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
-- [ ] TenTimesPlaybackSpeed
+- [x] TenTimesPlaybackSpeed
 - [ ] AdvancedSkipImport
 - [x] AISummaryChatService
 - [x] DocVideoScanner
@@ -70,7 +70,7 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 - [ ] HighQualityVoiceLibrary
 - [ ] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
-- [ ] TenTimesPlaybackSpeed
+- [x] TenTimesPlaybackSpeed
 - [ ] AdvancedSkipImport
 - [x] AISummaryChatService
 - [x] DocVideoScanner
@@ -99,7 +99,7 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 - [ ] HighQualityVoiceLibrary
 - [ ] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
-- [ ] TenTimesPlaybackSpeed
+- [x] TenTimesPlaybackSpeed
 - [ ] AdvancedSkipImport
 - [x] AISummaryChatService
 - [x] DocVideoScanner
@@ -117,7 +117,7 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 - [ ] HighQualityVoiceLibrary
 - [ ] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
-- [ ] TenTimesPlaybackSpeed
+- [x] TenTimesPlaybackSpeed
 - [ ] AdvancedSkipImport
 - [x] AISummaryChatService
 - [x] DocVideoScanner
@@ -135,7 +135,7 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 - [ ] HighQualityVoiceLibrary
 - [ ] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
-- [ ] TenTimesPlaybackSpeed
+- [x] TenTimesPlaybackSpeed
 - [ ] AdvancedSkipImport
 - [x] AISummaryChatService
 - [x] DocVideoScanner
@@ -153,7 +153,7 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 - [ ] HighQualityVoiceLibrary
 - [ ] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
-- [ ] TenTimesPlaybackSpeed
+- [x] TenTimesPlaybackSpeed
 - [ ] AdvancedSkipImport
 - [x] AISummaryChatService
 - [x] DocVideoScanner
@@ -171,7 +171,7 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 - [ ] HighQualityVoiceLibrary
 - [ ] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
-- [ ] TenTimesPlaybackSpeed
+- [x] TenTimesPlaybackSpeed
 - [ ] AdvancedSkipImport
 - [x] AISummaryChatService
 - [x] DocVideoScanner
@@ -189,7 +189,7 @@ This document collects the major feature goals for Phase 8 of the CreatorCoreFor
 - [ ] HighQualityVoiceLibrary
 - [ ] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
-- [ ] TenTimesPlaybackSpeed
+- [x] TenTimesPlaybackSpeed
 - [ ] AdvancedSkipImport
 - [x] AISummaryChatService
 - [x] DocVideoScanner
