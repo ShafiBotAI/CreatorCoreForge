@@ -33,6 +33,21 @@ This document details all AI agent capabilities, engine modules, and next-genera
 - Viral challenge mode, fan club, gamified listening
 - AI “coach” and performance review for narration/voice
 - Cross-app universal memory and sharing
+- **Phase 8 – Expanded AI Memory, Language & Document Support**
+- Universal document parser (EPUB, PDF, DOCX, Markdown, LaTeX) with OCR mode
+- Batch import of multiple files, smart auto-formatting of dialogue
+- Multibook memory engine with canon graphs, memory anchors, multiverse linking
+- Language and accent toolkit with translation, accent switching, voice blending
+- Unabridged rendering logic with semantic segmentation and auto scene index
+- Creator automation tools: one-click full audiobook render, store exports with metadata, publishing reports, and series manager
+- **Phase 9 – Full-Cast Mastering & Immersion Enhancements**
+- Voice personality profiles and dynamic emotion ramping
+- Multivoice character mode with tics, aging, and reactive voices
+- Cadence modulation, overlap simulation, stutters, inline whisper/projected voice, mid-sentence tone switching, scene volume dynamics
+- Spatial positioning, room simulation, ambient FX linking, density tuner, multitrack export per voice/FX
+- AI logic upgrades: emotion curve visualizer, voice-aware pacing, tone consistency, conflict detection with FX enhancer, mood color coding
+- Creator controls: AI casting director, approval workflow, script injection, sandbox mode, dual-narrator toggle
+- Identity & continuity tools: VoiceDNA forking, flashback filters, continuity checker, crossover engine
 - NSFW Expansion (see below)
 
 **NSFW Expansion**
