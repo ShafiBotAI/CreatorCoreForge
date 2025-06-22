@@ -93,8 +93,8 @@ This document details all AI agent capabilities, engine modules, and next-genera
 - NSFW AR/VR effects, haptic/teledildonic integration
 - Invite-only NSFW collab, secret fan clubs, premium unlocks
 - Contextual pause/resume, biometric locks for vaults
+- Full Phase checklist now maintained in `apps/CoreForgeVisual/AGENTS.md` (Phases 1–9)
 ### Full Feature Checklist (Phases 1–9)
-
 ### Phase 1 – Book Import & Scene Mapping Engine
 - [ ] Parse EPUB, PDF, DOCX, and TXT into structured scene blocks
 - [ ] Auto-detect chapter breaks and scene transitions using AI
