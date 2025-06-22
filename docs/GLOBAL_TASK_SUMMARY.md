@@ -28,7 +28,7 @@
 - InlineEmotionEngine
 - AmbientMixer
 - PlaybackAnalytics
-- SleepMode
+- ~~SleepMode~~
 - VoiceAdvisorAI
 - CustomVoiceUploads
 - MultiverseVoiceSystem

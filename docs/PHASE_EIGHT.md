@@ -77,7 +77,7 @@ Only a subset of those features are shown below for brevity.
 - [ ] InlineEmotionEngine
 - [ ] AmbientMixer
 - [ ] PlaybackAnalytics
-- [ ] SleepMode
+ - [x] SleepMode
 - [ ] CharacterMemoryEngine
 - [ ] VoiceAdvisorAI
 - [ ] CustomVoiceUploads
