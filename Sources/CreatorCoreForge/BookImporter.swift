@@ -30,6 +30,23 @@ public class BookImporter {
             throw BookImportError.unsupportedFormat
         }
     }
+
+    /// Import a book and skip chapters that contain any of the provided keywords.
+    /// - Parameters:
+    ///   - fileURL: URL to the file (local or temp)
+    ///   - skipKeywords: keywords that, if found in a chapter title or text,
+    ///     will cause that chapter to be excluded from the result.
+    /// - Returns: Filtered chapter array.
+    public static func importBookSkipping(from fileURL: URL, skipKeywords: [String]) async throws -> [Chapter] {
+        let chapters = try await importBook(from: fileURL)
+        guard !skipKeywords.isEmpty else { return chapters }
+        return chapters.filter { chapter in
+            !skipKeywords.contains { keyword in
+                chapter.title.localizedCaseInsensitiveContains(keyword) ||
+                chapter.text.localizedCaseInsensitiveContains(keyword)
+            }
+        }
+    }
     
     private static func importEpub(from url: URL) async throws -> [Chapter] {
         // Use ZIPFoundation to unzip the EPUB and parse chapters.
