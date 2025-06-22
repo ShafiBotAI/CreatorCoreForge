@@ -72,6 +72,8 @@
       "AISummaryChatService",
       "DocVideoScanner",
       "BookScanAnalyzer",
+      "MultiCastAudiobookGenerator",
+      "DramatizedAudiobookProducer",
       "AdaptiveAudioEngine050",
       "AdvancedAudioModule051",
       "QuantumAudioManager052",

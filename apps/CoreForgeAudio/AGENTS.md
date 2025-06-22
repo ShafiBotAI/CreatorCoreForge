@@ -104,6 +104,8 @@ This file is a full checklist of every feature required for code completion and 
 - [x] Emotion pacing editor (by paragraph, chapter, user mood)
 - [x] Smart ambient mixer (rain, wind, fire, user SFX presets)
 - [x] Auto-remix mode: shuffle POVs, playback order, or scene cuts
+- [x] Multi-cast audiobook generation for ensemble narration
+- [x] Fully dramatized audiobook production with ambient SFX
 - [x] Accessibility output to Braille printer, voice commands
 - [x] Apple Watch/mini controller sync for playback
 - [x] In-book voice/tone polls (live user voting)

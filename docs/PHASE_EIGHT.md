@@ -65,6 +65,8 @@ Only a subset of those features are shown below for brevity.
 - [x] AdvancedTimelineEditor
 - [x] BrailleOutputService
 - [x] PronunciationDictionary
+- [x] MultiCastAudiobookGenerator
+- [x] DramatizedAudiobookProducer
 
 ### CoreForgeVisual
 - [x] UnifiedAudioEngine
