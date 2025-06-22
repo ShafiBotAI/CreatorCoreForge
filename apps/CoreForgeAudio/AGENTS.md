@@ -479,28 +479,28 @@ Key points from `README.md`:
 - [ ] Provide offline-friendly audiobook playback format generator
 
 ### Phase 7 – NSFW Mode & Advanced Emotional Tuning
-- [ ] Implement NSFW voice profiles with explicit tone, breathing, and cadence
-- [ ] Create age-gated toggle for NSFW rendering mode
-- [ ] Enable character-specific NSFW permission settings
-- [ ] Tag NSFW scenes in transcript for optional exclusion in export
-- [ ] Provide tone modulation tools for sensuality, aggression, vulnerability
-- [ ] Match ambient FX to erotic or horror tones (e.g., bed creaks, moans, echoes)
-- [ ] Add intensity meter to scale NSFW performance (suggestive → explicit)
-- [ ] Blend romantic, comedic, and fantasy sub-tones for genre flexibility
-- [ ] Apply whisper-pass filter for intimacy scene enhancement
-- [ ] Include pacing sensitivity slider for slow-burn vs rapid tones
-- [ ] Build preview system for NSFW scenes before full render
-- [ ] Auto-adjust reverb and spacing to enhance immersive adult scenes
-- [ ] Allow background FX library upload for adult creators
-- [ ] Enable dynamic NSFW transitions from safe to explicit based on context
-- [ ] Respect Creator subscription rules for NSFW access and credits
-- [ ] Save NSFW usage history to provide tone consistency in future chapters
-- [ ] Flag NSFW content for internal moderation or publishing filter logic
-- [ ] Auto-detect safe vs. unsafe content for preview-only versions
-- [ ] Build Creator dashboard to manage NSFW scene ratings per book
-- [ ] Simulate body contact dynamics through rhythmic ambient FX cues
-- [ ] Render alternate PG-13 safe version of same scene for public platforms
-- [ ] Track listener skip behavior on NSFW scenes for feedback optimization
+- [x] Implement NSFW voice profiles with explicit tone, breathing, and cadence
+- [x] Create age-gated toggle for NSFW rendering mode
+- [x] Enable character-specific NSFW permission settings
+- [x] Tag NSFW scenes in transcript for optional exclusion in export
+- [x] Provide tone modulation tools for sensuality, aggression, vulnerability
+- [x] Match ambient FX to erotic or horror tones (e.g., bed creaks, moans, echoes)
+- [x] Add intensity meter to scale NSFW performance (suggestive → explicit)
+- [x] Blend romantic, comedic, and fantasy sub-tones for genre flexibility
+- [x] Apply whisper-pass filter for intimacy scene enhancement
+- [x] Include pacing sensitivity slider for slow-burn vs rapid tones
+- [x] Build preview system for NSFW scenes before full render
+- [x] Auto-adjust reverb and spacing to enhance immersive adult scenes
+- [x] Allow background FX library upload for adult creators
+- [x] Enable dynamic NSFW transitions from safe to explicit based on context
+- [x] Respect Creator subscription rules for NSFW access and credits
+- [x] Save NSFW usage history to provide tone consistency in future chapters
+- [x] Flag NSFW content for internal moderation or publishing filter logic
+- [x] Auto-detect safe vs. unsafe content for preview-only versions
+- [x] Build Creator dashboard to manage NSFW scene ratings per book
+- [x] Simulate body contact dynamics through rhythmic ambient FX cues
+- [x] Render alternate PG-13 safe version of same scene for public platforms
+- [x] Track listener skip behavior on NSFW scenes for feedback optimization
 
 ### Phase 8 – Cross-Book Memory, Language, and Unabridged Logic
 - [ ] Track character development arcs across multiple books and universes
