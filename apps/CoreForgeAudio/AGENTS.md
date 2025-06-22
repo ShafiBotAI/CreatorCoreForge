@@ -454,15 +454,14 @@ Key points from `README.md`:
 - [ ] Allow experimental rendering mode with parallel timeline mix
 - [ ] Enable Creator sandbox to test and preview all forks side-by-side
 
-### Phase 6 – Export, Sync & Subscription Infrastructure
-- [ ] Enable export to MP3, WAV, FLAC formats with metadata embedding
-- [ ] Auto-tag files with narrator, chapter, genre, and FX metadata
+- [x] Enable export to MP3, WAV, FLAC formats with metadata embedding
+- [x] Auto-tag files with narrator, chapter, genre, and FX metadata
 - [ ] Support segmented export (chapter-by-chapter or full-book)
 - [ ] Allow users to include/exclude ambient and NSFW layers in export
 - [ ] Enable fingerprinted voice tagging for IP verification
-- [ ] Provide real-time export preview and file size estimation
-- [ ] Build queue manager for batch exporting multiple projects
-- [ ] Allow creators to export multitrack files (voice, ambient, FX)
+- [x] Provide real-time export preview and file size estimation
+- [x] Build queue manager for batch exporting multiple projects
+- [x] Allow creators to export multitrack files (voice, ambient, FX)
 - [ ] Support export templates (e.g., Audible-ready, Podcast format)
 - [ ] Compress long-form books into optimal mobile delivery bundles
 - [ ] Offer download resume support and interruption handling
