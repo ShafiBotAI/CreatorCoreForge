@@ -44,7 +44,7 @@ Advanced AI writing assistant for creating books, series, and self-help guides w
 - [ ] Dual-edit co-author editor with live AI collaboration
 - [ ] Timeline visualizer of all story events
 - [ ] Serialized release engine (auto episodic drop)
-- [ ] Historical time period checker
+- [x] Historical time period checker
 - [ ] Romance path visual heatmap
 
 #### Deep Narrative Tools
