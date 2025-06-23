@@ -186,7 +186,11 @@ public final class SoundEffectManager {
         return reverb
     }
 #else
-    public func triggerReverbPreset(preset: ReverbStyle) {}
+    /// Fallback when AVFoundation is unavailable. Logs the preset request so
+    /// tests can verify behavior on platforms without audio support.
+    public func triggerReverbPreset(preset: ReverbStyle) {
+        print("\u{26A0}\u{FE0F} Reverb preset \(preset.rawValue) requested but AVFoundation unavailable")
+    }
 #endif
 }
 

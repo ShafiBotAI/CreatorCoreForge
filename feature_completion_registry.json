@@ -1,0 +1,9 @@
+{
+  "completed": [
+    "Sources/CreatorCoreForge/SoundEffectManager.swift",
+    "Tests/CreatorCoreForgeTests/RealTimeFeedManagerTests.swift",
+    "Tests/CreatorCoreForgeTests/NetworkInfoProviderTests.swift",
+    "Tests/CreatorCoreForgeTests/LibrarySyncTests.swift",
+    "Tests/CreatorCoreForgeTests/SocialMediaManagerTests.swift"
+  ]
+}
