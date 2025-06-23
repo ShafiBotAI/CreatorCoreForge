@@ -7,11 +7,10 @@ import Combine
 #endif
 
 /// Cross-platform manager for short sound effects and ambience.
+public final class SoundEffectManager {
 #if canImport(Combine)
-public final class SoundEffectManager: ObservableObject {
     @Published public private(set) var currentAmbience: String = "None"
 #else
-public final class SoundEffectManager {
     public private(set) var currentAmbience: String = "None"
 #endif
     public static let shared = SoundEffectManager()
