@@ -26,4 +26,23 @@ public final class AudioExportService {
         }
         return output
     }
+
+    /// Export an array of audio segments using sequential numbering.
+    /// - Parameters:
+    ///   - segments: The audio data for each segment.
+    ///   - baseName: Base filename used for each exported segment.
+    ///   - format: Desired export format.
+    /// - Returns: Array of file URLs for the exported segments.
+    public func exportSegments(segments: [Data],
+                               baseName: String,
+                               format: AudioExportFormat) -> [URL] {
+        var urls: [URL] = []
+        for (index, data) in segments.enumerated() {
+            let name = "\(baseName)_\(index)"
+            if let url = exportAudio(data: data, filename: name, format: format) {
+                urls.append(url)
+            }
+        }
+        return urls
+    }
 }

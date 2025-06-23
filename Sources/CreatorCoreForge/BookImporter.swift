@@ -108,7 +108,11 @@ public class BookImporter {
     
     /// Heuristic rule-based chapter splitter.
     private static func detectChapterBoundaries(text: String) -> [(title: String, text: String)] {
-        let regex = try! NSRegularExpression(pattern: #"(?m)^((CHAPTER|Chapter|Section|BOOK)[^\n]{0,40})$"#)
+        // Include common intro markers like "Prologue" so tests can
+        // split the prologue into its own chapter for skipping.
+        let regex = try! NSRegularExpression(
+            pattern: #"(?m)^((PROLOGUE|Prologue|CHAPTER|Chapter|Section|BOOK)[^\n]{0,40})$"#
+        )
         let nsText = text as NSString
         let matches = regex.matches(in: text, range: NSRange(location: 0, length: nsText.length))
         guard matches.count > 1 else {
