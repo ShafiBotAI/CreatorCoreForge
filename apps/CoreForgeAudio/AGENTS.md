@@ -455,6 +455,20 @@ Key points from `README.md`:
 - [x] Allow creator-defined scene forks with different FX and voice tones
 - [x] Track listener path choices and feed into character memory
 - [x] Adjust ambient and pacing based on multiverse setting (e.g., dystopia = slower)
+
+- [x] Support "multiverse collapse" audio effect when timelines converge
+- [x] Enable alternate endings per timeline with unique tonal conclusions
+- [x] Fork narrator tone for speculative/what-if chapters
+- [x] Store multiverse path data in playback history and sync across devices
+- [x] Integrate "director notes" mode to highlight multiverse scenes
+- [x] Allow hidden timeline unlocks based on listener behavior
+- [x] Provide multiverse context summaries for catching up mid-path
+- [x] Support flashback-within-alternate-timeline scenes
+- [x] Build multiverse continuity checker for tone, character, and FX
+- [x] Auto-adjust emotion modulation when characters encounter variants of themselves
+- [x] Embed multiverse state tags into export files for advanced metadata
+- [x] Allow experimental rendering mode with parallel timeline mix
+=======
 - [ ] Support "multiverse collapse" audio effect when timelines converge
 - [ ] Enable alternate endings per timeline with unique tonal conclusions
 - [x] Fork narrator tone for speculative/what-if chapters
@@ -467,6 +481,7 @@ Key points from `README.md`:
 - [x] Auto-adjust emotion modulation when characters encounter variants of themselves
 - [ ] Embed multiverse state tags into export files for advanced metadata
 - [ ] Allow experimental rendering mode with parallel timeline mix
+
 - [x] Enable Creator sandbox to test and preview all forks side-by-side
 
 - [x] Enable export to MP3, WAV, FLAC formats with metadata embedding

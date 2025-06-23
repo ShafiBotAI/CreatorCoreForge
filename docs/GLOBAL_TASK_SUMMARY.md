@@ -3,10 +3,19 @@
 ## apps
 - Coordinate shared assets and templates
 - Ensure CoreForge Audio checklist includes all phases 1-9 features
+
+
+## apps/CoreForgeAudio
+- AdvancedSkipImport
+- DocumentParser
+- OCRScanMode
+- BatchImportTool
+=======
 - Review cross-app asset licensing
 
 ## apps/CoreForgeAudio
 - AdvancedSkipImport
+
 - AutoFormatDialogue
 - TraitMemoryPersistence
 - CanonMemoryGraph
@@ -25,6 +34,7 @@
 - InlineEmotionEngine
 - AmbientMixer
 - PlaybackAnalytics
+- SleepMode
 - VoiceAdvisorAI
 - CustomVoiceUploads
 - MultiverseVoiceSystem
@@ -69,6 +79,104 @@
 - FlashbackSceneEngine
 - ContinuityChecker
 - CrossoverEngine
+
+- Parse EPUB, PDF, DOCX, TXT, and HTML formats into chapter-based objects
+- Auto-detect chapter boundaries using AI and manual fallback
+- Normalize titles, author metadata, and language encoding
+- Sanitize raw text and remove formatting artifacts for narration
+- Store source format metadata for export integrity
+- Enable real-time drag-and-drop multi-book import
+- Allow manual override and merge/split of chapter segments
+- Integrate OCR scanning for image-based books or comics
+- Highlight dialogue vs. narration during parsing
+- Auto-tag genre and tone during structural scan
+- Support parsing for poetry, stageplay, and hybrid book types
+- Save parsed state for recovery and version history
+- Embed book-level content warnings and safety tags
+- Parse footnotes, indexes, and references for narrator adaptation
+- Identify languages used per section and prepare multilingual routing
+- Allow preview of parsed structure before committing to render
+- Detect pacing shifts (action vs. reflection) in text flow
+- Extract scene-based summaries for quick rendering
+- Offer import templates for common formats (Kindle, Smashwords, etc.)
+- Support 100MB+ file sizes with chunked asynchronous parsing
+- Validate file encoding and handle legacy or corrupted files
+- Provide parsing logs and error highlighting to the creator
+- Assign default narrator voice for books with single-voice rendering
+- Detect and tag character dialogue blocks for multi-voice casting
+- Link recurring character names to voice profiles using memory system
+- Enable user-defined cast templates with role-to-voice mapping
+- Detect tone of character dialogue (angry, sad, joyful) using emotion AI
+- Integrate LocalVoiceAI and ElevenLabs fallback TTS renderers
+- Add emotion-to-pitch/pace modulation (e.g., sad = slower, lower)
+- Support voice blending for internal monologue vs. external dialogue
+- Allow users to test voice preview samples per character before rendering
+- Add automatic narrator voice adjustments during high-tension scenes
+- Fork voices into alternate variants for multiverse or memory arcs
+- Tag first-person vs. third-person POV to determine voice switching
+- Support voice regional accents (British, Australian, Indian, etc.)
+- Voice delivery pacing optimized for line length and context complexity
+- Adjust pause duration between lines based on speaker change
+- Integrate pronunciation dictionaries per character for name consistency
+- Implement voice style presets: fantasy, sci-fi, horror, romance
+- Use AI to recommend voices based on genre and writing style
+- Visual cast map UI to display all character-voice assignments
+- Real-time rendering monitor to preview TTS results as generated
+- Save voice assignments in user profiles for cross-book persistence
+- Detect overlapping voices and adjust timing to simulate conversation
+- Design ambient FX engine to layer audio environments under narration
+- Create FX libraries categorized by genre (forest, city, tavern, spaceship)
+- Match ambient background to scene tone and location description
+- Add footstep, door, paper, wind, and cloth motion FX by context
+- Control ambient volume scaling by scene intensity (whispers vs. battle)
+- Implement ambient crossfade logic between chapters and locations
+- Use low-frequency rumble or musical drones for tension buildup
+- Enable environmental reverb and echo based on scene size (hall vs. closet)
+- Layer background conversation FX for crowds or taverns
+- Auto-detect ambient transitions in narration and apply FX changes
+- Introduce weather-specific layers (thunder, rain, desert wind)
+- Support 3D spatial panning of sound FX for immersive headset playback
+- Scene FX presets (e.g., "Haunted Mansion", "Rainy Battlefield") with auto-load
+- Allow creators to toggle immersive mode on/off per book or chapter
+- Sync ambient playback to narrator pacing and pause intervals
+- Design UI switch to mute FX while preserving speech
+- Add sandbox preview of ambient + voice mix per scene
+- Generate FX track separately for export as audio stem
+- Tag FX layers for accessibility filtering (e.g., no thunder for noise-sensitive)
+- Allow user-uploaded FX packs with tagging support
+- Record listener reactions to FX scenes for future personalization
+- Enable real-time ambient FX updates during streaming TTS playback
+- Establish persistent memory profiles for each major character
+- Track voice usage, tone, and traits across multiple books
+- Implement character aging logic to evolve voice over time
+- Save memory tokens (milestones, trauma, growth) per character
+- Adjust emotional tone delivery based on past scenes (e.g., grief affects voice)
+- Support flashback-specific tone adjustments (reverberation, echo)
+- Tag emotional arcs and tie them to narrator modulation rules
+- Maintain a character timeline of voice intensity and expressiveness
+- Apply stress-level voice distortion during arguments or danger
+- Create character dossier panel for memory review/editing
+- Support "memory lock" to preserve voice consistency despite new scripts
+- Recommend tone variation based on context and prior memory state
+- Integrate cross-book story arc tracking (hero's journey, redemption, fall)
+- Detect character reappearances and retrieve voice memory automatically
+- Allow adaptive tone matching when character enters new genres/settings
+- Model relationships: voice modulation changes depending on who is speaking to whom
+- Use memory weights to prioritize emotional realism over narration neutrality
+- Enable timeline visualization of a character’s voice evolution
+- Cross-link tone history with voice fingerprint DNA across the series
+- Support tone comparison mode between books for authorial analysis
+- Highlight inconsistencies in voice delivery across books for correction
+- Embed character memory files as part of export metadata for continuity
+- Enable export to MP3, WAV, FLAC formats with metadata embedding
+- Auto-tag files with narrator, chapter, genre, and FX metadata
+- Support segmented export (chapter-by-chapter or full-book)
+- Allow users to include/exclude ambient and NSFW layers in export
+- Enable fingerprinted voice tagging for IP verification
+- Provide real-time export preview and file size estimation
+- Build queue manager for batch exporting multiple projects
+- Allow creators to export multitrack files (voice, ambient, FX)
+=======
 - Adjust emotional tone delivery based on past scenes (e.g., grief affects voice)
 - Recommend tone variation based on context and prior memory state
 - Integrate cross-book story arc tracking (hero's journey, redemption, fall)
@@ -101,6 +209,30 @@
 - Support cloud backup of render states and export templates
 - Add DRM toggle for exports requiring usage protection
 - Provide offline-friendly audiobook playback format generator
+
+- Implement NSFW voice profiles with explicit tone, breathing, and cadence
+- Create age-gated toggle for NSFW rendering mode
+- Enable character-specific NSFW permission settings
+- Tag NSFW scenes in transcript for optional exclusion in export
+- Provide tone modulation tools for sensuality, aggression, vulnerability
+- Match ambient FX to erotic or horror tones (e.g., bed creaks, moans, echoes)
+- Add intensity meter to scale NSFW performance (suggestive → explicit)
+- Blend romantic, comedic, and fantasy sub-tones for genre flexibility
+- Apply whisper-pass filter for intimacy scene enhancement
+- Include pacing sensitivity slider for slow-burn vs rapid tones
+- Build preview system for NSFW scenes before full render
+- Auto-adjust reverb and spacing to enhance immersive adult scenes
+- Allow background FX library upload for adult creators
+- Enable dynamic NSFW transitions from safe to explicit based on context
+- Respect Creator subscription rules for NSFW access and credits
+- Save NSFW usage history to provide tone consistency in future chapters
+- Flag NSFW content for internal moderation or publishing filter logic
+- Auto-detect safe vs. unsafe content for preview-only versions
+- Build Creator dashboard to manage NSFW scene ratings per book
+- Simulate body contact dynamics through rhythmic ambient FX cues
+- Render alternate PG-13 safe version of same scene for public platforms
+- Track listener skip behavior on NSFW scenes for feedback optimization
+
 - Track character development arcs across multiple books and universes
 - Sync voice tone evolution based on previous book outcomes
 - Detect and recall key events from prior titles to affect current narration
@@ -123,8 +255,17 @@
 - Adapt narration style based on genre and reader profile (e.g., thriller vs. memoir)
 - Detect formatting features (lists, quotes, poetry) and adjust narration accordingly
 - Store memory snapshots between render sessions for persistent output quality
+
+- Assign separate audio tracks to each character and narrator for post-mix mastering
+- Generate multitrack session files for DAWs (e.g., Logic, Pro Tools, Audition)
+- Sync ambient layers, voice tracks, and FX on a shared scene timeline
 - Enable per-character equalization, pitch adjustment, and compression
 - Simulate stereo spatial positioning per voice (left/right, near/far)
+- Build emotion intensity heatmap per scene to guide tone balancing
+=======
+- Enable per-character equalization, pitch adjustment, and compression
+- Simulate stereo spatial positioning per voice (left/right, near/far)
+
 - Create a full-cast preview mode with toggles for each voice track
 - Add creator-defined vocal layering for crowd and background dialogue
 - Offer toggle for “narrator override” mode for consistency across multi-voice scenes
