@@ -1,0 +1,5 @@
+# Auto-generated for Social/auto-upload for Pro/Creator tier, viral listening challenges
+def social_auto_upload_for_pro():
+    """Social/auto-upload for Pro/Creator tier, viral listening challenges"""
+    pass
+

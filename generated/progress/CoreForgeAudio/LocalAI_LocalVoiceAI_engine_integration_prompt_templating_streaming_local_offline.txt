@@ -1,0 +1,5 @@
+# Auto-generated for LocalAI/LocalVoiceAI engine integration (prompt templating, streaming, local/offline)
+def localai_localvoiceai_engine_integration_prompt():
+    """LocalAI/LocalVoiceAI engine integration (prompt templating, streaming, local/offline)"""
+    pass
+

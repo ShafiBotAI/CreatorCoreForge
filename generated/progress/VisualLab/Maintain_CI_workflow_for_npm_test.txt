@@ -1,0 +1,5 @@
+# Auto-generated for Maintain CI workflow for `npm test`
+def maintain_ci_workflow_for_npm():
+    """Maintain CI workflow for `npm test`"""
+    pass
+

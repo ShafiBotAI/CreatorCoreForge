@@ -1,0 +1,5 @@
+# Auto-generated for Add Lip Sync + Voice Sync to Visuals
+def add_lip_sync_voice_sync():
+    """Add Lip Sync + Voice Sync to Visuals"""
+    pass
+

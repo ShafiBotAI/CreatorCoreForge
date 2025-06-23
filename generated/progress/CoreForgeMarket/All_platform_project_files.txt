@@ -1,0 +1,5 @@
+# Auto-generated for All platform project files
+def all_platform_project_files():
+    """All platform project files"""
+    pass
+

@@ -1,0 +1,5 @@
+# Auto-generated for In-app streaming and offline playback
+def in_app_streaming_and_offline():
+    """In-app streaming and offline playback"""
+    pass
+

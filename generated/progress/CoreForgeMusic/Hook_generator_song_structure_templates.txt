@@ -1,0 +1,5 @@
+# Auto-generated for Hook generator + song structure templates
+def hook_generator_song_structure_templates():
+    """Hook generator + song structure templates"""
+    pass
+

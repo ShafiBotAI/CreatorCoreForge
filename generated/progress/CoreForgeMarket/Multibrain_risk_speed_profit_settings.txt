@@ -1,0 +1,5 @@
+# Auto-generated for Multibrain risk/speed/profit settings
+def multibrain_risk_speed_profit_settings():
+    """Multibrain risk/speed/profit settings"""
+    pass
+

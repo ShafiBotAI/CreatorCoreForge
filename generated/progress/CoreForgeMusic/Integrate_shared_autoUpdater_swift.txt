@@ -1,0 +1,5 @@
+# Auto-generated for Integrate shared `autoUpdater.swift`
+def integrate_shared_autoupdater_swift():
+    """Integrate shared `autoUpdater.swift`"""
+    pass
+

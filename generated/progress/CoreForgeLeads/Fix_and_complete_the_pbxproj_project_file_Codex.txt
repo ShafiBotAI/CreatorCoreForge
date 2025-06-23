@@ -1,0 +1,5 @@
+# Auto-generated for Fix and complete the `.pbxproj` project file (Codex)
+def fix_and_complete_the_pbxproj():
+    """Fix and complete the `.pbxproj` project file (Codex)"""
+    pass
+

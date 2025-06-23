@@ -1,0 +1,5 @@
+# Auto-generated for Update workflow scripts for new platforms
+def update_workflow_scripts_for_new():
+    """Update workflow scripts for new platforms"""
+    pass
+

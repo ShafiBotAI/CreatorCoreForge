@@ -1,0 +1,5 @@
+# Auto-generated for Sensual video intro/outro, customizable intensity dials
+def sensual_video_intro_outro_customizable():
+    """Sensual video intro/outro, customizable intensity dials"""
+    pass
+

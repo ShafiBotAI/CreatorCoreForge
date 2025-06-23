@@ -1,0 +1,5 @@
+# Auto-generated for Interactive video QTE (viewer-triggered choices)
+def interactive_video_qte_viewer_triggered():
+    """Interactive video QTE (viewer-triggered choices)"""
+    pass
+

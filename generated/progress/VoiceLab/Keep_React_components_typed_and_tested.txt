@@ -1,0 +1,5 @@
+# Auto-generated for Keep React components typed and tested
+def keep_react_components_typed_and():
+    """Keep React components typed and tested"""
+    pass
+

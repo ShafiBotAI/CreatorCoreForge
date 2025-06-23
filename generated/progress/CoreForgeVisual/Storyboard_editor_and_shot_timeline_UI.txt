@@ -1,0 +1,5 @@
+# Auto-generated for Storyboard editor and shot timeline UI
+def storyboard_editor_and_shot_timeline():
+    """Storyboard editor and shot timeline UI"""
+    pass
+

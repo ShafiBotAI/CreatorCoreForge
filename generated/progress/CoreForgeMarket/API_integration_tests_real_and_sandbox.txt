@@ -1,0 +1,5 @@
+# Auto-generated for API integration tests (real and sandbox)
+def api_integration_tests_real_and():
+    """API integration tests (real and sandbox)"""
+    pass
+

@@ -1,0 +1,5 @@
+# Auto-generated for Provide App Store assets and launch screens
+def provide_app_store_assets_and():
+    """Provide App Store assets and launch screens"""
+    pass
+

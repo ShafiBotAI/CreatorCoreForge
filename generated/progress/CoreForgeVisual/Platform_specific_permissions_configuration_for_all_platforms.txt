@@ -1,0 +1,5 @@
+# Auto-generated for Platform-specific permissions/configuration for all platforms
+def platform_specific_permissions_configuration_for():
+    """Platform-specific permissions/configuration for all platforms"""
+    pass
+

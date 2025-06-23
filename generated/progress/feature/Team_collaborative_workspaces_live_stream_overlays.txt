@@ -1,0 +1,5 @@
+# Auto-generated for Team/collaborative workspaces, live stream overlays
+def team_collaborative_workspaces_live_stream():
+    """Team/collaborative workspaces, live stream overlays"""
+    pass
+

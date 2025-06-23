@@ -1,0 +1,5 @@
+# Auto-generated for Ensure templates generate valid pbxproj files
+def ensure_templates_generate_valid_pbxproj():
+    """Ensure templates generate valid pbxproj files"""
+    pass
+

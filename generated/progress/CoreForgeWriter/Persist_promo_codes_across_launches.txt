@@ -1,0 +1,5 @@
+# Auto-generated for Persist promo codes across launches
+def persist_promo_codes_across_launches():
+    """Persist promo codes across launches"""
+    pass
+

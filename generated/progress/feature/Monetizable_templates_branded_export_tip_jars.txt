@@ -1,0 +1,5 @@
+# Auto-generated for Monetizable templates, branded export, tip jars
+def monetizable_templates_branded_export_tip():
+    """Monetizable templates, branded export, tip jars"""
+    pass
+

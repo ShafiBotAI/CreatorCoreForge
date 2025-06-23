@@ -1,0 +1,5 @@
+# Auto-generated for Monetizable content packs, marketplace, licensing, NFTs
+def monetizable_content_packs_marketplace_licensing():
+    """Monetizable content packs, marketplace, licensing, NFTs"""
+    pass
+

@@ -1,0 +1,5 @@
+# Auto-generated for Genre selector + fast draft mode
+def genre_selector_fast_draft_mode():
+    """Genre selector + fast draft mode"""
+    pass
+

@@ -1,0 +1,5 @@
+# Auto-generated for Centralize admin contacts for app teams
+def centralize_admin_contacts_for_app():
+    """Centralize admin contacts for app teams"""
+    pass
+

@@ -1,0 +1,5 @@
+# Auto-generated for Complete `.pbxproj` project file
+def complete_pbxproj_project_file():
+    """Complete `.pbxproj` project file"""
+    pass
+

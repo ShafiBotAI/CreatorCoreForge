@@ -1,0 +1,5 @@
+# Auto-generated for Dark mode, accessibility themes
+def dark_mode_accessibility_themes():
+    """Dark mode, accessibility themes"""
+    pass
+

@@ -1,0 +1,5 @@
+# Auto-generated for Scene auto-summarization, auto-citation/footnotes
+def scene_auto_summarization_auto_citation():
+    """Scene auto-summarization, auto-citation/footnotes"""
+    pass
+

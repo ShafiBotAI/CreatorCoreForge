@@ -1,0 +1,5 @@
+# Auto-generated for Dark/light mode, accessibility
+def dark_light_mode_accessibility():
+    """Dark/light mode, accessibility"""
+    pass
+

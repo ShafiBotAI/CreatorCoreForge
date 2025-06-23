@@ -1,0 +1,5 @@
+# Auto-generated for Downloadable, high-fidelity audiobook export (MP3, WAV, SRT, etc.)
+def downloadable_high_fidelity_audiobook_export():
+    """Downloadable, high-fidelity audiobook export (MP3, WAV, SRT, etc.)"""
+    pass
+

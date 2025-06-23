@@ -1,0 +1,5 @@
+# Auto-generated for Provide, review, and test App Store/Google Play/Windows/MacOS/Web launch assets and screens
+def provide_review_and_test_app():
+    """Provide, review, and test App Store/Google Play/Windows/MacOS/Web launch assets and screens"""
+    pass
+

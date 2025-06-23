@@ -1,0 +1,5 @@
+# Auto-generated for Drag-and-drop scene editor, macro automations
+def drag_and_drop_scene_editor():
+    """Drag-and-drop scene editor, macro automations"""
+    pass
+

@@ -1,0 +1,5 @@
+# Auto-generated for Monetization-split tracking per co-author
+def monetization_split_tracking_per_co():
+    """Monetization-split tracking per co-author"""
+    pass
+

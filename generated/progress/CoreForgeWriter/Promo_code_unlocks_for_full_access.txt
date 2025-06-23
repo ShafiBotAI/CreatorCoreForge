@@ -1,0 +1,5 @@
+# Auto-generated for Promo code unlocks for full access
+def promo_code_unlocks_for_full():
+    """Promo code unlocks for full access"""
+    pass
+

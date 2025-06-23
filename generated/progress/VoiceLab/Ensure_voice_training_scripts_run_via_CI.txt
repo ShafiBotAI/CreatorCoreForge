@@ -1,0 +1,5 @@
+# Auto-generated for Ensure voice training scripts run via CI
+def ensure_voice_training_scripts_run():
+    """Ensure voice training scripts run via CI"""
+    pass
+

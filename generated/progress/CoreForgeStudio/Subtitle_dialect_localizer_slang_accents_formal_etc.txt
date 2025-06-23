@@ -1,0 +1,5 @@
+# Auto-generated for Subtitle dialect localizer (slang, accents, formal, etc.)
+def subtitle_dialect_localizer_slang_accents():
+    """Subtitle dialect localizer (slang, accents, formal, etc.)"""
+    pass
+

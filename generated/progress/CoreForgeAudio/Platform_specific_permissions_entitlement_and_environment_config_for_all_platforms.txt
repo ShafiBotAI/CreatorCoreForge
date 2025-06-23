@@ -1,0 +1,5 @@
+# Auto-generated for Platform-specific permissions, entitlement, and environment config for all platforms
+def platform_specific_permissions_entitlement_and():
+    """Platform-specific permissions, entitlement, and environment config for all platforms"""
+    pass
+

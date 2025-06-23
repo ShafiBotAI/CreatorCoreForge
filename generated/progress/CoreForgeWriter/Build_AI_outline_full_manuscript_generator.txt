@@ -1,0 +1,5 @@
+# Auto-generated for Build AI outline → full manuscript generator
+def build_ai_outline_full_manuscript():
+    """Build AI outline → full manuscript generator"""
+    pass
+

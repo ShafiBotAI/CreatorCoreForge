@@ -1,0 +1,5 @@
+# Auto-generated for Auto social/creator upload, promo code system
+def auto_social_creator_upload_promo():
+    """Auto social/creator upload, promo code system"""
+    pass
+

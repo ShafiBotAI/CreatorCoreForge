@@ -1,0 +1,5 @@
+# Auto-generated for App Store, Google Play, Microsoft Store, Web compliance
+def app_store_google_play_microsoft():
+    """App Store, Google Play, Microsoft Store, Web compliance"""
+    pass
+

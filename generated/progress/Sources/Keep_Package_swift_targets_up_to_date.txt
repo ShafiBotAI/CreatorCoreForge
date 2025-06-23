@@ -1,0 +1,5 @@
+# Auto-generated for Keep Package.swift targets up to date
+def keep_package_swift_targets_up():
+    """Keep Package.swift targets up to date"""
+    pass
+

@@ -1,0 +1,5 @@
+# Auto-generated for Generate full `.pbxproj` project
+def generate_full_pbxproj_project():
+    """Generate full `.pbxproj` project"""
+    pass
+
