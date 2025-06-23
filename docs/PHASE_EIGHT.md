@@ -95,31 +95,6 @@ Only a subset of those features are shown below for brevity.
 - [x] AppStoreIntegration
 - [x] SettingsPanel
 - [x] CreatorPanel
-=======
-- [ ] BookImporter
-- [ ] ChapterDetector
-- [ ] SegmentService
-- [ ] VoiceManager
-- [ ] TTSService
-- [ ] InlineEmotionEngine
-- [ ] AmbientMixer
-- [ ] PlaybackAnalytics
- - [x] SleepMode
-- [ ] CharacterMemoryEngine
-- [ ] VoiceAdvisorAI
-- [ ] CustomVoiceUploads
-- [ ] MultiverseVoiceSystem
-- [ ] QuantumSceneLogic
-- [ ] NeuralOptimizer
-- [ ] CreditSystem
-- [ ] OfflineDownloadQueue
-- [ ] ExportTools
-- [ ] NSFWVoiceEngine
-- [ ] StealthMode
-- [ ] ExperimentalFX
-- [ ] AppStoreIntegration
-- [ ] SettingsPanel
-- [ ] CreatorPanel
 
 
 ### CoreForgeVisual
