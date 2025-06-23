@@ -360,7 +360,7 @@ Use `scripts/chatterbox_bridge.py` to generate a narrated play from a simple `SP
 ./scripts/chatterbox_bridge.py script.txt
 ```
 
-Run `scripts/progress_bot.py` to view app progress and optionally generate code.
+Run `scripts/progress_bot.py` to view app progress and generate snippet files for missing features.
 See `docs/progress_bot.md` for usage details.
 ## Running Tests
 

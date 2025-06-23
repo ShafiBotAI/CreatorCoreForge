@@ -3,6 +3,8 @@ import re
 import json
 from collections import defaultdict
 
+OUTPUT_DIR = os.path.join("generated", "progress")
+
 try:
     import openai
     OPENAI_AVAILABLE = True
@@ -12,29 +14,40 @@ except ImportError:
 
 def parse_open_tasks(filepath: str):
     app = None
+    in_missing = False
     implemented = defaultdict(int)
     missing = defaultdict(int)
+    tasks = defaultdict(list)
     package_emoji = "\U0001F4E6"  # 📦
-    with open(filepath, 'r', encoding='utf-8') as f:
+
+    with open(filepath, "r", encoding="utf-8") as f:
         for line in f:
-            app_match = re.match(rf'^\s*{package_emoji} App: (.+)', line)
+            app_match = re.match(rf"^\s*{package_emoji} App: (.+)", line)
             if app_match:
                 app = app_match.group(1).strip()
+                in_missing = False
                 continue
             if app is None:
                 continue
-            if line.startswith('✅'):
-                # The line may contain the number of implemented features
-                m = re.search(r'(\d+)', line)
+            if line.startswith("✅"):
+                m = re.search(r"(\d+)", line)
                 if m:
                     implemented[app] = int(m.group(1))
+                in_missing = False
                 continue
-            if line.startswith('❌'):
-                m = re.search(r'(\d+)', line)
+            if line.startswith("❌"):
+                m = re.search(r"(\d+)", line)
                 if m:
                     missing[app] = int(m.group(1))
+                in_missing = True
                 continue
-    return implemented, missing
+            if in_missing and line.strip().startswith("-"):
+                tasks[app].append(line.strip().lstrip("- "))
+                continue
+            if not line.strip():
+                in_missing = False
+
+    return implemented, missing, tasks
 
 
 def calc_progress(implemented: dict, missing: dict):
@@ -71,6 +84,16 @@ def generate_code(task_description: str):
     return resp.choices[0].message['content'].strip()
 
 
+def offline_snippet(description: str) -> str:
+    tokens = re.findall(r"[a-zA-Z_]+", description)[:5]
+    name = sanitize("_".join(tokens).lower()) or "feature"
+    return f"def {name}():\n    \"\"\"{description}\"\"\"\n    pass\n"
+
+
+def sanitize(name: str) -> str:
+    return re.sub(r"[^a-zA-Z0-9_]+", "_", name.strip()).strip("_") or "feature"
+
+
 if __name__ == '__main__':
     tasks_file = os.path.join('docs', 'OPEN_TASKS.md')
     impl, miss = parse_open_tasks(tasks_file)
@@ -78,24 +101,24 @@ if __name__ == '__main__':
     print("Current app progress:")
     print_progress(progress)
 
+    tasks = impl_miss_tasks[2] if isinstance(impl_miss_tasks := parse_open_tasks(tasks_file), tuple) else {}
     if OPENAI_AVAILABLE and os.getenv('OPENAI_API_KEY'):
-        # Example usage for the first missing task of the first app
-        with open(tasks_file, 'r', encoding='utf-8') as f:
-            lines = f.readlines()
-        current_app = None
-        for line in lines:
-            app_match = re.match(r'^\s*\xf0\x9f\x93\xa6 App: (.+)', line)
-            if app_match:
-                current_app = app_match.group(1).strip()
-                continue
-            if current_app and line.strip().startswith('-') and 'Incomplete' not in line:
-                description = line.strip(' -\n')
-                print(f"\nSuggesting code for {current_app}: {description}")
-                try:
-                    snippet = generate_code(description)
-                    print(snippet)
-                except Exception as e:
-                    print(f"Could not generate code: {e}")
-                break
+        print("\nGenerating code snippets for missing features...\n")
     else:
-        print("\nInstall openai package and set OPENAI_API_KEY to generate code suggestions.")
+        print("\nOpenAI unavailable. Generating offline stubs...\n")
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    for app, items in tasks.items():
+        app_dir = os.path.join(OUTPUT_DIR, sanitize(app))
+        os.makedirs(app_dir, exist_ok=True)
+        for feature in items:
+            fname = sanitize(feature) + '.txt'
+            fpath = os.path.join(app_dir, fname)
+            if os.path.exists(fpath):
+                continue
+            try:
+                snippet = generate_code(feature)
+            except Exception:
+                snippet = offline_snippet(feature)
+            with open(fpath, 'w', encoding='utf-8') as out:
+                out.write(f"# Auto-generated for {feature}\n{snippet}\n")
+    print("\nCode snippets written to", OUTPUT_DIR)
