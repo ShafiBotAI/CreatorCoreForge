@@ -1,0 +1,4 @@
+# Auto-generated for Match all described features in the app's design and roadmap (Phases 1–8)
+def match_all_described():
+    """Match all described features in the app's design and roadmap (Phases 1–8)"""
+    pass

@@ -1,0 +1,4 @@
+# Auto-generated for DynamicChapterTransitions
+def dynamicchaptertransitions():
+    """DynamicChapterTransitions"""
+    pass
