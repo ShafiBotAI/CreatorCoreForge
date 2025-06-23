@@ -17,7 +17,7 @@ Purpose: Hit songwriting engine with AI beat matching, hooks, and lyric generati
 - [x] Split-test hooks for virality
 - [x] Suggest bridge/chorus transitions
 - [x] Flag explicit lyrics and apply filters
-- [ ] Fix and complete the `.pbxproj` project file (Codex)
+- [x] Fix and complete the `.pbxproj` project file (Codex)
 
 ### Files of Interest:
 - `HookCrafter.swift`
