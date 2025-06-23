@@ -10,6 +10,7 @@ except ImportError:
     OPENAI_AVAILABLE = False
 
 from feature_audit import scan_repo
+import argparse
 
 
 def offline_snippet(description: str, ext: str) -> str:
@@ -140,8 +141,47 @@ def create_files(repo_path: str) -> None:
                 f.write(snippet)
 
 
+def _parse_placeholder_line(line: str) -> str | None:
+    match = re.search(r"Auto-generated for\s+(.*)", line)
+    if match:
+        return match.group(1).strip()
+    return None
+
+
+def upgrade_placeholders(gen_root: str) -> None:
+    for root, _, files in os.walk(gen_root):
+        for name in files:
+            path = os.path.join(root, name)
+            try:
+                with open(path, "r", encoding="utf-8") as f:
+                    first = f.readline()
+            except Exception:
+                continue
+            feature = _parse_placeholder_line(first)
+            if not feature:
+                continue
+            ext = os.path.splitext(name)[1]
+            snippet = generate_snippet(feature, ext)
+            with open(path, "w", encoding="utf-8") as f:
+                f.write(first)
+                f.write(snippet)
+
+
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Generate or upgrade placeholder code files")
+    parser.add_argument(
+        "--upgrade-placeholders",
+        action="store_true",
+        help="Replace existing placeholders in the generated folder using OpenAI",
+    )
+    args = parser.parse_args()
+
     repo = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-    create_files(repo)
+
+    if args.upgrade_placeholders:
+        upgrade_placeholders(os.path.join(repo, "generated"))
+    else:
+        create_files(repo)
+
     fix_repo_code(repo)
     print("Auto code generation complete. Check the 'generated' folder.")

@@ -8,6 +8,12 @@
 python scripts/auto_code_bot.py
 ```
 
+To replace existing placeholder files with new code generated via OpenAI, run:
+
+```bash
+python scripts/auto_code_bot.py --upgrade-placeholders
+```
+
 The script outputs generated files in subdirectories of `generated/`, one per app. These files are safe to edit or replace with full implementations.
 
 Generated filenames now match the detected language. For example, a Swift feature results in `feature.swift`, while a Python task becomes `feature.py`. Every run also scans existing Python files and comments out lines with syntax errors to keep the repository importable when offline.
