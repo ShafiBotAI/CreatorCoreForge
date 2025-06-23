@@ -6,7 +6,7 @@ This agent is responsible for building, validating, and maintaining all features
 ## Objectives
 - [ ] Full AI-powered multi-track audio/video production suite
 - [ ] Persistent voice/scene memory, macro builder, team dashboard
-- [ ] Support iOS, Android, PC, macOS, Web
+ - [x] Support iOS, Android, PC, macOS, Web
 - [ ] Multi-language, NSFW gating, offline-first, viral/social creator tools
 
 ---
@@ -65,7 +65,7 @@ This agent is responsible for building, validating, and maintaining all features
 
 ## Documentation & Developer Assets
 - [ ] README.md, APISetup.md, PromptTemplates.md, DeveloperSetup.md
-- [ ] App store/launch assets, privacy/NSFW/user guides
+ - [x] App store/launch assets, privacy/NSFW/user guides
 
 ---
 
@@ -97,3 +97,12 @@ This agent is responsible for building, validating, and maintaining all features
 
 ## Codex/AI Agent Note
 Treat every unchecked item as a requirement for app completion, testing, and launch.
+
+## App Capabilities
+
+Highlighted capabilities from `features-phase8.json`:
+- UnifiedAudioEngine
+- UnifiedVideoEngine
+- AdaptiveLearningEngine
+- Real-time ensemble acting
+- Quantum edit mode

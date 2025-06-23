@@ -72,4 +72,24 @@ public final class LocalAIEnginePro {
             completion(.success(String(bestSentence).trimmingCharacters(in: .whitespacesAndNewlines)))
         }
     }
+
+    /// Very small sentiment analyzer used for demos. Counts positive and
+    /// negative keywords and returns the dominant sentiment.
+    public enum Sentiment: String {
+        case positive, negative, neutral
+    }
+
+    public func analyzeSentiment(_ text: String) -> Sentiment {
+        let positives: Set<String> = ["good", "great", "excellent", "amazing", "wonderful", "positive"]
+        let negatives: Set<String> = ["bad", "terrible", "awful", "horrible", "negative", "poor"]
+
+        var score = 0
+        for word in text.lowercased().split(whereSeparator: { !$0.isLetter }) {
+            if positives.contains(String(word)) { score += 1 }
+            if negatives.contains(String(word)) { score -= 1 }
+        }
+        if score > 0 { return .positive }
+        if score < 0 { return .negative }
+        return .neutral
+    }
 }
