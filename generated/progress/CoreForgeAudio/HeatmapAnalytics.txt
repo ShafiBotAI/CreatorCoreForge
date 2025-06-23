@@ -2,4 +2,3 @@
 def heatmapanalytics():
     """HeatmapAnalytics"""
     pass
-

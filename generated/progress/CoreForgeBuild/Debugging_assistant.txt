@@ -2,4 +2,3 @@
 def debugging_assistant():
     """Debugging assistant"""
     pass
-

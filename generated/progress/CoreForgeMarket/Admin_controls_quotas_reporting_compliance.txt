@@ -1,5 +1,4 @@
 # Auto-generated for Admin controls: quotas, reporting, compliance
-def admin_controls_quotas_reporting_compliance():
+def admin_controls_quotas():
     """Admin controls: quotas, reporting, compliance"""
     pass
-

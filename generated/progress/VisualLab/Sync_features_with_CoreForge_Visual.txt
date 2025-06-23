@@ -1,5 +1,4 @@
 # Auto-generated for Sync features with CoreForge Visual
-def sync_features_with_coreforge_visual():
+def sync_features_with():
     """Sync features with CoreForge Visual"""
     pass
-

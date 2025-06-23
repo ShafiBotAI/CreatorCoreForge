@@ -2,4 +2,3 @@
 def watchsyncservice():
     """WatchSyncService"""
     pass
-

@@ -1,5 +1,4 @@
 # Auto-generated for Modify book generation flow in `BookBuilder.swift`
-def modify_book_generation_flow_in():
-    """Modify book generation flow in `BookBuilder.swift`"""
-    pass
-
+func modify_book_generation() {
+    // Modify book generation flow in `BookBuilder.swift`
+}

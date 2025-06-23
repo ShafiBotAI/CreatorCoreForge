@@ -1,5 +1,4 @@
 # Auto-generated for PromptTemplates.md (AI workflows, sample prompts)
-def prompttemplates_md_ai_workflows_sample():
+def prompttemplates_md_ai():
     """PromptTemplates.md (AI workflows, sample prompts)"""
     pass
-

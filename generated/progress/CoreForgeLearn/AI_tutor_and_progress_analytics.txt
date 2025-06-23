@@ -1,5 +1,4 @@
 # Auto-generated for AI tutor and progress analytics
-def ai_tutor_and_progress_analytics():
+def ai_tutor_and():
     """AI tutor and progress analytics"""
     pass
-
