@@ -4,3 +4,6 @@ Utility shell and Python scripts used for building projects and auditing feature
 
 - `chatterbox_bridge.py` – convert a simple `SPEAKER: line` script into a single audio file using a Chatterbox API. Requires `pydub`, `tqdm`, `requests`, and a `CHATTERBOX_API_URL` environment variable.
 - `fetch_plugins.sh` – download plugin repositories listed in `plugin_list.txt` using `pull_plugins.py`.
+  The list now points to publicly accessible GitHub repositories so the script
+  can be run without errors. `pull_plugins.py` will try both `master` and `main`
+  branches when downloading.

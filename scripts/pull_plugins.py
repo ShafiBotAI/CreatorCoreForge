@@ -10,13 +10,32 @@ from pathlib import Path
 import requests
 
 def download_repo(repo: str, dest: Path, branch: str = "master") -> None:
-    """Download repo in the form owner/repo to the destination directory."""
+    """Download repo in the form owner/repo to the destination directory.
+
+    If the chosen branch doesn't exist, the function will also try the common
+    alternative branch name (``main`` or ``master``).
+    """
+
     dest.mkdir(parents=True, exist_ok=True)
-    url = f"https://codeload.github.com/{repo}/zip/refs/heads/{branch}"
-    resp = requests.get(url, timeout=30)
-    resp.raise_for_status()
-    with zipfile.ZipFile(io.BytesIO(resp.content)) as zf:
-        zf.extractall(dest)
+
+    branches = [branch]
+    # Try the alternate branch name if the requested one fails
+    alternate = "main" if branch == "master" else "master"
+    if alternate not in branches:
+        branches.append(alternate)
+
+    for br in branches:
+        url = f"https://codeload.github.com/{repo}/zip/refs/heads/{br}"
+        resp = requests.get(url, timeout=30)
+        if resp.status_code == 200:
+            with zipfile.ZipFile(io.BytesIO(resp.content)) as zf:
+                zf.extractall(dest)
+            print(f"Downloaded {repo}@{br}")
+            return
+        else:
+            print(f"Failed to download {repo}@{br}: HTTP {resp.status_code}")
+
+    raise RuntimeError(f"Could not download {repo}; checked branches: {branches}")
 
 if __name__ == "__main__":
     if not 3 <= len(sys.argv) <= 4:
@@ -27,5 +46,9 @@ if __name__ == "__main__":
     dest = Path(sys.argv[2])
     branch = sys.argv[3] if len(sys.argv) == 4 else "master"
 
-    download_repo(repo, dest, branch)
-    print("Download complete")
+    try:
+        download_repo(repo, dest, branch)
+        print("Download complete")
+    except Exception as exc:
+        print(f"Error: {exc}")
+        sys.exit(1)

@@ -1,2 +1,2 @@
-CreatorCoreForge/sample-plugin
-CreatorCoreForge/example-plugin
+octocat/Hello-World
+psf/requests
