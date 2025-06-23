@@ -1,36 +1,47 @@
-#if canImport(Combine)
-
-import Combine
-
 import Foundation
 #if canImport(AVFoundation)
 import AVFoundation
 #endif
+#if canImport(Combine)
+import Combine
+#endif
 
-
-
-
-/// Manages short sound effects for the FusionEngine apps.
-/// Provides async fade-out control when stopping effects.
-/// Simple manager for playing short audio clips. ObservableObject is avoided
-/// to keep the package cross-platform.
+/// Cross-platform manager for short sound effects and ambience.
+#if canImport(Combine)
+public final class SoundEffectManager: ObservableObject {
+    @Published public private(set) var currentAmbience: String = "None"
+#else
 public final class SoundEffectManager {
+    public private(set) var currentAmbience: String = "None"
+#endif
     public static let shared = SoundEffectManager()
-
     private init() {}
 
-    #if canImport(AVFoundation)
+#if canImport(AVFoundation)
     private var audioPlayers: [String: AVAudioPlayer] = [:]
     private var panValues: [String: Float] = [:]
     private let environmentQueue = DispatchQueue(label: "sound.environment.queue")
+    private let ambienceFiles: [String: String] = [
+        "Rain": "rain_loop",
+        "Wind": "wind_loop",
+        "Fire": "fireplace",
+        "Battlefield": "battle_ambience",
+        "Cafe": "cafe_background"
+    ]
+#else
+    private var audioPlayers: [String: Int] = [:]
+    private var panValues: [String: Float] = [:]
+    private let ambienceFiles: [String: String] = [:]
+#endif
 
-    /// Play a sound effect using AVAudioPlayer on a background queue.
+    // MARK: - Effects
     public func playEffect(named name: String,
                            fileExtension: String = "mp3",
                            loop: Bool = false,
                            volume: Float = 1.0,
                            pan: Float = 0.0) {
-        environmentQueue.async {
+#if canImport(AVFoundation)
+        environmentQueue.async { [self] in
             guard let url = Bundle.main.url(forResource: name, withExtension: fileExtension) else {
                 print("[SoundEffectManager] Missing file: \(name).\(fileExtension)")
                 return
@@ -42,26 +53,27 @@ public final class SoundEffectManager {
                 player.numberOfLoops = loop ? -1 : 0
                 player.prepareToPlay()
                 player.play()
-
-                DispatchQueue.main.async { [weak self] in
-                    self?.audioPlayers[name] = player
-                    self?.panValues[name] = pan
+                DispatchQueue.main.async {
+                    self.audioPlayers[name] = player
+                    self.panValues[name] = pan
                 }
             } catch {
                 print("[SoundEffectManager] Failed to play \(name): \(error.localizedDescription)")
             }
         }
+#else
+        panValues[name] = pan
+#endif
     }
 
-    /// Stop a specific sound effect, optionally fading out over a duration.
     public func stopEffect(named name: String, fadeOutDuration: TimeInterval = 0) {
+#if canImport(AVFoundation)
         guard let player = audioPlayers[name] else { return }
         guard fadeOutDuration > 0 else {
             player.stop()
             audioPlayers.removeValue(forKey: name)
             return
         }
-
         Task.detached { [weak self, weak player] in
             guard let player = player else { return }
             let steps = 10
@@ -72,23 +84,27 @@ public final class SoundEffectManager {
                     player.volume = Float(step) / Float(steps)
                 }
             }
-            DispatchQueue.main.async { [weak self] in
+            DispatchQueue.main.async {
                 player.stop()
                 self?.audioPlayers.removeValue(forKey: name)
             }
         }
+#endif
     }
 
-    /// Stop all currently playing sound effects.
-    /// - Parameter fadeOutDuration: optional fade-out applied to each effect.
     public func stopAll(fadeOutDuration: TimeInterval = 0) {
+#if canImport(AVFoundation)
         for key in audioPlayers.keys {
             stopEffect(named: key, fadeOutDuration: fadeOutDuration)
         }
+        panValues.removeAll()
+#else
+        panValues.removeAll()
+#endif
     }
 
-    /// Preload sound effects to reduce latency on first play.
     public func preloadEffects(names: [String], fileExtension: String = "mp3") {
+#if canImport(AVFoundation)
         for name in names {
             guard let url = Bundle.main.url(forResource: name, withExtension: fileExtension) else { continue }
             do {
@@ -99,74 +115,30 @@ public final class SoundEffectManager {
                 print("[SoundEffectManager] Preload failed for \(name)")
             }
         }
+#endif
     }
 
-    /// Adjust the volume for a currently loaded sound effect.
     public func setVolume(for name: String, volume: Float) {
+#if canImport(AVFoundation)
         audioPlayers[name]?.volume = volume
+#endif
     }
 
-    /// Query whether a particular effect is playing.
     public func isEffectPlaying(_ name: String) -> Bool {
-        audioPlayers[name]?.isPlaying ?? false
+#if canImport(AVFoundation)
+        return audioPlayers[name]?.isPlaying ?? false
+#else
+        return false
+#endif
     }
 
-    /// Get the current pan value for a sound effect.
     public func currentPan(for name: String) -> Float? {
         panValues[name]
     }
-    #else
-    // Placeholder implementations for platforms without AVFoundation
-    private var audioPlayers: [String: Int] = [:]
-    private var panValues: [String: Float] = [:]
 
-    public func playEffect(named name: String,
-                           fileExtension: String = "mp3",
-                           loop: Bool = false,
-                           volume: Float = 1.0,
-                           pan: Float = 0.0) { panValues[name] = pan }
-
-    public func stopEffect(named name: String, fadeOutDuration: TimeInterval = 0) {}
-
-    public func stopAll(fadeOutDuration: TimeInterval = 0) { panValues.removeAll() }
-
-    public func preloadEffects(names: [String], fileExtension: String = "mp3") {}
-
-    public func setVolume(for name: String, volume: Float) {}
-
-    public func isEffectPlaying(_ name: String) -> Bool { false }
-
-    public func currentPan(for name: String) -> Float? { panValues[name] }
-    #endif
-}
-
-// Example FX file names to be used:
-// - "wind_gust", "rain_loop", "heartbeat_slow", "cave_echo", "footstep_gravel", "battle_distant", "crowd_chatter"
-// These can be tied to tagged scenes or characters using the EnvironmentLayer engine.
-
-import Combine
-
-#if canImport(AVFoundation)
-
-
-/// Manages ambient sound effects for immersive playback.
-public final class SoundEffectManager: ObservableObject {
-    /// Shared singleton instance.
-    public static let shared = SoundEffectManager()
-
-    #if canImport(AVFoundation)
-    @Published public private(set) var currentAmbience: String = "None"
-    private var audioPlayers: [String: AVAudioPlayer] = [:]
-    private let ambienceFiles: [String: String] = [
-        "Rain": "rain_loop",
-        "Wind": "wind_loop",
-        "Fire": "fireplace",
-        "Battlefield": "battle_ambience",
-        "Cafe": "cafe_background"
-    ]
-
-    /// Play a looping ambience clip by name.
+    // MARK: - Ambience
     public func playAmbience(named name: String) {
+#if canImport(AVFoundation)
         stopAllAmbience()
         guard let fileName = ambienceFiles[name],
               let url = Bundle.main.url(forResource: fileName, withExtension: "mp3") else {
@@ -184,119 +156,44 @@ public final class SoundEffectManager: ObservableObject {
         } catch {
             print("[SoundEffectManager] Failed to play \(name): \(error.localizedDescription)")
         }
+#else
+        currentAmbience = name
+#endif
     }
 
-    /// Stop all currently playing ambience tracks.
     public func stopAllAmbience() {
+#if canImport(AVFoundation)
         for (_, player) in audioPlayers { player.stop() }
         audioPlayers.removeAll()
+#endif
         currentAmbience = "None"
     }
 
-    /// Preload ambience audio files into memory.
     public func preloadAmbiences() {
+#if canImport(AVFoundation)
         for (_, file) in ambienceFiles {
             if let url = Bundle.main.url(forResource: file, withExtension: "mp3") {
                 _ = try? AVAudioPlayer(contentsOf: url)
             }
         }
+#endif
     }
 
-    /// Create a configured reverb unit for the given preset.
+#if canImport(AVFoundation)
     public func triggerReverbPreset(preset: ReverbStyle) -> AVAudioUnitReverb {
         let reverb = AVAudioUnitReverb()
         reverb.loadFactoryPreset(preset.avPreset)
         reverb.wetDryMix = 50.0
         return reverb
     }
-    #else
-    @Published public private(set) var currentAmbience: String = "None"
-    public func playAmbience(named name: String) { currentAmbience = name }
-    public func stopAllAmbience() { currentAmbience = "None" }
-    public func preloadAmbiences() {}
+#else
     public func triggerReverbPreset(preset: ReverbStyle) {}
-    #endif
+#endif
 }
-#endif
-#else
-import Foundation
+
 #if canImport(AVFoundation)
-import AVFoundation
-#endif
-
-/// Basic sound effect manager used when Combine is unavailable.
-public final class SoundEffectManager {
-    public static let shared = SoundEffectManager()
-#if canImport(AVFoundation)
-    private var ambiencePlayers: [String: AVAudioPlayer] = [:]
-#endif
-    private var effectPan: [String: Float] = [:]
-#if canImport(AVFoundation)
-#endif
-    public private(set) var currentAmbience: String = "None"
-
-    public func playEffect(named name: String,
-                           fileExtension: String = "mp3",
-                           loop: Bool = false,
-                           volume: Float = 1.0,
-                           pan: Float = 0.0) {
-#if canImport(AVFoundation)
-        if let url = Bundle.main.url(forResource: name, withExtension: fileExtension),
-           let player = try? AVAudioPlayer(contentsOf: url) {
-            player.numberOfLoops = loop ? -1 : 0
-            player.volume = volume
-            player.pan = max(-1.0, min(pan, 1.0))
-            player.play()
-            ambiencePlayers[name] = player
-        }
-#endif
-        effectPan[name] = pan
-    }
-
-    public func playAmbience(named name: String) {
-        currentAmbience = name
-#if canImport(AVFoundation)
-        if let url = Bundle.main.url(forResource: name, withExtension: "mp3"),
-           let player = try? AVAudioPlayer(contentsOf: url) {
-            player.numberOfLoops = -1
-            player.play()
-            ambiencePlayers[name] = player
-        } else {
-            print("[SoundEffectManager] Missing ambience \(name)")
-        }
-#else
-        print("[SoundEffectManager] Playing ambience \(name)")
-#endif
-    }
-
-    public func stopAllAmbience() {
-        currentAmbience = "None"
-#if canImport(AVFoundation)
-        ambiencePlayers.values.forEach { $0.stop() }
-        ambiencePlayers.removeAll()
-#endif
-    }
-
-    public func preloadAmbiences() {}
-
-    public func triggerReverbPreset(preset: ReverbStyle) {
-#if canImport(AVFoundation)
-        print("[SoundEffectManager] Applying reverb \(preset.rawValue)")
-#else
-        print("Applying reverb preset \(preset.rawValue)")
-#endif
-    }
-
-    public func currentPan(for name: String) -> Float? {
-        effectPan[name]
-    }
-}
-#endif
-
-/// Supported reverb styles for ambience effects.
 public enum ReverbStyle: String, CaseIterable, Codable {
     case cathedral, cave, underwater, hall, dreamlike
-    #if canImport(AVFoundation)
     var avPreset: AVAudioUnitReverbPreset {
         switch self {
         case .cathedral: return .cathedral
@@ -306,5 +203,9 @@ public enum ReverbStyle: String, CaseIterable, Codable {
         case .dreamlike: return .plate
         }
     }
-    #endif
 }
+#else
+public enum ReverbStyle: String, CaseIterable, Codable {
+    case cathedral, cave, underwater, hall, dreamlike
+}
+#endif
