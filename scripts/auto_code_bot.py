@@ -11,32 +11,38 @@ except ImportError:
 from feature_audit import scan_repo
 
 
+def offline_snippet(description: str) -> str:
+    """Return a very small placeholder snippet."""
+    tokens = re.findall(r"[a-zA-Z_]+", description)[:5]
+    name = sanitize("_".join(tokens).lower()) or "feature"
+    return f"def {name}():\n    \"\"\"{description}\"\"\"\n    pass\n"
+
+
 def sanitize(name: str) -> str:
     """Return a filesystem-safe name."""
     return re.sub(r"[^a-zA-Z0-9_]+", "_", name.strip()).strip("_") or "feature"
 
 
 def generate_snippet(description: str) -> str:
-    """Generate a code snippet using OpenAI if available."""
-    if not OPENAI_AVAILABLE:
-        return f"# TODO: implement {description}\n"
-    api_key = os.getenv("OPENAI_API_KEY")
-    if not api_key:
-        return f"# TODO: implement {description}\n"
-    openai.api_key = api_key
-    prompt = (
-        "Write a concise code snippet or function to address the following feature:\n"
-        f"{description}\n"
-    )
-    try:
-        resp = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
-            messages=[{"role": "user", "content": prompt}],
-            max_tokens=200,
+    """Generate a code snippet using OpenAI or fallback offline mode."""
+    if OPENAI_AVAILABLE and os.getenv("OPENAI_API_KEY"):
+        api_key = os.getenv("OPENAI_API_KEY")
+        openai.api_key = api_key
+        prompt = (
+            "Write a concise code snippet or function to address the following feature:\n"
+            f"{description}\n"
         )
-        return resp.choices[0].message["content"].strip() + "\n"
-    except Exception:
-        return f"# TODO: implement {description}\n"
+        try:
+            resp = openai.ChatCompletion.create(
+                model="gpt-3.5-turbo",
+                messages=[{"role": "user", "content": prompt}],
+                max_tokens=200,
+            )
+            return resp.choices[0].message["content"].strip() + "\n"
+        except Exception:
+            return offline_snippet(description)
+    else:
+        return offline_snippet(description)
 
 
 def create_files(repo_path: str) -> None:
