@@ -1,0 +1,5 @@
+# Auto-generated for Optional NSFW wellness modules
+def optional_nsfw_wellness_modules():
+    """Optional NSFW wellness modules"""
+    pass
+

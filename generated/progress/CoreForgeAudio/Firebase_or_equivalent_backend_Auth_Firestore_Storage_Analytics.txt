@@ -1,0 +1,5 @@
+# Auto-generated for Firebase or equivalent backend (Auth, Firestore, Storage, Analytics)
+def firebase_or_equivalent_backend_auth():
+    """Firebase or equivalent backend (Auth, Firestore, Storage, Analytics)"""
+    pass
+

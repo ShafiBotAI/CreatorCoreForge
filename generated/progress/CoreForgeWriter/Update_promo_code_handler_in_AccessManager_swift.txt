@@ -1,0 +1,5 @@
+# Auto-generated for Update promo code handler in `AccessManager.swift`
+def update_promo_code_handler_in():
+    """Update promo code handler in `AccessManager.swift`"""
+    pass
+

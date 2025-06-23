@@ -1,0 +1,5 @@
+# Auto-generated for Embed Booktok Trailer Generator + auto-caption tool
+def embed_booktok_trailer_generator_auto():
+    """Embed Booktok Trailer Generator + auto-caption tool"""
+    pass
+

@@ -1,0 +1,5 @@
+# Auto-generated for Curriculum designer and quiz builder
+def curriculum_designer_and_quiz_builder():
+    """Curriculum designer and quiz builder"""
+    pass
+

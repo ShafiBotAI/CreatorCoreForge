@@ -1,0 +1,5 @@
+# Auto-generated for Copy trading, social sharing, leaderboards
+def copy_trading_social_sharing_leaderboards():
+    """Copy trading, social sharing, leaderboards"""
+    pass
+

@@ -1,0 +1,5 @@
+# Auto-generated for Build AI Sandbox co-author tool
+def build_ai_sandbox_co_author():
+    """Build AI Sandbox co-author tool"""
+    pass
+

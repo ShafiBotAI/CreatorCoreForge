@@ -1,0 +1,5 @@
+# Auto-generated for Outline admin release protocols
+def outline_admin_release_protocols():
+    """Outline admin release protocols"""
+    pass
+

@@ -1,0 +1,5 @@
+# Auto-generated for Code signing, notarization, and compliance with App Store, Google Play, and Microsoft Store policies
+def code_signing_notarization_and_compliance():
+    """Code signing, notarization, and compliance with App Store, Google Play, and Microsoft Store policies"""
+    pass
+

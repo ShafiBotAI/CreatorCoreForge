@@ -1,0 +1,5 @@
+# Auto-generated for Offline mode with cross-device sync
+def offline_mode_with_cross_device():
+    """Offline mode with cross-device sync"""
+    pass
+

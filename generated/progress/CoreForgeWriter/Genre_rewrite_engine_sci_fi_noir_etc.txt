@@ -1,0 +1,5 @@
+# Auto-generated for Genre rewrite engine (sci-fi → noir, etc.)
+def genre_rewrite_engine_sci_fi():
+    """Genre rewrite engine (sci-fi → noir, etc.)"""
+    pass
+

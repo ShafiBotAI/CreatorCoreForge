@@ -1,0 +1,5 @@
+# Auto-generated for Sleep Read Mode (ambient fade, user timer)
+def sleep_read_mode_ambient_fade():
+    """Sleep Read Mode (ambient fade, user timer)"""
+    pass
+

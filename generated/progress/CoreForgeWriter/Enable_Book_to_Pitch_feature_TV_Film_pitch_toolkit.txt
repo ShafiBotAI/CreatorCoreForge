@@ -1,0 +1,5 @@
+# Auto-generated for Enable Book-to-Pitch feature (TV/Film pitch toolkit)
+def enable_book_to_pitch_feature():
+    """Enable Book-to-Pitch feature (TV/Film pitch toolkit)"""
+    pass
+

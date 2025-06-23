@@ -1,0 +1,5 @@
+# Auto-generated for Add auto-expand subplots + side character arcs
+def add_auto_expand_subplots_side():
+    """Add auto-expand subplots + side character arcs"""
+    pass
+

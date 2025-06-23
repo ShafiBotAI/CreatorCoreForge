@@ -1,0 +1,5 @@
+# Auto-generated for Integrate with OpenAI service
+def integrate_with_openai_service():
+    """Integrate with OpenAI service"""
+    pass
+

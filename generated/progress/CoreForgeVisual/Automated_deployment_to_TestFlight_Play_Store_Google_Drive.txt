@@ -1,0 +1,5 @@
+# Auto-generated for Automated deployment to TestFlight, Play Store, Google Drive
+def automated_deployment_to_testflight_play():
+    """Automated deployment to TestFlight, Play Store, Google Drive"""
+    pass
+

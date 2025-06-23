@@ -1,0 +1,5 @@
+# Auto-generated for Live NSFW collab rooms, invite-only video sessions
+def live_nsfw_collab_rooms_invite():
+    """Live NSFW collab rooms, invite-only video sessions"""
+    pass
+

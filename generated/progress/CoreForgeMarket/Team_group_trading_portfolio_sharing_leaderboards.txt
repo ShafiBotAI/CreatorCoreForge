@@ -1,0 +1,5 @@
+# Auto-generated for Team/group trading, portfolio sharing, leaderboards
+def team_group_trading_portfolio_sharing():
+    """Team/group trading, portfolio sharing, leaderboards"""
+    pass
+

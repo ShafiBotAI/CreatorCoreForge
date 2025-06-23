@@ -1,0 +1,5 @@
+# Auto-generated for Consent checklist, privacy vaults, pay-per-story unlocks
+def consent_checklist_privacy_vaults_pay():
+    """Consent checklist, privacy vaults, pay-per-story unlocks"""
+    pass
+

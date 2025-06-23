@@ -1,0 +1,5 @@
+# Auto-generated for Group “Watch” rooms for live viewing, chat, and voting
+def group_watch_rooms_for_live():
+    """Group “Watch” rooms for live viewing, chat, and voting"""
+    pass
+

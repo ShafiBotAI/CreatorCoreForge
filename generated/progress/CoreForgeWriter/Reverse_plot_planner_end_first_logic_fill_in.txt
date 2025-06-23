@@ -1,0 +1,5 @@
+# Auto-generated for Reverse plot planner (end-first logic fill-in)
+def reverse_plot_planner_end_first():
+    """Reverse plot planner (end-first logic fill-in)"""
+    pass
+

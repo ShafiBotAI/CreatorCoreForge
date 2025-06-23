@@ -1,0 +1,5 @@
+# Auto-generated for Premium NSFW voice/FX asset packs
+def premium_nsfw_voice_fx_asset():
+    """Premium NSFW voice/FX asset packs"""
+    pass
+

@@ -1,0 +1,5 @@
+# Auto-generated for Marketplace for voices, SFX, templates, narration packs
+def marketplace_for_voices_sfx_templates():
+    """Marketplace for voices, SFX, templates, narration packs"""
+    pass
+

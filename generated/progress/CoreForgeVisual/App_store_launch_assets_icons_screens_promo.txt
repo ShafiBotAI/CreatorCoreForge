@@ -1,0 +1,5 @@
+# Auto-generated for App store/launch assets (icons, screens, promo)
+def app_store_launch_assets_icons():
+    """App store/launch assets (icons, screens, promo)"""
+    pass
+

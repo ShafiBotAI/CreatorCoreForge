@@ -1,0 +1,5 @@
+# Auto-generated for Shadow trading, copy trading, arbitrage finder
+def shadow_trading_copy_trading_arbitrage():
+    """Shadow trading, copy trading, arbitrage finder"""
+    pass
+

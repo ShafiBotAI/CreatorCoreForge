@@ -1,0 +1,5 @@
+# Auto-generated for Document admin responsibilities and contacts
+def document_admin_responsibilities_and_contacts():
+    """Document admin responsibilities and contacts"""
+    pass
+

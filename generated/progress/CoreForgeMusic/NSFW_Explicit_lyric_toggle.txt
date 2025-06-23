@@ -1,0 +1,5 @@
+# Auto-generated for NSFW/Explicit lyric toggle
+def nsfw_explicit_lyric_toggle():
+    """NSFW/Explicit lyric toggle"""
+    pass
+

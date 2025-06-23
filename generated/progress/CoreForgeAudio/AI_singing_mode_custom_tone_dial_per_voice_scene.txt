@@ -1,0 +1,5 @@
+# Auto-generated for AI singing mode, custom tone dial per voice/scene
+def ai_singing_mode_custom_tone():
+    """AI singing mode, custom tone dial per voice/scene"""
+    pass
+

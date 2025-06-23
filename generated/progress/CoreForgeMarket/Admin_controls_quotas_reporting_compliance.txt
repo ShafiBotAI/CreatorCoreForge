@@ -1,0 +1,5 @@
+# Auto-generated for Admin controls: quotas, reporting, compliance
+def admin_controls_quotas_reporting_compliance():
+    """Admin controls: quotas, reporting, compliance"""
+    pass
+

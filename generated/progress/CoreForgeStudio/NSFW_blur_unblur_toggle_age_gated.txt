@@ -1,0 +1,5 @@
+# Auto-generated for NSFW blur/unblur toggle (age gated)
+def nsfw_blur_unblur_toggle_age():
+    """NSFW blur/unblur toggle (age gated)"""
+    pass
+

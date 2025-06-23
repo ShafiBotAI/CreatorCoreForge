@@ -1,0 +1,5 @@
+# Auto-generated for Maintain per-app AGENTS.md files
+def maintain_per_app_agents_md():
+    """Maintain per-app AGENTS.md files"""
+    pass
+

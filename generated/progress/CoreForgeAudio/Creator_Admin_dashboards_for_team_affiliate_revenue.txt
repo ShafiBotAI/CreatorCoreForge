@@ -1,0 +1,5 @@
+# Auto-generated for Creator/Admin dashboards for team, affiliate, revenue
+def creator_admin_dashboards_for_team():
+    """Creator/Admin dashboards for team, affiliate, revenue"""
+    pass
+

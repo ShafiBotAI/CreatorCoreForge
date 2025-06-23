@@ -1,0 +1,5 @@
+# Auto-generated for In-book voice/tone polls (live user voting)
+def in_book_voice_tone_polls():
+    """In-book voice/tone polls (live user voting)"""
+    pass
+

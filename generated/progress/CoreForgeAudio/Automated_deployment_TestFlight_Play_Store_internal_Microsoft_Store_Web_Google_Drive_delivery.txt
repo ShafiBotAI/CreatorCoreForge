@@ -1,0 +1,5 @@
+# Auto-generated for Automated deployment: TestFlight, Play Store internal, Microsoft Store, Web, Google Drive delivery
+def automated_deployment_testflight_play_store():
+    """Automated deployment: TestFlight, Play Store internal, Microsoft Store, Web, Google Drive delivery"""
+    pass
+

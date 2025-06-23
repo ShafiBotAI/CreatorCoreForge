@@ -1,0 +1,5 @@
+# Auto-generated for Update migration guides for new modules
+def update_migration_guides_for_new():
+    """Update migration guides for new modules"""
+    pass
+

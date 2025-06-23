@@ -1,0 +1,5 @@
+# Auto-generated for Auto-generate blurb, synopsis, back cover copy
+def auto_generate_blurb_synopsis_back():
+    """Auto-generate blurb, synopsis, back cover copy"""
+    pass
+

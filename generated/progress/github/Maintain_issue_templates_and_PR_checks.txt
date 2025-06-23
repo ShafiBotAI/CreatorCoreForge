@@ -1,0 +1,5 @@
+# Auto-generated for Maintain issue templates and PR checks
+def maintain_issue_templates_and_pr():
+    """Maintain issue templates and PR checks"""
+    pass
+

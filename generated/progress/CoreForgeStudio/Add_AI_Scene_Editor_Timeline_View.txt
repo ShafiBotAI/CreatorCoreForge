@@ -1,0 +1,5 @@
+# Auto-generated for Add AI Scene Editor Timeline View
+def add_ai_scene_editor_timeline():
+    """Add AI Scene Editor Timeline View"""
+    pass
+

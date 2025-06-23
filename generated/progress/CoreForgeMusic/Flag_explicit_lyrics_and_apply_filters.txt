@@ -1,0 +1,5 @@
+# Auto-generated for Flag explicit lyrics and apply filters
+def flag_explicit_lyrics_and_apply():
+    """Flag explicit lyrics and apply filters"""
+    pass
+

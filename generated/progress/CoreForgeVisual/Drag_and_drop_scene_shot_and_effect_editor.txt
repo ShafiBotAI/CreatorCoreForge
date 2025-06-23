@@ -1,0 +1,5 @@
+# Auto-generated for Drag-and-drop scene, shot, and effect editor
+def drag_and_drop_scene_shot():
+    """Drag-and-drop scene, shot, and effect editor"""
+    pass
+

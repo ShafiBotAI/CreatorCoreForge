@@ -1,0 +1,5 @@
+# Auto-generated for Meme/video generator, social sharing templates
+def meme_video_generator_social_sharing():
+    """Meme/video generator, social sharing templates"""
+    pass
+

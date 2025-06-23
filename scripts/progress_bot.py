@@ -96,12 +96,11 @@ def sanitize(name: str) -> str:
 
 if __name__ == '__main__':
     tasks_file = os.path.join('docs', 'OPEN_TASKS.md')
-    impl, miss = parse_open_tasks(tasks_file)
+    impl, miss, tasks = parse_open_tasks(tasks_file)
     progress = calc_progress(impl, miss)
     print("Current app progress:")
     print_progress(progress)
 
-    tasks = impl_miss_tasks[2] if isinstance(impl_miss_tasks := parse_open_tasks(tasks_file), tuple) else {}
     if OPENAI_AVAILABLE and os.getenv('OPENAI_API_KEY'):
         print("\nGenerating code snippets for missing features...\n")
     else:

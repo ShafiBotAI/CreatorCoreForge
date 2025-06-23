@@ -1,0 +1,5 @@
+# Auto-generated for Support iOS, Android, PC, macOS, and Web platforms
+def support_ios_android_pc_macos():
+    """Support iOS, Android, PC, macOS, and Web platforms"""
+    pass
+

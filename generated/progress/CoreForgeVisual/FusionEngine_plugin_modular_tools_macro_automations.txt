@@ -1,0 +1,5 @@
+# Auto-generated for FusionEngine plugin/modular tools, macro automations
+def fusionengine_plugin_modular_tools_macro():
+    """FusionEngine plugin/modular tools, macro automations"""
+    pass
+

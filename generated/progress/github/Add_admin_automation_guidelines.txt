@@ -1,0 +1,5 @@
+# Auto-generated for Add admin automation guidelines
+def add_admin_automation_guidelines():
+    """Add admin automation guidelines"""
+    pass
+

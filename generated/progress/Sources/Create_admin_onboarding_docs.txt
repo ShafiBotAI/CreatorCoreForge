@@ -1,0 +1,5 @@
+# Auto-generated for Create admin onboarding docs
+def create_admin_onboarding_docs():
+    """Create admin onboarding docs"""
+    pass
+

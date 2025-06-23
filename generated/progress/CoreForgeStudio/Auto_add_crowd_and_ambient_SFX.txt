@@ -1,0 +1,5 @@
+# Auto-generated for Auto-add crowd and ambient SFX
+def auto_add_crowd_and_ambient():
+    """Auto-add crowd and ambient SFX"""
+    pass
+

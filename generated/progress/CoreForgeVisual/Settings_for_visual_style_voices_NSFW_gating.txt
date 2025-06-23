@@ -1,0 +1,5 @@
+# Auto-generated for Settings for visual style, voices, NSFW gating
+def settings_for_visual_style_voices():
+    """Settings for visual style, voices, NSFW gating"""
+    pass
+

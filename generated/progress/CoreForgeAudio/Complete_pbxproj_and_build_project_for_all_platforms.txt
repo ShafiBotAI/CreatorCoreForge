@@ -1,0 +1,5 @@
+# Auto-generated for Complete `.pbxproj` and build project for all platforms
+def complete_pbxproj_and_build_project():
+    """Complete `.pbxproj` and build project for all platforms"""
+    pass
+

@@ -1,0 +1,5 @@
+# Auto-generated for White label and enterprise branding options
+def white_label_and_enterprise_branding():
+    """White label and enterprise branding options"""
+    pass
+

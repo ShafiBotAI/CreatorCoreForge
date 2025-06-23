@@ -1,0 +1,5 @@
+# Auto-generated for Fan cameo generator (render fan avatars into scenes)
+def fan_cameo_generator_render_fan():
+    """Fan cameo generator (render fan avatars into scenes)"""
+    pass
+

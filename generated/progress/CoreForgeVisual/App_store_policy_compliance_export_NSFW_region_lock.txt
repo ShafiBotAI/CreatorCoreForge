@@ -1,0 +1,5 @@
+# Auto-generated for App store policy compliance (export, NSFW, region lock)
+def app_store_policy_compliance_export():
+    """App store policy compliance (export, NSFW, region lock)"""
+    pass
+

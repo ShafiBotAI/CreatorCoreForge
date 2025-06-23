@@ -1,0 +1,5 @@
+# Auto-generated for Portfolio management, auto-rebalancing
+def portfolio_management_auto_rebalancing():
+    """Portfolio management, auto-rebalancing"""
+    pass
+

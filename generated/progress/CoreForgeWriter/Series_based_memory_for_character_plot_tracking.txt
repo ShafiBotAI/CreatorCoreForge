@@ -1,0 +1,5 @@
+# Auto-generated for Series-based memory for character/plot tracking
+def series_based_memory_for_character():
+    """Series-based memory for character/plot tracking"""
+    pass
+
