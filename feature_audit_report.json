@@ -931,12 +931,12 @@
   },
   "VoiceLab": {
     "implemented": [
-      "`LocalVoiceAI` \u2013 train and export local voice models. (`VoiceLab/test/index.test.ts`)"
+      "`LocalVoiceAI` \u2013 train and export local voice models. (`VoiceLab/test/index.test.ts`)",
+      "Ensure voice training scripts run via CI (`scripts/run_all_tests.sh`)",
+      "Keep React components typed and tested (`VoiceLab/test/VoiceLabUI.test.tsx`)",
+      "Integrate with OpenAI service (`VoiceLab/src/openaiService.ts`)"
     ],
     "missing": [
-      "Ensure voice training scripts run via CI",
-      "Keep React components typed and tested",
-      "Integrate with OpenAI service",
       "Document new APIs",
       "Catalog admin troubleshooting tips",
       "Includes **UnifiedAudioEngine** for global volume control and fade transitions across web tools.",
@@ -978,15 +978,16 @@
     ]
   },
   "VisualLab": {
-    "implemented": [],
+    "implemented": [
+      "Maintain CI workflow for `npm test` (`scripts/run_all_tests.sh`)",
+      "Update dependencies and tsconfig (`VisualLab/package.json`)",
+      "**UnifiedAudioEngine** provides global volume control with fade transitions shared across apps. (`VisualLab/src/UnifiedAudioEngine.ts`)",
+      "**PerformanceService** now supports automatic 4K rendering when hardware allows. (`VisualLab/src/PerformanceService.ts`)"
+    ],
     "missing": [
-      "Maintain CI workflow for `npm test`",
-      "Update dependencies and tsconfig",
       "Sync features with CoreForge Visual",
       "Document advanced usage in README",
-      "Record admin oversight procedures",
-      "**UnifiedAudioEngine** provides global volume control with fade transitions shared across apps.",
-      "**PerformanceService** now supports automatic 4K rendering when hardware allows."
+      "Record admin oversight procedures"
     ]
   }
 }
