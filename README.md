@@ -377,3 +377,9 @@ This ensures `jest`, `ts-node`, and other dev tools are available.
 
 ## CI/CD
 The repository uses GitHub Actions workflows for building, testing, and releasing the apps across platforms. See the files in [.github/workflows](./.github/workflows) for details.
+
+
+## Fetching n8n Workflow Engine
+
+Use `./scripts/fetch_n8n.sh` to clone or update the [n8n](https://github.com/n8n-io/n8n) automation engine under `external/n8n`. Review the license printed at the end of the script before integrating it into your projects.
+
