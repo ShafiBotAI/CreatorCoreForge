@@ -11,16 +11,19 @@ public class DNATreeNode {
     }
 }
 
-/// Placeholder visualizer that converts the tree into a simple text diagram.
+/// Renders a tree of DNA nodes using box-drawing characters.
 public struct DNATreeVisualizer {
     public static func render(_ root: DNATreeNode) -> String {
-        func helper(_ node: DNATreeNode, _ prefix: String) -> String {
-            var result = prefix + "- " + node.name + "\n"
-            for child in node.children {
-                result += helper(child, prefix + "  ")
+        func helper(_ node: DNATreeNode, _ prefix: String, _ isLast: Bool) -> String {
+            var line = prefix
+            line += isLast ? "└─ " : "├─ "
+            line += node.name + "\n"
+            let nextPrefix = prefix + (isLast ? "   " : "│  ")
+            for (idx, child) in node.children.enumerated() {
+                line += helper(child, nextPrefix, idx == node.children.count - 1)
             }
-            return result
+            return line
         }
-        return helper(root, "")
+        return helper(root, "", true)
     }
 }
