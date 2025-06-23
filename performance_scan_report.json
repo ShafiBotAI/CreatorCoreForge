@@ -1,0 +1,16 @@
+{
+  "VisualLab/src/lensFlareService.ts": [
+    {
+      "line": 19,
+      "optimization": "nested_loop",
+      "suggestion": "Use precomputed offsets array to avoid double iteration"
+    }
+  ],
+  "VisualLab/src/CacheService.ts": [
+    {
+      "line": 3,
+      "optimization": "unbounded_cache",
+      "suggestion": "Add LRU eviction to limit memory usage"
+    }
+  ]
+}
