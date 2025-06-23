@@ -1,0 +1,4115 @@
+{
+  "./docker-compose.yml": {
+    "total_lines": 15,
+    "placeholder_percentage": 0.06666666666666667,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 15,
+        "keyword": "Mock",
+        "content": "command: node mock-tts.js"
+      }
+    ]
+  },
+  "./CHANGELOG.md": {
+    "total_lines": 18,
+    "placeholder_percentage": 0.16666666666666666,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 9,
+        "keyword": "Placeholder",
+        "content": "- Added audio personalization and immersive feature placeholders (`ReplayAnalyticsService`, `SleepReadMode`, `EmotionShiftTracker`, `VoiceReviewSystem`, `AutoCastingEngine`, `PronunciationEditor`, `NarrationScheduler`, `SpatialAudioSupport`, `EmotionPacingEditor`, `SmartAmbientMixer`, `AutoRemixMode`, `AccessibilityOutput`, `WatchSyncService`, `VoicePolls`, `HeartRateAdaptiveAudio`, `UnlockableVoiceSkins`, `PersonalizedGreetingService`, `AdvancedTimelineEditor`, `BrailleOutputService`, `PronunciationDictionary`) to `CoreForgeAudio` in `features-phase8.json`."
+      },
+      {
+        "line": 11,
+        "keyword": "Placeholder",
+        "content": "- Added placeholder implementations for Visual and Writer features (`StoryboardImporter`, `SceneSegmenter`, `StyleEngine`, `FrameRenderer`, `OutlineGenerator`, `WorldMemoryService`, `BranchService`, `ExportService`)."
+      },
+      {
+        "line": 13,
+        "keyword": "Placeholder",
+        "content": "- Replaced placeholder implementations for `DynamicChapterTransitions`, `AdaptiveMusicGenerator`,"
+      }
+    ]
+  },
+  "./OpenAI-Integration.md": {
+    "total_lines": 65,
+    "placeholder_percentage": 0.046153846153846156,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 25,
+        "keyword": "Mock",
+        "content": "- Write unit tests using a mocked OpenAI client."
+      },
+      {
+        "line": 50,
+        "keyword": "Example",
+        "content": "you can reach the maintainers at `support@example.com`."
+      },
+      {
+        "line": 57,
+        "keyword": "Example",
+        "content": "For local development copy `.env.example` to `.env` and supply your `OPENAI_API_KEY`. This file is ignored by git."
+      }
+    ]
+  },
+  "./README.md": {
+    "total_lines": 391,
+    "placeholder_percentage": 0.005115089514066497,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 307,
+        "keyword": "Example",
+        "content": "Copy `.env.example` to `.env` and provide your `OPENAI_API_KEY` before running any app or tests. The shared `OpenAIService` reads this value at runtime."
+      },
+      {
+        "line": 364,
+        "keyword": "Sample",
+        "content": "Use `scripts/chatterbox_bridge.py` to generate a narrated play from a simple `SPEAKER: line` script. Place `speaker.mp3` samples next to your script and set `CHATTERBOX_API_URL` before running:"
+      }
+    ]
+  },
+  "./feature_audit_report.json": {
+    "total_lines": 1697,
+    "placeholder_percentage": 0.004714201532115498,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 246,
+        "keyword": "Example",
+        "content": "\"Provide multilingual visual cue glossary with usage examples (`generated/CoreForgeVisual/Provide_multilingual_visual_cue_glossary_with_usage_examples.py`)\","
+      },
+      {
+        "line": 329,
+        "keyword": "TODO",
+        "content": "\"`PRACTICAL_PLAN.md` \\u2013 initial TODO list across apps.\","
+      },
+      {
+        "line": 496,
+        "keyword": "Sample",
+        "content": "\"Prompt validation with multiple sample inputs and outputs\","
+      },
+      {
+        "line": 507,
+        "keyword": "Sample",
+        "content": "\"PromptTemplates.md (AI workflows, sample prompts)\","
+      },
+      {
+        "line": 754,
+        "keyword": "Sample",
+        "content": "\"Allow users to test voice preview samples per character before rendering\","
+      },
+      {
+        "line": 884,
+        "keyword": "Content for",
+        "content": "\"Flag NSFW content for internal moderation or publishing filter logic\","
+      },
+      {
+        "line": 885,
+        "keyword": "Content for",
+        "content": "\"Auto-detect safe vs. unsafe content for preview-only versions\","
+      },
+      {
+        "line": 1621,
+        "keyword": "Example",
+        "content": "\"Provide multilingual visual cue glossary with usage examples\","
+      }
+    ]
+  },
+  "./AGENTS.md": {
+    "total_lines": 384,
+    "placeholder_percentage": 0.0026041666666666665,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 283,
+        "keyword": "Example",
+        "content": "- [ ] Provide multilingual visual cue glossary with usage examples"
+      }
+    ]
+  },
+  "./package-lock.json": {
+    "total_lines": 7210,
+    "placeholder_percentage": 0.0018030513176144243,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 1382,
+        "keyword": "Mock",
+        "content": "\"jest-mock\": \"^29.7.0\""
+      },
+      {
+        "line": 1398,
+        "keyword": "Mock",
+        "content": "\"jest-mock\": \"30.0.2\","
+      },
+      {
+        "line": 1422,
+        "keyword": "Mock",
+        "content": "\"jest-mock\": \"30.0.2\""
+      },
+      {
+        "line": 1437,
+        "keyword": "Mock",
+        "content": "\"jest-mock\": \"30.0.2\","
+      },
+      {
+        "line": 1529,
+        "keyword": "Mock",
+        "content": "\"VoiceLab/node_modules/@jest/environment-jsdom-abstract/node_modules/jest-mock\": {"
+      },
+      {
+        "line": 1614,
+        "keyword": "Mock",
+        "content": "\"jest-mock\": \"^29.7.0\","
+      },
+      {
+        "line": 1629,
+        "keyword": "Mock",
+        "content": "\"jest-mock\": \"^29.7.0\""
+      },
+      {
+        "line": 4797,
+        "keyword": "Mock",
+        "content": "\"jest-mock\": \"30.0.2\""
+      },
+      {
+        "line": 4812,
+        "keyword": "Mock",
+        "content": "\"jest-mock\": \"30.0.2\","
+      },
+      {
+        "line": 4904,
+        "keyword": "Mock",
+        "content": "\"VoiceLab/node_modules/jest-environment-jsdom/node_modules/jest-mock\": {"
+      },
+      {
+        "line": 4966,
+        "keyword": "Mock",
+        "content": "\"jest-mock\": \"^29.7.0\","
+      },
+      {
+        "line": 5050,
+        "keyword": "Mock",
+        "content": "\"VoiceLab/node_modules/jest-mock\": {"
+      },
+      {
+        "line": 5169,
+        "keyword": "Mock",
+        "content": "\"jest-mock\": \"^29.7.0\","
+      }
+    ]
+  },
+  "./generated/CoreForgeAudio/Auto_detect_safe_vs_unsafe_content_for_preview_only_versions.py": {
+    "total_lines": 4,
+    "placeholder_percentage": 0.5,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 1,
+        "keyword": "Content for",
+        "content": "# Auto-generated for Auto-detect safe vs. unsafe content for preview-only versions"
+      },
+      {
+        "line": 3,
+        "keyword": "Content for",
+        "content": "\"\"\"Auto-detect safe vs. unsafe content for preview-only versions\"\"\""
+      }
+    ]
+  },
+  "./generated/CoreForgeAudio/AI_singing_mode_custom_tone_dial_per_voice_scene.py": {
+    "total_lines": 14,
+    "placeholder_percentage": 0.21428571428571427,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 7,
+        "keyword": "Sample",
+        "content": "def apply_singing_tone(samples: Iterable[float], tone: float) -> List[float]:"
+      },
+      {
+        "line": 8,
+        "keyword": "Sample",
+        "content": "\"\"\"Apply a simple tone multiplier to audio sample amplitudes.\"\"\""
+      },
+      {
+        "line": 11,
+        "keyword": "Sample",
+        "content": "return [max(min(s * tone, 1.0), -1.0) for s in samples]"
+      }
+    ]
+  },
+  "./generated/CoreForgeAudio/Allow_users_to_test_voice_preview_samples_per_character_before_rendering.py": {
+    "total_lines": 4,
+    "placeholder_percentage": 0.5,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 1,
+        "keyword": "Sample",
+        "content": "# Auto-generated for Allow users to test voice preview samples per character before rendering"
+      },
+      {
+        "line": 3,
+        "keyword": "Sample",
+        "content": "\"\"\"Allow users to test voice preview samples per character before rendering\"\"\""
+      }
+    ]
+  },
+  "./generated/CoreForgeAudio/PromptTemplates_md_AI_workflows_sample_prompts.py": {
+    "total_lines": 4,
+    "placeholder_percentage": 0.5,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 1,
+        "keyword": "Sample",
+        "content": "# Auto-generated for PromptTemplates.md (AI workflows, sample prompts)"
+      },
+      {
+        "line": 3,
+        "keyword": "Sample",
+        "content": "\"\"\"PromptTemplates.md (AI workflows, sample prompts)\"\"\""
+      }
+    ]
+  },
+  "./generated/CoreForgeAudio/Prompt_validation_with_multiple_sample_inputs_and_outputs.py": {
+    "total_lines": 4,
+    "placeholder_percentage": 0.5,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 1,
+        "keyword": "Sample",
+        "content": "# Auto-generated for Prompt validation with multiple sample inputs and outputs"
+      },
+      {
+        "line": 3,
+        "keyword": "Sample",
+        "content": "\"\"\"Prompt validation with multiple sample inputs and outputs\"\"\""
+      }
+    ]
+  },
+  "./generated/CoreForgeAudio/Flag_NSFW_content_for_internal_moderation_or_publishing_filter_logic.py": {
+    "total_lines": 4,
+    "placeholder_percentage": 0.5,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 1,
+        "keyword": "Content for",
+        "content": "# Auto-generated for Flag NSFW content for internal moderation or publishing filter logic"
+      },
+      {
+        "line": 3,
+        "keyword": "Content for",
+        "content": "\"\"\"Flag NSFW content for internal moderation or publishing filter logic\"\"\""
+      }
+    ]
+  },
+  "./generated/CoreForgeVisual/Provide_multilingual_visual_cue_glossary_with_usage_examples.py": {
+    "total_lines": 4,
+    "placeholder_percentage": 0.5,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 1,
+        "keyword": "Example",
+        "content": "# Auto-generated for Provide multilingual visual cue glossary with usage examples"
+      },
+      {
+        "line": 3,
+        "keyword": "Example",
+        "content": "\"\"\"Provide multilingual visual cue glossary with usage examples\"\"\""
+      }
+    ]
+  },
+  "./generated/progress/CoreForgeAudio/Prompt_validation_with_multiple_sample_inputs_and_outputs.txt": {
+    "total_lines": 59,
+    "placeholder_percentage": 0.22033898305084745,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 4,
+        "keyword": "Sample",
+        "content": "against multiple sample input/output pairs. It can be used in"
+      },
+      {
+        "line": 6,
+        "keyword": "Example",
+        "content": "that prompt templates behave consistently across examples."
+      },
+      {
+        "line": 16,
+        "keyword": "Sample",
+        "content": "class PromptSample:"
+      },
+      {
+        "line": 17,
+        "keyword": "Sample",
+        "content": "\"\"\"Represents a single prompt sample.\"\"\""
+      },
+      {
+        "line": 23,
+        "keyword": "Sample",
+        "content": "\"\"\"Validates prompts against sample inputs and expected outputs.\"\"\""
+      },
+      {
+        "line": 34,
+        "keyword": "Sample",
+        "content": "async def validate_samples(self, prompt: str, samples: Iterable[PromptSample]) -> List[bool]:"
+      },
+      {
+        "line": 35,
+        "keyword": "Sample",
+        "content": "\"\"\"Validate a list of samples asynchronously."
+      },
+      {
+        "line": 41,
+        "keyword": "Sample",
+        "content": "samples: Iterable[PromptSample]"
+      },
+      {
+        "line": 42,
+        "keyword": "Sample",
+        "content": "Collection of samples containing inputs and expected outputs."
+      },
+      {
+        "line": 47,
+        "keyword": "Sample",
+        "content": "A list of booleans indicating whether each sample passed."
+      },
+      {
+        "line": 50,
+        "keyword": "Sample",
+        "content": "for sample in samples:"
+      },
+      {
+        "line": 51,
+        "keyword": "Sample",
+        "content": "combined = prompt.format(sample.input_text)"
+      },
+      {
+        "line": 53,
+        "keyword": "Sample",
+        "content": "results.append(sample.expected_output.strip() in generated.strip())"
+      }
+    ]
+  },
+  "./VisualLab/README.md": {
+    "total_lines": 23,
+    "placeholder_percentage": 0.043478260869565216,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 14,
+        "keyword": "Sample",
+        "content": "After building the project you can run the sample renderer which outputs a short demo animation:"
+      }
+    ]
+  },
+  "./scripts/auto_code_bot.py": {
+    "total_lines": 187,
+    "placeholder_percentage": 0.0481283422459893,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 17,
+        "keyword": "Placeholder",
+        "content": "\"\"\"Return a language-aware placeholder snippet.\"\"\""
+      },
+      {
+        "line": 144,
+        "keyword": "Placeholder",
+        "content": "def _parse_placeholder_line(line: str) -> str | None:"
+      },
+      {
+        "line": 151,
+        "keyword": "Placeholder",
+        "content": "def upgrade_placeholders(gen_root: str) -> None:"
+      },
+      {
+        "line": 160,
+        "keyword": "Placeholder",
+        "content": "feature = _parse_placeholder_line(first)"
+      },
+      {
+        "line": 171,
+        "keyword": "Placeholder",
+        "content": "parser = argparse.ArgumentParser(description=\"Generate or upgrade placeholder code files\")"
+      },
+      {
+        "line": 173,
+        "keyword": "Placeholder",
+        "content": "\"--upgrade-placeholders\","
+      },
+      {
+        "line": 175,
+        "keyword": "Placeholder",
+        "content": "help=\"Replace existing placeholders in the generated folder using OpenAI\","
+      },
+      {
+        "line": 181,
+        "keyword": "Placeholder",
+        "content": "if args.upgrade_placeholders:"
+      },
+      {
+        "line": 182,
+        "keyword": "Placeholder",
+        "content": "upgrade_placeholders(os.path.join(repo, \"generated\"))"
+      }
+    ]
+  },
+  "./scripts/generate_sound_effects.py": {
+    "total_lines": 93,
+    "placeholder_percentage": 0.3548387096774194,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 13,
+        "keyword": "Sample",
+        "content": "SAMPLE_RATE = 44100"
+      },
+      {
+        "line": 15,
+        "keyword": "Sample",
+        "content": "def write_wave(path, samples):"
+      },
+      {
+        "line": 19,
+        "keyword": "Sample",
+        "content": "wav.setframerate(SAMPLE_RATE)"
+      },
+      {
+        "line": 21,
+        "keyword": "Sample",
+        "content": "for s in samples:"
+      },
+      {
+        "line": 27,
+        "keyword": "Sample",
+        "content": "samples = []"
+      },
+      {
+        "line": 28,
+        "keyword": "Sample",
+        "content": "for i in range(int(SAMPLE_RATE * duration)):"
+      },
+      {
+        "line": 30,
+        "keyword": "Sample",
+        "content": "sweep = math.sin(i / SAMPLE_RATE * 0.5) * 0.3"
+      },
+      {
+        "line": 31,
+        "keyword": "Sample",
+        "content": "samples.append(base + sweep)"
+      },
+      {
+        "line": 32,
+        "keyword": "Sample",
+        "content": "return samples"
+      },
+      {
+        "line": 35,
+        "keyword": "Sample",
+        "content": "samples = []"
+      },
+      {
+        "line": 36,
+        "keyword": "Sample",
+        "content": "for i in range(int(SAMPLE_RATE * duration)):"
+      },
+      {
+        "line": 40,
+        "keyword": "Sample",
+        "content": "samples.append(noise)"
+      },
+      {
+        "line": 41,
+        "keyword": "Sample",
+        "content": "return samples"
+      },
+      {
+        "line": 44,
+        "keyword": "Sample",
+        "content": "samples = []"
+      },
+      {
+        "line": 46,
+        "keyword": "Sample",
+        "content": "total_samples = int(SAMPLE_RATE * duration)"
+      },
+      {
+        "line": 47,
+        "keyword": "Sample",
+        "content": "for i in range(total_samples):"
+      },
+      {
+        "line": 48,
+        "keyword": "Sample",
+        "content": "t = i / SAMPLE_RATE"
+      },
+      {
+        "line": 52,
+        "keyword": "Sample",
+        "content": "samples.append(value * 0.7)"
+      },
+      {
+        "line": 53,
+        "keyword": "Sample",
+        "content": "return samples"
+      },
+      {
+        "line": 56,
+        "keyword": "Sample",
+        "content": "samples = []"
+      },
+      {
+        "line": 57,
+        "keyword": "Sample",
+        "content": "total_samples = int(SAMPLE_RATE * duration)"
+      },
+      {
+        "line": 58,
+        "keyword": "Sample",
+        "content": "for i in range(total_samples):"
+      },
+      {
+        "line": 59,
+        "keyword": "Sample",
+        "content": "t = i / SAMPLE_RATE"
+      },
+      {
+        "line": 62,
+        "keyword": "Sample",
+        "content": "samples.append(value)"
+      },
+      {
+        "line": 63,
+        "keyword": "Sample",
+        "content": "return samples"
+      },
+      {
+        "line": 66,
+        "keyword": "Sample",
+        "content": "samples = []"
+      },
+      {
+        "line": 67,
+        "keyword": "Sample",
+        "content": "for i in range(int(SAMPLE_RATE * duration)):"
+      },
+      {
+        "line": 68,
+        "keyword": "Sample",
+        "content": "base = math.sin(2 * math.pi * 200 * i / SAMPLE_RATE)"
+      },
+      {
+        "line": 69,
+        "keyword": "Sample",
+        "content": "envelope = (1 - math.cos(2 * math.pi * i / (SAMPLE_RATE * duration))) / 2"
+      },
+      {
+        "line": 70,
+        "keyword": "Sample",
+        "content": "samples.append(base * envelope * 0.4)"
+      },
+      {
+        "line": 71,
+        "keyword": "Sample",
+        "content": "return samples"
+      },
+      {
+        "line": 88,
+        "keyword": "Sample",
+        "content": "samples = EFFECT_MAP[args.effect](args.duration)"
+      },
+      {
+        "line": 89,
+        "keyword": "Sample",
+        "content": "write_wave(args.output, samples)"
+      }
+    ]
+  },
+  "./scripts/pull_plugins.py": {
+    "total_lines": 54,
+    "placeholder_percentage": 0.018518518518518517,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 4,
+        "keyword": "Example",
+        "content": "Adapted from the Requests library examples (Apache-2.0)."
+      }
+    ]
+  },
+  "./scripts/ensure_200_features.py": {
+    "total_lines": 68,
+    "placeholder_percentage": 0.014705882352941176,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 66,
+        "keyword": "Placeholder",
+        "content": "print(f\"Updated {path} with placeholder features to reach 200 per app.\")"
+      }
+    ]
+  },
+  "./scripts/generate_adaptive_music.py": {
+    "total_lines": 54,
+    "placeholder_percentage": 0.2037037037037037,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 13,
+        "keyword": "Sample",
+        "content": "SAMPLE_RATE = 44100"
+      },
+      {
+        "line": 21,
+        "keyword": "Sample",
+        "content": "def write_wave(path: str, samples):"
+      },
+      {
+        "line": 25,
+        "keyword": "Sample",
+        "content": "wav.setframerate(SAMPLE_RATE)"
+      },
+      {
+        "line": 27,
+        "keyword": "Sample",
+        "content": "for s in samples:"
+      },
+      {
+        "line": 34,
+        "keyword": "Sample",
+        "content": "frame_count = int(SAMPLE_RATE * duration)"
+      },
+      {
+        "line": 35,
+        "keyword": "Sample",
+        "content": "samples = []"
+      },
+      {
+        "line": 37,
+        "keyword": "Sample",
+        "content": "t = i / SAMPLE_RATE"
+      },
+      {
+        "line": 38,
+        "keyword": "Sample",
+        "content": "samples.append(math.sin(2 * math.pi * frequency * t) * 0.4)"
+      },
+      {
+        "line": 39,
+        "keyword": "Sample",
+        "content": "return samples"
+      },
+      {
+        "line": 49,
+        "keyword": "Sample",
+        "content": "samples = generate_music(args.mood, args.duration)"
+      },
+      {
+        "line": 50,
+        "keyword": "Sample",
+        "content": "write_wave(out_path, samples)"
+      }
+    ]
+  },
+  "./Sources/CreatorCoreForge/EbookConverter.swift": {
+    "total_lines": 63,
+    "placeholder_percentage": 0.06349206349206349,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 18,
+        "keyword": "Sample",
+        "content": "private let sampleRate: Int"
+      },
+      {
+        "line": 22,
+        "keyword": "Sample",
+        "content": "sampleRate: Int = 44100,"
+      },
+      {
+        "line": 26,
+        "keyword": "Sample",
+        "content": "self.sampleRate = sampleRate"
+      },
+      {
+        "line": 47,
+        "keyword": "Sample",
+        "content": "sampleRate: sampleRate) { result in"
+      }
+    ]
+  },
+  "./Sources/CreatorCoreForge/ThemeManager.swift": {
+    "total_lines": 119,
+    "placeholder_percentage": 0.008403361344537815,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 118,
+        "keyword": "Example",
+        "content": "// Example usage:"
+      }
+    ]
+  },
+  "./Sources/CreatorCoreForge/MultiTrackEditor.swift": {
+    "total_lines": 17,
+    "placeholder_percentage": 0.11764705882352941,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 11,
+        "keyword": "Sample",
+        "content": "for (i, sample) in track.enumerated() {"
+      },
+      {
+        "line": 12,
+        "keyword": "Sample",
+        "content": "result[i] += sample"
+      }
+    ]
+  },
+  "./Sources/CreatorCoreForge/VoiceCloneTrainer.swift": {
+    "total_lines": 14,
+    "placeholder_percentage": 0.14285714285714285,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 9,
+        "keyword": "Sample",
+        "content": "public func train(from sample: Data, name: String, completion: @escaping (VoiceProfile) -> Void) {"
+      },
+      {
+        "line": 10,
+        "keyword": "Sample",
+        "content": "voiceAI.cloneVoice(from: sample, name: name) { profile in"
+      }
+    ]
+  },
+  "./Sources/CreatorCoreForge/QuantumAIExtension.swift": {
+    "total_lines": 11,
+    "placeholder_percentage": 0.09090909090909091,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 3,
+        "keyword": "Mock",
+        "content": "/// Generates alternate emotion branches using a mock quantum selection."
+      }
+    ]
+  },
+  "./Sources/CreatorCoreForge/LocalElevenLabsClient.swift": {
+    "total_lines": 45,
+    "placeholder_percentage": 0.044444444444444446,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 29,
+        "keyword": "Sample",
+        "content": "sampleRate: Int = 44100,"
+      },
+      {
+        "line": 37,
+        "keyword": "Sample",
+        "content": "sampleRate: sampleRate,"
+      }
+    ]
+  },
+  "./Sources/CreatorCoreForge/AdaptiveMusicGenerator.swift": {
+    "total_lines": 67,
+    "placeholder_percentage": 0.16417910447761194,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 13,
+        "keyword": "Sample",
+        "content": "let sampleRate = 44_100"
+      },
+      {
+        "line": 24,
+        "keyword": "Sample",
+        "content": "let frameCount = Int(duration * Double(sampleRate))"
+      },
+      {
+        "line": 25,
+        "keyword": "Sample",
+        "content": "var samples = [Int16](repeating: 0, count: frameCount)"
+      },
+      {
+        "line": 27,
+        "keyword": "Sample",
+        "content": "let t = Double(i) / Double(sampleRate)"
+      },
+      {
+        "line": 29,
+        "keyword": "Sample",
+        "content": "samples[i] = value"
+      },
+      {
+        "line": 34,
+        "keyword": "Sample",
+        "content": "let byteCount = samples.count * MemoryLayout<Int16>.size"
+      },
+      {
+        "line": 41,
+        "keyword": "Sample",
+        "content": "data.append(UInt32(sampleRate).littleEndianData)"
+      },
+      {
+        "line": 42,
+        "keyword": "Sample",
+        "content": "data.append(UInt32(sampleRate * 2).littleEndianData) // byte rate"
+      },
+      {
+        "line": 44,
+        "keyword": "Sample",
+        "content": "data.append(UInt16(16).littleEndianData) // bits per sample"
+      },
+      {
+        "line": 48,
+        "keyword": "Sample",
+        "content": "// Append samples"
+      },
+      {
+        "line": 49,
+        "keyword": "Sample",
+        "content": "samples.withUnsafeBufferPointer { ptr in"
+      }
+    ]
+  },
+  "./Sources/CreatorCoreForge/NSFWHabitBehaviorSimulator.swift": {
+    "total_lines": 115,
+    "placeholder_percentage": 0.008695652173913044,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 110,
+        "keyword": "Example",
+        "content": "// Example usage:"
+      }
+    ]
+  },
+  "./Sources/CreatorCoreForge/CoreForgeVoiceLab_MissingFeatures.swift": {
+    "total_lines": 19,
+    "placeholder_percentage": 0.21052631578947367,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 4,
+        "keyword": "Sample",
+        "content": "public func trim(_ samples: [Float], to count: Int) -> [Float] {"
+      },
+      {
+        "line": 5,
+        "keyword": "Sample",
+        "content": "Array(samples.prefix(count))"
+      },
+      {
+        "line": 10,
+        "keyword": "Sample",
+        "content": "public func prepare(samples: [Float]) -> Bool {"
+      },
+      {
+        "line": 11,
+        "keyword": "Sample",
+        "content": "!samples.isEmpty"
+      }
+    ]
+  },
+  "./Sources/CreatorCoreForge/LocalVoiceAI.swift": {
+    "total_lines": 107,
+    "placeholder_percentage": 0.18691588785046728,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 28,
+        "keyword": "Sample",
+        "content": "///   - sample: Voice sample data."
+      },
+      {
+        "line": 31,
+        "keyword": "Sample",
+        "content": "public func cloneVoice(from sample: Data, name: String, completion: @escaping (VoiceProfile) -> Void) {"
+      },
+      {
+        "line": 33,
+        "keyword": "Sample",
+        "content": "let avg = sample.reduce(0) { $0 + Int($1) } / max(sample.count, 1)"
+      },
+      {
+        "line": 44,
+        "keyword": "Mock",
+        "content": "///   - completion: Returns synthesized audio data (mocked)."
+      },
+      {
+        "line": 48,
+        "keyword": "Sample",
+        "content": "sampleRate: Int = 44100,"
+      },
+      {
+        "line": 51,
+        "keyword": "Sample",
+        "content": "var samples: [Int16] = []"
+      },
+      {
+        "line": 55,
+        "keyword": "Sample",
+        "content": "samples += Self.sineWave(frequency: freq, duration: 0.05, sampleRate: sampleRate)"
+      },
+      {
+        "line": 57,
+        "keyword": "Sample",
+        "content": "let data = Self.encodeWAV(samples: samples, sampleRate: sampleRate)"
+      },
+      {
+        "line": 62,
+        "keyword": "Sample",
+        "content": "private static func sineWave(frequency: Double, duration: Double, sampleRate: Int) -> [Int16] {"
+      },
+      {
+        "line": 63,
+        "keyword": "Sample",
+        "content": "let count = Int(Double(sampleRate) * duration)"
+      },
+      {
+        "line": 65,
+        "keyword": "Sample",
+        "content": "let t = Double(i) / Double(sampleRate)"
+      },
+      {
+        "line": 71,
+        "keyword": "Sample",
+        "content": "private static func encodeWAV(samples: [Int16], sampleRate: Int) -> Data {"
+      },
+      {
+        "line": 73,
+        "keyword": "Sample",
+        "content": "let byteRate = sampleRate * 2"
+      },
+      {
+        "line": 74,
+        "keyword": "Sample",
+        "content": "let dataSize = samples.count * 2"
+      },
+      {
+        "line": 88,
+        "keyword": "Sample",
+        "content": "var sampleRate32 = UInt32(sampleRate)"
+      },
+      {
+        "line": 89,
+        "keyword": "Sample",
+        "content": "data.append(Data(bytes: &sampleRate32, count: 4))"
+      },
+      {
+        "line": 94,
+        "keyword": "Sample",
+        "content": "var bitsPerSample: UInt16 = 16"
+      },
+      {
+        "line": 95,
+        "keyword": "Sample",
+        "content": "data.append(Data(bytes: &bitsPerSample, count: 2))"
+      },
+      {
+        "line": 101,
+        "keyword": "Sample",
+        "content": "samples.forEach { sample in"
+      },
+      {
+        "line": 102,
+        "keyword": "Sample",
+        "content": "var s = sample"
+      }
+    ]
+  },
+  "./Sources/CreatorCoreForge/NSFWPaywallManager.swift": {
+    "total_lines": 43,
+    "placeholder_percentage": 0.023255813953488372,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 19,
+        "keyword": "Placeholder",
+        "content": "// Placeholder purchase flow; integrate real StoreKit logic in the app."
+      }
+    ]
+  },
+  "./Sources/CreatorCoreForge/SettingsSync.swift": {
+    "total_lines": 44,
+    "placeholder_percentage": 0.022727272727272728,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 13,
+        "keyword": "Example",
+        "content": "public init(baseURL: URL = URL(string: \"https://sync.example.com\")!,"
+      }
+    ]
+  },
+  "./Sources/CreatorCoreForge/ConsentTracker.swift": {
+    "total_lines": 67,
+    "placeholder_percentage": 0.014925373134328358,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 65,
+        "keyword": "Example",
+        "content": "// Example usage:"
+      }
+    ]
+  },
+  "./Sources/CreatorCoreForge/SceneGapFiller.swift": {
+    "total_lines": 58,
+    "placeholder_percentage": 0.017241379310344827,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 4,
+        "keyword": "Placeholder",
+        "content": "/// and generates basic placeholder animation frames."
+      }
+    ]
+  },
+  "./Sources/CreatorCoreForge/OfflineDownloadQueue.swift": {
+    "total_lines": 179,
+    "placeholder_percentage": 0.00558659217877095,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 118,
+        "keyword": "Placeholder",
+        "content": "/// Placeholder implementation when Combine is unavailable."
+      }
+    ]
+  },
+  "./Sources/CreatorCoreForge/AudioEffectsPipeline.swift": {
+    "total_lines": 22,
+    "placeholder_percentage": 0.36363636363636365,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 7,
+        "keyword": "Sample",
+        "content": "/// Applies a simple echo label to each sample identifier."
+      },
+      {
+        "line": 8,
+        "keyword": "Sample",
+        "content": "public func addEcho(to samples: [String]) -> [String] {"
+      },
+      {
+        "line": 9,
+        "keyword": "Sample",
+        "content": "samples.flatMap { [$0, \"\\($0)-echo\"] }"
+      },
+      {
+        "line": 13,
+        "keyword": "Sample",
+        "content": "public func shiftPitch(of samples: [String], factor: Double) -> [String] {"
+      },
+      {
+        "line": 14,
+        "keyword": "Sample",
+        "content": "samples.map { \"\\($0)|pitch:\\(factor)\" }"
+      },
+      {
+        "line": 17,
+        "keyword": "Sample",
+        "content": "/// Combines processed samples into a single track label."
+      },
+      {
+        "line": 18,
+        "keyword": "Sample",
+        "content": "public func mix(samples: [String]) -> String {"
+      },
+      {
+        "line": 19,
+        "keyword": "Sample",
+        "content": "samples.joined(separator: \"+\")"
+      }
+    ]
+  },
+  "./Sources/CreatorCoreForge/EmotionArcVisualizer.swift": {
+    "total_lines": 56,
+    "placeholder_percentage": 0.017857142857142856,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 54,
+        "keyword": "Example",
+        "content": "// Example usage:"
+      }
+    ]
+  },
+  "./Sources/CreatorCoreForge/LibrarySync.swift": {
+    "total_lines": 45,
+    "placeholder_percentage": 0.022222222222222223,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 11,
+        "keyword": "Example",
+        "content": "public init(baseURL: URL = URL(string: \"https://sync.example.com/library\")!,"
+      }
+    ]
+  },
+  "./Sources/CreatorCoreForge/AutoUpdater.swift": {
+    "total_lines": 33,
+    "placeholder_percentage": 0.030303030303030304,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 11,
+        "keyword": "Example",
+        "content": "public init(updateURL: URL = URL(string: \"https://example.com/latest.json\")!,"
+      }
+    ]
+  },
+  "./Sources/CreatorCoreForge/MemoryPinning.swift": {
+    "total_lines": 140,
+    "placeholder_percentage": 0.007142857142857143,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 139,
+        "keyword": "Example",
+        "content": "// Example:"
+      }
+    ]
+  },
+  "./Sources/CreatorCoreForge/NSFWPhase7.swift": {
+    "total_lines": 196,
+    "placeholder_percentage": 0.01020408163265306,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 148,
+        "keyword": "Content for",
+        "content": "/// Flag NSFW content for moderation review."
+      },
+      {
+        "line": 157,
+        "keyword": "Content for",
+        "content": "/// Detect safe vs unsafe content for previews."
+      }
+    ]
+  },
+  "./Sources/CreatorCoreForge/VoiceManager.swift": {
+    "total_lines": 23,
+    "placeholder_percentage": 0.17391304347826086,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 3,
+        "keyword": "Sample",
+        "content": "/// Handles voice sample uploads and retrieval using `VoiceCloneTrainer` and `VoiceMemoryManager`."
+      },
+      {
+        "line": 10,
+        "keyword": "Sample",
+        "content": "/// Upload and clone a voice sample for a character."
+      },
+      {
+        "line": 11,
+        "keyword": "Sample",
+        "content": "public func uploadSample(character: String, sample: Data, completion: @escaping (VoiceProfile) -> Void) {"
+      },
+      {
+        "line": 12,
+        "keyword": "Sample",
+        "content": "trainer.train(from: sample, name: character) { profile in"
+      }
+    ]
+  },
+  "./Sources/CreatorCoreForge/UniversalMediaGenerator.swift": {
+    "total_lines": 59,
+    "placeholder_percentage": 0.0847457627118644,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 35,
+        "keyword": "Placeholder",
+        "content": "/// audio track label, a rendered clip placeholder, and the list of"
+      },
+      {
+        "line": 42,
+        "keyword": "Sample",
+        "content": "// Derive pseudo audio sample identifiers from the scene text"
+      },
+      {
+        "line": 43,
+        "keyword": "Sample",
+        "content": "let samples = scenes.map { \"sound-\\($0.hashValue)\" }"
+      },
+      {
+        "line": 44,
+        "keyword": "Sample",
+        "content": "var processed = audioPipeline.addEcho(to: samples)"
+      },
+      {
+        "line": 46,
+        "keyword": "Sample",
+        "content": "let audioTrack = audioPipeline.mix(samples: processed)"
+      }
+    ]
+  },
+  "./Sources/CreatorCoreForge/EmotionalArcTracker.swift": {
+    "total_lines": 102,
+    "placeholder_percentage": 0.00980392156862745,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 101,
+        "keyword": "Example",
+        "content": "// Example:"
+      }
+    ]
+  },
+  "./Sources/CreatorCoreForge/VoiceTrainer.swift": {
+    "total_lines": 57,
+    "placeholder_percentage": 0.22807017543859648,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 3,
+        "keyword": "Sample",
+        "content": "/// Represents an audio sample used to train a custom voice."
+      },
+      {
+        "line": 4,
+        "keyword": "Sample",
+        "content": "public struct VoiceSample {"
+      },
+      {
+        "line": 5,
+        "keyword": "Sample",
+        "content": "/// Character the sample is associated with."
+      },
+      {
+        "line": 7,
+        "keyword": "Sample",
+        "content": "/// Local file path to the audio sample."
+      },
+      {
+        "line": 11,
+        "keyword": "Sample",
+        "content": "/// Basic engine that tracks uploaded samples and simulates training."
+      },
+      {
+        "line": 17,
+        "keyword": "Sample",
+        "content": "/// Upload a voice sample for a character."
+      },
+      {
+        "line": 20,
+        "keyword": "Sample",
+        "content": "///   - filePath: Path to the sample audio file."
+      },
+      {
+        "line": 21,
+        "keyword": "Sample",
+        "content": "public func uploadSample(for character: String, filePath: String) {"
+      },
+      {
+        "line": 22,
+        "keyword": "Sample",
+        "content": "print(\"Uploading voice sample for \\(character)...\")"
+      },
+      {
+        "line": 26,
+        "keyword": "Sample",
+        "content": "/// Train a voice using the previously uploaded sample."
+      },
+      {
+        "line": 31,
+        "keyword": "Sample",
+        "content": "guard let samplePath = trainedVoices[character] else {"
+      },
+      {
+        "line": 32,
+        "keyword": "Sample",
+        "content": "print(\"No sample uploaded for \\(character).\")"
+      },
+      {
+        "line": 35,
+        "keyword": "Sample",
+        "content": "print(\"Training voice for \\(character) using sample at \\(samplePath)...\")"
+      }
+    ]
+  },
+  "./Sources/CreatorCoreForge/BookImporter.swift": {
+    "total_lines": 132,
+    "placeholder_percentage": 0.007575757575757576,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 53,
+        "keyword": "Example",
+        "content": "// Example extraction code adapted from ZIPFoundation README:"
+      }
+    ]
+  },
+  "./Sources/CreatorCoreForge/BuildMonetizationManager.swift": {
+    "total_lines": 41,
+    "placeholder_percentage": 0.024390243902439025,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 7,
+        "keyword": "Example",
+        "content": "/// Adapted from SwiftyStoreKit example (MIT License)."
+      }
+    ]
+  },
+  "./Sources/CreatorCoreForge/SceneAtmosphereBuilder.swift": {
+    "total_lines": 85,
+    "placeholder_percentage": 0.011764705882352941,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 84,
+        "keyword": "Example",
+        "content": "// Example usage:"
+      }
+    ]
+  },
+  "./Tests/CreatorCoreForgeTests/BestsellerStructureEngineTests.swift": {
+    "total_lines": 16,
+    "placeholder_percentage": 0.125,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 6,
+        "keyword": "Sample",
+        "content": "let sample = ["
+      },
+      {
+        "line": 11,
+        "keyword": "Sample",
+        "content": "let outline = engine.analyze(books: sample)"
+      }
+    ]
+  },
+  "./Tests/CreatorCoreForgeTests/OCRScanModeTests.swift": {
+    "total_lines": 10,
+    "placeholder_percentage": 0.2,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 7,
+        "keyword": "Sample",
+        "content": "let data = \"Sample\".data(using: .utf8)!"
+      },
+      {
+        "line": 8,
+        "keyword": "Sample",
+        "content": "XCTAssertEqual(ocr.extractText(from: data), \"Sample\")"
+      }
+    ]
+  },
+  "./Tests/CreatorCoreForgeTests/AudioEffectsPipelineTests.swift": {
+    "total_lines": 23,
+    "placeholder_percentage": 0.043478260869565216,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 19,
+        "keyword": "Sample",
+        "content": "let track = pipeline.mix(samples: [\"a\", \"b\"])"
+      }
+    ]
+  },
+  "./Tests/CreatorCoreForgeTests/VoiceTrainerTests.swift": {
+    "total_lines": 18,
+    "placeholder_percentage": 0.1111111111111111,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 7,
+        "keyword": "Sample",
+        "content": "trainer.uploadSample(for: \"Hero\", filePath: \"/path/sample.wav\")"
+      },
+      {
+        "line": 13,
+        "keyword": "Sample",
+        "content": "trainer.uploadSample(for: \"Hero\", filePath: \"/path/sample.wav\")"
+      }
+    ]
+  },
+  "./Tests/CreatorCoreForgeTests/RealTimeFeedManagerTests.swift": {
+    "total_lines": 63,
+    "placeholder_percentage": 0.14285714285714285,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 8,
+        "keyword": "Mock",
+        "content": "private class MockURLProtocol: URLProtocol {"
+      },
+      {
+        "line": 30,
+        "keyword": "Mock",
+        "content": "MockURLProtocol.responseData = json"
+      },
+      {
+        "line": 31,
+        "keyword": "Mock",
+        "content": "MockURLProtocol.fail = false"
+      },
+      {
+        "line": 33,
+        "keyword": "Mock",
+        "content": "config.protocolClasses = [MockURLProtocol.self]"
+      },
+      {
+        "line": 38,
+        "keyword": "Example",
+        "content": "manager.fetchFeed(from: URL(string: \"https://example.com/feed\")!) { feed in"
+      },
+      {
+        "line": 50,
+        "keyword": "Mock",
+        "content": "MockURLProtocol.responseData = nil"
+      },
+      {
+        "line": 51,
+        "keyword": "Mock",
+        "content": "MockURLProtocol.fail = true"
+      },
+      {
+        "line": 53,
+        "keyword": "Mock",
+        "content": "config.protocolClasses = [MockURLProtocol.self]"
+      },
+      {
+        "line": 57,
+        "keyword": "Example",
+        "content": "manager.fetchFeed(from: URL(string: \"https://example.com/feed\")!) { feed in"
+      }
+    ]
+  },
+  "./Tests/CreatorCoreForgeTests/FilingsDatabaseTests.swift": {
+    "total_lines": 22,
+    "placeholder_percentage": 0.09090909090909091,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 8,
+        "keyword": "Example",
+        "content": "let filing = Filing(title: \"Test\", date: Date(timeIntervalSince1970: 0), url: URL(string: \"https://example.com\")!)"
+      },
+      {
+        "line": 17,
+        "keyword": "Example",
+        "content": "let filing = Filing(title: \"Test\", date: Date(), url: URL(string: \"https://example.com\")!)"
+      }
+    ]
+  },
+  "./Tests/CreatorCoreForgeTests/LocalVoiceAITests.swift": {
+    "total_lines": 49,
+    "placeholder_percentage": 0.061224489795918366,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 21,
+        "keyword": "Sample",
+        "content": "func testCustomSampleRate() {"
+      },
+      {
+        "line": 25,
+        "keyword": "Sample",
+        "content": "engine.synthesize(text: \"Hi\", with: profile, sampleRate: 22_050) { result in"
+      },
+      {
+        "line": 41,
+        "keyword": "Sample",
+        "content": "engine.cloneVoice(from: Data(\"sample\".utf8), name: \"Clone\") { profile in"
+      }
+    ]
+  },
+  "./Tests/CreatorCoreForgeTests/EbookConverterTests.swift": {
+    "total_lines": 25,
+    "placeholder_percentage": 0.08,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 16,
+        "keyword": "Sample",
+        "content": "func testCustomSampleRateConversion() throws {"
+      },
+      {
+        "line": 18,
+        "keyword": "Sample",
+        "content": "let converter = EbookConverter(sampleRate: 22_050)"
+      }
+    ]
+  },
+  "./Tests/CreatorCoreForgeTests/AudioExporterTests.swift": {
+    "total_lines": 35,
+    "placeholder_percentage": 0.05714285714285714,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 8,
+        "keyword": "Sample",
+        "content": "XCTAssertTrue(exporter.exportToMP3(audioData: data, filename: \"sample\"))"
+      },
+      {
+        "line": 14,
+        "keyword": "Sample",
+        "content": "XCTAssertTrue(exporter.exportToWAV(audioData: data, filename: \"sample\"))"
+      }
+    ]
+  },
+  "./Tests/CreatorCoreForgeTests/AutoUpdaterTests.swift": {
+    "total_lines": 39,
+    "placeholder_percentage": 0.1282051282051282,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 9,
+        "keyword": "Mock",
+        "content": "private class MockURLProtocol: URLProtocol {"
+      },
+      {
+        "line": 14,
+        "keyword": "Mock",
+        "content": "if let data = MockURLProtocol.responseData {"
+      },
+      {
+        "line": 26,
+        "keyword": "Mock",
+        "content": "MockURLProtocol.responseData = json"
+      },
+      {
+        "line": 28,
+        "keyword": "Mock",
+        "content": "config.protocolClasses = [MockURLProtocol.self]"
+      },
+      {
+        "line": 30,
+        "keyword": "Example",
+        "content": "let updater = AutoUpdater(updateURL: URL(string: \"https://example.com\")!, session: session)"
+      }
+    ]
+  },
+  "./Tests/CreatorCoreForgeTests/VoiceTimbreModulatorTests.swift": {
+    "total_lines": 24,
+    "placeholder_percentage": 0.041666666666666664,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 16,
+        "keyword": "Sample",
+        "content": "let format = AVAudioFormat(standardFormatWithSampleRate: 44100, channels: 1)!"
+      }
+    ]
+  },
+  "./Tests/CreatorCoreForgeTests/RealTimeImproviserServiceTests.swift": {
+    "total_lines": 69,
+    "placeholder_percentage": 0.043478260869565216,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 5,
+        "keyword": "Mock",
+        "content": "private class MockEngine: AIEngine {"
+      },
+      {
+        "line": 24,
+        "keyword": "Mock",
+        "content": "let service = RealTimeImproviserService(engine: FusionEngine(engine: MockEngine()), context: \"Scene\")"
+      },
+      {
+        "line": 34,
+        "keyword": "Mock",
+        "content": "let service = RealTimeImproviserService(engine: FusionEngine(engine: MockEngine()))"
+      }
+    ]
+  },
+  "./Tests/CreatorCoreForgeTests/FusionEngineAdvancedTests.swift": {
+    "total_lines": 44,
+    "placeholder_percentage": 0.06818181818181818,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 5,
+        "keyword": "Mock",
+        "content": "private struct MockEngine: AIEngine {"
+      },
+      {
+        "line": 32,
+        "keyword": "Mock",
+        "content": "let m1 = MockEngine(label: \"A\")"
+      },
+      {
+        "line": 33,
+        "keyword": "Mock",
+        "content": "let m2 = MockEngine(label: \"B\")"
+      }
+    ]
+  },
+  "./Tests/CreatorCoreForgeTests/LocalElevenLabsClientTests.swift": {
+    "total_lines": 32,
+    "placeholder_percentage": 0.0625,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 12,
+        "keyword": "Sample",
+        "content": "let profile = VoiceProfile(name: \"Sample\")"
+      },
+      {
+        "line": 14,
+        "keyword": "Sample",
+        "content": "XCTAssertEqual(client.voiceInfo(id: profile.id)?.name, \"Sample\")"
+      }
+    ]
+  },
+  "./Tests/CreatorCoreForgeTests/LibrarySyncTests.swift": {
+    "total_lines": 57,
+    "placeholder_percentage": 0.17543859649122806,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 8,
+        "keyword": "Mock",
+        "content": "private class MockURLProtocol: URLProtocol {"
+      },
+      {
+        "line": 14,
+        "keyword": "Mock",
+        "content": "if let data = MockURLProtocol.responseData {"
+      },
+      {
+        "line": 15,
+        "keyword": "Mock",
+        "content": "let response = HTTPURLResponse(url: request.url!, statusCode: MockURLProtocol.status, httpVersion: nil, headerFields: nil)!"
+      },
+      {
+        "line": 19,
+        "keyword": "Mock",
+        "content": "let response = HTTPURLResponse(url: request.url!, statusCode: MockURLProtocol.status, httpVersion: nil, headerFields: nil)!"
+      },
+      {
+        "line": 28,
+        "keyword": "Mock",
+        "content": "MockURLProtocol.responseData = Data()"
+      },
+      {
+        "line": 29,
+        "keyword": "Mock",
+        "content": "MockURLProtocol.status = 200"
+      },
+      {
+        "line": 31,
+        "keyword": "Mock",
+        "content": "config.protocolClasses = [MockURLProtocol.self]"
+      },
+      {
+        "line": 44,
+        "keyword": "Mock",
+        "content": "MockURLProtocol.responseData = json"
+      },
+      {
+        "line": 45,
+        "keyword": "Mock",
+        "content": "MockURLProtocol.status = 200"
+      },
+      {
+        "line": 47,
+        "keyword": "Mock",
+        "content": "config.protocolClasses = [MockURLProtocol.self]"
+      }
+    ]
+  },
+  "./Tests/CreatorCoreForgeTests/AudioFeaturePlaceholdersTests.swift": {
+    "total_lines": 53,
+    "placeholder_percentage": 0.03773584905660377,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 4,
+        "keyword": "Placeholder",
+        "content": "final class AudioFeaturePlaceholdersTests: XCTestCase {"
+      },
+      {
+        "line": 5,
+        "keyword": "Placeholder",
+        "content": "func testPlaceholderInitializers() {"
+      }
+    ]
+  },
+  "./Tests/CreatorCoreForgeTests/SocialMediaManagerTests.swift": {
+    "total_lines": 45,
+    "placeholder_percentage": 0.15555555555555556,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 8,
+        "keyword": "Mock",
+        "content": "private class MockURLProtocol: URLProtocol {"
+      },
+      {
+        "line": 21,
+        "keyword": "Mock",
+        "content": "MockURLProtocol.statusCode = 200"
+      },
+      {
+        "line": 23,
+        "keyword": "Mock",
+        "content": "config.protocolClasses = [MockURLProtocol.self]"
+      },
+      {
+        "line": 26,
+        "keyword": "Example",
+        "content": "manager.postUpdate(\"hello\", to: URL(string: \"https://example.com\")!, token: \"t\") { success in"
+      },
+      {
+        "line": 34,
+        "keyword": "Mock",
+        "content": "MockURLProtocol.statusCode = 400"
+      },
+      {
+        "line": 36,
+        "keyword": "Mock",
+        "content": "config.protocolClasses = [MockURLProtocol.self]"
+      },
+      {
+        "line": 39,
+        "keyword": "Example",
+        "content": "manager.postUpdate(\"fail\", to: URL(string: \"https://example.com\")!, token: \"t\") { success in"
+      }
+    ]
+  },
+  "./Tests/CreatorCoreForgeTests/DocumentParserTests.swift": {
+    "total_lines": 23,
+    "placeholder_percentage": 0.043478260869565216,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 7,
+        "keyword": "Sample",
+        "content": "let tmp = FileManager.default.temporaryDirectory.appendingPathComponent(\"sample.txt\")"
+      }
+    ]
+  },
+  "./Tests/CreatorCoreForgeTests/BatchImportToolTests.swift": {
+    "total_lines": 18,
+    "placeholder_percentage": 0.1111111111111111,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 8,
+        "keyword": "Sample",
+        "content": "let url1 = tmpDir.appendingPathComponent(\"sample1.txt\")"
+      },
+      {
+        "line": 9,
+        "keyword": "Sample",
+        "content": "let url2 = tmpDir.appendingPathComponent(\"sample2.txt\")"
+      }
+    ]
+  },
+  "./Tests/CreatorCoreForgeTests/NSFWPhase7FeatureTests.swift": {
+    "total_lines": 28,
+    "placeholder_percentage": 0.03571428571428571,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 5,
+        "keyword": "Placeholder",
+        "content": "func testPhase7Placeholders() {"
+      }
+    ]
+  },
+  "./Tests/CreatorCoreForgeTests/NetworkInfoProviderTests.swift": {
+    "total_lines": 54,
+    "placeholder_percentage": 0.16666666666666666,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 8,
+        "keyword": "Mock",
+        "content": "private class MockURLProtocol: URLProtocol {"
+      },
+      {
+        "line": 26,
+        "keyword": "Mock",
+        "content": "MockURLProtocol.responseData = json"
+      },
+      {
+        "line": 27,
+        "keyword": "Mock",
+        "content": "MockURLProtocol.statusCode = 200"
+      },
+      {
+        "line": 29,
+        "keyword": "Mock",
+        "content": "config.protocolClasses = [MockURLProtocol.self]"
+      },
+      {
+        "line": 33,
+        "keyword": "Example",
+        "content": "provider.fetchInfo(from: URL(string: \"https://example.com/info\")!) { info in"
+      },
+      {
+        "line": 41,
+        "keyword": "Mock",
+        "content": "MockURLProtocol.responseData = nil"
+      },
+      {
+        "line": 42,
+        "keyword": "Mock",
+        "content": "MockURLProtocol.statusCode = 500"
+      },
+      {
+        "line": 44,
+        "keyword": "Mock",
+        "content": "config.protocolClasses = [MockURLProtocol.self]"
+      },
+      {
+        "line": 48,
+        "keyword": "Example",
+        "content": "provider.fetchInfo(from: URL(string: \"https://example.com/info\")!) { info in"
+      }
+    ]
+  },
+  "./Tests/CreatorCoreForgeTests/PracticalPlanFeatureTests.swift": {
+    "total_lines": 223,
+    "placeholder_percentage": 0.004484304932735426,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 191,
+        "keyword": "Sample",
+        "content": "XCTAssertTrue(TrainingPipeline().prepare(samples: [0.1]))"
+      }
+    ]
+  },
+  "./VoiceLab/package.json": {
+    "total_lines": 33,
+    "placeholder_percentage": 0.030303030303030304,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 11,
+        "keyword": "Sample",
+        "content": "\"train-sample\": \"ts-node scripts/train-sample.ts\""
+      }
+    ]
+  },
+  "./VoiceLab/jest.setup.ts": {
+    "total_lines": 10,
+    "placeholder_percentage": 0.2,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 3,
+        "keyword": "Mock",
+        "content": "jest.mock('./src/ttsService', () => ({"
+      },
+      {
+        "line": 7,
+        "keyword": "Mock",
+        "content": "jest.mock('./src/vaultService', () => ({"
+      }
+    ]
+  },
+  "./VoiceLab/README.md": {
+    "total_lines": 11,
+    "placeholder_percentage": 0.09090909090909091,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 11,
+        "keyword": "Sample",
+        "content": "See `scripts/train-sample.ts` for a CLI example that trains a sample model."
+      }
+    ]
+  },
+  "./VoiceLab/package-lock.json": {
+    "total_lines": 7701,
+    "placeholder_percentage": 0.0020776522529541617,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 1076,
+        "keyword": "Mock",
+        "content": "\"jest-mock\": \"^29.7.0\""
+      },
+      {
+        "line": 1094,
+        "keyword": "Mock",
+        "content": "\"jest-mock\": \"30.0.2\","
+      },
+      {
+        "line": 1120,
+        "keyword": "Mock",
+        "content": "\"jest-mock\": \"30.0.2\""
+      },
+      {
+        "line": 1137,
+        "keyword": "Mock",
+        "content": "\"jest-mock\": \"30.0.2\","
+      },
+      {
+        "line": 1243,
+        "keyword": "Mock",
+        "content": "\"node_modules/@jest/environment-jsdom-abstract/node_modules/jest-mock\": {"
+      },
+      {
+        "line": 1245,
+        "keyword": "Mock",
+        "content": "\"resolved\": \"https://registry.npmjs.org/jest-mock/-/jest-mock-30.0.2.tgz\","
+      },
+      {
+        "line": 1339,
+        "keyword": "Mock",
+        "content": "\"jest-mock\": \"^29.7.0\","
+      },
+      {
+        "line": 1355,
+        "keyword": "Mock",
+        "content": "\"jest-mock\": \"^29.7.0\""
+      },
+      {
+        "line": 4964,
+        "keyword": "Mock",
+        "content": "\"jest-mock\": \"30.0.2\""
+      },
+      {
+        "line": 4981,
+        "keyword": "Mock",
+        "content": "\"jest-mock\": \"30.0.2\","
+      },
+      {
+        "line": 5087,
+        "keyword": "Mock",
+        "content": "\"node_modules/jest-environment-jsdom/node_modules/jest-mock\": {"
+      },
+      {
+        "line": 5089,
+        "keyword": "Mock",
+        "content": "\"resolved\": \"https://registry.npmjs.org/jest-mock/-/jest-mock-30.0.2.tgz\","
+      },
+      {
+        "line": 5158,
+        "keyword": "Mock",
+        "content": "\"jest-mock\": \"^29.7.0\","
+      },
+      {
+        "line": 5247,
+        "keyword": "Mock",
+        "content": "\"node_modules/jest-mock\": {"
+      },
+      {
+        "line": 5249,
+        "keyword": "Mock",
+        "content": "\"resolved\": \"https://registry.npmjs.org/jest-mock/-/jest-mock-29.7.0.tgz\","
+      },
+      {
+        "line": 5373,
+        "keyword": "Mock",
+        "content": "\"jest-mock\": \"^29.7.0\","
+      }
+    ]
+  },
+  "./VoiceLab/test/index.test.ts": {
+    "total_lines": 18,
+    "placeholder_percentage": 0.16666666666666666,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 6,
+        "keyword": "Sample",
+        "content": "const sample = new Blob(['audio']);"
+      },
+      {
+        "line": 7,
+        "keyword": "Sample",
+        "content": "const model = await engine.trainVoiceModel(sample, 'speaker1');"
+      },
+      {
+        "line": 16,
+        "keyword": "Sample",
+        "content": "const metrics = await new VoiceAnalyticsService().analyze(sample);"
+      }
+    ]
+  },
+  "./VoiceLab/test/openaiService.test.ts": {
+    "total_lines": 25,
+    "placeholder_percentage": 0.04,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 6,
+        "keyword": "Mock",
+        "content": "global.fetch = jest.fn().mockResolvedValue({"
+      }
+    ]
+  },
+  "./VoiceLab/test/bookImporter.test.ts": {
+    "total_lines": 12,
+    "placeholder_percentage": 0.25,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 4,
+        "keyword": "Sample",
+        "content": "const text = 'Title: Sample Book\\nAuthor: Jane Doe\\n\\nChapter 1\\nHello\\n\\nChapter 2\\nWorld';"
+      },
+      {
+        "line": 5,
+        "keyword": "Sample",
+        "content": "const file = new File([text], 'sample.txt');"
+      },
+      {
+        "line": 8,
+        "keyword": "Sample",
+        "content": "expect(book.title).toBe('Sample Book');"
+      }
+    ]
+  },
+  "./VoiceLab/scripts/train-sample.ts": {
+    "total_lines": 8,
+    "placeholder_percentage": 0.25,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 5,
+        "keyword": "Sample",
+        "content": "const sample = new Blob(['audio']);"
+      },
+      {
+        "line": 6,
+        "keyword": "Sample",
+        "content": "const model = await engine.trainVoiceModel(sample, 'sample-speaker');"
+      }
+    ]
+  },
+  "./VoiceLab/src/pronunciationEditor.tsx": {
+    "total_lines": 13,
+    "placeholder_percentage": 0.15384615384615385,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 8,
+        "keyword": "Placeholder",
+        "content": "<input value={word} onChange={e => setWord(e.target.value)} placeholder=\"word\" />"
+      },
+      {
+        "line": 9,
+        "keyword": "Placeholder",
+        "content": "<input value={phoneme} onChange={e => setPhoneme(e.target.value)} placeholder=\"phoneme\" />"
+      }
+    ]
+  },
+  "./VoiceLab/src/acxExporter.ts": {
+    "total_lines": 13,
+    "placeholder_percentage": 0.07692307692307693,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 7,
+        "keyword": "Sample",
+        "content": "* suitable for unit tests and sample exports."
+      }
+    ]
+  },
+  "./VoiceLab/src/voiceModels.ts": {
+    "total_lines": 32,
+    "placeholder_percentage": 0.0625,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 10,
+        "keyword": "Sample",
+        "content": "async trainVoiceModel(sampleAudio: Blob, speakerId: string): Promise<VoiceModel> {"
+      },
+      {
+        "line": 14,
+        "keyword": "Mock",
+        "content": "// mock training delay"
+      }
+    ]
+  },
+  "./docs/auto_code_bot.md": {
+    "total_lines": 19,
+    "placeholder_percentage": 0.21052631578947367,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 3,
+        "keyword": "Placeholder",
+        "content": "`auto_code_bot.py` scans the repository for incomplete features listed in `AGENTS.md` files. For each missing task it now generates a language-specific placeholder file under the `generated/` directory. When the `openai` package is installed and `OPENAI_API_KEY` is set, the bot attempts to generate code with OpenAI. Without OpenAI, it creates an advanced offline stub that detects the desired language (Swift, Kotlin, TypeScript, or Python) and builds a minimal class or function skeleton. The script also performs a quick syntax check on all Python files and comments out any lines that fail to compile so the project can build entirely offline."
+      },
+      {
+        "line": 11,
+        "keyword": "Placeholder",
+        "content": "To replace existing placeholder files with new code generated via OpenAI, run:"
+      },
+      {
+        "line": 14,
+        "keyword": "Placeholder",
+        "content": "python scripts/auto_code_bot.py --upgrade-placeholders"
+      },
+      {
+        "line": 19,
+        "keyword": "Example",
+        "content": "Generated filenames now match the detected language. For example, a Swift feature results in `feature.swift`, while a Python task becomes `feature.py`. Every run also scans existing Python files and comments out lines with syntax errors to keep the repository importable when offline."
+      }
+    ]
+  },
+  "./docs/AppStore_Compliance.md": {
+    "total_lines": 11,
+    "placeholder_percentage": 0.09090909090909091,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 9,
+        "keyword": "Placeholder",
+        "content": "- Apps avoid spammy functionality or placeholder content (Guideline 4.3) and include only finalized, user-facing features."
+      }
+    ]
+  },
+  "./docs/GLOBAL_TASK_SUMMARY.md": {
+    "total_lines": 481,
+    "placeholder_percentage": 0.002079002079002079,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 412,
+        "keyword": "Example",
+        "content": "- Provide multilingual visual cue glossary with usage examples"
+      }
+    ]
+  },
+  "./docs/OPEN_TASKS.md": {
+    "total_lines": 955,
+    "placeholder_percentage": 0.0020942408376963353,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 683,
+        "keyword": "Sample",
+        "content": "- Prompt validation with multiple sample inputs and outputs"
+      },
+      {
+        "line": 694,
+        "keyword": "Sample",
+        "content": "- PromptTemplates.md (AI workflows, sample prompts)"
+      }
+    ]
+  },
+  "./docs/PRACTICAL_PLAN.md": {
+    "total_lines": 109,
+    "placeholder_percentage": 0.009174311926605505,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 1,
+        "keyword": "TODO",
+        "content": "# Practical Approach and Initial TODO List"
+      }
+    ]
+  },
+  "./docs/README.md": {
+    "total_lines": 25,
+    "placeholder_percentage": 0.08,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 5,
+        "keyword": "TODO",
+        "content": "- `PRACTICAL_PLAN.md` \u2013 initial TODO list across apps."
+      },
+      {
+        "line": 20,
+        "keyword": "Placeholder",
+        "content": "- `auto_code_bot.py` \u2013 generates placeholder code files for missing features. It now includes an offline mode and a `--upgrade-placeholders` option to replace stubs with OpenAI-generated code when an API key is available."
+      }
+    ]
+  },
+  "./docs/AGENTS.md": {
+    "total_lines": 26,
+    "placeholder_percentage": 0.038461538461538464,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 20,
+        "keyword": "TODO",
+        "content": "- `PRACTICAL_PLAN.md` \u2013 initial TODO list across apps."
+      }
+    ]
+  },
+  "./docs/PHASE_EIGHT.md": {
+    "total_lines": 238,
+    "placeholder_percentage": 0.004201680672268907,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 5,
+        "keyword": "Placeholder",
+        "content": "The file `scripts/ensure_200_features.py` now auto-generates placeholder"
+      }
+    ]
+  },
+  "./docs/VoiceTrainerGuide.md": {
+    "total_lines": 16,
+    "placeholder_percentage": 0.1875,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 3,
+        "keyword": "Sample",
+        "content": "`VoiceTrainer` provides a lightweight way to upload audio samples and generate custom voices entirely offline."
+      },
+      {
+        "line": 9,
+        "keyword": "Sample",
+        "content": "trainer.uploadSample(for: \"Hero\", filePath: \"/path/hero.wav\")"
+      },
+      {
+        "line": 15,
+        "keyword": "Sample",
+        "content": "Use `listTrainedVoices()` to print all available custom voices. Samples can be shared between apps via `VoiceMemoryManager`."
+      }
+    ]
+  },
+  "./apps/README.md": {
+    "total_lines": 13,
+    "placeholder_percentage": 0.07692307692307693,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 9,
+        "keyword": "Example",
+        "content": "Example usage:"
+      }
+    ]
+  },
+  "./apps/CoreForgeDNA/MemoryLinkService.swift": {
+    "total_lines": 17,
+    "placeholder_percentage": 0.058823529411764705,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 4,
+        "keyword": "Mock",
+        "content": "/// This mock implementation only stores IDs for demonstration."
+      }
+    ]
+  },
+  "./apps/CoreForgeBuild/pull_plugins.py": {
+    "total_lines": 53,
+    "placeholder_percentage": 0.018867924528301886,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 4,
+        "keyword": "Example",
+        "content": "Adapted from the Requests library examples (Apache-2.0)."
+      }
+    ]
+  },
+  "./apps/CoreForgeBuild/README.md": {
+    "total_lines": 107,
+    "placeholder_percentage": 0.018691588785046728,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 21,
+        "keyword": "Placeholder",
+        "content": "Use `scripts/generate_placeholder_icons.py` to create required icon sizes."
+      },
+      {
+        "line": 22,
+        "keyword": "Sample",
+        "content": "- Run `../../scripts/fetch_plugins.sh` to download sample plugins before building."
+      }
+    ]
+  },
+  "./apps/CoreForgeBuild/DeveloperSetup.md": {
+    "total_lines": 6,
+    "placeholder_percentage": 0.16666666666666666,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 6,
+        "keyword": "Sample",
+        "content": "- Run `../../scripts/fetch_plugins.sh` from the repo root to download sample plugins before building."
+      }
+    ]
+  },
+  "./apps/CoreForgeMusic/VerseForgeAIFull/Sources/VerseForgeAI/HookCrafter.swift": {
+    "total_lines": 17,
+    "placeholder_percentage": 0.058823529411764705,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 12,
+        "keyword": "Mock",
+        "content": "/// Split-test hooks and rank by mock virality score"
+      }
+    ]
+  },
+  "./apps/CoreForgeMusic/VerseForgeAIFull/Sources/VerseForgeAI/beats.json": {
+    "total_lines": 5,
+    "placeholder_percentage": 0.4,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 2,
+        "keyword": "Example",
+        "content": "{\"name\": \"Trap Loop\", \"url\": \"https://example.com/trap_loop.mp3\"},"
+      },
+      {
+        "line": 3,
+        "keyword": "Example",
+        "content": "{\"name\": \"Lo-Fi Chill\", \"url\": \"https://example.com/lofi_chill.mp3\"}"
+      }
+    ]
+  },
+  "./apps/CoreForgeMusic/VerseForgeAIFull/Sources/VerseForgeAI/HookSplitTester.swift": {
+    "total_lines": 12,
+    "placeholder_percentage": 0.08333333333333333,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 9,
+        "keyword": "Example",
+        "content": "// Randomized test for example purposes"
+      }
+    ]
+  },
+  "./apps/CoreForgeAudio/AGENTS.md": {
+    "total_lines": 580,
+    "placeholder_percentage": 0.008620689655172414,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 64,
+        "keyword": "Sample",
+        "content": "- [x] Prompt validation with multiple sample inputs and outputs"
+      },
+      {
+        "line": 83,
+        "keyword": "Sample",
+        "content": "- [x] PromptTemplates.md (AI workflows, sample prompts)"
+      },
+      {
+        "line": 385,
+        "keyword": "Sample",
+        "content": "- [x] Allow users to test voice preview samples per character before rendering"
+      },
+      {
+        "line": 527,
+        "keyword": "Content for",
+        "content": "- [x] Flag NSFW content for internal moderation or publishing filter logic"
+      },
+      {
+        "line": 528,
+        "keyword": "Content for",
+        "content": "- [x] Auto-detect safe vs. unsafe content for preview-only versions"
+      }
+    ]
+  },
+  "./apps/CoreForgeAudio/VocalVerseFull/VocalVerse/LaunchScreen.storyboard": {
+    "total_lines": 29,
+    "placeholder_percentage": 0.034482758620689655,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 25,
+        "keyword": "Placeholder",
+        "content": "<placeholder placeholderIdentifier=\"IBFirstResponder\" id=\"firstResponder\" userLabel=\"First Responder\" sceneMemberID=\"firstResponder\"/>"
+      }
+    ]
+  },
+  "./apps/CoreForgeBloom/PrivateVault.swift": {
+    "total_lines": 55,
+    "placeholder_percentage": 0.01818181818181818,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 5,
+        "keyword": "Example",
+        "content": "/// XOR operation based on the provided password so the examples"
+      }
+    ]
+  },
+  "./apps/CoreForgeMarket/TradeMindAIFull/Sources/TradeMindAI/AutoUpdateManager.swift": {
+    "total_lines": 22,
+    "placeholder_percentage": 0.045454545454545456,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 18,
+        "keyword": "Example",
+        "content": "let updater = AutoUpdater(updateURL: url ?? URL(string: \"https://example.com/latest.json\")!,"
+      }
+    ]
+  },
+  "./apps/CoreForgeMarket/TradeMindAIFull/Sources/TradeMindAI/ShadowTrader.swift": {
+    "total_lines": 36,
+    "placeholder_percentage": 0.05555555555555555,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 3,
+        "keyword": "Mock",
+        "content": "/// Executes mock shadow trades based on whale wallet activity."
+      },
+      {
+        "line": 24,
+        "keyword": "Mock",
+        "content": "/// Perform a mock trade following a whale wallet signal."
+      }
+    ]
+  },
+  "./apps/CoreForgeMarket/TradeMindAIFull/Tests/TradeMindAITests/MultiMarketScannerTests.swift": {
+    "total_lines": 28,
+    "placeholder_percentage": 0.10714285714285714,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 5,
+        "keyword": "Mock",
+        "content": "private final class MockSyncManager: MarketPriceFetching {"
+      },
+      {
+        "line": 12,
+        "keyword": "Mock",
+        "content": "let scanner = MultiMarketScanner(syncManager: MockSyncManager())"
+      },
+      {
+        "line": 23,
+        "keyword": "Mock",
+        "content": "let scanner = MultiMarketScanner(syncManager: MockSyncManager())"
+      }
+    ]
+  },
+  "./apps/CoreForgeMarket/TradeMindAIFull/Tests/TradeMindAITests/ReportingServiceTests.swift": {
+    "total_lines": 46,
+    "placeholder_percentage": 0.10869565217391304,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 9,
+        "keyword": "Mock",
+        "content": "private class MockProtocol: URLProtocol {"
+      },
+      {
+        "line": 14,
+        "keyword": "Mock",
+        "content": "guard let handler = MockProtocol.requestHandler else { return }"
+      },
+      {
+        "line": 25,
+        "keyword": "Mock",
+        "content": "config.protocolClasses = [MockProtocol.self]"
+      },
+      {
+        "line": 28,
+        "keyword": "Mock",
+        "content": "MockProtocol.requestHandler = { request in"
+      },
+      {
+        "line": 32,
+        "keyword": "Example",
+        "content": "let service = ReportingService(baseURL: URL(string: \"https://example.com\")!, session: session)"
+      }
+    ]
+  },
+  "./apps/CoreForgeMarket/TradeMindAIFull/Tests/TradeMindAITests/OpenAIServiceTests.swift": {
+    "total_lines": 98,
+    "placeholder_percentage": 0.10204081632653061,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 18,
+        "keyword": "Mock",
+        "content": "func testSendPromptMock() {"
+      },
+      {
+        "line": 19,
+        "keyword": "Mock",
+        "content": "class MockProtocol: URLProtocol {"
+      },
+      {
+        "line": 25,
+        "keyword": "Mock",
+        "content": "guard let handler = MockProtocol.requestHandler else { return }"
+      },
+      {
+        "line": 35,
+        "keyword": "Mock",
+        "content": "config.protocolClasses = [MockProtocol.self]"
+      },
+      {
+        "line": 38,
+        "keyword": "Mock",
+        "content": "MockProtocol.requestHandler = { request in"
+      },
+      {
+        "line": 59,
+        "keyword": "Mock",
+        "content": "func testFetchEmbeddingMock() {"
+      },
+      {
+        "line": 60,
+        "keyword": "Mock",
+        "content": "class MockProtocol: URLProtocol {"
+      },
+      {
+        "line": 65,
+        "keyword": "Mock",
+        "content": "guard let handler = MockProtocol.requestHandler else { return }"
+      },
+      {
+        "line": 75,
+        "keyword": "Mock",
+        "content": "config.protocolClasses = [MockProtocol.self]"
+      },
+      {
+        "line": 79,
+        "keyword": "Mock",
+        "content": "MockProtocol.requestHandler = { request in"
+      }
+    ]
+  },
+  "./apps/CoreForgeMarket/TradeMindAIFull/Tests/TradeMindAITests/StrategyBuilderTests.swift": {
+    "total_lines": 49,
+    "placeholder_percentage": 0.10204081632653061,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 8,
+        "keyword": "Mock",
+        "content": "func testGenerateStrategyMock() {"
+      },
+      {
+        "line": 9,
+        "keyword": "Mock",
+        "content": "class MockProtocol: URLProtocol {"
+      },
+      {
+        "line": 14,
+        "keyword": "Mock",
+        "content": "guard let handler = MockProtocol.requestHandler else { return }"
+      },
+      {
+        "line": 24,
+        "keyword": "Mock",
+        "content": "config.protocolClasses = [MockProtocol.self]"
+      },
+      {
+        "line": 27,
+        "keyword": "Mock",
+        "content": "MockProtocol.requestHandler = { request in"
+      }
+    ]
+  },
+  "./apps/CoreForgeMarket/TradeMindAIFull/Tests/TradeMindAITests/AutoUpdateManagerTests.swift": {
+    "total_lines": 37,
+    "placeholder_percentage": 0.10810810810810811,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 8,
+        "keyword": "Mock",
+        "content": "private class MockURLProtocol: URLProtocol {"
+      },
+      {
+        "line": 13,
+        "keyword": "Mock",
+        "content": "if let data = MockURLProtocol.responseData {"
+      },
+      {
+        "line": 25,
+        "keyword": "Mock",
+        "content": "MockURLProtocol.responseData = json"
+      },
+      {
+        "line": 27,
+        "keyword": "Mock",
+        "content": "config.protocolClasses = [MockURLProtocol.self]"
+      }
+    ]
+  },
+  "./apps/CoreForgeMarket/TradeMindAIFull/Tests/TradeMindAITests/AdminServiceTests.swift": {
+    "total_lines": 74,
+    "placeholder_percentage": 0.10810810810810811,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 9,
+        "keyword": "Mock",
+        "content": "private class MockProtocol: URLProtocol {"
+      },
+      {
+        "line": 14,
+        "keyword": "Mock",
+        "content": "guard let handler = MockProtocol.requestHandler else { return }"
+      },
+      {
+        "line": 25,
+        "keyword": "Mock",
+        "content": "config.protocolClasses = [MockProtocol.self]"
+      },
+      {
+        "line": 27,
+        "keyword": "Mock",
+        "content": "MockProtocol.requestHandler = { request in"
+      },
+      {
+        "line": 31,
+        "keyword": "Example",
+        "content": "return AdminService(baseURL: URL(string: \"https://example.com\")!, session: session)"
+      },
+      {
+        "line": 52,
+        "keyword": "Mock",
+        "content": "config.protocolClasses = [MockProtocol.self]"
+      },
+      {
+        "line": 56,
+        "keyword": "Mock",
+        "content": "MockProtocol.requestHandler = { request in"
+      },
+      {
+        "line": 62,
+        "keyword": "Example",
+        "content": "let service = AdminService(baseURL: URL(string: \"https://example.com\")!, session: session)"
+      }
+    ]
+  },
+  "./apps/ebook2audiobook/docker-compose.yml": {
+    "total_lines": 40,
+    "placeholder_percentage": 0.05,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 36,
+        "keyword": "Example",
+        "content": "# Example correction:"
+      },
+      {
+        "line": 40,
+        "keyword": "Example",
+        "content": "# Example adding extra arguments -> command: [\"--share\"] or -> command: [\"--help\"]"
+      }
+    ]
+  },
+  "./apps/ebook2audiobook/podman-compose.yml": {
+    "total_lines": 34,
+    "placeholder_percentage": 0.058823529411764705,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 30,
+        "keyword": "Example",
+        "content": "# Example correction:"
+      },
+      {
+        "line": 34,
+        "keyword": "Example",
+        "content": "# Example adding extra arguments -> command: [\"--share\"] or -> command: [\"--help\"]"
+      }
+    ]
+  },
+  "./apps/ebook2audiobook/README.md": {
+    "total_lines": 512,
+    "placeholder_percentage": 0.01953125,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 58,
+        "keyword": "Example",
+        "content": "**Example**"
+      },
+      {
+        "line": 60,
+        "keyword": "Example",
+        "content": "![Example](https://github.com/DrewThomasson/VoxNovel/blob/dc5197dff97252fa44c391dc0596902d71278a88/readme_files/example_in_app.jpeg)"
+      },
+      {
+        "line": 84,
+        "keyword": "Example",
+        "content": "- [Headless Custom XTTS Model Usage](#example-of-custom-model-zip-upload)"
+      },
+      {
+        "line": 107,
+        "keyword": "Example",
+        "content": "- \ud83c\udf99\ufe0f High-quality text-to-speech with [Coqui XTTSv2](https://huggingface.co/coqui/XTTS-v2) and [Fairseq](https://github.com/facebookresearch/fairseq/tree/main/examples/mms) (and more)."
+      },
+      {
+        "line": 205,
+        "keyword": "Example",
+        "content": "###  Example of Custom Model Zip Upload"
+      },
+      {
+        "line": 206,
+        "keyword": "Example",
+        "content": "(must be a .zip file containing the mandatory model files. Example for XTTS: config.json, model.pth, vocab.json and ref.wav)"
+      },
+      {
+        "line": 322,
+        "keyword": "Example",
+        "content": "Example usage:"
+      },
+      {
+        "line": 380,
+        "keyword": "Example",
+        "content": "For example:"
+      },
+      {
+        "line": 444,
+        "keyword": "Example",
+        "content": "- Example: `docker run --pull always athomasson2/ebook2audiobook app.py --script_mode full_docker` - > corrected - > `docker run --pull always athomasson2/ebook2audiobook`"
+      },
+      {
+        "line": 451,
+        "keyword": "Example",
+        "content": "Example of adding this fix in the `docker run` command"
+      }
+    ]
+  },
+  "./apps/ebook2audiobook/LICENSE": {
+    "total_lines": 201,
+    "placeholder_percentage": 0.004975124378109453,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 38,
+        "keyword": "Example",
+        "content": "(an example is provided in the Appendix below)."
+      }
+    ]
+  },
+  "./apps/ebook2audiobook/app.py": {
+    "total_lines": 300,
+    "placeholder_percentage": 0.0033333333333333335,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 121,
+        "keyword": "Example",
+        "content": "Example usage:"
+      }
+    ]
+  },
+  "./apps/ebook2audiobook/CODE_OF_CONDUCT.md": {
+    "total_lines": 128,
+    "placeholder_percentage": 0.0234375,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 17,
+        "keyword": "Example",
+        "content": "Examples of behavior that contributes to a positive environment for our"
+      },
+      {
+        "line": 28,
+        "keyword": "Example",
+        "content": "Examples of unacceptable behavior include:"
+      },
+      {
+        "line": 55,
+        "keyword": "Example",
+        "content": "Examples of representing our community include using an official e-mail address,"
+      }
+    ]
+  },
+  "./apps/ebook2audiobook/lib/lang.py": {
+    "total_lines": 1699,
+    "placeholder_percentage": 0.0017657445556209534,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 37,
+        "keyword": "TODO",
+        "content": "\"fairseq\": {\"ara\": \"ar\", \"ben\": \"bn\", \"eng\": \"en\", \"fas\": \"fa\", \"fra\": \"fr\", \"deu\": \"de\", \"hin\": \"hi\", \"hun\": \"hu\", \"ind\": \"id\", \"jav\": \"jv\", \"kor\": \"ko\", \"pol\": \"pl\", \"por\": \"pt\", \"rus\": \"ru\", \"spa\": \"es\", \"tam\": \"ta\", \"tel\": \"te\", \"tur\": \"tr\", \"yor\": \"yo\", \"abi\": \"abi\", \"ace\": \"ace\", \"aca\": \"aca\", \"acn\": \"acn\", \"acr\": \"acr\", \"ach\": \"ach\", \"acu\": \"acu\", \"guq\": \"guq\", \"ade\": \"ade\", \"adj\": \"adj\", \"agd\": \"agd\", \"agx\": \"agx\", \"agn\": \"agn\", \"aha\": \"aha\", \"aka\": \"ak\", \"knj\": \"knj\", \"ake\": \"ake\", \"aeu\": \"aeu\", \"ahk\": \"ahk\", \"bss\": \"bss\", \"alj\": \"alj\", \"sqi\": \"sq\", \"alt\": \"alt\", \"alp\": \"alp\", \"alz\": \"alz\", \"kab\": \"kab\", \"amk\": \"amk\", \"mmg\": \"mmg\", \"amh\": \"am\", \"ami\": \"ami\", \"azg\": \"azg\", \"agg\": \"agg\", \"boj\": \"boj\", \"cko\": \"cko\", \"any\": \"any\", \"arl\": \"arl\", \"atq\": \"atq\", \"luc\": \"luc\", \"hyw\": \"hyw\", \"apr\": \"apr\", \"aia\": \"aia\", \"msy\": \"msy\", \"cni\": \"cni\", \"cjo\": \"cjo\", \"cpu\": \"cpu\", \"cpb\": \"cpb\", \"asm\": \"as\", \"asa\": \"asa\", \"teo\": \"teo\", \"ati\": \"ati\", \"djk\": \"djk\", \"ava\": \"av\", \"avn\": \"avn\", \"avu\": \"avu\", \"awb\": \"awb\", \"kwi\": \"kwi\", \"awa\": \"awa\", \"agr\": \"agr\", \"agu\": \"agu\", \"ayr\": \"ayr\", \"ayo\": \"ayo\", \"abp\": \"abp\", \"blx\": \"blx\", \"sgb\": \"sgb\", \"azj-script_cyrillic\": \"azj-script_cyrillic\", \"azj-script_latin\": \"azj-script_latin\", \"azb\": \"azb\", \"bba\": \"bba\", \"bhz\": \"bhz\", \"bvc\": \"bvc\", \"bfy\": \"bfy\", \"bgq\": \"bgq\", \"bdq\": \"bdq\", \"bdh\": \"bdh\", \"bqi\": \"bqi\", \"bjw\": \"bjw\", \"blz\": \"blz\", \"ban\": \"ban\", \"bcc-script_latin\": \"bcc-script_latin\", \"bcc-script_arabic\": \"bcc-script_arabic\", \"bam\": \"bm\", \"ptu\": \"ptu\", \"bcw\": \"bcw\", \"bqj\": \"bqj\", \"bno\": \"bno\", \"bbb\": \"bbb\", \"bfa\": \"bfa\", \"bjz\": \"bjz\", \"bak\": \"ba\", \"eus\": \"eu\", \"bsq\": \"bsq\", \"akb\": \"akb\", \"btd\": \"btd\", \"btx\": \"btx\", \"bts\": \"bts\", \"bbc\": \"bbc\", \"bvz\": \"bvz\", \"bjv\": \"bjv\", \"bep\": \"bep\", \"bkv\": \"bkv\", \"bzj\": \"bzj\", \"bem\": \"bem\", \"bng\": \"bng\", \"bom\": \"bom\", \"btt\": \"btt\", \"bha\": \"bha\", \"bgw\": \"bgw\", \"bht\": \"bht\", \"beh\": \"beh\", \"sne\": \"sne\", \"ubl\": \"ubl\", \"bcl\": \"bcl\", \"bim\": \"bim\", \"bkd\": \"bkd\", \"bjr\": \"bjr\", \"bfo\": \"bfo\", \"biv\": \"biv\", \"bib\": \"bib\", \"bis\": \"bi\", \"bzi\": \"bzi\", \"bqp\": \"bqp\", \"bpr\": \"bpr\", \"bps\": \"bps\", \"bwq\": \"bwq\", \"bdv\": \"bdv\", \"bqc\": \"bqc\", \"bus\": \"bus\", \"bnp\": \"bnp\", \"bmq\": \"bmq\", \"bdg\": \"bdg\", \"boa\": \"boa\", \"ksr\": \"ksr\", \"bor\": \"bor\", \"bru\": \"bru\", \"box\": \"box\", \"bzh\": \"bzh\", \"bgt\": \"bgt\", \"sab\": \"sab\", \"bul\": \"bg\", \"bwu\": \"bwu\", \"bmv\": \"bmv\", \"mya\": \"my\", \"tte\": \"tte\", \"cjp\": \"cjp\", \"cbv\": \"cbv\", \"kaq\": \"kaq\", \"cot\": \"cot\", \"cbc\": \"cbc\", \"car\": \"car\", \"cat\": \"ca\", \"ceb\": \"ceb\", \"cme\": \"cme\", \"cbi\": \"cbi\", \"ceg\": \"ceg\", \"cly\": \"cly\", \"cya\": \"cya\", \"che\": \"ce\", \"hne\": \"hne\", \"nya\": \"ny\", \"dig\": \"dig\", \"dug\": \"dug\", \"bgr\": \"bgr\", \"cek\": \"cek\", \"cfm\": \"cfm\", \"cnh\": \"cnh\", \"hlt\": \"hlt\", \"mwq\": \"mwq\", \"ctd\": \"ctd\", \"tcz\": \"tcz\", \"zyp\": \"zyp\", \"cco\": \"cco\", \"cnl\": \"cnl\", \"cle\": \"cle\", \"chz\": \"chz\", \"cpa\": \"cpa\", \"cso\": \"cso\", \"cnt\": \"cnt\", \"cuc\": \"cuc\", \"hak\": \"hak\", \"nan\": \"nan\", \"xnj\": \"xnj\", \"cap\": \"cap\", \"cax\": \"cax\", \"ctg\": \"ctg\", \"ctu\": \"ctu\", \"chf\": \"chf\", \"cce\": \"cce\", \"crt\": \"crt\", \"crq\": \"crq\", \"cac-dialect_sansebasti\\u00e1ncoat\\u00e1n\": \"cac-dialect_sansebasti\\u00e1ncoat\\u00e1n\", \"cac-dialect_sanmateoixtat\\u00e1n\": \"cac-dialect_sanmateoixtat\\u00e1n\", \"ckt\": \"ckt\", \"ncu\": \"ncu\", \"cdj\": \"cdj\", \"chv\": \"cv\", \"caa\": \"caa\", \"asg\": \"asg\", \"con\": \"con\", \"crn\": \"crn\", \"cok\": \"cok\", \"crk-script_latin\": \"crk-script_latin\", \"crk-script_syllabics\": \"crk-script_syllabics\", \"crh\": \"crh\", \"cui\": \"cui\", \"ces\": \"cs\", \"dsh\": \"dsh\", \"dbq\": \"dbq\", \"dga\": \"dga\", \"dgi\": \"dgi\", \"dgk\": \"dgk\", \"dnj-dialect_gweetaawueast\": \"dnj-dialect_gweetaawueast\", \"dnj-dialect_blowowest\": \"dnj-dialect_blowowest\", \"daa\": \"daa\", \"dnt\": \"dnt\", \"dnw\": \"dnw\", \"dar\": \"dar\", \"tcc\": \"tcc\", \"dwr\": \"dwr\", \"ded\": \"ded\", \"mzw\": \"mzw\", \"ntr\": \"ntr\", \"ddn\": \"ddn\", \"des\": \"des\", \"dso\": \"dso\", \"nfa\": \"nfa\", \"dhi\": \"dhi\", \"gud\": \"gud\", \"did\": \"did\", \"mhu\": \"mhu\", \"dip\": \"dip\", \"dik\": \"dik\", \"tbz\": \"tbz\", \"dts\": \"dts\", \"dos\": \"dos\", \"dgo\": \"dgo\", \"mvp\": \"mvp\", \"jen\": \"jen\", \"dzo\": \"dz\", \"idd\": \"idd\", \"eka\": \"eka\", \"cto\": \"cto\", \"emp\": \"emp\", \"enx\": \"enx\", \"sja\": \"sja\", \"myv\": \"myv\", \"mcq\": \"mcq\", \"ese\": \"ese\", \"evn\": \"evn\", \"eza\": \"eza\", \"ewe\": \"ee\", \"fal\": \"fal\", \"fao\": \"fo\", \"far\": \"far\", \"fij\": \"fj\", \"fin\": \"fi\", \"fon\": \"fon\", \"frd\": \"frd\", \"ful\": \"ff\", \"flr\": \"flr\", \"gau\": \"gau\", \"gbk\": \"gbk\", \"gag-script_cyrillic\": \"gag-script_cyrillic\", \"gag-script_latin\": \"gag-script_latin\", \"gbi\": \"gbi\", \"gmv\": \"gmv\", \"lug\": \"lg\", \"pwg\": \"pwg\", \"gbm\": \"gbm\", \"cab\": \"cab\", \"grt\": \"grt\", \"krs\": \"krs\", \"gso\": \"gso\", \"nlg\": \"nlg\", \"gej\": \"gej\", \"gri\": \"gri\", \"kik\": \"ki\", \"acd\": \"acd\", \"glk\": \"glk\", \"gof-script_latin\": \"gof-script_latin\", \"gog\": \"gog\", \"gkn\": \"gkn\", \"wsg\": \"wsg\", \"gjn\": \"gjn\", \"gqr\": \"gqr\", \"gor\": \"gor\", \"gux\": \"gux\", \"gbo\": \"gbo\", \"ell\": \"el\", \"grc\": \"grc\", \"guh\": \"guh\", \"gub\": \"gub\", \"grn\": \"gn\", \"gyr\": \"gyr\", \"guo\": \"guo\", \"gde\": \"gde\", \"guj\": \"gu\", \"gvl\": \"gvl\", \"guk\": \"guk\", \"rub\": \"rub\", \"dah\": \"dah\", \"gwr\": \"gwr\", \"gwi\": \"gwi\", \"hat\": \"ht\", \"hlb\": \"hlb\", \"amf\": \"amf\", \"hag\": \"hag\", \"hnn\": \"hnn\", \"bgc\": \"bgc\", \"had\": \"had\", \"hau\": \"ha\", \"hwc\": \"hwc\", \"hvn\": \"hvn\", \"hay\": \"hay\", \"xed\": \"xed\", \"heb\": \"he\", \"heh\": \"heh\", \"hil\": \"hil\", \"hif\": \"hif\", \"hns\": \"hns\", \"hoc\": \"hoc\", \"hoy\": \"hoy\", \"hus-dialect_westernpotosino\": \"hus-dialect_westernpotosino\", \"hus-dialect_centralveracruz\": \"hus-dialect_centralveracruz\", \"huv\": \"huv\", \"hui\": \"hui\", \"hap\": \"hap\", \"iba\": \"iba\", \"isl\": \"is\", \"dbj\": \"dbj\", \"ifa\": \"ifa\", \"ifb\": \"ifb\", \"ifu\": \"ifu\", \"ifk\": \"ifk\", \"ife\": \"ife\", \"ign\": \"ign\", \"ikk\": \"ikk\", \"iqw\": \"iqw\", \"ilb\": \"ilb\", \"ilo\": \"ilo\", \"imo\": \"imo\", \"inb\": \"inb\", \"ipi\": \"ipi\", \"irk\": \"irk\", \"icr\": \"icr\", \"itv\": \"itv\", \"itl\": \"itl\", \"atg\": \"atg\", \"ixl-dialect_sanjuancotzal\": \"ixl-dialect_sanjuancotzal\", \"ixl-dialect_sangasparchajul\": \"ixl-dialect_sangasparchajul\", \"ixl-dialect_santamarianebaj\": \"ixl-dialect_santamarianebaj\", \"nca\": \"nca\", \"izr\": \"izr\", \"izz\": \"izz\", \"jac\": \"jac\", \"jam\": \"jam\", \"jvn\": \"jvn\", \"kac\": \"kac\", \"dyo\": \"dyo\", \"csk\": \"csk\", \"adh\": \"adh\", \"jun\": \"jun\", \"jbu\": \"jbu\", \"dyu\": \"dyu\", \"bex\": \"bex\", \"juy\": \"juy\", \"gna\": \"gna\", \"urb\": \"urb\", \"kbp\": \"kbp\", \"cwa\": \"cwa\", \"dtp\": \"dtp\", \"kbr\": \"kbr\", \"cgc\": \"cgc\", \"kki\": \"kki\", \"kzf\": \"kzf\", \"lew\": \"lew\", \"cbr\": \"cbr\", \"kkj\": \"kkj\", \"keo\": \"keo\", \"kqe\": \"kqe\", \"kak\": \"kak\", \"kyb\": \"kyb\", \"knb\": \"knb\", \"kmd\": \"kmd\", \"kml\": \"kml\", \"ify\": \"ify\", \"xal\": \"xal\", \"kbq\": \"kbq\", \"kay\": \"kay\", \"ktb\": \"ktb\", \"hig\": \"hig\", \"gam\": \"gam\", \"cbu\": \"cbu\", \"xnr\": \"xnr\", \"kmu\": \"kmu\", \"kne\": \"kne\", \"kan\": \"kn\", \"kby\": \"kby\", \"pam\": \"pam\", \"cak-dialect_santamar\\u00edadejes\\u00fas\": \"cak-dialect_santamar\\u00edadejes\\u00fas\", \"cak-dialect_southcentral\": \"cak-dialect_southcentral\", \"cak-dialect_yepocapa\": \"cak-dialect_yepocapa\", \"cak-dialect_western\": \"cak-dialect_western\", \"cak-dialect_santodomingoxenacoj\": \"cak-dialect_santodomingoxenacoj\", \"cak-dialect_central\": \"cak-dialect_central\", \"xrb\": \"xrb\", \"krc\": \"krc\", \"kaa\": \"kaa\", \"krl\": \"krl\", \"pww\": \"pww\", \"xsm\": \"xsm\", \"cbs\": \"cbs\", \"pss\": \"pss\", \"kxf\": \"kxf\", \"kyz\": \"kyz\", \"kyu\": \"kyu\", \"txu\": \"txu\", \"kaz\": \"kk\", \"ndp\": \"ndp\", \"kbo\": \"kbo\", \"kyq\": \"kyq\", \"ken\": \"ken\", \"ker\": \"ker\", \"xte\": \"xte\", \"kyg\": \"kyg\", \"kjh\": \"kjh\", \"kca\": \"kca\", \"khm\": \"km\", \"kxm\": \"kxm\", \"kjg\": \"kjg\", \"nyf\": \"nyf\", \"kij\": \"kij\", \"kia\": \"kia\", \"kqr\": \"kqr\", \"kqp\": \"kqp\", \"krj\": \"krj\", \"zga\": \"zga\", \"kin\": \"rw\", \"pkb\": \"pkb\", \"geb\": \"geb\", \"gil\": \"gil\", \"kje\": \"kje\", \"kss\": \"kss\", \"thk\": \"thk\", \"klu\": \"klu\", \"kyo\": \"kyo\", \"kog\": \"kog\", \"kfb\": \"kfb\", \"kpv\": \"kpv\", \"bbo\": \"bbo\", \"xon\": \"xon\", \"kma\": \"kma\", \"kno\": \"kno\", \"kxc\": \"kxc\", \"ozm\": \"ozm\", \"kqy\": \"kqy\", \"coe\": \"coe\", \"kpq\": \"kpq\", \"kpy\": \"kpy\", \"kyf\": \"kyf\", \"kff-script_telugu\": \"kff-script_telugu\", \"kri\": \"kri\", \"rop\": \"rop\", \"ktj\": \"ktj\", \"ted\": \"ted\", \"krr\": \"krr\", \"kdt\": \"kdt\", \"kez\": \"kez\", \"cul\": \"cul\", \"kle\": \"kle\", \"kdi\": \"kdi\", \"kue\": \"kue\", \"kum\": \"kum\", \"kvn\": \"kvn\", \"cuk\": \"cuk\", \"kdn\": \"kdn\", \"xuo\": \"xuo\", \"key\": \"key\", \"kpz\": \"kpz\", \"knk\": \"knk\", \"kmr-script_latin\": \"kmr-script_latin\", \"kmr-script_arabic\": \"kmr-script_arabic\", \"kmr-script_cyrillic\": \"kmr-script_cyrillic\", \"xua\": \"xua\", \"kru\": \"kru\", \"kus\": \"kus\", \"kub\": \"kub\", \"kdc\": \"kdc\", \"kxv\": \"kxv\", \"blh\": \"blh\", \"cwt\": \"cwt\", \"kwd\": \"kwd\", \"tnk\": \"tnk\", \"kwf\": \"kwf\", \"cwe\": \"cwe\", \"kyc\": \"kyc\", \"tye\": \"tye\", \"kir\": \"ky\", \"quc-dialect_north\": \"quc-dialect_north\", \"quc-dialect_east\": \"quc-dialect_east\", \"quc-dialect_central\": \"quc-dialect_central\", \"lac\": \"lac\", \"lsi\": \"lsi\", \"lbj\": \"lbj\", \"lhu\": \"lhu\", \"las\": \"las\", \"lam\": \"lam\", \"lns\": \"lns\", \"ljp\": \"ljp\", \"laj\": \"laj\", \"lao\": \"lo\", \"lat\": \"la\", \"lav\": \"lv\", \"law\": \"law\", \"lcp\": \"lcp\", \"lzz\": \"lzz\", \"lln\": \"lln\", \"lef\": \"lef\", \"acf\": \"acf\", \"lww\": \"lww\", \"mhx\": \"mhx\", \"eip\": \"eip\", \"lia\": \"lia\", \"lif\": \"lif\", \"onb\": \"onb\", \"lis\": \"lis\", \"loq\": \"loq\", \"lob\": \"lob\", \"yaz\": \"yaz\", \"lok\": \"lok\", \"llg\": \"llg\", \"ycl\": \"ycl\", \"lom\": \"lom\", \"ngl\": \"ngl\", \"lon\": \"lon\", \"lex\": \"lex\", \"lgg\": \"lgg\", \"ruf\": \"ruf\", \"dop\": \"dop\", \"lnd\": \"lnd\", \"ndy\": \"ndy\", \"lwo\": \"lwo\", \"lee\": \"lee\", \"mev\": \"mev\", \"mfz\": \"mfz\", \"jmc\": \"jmc\", \"myy\": \"myy\", \"mbc\": \"mbc\", \"mda\": \"mda\", \"mad\": \"mad\", \"mag\": \"mag\", \"ayz\": \"ayz\", \"mai\": \"mai\", \"mca\": \"mca\", \"mcp\": \"mcp\", \"mak\": \"mak\", \"vmw\": \"vmw\", \"mgh\": \"mgh\", \"kde\": \"kde\", \"mlg\": \"mg\", \"zlm\": \"zlm\", \"pse\": \"pse\", \"mkn\": \"mkn\", \"xmm\": \"xmm\", \"mal\": \"ml\", \"xdy\": \"xdy\", \"div\": \"dv\", \"mdy\": \"mdy\", \"mup\": \"mup\", \"mam-dialect_central\": \"mam-dialect_central\", \"mam-dialect_northern\": \"mam-dialect_northern\", \"mam-dialect_southern\": \"mam-dialect_southern\", \"mam-dialect_western\": \"mam-dialect_western\", \"mqj\": \"mqj\", \"mcu\": \"mcu\", \"mzk\": \"mzk\", \"maw\": \"maw\", \"mjl\": \"mjl\", \"mnk\": \"mnk\", \"mge\": \"mge\", \"mbh\": \"mbh\", \"knf\": \"knf\", \"mjv\": \"mjv\", \"mbt\": \"mbt\", \"obo\": \"obo\", \"mbb\": \"mbb\", \"mzj\": \"mzj\", \"nld\": \"nld\", \"sjm\": \"sjm\", \"mrw\": \"mrw\", \"mar\": \"mr\", \"mpg\": \"mpg\", \"mhr\": \"mhr\", \"enb\": \"enb\", \"mah\": \"mh\", \"myx\": \"myx\", \"klv\": \"klv\", \"mfh\": \"mfh\", \"met\": \"met\", \"mcb\": \"mcb\", \"mop\": \"mop\", \"yua\": \"yua\", \"mfy\": \"mfy\", \"maz\": \"maz\", \"vmy\": \"vmy\", \"maq\": \"maq\", \"mzi\": \"mzi\", \"maj\": \"maj\", \"maa-dialect_sanantonio\": \"maa-dialect_sanantonio\", \"maa-dialect_sanjer\\u00f3nimo\": \"maa-dialect_sanjer\\u00f3nimo\", \"mhy\": \"mhy\", \"mhi\": \"mhi\", \"zmz\": \"zmz\", \"myb\": \"myb\", \"gai\": \"gai\", \"mqb\": \"mqb\", \"mbu\": \"mbu\", \"med\": \"med\", \"men\": \"men\", \"mee\": \"mee\", \"mwv\": \"mwv\", \"meq\": \"meq\", \"zim\": \"zim\", \"mgo\": \"mgo\", \"mej\": \"mej\", \"mpp\": \"mpp\", \"min\": \"min\", \"gum\": \"gum\", \"mpx\": \"mpx\", \"mco\": \"mco\", \"mxq\": \"mxq\", \"pxm\": \"pxm\", \"mto\": \"mto\", \"mim\": \"mim\", \"xta\": \"xta\", \"mbz\": \"mbz\", \"mip\": \"mip\", \"mib\": \"mib\", \"miy\": \"miy\", \"mih\": \"mih\", \"miz\": \"miz\", \"xtd\": \"xtd\", \"mxt\": \"mxt\", \"xtm\": \"xtm\", \"mxv\": \"mxv\", \"xtn\": \"xtn\", \"mie\": \"mie\", \"mil\": \"mil\", \"mio\": \"mio\", \"mdv\": \"mdv\", \"mza\": \"mza\", \"mit\": \"mit\", \"mxb\": \"mxb\", \"mpm\": \"mpm\", \"soy\": \"soy\", \"cmo-script_latin\": \"cmo-script_latin\", \"cmo-script_khmer\": \"cmo-script_khmer\", \"mfq\": \"mfq\", \"old\": \"old\", \"mfk\": \"mfk\", \"mif\": \"mif\", \"mkl\": \"mkl\", \"mox\": \"mox\", \"myl\": \"myl\", \"mqf\": \"mqf\", \"mnw\": \"mnw\", \"mon\": \"mn\", \"mog\": \"mog\", \"mfe\": \"mfe\", \"mor\": \"mor\", \"mqn\": \"mqn\", \"mgd\": \"mgd\", \"mtj\": \"mtj\", \"cmr\": \"cmr\", \"mtd\": \"mtd\", \"bmr\": \"bmr\", \"moz\": \"moz\", \"mzm\": \"mzm\", \"mnb\": \"mnb\", \"mnf\": \"mnf\", \"unr\": \"unr\", \"fmu\": \"fmu\", \"mur\": \"mur\", \"tih\": \"tih\", \"muv\": \"muv\", \"muy\": \"muy\", \"sur\": \"sur\", \"moa\": \"moa\", \"wmw\": \"wmw\", \"tnr\": \"tnr\", \"miq\": \"miq\", \"mos\": \"mos\", \"muh\": \"muh\", \"nas\": \"nas\", \"mbj\": \"mbj\", \"nfr\": \"nfr\", \"kfw\": \"kfw\", \"nst\": \"nst\", \"nag\": \"nag\", \"nch\": \"nch\", \"nhe\": \"nhe\", \"ngu\": \"ngu\", \"azz\": \"azz\", \"nhx\": \"nhx\", \"ncl\": \"ncl\", \"nhy\": \"nhy\", \"ncj\": \"ncj\", \"nsu\": \"nsu\", \"npl\": \"npl\", \"nuz\": \"nuz\", \"nhw\": \"nhw\", \"nhi\": \"nhi\", \"nlc\": \"nlc\", \"nab\": \"nab\", \"gld\": \"gld\", \"nnb\": \"nnb\", \"npy\": \"npy\", \"pbb\": \"pbb\", \"ntm\": \"ntm\", \"nmz\": \"nmz\", \"naw\": \"naw\", \"nxq\": \"nxq\", \"ndj\": \"ndj\", \"ndz\": \"ndz\", \"ndv\": \"ndv\", \"new\": \"new\", \"nij\": \"nij\", \"sba\": \"sba\", \"gng\": \"gng\", \"nga\": \"nga\", \"nnq\": \"nnq\", \"ngp\": \"ngp\", \"gym\": \"gym\", \"kdj\": \"kdj\", \"nia\": \"nia\", \"nim\": \"nim\", \"nin\": \"nin\", \"nko\": \"nko\", \"nog\": \"nog\", \"lem\": \"lem\", \"not\": \"not\", \"nhu\": \"nhu\", \"nob\": \"nb\", \"bud\": \"bud\", \"nus\": \"nus\", \"yas\": \"yas\", \"nnw\": \"nnw\", \"nwb\": \"nwb\", \"nyy\": \"nyy\", \"nyn\": \"nyn\", \"rim\": \"rim\", \"lid\": \"lid\", \"nuj\": \"nuj\", \"nyo\": \"nyo\", \"nzi\": \"nzi\", \"ann\": \"ann\", \"ory\": \"ory\", \"ojb-script_latin\": \"ojb-script_latin\", \"ojb-script_syllabics\": \"ojb-script_syllabics\", \"oku\": \"oku\", \"bsc\": \"bsc\", \"bdu\": \"bdu\", \"orm\": \"om\", \"ury\": \"ury\", \"oss\": \"os\", \"ote\": \"ote\", \"otq\": \"otq\", \"stn\": \"stn\", \"sig\": \"sig\", \"kfx\": \"kfx\", \"bfz\": \"bfz\", \"sey\": \"sey\", \"pao\": \"pao\", \"pau\": \"pau\", \"pce\": \"pce\", \"plw\": \"plw\", \"pmf\": \"pmf\", \"pag\": \"pag\", \"pap\": \"pap\", \"prf\": \"prf\", \"pab\": \"pab\", \"pbi\": \"pbi\", \"pbc\": \"pbc\", \"pad\": \"pad\", \"ata\": \"ata\", \"pez\": \"pez\", \"peg\": \"peg\", \"pcm\": \"pcm\", \"pis\": \"pis\", \"pny\": \"pny\", \"pir\": \"pir\", \"pjt\": \"pjt\", \"poy\": \"poy\", \"pps\": \"pps\", \"pls\": \"pls\", \"poi\": \"poi\", \"poh-dialect_eastern\": \"poh-dialect_eastern\", \"poh-dialect_western\": \"poh-dialect_western\", \"prt\": \"prt\", \"pui\": \"pui\", \"pan\": \"pa\", \"tsz\": \"tsz\", \"suv\": \"suv\", \"lme\": \"lme\", \"quy\": \"quy\", \"qvc\": \"qvc\", \"quz\": \"quz\", \"qve\": \"qve\", \"qub\": \"qub\", \"qvh\": \"qvh\", \"qwh\": \"qwh\", \"qvw\": \"qvw\", \"quf\": \"quf\", \"qvm\": \"qvm\", \"qul\": \"qul\", \"qvn\": \"qvn\", \"qxn\": \"qxn\", \"qxh\": \"qxh\", \"qvs\": \"qvs\", \"quh\": \"quh\", \"qxo\": \"qxo\", \"qxr\": \"qxr\", \"qvo\": \"qvo\", \"qvz\": \"qvz\", \"qxl\": \"qxl\", \"quw\": \"quw\", \"kjb\": \"kjb\", \"kek\": \"kek\", \"rah\": \"rah\", \"rjs\": \"rjs\", \"rai\": \"rai\", \"lje\": \"lje\", \"rnl\": \"rnl\", \"rkt\": \"rkt\", \"rap\": \"rap\", \"yea\": \"yea\", \"raw\": \"raw\", \"rej\": \"rej\", \"rel\": \"rel\", \"ril\": \"ril\", \"iri\": \"iri\", \"rgu\": \"rgu\", \"rhg\": \"rhg\", \"rmc-script_latin\": \"rmc-script_latin\", \"rmc-script_cyrillic\": \"rmc-script_cyrillic\", \"rmo\": \"rmo\", \"rmy-script_latin\": \"rmy-script_latin\", \"rmy-script_cyrillic\": \"rmy-script_cyrillic\", \"ron\": \"ro\", \"rol\": \"rol\", \"cla\": \"cla\", \"rng\": \"rng\", \"rug\": \"rug\", \"run\": \"rn\", \"lsm\": \"lsm\", \"spy\": \"spy\", \"sck\": \"sck\", \"saj\": \"saj\", \"sch\": \"sch\", \"sml\": \"sml\", \"xsb\": \"xsb\", \"sbl\": \"sbl\", \"saq\": \"saq\", \"sbd\": \"sbd\", \"smo\": \"sm\", \"rav\": \"rav\", \"sxn\": \"sxn\", \"sag\": \"sg\", \"sbp\": \"sbp\", \"xsu\": \"xsu\", \"srm\": \"srm\", \"sas\": \"sas\", \"apb\": \"apb\", \"sgw\": \"sgw\", \"tvw\": \"tvw\", \"lip\": \"lip\", \"slu\": \"slu\", \"snw\": \"snw\", \"sea\": \"sea\", \"sza\": \"sza\", \"seh\": \"seh\", \"crs\": \"crs\", \"ksb\": \"ksb\", \"shn\": \"shn\", \"sho\": \"sho\", \"mcd\": \"mcd\", \"cbt\": \"cbt\", \"xsr\": \"xsr\", \"shk\": \"shk\", \"shp\": \"shp\", \"sna\": \"sn\", \"cjs\": \"cjs\", \"jiv\": \"jiv\", \"snp\": \"snp\", \"sya\": \"sya\", \"sid\": \"sid\", \"snn\": \"snn\", \"sri\": \"sri\", \"srx\": \"srx\", \"sil\": \"sil\", \"sld\": \"sld\", \"akp\": \"akp\", \"xog\": \"xog\", \"som\": \"so\", \"bmu\": \"bmu\", \"khq\": \"khq\", \"ses\": \"ses\", \"mnx\": \"mnx\", \"srn\": \"srn\", \"sxb\": \"sxb\", \"suc\": \"suc\", \"tgo\": \"tgo\", \"suk\": \"suk\", \"sun\": \"su\", \"suz\": \"suz\", \"sgj\": \"sgj\", \"sus\": \"sus\", \"swh\": \"swh\", \"swe\": \"sv\", \"syl\": \"syl\", \"dyi\": \"dyi\", \"myk\": \"myk\", \"spp\": \"spp\", \"tap\": \"tap\", \"tby\": \"tby\", \"tna\": \"tna\", \"shi\": \"shi\", \"klw\": \"klw\", \"tgl\": \"tl\", \"tbk\": \"tbk\", \"tgj\": \"tgj\", \"blt\": \"blt\", \"tbg\": \"tbg\", \"omw\": \"omw\", \"tgk\": \"tg\", \"tdj\": \"tdj\", \"tbc\": \"tbc\", \"tlj\": \"tlj\", \"tly\": \"tly\", \"ttq-script_tifinagh\": \"ttq-script_tifinagh\", \"taj\": \"taj\", \"taq\": \"taq\", \"tpm\": \"tpm\", \"tgp\": \"tgp\", \"tnn\": \"tnn\", \"tac\": \"tac\", \"rif-script_latin\": \"rif-script_latin\", \"rif-script_arabic\": \"rif-script_arabic\", \"tat\": \"tt\", \"tav\": \"tav\", \"twb\": \"twb\", \"tbl\": \"tbl\", \"kps\": \"kps\", \"twe\": \"twe\", \"ttc\": \"ttc\", \"kdh\": \"kdh\", \"tes\": \"tes\", \"tex\": \"tex\", \"tee\": \"tee\", \"tpp\": \"tpp\", \"tpt\": \"tpt\", \"stp\": \"stp\", \"tfr\": \"tfr\", \"twu\": \"twu\", \"ter\": \"ter\", \"tew\": \"tew\", \"tha\": \"th\", \"nod\": \"nod\", \"thl\": \"thl\", \"tem\": \"tem\", \"adx\": \"adx\", \"bod\": \"bo\", \"khg\": \"khg\", \"tca\": \"tca\", \"tir\": \"ti\", \"txq\": \"txq\", \"tik\": \"tik\", \"dgr\": \"dgr\", \"tob\": \"tob\", \"tmf\": \"tmf\", \"tng\": \"tng\", \"tlb\": \"tlb\", \"ood\": \"ood\", \"tpi\": \"tpi\", \"jic\": \"jic\", \"lbw\": \"lbw\", \"txa\": \"txa\", \"tom\": \"tom\", \"toh\": \"toh\", \"tnt\": \"tnt\", \"sda\": \"sda\", \"tcs\": \"tcs\", \"toc\": \"toc\", \"tos\": \"tos\", \"neb\": \"neb\", \"trn\": \"trn\", \"trs\": \"trs\", \"trc\": \"trc\", \"tri\": \"tri\", \"cof\": \"cof\", \"tkr\": \"tkr\", \"kdl\": \"kdl\", \"cas\": \"cas\", \"tso\": \"ts\", \"tuo\": \"tuo\", \"iou\": \"iou\", \"tmc\": \"tmc\", \"tuf\": \"tuf\", \"tuk-script_latin\": \"tk\", \"tuk-script_arabic\": \"tk\", \"bov\": \"bov\", \"tue\": \"tue\", \"kcg\": \"kcg\", \"tzh-dialect_bachaj\\u00f3n\": \"tzh-dialect_bachaj\\u00f3n\", \"tzh-dialect_tenejapa\": \"tzh-dialect_tenejapa\", \"tzo-dialect_chenalh\\u00f3\": \"tzo-dialect_chenalh\\u00f3\", \"tzo-dialect_chamula\": \"tzo-dialect_chamula\", \"tzj-dialect_western\": \"tzj-dialect_western\", \"tzj-dialect_eastern\": \"tzj-dialect_eastern\", \"aoz\": \"aoz\", \"udm\": \"udm\", \"udu\": \"udu\", \"ukr\": \"uk\", \"ppk\": \"ppk\", \"ubu\": \"ubu\", \"urk\": \"urk\", \"ura\": \"ura\", \"urt\": \"urt\", \"urd-script_devanagari\": \"ur\", \"urd-script_arabic\": \"ur\", \"urd-script_latin\": \"ur\", \"upv\": \"upv\", \"usp\": \"usp\", \"uig-script_arabic\": \"ug\", \"uig-script_cyrillic\": \"ug\", \"uzb-script_cyrillic\": \"uz\", \"vag\": \"vag\", \"bav\": \"bav\", \"vid\": \"vid\", \"vie\": \"vi\", \"vif\": \"vif\", \"vun\": \"vun\", \"vut\": \"vut\", \"prk\": \"prk\", \"wwa\": \"wwa\", \"rro\": \"rro\", \"bao\": \"bao\", \"waw\": \"waw\", \"lgl\": \"lgl\", \"wlx\": \"wlx\", \"cou\": \"cou\", \"hub\": \"hub\", \"gvc\": \"gvc\", \"mfi\": \"mfi\", \"wap\": \"wap\", \"wba\": \"wba\", \"war\": \"war\", \"way\": \"way\", \"guc\": \"guc\", \"cym\": \"cy\", \"kvw\": \"kvw\", \"tnp\": \"tnp\", \"hto\": \"hto\", \"huu\": \"huu\", \"wal-script_latin\": \"wal-script_latin\", \"wal-script_ethiopic\": \"wal-script_ethiopic\", \"wlo\": \"wlo\", \"noa\": \"noa\", \"wob\": \"wob\", \"kao\": \"kao\", \"xer\": \"xer\", \"yad\": \"yad\", \"yka\": \"yka\", \"sah\": \"sah\", \"yba\": \"yba\", \"yli\": \"yli\", \"nlk\": \"nlk\", \"yal\": \"yal\", \"yam\": \"yam\", \"yat\": \"yat\", \"jmd\": \"jmd\", \"tao\": \"tao\", \"yaa\": \"yaa\", \"ame\": \"ame\", \"guu\": \"guu\", \"yao\": \"yao\", \"yre\": \"yre\", \"yva\": \"yva\", \"ybb\": \"ybb\", \"pib\": \"pib\", \"byr\": \"byr\", \"pil\": \"pil\", \"ycn\": \"ycn\", \"ess\": \"ess\", \"yuz\": \"yuz\", \"atb\": \"atb\", \"zne\": \"zne\", \"zaq\": \"zaq\", \"zpo\": \"zpo\", \"zad\": \"zad\", \"zpc\": \"zpc\", \"zca\": \"zca\", \"zpg\": \"zpg\", \"zai\": \"zai\", \"zpl\": \"zpl\", \"zam\": \"zam\", \"zaw\": \"zaw\", \"zpm\": \"zpm\", \"zac\": \"zac\", \"zao\": \"zao\", \"ztq\": \"ztq\", \"zar\": \"zar\", \"zpt\": \"zpt\", \"zpi\": \"zpi\", \"zas\": \"zas\", \"zaa\": \"zaa\", \"zpz\": \"zpz\", \"zab\": \"zab\", \"zpu\": \"zpu\", \"zae\": \"zae\", \"zty\": \"zty\", \"zav\": \"zav\", \"zza\": \"zza\", \"zyb\": \"zyb\", \"ziw\": \"ziw\", \"zos\": \"zos\", \"gnd\": \"gnd\"},"
+      },
+      {
+        "line": 200,
+        "keyword": "Example",
+        "content": "\"e.g.\": \"for example\","
+      },
+      {
+        "line": 969,
+        "keyword": "TODO",
+        "content": "\"cak-dialect_santodomingoxenacoj\": {\"name\": \"Kaqchikel - dialect Santo Domingo Xenacoj\", \"native_name\": \"Kaqchikel\", \"max_chars\": 142},"
+      }
+    ]
+  },
+  "./apps/ebook2audiobook/lib/models.py": {
+    "total_lines": 435,
+    "placeholder_percentage": 0.18620689655172415,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 32,
+        "keyword": "Sample",
+        "content": "\"samplerate\": 24000,"
+      },
+      {
+        "line": 72,
+        "keyword": "Sample",
+        "content": "\"samplerate\": 24000,"
+      },
+      {
+        "line": 101,
+        "keyword": "Sample",
+        "content": "\"samplerate\": 22050,"
+      },
+      {
+        "line": 107,
+        "keyword": "Sample",
+        "content": "\"samplerate\": 22050,"
+      },
+      {
+        "line": 113,
+        "keyword": "Sample",
+        "content": "\"samplerate\": 16000,"
+      },
+      {
+        "line": 119,
+        "keyword": "Sample",
+        "content": "\"samplerate\": 16000,"
+      },
+      {
+        "line": 130,
+        "keyword": "Sample",
+        "content": "\"voice\": os.path.join(voices_dir, \"eng\", \"adult\", \"male\", f\"KumarDahl_{default_xtts_settings['samplerate']}.wav\"),"
+      },
+      {
+        "line": 132,
+        "keyword": "Sample",
+        "content": "\"samplerate\": default_xtts_settings['samplerate']"
+      },
+      {
+        "line": 138,
+        "keyword": "Sample",
+        "content": "\"voice\": os.path.join(voices_dir, \"eng\", \"adult\", \"male\", f\"AiExplained_{default_xtts_settings['samplerate']}.wav\"),"
+      },
+      {
+        "line": 140,
+        "keyword": "Sample",
+        "content": "\"samplerate\": default_xtts_settings['samplerate']"
+      },
+      {
+        "line": 146,
+        "keyword": "Sample",
+        "content": "\"voice\": os.path.join(voices_dir, \"eng\", \"adult\", \"male\", f\"AsmrRacoon_{default_xtts_settings['samplerate']}.wav\"),"
+      },
+      {
+        "line": 148,
+        "keyword": "Sample",
+        "content": "\"samplerate\": default_xtts_settings['samplerate']"
+      },
+      {
+        "line": 154,
+        "keyword": "Sample",
+        "content": "\"voice\": os.path.join(voices_dir, \"eng\", \"adult\", \"male\", f\"BobOdenkirk_{default_xtts_settings['samplerate']}.wav\"),"
+      },
+      {
+        "line": 156,
+        "keyword": "Sample",
+        "content": "\"samplerate\": default_xtts_settings['samplerate']"
+      },
+      {
+        "line": 162,
+        "keyword": "Sample",
+        "content": "\"voice\": os.path.join(voices_dir, \"eng\", \"adult\", \"male\", f\"BobRoss_{default_xtts_settings['samplerate']}.wav\"),"
+      },
+      {
+        "line": 164,
+        "keyword": "Sample",
+        "content": "\"samplerate\": default_xtts_settings['samplerate']"
+      },
+      {
+        "line": 170,
+        "keyword": "Sample",
+        "content": "\"voice\": os.path.join(voices_dir, \"eng\", \"adult\", \"female\", f\"BrinaPalencia_{default_xtts_settings['samplerate']}.wav\"),"
+      },
+      {
+        "line": 172,
+        "keyword": "Sample",
+        "content": "\"samplerate\": default_xtts_settings['samplerate']"
+      },
+      {
+        "line": 178,
+        "keyword": "Sample",
+        "content": "\"voice\": os.path.join(voices_dir, \"eng\", \"adult\", \"male\", f\"BryanCranston_{default_xtts_settings['samplerate']}.wav\"),"
+      },
+      {
+        "line": 180,
+        "keyword": "Sample",
+        "content": "\"samplerate\": default_xtts_settings['samplerate']"
+      },
+      {
+        "line": 186,
+        "keyword": "Sample",
+        "content": "\"voice\": os.path.join(voices_dir, \"eng\", \"elder\", \"male\", f\"DavidAttenborough_{default_xtts_settings['samplerate']}.wav\"),"
+      },
+      {
+        "line": 188,
+        "keyword": "Sample",
+        "content": "\"samplerate\": default_xtts_settings['samplerate']"
+      },
+      {
+        "line": 194,
+        "keyword": "Sample",
+        "content": "\"voice\": os.path.join(voices_dir, \"eng\", \"adult\", \"male\", f\"DeathPussInBoots_{default_xtts_settings['samplerate']}.wav\"),"
+      },
+      {
+        "line": 196,
+        "keyword": "Sample",
+        "content": "\"samplerate\": default_xtts_settings['samplerate']"
+      },
+      {
+        "line": 202,
+        "keyword": "Sample",
+        "content": "\"voice\": os.path.join(voices_dir, \"eng\", \"elder\", \"male\", f\"DermotCrowley_{default_xtts_settings['samplerate']}.wav\"),"
+      },
+      {
+        "line": 204,
+        "keyword": "Sample",
+        "content": "\"samplerate\": default_xtts_settings['samplerate']"
+      },
+      {
+        "line": 210,
+        "keyword": "Sample",
+        "content": "\"voice\": os.path.join(voices_dir, \"eng\", \"adult\", \"female\", f\"EvaSeymour_{default_xtts_settings['samplerate']}.wav\"),"
+      },
+      {
+        "line": 212,
+        "keyword": "Sample",
+        "content": "\"samplerate\": default_xtts_settings['samplerate']"
+      },
+      {
+        "line": 218,
+        "keyword": "Sample",
+        "content": "\"voice\": os.path.join(voices_dir, \"eng\", \"elder\", \"male\", f\"GideonOfnirEldenRing_{default_xtts_settings['samplerate']}.wav\"),"
+      },
+      {
+        "line": 220,
+        "keyword": "Sample",
+        "content": "\"samplerate\": default_xtts_settings['samplerate']"
+      },
+      {
+        "line": 226,
+        "keyword": "Sample",
+        "content": "\"voice\": os.path.join(voices_dir, \"eng\", \"adult\", \"male\", f\"GhostMW2_{default_xtts_settings['samplerate']}.wav\"),"
+      },
+      {
+        "line": 228,
+        "keyword": "Sample",
+        "content": "\"samplerate\": default_xtts_settings['samplerate']"
+      },
+      {
+        "line": 234,
+        "keyword": "Sample",
+        "content": "\"voice\": os.path.join(voices_dir, \"eng\", \"elder\", \"male\", f\"JhonButlerASMR_{default_xtts_settings['samplerate']}.wav\"),"
+      },
+      {
+        "line": 236,
+        "keyword": "Sample",
+        "content": "\"samplerate\": default_xtts_settings['samplerate']"
+      },
+      {
+        "line": 242,
+        "keyword": "Sample",
+        "content": "\"voice\": os.path.join(voices_dir, \"eng\", \"adult\", \"male\", f\"JhonMulaney_{default_xtts_settings['samplerate']}.wav\"),"
+      },
+      {
+        "line": 244,
+        "keyword": "Sample",
+        "content": "\"samplerate\": default_xtts_settings['samplerate']"
+      },
+      {
+        "line": 250,
+        "keyword": "Sample",
+        "content": "\"voice\": os.path.join(voices_dir, \"eng\", \"adult\", \"female\", f\"JillRedfield_{default_xtts_settings['samplerate']}.wav\"),"
+      },
+      {
+        "line": 252,
+        "keyword": "Sample",
+        "content": "\"samplerate\": default_xtts_settings['samplerate']"
+      },
+      {
+        "line": 258,
+        "keyword": "Sample",
+        "content": "\"voice\": os.path.join(voices_dir, \"eng\", \"adult\", \"female\", f\"JuliaWhenlan_{default_xtts_settings['samplerate']}.wav\"),"
+      },
+      {
+        "line": 260,
+        "keyword": "Sample",
+        "content": "\"samplerate\": default_xtts_settings['samplerate']"
+      },
+      {
+        "line": 266,
+        "keyword": "Sample",
+        "content": "\"voice\": os.path.join(voices_dir, \"eng\", \"elder\", \"male\", f\"LeeHorsley_{default_xtts_settings['samplerate']}.wav\"),"
+      },
+      {
+        "line": 268,
+        "keyword": "Sample",
+        "content": "\"samplerate\": default_xtts_settings['samplerate']"
+      },
+      {
+        "line": 274,
+        "keyword": "Sample",
+        "content": "\"voice\": os.path.join(voices_dir, \"eng\", \"adult\", \"female\", f\"MelinaEldenRing_{default_xtts_settings['samplerate']}.wav\"),"
+      },
+      {
+        "line": 276,
+        "keyword": "Sample",
+        "content": "\"samplerate\": default_xtts_settings['samplerate']"
+      },
+      {
+        "line": 282,
+        "keyword": "Sample",
+        "content": "\"voice\": os.path.join(voices_dir, \"eng\", \"adult\", \"male\", f\"MorganFreeman_{default_xtts_settings['samplerate']}.wav\"),"
+      },
+      {
+        "line": 284,
+        "keyword": "Sample",
+        "content": "\"samplerate\": default_xtts_settings['samplerate']"
+      },
+      {
+        "line": 290,
+        "keyword": "Sample",
+        "content": "\"voice\": os.path.join(voices_dir, \"eng\", \"adult\", \"male\", f\"NeilGaiman_{default_xtts_settings['samplerate']}.wav\"),"
+      },
+      {
+        "line": 292,
+        "keyword": "Sample",
+        "content": "\"samplerate\": default_xtts_settings['samplerate']"
+      },
+      {
+        "line": 298,
+        "keyword": "Sample",
+        "content": "\"voice\": os.path.join(voices_dir, \"eng\", \"elder\", \"male\", f\"RainyDayHeadSpace_{default_xtts_settings['samplerate']}.wav\"),"
+      },
+      {
+        "line": 300,
+        "keyword": "Sample",
+        "content": "\"samplerate\": default_xtts_settings['samplerate']"
+      },
+      {
+        "line": 306,
+        "keyword": "Sample",
+        "content": "\"voice\": os.path.join(voices_dir, \"eng\", \"adult\", \"male\", f\"RayPorter_{default_xtts_settings['samplerate']}.wav\"),"
+      },
+      {
+        "line": 308,
+        "keyword": "Sample",
+        "content": "\"samplerate\": default_xtts_settings['samplerate']"
+      },
+      {
+        "line": 314,
+        "keyword": "Sample",
+        "content": "\"voice\": os.path.join(voices_dir, \"eng\", \"adult\", \"female\", f\"RelaxForAWhile_{default_xtts_settings['samplerate']}.wav\"),"
+      },
+      {
+        "line": 316,
+        "keyword": "Sample",
+        "content": "\"samplerate\": default_xtts_settings['samplerate']"
+      },
+      {
+        "line": 322,
+        "keyword": "Sample",
+        "content": "\"voice\": os.path.join(voices_dir, \"eng\", \"adult\", \"female\", f\"RosamundPike_{default_xtts_settings['samplerate']}.wav\"),"
+      },
+      {
+        "line": 324,
+        "keyword": "Sample",
+        "content": "\"samplerate\": default_xtts_settings['samplerate']"
+      },
+      {
+        "line": 330,
+        "keyword": "Sample",
+        "content": "\"voice\": os.path.join(voices_dir, \"eng\", \"adult\", \"female\", f\"ScarlettJohansson_{default_xtts_settings['samplerate']}.wav\"),"
+      },
+      {
+        "line": 332,
+        "keyword": "Sample",
+        "content": "\"samplerate\": default_xtts_settings['samplerate']"
+      },
+      {
+        "line": 338,
+        "keyword": "Sample",
+        "content": "\"voice\": os.path.join(voices_dir, \"eng\", \"adult\", \"male\", f\"StanleyParable_{default_xtts_settings['samplerate']}.wav\"),"
+      },
+      {
+        "line": 340,
+        "keyword": "Sample",
+        "content": "\"samplerate\": default_xtts_settings['samplerate']"
+      },
+      {
+        "line": 346,
+        "keyword": "Sample",
+        "content": "\"voice\": os.path.join(voices_dir, \"eng\", \"adult\", \"male\", f\"WhisperSalemASMR_{default_xtts_settings['samplerate']}.wav\"),"
+      },
+      {
+        "line": 348,
+        "keyword": "Sample",
+        "content": "\"samplerate\": default_xtts_settings['samplerate']"
+      },
+      {
+        "line": 356,
+        "keyword": "Sample",
+        "content": "\"voice\": os.path.join(voices_dir, \"eng\", \"adult\", \"male\", f\"KumarDahl_{default_bark_settings['samplerate']}.wav\"),"
+      },
+      {
+        "line": 358,
+        "keyword": "Sample",
+        "content": "\"samplerate\": default_bark_settings['samplerate']"
+      },
+      {
+        "line": 379,
+        "keyword": "Sample",
+        "content": "\"samplerate\": {"
+      },
+      {
+        "line": 380,
+        "keyword": "Sample",
+        "content": "\"css10/vits\": default_vits_settings['samplerate'],"
+      },
+      {
+        "line": 381,
+        "keyword": "Sample",
+        "content": "\"custom/vits\": default_vits_settings['samplerate'],"
+      },
+      {
+        "line": 382,
+        "keyword": "Sample",
+        "content": "\"custom/vits-female\": default_vits_settings['samplerate'],"
+      },
+      {
+        "line": 383,
+        "keyword": "Sample",
+        "content": "\"cv/vits\": default_vits_settings['samplerate'],"
+      },
+      {
+        "line": 384,
+        "keyword": "Sample",
+        "content": "\"mai/vits\": default_vits_settings['samplerate'],"
+      },
+      {
+        "line": 387,
+        "keyword": "Sample",
+        "content": "\"openbible/vits\": default_vits_settings['samplerate'],"
+      },
+      {
+        "line": 388,
+        "keyword": "Sample",
+        "content": "\"vctk/vits\": default_vits_settings['samplerate'],"
+      },
+      {
+        "line": 389,
+        "keyword": "Sample",
+        "content": "\"thorsten/vits\": default_vits_settings['samplerate']"
+      },
+      {
+        "line": 400,
+        "keyword": "Sample",
+        "content": "\"samplerate\": default_fairseq_settings['samplerate']"
+      },
+      {
+        "line": 416,
+        "keyword": "Sample",
+        "content": "\"samplerate\": {"
+      },
+      {
+        "line": 417,
+        "keyword": "Sample",
+        "content": "\"mai/tacotron2-DDC\": default_tacotron_settings['samplerate'],"
+      },
+      {
+        "line": 418,
+        "keyword": "Sample",
+        "content": "\"thorsten/tacotron2-DDC\": default_tacotron_settings['samplerate'],"
+      },
+      {
+        "line": 419,
+        "keyword": "Sample",
+        "content": "\"kokoro/tacotron2-DDC\": default_tacotron_settings['samplerate'],"
+      },
+      {
+        "line": 420,
+        "keyword": "Sample",
+        "content": "\"ljspeech/tacotron2-DDC\": default_tacotron_settings['samplerate'],"
+      },
+      {
+        "line": 421,
+        "keyword": "Sample",
+        "content": "\"baker/tacotron2-DDC-GST\": default_tacotron_settings['samplerate']"
+      },
+      {
+        "line": 432,
+        "keyword": "Sample",
+        "content": "\"samplerate\": default_yourtts_settings['samplerate']"
+      }
+    ]
+  },
+  "./apps/ebook2audiobook/lib/classes/voice_extractor.py": {
+    "total_lines": 324,
+    "placeholder_percentage": 0.018518518518518517,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 26,
+        "keyword": "Sample",
+        "content": "self.samplerate = models[session['tts_engine']][session['fine_tuned']]['samplerate']"
+      },
+      {
+        "line": 80,
+        "keyword": "Sample",
+        "content": "np.savez(npz_file, audio=audio, sample_rate=self.samplerate)"
+      },
+      {
+        "line": 98,
+        "keyword": "Example",
+        "content": "log_mel_spectrogram = vggish_input.wavfile_to_examples(self.wav_file)"
+      },
+      {
+        "line": 167,
+        "keyword": "Sample",
+        "content": "sample_rate = audio.frame_rate"
+      },
+      {
+        "line": 178,
+        "keyword": "Sample",
+        "content": "samples = np.array(chunk.get_array_of_samples())"
+      },
+      {
+        "line": 179,
+        "keyword": "Sample",
+        "content": "spectrum = np.abs(scipy.fftpack.fft(samples))"
+      }
+    ]
+  },
+  "./apps/ebook2audiobook/lib/classes/tts_manager.py": {
+    "total_lines": 34,
+    "placeholder_percentage": 0.058823529411764705,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 22,
+        "keyword": "Coming soon",
+        "content": "print('Other TTS engines coming soon!')"
+      },
+      {
+        "line": 30,
+        "keyword": "Coming soon",
+        "content": "print('Other TTS engines coming soon!')"
+      }
+    ]
+  },
+  "./apps/ebook2audiobook/lib/classes/tts_engines/coqui.py": {
+    "total_lines": 928,
+    "placeholder_percentage": 0.03125,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 31,
+        "keyword": "Sample",
+        "content": "def _safe_multinomial(input, num_samples, replacement=False, *, generator=None, out=None):"
+      },
+      {
+        "line": 41,
+        "keyword": "Sample",
+        "content": "return _original_multinomial(input, num_samples, replacement=replacement, generator=generator, out=out)"
+      },
+      {
+        "line": 68,
+        "keyword": "Sample",
+        "content": "self.params[XTTSv2]['sample_rate'] = models[XTTSv2][self.session['fine_tuned']]['samplerate']"
+      },
+      {
+        "line": 95,
+        "keyword": "Sample",
+        "content": "self.params[BARK]['sample_rate'] = models[BARK][self.session['fine_tuned']]['samplerate']"
+      },
+      {
+        "line": 113,
+        "keyword": "Sample",
+        "content": "self.params[VITS]['sample_rate'] = models[VITS][self.session['fine_tuned']]['samplerate'][sub]"
+      },
+      {
+        "line": 133,
+        "keyword": "Sample",
+        "content": "self.params[FAIRSEQ]['sample_rate'] = models[FAIRSEQ][self.session['fine_tuned']]['samplerate']"
+      },
+      {
+        "line": 150,
+        "keyword": "Sample",
+        "content": "self.params[TACOTRON2]['sample_rate'] = models[TACOTRON2][self.session['fine_tuned']]['samplerate'][sub]"
+      },
+      {
+        "line": 174,
+        "keyword": "Sample",
+        "content": "self.params[YOURTTS]['sample_rate'] = models[YOURTTS][self.session['fine_tuned']]['samplerate']"
+      },
+      {
+        "line": 324,
+        "keyword": "Sample",
+        "content": "torchaudio.save(file_path, audio_tensor, default_xtts_settings['samplerate'], format='wav')"
+      },
+      {
+        "line": 325,
+        "keyword": "Sample",
+        "content": "for samplerate in [16000, 24000]:"
+      },
+      {
+        "line": 326,
+        "keyword": "Sample",
+        "content": "output_file = file_path.replace('.wav', f'_{samplerate}.wav')"
+      },
+      {
+        "line": 327,
+        "keyword": "Sample",
+        "content": "if not self._normalize_audio(file_path, output_file, samplerate):"
+      },
+      {
+        "line": 416,
+        "keyword": "Sample",
+        "content": "sample_rate, signal = wav.read(voice_path)"
+      },
+      {
+        "line": 422,
+        "keyword": "Sample",
+        "content": "freqs = np.fft.fftfreq(len(fft_spectrum), d=1/sample_rate)"
+      },
+      {
+        "line": 466,
+        "keyword": "Sample",
+        "content": "def _trim_audio(self, audio_data, sample_rate, silence_threshold=0.001, buffer_sec=0.007):"
+      },
+      {
+        "line": 479,
+        "keyword": "Sample",
+        "content": "start_index = max(non_silent_indices[0] - int(buffer_sec * sample_rate), 0)"
+      },
+      {
+        "line": 480,
+        "keyword": "Sample",
+        "content": "end_index = non_silent_indices[-1] + int(buffer_sec * sample_rate)"
+      },
+      {
+        "line": 486,
+        "keyword": "Sample",
+        "content": "def _normalize_audio(self, input_file, output_file, samplerate):"
+      },
+      {
+        "line": 503,
+        "keyword": "Sample",
+        "content": "'-ar', str(samplerate),"
+      },
+      {
+        "line": 587,
+        "keyword": "Sample",
+        "content": "sample_rate = 16000 if self.session['tts_engine'] in [TACOTRON2, VITS] and self.session['voice'] is not None else settings['sample_rate']"
+      },
+      {
+        "line": 588,
+        "keyword": "Sample",
+        "content": "silence_tensor = torch.zeros(1, int(sample_rate * 1.4)) # 1.4 seconds"
+      },
+      {
+        "line": 719,
+        "keyword": "Sample",
+        "content": "\"-r\", str(settings['sample_rate']), tmp_out_wav,"
+      },
+      {
+        "line": 742,
+        "keyword": "Sample",
+        "content": "settings['sample_rate'] = 16000"
+      },
+      {
+        "line": 781,
+        "keyword": "Sample",
+        "content": "\"-r\", str(settings['sample_rate']), tmp_out_wav,"
+      },
+      {
+        "line": 842,
+        "keyword": "Sample",
+        "content": "\"-r\", str(settings['sample_rate']), tmp_out_wav,"
+      },
+      {
+        "line": 865,
+        "keyword": "Sample",
+        "content": "settings['sample_rate'] = 16000"
+      },
+      {
+        "line": 901,
+        "keyword": "Sample",
+        "content": "audio_tensor = self._trim_audio(audio_tensor.squeeze(), sample_rate, 0.001, trim_audio_buffer).unsqueeze(0)"
+      },
+      {
+        "line": 903,
+        "keyword": "Sample",
+        "content": "duration = audio_tensor.shape[-1] / sample_rate"
+      },
+      {
+        "line": 913,
+        "keyword": "Sample",
+        "content": "torchaudio.save(final_sentence, audio_tensor, sample_rate, format=default_audio_proc_format)"
+      }
+    ]
+  },
+  "./apps/ebook2audiobook/lib/classes/tts_engines/.template.py": {
+    "total_lines": 393,
+    "placeholder_percentage": 0.043256997455470736,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 28,
+        "keyword": "Sample",
+        "content": "def _safe_multinomial(input, num_samples, replacement=False, *, generator=None, out=None):"
+      },
+      {
+        "line": 39,
+        "keyword": "Sample",
+        "content": "return _original_multinomial(input, num_samples, replacement=replacement, generator=generator, out=out)"
+      },
+      {
+        "line": 62,
+        "keyword": "Sample",
+        "content": "settings['sample_rate'] = models[self.session['tts_engine']][self.session['fine_tuned']]['samplerate']"
+      },
+      {
+        "line": 154,
+        "keyword": "Sample",
+        "content": "def _wav2npz(self, wav_path, npz_path, sample_rate):"
+      },
+      {
+        "line": 156,
+        "keyword": "Sample",
+        "content": "np.savez(npz_path, audio=audio, sample_rate=sample_rate)"
+      },
+      {
+        "line": 162,
+        "keyword": "Sample",
+        "content": "sample_rate, signal = wav.read(voice_path)"
+      },
+      {
+        "line": 168,
+        "keyword": "Sample",
+        "content": "freqs = np.fft.fftfreq(len(fft_spectrum), d=1/sample_rate)"
+      },
+      {
+        "line": 211,
+        "keyword": "Sample",
+        "content": "def _trim_audio(self, audio_data, sample_rate, silence_threshold=0.001, buffer_sec=0.007):"
+      },
+      {
+        "line": 224,
+        "keyword": "Sample",
+        "content": "start_index = max(non_silent_indices[0] - int(buffer_sec * sample_rate), 0)"
+      },
+      {
+        "line": 225,
+        "keyword": "Sample",
+        "content": "end_index = non_silent_indices[-1] + int(buffer_sec * sample_rate)"
+      },
+      {
+        "line": 231,
+        "keyword": "Sample",
+        "content": "def _normalize_audio(self, input_file, output_file, samplerate):"
+      },
+      {
+        "line": 248,
+        "keyword": "Sample",
+        "content": "'-ar', str(samplerate),"
+      },
+      {
+        "line": 322,
+        "keyword": "Sample",
+        "content": "sample_rate = settings['sample_rate']"
+      },
+      {
+        "line": 323,
+        "keyword": "Sample",
+        "content": "silence_tensor = torch.zeros(1, sample_rate * 2)"
+      },
+      {
+        "line": 364,
+        "keyword": "Sample",
+        "content": "audio_tensor = self._trim_audio(audio_tensor.squeeze(), sample_rate, 0.001, trim_audio_buffer).unsqueeze(0)"
+      },
+      {
+        "line": 366,
+        "keyword": "Sample",
+        "content": "duration = audio_tensor.shape[-1] / sample_rate"
+      },
+      {
+        "line": 376,
+        "keyword": "Sample",
+        "content": "torchaudio.save(final_sentence, audio_tensor, sample_rate, format=default_audio_proc_format)"
+      }
+    ]
+  },
+  "./apps/ebook2audiobook/tools/normalize_wav_file.py": {
+    "total_lines": 32,
+    "placeholder_percentage": 0.03125,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 29,
+        "keyword": "Example",
+        "content": "# Example Usage"
+      }
+    ]
+  },
+  "./apps/ebook2audiobook/tools/convert_to_gif.sh": {
+    "total_lines": 43,
+    "placeholder_percentage": 0.023255813953488372,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 11,
+        "keyword": "Example",
+        "content": "echo \"Example:\""
+      }
+    ]
+  },
+  "./apps/ebook2audiobook/ebook2audiobook.egg-info/PKG-INFO": {
+    "total_lines": 491,
+    "placeholder_percentage": 0.016293279022403257,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 168,
+        "keyword": "Example",
+        "content": "- **<custom_model_URL_ZIP_path>**: URL Path to zip of Model folder. For Example this for the [xtts_David_Attenborough_fine_tune](https://huggingface.co/drewThomasson/xtts_David_Attenborough_fine_tune/tree/main) `https://huggingface.co/drewThomasson/xtts_David_Attenborough_fine_tune/resolve/main/Finished_model_files.zip?download=true`"
+      },
+      {
+        "line": 215,
+        "keyword": "Example",
+        "content": "URL to download the custom model as a zip file. Optional, but will be used if provided. Examples include David Attenborough's model: 'https://huggingface.co/drewThomasson/xtts_David_Attenborough_fine_tune/resolve/main/Finished_model_files.zip?download=true'. More XTTS fine-tunes can be found on my Hugging Face at 'https://huggingface.co/drewThomasson'."
+      },
+      {
+        "line": 228,
+        "keyword": "Example",
+        "content": "Example usage:"
+      },
+      {
+        "line": 302,
+        "keyword": "Example",
+        "content": "<summary><strong>Example of using docker in headless mode or modifying anything with the extra parameters + Full guide</strong></summary>"
+      },
+      {
+        "line": 304,
+        "keyword": "Example",
+        "content": "## Example of using docker in headless mode"
+      },
+      {
+        "line": 386,
+        "keyword": "Example",
+        "content": "will be used if provided. Examples include David Attenborough's"
+      },
+      {
+        "line": 411,
+        "keyword": "Example",
+        "content": "Example: python script.py --headless --ebook path_to_ebook --voice path_to_voice"
+      },
+      {
+        "line": 472,
+        "keyword": "Example",
+        "content": "- **Example Output**: ![Example](https://github.com/DrewThomasson/VoxNovel/blob/dc5197dff97252fa44c391dc0596902d71278a88/readme_files/example_in_app.jpeg)"
+      }
+    ]
+  },
+  "./apps/ebook2audiobook/readme/README_CN.md": {
+    "total_lines": 437,
+    "placeholder_percentage": 0.009153318077803204,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 69,
+        "keyword": "Example",
+        "content": "- \ud83c\udf99\ufe0f \u4f7f\u7528[Coqui XTTSv2](https://huggingface.co/coqui/XTTS-v2)\u548c[Fairseq](https://github.com/facebookresearch/fairseq/tree/main/examples/mms)\u7684\u9ad8\u8d28\u91cf\u6587\u672c\u8f6c\u8bed\u97f3\u3002"
+      },
+      {
+        "line": 208,
+        "keyword": "TODO",
+        "content": "--language LANGUAGE   Language for the audiobook conversion. Options: eng, zho, spa, fra, por, rus, ind, hin, ben, yor, ara, jav, jpn, kor, deu, ita, fas, tam, tel, tur, pol, hun, nld, zzzz, abi, ace, aca, acn, acr, ach, acu, guq, ade, adj, agd, agx, agn, aha, aka, knj, ake, aeu, ahk, bss, alj, sqi, alt, alp, alz, kab, amk, mmg, amh, ami, azg, agg, boj, cko, any, arl, atq, luc, hyw, apr, aia, msy, cni, cjo, cpu, cpb, asm, asa, teo, ati, djk, ava, avn, avu, awb, kwi, awa, agr, agu, ayr, ayo, abp, blx, sgb, azj-script_cyrillic, azj-script_latin, azb, bba, bhz, bvc, bfy, bgq, bdq, bdh, bqi, bjw, blz, ban, bcc-script_latin, bcc-script_arabic, bam, ptu, bcw, bqj, bno, bbb, bfa, bjz, bak, eus, bsq, akb, btd, btx, bts, bbc, bvz, bjv, bep, bkv, bzj, bem, bng, bom, btt, bha, bgw, bht, beh, sne, ubl, bcl, bim, bkd, bjr, bfo, biv, bib, bis, bzi, bqp, bpr, bps, bwq, bdv, bqc, bus, bnp, bmq, bdg, boa, ksr, bor, bru, box, bzh, bgt, sab, bul, bwu, bmv, mya, tte, cjp, cbv, kaq, cot, cbc, car, cat, ceb, cme, cbi, ceg, cly, cya, che, hne, nya, dig, dug, bgr, cek, cfm, cnh, hlt, mwq, ctd, tcz, zyp, cco, cnl, cle, chz, cpa, cso, cnt, cuc, hak, nan, xnj, cap, cax, ctg, ctu, chf, cce, crt, crq, cac-dialect_sansebasti\u00e1ncoat\u00e1n, cac-dialect_sanmateoixtat\u00e1n, ckt, ncu, cdj, chv, caa, asg, con, crn, cok, crk-script_latin, crk-script_syllabics, crh, hrv, cui, ces, dan, dsh, dbq, dga, dgi, dgk, dnj-dialect_gweetaawueast, dnj-dialect_blowowest, daa, dnt, dnw, dar, tcc, dwr, ded, mzw, ntr, ddn, des, dso, nfa, dhi, gud, did, mhu, dip, dik, tbz, dts, dos, dgo, mvp, jen, dzo, idd, eka, cto, emp, enx, sja, myv, mcq, ese, evn, eza, ewe, fal, fao, far, fij, fin, fon, frd, ful, flr, gau, gbk, gag-script_cyrillic, gag-script_latin, gbi, gmv, lug, pwg, gbm, cab, grt, krs, gso, nlg, gej, gri, kik, acd, glk, gof-script_latin, gog, gkn, wsg, gjn, gqr, gor, gux, gbo, ell, grc, guh, gub, grn, gyr, guo, gde, guj, gvl, guk, rub, dah, gwr, gwi, hat, hlb, amf, hag, hnn, bgc, had, hau, hwc, hvn, hay, xed, heb, heh, hil, hif, hns, hoc, hoy, hus-dialect_westernpotosino, hus-dialect_centralveracruz, huv, hui, hap, iba, isl, dbj, ifa, ifb, ifu, ifk, ife, ign, ikk, iqw, ilb, ilo, imo, inb, ipi, irk, icr, itv, itl, atg, ixl-dialect_sanjuancotzal, ixl-dialect_sangasparchajul, ixl-dialect_santamarianebaj, nca, izr, izz, jac, jam, jvn, kac, dyo, csk, adh, jun, jbu, dyu, bex, juy, gna, urb, kbp, cwa, dtp, kbr, cgc, kki, kzf, lew, cbr, kkj, keo, kqe, kak, kyb, knb, kmd, kml, ify, xal, kbq, kay, ktb, hig, gam, cbu, xnr, kmu, kne, kan, kby, pam, cak-dialect_santamar\u00edadejes\u00fas, cak-dialect_southcentral, cak-dialect_yepocapa, cak-dialect_western, cak-dialect_santodomingoxenacoj, cak-dialect_central, xrb, krc, kaa, krl, pww, xsm, cbs, pss, kxf, kyz, kyu, txu, kaz, ndp, kbo, kyq, ken, ker, xte, kyg, kjh, kca, khm, kxm, kjg, nyf, kij, kia, kqr, kqp, krj, zga, kin, pkb, geb, gil, kje, kss, thk, klu, kyo, kog, kfb, kpv, bbo, xon, kma, kno, kxc, ozm, kqy, coe, kpq, kpy, kyf, kff-script_telugu, kri, rop, ktj, ted, krr, kdt, kez, cul, kle, kdi, kue, kum, kvn, cuk, kdn, xuo, key, kpz, knk, kmr-script_latin, kmr-script_arabic, kmr-script_cyrillic, xua, kru, kus, kub, kdc, kxv, blh, cwt, kwd, tnk, kwf, cwe, kyc, tye, kir, quc-dialect_north, quc-dialect_east, quc-dialect_central, lac, lsi, lbj, lhu, las, lam, lns, ljp, laj, lao, lat, lav, law, lcp, lzz, lln, lef, acf, lww, mhx, eip, lia, lif, onb, lis, loq, lob, yaz, lok, llg, ycl, lom, ngl, lon, lex, lgg, ruf, dop, lnd, ndy, lwo, lee, mev, mfz, jmc, myy, mbc, mda, mad, mag, ayz, mai, mca, mcp, mak, vmw, mgh, kde, mlg, zlm, pse, mkn, xmm, mal, xdy, div, mdy, mup, mam-dialect_central, mam-dialect_northern, mam-dialect_southern, mam-dialect_western, mqj, mcu, mzk, maw, mjl, mnk, mge, mbh, knf, mjv, mbt, obo, mbb, mzj, sjm, mrw, mar, mpg, mhr, enb, mah, myx, klv, mfh, met, mcb, mop, yua, mfy, maz, vmy, maq, mzi, maj, maa-dialect_sanantonio, maa-dialect_sanjer\u00f3nimo, mhy, mhi, zmz, myb, gai, mqb, mbu, med, men, mee, mwv, meq, zim, mgo, mej, mpp, min, gum, mpx, mco, mxq, pxm, mto, mim, xta, mbz, mip, mib, miy, mih, miz, xtd, mxt, xtm, mxv, xtn, mie, mil, mio, mdv, mza, mit, mxb, mpm, soy, cmo-script_latin, cmo-script_khmer, mfq, old, mfk, mif, mkl, mox, myl, mqf, mnw, mon, mog, mfe, mor, mqn, mgd, mtj, cmr, mtd, bmr, moz, mzm, mnb, mnf, unr, fmu, mur, tih, muv, muy, sur, moa, wmw, tnr, miq, mos, muh, nas, mbj, nfr, kfw, nst, nag, nch, nhe, ngu, azz, nhx, ncl, nhy, ncj, nsu, npl, nuz, nhw, nhi, nlc, nab, gld, nnb, npy, pbb, ntm, nmz, naw, nxq, ndj, ndz, ndv, new, nij, sba, gng, nga, nnq, ngp, gym, kdj, nia, nim, nin, nko, nog, lem, not, nhu, nob, bud, nus, yas, nnw, nwb, nyy, nyn, rim, lid, nuj, nyo, nzi, ann, ory, ojb-script_latin, ojb-script_syllabics, oku, bsc, bdu, orm, ury, oss, ote, otq, stn, sig, kfx, bfz, sey, pao, pau, pce, plw, pmf, pag, pap, prf, pab, pbi, pbc, pad, ata, pez, peg, pcm, pis, pny, pir, pjt, poy, pps, pls, poi, poh-dialect_eastern, poh-dialect_western, prt, pui, pan, tsz, suv, lme, quy, qvc, quz, qve, qub, qvh, qwh, qvw, quf, qvm, qul, qvn, qxn, qxh, qvs, quh, qxo, qxr, qvo, qvz, qxl, quw, kjb, kek, rah, rjs, rai, lje, rnl, rkt, rap, yea, raw, rej, rel, ril, iri, rgu, rhg, rmc-script_latin, rmc-script_cyrillic, rmo, rmy-script_latin, rmy-script_cyrillic, ron, rol, cla, rng, rug, run, lsm, spy, sck, saj, sch, sml, xsb, sbl, saq, sbd, smo, rav, sxn, sag, sbp, xsu, srm, sas, apb, sgw, tvw, lip, slu, snw, sea, sza, seh, crs, ksb, shn, sho, mcd, cbt, xsr, shk, shp, sna, cjs, jiv, snp, sya, sid, snn, sri, srx, sil, sld, akp, xog, som, bmu, khq, ses, mnx, srn, sxb, suc, tgo, suk, sun, suz, sgj, sus, swh, swe, syl, dyi, myk, spp, tap, tby, tna, shi, klw, tgl, tbk, tgj, blt, tbg, omw, tgk, tdj, tbc, tlj, tly, ttq-script_tifinagh, taj, taq, tpm, tgp, tnn, tac, rif-script_latin, rif-script_arabic, tat, tav, twb, tbl, kps, twe, ttc, kdh, tes, tex, tee, tpp, tpt, stp, tfr, twu, ter, tew, tha, nod, thl, tem, adx, bod, khg, tca, tir, txq, tik, dgr, tob, tmf, tng, tlb, ood, tpi, jic, lbw, txa, tom, toh, tnt, sda, tcs, toc, tos, neb, trn, trs, trc, tri, cof, tkr, kdl, cas, tso, tuo, iou, tmc, tuf, tuk-script_latin, tuk-script_arabic, bov, tue, kcg, tzh-dialect_bachaj\u00f3n, tzh-dialect_tenejapa, tzo-dialect_chenalh\u00f3, tzo-dialect_chamula, tzj-dialect_western, tzj-dialect_eastern, aoz, udm, udu, ukr, ppk, ubu, urk, ura, urt, urd-script_devanagari, urd-script_arabic, urd-script_latin, upv, usp, uig-script_arabic, uig-script_cyrillic, uzb-script_cyrillic, vag, bav, vid, vie, vif, vun, vut, prk, wwa, rro, bao, waw, lgl, wlx, cou, hub, gvc, mfi, wap, wba, war, way, guc, cym, kvw, tnp, hto, huu, wal-script_latin, wal-script_ethiopic, wlo, noa, wob, kao, xer, yad, yka, sah, yba, yli, nlk, yal, yam, yat, jmd, tao, yaa, ame, guu, yao, yre, yva, ybb, pib, byr, pil, ycn, ess, yuz, atb, zne, zaq, zpo, zad, zpc, zca, zpg, zai, zpl, zam, zaw, zpm, zac, zao, ztq, zar, zpt, zpi, zas, zaa, zpz, zab, zpu, zae, zty, zav, zza, zyb, ziw, zos, gnd. Default to English (eng)."
+      },
+      {
+        "line": 227,
+        "keyword": "Example",
+        "content": "Example usage:"
+      },
+      {
+        "line": 411,
+        "keyword": "Example",
+        "content": "- **\u793a\u4f8b\u8f93\u51fa**: ![Example](https://github.com/DrewThomasson/VoxNovel/blob/dc5197dff97252fa44c391dc0596902d71278a88/readme_files/example_in_app.jpeg)"
+      }
+    ]
+  },
+  "./apps/ebook2audiobook/readme/README.it.md": {
+    "total_lines": 473,
+    "placeholder_percentage": 0.012684989429175475,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 46,
+        "keyword": "Example",
+        "content": "-   [Utilizzo del modello personalizzato senza testa](#example-of-custom-model-zip-upload)"
+      },
+      {
+        "line": 70,
+        "keyword": "Example",
+        "content": "-   \ud83c\udf99\ufe0f Text-to-Speech di alta qualit\u00e0 con[Coqui XTTSV2](https://huggingface.co/coqui/XTTS-v2)E[Fairseq](https://github.com/facebookresearch/fairseq/tree/main/examples/mms)(e altro)."
+      },
+      {
+        "line": 271,
+        "keyword": "Example",
+        "content": "Example usage:"
+      },
+      {
+        "line": 289,
+        "keyword": "TODO",
+        "content": "Questo metodo garantisce coerenza in diversi ambienti e semplifica la configurazione."
+      },
+      {
+        "line": 442,
+        "keyword": "Example",
+        "content": "-   **Esempio**![Example](https://github.com/DrewThomasson/VoxNovel/blob/dc5197dff97252fa44c391dc0596902d71278a88/readme_files/example_in_app.jpeg)"
+      },
+      {
+        "line": 465,
+        "keyword": "TODO",
+        "content": "-   [@shakenbake15 per un migliore metodo di salvataggio dei capitoli](https://github.com/DrewThomasson/ebook2audiobook/issues/8)"
+      }
+    ]
+  },
+  "./apps/ebook2audiobook/readme/README_AR.md": {
+    "total_lines": 408,
+    "placeholder_percentage": 0.00980392156862745,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 61,
+        "keyword": "Example",
+        "content": "- \ud83c\udf99\ufe0f \u064a\u0642\u062f\u0645 \u062a\u062d\u0648\u064a\u0644 \u0627\u0644\u0646\u0635 \u0625\u0644\u0649 \u0643\u0644\u0627\u0645 \u0628\u062c\u0648\u062f\u0629 \u0639\u0627\u0644\u064a\u0629 \u0628\u0627\u0633\u062a\u062e\u062f\u0627\u0645 [Coqui XTTSv2](https://huggingface.co/coqui/XTTS-v2) \u0648 [Fairseq](https://github.com/facebookresearch/fairseq/tree/main/examples/mms)."
+      },
+      {
+        "line": 201,
+        "keyword": "TODO",
+        "content": "--language LANGUAGE   Language for the audiobook conversion. Options: eng, zho, spa, fra, por, rus, ind, hin, ben, yor, ara, jav, jpn, kor, deu, ita, fas, tam, tel, tur, pol, hun, nld, zzzz, abi, ace, aca, acn, acr, ach, acu, guq, ade, adj, agd, agx, agn, aha, aka, knj, ake, aeu, ahk, bss, alj, sqi, alt, alp, alz, kab, amk, mmg, amh, ami, azg, agg, boj, cko, any, arl, atq, luc, hyw, apr, aia, msy, cni, cjo, cpu, cpb, asm, asa, teo, ati, djk, ava, avn, avu, awb, kwi, awa, agr, agu, ayr, ayo, abp, blx, sgb, azj-script_cyrillic, azj-script_latin, azb, bba, bhz, bvc, bfy, bgq, bdq, bdh, bqi, bjw, blz, ban, bcc-script_latin, bcc-script_arabic, bam, ptu, bcw, bqj, bno, bbb, bfa, bjz, bak, eus, bsq, akb, btd, btx, bts, bbc, bvz, bjv, bep, bkv, bzj, bem, bng, bom, btt, bha, bgw, bht, beh, sne, ubl, bcl, bim, bkd, bjr, bfo, biv, bib, bis, bzi, bqp, bpr, bps, bwq, bdv, bqc, bus, bnp, bmq, bdg, boa, ksr, bor, bru, box, bzh, bgt, sab, bul, bwu, bmv, mya, tte, cjp, cbv, kaq, cot, cbc, car, cat, ceb, cme, cbi, ceg, cly, cya, che, hne, nya, dig, dug, bgr, cek, cfm, cnh, hlt, mwq, ctd, tcz, zyp, cco, cnl, cle, chz, cpa, cso, cnt, cuc, hak, nan, xnj, cap, cax, ctg, ctu, chf, cce, crt, crq, cac-dialect_sansebasti\u00e1ncoat\u00e1n, cac-dialect_sanmateoixtat\u00e1n, ckt, ncu, cdj, chv, caa, asg, con, crn, cok, crk-script_latin, crk-script_syllabics, crh, hrv, cui, ces, dan, dsh, dbq, dga, dgi, dgk, dnj-dialect_gweetaawueast, dnj-dialect_blowowest, daa, dnt, dnw, dar, tcc, dwr, ded, mzw, ntr, ddn, des, dso, nfa, dhi, gud, did, mhu, dip, dik, tbz, dts, dos, dgo, mvp, jen, dzo, idd, eka, cto, emp, enx, sja, myv, mcq, ese, evn, eza, ewe, fal, fao, far, fij, fin, fon, frd, ful, flr, gau, gbk, gag-script_cyrillic, gag-script_latin, gbi, gmv, lug, pwg, gbm, cab, grt, krs, gso, nlg, gej, gri, kik, acd, glk, gof-script_latin, gog, gkn, wsg, gjn, gqr, gor, gux, gbo, ell, grc, guh, gub, grn, gyr, guo, gde, guj, gvl, guk, rub, dah, gwr, gwi, hat, hlb, amf, hag, hnn, bgc, had, hau, hwc, hvn, hay, xed, heb, heh, hil, hif, hns, hoc, hoy, hus-dialect_westernpotosino, hus-dialect_centralveracruz, huv, hui, hap, iba, isl, dbj, ifa, ifb, ifu, ifk, ife, ign, ikk, iqw, ilb, ilo, imo, inb, ipi, irk, icr, itv, itl, atg, ixl-dialect_sanjuancotzal, ixl-dialect_sangasparchajul, ixl-dialect_santamarianebaj, nca, izr, izz, jac, jam, jvn, kac, dyo, csk, adh, jun, jbu, dyu, bex, juy, gna, urb, kbp, cwa, dtp, kbr, cgc, kki, kzf, lew, cbr, kkj, keo, kqe, kak, kyb, knb, kmd, kml, ify, xal, kbq, kay, ktb, hig, gam, cbu, xnr, kmu, kne, kan, kby, pam, cak-dialect_santamar\u00edadejes\u00fas, cak-dialect_southcentral, cak-dialect_yepocapa, cak-dialect_western, cak-dialect_santodomingoxenacoj, cak-dialect_central, xrb, krc, kaa, krl, pww, xsm, cbs, pss, kxf, kyz, kyu, txu, kaz, ndp, kbo, kyq, ken, ker, xte, kyg, kjh, kca, khm, kxm, kjg, nyf, kij, kia, kqr, kqp, krj, zga, kin, pkb, geb, gil, kje, kss, thk, klu, kyo, kog, kfb, kpv, bbo, xon, kma, kno, kxc, ozm, kqy, coe, kpq, kpy, kyf, kff-script_telugu, kri, rop, ktj, ted, krr, kdt, kez, cul, kle, kdi, kue, kum, kvn, cuk, kdn, xuo, key, kpz, knk, kmr-script_latin, kmr-script_arabic, kmr-script_cyrillic, xua, kru, kus, kub, kdc, kxv, blh, cwt, kwd, tnk, kwf, cwe, kyc, tye, kir, quc-dialect_north, quc-dialect_east, quc-dialect_central, lac, lsi, lbj, lhu, las, lam, lns, ljp, laj, lao, lat, lav, law, lcp, lzz, lln, lef, acf, lww, mhx, eip, lia, lif, onb, lis, loq, lob, yaz, lok, llg, ycl, lom, ngl, lon, lex, lgg, ruf, dop, lnd, ndy, lwo, lee, mev, mfz, jmc, myy, mbc, mda, mad, mag, ayz, mai, mca, mcp, mak, vmw, mgh, kde, mlg, zlm, pse, mkn, xmm, mal, xdy, div, mdy, mup, mam-dialect_central, mam-dialect_northern, mam-dialect_southern, mam-dialect_western, mqj, mcu, mzk, maw, mjl, mnk, mge, mbh, knf, mjv, mbt, obo, mbb, mzj, sjm, mrw, mar, mpg, mhr, enb, mah, myx, klv, mfh, met, mcb, mop, yua, mfy, maz, vmy, maq, mzi, maj, maa-dialect_sanantonio, maa-dialect_sanjer\u00f3nimo, mhy, mhi, zmz, myb, gai, mqb, mbu, med, men, mee, mwv, meq, zim, mgo, mej, mpp, min, gum, mpx, mco, mxq, pxm, mto, mim, xta, mbz, mip, mib, miy, mih, miz, xtd, mxt, xtm, mxv, xtn, mie, mil, mio, mdv, mza, mit, mxb, mpm, soy, cmo-script_latin, cmo-script_khmer, mfq, old, mfk, mif, mkl, mox, myl, mqf, mnw, mon, mog, mfe, mor, mqn, mgd, mtj, cmr, mtd, bmr, moz, mzm, mnb, mnf, unr, fmu, mur, tih, muv, muy, sur, moa, wmw, tnr, miq, mos, muh, nas, mbj, nfr, kfw, nst, nag, nch, nhe, ngu, azz, nhx, ncl, nhy, ncj, nsu, npl, nuz, nhw, nhi, nlc, nab, gld, nnb, npy, pbb, ntm, nmz, naw, nxq, ndj, ndz, ndv, new, nij, sba, gng, nga, nnq, ngp, gym, kdj, nia, nim, nin, nko, nog, lem, not, nhu, nob, bud, nus, yas, nnw, nwb, nyy, nyn, rim, lid, nuj, nyo, nzi, ann, ory, ojb-script_latin, ojb-script_syllabics, oku, bsc, bdu, orm, ury, oss, ote, otq, stn, sig, kfx, bfz, sey, pao, pau, pce, plw, pmf, pag, pap, prf, pab, pbi, pbc, pad, ata, pez, peg, pcm, pis, pny, pir, pjt, poy, pps, pls, poi, poh-dialect_eastern, poh-dialect_western, prt, pui, pan, tsz, suv, lme, quy, qvc, quz, qve, qub, qvh, qwh, qvw, quf, qvm, qul, qvn, qxn, qxh, qvs, quh, qxo, qxr, qvo, qvz, qxl, quw, kjb, kek, rah, rjs, rai, lje, rnl, rkt, rap, yea, raw, rej, rel, ril, iri, rgu, rhg, rmc-script_latin, rmc-script_cyrillic, rmo, rmy-script_latin, rmy-script_cyrillic, ron, rol, cla, rng, rug, run, lsm, spy, sck, saj, sch, sml, xsb, sbl, saq, sbd, smo, rav, sxn, sag, sbp, xsu, srm, sas, apb, sgw, tvw, lip, slu, snw, sea, sza, seh, crs, ksb, shn, sho, mcd, cbt, xsr, shk, shp, sna, cjs, jiv, snp, sya, sid, snn, sri, srx, sil, sld, akp, xog, som, bmu, khq, ses, mnx, srn, sxb, suc, tgo, suk, sun, suz, sgj, sus, swh, swe, syl, dyi, myk, spp, tap, tby, tna, shi, klw, tgl, tbk, tgj, blt, tbg, omw, tgk, tdj, tbc, tlj, tly, ttq-script_tifinagh, taj, taq, tpm, tgp, tnn, tac, rif-script_latin, rif-script_arabic, tat, tav, twb, tbl, kps, twe, ttc, kdh, tes, tex, tee, tpp, tpt, stp, tfr, twu, ter, tew, tha, nod, thl, tem, adx, bod, khg, tca, tir, txq, tik, dgr, tob, tmf, tng, tlb, ood, tpi, jic, lbw, txa, tom, toh, tnt, sda, tcs, toc, tos, neb, trn, trs, trc, tri, cof, tkr, kdl, cas, tso, tuo, iou, tmc, tuf, tuk-script_latin, tuk-script_arabic, bov, tue, kcg, tzh-dialect_bachaj\u00f3n, tzh-dialect_tenejapa, tzo-dialect_chenalh\u00f3, tzo-dialect_chamula, tzj-dialect_western, tzj-dialect_eastern, aoz, udm, udu, ukr, ppk, ubu, urk, ura, urt, urd-script_devanagari, urd-script_arabic, urd-script_latin, upv, usp, uig-script_arabic, uig-script_cyrillic, uzb-script_cyrillic, vag, bav, vid, vie, vif, vun, vut, prk, wwa, rro, bao, waw, lgl, wlx, cou, hub, gvc, mfi, wap, wba, war, way, guc, cym, kvw, tnp, hto, huu, wal-script_latin, wal-script_ethiopic, wlo, noa, wob, kao, xer, yad, yka, sah, yba, yli, nlk, yal, yam, yat, jmd, tao, yaa, ame, guu, yao, yre, yva, ybb, pib, byr, pil, ycn, ess, yuz, atb, zne, zaq, zpo, zad, zpc, zca, zpg, zai, zpl, zam, zaw, zpm, zac, zao, ztq, zar, zpt, zpi, zas, zaa, zpz, zab, zpu, zae, zty, zav, zza, zyb, ziw, zos, gnd. Default to English (eng)."
+      },
+      {
+        "line": 220,
+        "keyword": "Example",
+        "content": "Example usage:"
+      },
+      {
+        "line": 381,
+        "keyword": "Example",
+        "content": "- **\u0645\u062b\u0627\u0644 \u0644\u0644\u0645\u062e\u0631\u062c\u0627\u062a**: ![Example](https://github.com/DrewThomasson/VoxNovel/blob/dc5197dff97252fa44c391dc0596902d71278a88/readme_files/example_in_app.jpeg)"
+      }
+    ]
+  },
+  "./apps/ebook2audiobook/readme/README_KR.md": {
+    "total_lines": 489,
+    "placeholder_percentage": 0.006134969325153374,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 74,
+        "keyword": "Example",
+        "content": "- \ud83c\udf99\ufe0f [Coqui XTTSv2](https://huggingface.co/coqui/XTTS-v2) \ubc0f [Fairseq](https://github.com/facebookresearch/fairseq/tree/main/examples/mms) \ub4f1 \uace0\ud488\uc9c8 \uc74c\uc131\uc0dd\uc131 \uc5d4\uc9c4 \uc9c0\uc6d0"
+      },
+      {
+        "line": 269,
+        "keyword": "Example",
+        "content": "Example usage:"
+      },
+      {
+        "line": 454,
+        "keyword": "Example",
+        "content": "![\uc608\uc81c](https://github.com/DrewThomasson/VoxNovel/blob/dc5197dff97252fa44c391dc0596902d71278a88/readme_files/example_in_app.jpeg)"
+      }
+    ]
+  },
+  "./apps/ebook2audiobook/readme/README_RU.md": {
+    "total_lines": 391,
+    "placeholder_percentage": 0.0025575447570332483,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 372,
+        "keyword": "Example",
+        "content": "- **\u041f\u0440\u0438\u043c\u0435\u0440 \u0432\u044b\u0432\u043e\u0434\u0430**: ![\u041f\u0440\u0438\u043c\u0435\u0440](https://github.com/DrewThomasson/VoxNovel/blob/dc5197dff97252fa44c391dc0596902d71278a88/readme_files/example_in_app.jpeg)"
+      }
+    ]
+  },
+  "./apps/ebook2audiobook/readme/README_FA.md": {
+    "total_lines": 433,
+    "placeholder_percentage": 0.009237875288683603,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 73,
+        "keyword": "Example",
+        "content": "- \ud83c\udf99\ufe0f \u062a\u0628\u062f\u06cc\u0644 \u06af\u0641\u062a\u0627\u0631 \u0628\u0647 \u0645\u062a\u0646 \u0628\u0627 \u06a9\u06cc\u0641\u06cc\u062a \u0628\u0627\u0644\u0627 \u0647\u0645\u0631\u0627\u0647 \u0628\u0627 [Coqui XTTSv2](https://huggingface.co/coqui/XTTS-v2) \u0648 [Fairseq](https://github.com/facebookresearch/fairseq/tree/main/examples/mms)."
+      },
+      {
+        "line": 211,
+        "keyword": "TODO",
+        "content": "--language LANGUAGE   Language for the audiobook conversion. Options: eng, zho, spa, fra, por, rus, ind, hin, ben, yor, ara, jav, jpn, kor, deu, ita, fas, tam, tel, tur, pol, hun, nld, zzzz, abi, ace, aca, acn, acr, ach, acu, guq, ade, adj, agd, agx, agn, aha, aka, knj, ake, aeu, ahk, bss, alj, sqi, alt, alp, alz, kab, amk, mmg, amh, ami, azg, agg, boj, cko, any, arl, atq, luc, hyw, apr, aia, msy, cni, cjo, cpu, cpb, asm, asa, teo, ati, djk, ava, avn, avu, awb, kwi, awa, agr, agu, ayr, ayo, abp, blx, sgb, azj-script_cyrillic, azj-script_latin, azb, bba, bhz, bvc, bfy, bgq, bdq, bdh, bqi, bjw, blz, ban, bcc-script_latin, bcc-script_arabic, bam, ptu, bcw, bqj, bno, bbb, bfa, bjz, bak, eus, bsq, akb, btd, btx, bts, bbc, bvz, bjv, bep, bkv, bzj, bem, bng, bom, btt, bha, bgw, bht, beh, sne, ubl, bcl, bim, bkd, bjr, bfo, biv, bib, bis, bzi, bqp, bpr, bps, bwq, bdv, bqc, bus, bnp, bmq, bdg, boa, ksr, bor, bru, box, bzh, bgt, sab, bul, bwu, bmv, mya, tte, cjp, cbv, kaq, cot, cbc, car, cat, ceb, cme, cbi, ceg, cly, cya, che, hne, nya, dig, dug, bgr, cek, cfm, cnh, hlt, mwq, ctd, tcz, zyp, cco, cnl, cle, chz, cpa, cso, cnt, cuc, hak, nan, xnj, cap, cax, ctg, ctu, chf, cce, crt, crq, cac-dialect_sansebasti\u00e1ncoat\u00e1n, cac-dialect_sanmateoixtat\u00e1n, ckt, ncu, cdj, chv, caa, asg, con, crn, cok, crk-script_latin, crk-script_syllabics, crh, hrv, cui, ces, dan, dsh, dbq, dga, dgi, dgk, dnj-dialect_gweetaawueast, dnj-dialect_blowowest, daa, dnt, dnw, dar, tcc, dwr, ded, mzw, ntr, ddn, des, dso, nfa, dhi, gud, did, mhu, dip, dik, tbz, dts, dos, dgo, mvp, jen, dzo, idd, eka, cto, emp, enx, sja, myv, mcq, ese, evn, eza, ewe, fal, fao, far, fij, fin, fon, frd, ful, flr, gau, gbk, gag-script_cyrillic, gag-script_latin, gbi, gmv, lug, pwg, gbm, cab, grt, krs, gso, nlg, gej, gri, kik, acd, glk, gof-script_latin, gog, gkn, wsg, gjn, gqr, gor, gux, gbo, ell, grc, guh, gub, grn, gyr, guo, gde, guj, gvl, guk, rub, dah, gwr, gwi, hat, hlb, amf, hag, hnn, bgc, had, hau, hwc, hvn, hay, xed, heb, heh, hil, hif, hns, hoc, hoy, hus-dialect_westernpotosino, hus-dialect_centralveracruz, huv, hui, hap, iba, isl, dbj, ifa, ifb, ifu, ifk, ife, ign, ikk, iqw, ilb, ilo, imo, inb, ipi, irk, icr, itv, itl, atg, ixl-dialect_sanjuancotzal, ixl-dialect_sangasparchajul, ixl-dialect_santamarianebaj, nca, izr, izz, jac, jam, jvn, kac, dyo, csk, adh, jun, jbu, dyu, bex, juy, gna, urb, kbp, cwa, dtp, kbr, cgc, kki, kzf, lew, cbr, kkj, keo, kqe, kak, kyb, knb, kmd, kml, ify, xal, kbq, kay, ktb, hig, gam, cbu, xnr, kmu, kne, kan, kby, pam, cak-dialect_santamar\u00edadejes\u00fas, cak-dialect_southcentral, cak-dialect_yepocapa, cak-dialect_western, cak-dialect_santodomingoxenacoj, cak-dialect_central, xrb, krc, kaa, krl, pww, xsm, cbs, pss, kxf, kyz, kyu, txu, kaz, ndp, kbo, kyq, ken, ker, xte, kyg, kjh, kca, khm, kxm, kjg, nyf, kij, kia, kqr, kqp, krj, zga, kin, pkb, geb, gil, kje, kss, thk, klu, kyo, kog, kfb, kpv, bbo, xon, kma, kno, kxc, ozm, kqy, coe, kpq, kpy, kyf, kff-script_telugu, kri, rop, ktj, ted, krr, kdt, kez, cul, kle, kdi, kue, kum, kvn, cuk, kdn, xuo, key, kpz, knk, kmr-script_latin, kmr-script_arabic, kmr-script_cyrillic, xua, kru, kus, kub, kdc, kxv, blh, cwt, kwd, tnk, kwf, cwe, kyc, tye, kir, quc-dialect_north, quc-dialect_east, quc-dialect_central, lac, lsi, lbj, lhu, las, lam, lns, ljp, laj, lao, lat, lav, law, lcp, lzz, lln, lef, acf, lww, mhx, eip, lia, lif, onb, lis, loq, lob, yaz, lok, llg, ycl, lom, ngl, lon, lex, lgg, ruf, dop, lnd, ndy, lwo, lee, mev, mfz, jmc, myy, mbc, mda, mad, mag, ayz, mai, mca, mcp, mak, vmw, mgh, kde, mlg, zlm, pse, mkn, xmm, mal, xdy, div, mdy, mup, mam-dialect_central, mam-dialect_northern, mam-dialect_southern, mam-dialect_western, mqj, mcu, mzk, maw, mjl, mnk, mge, mbh, knf, mjv, mbt, obo, mbb, mzj, sjm, mrw, mar, mpg, mhr, enb, mah, myx, klv, mfh, met, mcb, mop, yua, mfy, maz, vmy, maq, mzi, maj, maa-dialect_sanantonio, maa-dialect_sanjer\u00f3nimo, mhy, mhi, zmz, myb, gai, mqb, mbu, med, men, mee, mwv, meq, zim, mgo, mej, mpp, min, gum, mpx, mco, mxq, pxm, mto, mim, xta, mbz, mip, mib, miy, mih, miz, xtd, mxt, xtm, mxv, xtn, mie, mil, mio, mdv, mza, mit, mxb, mpm, soy, cmo-script_latin, cmo-script_khmer, mfq, old, mfk, mif, mkl, mox, myl, mqf, mnw, mon, mog, mfe, mor, mqn, mgd, mtj, cmr, mtd, bmr, moz, mzm, mnb, mnf, unr, fmu, mur, tih, muv, muy, sur, moa, wmw, tnr, miq, mos, muh, nas, mbj, nfr, kfw, nst, nag, nch, nhe, ngu, azz, nhx, ncl, nhy, ncj, nsu, npl, nuz, nhw, nhi, nlc, nab, gld, nnb, npy, pbb, ntm, nmz, naw, nxq, ndj, ndz, ndv, new, nij, sba, gng, nga, nnq, ngp, gym, kdj, nia, nim, nin, nko, nog, lem, not, nhu, nob, bud, nus, yas, nnw, nwb, nyy, nyn, rim, lid, nuj, nyo, nzi, ann, ory, ojb-script_latin, ojb-script_syllabics, oku, bsc, bdu, orm, ury, oss, ote, otq, stn, sig, kfx, bfz, sey, pao, pau, pce, plw, pmf, pag, pap, prf, pab, pbi, pbc, pad, ata, pez, peg, pcm, pis, pny, pir, pjt, poy, pps, pls, poi, poh-dialect_eastern, poh-dialect_western, prt, pui, pan, tsz, suv, lme, quy, qvc, quz, qve, qub, qvh, qwh, qvw, quf, qvm, qul, qvn, qxn, qxh, qvs, quh, qxo, qxr, qvo, qvz, qxl, quw, kjb, kek, rah, rjs, rai, lje, rnl, rkt, rap, yea, raw, rej, rel, ril, iri, rgu, rhg, rmc-script_latin, rmc-script_cyrillic, rmo, rmy-script_latin, rmy-script_cyrillic, ron, rol, cla, rng, rug, run, lsm, spy, sck, saj, sch, sml, xsb, sbl, saq, sbd, smo, rav, sxn, sag, sbp, xsu, srm, sas, apb, sgw, tvw, lip, slu, snw, sea, sza, seh, crs, ksb, shn, sho, mcd, cbt, xsr, shk, shp, sna, cjs, jiv, snp, sya, sid, snn, sri, srx, sil, sld, akp, xog, som, bmu, khq, ses, mnx, srn, sxb, suc, tgo, suk, sun, suz, sgj, sus, swh, swe, syl, dyi, myk, spp, tap, tby, tna, shi, klw, tgl, tbk, tgj, blt, tbg, omw, tgk, tdj, tbc, tlj, tly, ttq-script_tifinagh, taj, taq, tpm, tgp, tnn, tac, rif-script_latin, rif-script_arabic, tat, tav, twb, tbl, kps, twe, ttc, kdh, tes, tex, tee, tpp, tpt, stp, tfr, twu, ter, tew, tha, nod, thl, tem, adx, bod, khg, tca, tir, txq, tik, dgr, tob, tmf, tng, tlb, ood, tpi, jic, lbw, txa, tom, toh, tnt, sda, tcs, toc, tos, neb, trn, trs, trc, tri, cof, tkr, kdl, cas, tso, tuo, iou, tmc, tuf, tuk-script_latin, tuk-script_arabic, bov, tue, kcg, tzh-dialect_bachaj\u00f3n, tzh-dialect_tenejapa, tzo-dialect_chenalh\u00f3, tzo-dialect_chamula, tzj-dialect_western, tzj-dialect_eastern, aoz, udm, udu, ukr, ppk, ubu, urk, ura, urt, urd-script_devanagari, urd-script_arabic, urd-script_latin, upv, usp, uig-script_arabic, uig-script_cyrillic, uzb-script_cyrillic, vag, bav, vid, vie, vif, vun, vut, prk, wwa, rro, bao, waw, lgl, wlx, cou, hub, gvc, mfi, wap, wba, war, way, guc, cym, kvw, tnp, hto, huu, wal-script_latin, wal-script_ethiopic, wlo, noa, wob, kao, xer, yad, yka, sah, yba, yli, nlk, yal, yam, yat, jmd, tao, yaa, ame, guu, yao, yre, yva, ybb, pib, byr, pil, ycn, ess, yuz, atb, zne, zaq, zpo, zad, zpc, zca, zpg, zai, zpl, zam, zaw, zpm, zac, zao, ztq, zar, zpt, zpi, zas, zaa, zpz, zab, zpu, zae, zty, zav, zza, zyb, ziw, zos, gnd. Default to English (eng)."
+      },
+      {
+        "line": 230,
+        "keyword": "Example",
+        "content": "Example usage:"
+      },
+      {
+        "line": 408,
+        "keyword": "Example",
+        "content": "- **\u062e\u0631\u0648\u062c\u06cc \u0645\u062b\u0627\u0644**: ![\u0645\u062b\u0627\u0644](https://github.com/DrewThomasson/VoxNovel/blob/dc5197dff97252fa44c391dc0596902d71278a88/readme_files/example_in_app.jpeg)"
+      }
+    ]
+  },
+  "./apps/ebook2audiobook/readme/README_SWE.md": {
+    "total_lines": 412,
+    "placeholder_percentage": 0.007281553398058253,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 65,
+        "keyword": "Example",
+        "content": "- \ud83c\udf99\ufe0f H\u00f6gkvalitativ text-till-tal med [Coqui XTTSv2](https://huggingface.co/coqui/XTTS-v2) och [Fairseq](https://github.com/facebookresearch/fairseq/tree/main/examples/mms)."
+      },
+      {
+        "line": 199,
+        "keyword": "TODO",
+        "content": "--language LANGUAGE   Spr\u00e5k f\u00f6r ljudboksomvandlingen. Alternativ: eng, zho, spa, fra, por, rus, ind, hin, ben, yor, ara, jav, jpn, kor, deu, ita, fas, tam, tel, tur, pol, hun, nld, zzzz, abi, ace, aca, acn, acr, ach, acu, guq, ade, adj, agd, agx, agn, aha, aka, knj, ake, aeu, ahk, bss, alj, sqi, alt, alp, alz, kab, amk, mmg, amh, ami, azg, agg, boj, cko, any, arl, atq, luc, hyw, apr, aia, msy, cni, cjo, cpu, cpb, asm, asa, teo, ati, djk, ava, avn, avu, awb, kwi, awa, agr, agu, ayr, ayo, abp, blx, sgb, azj-script_cyrillic, azj-script_latin, azb, bba, bhz, bvc, bfy, bgq, bdq, bdh, bqi, bjw, blz, ban, bcc-script_latin, bcc-script_arabic, bam, ptu, bcw, bqj, bno, bbb, bfa, bjz, bak, eus, bsq, akb, btd, btx, bts, bbc, bvz, bjv, bep, bkv, bzj, bem, bng, bom, btt, bha, bgw, bht, beh, sne, ubl, bcl, bim, bkd, bjr, bfo, biv, bib, bis, bzi, bqp, bpr, bps, bwq, bdv, bqc, bus, bnp, bmq, bdg, boa, ksr, bor, bru, box, bzh, bgt, sab, bul, bwu, bmv, mya, tte, cjp, cbv, kaq, cot, cbc, car, cat, ceb, cme, cbi, ceg, cly, cya, che, hne, nya, dig, dug, bgr, cek, cfm, cnh, hlt, mwq, ctd, tcz, zyp, cco, cnl, cle, chz, cpa, cso, cnt, cuc, hak, nan, xnj, cap, cax, ctg, ctu, chf, cce, crt, crq, cac-dialect_sansebasti\u00e1ncoat\u00e1n, cac-dialect_sanmateoixtat\u00e1n, ckt, ncu, cdj, chv, caa, asg, con, crn, cok, crk-script_latin, crk-script_syllabics, crh, hrv, cui, ces, dan, dsh, dbq, dga, dgi, dgk, dnj-dialect_gweetaawueast, dnj-dialect_blowowest, daa, dnt, dnw, dar, tcc, dwr, ded, mzw, ntr, ddn, des, dso, nfa, dhi, gud, did, mhu, dip, dik, tbz, dts, dos, dgo, mvp, jen, dzo, idd, eka, cto, emp, enx, sja, myv, mcq, ese, evn, eza, ewe, fal, fao, far, fij, fin, fon, frd, ful, flr, gau, gbk, gag-script_cyrillic, gag-script_latin, gbi, gmv, lug, pwg, gbm, cab, grt, krs, gso, nlg, gej, gri, kik, acd, glk, gof-script_latin, gog, gkn, wsg, gjn, gqr, gor, gux, gbo, ell, grc, guh, gub, grn, gyr, guo, gde, guj, gvl, guk, rub, dah, gwr, gwi, hat, hlb, amf, hag, hnn, bgc, had, hau, hwc, hvn, hay, xed, heb, heh, hil, hif, hns, hoc, hoy, hus-dialect_westernpotosino, hus-dialect_centralveracruz, huv, hui, hap, iba, isl, dbj, ifa, ifb, ifu, ifk, ife, ign, ikk, iqw, ilb, ilo, imo, inb, ipi, irk, icr, itv, itl, atg, ixl-dialect_sanjuancotzal, ixl-dialect_sangasparchajul, ixl-dialect_santamarianebaj, nca, izr, izz, jac, jam, jvn, kac, dyo, csk, adh, jun, jbu, dyu, bex, juy, gna, urb, kbp, cwa, dtp, kbr, cgc, kki, kzf, lew, cbr, kkj, keo, kqe, kak, kyb, knb, kmd, kml, ify, xal, kbq, kay, ktb, hig, gam, cbu, xnr, kmu, kne, kan, kby, pam, cak-dialect_santamar\u00edadejes\u00fas, cak-dialect_southcentral, cak-dialect_yepocapa, cak-dialect_western, cak-dialect_santodomingoxenacoj, cak-dialect_central, xrb, krc, kaa, krl, pww, xsm, cbs, pss, kxf, kyz, kyu, txu, kaz, ndp, kbo, kyq, ken, ker, xte, kyg, kjh, kca, khm, kxm, kjg, nyf, kij, kia, kqr, kqp, krj, zga, kin, pkb, geb, gil, kje, kss, thk, klu, kyo, kog, kfb, kpv, bbo, xon, kma, kno, kxc, ozm, kqy, coe, kpq, kpy, kyf, kff-script_telugu, kri, rop, ktj, ted, krr, kdt, kez, cul, kle, kdi, kue, kum, kvn, cuk, kdn, xuo, key, kpz, knk, kmr-script_latin, kmr-script_arabic, kmr-script_cyrillic, xua, kru, kus, kub, kdc, kxv, blh, cwt, kwd, tnk, kwf, cwe, kyc, tye, kir, quc-dialect_north, quc-dialect_east, quc-dialect_central, lac, lsi, lbj, lhu, las, lam, lns, ljp, laj, lao, lat, lav, law, lcp, lzz, lln, lef, acf, lww, mhx, eip, lia, lif, onb, lis, loq, lob, yaz, lok, llg, ycl, lom, ngl, lon, lex, lgg, ruf, dop, lnd, ndy, lwo, lee, mev, mfz, jmc, myy, mbc, mda, mad, mag, ayz, mai, mca, mcp, mak, vmw, mgh, kde, mlg, zlm, pse, mkn, xmm, mal, xdy, div, mdy, mup, mam-dialect_central, mam-dialect_northern, mam-dialect_southern, mam-dialect_western, mqj, mcu, mzk, maw, mjl, mnk, mge, mbh, knf, mjv, mbt, obo, mbb, mzj, sjm, mrw, mar, mpg, mhr, enb, mah, myx, klv, mfh, met, mcb, mop, yua, mfy, maz, vmy, maq, mzi, maj, maa-dialect_sanantonio, maa-dialect_sanjer\u00f3nimo, mhy, mhi, zmz, myb, gai, mqb, mbu, med, men, mee, mwv, meq, zim, mgo, mej, mpp, min, gum, mpx, mco, mxq, pxm, mto, mim, xta, mbz, mip, mib, miy, mih, miz, xtd, mxt, xtm, mxv, xtn, mie, mil, mio, mdv, mza, mit, mxb, mpm, soy, cmo-script_latin, cmo-script_khmer, mfq, old, mfk, mif, mkl, mox, myl, mqf, mnw, mon, mog, mfe, mor, mqn, mgd, mtj, cmr, mtd, bmr, moz, mzm, mnb, mnf, unr, fmu, mur, tih, muv, muy, sur, moa, wmw, tnr, miq, mos, muh, nas, mbj, nfr, kfw, nst, nag, nch, nhe, ngu, azz, nhx, ncl, nhy, ncj, nsu, npl, nuz, nhw, nhi, nlc, nab, gld, nnb, npy, pbb, ntm, nmz, naw, nxq, ndj, ndz, ndv, new, nij, sba, gng, nga, nnq, ngp, gym, kdj, nia, nim, nin, nko, nog, lem, not, nhu, nob, bud, nus, yas, nnw, nwb, nyy, nyn, rim, lid, nuj, nyo, nzi, ann, ory, ojb-script_latin, ojb-script_syllabics, oku, bsc, bdu, orm, ury, oss, ote, otq, stn, sig, kfx, bfz, sey, pao, pau, pce, plw, pmf, pag, pap, prf, pab, pbi, pbc, pad, ata, pez, peg, pcm, pis, pny, pir, pjt, poy, pps, pls, poi, poh-dialect_eastern, poh-dialect_western, prt, pui, pan, tsz, suv, lme, quy, qvc, quz, qve, qub, qvh, qwh, qvw, quf, qvm, qul, qvn, qxn, qxh, qvs, quh, qxo, qxr, qvo, qvz, qxl, quw, kjb, kek, rah, rjs, rai, lje, rnl, rkt, rap, yea, raw, rej, rel, ril, iri, rgu, rhg, rmc-script_latin, rmc-script_cyrillic, rmo, rmy-script_latin, rmy-script_cyrillic, ron, rol, cla, rng, rug, run, lsm, spy, sck, saj, sch, sml, xsb, sbl, saq, sbd, smo, rav, sxn, sag, sbp, xsu, srm, sas, apb, sgw, tvw, lip, slu, snw, sea, sza, seh, crs, ksb, shn, sho, mcd, cbt, xsr, shk, shp, sna, cjs, jiv, snp, sya, sid, snn, sri, srx, sil, sld, akp, xog, som, bmu, khq, ses, mnx, srn, sxb, suc, tgo, suk, sun, suz, sgj, sus, swh, swe, syl, dyi, myk, spp, tap, tby, tna, shi, klw, tgl, tbk, tgj, blt, tbg, omw, tgk, tdj, tbc, tlj, tly, ttq-script_tifinagh, taj, taq, tpm, tgp, tnn, tac, rif-script_latin, rif-script_arabic, tat, tav, twb, tbl, kps, twe, ttc, kdh, tes, tex, tee, tpp, tpt, stp, tfr, twu, ter, tew, tha, nod, thl, tem, adx, bod, khg, tca, tir, txq, tik, dgr, tob, tmf, tng, tlb, ood, tpi, jic, lbw, txa, tom, toh, tnt, sda, tcs, toc, tos, neb, trn, trs, trc, tri, cof, tkr, kdl, cas, tso, tuo, iou, tmc, tuf, tuk-script_latin, tuk-script_arabic, bov, tue, kcg, tzh-dialect_bachaj\u00f3n, tzh-dialect_tenejapa, tzo-dialect_chenalh\u00f3, tzo-dialect_chamula, tzj-dialect_western, tzj-dialect_eastern, aoz, udm, udu, ukr, ppk, ubu, urk, ura, urt, urd-script_devanagari, urd-script_arabic, urd-script_latin, upv, usp, uig-script_arabic, uig-script_cyrillic, uzb-script_cyrillic, vag, bav, vid, vie, vif, vun, vut, prk, wwa, rro, bao, waw, lgl, wlx, cou, hub, gvc, mfi, wap, wba, war, way, guc, cym, kvw, tnp, hto, huu, wal-script_latin, wal-script_ethiopic, wlo, noa, wob, kao, xer, yad, yka, sah, yba, yli, nlk, yal, yam, yat, jmd, tao, yaa, ame, guu, yao, yre, yva, ybb, pib, byr, pil, ycn, ess, yuz, atb, zne, zaq, zpo, zad, zpc, zca, zpg, zai, zpl, zam, zaw, zpm, zac, zao, ztq, zar, zpt, zpi, zas, zaa, zpz, zab, zpu, zae, zty, zav, zza, zyb, ziw, zos, gnd. Standard \u00e4r Engelska (eng)."
+      },
+      {
+        "line": 386,
+        "keyword": "Example",
+        "content": "- **Exempelutdata**: ![Exempel](https://github.com/DrewThomasson/VoxNovel/blob/dc5197dff97252fa44c391dc0596902d71278a88/readme_files/example_in_app.jpeg)"
+      }
+    ]
+  },
+  "./apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/LeadMiner.swift": {
+    "total_lines": 58,
+    "placeholder_percentage": 0.017241379310344827,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 32,
+        "keyword": "Mock",
+        "content": "/// Append basic firmographic details to a lead (mock implementation)"
+      }
+    ]
+  },
+  "./apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/DFSignalAPI.swift": {
+    "total_lines": 50,
+    "placeholder_percentage": 0.02,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 12,
+        "keyword": "Example",
+        "content": "public init(baseURL: URL = URL(string: \"https://signals.example.com\")!,"
+      }
+    ]
+  },
+  "./apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/CRMIntegration.swift": {
+    "total_lines": 52,
+    "placeholder_percentage": 0.019230769230769232,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 12,
+        "keyword": "Example",
+        "content": "public init(baseURL: URL = URL(string: \"https://crm.example.com\")!,"
+      }
+    ]
+  },
+  "./apps/CoreForgeLeads/DataForgeAIFull/Tests/DataForgeAITests/AIEmailCopilotTests.swift": {
+    "total_lines": 60,
+    "placeholder_percentage": 0.06666666666666667,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 8,
+        "keyword": "Mock",
+        "content": "private class MockProtocol: URLProtocol {"
+      },
+      {
+        "line": 13,
+        "keyword": "Mock",
+        "content": "guard let handler = MockProtocol.requestHandler else { return }"
+      },
+      {
+        "line": 24,
+        "keyword": "Mock",
+        "content": "config.protocolClasses = [MockProtocol.self]"
+      },
+      {
+        "line": 25,
+        "keyword": "Mock",
+        "content": "MockProtocol.requestHandler = { request in"
+      }
+    ]
+  },
+  "./apps/CoreForgeLeads/DataForgeAIFull/Tests/DataForgeAITests/LeadMinerTests.swift": {
+    "total_lines": 11,
+    "placeholder_percentage": 0.09090909090909091,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 6,
+        "keyword": "Example",
+        "content": "let lead = Lead(name: \"Alice\", email: \"a@example.com\", company: \"Acme\", industry: \"Software\", region: \"US\")"
+      }
+    ]
+  },
+  "./apps/CoreForgeVisual/PromptTemplates.md": {
+    "total_lines": 11,
+    "placeholder_percentage": 0.09090909090909091,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 3,
+        "keyword": "Example",
+        "content": "These examples show how to request scene breakdowns and metadata from GPT-4."
+      }
+    ]
+  },
+  "./apps/CoreForgeVisual/AGENTS.md": {
+    "total_lines": 390,
+    "placeholder_percentage": 0.002564102564102564,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 361,
+        "keyword": "Example",
+        "content": "- [ ] Provide multilingual visual cue glossary with usage examples"
+      }
+    ]
+  },
+  "./apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/LaunchScreen.storyboard": {
+    "total_lines": 18,
+    "placeholder_percentage": 0.05555555555555555,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 14,
+        "keyword": "Placeholder",
+        "content": "<placeholder placeholderIdentifier=\"IBFirstResponder\" id=\"LaunchFirstResponder\" userLabel=\"First Responder\" sceneMemberID=\"firstResponder\"/>"
+      }
+    ]
+  },
+  "./apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/Info.plist": {
+    "total_lines": 21,
+    "placeholder_percentage": 0.047619047619047616,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 15,
+        "keyword": "Content for",
+        "content": "<string>Allows recording video content for scenes.</string>"
+      }
+    ]
+  },
+  "./apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/UploadScheduler.swift": {
+    "total_lines": 65,
+    "placeholder_percentage": 0.046153846153846156,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 15,
+        "keyword": "Example",
+        "content": "case .youtube: return URL(string: \"https://example.com/youtube/upload\")!"
+      },
+      {
+        "line": 16,
+        "keyword": "Example",
+        "content": "case .tiktok: return URL(string: \"https://example.com/tiktok/upload\")!"
+      },
+      {
+        "line": 17,
+        "keyword": "Example",
+        "content": "case .instagram: return URL(string: \"https://example.com/instagram/upload\")!"
+      }
+    ]
+  },
+  "./apps/AI_VideoGenerator/server.py": {
+    "total_lines": 258,
+    "placeholder_percentage": 0.023255813953488372,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 65,
+        "keyword": "Sample",
+        "content": "# Sample video URLs and thumbnails for different styles"
+      },
+      {
+        "line": 66,
+        "keyword": "Sample",
+        "content": "SAMPLE_VIDEOS = {"
+      },
+      {
+        "line": 125,
+        "keyword": "Sample",
+        "content": "# Update video status to completed with sample content"
+      },
+      {
+        "line": 126,
+        "keyword": "Sample",
+        "content": "sample_content = random.choice(SAMPLE_VIDEOS.get(style, SAMPLE_VIDEOS[\"realistic\"]))"
+      },
+      {
+        "line": 133,
+        "keyword": "Sample",
+        "content": "\"video_url\": sample_content[\"video_url\"],"
+      },
+      {
+        "line": 134,
+        "keyword": "Sample",
+        "content": "\"thumbnail_url\": sample_content[\"thumbnail_url\"]"
+      }
+    ]
+  },
+  "./apps/CoreForgeVoiceLab/VoiceRecorder.js": {
+    "total_lines": 22,
+    "placeholder_percentage": 0.36363636363636365,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 4,
+        "keyword": "Sample",
+        "content": "* Record a short voice sample by generating silent PCM data."
+      },
+      {
+        "line": 7,
+        "keyword": "Sample",
+        "content": "export async function recordVoice(samplePath, durationMs = 1000) {"
+      },
+      {
+        "line": 8,
+        "keyword": "Sample",
+        "content": "const bytes = Buffer.alloc(16 * durationMs); // fake 16 kHz mono samples"
+      },
+      {
+        "line": 9,
+        "keyword": "Sample",
+        "content": "await fs.writeFile(samplePath, bytes);"
+      },
+      {
+        "line": 10,
+        "keyword": "Sample",
+        "content": "return samplePath;"
+      },
+      {
+        "line": 14,
+        "keyword": "Sample",
+        "content": "* Naively analyze a voice sample by returning its average amplitude."
+      },
+      {
+        "line": 16,
+        "keyword": "Sample",
+        "content": "export async function analyzeVoice(samplePath) {"
+      },
+      {
+        "line": 17,
+        "keyword": "Sample",
+        "content": "const data = await fs.readFile(samplePath);"
+      }
+    ]
+  },
+  "./apps/CoreForgeLearn/CurriculumDesigner.swift": {
+    "total_lines": 44,
+    "placeholder_percentage": 0.022727272727272728,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 5,
+        "keyword": "Placeholder",
+        "content": "/// earlier placeholder with basic persistence utilities."
+      }
+    ]
+  },
+  "./apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/RendererControl.swift": {
+    "total_lines": 76,
+    "placeholder_percentage": 0.013157894736842105,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 9,
+        "keyword": "Mock",
+        "content": "/// Begin rendering process (mock implementation)"
+      }
+    ]
+  },
+  "./apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/MetadataSyncManager.swift": {
+    "total_lines": 27,
+    "placeholder_percentage": 0.037037037037037035,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 11,
+        "keyword": "Example",
+        "content": "public init(baseURL: URL = URL(string: \"https://upload.example.com\")!,"
+      }
+    ]
+  },
+  "./apps/CoreForgeWriter/InkwellAIFull/InkwellAI/BookBuilder.swift": {
+    "total_lines": 91,
+    "placeholder_percentage": 0.01098901098901099,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 19,
+        "keyword": "Content for",
+        "content": "/// be passed to keep track of generated content for continuity checks."
+      }
+    ]
+  },
+  "./apps/CoreForgeWriter/InkwellAIFull/InkwellAI/PublishBridge.swift": {
+    "total_lines": 65,
+    "placeholder_percentage": 0.06153846153846154,
+    "flagged": false,
+    "occurrences": [
+      {
+        "line": 4,
+        "keyword": "Example",
+        "content": "private let endpoint = URL(string: \"https://publishing.example.com/upload\")!"
+      },
+      {
+        "line": 24,
+        "keyword": "Example",
+        "content": "guard let url = URL(string: \"https://publishing.example.com/status/\\(id)\") else {"
+      },
+      {
+        "line": 35,
+        "keyword": "Example",
+        "content": "guard let url = URL(string: \"https://publishing.example.com/dashboards\") else {"
+      },
+      {
+        "line": 53,
+        "keyword": "Example",
+        "content": "guard let url = URL(string: \"https://publishing.example.com/connect\") else {"
+      }
+    ]
+  }
+}
