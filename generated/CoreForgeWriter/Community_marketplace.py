@@ -1,0 +1,4 @@
+# Auto-generated for Community marketplace
+def community_marketplace():
+    """Community marketplace"""
+    pass

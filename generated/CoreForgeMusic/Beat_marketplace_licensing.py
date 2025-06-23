@@ -1,0 +1,4 @@
+# Auto-generated for Beat marketplace + licensing
+def beat_marketplace_licensing():
+    """Beat marketplace + licensing"""
+    pass
