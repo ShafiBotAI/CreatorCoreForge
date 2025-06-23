@@ -12,11 +12,34 @@ except ImportError:
 from feature_audit import scan_repo
 
 
-def offline_snippet(description: str) -> str:
-    """Return a very small placeholder snippet."""
-    tokens = re.findall(r"[a-zA-Z_]+", description)[:5]
-    name = sanitize("_".join(tokens).lower()) or "feature"
-    return f"def {name}():\n    \"\"\"{description}\"\"\"\n    pass\n"
+def offline_snippet(description: str, ext: str) -> str:
+    """Return a language-aware placeholder snippet."""
+    tokens = re.findall(r"[a-zA-Z_]+", description)[:3]
+    base = sanitize("_".join(tokens).lower()) or "feature"
+    lower = description.lower()
+
+    if ext == ".swift" or "swift" in lower:
+        return f"func {base}() {{\n    // {description}\n}}\n"
+    if ext == ".kt" or "kotlin" in lower:
+        return f"fun {base}() {{\n    // {description}\n}}\n"
+    if ext == ".ts" or "typescript" in lower or "javascript" in lower:
+        return f"export function {base}() {{\n  // {description}\n}}\n"
+
+    if "class" in lower:
+        class_name = base.title().replace("_", "")
+        return (
+            f"class {class_name}:\n"
+            f"    \"\"\"{description}\"\"\"\n\n"
+            f"    def __init__(self):\n        pass\n"
+        )
+    if any(k in lower for k in ["async", "http", "server"]):
+        return (
+            f"async def {base}():\n"
+            f"    \"\"\"{description}\"\"\"\n"
+            f"    pass\n"
+        )
+
+    return f"def {base}():\n    \"\"\"{description}\"\"\"\n    pass\n"
 
 
 def sanitize(name: str) -> str:
@@ -24,13 +47,25 @@ def sanitize(name: str) -> str:
     return re.sub(r"[^a-zA-Z0-9_]+", "_", name.strip()).strip("_") or "feature"
 
 
-def generate_snippet(description: str) -> str:
+def determine_extension(description: str) -> str:
+    """Return an appropriate file extension based on keywords."""
+    lower = description.lower()
+    if "swift" in lower:
+        return ".swift"
+    if "kotlin" in lower:
+        return ".kt"
+    if "typescript" in lower or "javascript" in lower:
+        return ".ts"
+    return ".py"
+
+
+def generate_snippet(description: str, ext: str) -> str:
     """Generate a code snippet using OpenAI or fallback offline mode."""
     if OPENAI_AVAILABLE and os.getenv("OPENAI_API_KEY"):
         api_key = os.getenv("OPENAI_API_KEY")
         openai.api_key = api_key
         prompt = (
-            "Write a concise code snippet or function to address the following feature:\n"
+            "Write a concise code snippet for the following feature in the corresponding language:\n"
             f"{description}\n"
         )
         try:
@@ -41,9 +76,9 @@ def generate_snippet(description: str) -> str:
             )
             return resp.choices[0].message["content"].strip() + "\n"
         except Exception:
-            return offline_snippet(description)
+            return offline_snippet(description, ext)
     else:
-        return offline_snippet(description)
+        return offline_snippet(description, ext)
 
 
 def fix_python_file(path: str) -> bool:
@@ -94,11 +129,12 @@ def create_files(repo_path: str) -> None:
         app_dir = os.path.join(gen_root, sanitize(app))
         os.makedirs(app_dir, exist_ok=True)
         for feature in missing:
-            fname = sanitize(feature) + ".txt"
+            ext = determine_extension(feature)
+            fname = sanitize(feature) + ext
             fpath = os.path.join(app_dir, fname)
             if os.path.exists(fpath):
                 continue
-            snippet = generate_snippet(feature)
+            snippet = generate_snippet(feature, ext)
             with open(fpath, "w", encoding="utf-8") as f:
                 f.write(f"# Auto-generated for {feature}\n")
                 f.write(snippet)
