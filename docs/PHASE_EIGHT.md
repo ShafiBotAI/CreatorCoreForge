@@ -69,6 +69,32 @@ Only a subset of those features are shown below for brevity.
 - [x] PronunciationDictionary
 - [x] MultiCastAudiobookGenerator
 - [x] DramatizedAudiobookProducer
+
+- [x] BookImporter
+- [x] ChapterDetector
+- [x] SegmentService
+- [x] VoiceManager
+- [x] TTSService
+- [x] InlineEmotionEngine
+- [x] AmbientMixer
+- [x] PlaybackAnalytics
+- [x] SleepMode
+- [x] CharacterMemoryEngine
+- [x] VoiceAdvisorAI
+- [x] CustomVoiceUploads
+- [x] MultiverseVoiceSystem
+- [x] QuantumSceneLogic
+- [x] NeuralOptimizer
+- [x] CreditSystem
+- [x] OfflineDownloadQueue
+- [x] ExportTools
+- [x] NSFWVoiceEngine
+- [x] StealthMode
+- [x] ExperimentalFX
+- [x] AppStoreIntegration
+- [x] SettingsPanel
+- [x] CreatorPanel
+=======
 - [ ] BookImporter
 - [ ] ChapterDetector
 - [ ] SegmentService
@@ -93,6 +119,7 @@ Only a subset of those features are shown below for brevity.
 - [ ] AppStoreIntegration
 - [ ] SettingsPanel
 - [ ] CreatorPanel
+
 
 ### CoreForgeVisual
 - [x] UnifiedAudioEngine
