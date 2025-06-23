@@ -140,8 +140,12 @@ final class PracticalPlanFeatureTests: XCTestCase {
 
     func testMindFeatures() {
         let journal = MoodJournal()
-        journal.addEntry("hi")
-        XCTAssertEqual(journal.count, 1)
+        journal.addEntry("I am sad")
+        journal.addEntry("This is amazing!")
+        let breakdown = journal.moodBreakdown()
+        XCTAssertEqual(journal.count, 2)
+        XCTAssertEqual(breakdown["somber"], 1)
+        XCTAssertEqual(breakdown["excited"], 1)
         XCTAssertEqual(GuidedSessions().play(session: "med"), "Playing med")
         let vault = PrivateVault()
         vault.save(key: "k", value: "v")
@@ -164,6 +168,14 @@ final class PracticalPlanFeatureTests: XCTestCase {
         var sync = OfflineSync()
         sync.add("x")
         XCTAssertEqual(sync.count, 1)
+
+        var quiz = QuizBuilder()
+        quiz.add(prompt: "1+1?", answer: "2")
+        XCTAssertEqual(quiz.grade(responses: ["2"]), 1)
+
+        var market = CourseMarketplace()
+        market.publish(course: "Swift")
+        XCTAssertEqual(market.list(), ["Swift"])
     }
 
     func testQuestFeatures() {

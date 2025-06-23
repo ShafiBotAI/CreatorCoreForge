@@ -30,12 +30,30 @@ public class BookImporter {
             throw BookImportError.unsupportedFormat
         }
     }
+
+    /// Import a book and skip chapters that contain any of the provided keywords.
+    /// - Parameters:
+    ///   - fileURL: URL to the file (local or temp)
+    ///   - skipKeywords: keywords that, if found in a chapter title or text,
+    ///     will cause that chapter to be excluded from the result.
+    /// - Returns: Filtered chapter array.
+    public static func importBookSkipping(from fileURL: URL, skipKeywords: [String]) async throws -> [Chapter] {
+        let chapters = try await importBook(from: fileURL)
+        guard !skipKeywords.isEmpty else { return chapters }
+        return chapters.filter { chapter in
+            !skipKeywords.contains { keyword in
+                chapter.title.localizedCaseInsensitiveContains(keyword) ||
+                chapter.text.localizedCaseInsensitiveContains(keyword)
+            }
+        }
+    }
     
     private static func importEpub(from url: URL) async throws -> [Chapter] {
-        // Placeholder — Replace with real EPUB parser integration
-        // Simulate async fetch and split
-        // For production: Use FolioReaderKit or similar Swift EPUB library
-        throw BookImportError.unsupportedFormat // Remove after real implementation
+        // Use ZIPFoundation to unzip the EPUB and parse chapters.
+        // Example extraction code adapted from ZIPFoundation README:
+        // let fileManager = FileManager()
+        // try fileManager.unzipItem(at: sourceURL, to: destinationURL)
+        return try EPUBParser.chapters(from: url)
     }
     
     #if canImport(PDFKit)
@@ -90,7 +108,11 @@ public class BookImporter {
     
     /// Heuristic rule-based chapter splitter.
     private static func detectChapterBoundaries(text: String) -> [(title: String, text: String)] {
-        let regex = try! NSRegularExpression(pattern: #"(?m)^((CHAPTER|Chapter|Section|BOOK)[^\n]{0,40})$"#)
+        // Include common intro markers like "Prologue" so tests can
+        // split the prologue into its own chapter for skipping.
+        let regex = try! NSRegularExpression(
+            pattern: #"(?m)^((PROLOGUE|Prologue|CHAPTER|Chapter|Section|BOOK)[^\n]{0,40})$"#
+        )
         let nsText = text as NSString
         let matches = regex.matches(in: text, range: NSRange(location: 0, length: nsText.length))
         guard matches.count > 1 else {

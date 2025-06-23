@@ -13,3 +13,7 @@ Purpose: Manage build and distribution pipelines for iOS/macOS
 
 ## Codex/AI Agent Note
 Automated deployments rely on this folder staying updated.
+
+### Phase Features Summary
+- Refer to README for details.
+

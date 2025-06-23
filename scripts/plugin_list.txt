@@ -1,0 +1,2 @@
+CreatorCoreForge/sample-plugin
+CreatorCoreForge/example-plugin

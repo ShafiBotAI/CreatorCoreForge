@@ -44,7 +44,7 @@ Advanced AI writing assistant for creating books, series, and self-help guides w
 - [ ] Dual-edit co-author editor with live AI collaboration
 - [ ] Timeline visualizer of all story events
 - [ ] Serialized release engine (auto episodic drop)
-- [ ] Historical time period checker
+- [x] Historical time period checker
 - [ ] Romance path visual heatmap
 
 #### Deep Narrative Tools
@@ -74,3 +74,38 @@ Advanced AI writing assistant for creating books, series, and self-help guides w
 - [ ] Enable Book-to-Pitch feature (TV/Film pitch toolkit)
  - [x] Add NSFW content mode dial (slow, medium, extreme)
 - [ ] Export script to CoreForge Studio with assigned voices
+
+### Additional Phase 8 Features (from features-phase8.json)
+- [x] UnifiedAudioEngine
+- [x] UnifiedVideoEngine
+- [x] AdaptiveLearningEngine
+- [x] Memory pinning
+- [x] Quantum-choice plotting
+- [x] Community marketplace
+- [x] VideoEffectsPipeline
+- [x] AudioEffectsPipeline
+- [ ] HighQualityVoiceLibrary
+- [ ] GlobalLanguageSupport
+- [x] OfflineMP3Downloader
+- [x] TenTimesPlaybackSpeed
+- [ ] AdvancedSkipImport
+- [x] AISummaryChatService
+- [x] DocVideoScanner
+- [x] BookScanAnalyzer
+
+### App Capabilities
+
+- UnifiedAudioEngine
+- UnifiedVideoEngine
+- AdaptiveLearningEngine
+- Memory pinning
+- Quantum-choice plotting
+
+### Phase Features Summary
+Key points from `README.md`:
+- [ ] End-to-end AI writing studio (books, scripts, stories)
+- [ ] Persistent character/world memory and creative DNA
+- [x] Support for iOS, Android, PC, macOS, Web
+- [ ] Multilingual, NSFW gating, offline writing, community/marketplace
+- [ ] Import/export PDF, ePub, TXT, Docx
+

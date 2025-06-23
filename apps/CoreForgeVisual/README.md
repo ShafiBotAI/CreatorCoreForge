@@ -33,3 +33,12 @@ CoreForge Visual supports offline development. Set `USE_LOCAL_AI=1` to activate
 
 ## Shared Module
 This app relies on the root **CreatorCoreForge** Swift package for core utilities such as `AutoUpdater` and `ContentPolicyManager`. Ensure the package is linked when building.
+
+## App Capabilities
+
+Highlighted capabilities from `features-phase8.json`:
+- UnifiedAudioEngine
+- UnifiedVideoEngine
+- AdaptiveLearningEngine
+- Adaptive scene completion
+- AR/VR playback

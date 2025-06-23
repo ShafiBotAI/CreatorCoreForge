@@ -9,6 +9,7 @@
     111111111111111111111113 = {
       isa = PBXGroup;
       children = (
+        222222222222222222222222 /* WhatIfCutsceneMode.swift */,
       );
       sourceTree = "<group>";
     };
