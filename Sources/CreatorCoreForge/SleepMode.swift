@@ -33,8 +33,6 @@ public final class SleepMode: ObservableObject {
     }
 }
 #else
-import Foundation
-
 public final class SleepMode {
     public static let shared = SleepMode()
     public private(set) var isActive = false

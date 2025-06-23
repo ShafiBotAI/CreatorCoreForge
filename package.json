@@ -1,0 +1,11 @@
+{
+  "name": "creatorcoreforge-root",
+  "private": true,
+  "workspaces": [
+    "VisualLab",
+    "VoiceLab"
+  ],
+  "scripts": {
+    "test": "npm test --workspaces"
+  }
+}
