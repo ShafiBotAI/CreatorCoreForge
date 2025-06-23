@@ -3,7 +3,7 @@ import XCTest
 
 final class CharacterTrackManagerTests: XCTestCase {
     func testAppendAndRetrieve() {
-        var data = Data([1,2,3])
+        let data = Data([1, 2, 3])
         let manager = CharacterTrackManager()
         manager.append(data, for: "Alice")
         XCTAssertEqual(manager.allCharacters, ["Alice"])
