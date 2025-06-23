@@ -16,13 +16,21 @@ export class LensFlareService {
       }
     };
 
+    const offsets: [number, number, number][] = [
+      [0, 0, 30],
+      [0, -1, 15],
+      [0, 1, 15],
+      [-1, 0, 15],
+      [1, 0, 15],
+      [-1, -1, 10],
+      [-1, 1, 10],
+      [1, -1, 10],
+      [1, 1, 10],
+    ];
+
     spots.forEach(([x, y]) => {
-      addIntensity(x, y, 30);
-      for (let dx = -1; dx <= 1; dx++) {
-        for (let dy = -1; dy <= 1; dy++) {
-          if (dx === 0 && dy === 0) continue;
-          addIntensity(x + dx, y + dy, 20 - (Math.abs(dx) + Math.abs(dy)) * 5);
-        }
+      for (const [dx, dy, inc] of offsets) {
+        addIntensity(x + dx, y + dy, inc);
       }
     });
 
