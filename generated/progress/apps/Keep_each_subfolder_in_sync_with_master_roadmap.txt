@@ -1,5 +1,23 @@
 # Auto-generated for Keep each subfolder in sync with master roadmap
-def keep_each_subfolder_in_sync():
-    """Keep each subfolder in sync with master roadmap"""
-    pass
-
+def keep_each_subfolder_in_sync(base_dir="apps", master_file="AGENTS.md"):
+    """Ensure each app subfolder contains an up-to-date AGENTS.md file."""
+    import os, shutil
+    updated = []
+    if not os.path.exists(master_file):
+        return updated
+    with open(master_file, "r", errors="ignore") as f:
+        master_content = f.read()
+    for name in os.listdir(base_dir):
+        path = os.path.join(base_dir, name)
+        if os.path.isdir(path):
+            agents_path = os.path.join(path, "AGENTS.md")
+            if not os.path.exists(agents_path):
+                shutil.copy2(master_file, agents_path)
+                updated.append(name)
+            else:
+                with open(agents_path, "r", errors="ignore") as af:
+                    if af.read().strip() != master_content.strip():
+                        with open(agents_path, "w") as wf:
+                            wf.write(master_content)
+                        updated.append(name)
+    return updated

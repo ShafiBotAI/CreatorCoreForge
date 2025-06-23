@@ -1,5 +1,19 @@
 # Auto-generated for Coordinate shared assets and templates
-def coordinate_shared_assets_and_templates():
-    """Coordinate shared assets and templates"""
-    pass
-
+def coordinate_shared_assets_and_templates(base_dir="apps", shared_dir="apps/shared_templates"):
+    """Copy template folders from each app into a shared directory."""
+    import os, shutil
+    os.makedirs(shared_dir, exist_ok=True)
+    copied = []
+    for name in os.listdir(base_dir):
+        path = os.path.join(base_dir, name)
+        templates_path = os.path.join(path, "templates")
+        if os.path.isdir(templates_path):
+            dest = os.path.join(shared_dir, name)
+            os.makedirs(dest, exist_ok=True)
+            for file in os.listdir(templates_path):
+                src_file = os.path.join(templates_path, file)
+                dst_file = os.path.join(dest, file)
+                if os.path.isfile(src_file):
+                    shutil.copy2(src_file, dst_file)
+            copied.append(name)
+    return copied

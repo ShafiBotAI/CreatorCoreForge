@@ -1,5 +1,21 @@
 # Auto-generated for Maintain per-app AGENTS.md files
-def maintain_per_app_agents_md():
-    """Maintain per-app AGENTS.md files"""
-    pass
-
+def maintain_per_app_agents_md(base_dir="apps"):
+    """Ensure each application folder has an AGENTS.md with a standard header."""
+    import os
+    created = []
+    header = "# Agent Checklist\n\nThis file tracks progress for the app."
+    for name in os.listdir(base_dir):
+        path = os.path.join(base_dir, name)
+        if os.path.isdir(path):
+            ag_path = os.path.join(path, "AGENTS.md")
+            if not os.path.exists(ag_path):
+                with open(ag_path, "w") as f:
+                    f.write(f"{header}\n")
+                created.append(name)
+            else:
+                with open(ag_path, "r+") as f:
+                    content = f.read()
+                    if not content.startswith("# Agent"):
+                        f.seek(0)
+                        f.write(f"{header}\n" + content)
+    return created

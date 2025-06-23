@@ -1,5 +1,23 @@
 # Auto-generated for Centralize admin contacts for app teams
-def centralize_admin_contacts_for_app():
-    """Centralize admin contacts for app teams"""
-    pass
-
+def centralize_admin_contacts_for_app(base_dir="apps", output_file="docs/admin_contacts.csv"):
+    """Scan app directories for admin contact lines and save a consolidated CSV."""
+    import os, re, csv
+    contacts = []
+    pattern = re.compile(r"Admin(?: Contact)?:\s*(.+)", re.IGNORECASE)
+    for root, dirs, files in os.walk(base_dir):
+        for name in files:
+            if name.lower() in {"agents.md", "readme.md"}:
+                path = os.path.join(root, name)
+                with open(path, "r", errors="ignore") as f:
+                    for line in f:
+                        m = pattern.search(line)
+                        if m:
+                            app = os.path.basename(root)
+                            contacts.append((app, m.group(1).strip()))
+    if contacts:
+        os.makedirs(os.path.dirname(output_file), exist_ok=True)
+        with open(output_file, "w", newline="") as csvfile:
+            writer = csv.writer(csvfile)
+            writer.writerow(["app", "contact"])
+            writer.writerows(contacts)
+    return contacts

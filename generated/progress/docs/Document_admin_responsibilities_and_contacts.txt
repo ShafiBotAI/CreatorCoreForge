@@ -1,5 +1,16 @@
 # Auto-generated for Document admin responsibilities and contacts
-def document_admin_responsibilities_and_contacts():
-    """Document admin responsibilities and contacts"""
-    pass
-
+def document_admin_responsibilities_and_contacts(contacts_file="docs/admin_contacts.csv", output_md="docs/ADMIN_CONTACTS.md"):
+    """Generate a markdown summary of admin responsibilities and contacts."""
+    import csv, os
+    lines = ["# Admin Responsibilities and Contacts", ""]
+    if os.path.exists(contacts_file):
+        with open(contacts_file, newline="") as csvfile:
+            reader = csv.DictReader(csvfile)
+            for row in reader:
+                lines.append(f"- **{row['app']}**: {row['contact']}")
+    else:
+        lines.append("_No contacts available._")
+    os.makedirs(os.path.dirname(output_md), exist_ok=True)
+    with open(output_md, "w") as md:
+        md.write("\n".join(lines))
+    return output_md
