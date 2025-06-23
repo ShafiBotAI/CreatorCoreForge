@@ -1,0 +1,2591 @@
+{
+  "stub_helper.py": [
+    {
+      "line": 8,
+      "function": "unknown",
+      "issue": "not_implemented"
+    },
+    {
+      "line": 50,
+      "function": "replace_stubs",
+      "issue": "not_implemented"
+    },
+    {
+      "line": 52,
+      "function": "replace_stubs",
+      "issue": "todo_comment"
+    },
+    {
+      "line": 54,
+      "function": "replace_stubs",
+      "issue": "todo_comment"
+    },
+    {
+      "line": 56,
+      "function": "replace_stubs",
+      "issue": "todo_comment"
+    },
+    {
+      "line": 58,
+      "function": "replace_stubs",
+      "issue": "todo_comment"
+    },
+    {
+      "line": 60,
+      "function": "replace_stubs",
+      "issue": "todo_comment"
+    },
+    {
+      "line": 69,
+      "function": "scan_repo",
+      "issue": "empty_function"
+    },
+    {
+      "line": 93,
+      "function": "scan_repo",
+      "issue": "todo_comment"
+    }
+  ],
+  "apps/CoreForgeBloom/PrivateVault.swift": [
+    {
+      "line": 46,
+      "function": "retrieveEntries",
+      "issue": "return_nil"
+    }
+  ],
+  "apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/PromptTemplateLoader.swift": [
+    {
+      "line": 20,
+      "function": "loadTemplates",
+      "issue": "return_nil"
+    }
+  ],
+  "apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/AdaptiveAISceneManager.swift": [
+    {
+      "line": 13,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 22,
+      "function": "nextScene",
+      "issue": "return_nil"
+    }
+  ],
+  "apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/AdaptiveReasoner.swift": [
+    {
+      "line": 7,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/IMDbAPI.swift": [
+    {
+      "line": 38,
+      "function": "search",
+      "issue": "return_nil"
+    }
+  ],
+  "apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/CoreForgeVisualApp.swift": [
+    {
+      "line": 25,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/FirebaseService.swift": [
+    {
+      "line": 25,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/ContentView.swift": [
+    {
+      "line": 88,
+      "function": "startRender",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/EbookImporter.swift": [
+    {
+      "line": 10,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/SecureStore.swift": [
+    {
+      "line": 25,
+      "function": "apiKey",
+      "issue": "return_nil"
+    }
+  ],
+  "apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/ViralEngine.swift": [
+    {
+      "line": 8,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 32,
+      "function": "loopVideo",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/UI/SchedulerDashboard.swift": [
+    {
+      "line": 25,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 51,
+      "function": "schedule",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Tests/TradeMindAITests/ReportingServiceTests.swift": [
+    {
+      "line": 20,
+      "function": "stopLoading",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Tests/TradeMindAITests/AdminServiceTests.swift": [
+    {
+      "line": 20,
+      "function": "stopLoading",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Tests/TradeMindAITests/StrategyBuilderTests.swift": [
+    {
+      "line": 20,
+      "function": "stopLoading",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Tests/TradeMindAITests/OpenAIServiceTests.swift": [
+    {
+      "line": 31,
+      "function": "stopLoading",
+      "issue": "empty_function"
+    },
+    {
+      "line": 71,
+      "function": "stopLoading",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Tests/TradeMindAITests/AutoUpdateManagerTests.swift": [
+    {
+      "line": 20,
+      "function": "stopLoading",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Sources/TradeMindAI/MultiMarketScanner.swift": [
+    {
+      "line": 8,
+      "function": "fetchLatestPrice",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Sources/TradeMindAI/PromptTemplateLoader.swift": [
+    {
+      "line": 20,
+      "function": "loadTemplates",
+      "issue": "return_nil"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Sources/TradeMindAI/SentimentDetector.swift": [
+    {
+      "line": 8,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Sources/TradeMindAI/BotMarketplace.swift": [
+    {
+      "line": 7,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Sources/TradeMindAI/AdaptiveReasoner.swift": [
+    {
+      "line": 7,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Sources/TradeMindAI/ChartAnalyzer.swift": [
+    {
+      "line": 11,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 20,
+      "function": "detectTrend",
+      "issue": "return_nil"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Sources/TradeMindAI/TitanForecastEngine.swift": [
+    {
+      "line": 7,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Sources/TradeMindAI/ChartScreenshotAnalyzer.swift": [
+    {
+      "line": 19,
+      "function": "detectTrend",
+      "issue": "return_nil"
+    },
+    {
+      "line": 37,
+      "function": "detectTrend",
+      "issue": "return_nil"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Sources/TradeMindAI/TradeMindCryptoTokenomics.swift": [
+    {
+      "line": 13,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Sources/TradeMindAI/TitanEngine.swift": [
+    {
+      "line": 18,
+      "function": "forecastNext",
+      "issue": "return_nil"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Sources/TradeMindAI/ViralEngine.swift": [
+    {
+      "line": 8,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 32,
+      "function": "loopVideo",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeMarket/openai-swift/Sources/OpenAI/OpenAI.swift": [
+    {
+      "line": 2,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/ebook2audiobook/lib/functions.py": [
+    {
+      "line": 120,
+      "function": "__init__",
+      "issue": "empty_function"
+    },
+    {
+      "line": 244,
+      "function": "analyze_uploaded_file",
+      "issue": "empty_function"
+    },
+    {
+      "line": 349,
+      "function": "recursive_copy",
+      "issue": "empty_function"
+    },
+    {
+      "line": 371,
+      "function": "check_compat",
+      "issue": "not_implemented"
+    },
+    {
+      "line": 473,
+      "function": "normalize_text",
+      "issue": "empty_function"
+    },
+    {
+      "line": 1066,
+      "function": "combine_audio_sentences",
+      "issue": "empty_function"
+    },
+    {
+      "line": 1111,
+      "function": "assemble_segments",
+      "issue": "empty_function"
+    },
+    {
+      "line": 1246,
+      "function": "export_audio",
+      "issue": "empty_function"
+    },
+    {
+      "line": 1385,
+      "function": "get_compatible_tts_engines",
+      "issue": "empty_function"
+    },
+    {
+      "line": 2278,
+      "function": "change_gr_voice_file",
+      "issue": "empty_function"
+    },
+    {
+      "line": 2471,
+      "function": "update_gr_fine_tuned_list",
+      "issue": "empty_function"
+    },
+    {
+      "line": 2508,
+      "function": "change_gr_custom_model_file",
+      "issue": "empty_function"
+    },
+    {
+      "line": 2587,
+      "function": "change_param",
+      "issue": "empty_function"
+    },
+    {
+      "line": 3082,
+      "function": "tryRun",
+      "issue": "return_nil"
+    }
+  ],
+  "apps/ebook2audiobook/lib/models.py": [
+    {
+      "line": 4,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 103,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 109,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 115,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/ebook2audiobook/lib/classes/voice_extractor.py": [
+    {
+      "line": 49,
+      "function": "_convert2wav",
+      "issue": "empty_function"
+    },
+    {
+      "line": 256,
+      "function": "_normalize_audio",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/ebook2audiobook/lib/classes/argos_translator.py": [
+    {
+      "line": 35,
+      "function": "get_all_targets_lang",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/ebook2audiobook/lib/classes/tts_engines/coqui.py": [
+    {
+      "line": 57,
+      "function": "__init__",
+      "issue": "empty_function"
+    },
+    {
+      "line": 177,
+      "function": "_build",
+      "issue": "empty_function"
+    },
+    {
+      "line": 285,
+      "function": "_check_xtts_builtin_speakers",
+      "issue": "empty_function"
+    },
+    {
+      "line": 366,
+      "function": "_check_bark_npz",
+      "issue": "empty_function"
+    },
+    {
+      "line": 509,
+      "function": "_normalize_audio",
+      "issue": "empty_function"
+    },
+    {
+      "line": 590,
+      "function": "convert",
+      "issue": "empty_function"
+    },
+    {
+      "line": 591,
+      "function": "convert",
+      "issue": "empty_function"
+    },
+    {
+      "line": 684,
+      "function": "convert",
+      "issue": "empty_function"
+    },
+    {
+      "line": 813,
+      "function": "convert",
+      "issue": "empty_function"
+    },
+    {
+      "line": 877,
+      "function": "convert",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/ebook2audiobook/lib/classes/tts_engines/.template.py": [
+    {
+      "line": 53,
+      "function": "__init__",
+      "issue": "empty_function"
+    },
+    {
+      "line": 254,
+      "function": "_normalize_audio",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeMind/MoodJournal.swift": [
+    {
+      "line": 15,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/PromptTemplateLoader.swift": [
+    {
+      "line": 20,
+      "function": "loadTemplates",
+      "issue": "return_nil"
+    }
+  ],
+  "apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/WhatIfCutsceneMode.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/AdaptiveReasoner.swift": [
+    {
+      "line": 7,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/MetadataAutoSync.swift": [
+    {
+      "line": 16,
+      "function": "unknown",
+      "issue": "return_nil"
+    }
+  ],
+  "apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/EbookImporter.swift": [
+    {
+      "line": 10,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/ViralEngine.swift": [
+    {
+      "line": 8,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 32,
+      "function": "loopVideo",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/AgeCheckNSFWGate.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/RendererControl.swift": [
+    {
+      "line": 7,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/VideoSceneGenerator.swift": [
+    {
+      "line": 16,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeLearn/CurriculumDesigner.swift": [
+    {
+      "line": 20,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeQuest/MultiplayerManager.swift": [
+    {
+      "line": 10,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeWriter/InkwellAIFull/InkwellAI/PromptTemplateLoader.swift": [
+    {
+      "line": 20,
+      "function": "loadTemplates",
+      "issue": "return_nil"
+    }
+  ],
+  "apps/CoreForgeWriter/InkwellAIFull/InkwellAI/SettingsView.swift": [
+    {
+      "line": 70,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeWriter/InkwellAIFull/InkwellAI/MemoryTracker.swift": [
+    {
+      "line": 58,
+      "function": "predictNextEntry",
+      "issue": "return_nil"
+    }
+  ],
+  "apps/CoreForgeWriter/InkwellAIFull/InkwellAI/AdaptiveReasoner.swift": [
+    {
+      "line": 7,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeWriter/InkwellAIFull/InkwellAI/EbookImporter.swift": [
+    {
+      "line": 10,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeWriter/InkwellAIFull/InkwellAI/ViralEngine.swift": [
+    {
+      "line": 8,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 32,
+      "function": "loopVideo",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeDNA/MemoryLinkService.swift": [
+    {
+      "line": 8,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/AI_VideoGenerator/server.py": [
+    {
+      "line": 214,
+      "function": "get_user_videos",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeMusic/VerseForgeAIFull/Sources/VerseForgeAI/PromptTemplateLoader.swift": [
+    {
+      "line": 20,
+      "function": "loadTemplates",
+      "issue": "return_nil"
+    }
+  ],
+  "apps/CoreForgeMusic/VerseForgeAIFull/Sources/VerseForgeAI/SongExporter.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeMusic/VerseForgeAIFull/Sources/VerseForgeAI/AdaptiveReasoner.swift": [
+    {
+      "line": 7,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeMusic/VerseForgeAIFull/Sources/VerseForgeAI/HookSplitTester.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 8,
+      "function": "bestHook",
+      "issue": "return_nil"
+    }
+  ],
+  "apps/CoreForgeMusic/VerseForgeAIFull/Sources/VerseForgeAI/TrendAnalyzer.swift": [
+    {
+      "line": 4,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeMusic/VerseForgeAIFull/Sources/VerseForgeAI/HookCrafter.swift": [
+    {
+      "line": 4,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeMusic/VerseForgeAIFull/Sources/VerseForgeAI/ViralEngine.swift": [
+    {
+      "line": 8,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 32,
+      "function": "loopVideo",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeMusic/VerseForgeAIFull/Sources/VerseForgeAI/BeatMatcher.swift": [
+    {
+      "line": 4,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeAudio/Desktop/preload.js": [
+    {
+      "line": 3,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeAudio/VocalVerseFull/VocalVerse/PromptTemplateLoader.swift": [
+    {
+      "line": 20,
+      "function": "loadTemplates",
+      "issue": "return_nil"
+    }
+  ],
+  "apps/CoreForgeAudio/VocalVerseFull/VocalVerse/SettingsView.swift": [
+    {
+      "line": 49,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeAudio/VocalVerseFull/VocalVerse/CharacterVoiceMemory.swift": [
+    {
+      "line": 21,
+      "function": "voiceForCharacter",
+      "issue": "return_nil"
+    }
+  ],
+  "apps/CoreForgeAudio/VocalVerseFull/VocalVerse/AgeVerificationView.swift": [
+    {
+      "line": 37,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeAudio/VocalVerseFull/VocalVerse/AdaptiveReasoner.swift": [
+    {
+      "line": 7,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeAudio/VocalVerseFull/VocalVerse/CoreForgeAudioApp.swift": [
+    {
+      "line": 22,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeAudio/VocalVerseFull/VocalVerse/FirebaseService.swift": [
+    {
+      "line": 25,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeAudio/VocalVerseFull/VocalVerse/ContentView.swift": [
+    {
+      "line": 69,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 235,
+      "function": "uploadAudio",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeAudio/VocalVerseFull/VocalVerse/EbookImporter.swift": [
+    {
+      "line": 10,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeAudio/VocalVerseFull/VocalVerse/SecureStore.swift": [
+    {
+      "line": 25,
+      "function": "apiKey",
+      "issue": "return_nil"
+    }
+  ],
+  "apps/CoreForgeAudio/VocalVerseFull/VocalVerse/ViralEngine.swift": [
+    {
+      "line": 8,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 32,
+      "function": "loopVideo",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeAudio/VocalVerseFull/VocalVerse/AudiobookPlayerView.swift": [
+    {
+      "line": 60,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeLeads/DataForgeAIFull/Tests/DataForgeAITests/AIEmailCopilotTests.swift": [
+    {
+      "line": 19,
+      "function": "stopLoading",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/SignalTracker.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/PromptTemplateLoader.swift": [
+    {
+      "line": 20,
+      "function": "loadTemplates",
+      "issue": "return_nil"
+    }
+  ],
+  "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/LeadMarketplace.swift": [
+    {
+      "line": 12,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 24,
+      "function": "purchaseLead",
+      "issue": "return_nil"
+    }
+  ],
+  "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/AdaptiveReasoner.swift": [
+    {
+      "line": 7,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/PersonaRecommender.swift": [
+    {
+      "line": 12,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/ViralityScanner.swift": [
+    {
+      "line": 10,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/LeadRegionalTargeter.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/AIAgentScoring.swift": [
+    {
+      "line": 9,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/LeadMiner.swift": [
+    {
+      "line": 21,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/ReferralTokenManager.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/ViralEngine.swift": [
+    {
+      "line": 8,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 32,
+      "function": "loopVideo",
+      "issue": "empty_function"
+    }
+  ],
+  "VoiceLab/jest.setup.ts": [
+    {
+      "line": 8,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "VoiceLab/jest.config.js": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "VoiceLab/src/vaultService.ts": [
+    {
+      "line": 21,
+      "function": "loadFromVault",
+      "issue": "return_nil"
+    }
+  ],
+  "VoiceLab/src/UnifiedAudioEngine.ts": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "VoiceLab/src/openaiService.ts": [
+    {
+      "line": 13,
+      "function": "complete",
+      "issue": "fetch_no_error_handling"
+    }
+  ],
+  "VoiceLab/src/AdaptiveLearningEngine.ts": [
+    {
+      "line": 4,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "VoiceLab/src/transcriptGenerator.ts": [
+    {
+      "line": 12,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 27,
+      "function": "unknown",
+      "issue": "fetch_no_error_handling"
+    }
+  ],
+  "VoiceLab/src/UnifiedVideoEngine.ts": [
+    {
+      "line": 12,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "VoiceLab/src/analytics.ts": [
+    {
+      "line": 1,
+      "function": "trackEvent",
+      "issue": "empty_function"
+    }
+  ],
+  "scripts/aggregate_tasks.py": [
+    {
+      "line": 20,
+      "function": "aggregate_tasks",
+      "issue": "empty_function"
+    }
+  ],
+  "scripts/update_agents_phase_features.py": [
+    {
+      "line": 10,
+      "function": "load_features",
+      "issue": "empty_function"
+    },
+    {
+      "line": 14,
+      "function": "load_features",
+      "issue": "empty_function"
+    },
+    {
+      "line": 17,
+      "function": "load_features",
+      "issue": "empty_function"
+    }
+  ],
+  "scripts/calc_app_completion.py": [
+    {
+      "line": 22,
+      "function": "scan_apps",
+      "issue": "empty_function"
+    }
+  ],
+  "scripts/placeholder_scan.py": [
+    {
+      "line": 8,
+      "function": "unknown",
+      "issue": "todo_comment"
+    },
+    {
+      "line": 42,
+      "function": "scan_repo",
+      "issue": "empty_function"
+    }
+  ],
+  "scripts/compliance_scanner.py": [
+    {
+      "line": 16,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 18,
+      "function": "unknown",
+      "issue": "todo_comment"
+    },
+    {
+      "line": 19,
+      "function": "unknown",
+      "issue": "not_implemented"
+    },
+    {
+      "line": 55,
+      "function": "scan_repo",
+      "issue": "empty_function"
+    }
+  ],
+  "scripts/feature_audit.py": [
+    {
+      "line": 39,
+      "function": "build_code_index",
+      "issue": "empty_function"
+    },
+    {
+      "line": 66,
+      "function": "scan_repo",
+      "issue": "empty_function"
+    }
+  ],
+  "scripts/progress_bot.py": [
+    {
+      "line": 54,
+      "function": "calc_progress",
+      "issue": "empty_function"
+    }
+  ],
+  "scripts/ensure_200_features.py": [
+    {
+      "line": 44,
+      "function": "ensure_200_features",
+      "issue": "empty_function"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/PracticalPlanFeatureTests.swift": [
+    {
+      "line": 152,
+      "function": "testMindFeatures",
+      "issue": "fetch_no_error_handling"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/SleepReadModeTests.swift": [
+    {
+      "line": 17,
+      "function": "testCancelStopsTimer",
+      "issue": "empty_function"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/AutoUpdaterTests.swift": [
+    {
+      "line": 21,
+      "function": "stopLoading",
+      "issue": "empty_function"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/LibrarySyncTests.swift": [
+    {
+      "line": 53,
+      "function": "testFetchProgressReturnsDictionary",
+      "issue": "fetch_no_error_handling"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/PlaybackProgressSyncTests.swift": [
+    {
+      "line": 12,
+      "function": "fetch",
+      "issue": "fetch_no_error_handling"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/SleepModeTests.swift": [
+    {
+      "line": 17,
+      "function": "testCancel",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/SyncServiceProtocol.swift": [
+    {
+      "line": 5,
+      "function": "fetch",
+      "issue": "fetch_no_error_handling"
+    },
+    {
+      "line": 8,
+      "function": "fetch",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/FirebaseAudioService.swift": [
+    {
+      "line": 12,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/MacroWorkflowEngine.swift": [
+    {
+      "line": 7,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/OfflineMP3Downloader.swift": [
+    {
+      "line": 7,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/UnlockableVoiceSkins.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/NSFWVoiceEngine.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/CustomVoiceUploads.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/CoreForgeStudio_MissingFeatures.swift": [
+    {
+      "line": 4,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 12,
+      "function": "suggestAngles",
+      "issue": "empty_function"
+    },
+    {
+      "line": 19,
+      "function": "alternateScenes",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/BrailleOutputService.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/AudioPlaybackEngine.swift": [
+    {
+      "line": 10,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/CoreForgeMind_MissingFeatures.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 33,
+      "function": "play",
+      "issue": "empty_function"
+    },
+    {
+      "line": 35,
+      "function": "fetch",
+      "issue": "fetch_no_error_handling"
+    }
+  ],
+  "Sources/CreatorCoreForge/AdaptiveDocScanner.swift": [
+    {
+      "line": 7,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/NSFWPhase7.swift": [
+    {
+      "line": 45,
+      "function": "disable",
+      "issue": "empty_function"
+    },
+    {
+      "line": 120,
+      "function": "applyReverbSpacing",
+      "issue": "empty_function"
+    },
+    {
+      "line": 126,
+      "function": "upload",
+      "issue": "empty_function"
+    },
+    {
+      "line": 134,
+      "function": "transition",
+      "issue": "empty_function"
+    },
+    {
+      "line": 143,
+      "function": "hasAccess",
+      "issue": "empty_function"
+    },
+    {
+      "line": 150,
+      "function": "usage",
+      "issue": "empty_function"
+    },
+    {
+      "line": 159,
+      "function": "flag",
+      "issue": "empty_function"
+    },
+    {
+      "line": 168,
+      "function": "isSafe",
+      "issue": "empty_function"
+    },
+    {
+      "line": 175,
+      "function": "rating",
+      "issue": "empty_function"
+    },
+    {
+      "line": 182,
+      "function": "playRhythm",
+      "issue": "empty_function"
+    },
+    {
+      "line": 193,
+      "function": "renderSafeVersion",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/OfflineTTSCache.swift": [
+    {
+      "line": 8,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/DocumentParser.swift": [
+    {
+      "line": 10,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/HybridQuantumTradingEngine.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/ARVRPlayback.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/SceneGenerator.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/SegmentService.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/ChapterSegmenter.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/TTSService.swift": [
+    {
+      "line": 7,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/AudioExporter.swift": [
+    {
+      "line": 109,
+      "function": "exportMultitrack",
+      "issue": "return_nil"
+    }
+  ],
+  "Sources/CreatorCoreForge/MemoryPinning.swift": [
+    {
+      "line": 34,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/OutlineGenerator.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/VoiceAdvisorAI.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/GPUVideoRenderer.swift": [
+    {
+      "line": 21,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/AccessibilityOutput.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/QuantumEditMode.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/MultiPOVSceneBuilder.swift": [
+    {
+      "line": 17,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/SoundEffectManager.swift": [
+    {
+      "line": 17,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/CreatorPanel.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/SettingsPanel.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/LibrarySync.swift": [
+    {
+      "line": 32,
+      "function": "fetch",
+      "issue": "fetch_no_error_handling"
+    }
+  ],
+  "Sources/CreatorCoreForge/VideoExportService.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/SleepMode.swift": [
+    {
+      "line": 11,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 41,
+      "function": "cancel",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/VoiceTrainer.swift": [
+    {
+      "line": 15,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/ThemeManager.swift": [
+    {
+      "line": 41,
+      "function": "load",
+      "issue": "fetch_no_error_handling"
+    },
+    {
+      "line": 96,
+      "function": "load",
+      "issue": "fetch_no_error_handling"
+    }
+  ],
+  "Sources/CreatorCoreForge/EmotionPacingEditor.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/CoreForgeMarket_MissingFeatures.swift": [
+    {
+      "line": 11,
+      "function": "analyze",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/EmotionalArcTracker.swift": [
+    {
+      "line": 22,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 71,
+      "function": "averageEmotionIntensity",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/LocalAIEnginePro.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/CoreForgeMusic_MissingFeatures.swift": [
+    {
+      "line": 4,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/VisualMemoryEngine.swift": [
+    {
+      "line": 14,
+      "function": "unknown",
+      "issue": "return_nil"
+    }
+  ],
+  "Sources/CreatorCoreForge/SettingsSync.swift": [
+    {
+      "line": 32,
+      "function": "fetch",
+      "issue": "fetch_no_error_handling"
+    }
+  ],
+  "Sources/CreatorCoreForge/AutoCastingEngine.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/FusionVoiceController.swift": [
+    {
+      "line": 9,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/SmartAmbientMixer.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/DecoyScreenManager.swift": [
+    {
+      "line": 8,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/VaultService.swift": [
+    {
+      "line": 25,
+      "function": "loadAudio",
+      "issue": "return_nil"
+    }
+  ],
+  "Sources/CreatorCoreForge/AmbientMixer.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/FXLibrary.swift": [
+    {
+      "line": 17,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/CoreForgeAudio_PlaybackUIController.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/RealTimeEmotionAdapter.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/SceneAtmosphereBuilder.swift": [
+    {
+      "line": 29,
+      "function": "generateAtmosphere",
+      "issue": "return_nil"
+    },
+    {
+      "line": 37,
+      "function": "generateAtmosphere",
+      "issue": "return_nil"
+    }
+  ],
+  "Sources/CreatorCoreForge/HeartRateAdaptiveAudio.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/VoiceCloneTrainer.swift": [
+    {
+      "line": 7,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/NSFWEnhancer.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/ExportService.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/SceneDramatization.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 23,
+      "function": "isAdult",
+      "issue": "empty_function"
+    },
+    {
+      "line": 44,
+      "function": "generateSceneVideo",
+      "issue": "empty_function"
+    },
+    {
+      "line": 53,
+      "function": "render",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/ExperimentalFX.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/CommunityReviews.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/CharacterDetectionEngine.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/HeatmapAnalytics.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/DAWSessionExporter.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/QuantumChoicePlottingService.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/SleepReadMode.swift": [
+    {
+      "line": 11,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 57,
+      "function": "cancel",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/StreamAssembler.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/AIVocalProductionEngine.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/HapticDeviceManager.swift": [
+    {
+      "line": 18,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/QuantumSceneLogic.swift": [
+    {
+      "line": 7,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/StoryboardPanel.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/VoiceDNAForge.swift": [
+    {
+      "line": 93,
+      "function": "exportDNARegistry",
+      "issue": "return_nil"
+    }
+  ],
+  "Sources/CreatorCoreForge/NSFWVoiceClipManager.swift": [
+    {
+      "line": 16,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/BookScanAnalyzer.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/CharacterQuirkEngine.swift": [
+    {
+      "line": 14,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 76,
+      "function": "playQuirk",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/CoreForgeAudio_MissingFeatures.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/UserAnnotations.swift": [
+    {
+      "line": 17,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/VideoEffectsPipeline.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/PlaybackProgressSync.swift": [
+    {
+      "line": 39,
+      "function": "loadProgress",
+      "issue": "fetch_no_error_handling"
+    }
+  ],
+  "Sources/CreatorCoreForge/EmotionShiftTracker.swift": [
+    {
+      "line": 16,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/SceneSegmenter.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/CrossAppModuleManager.swift": [
+    {
+      "line": 11,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/BlurbGenerator.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/StealthVault.swift": [
+    {
+      "line": 7,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/FrameRenderer.swift": [
+    {
+      "line": 10,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/NSFWHabitBehaviorSimulator.swift": [
+    {
+      "line": 47,
+      "function": "simulate",
+      "issue": "return_nil"
+    },
+    {
+      "line": 97,
+      "function": "simulate",
+      "issue": "return_nil"
+    }
+  ],
+  "Sources/CreatorCoreForge/TimelineEditor.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/WatermarkService.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/AdaptiveLearningEngine.swift": [
+    {
+      "line": 9,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/VoiceForkManager.swift": [
+    {
+      "line": 7,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/NeuralOptimizer.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/ReplayAnalytics.swift": [
+    {
+      "line": 13,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/ParentReportManager.swift": [
+    {
+      "line": 9,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/InlineEmotionEngine.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/TradingLeaderboard.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/LocalVoiceAI.swift": [
+    {
+      "line": 23,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/ExportProduction.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/MultilingualEngine.swift": [
+    {
+      "line": 14,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/SoundLayerEngine.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/VoiceRatingSystem.swift": [
+    {
+      "line": 7,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/ColorGradingEngine.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/AudioSearchIndex.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/MultiverseVoiceSystem.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/VoiceReviewSystem.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/PlaybackAnalytics.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/DocVideoScanner.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/EmotionDatabase.swift": [
+    {
+      "line": 23,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/GenesisModeEngine.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/AutoRemixMode.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/DynamicChapterTransitions.swift": [
+    {
+      "line": 7,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/OCRScanMode.swift": [
+    {
+      "line": 10,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/VoiceBookmarkService.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/FaceTrackerService.swift": [
+    {
+      "line": 15,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/EnhancedReasoner.swift": [
+    {
+      "line": 9,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/ExportQueueManager.swift": [
+    {
+      "line": 8,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/SceneHeatmapManager.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/AIEngine.swift": [
+    {
+      "line": 11,
+      "function": "summarize",
+      "issue": "empty_function"
+    },
+    {
+      "line": 12,
+      "function": "summarize",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/CrowdSimulator.swift": [
+    {
+      "line": 11,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/PronunciationEditor.swift": [
+    {
+      "line": 7,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/ConsentTracker.swift": [
+    {
+      "line": 8,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 38,
+      "function": "lastConsent",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/StyleEngine.swift": [
+    {
+      "line": 11,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/CoreForgeDNA_MissingFeatures.swift": [
+    {
+      "line": 13,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/VoiceMappingEngine.swift": [
+    {
+      "line": 7,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/ExportTools.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/EbookImporter.swift": [
+    {
+      "line": 10,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/AdaptiveMusicGenerator.swift": [
+    {
+      "line": 7,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 60,
+      "function": "generate",
+      "issue": "return_nil"
+    }
+  ],
+  "Sources/CreatorCoreForge/BuildMonetizationManager.swift": [
+    {
+      "line": 10,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/MultiTrackEditor.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/WorldMemoryService.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/NSFWPaywallManager.swift": [
+    {
+      "line": 13,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/CharacterTrackManager.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/OfflineAudioManager.swift": [
+    {
+      "line": 8,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/RenderAnalyticsDashboard.swift": [
+    {
+      "line": 15,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/AutoFormatDialogue.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/StoryboardImporter.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/WatchSyncService.swift": [
+    {
+      "line": 7,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/DataEncryptionManager.swift": [
+    {
+      "line": 8,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/UnifiedAudioEngine.swift": [
+    {
+      "line": 10,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/AdvancedTimelineEditor.swift": [
+    {
+      "line": 8,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/ChapterAnalyticsService.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/FigmaUIBuilder.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/QuantumAIExtension.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/NSFWSFXPackManager.swift": [
+    {
+      "line": 18,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/ReplayAnalyticsService.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/VoiceCloneShare.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/CoreForgeWriter_MissingFeatures.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 15,
+      "function": "allEvents",
+      "issue": "empty_function"
+    },
+    {
+      "line": 25,
+      "function": "apply",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/VersionedExports.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/AudioEffectsPipeline.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/NSFWMoodHeatmap.swift": [
+    {
+      "line": 7,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/BatchImportTool.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/SpatialAudioSupport.swift": [
+    {
+      "line": 7,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/SceneMemorySimulator.swift": [
+    {
+      "line": 26,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/VoiceDNAForker.swift": [
+    {
+      "line": 23,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 72,
+      "function": "clearAllVariants",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/CoreForgeLeads_MissingFeatures.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/AppStoreIntegration.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/PluginBuilder.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/CoreForgeAudio_PlaybackBookmarking.swift": [
+    {
+      "line": 38,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/TemplateMonetization.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/LiveEnsembleRoom.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/AIStudioMode.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/VoiceManager.swift": [
+    {
+      "line": 8,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 20,
+      "function": "voiceProfile",
+      "issue": "return_nil"
+    }
+  ],
+  "Sources/CreatorCoreForge/OfflineVideoManager.swift": [
+    {
+      "line": 8,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/MindNSFWModule.swift": [
+    {
+      "line": 7,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/CommunityMarketplace.swift": [
+    {
+      "line": 9,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/VoicePolls.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/VoiceControlService.swift": [
+    {
+      "line": 14,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/PersonalizedGreetingService.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/SceneTimeline.swift": [
+    {
+      "line": 19,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/PronunciationDictionary.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/NarrationScheduler.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/ChapterManager.swift": [
+    {
+      "line": 7,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 14,
+      "function": "chapter",
+      "issue": "return_nil"
+    }
+  ],
+  "Sources/CreatorCoreForge/EmotionAnalyzer.swift": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/CoreForgeBuild_MissingFeatures.swift": [
+    {
+      "line": 4,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/BranchingPathsUI.swift": [
+    {
+      "line": 11,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/EPUBParser.swift": [
+    {
+      "line": 58,
+      "function": "extractText",
+      "issue": "return_nil"
+    }
+  ],
+  "Sources/CreatorCoreForge/AmbientFXEngine.swift": [
+    {
+      "line": 101,
+      "function": "detectAndApplyTransition",
+      "issue": "return_nil"
+    }
+  ],
+  "Sources/CreatorCoreForge/VoiceMultiverseManager.swift": [
+    {
+      "line": 10,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/BranchService.swift": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/CoreForgeVisual_MissingFeatures.swift": [
+    {
+      "line": 16,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 65,
+      "function": "generateSceneVideo",
+      "issue": "empty_function"
+    },
+    {
+      "line": 104,
+      "function": "makePixelBuffer",
+      "issue": "return_nil"
+    }
+  ],
+  "Sources/CreatorCoreForge/EmotionGraph.swift": [
+    {
+      "line": 14,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 25,
+      "function": "averageIntensity",
+      "issue": "return_nil"
+    }
+  ],
+  "Sources/CreatorCoreForge/NSFWService.swift": [
+    {
+      "line": 7,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "VisualLab/test/newFeatures.test.ts": [
+    {
+      "line": 32,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "VisualLab/test/index.test.ts": [
+    {
+      "line": 32,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "VisualLab/src/streamingService.ts": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    },
+    {
+      "line": 21,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "VisualLab/src/UnifiedAudioEngine.ts": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "VisualLab/src/CacheService.ts": [
+    {
+      "line": 6,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "VisualLab/src/AdaptiveLearningEngine.ts": [
+    {
+      "line": 4,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "VisualLab/src/errorRecoveryService.ts": [
+    {
+      "line": 2,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "VisualLab/src/cacheManager.ts": [
+    {
+      "line": 3,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ],
+  "VisualLab/src/UnifiedVideoEngine.ts": [
+    {
+      "line": 5,
+      "function": "unknown",
+      "issue": "empty_function"
+    }
+  ]
+}
