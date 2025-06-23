@@ -208,7 +208,7 @@ This file is a full checklist of every feature required for code completion and 
 - [ ] MemoryAnchorService
 - [ ] MultiverseBookLinker
 - [ ] AutoTranslateService
-- [ ] AccentSwitcher
+ - [x] AccentSwitcher
 - [ ] MultilingualVoiceBlend
 - [ ] SemanticSegmenter
 - [ ] SceneIndexGenerator

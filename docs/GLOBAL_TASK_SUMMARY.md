@@ -13,7 +13,7 @@
 - MemoryAnchorService
 - MultiverseBookLinker
 - AutoTranslateService
-- AccentSwitcher
+- AccentSwitcher ✅
 - MultilingualVoiceBlend
 - SemanticSegmenter
 - SceneIndexGenerator
