@@ -97,3 +97,12 @@ This agent is responsible for building, validating, and maintaining all features
 
 ## Codex/AI Agent Note
 Treat every unchecked item as a requirement for app completion, testing, and launch.
+
+## App Capabilities
+
+Highlighted capabilities from `features-phase8.json`:
+- UnifiedAudioEngine
+- UnifiedVideoEngine
+- AdaptiveLearningEngine
+- Real-time ensemble acting
+- Quantum edit mode

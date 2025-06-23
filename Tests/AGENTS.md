@@ -13,3 +13,7 @@ Purpose: Swift and TypeScript tests for all modules
 
 ## Codex/AI Agent Note
 Testing is required before merging new features.
+
+### Phase Features Summary
+- Refer to README for details.
+

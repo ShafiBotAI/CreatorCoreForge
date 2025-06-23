@@ -95,3 +95,12 @@ This agent is responsible for building, validating, and maintaining all features
 
 ## Codex/AI Agent Note
 Every unchecked item is a high-priority task. Use as completion requirements and onboarding doc.
+
+## App Capabilities
+
+Highlighted capabilities from `features-phase8.json`:
+- UnifiedAudioEngine
+- UnifiedVideoEngine
+- AdaptiveLearningEngine
+- Figma-driven UI builder
+- Auto bundler for all platforms

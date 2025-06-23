@@ -23,3 +23,12 @@ services.
 CoreForge Market can operate without network connectivity. Set `USE_LOCAL_AI=1`
 before running to route prompts through `LocalAIEnginePro` via `FusionEngine`.
 
+
+## App Capabilities
+
+Highlighted capabilities from `features-phase8.json`:
+- UnifiedAudioEngine
+- UnifiedVideoEngine
+- AdaptiveLearningEngine
+- Hybrid quantum trading engine
+- Team trading and leaderboards

@@ -24,12 +24,18 @@ public struct LocalElevenLabsClient {
     }
 
     /// Synthesizes the provided text using the stored voice profile.
-    public func synthesize(text: String, voiceID: String, completion: @escaping (Result<Data, Error>) -> Void) {
+    public func synthesize(text: String,
+                           voiceID: String,
+                           sampleRate: Int = 44100,
+                           completion: @escaping (Result<Data, Error>) -> Void) {
         guard let profile = voices[voiceID] else {
             completion(.failure(NSError(domain: "LocalElevenLabs", code: -1)))
             return
         }
-        engine.synthesize(text: text, with: profile, completion: completion)
+        engine.synthesize(text: text,
+                          with: profile,
+                          sampleRate: sampleRate,
+                          completion: completion)
     }
 
     /// Adds a new voice to the local catalog.

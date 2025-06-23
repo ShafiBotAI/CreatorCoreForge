@@ -40,6 +40,8 @@
   - AnalyticsLogger for basic event tracking
   - PerformanceModeSelector to switch rendering presets
   - FusionVoiceController orchestrates LocalVoiceAI and emotion cues
+  - MultiCastAudiobookGenerator enables ensemble narration
+  - DramatizedAudiobookProducer creates immersive dramatized audiobooks
   - Extra helpers in `Sources/CreatorCoreForge/CoreForgeAudio_MissingFeatures.swift`
     provide offline download and eBook conversion utilities for the app.
 - **Build Status:** Electron PC build in testing
@@ -295,7 +297,7 @@ See `docs/VoiceTrainerGuide.md` for using the local voice training engine.
 See `docs/ModuleMigrationGuide.md` for adopting shared Phase 8 modules across apps.
 All apps now include a `VideoShareManager` for posting generated videos directly to social media.
 The new `SocialMediaManager` module lets apps connect user accounts and post text updates or other content programmatically.
-An accompanying `VideoEffectsPipeline` adds fade transitions and watermarking so every generated clip looks professional across apps.
+An accompanying `VideoEffectsPipeline` adds fade transitions, fade-in/out effects, and watermarking so every generated clip looks professional across apps.
 The new `AudioEffectsPipeline` provides echo and pitch-shift utilities so exported audio sounds consistent across apps.
 The new `FusionEngine` wrapper automatically selects between `LocalAIEnginePro` and `OpenAIService` for each app, enabling offline-first development when `USE_LOCAL_AI` is set. It now supports contextual memory, parallel execution across multiple engines, emotion tracking, sandbox mode for isolated testing, cross-app voice memory, on-device summarization, and quick scene generation helpers.
 
@@ -340,6 +342,26 @@ calls the appropriate tools when present.
 Each app includes a `Desktop` folder with a starter Electron configuration for
 building installers.
 
+## Ebook2Audiobook Integration
+A snapshot of the open source `ebook2audiobook` project is included under `apps/ebook2audiobook`. Use the helper script `scripts/ebook2audiobook_bridge.py` to convert eBooks to narrated audio from any CoreForge app:
+
+```bash
+./scripts/ebook2audiobook_bridge.py MyBook.epub -o output_audio
+```
+
+This invokes the Python pipeline to generate WAV files in the given directory.
+## AI Video Generator Integration
+A trimmed snapshot of the open source `ai-video-generator` project is included under `apps/AI_VideoGenerator`. Run `python server.py` in that folder to start the FastAPI backend for generating text-to-video clips.
+
+
+## Chatterbox Script Conversion
+Use `scripts/chatterbox_bridge.py` to generate a narrated play from a simple `SPEAKER: line` script. Place `speaker.mp3` samples next to your script and set `CHATTERBOX_API_URL` before running:
+```bash
+./scripts/chatterbox_bridge.py script.txt
+```
+
+Run `scripts/progress_bot.py` to view app progress and optionally generate code.
+See `docs/progress_bot.md` for usage details.
 ## Running Tests
 
 Install Node dependencies for the labs before running the test suites:
@@ -360,3 +382,4 @@ The repository uses GitHub Actions workflows for building, testing, and releasin
 ## Fetching n8n Workflow Engine
 
 Use `./scripts/fetch_n8n.sh` to clone or update the [n8n](https://github.com/n8n-io/n8n) automation engine under `external/n8n`. Review the license printed at the end of the script before integrating it into your projects.
+
