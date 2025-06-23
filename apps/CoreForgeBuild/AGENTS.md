@@ -21,6 +21,7 @@ Purpose: AI-driven app builder with automated code generation and packaging
 - [x] Provide App Store assets and launch screens
 - [ ] Finalize production UI components
 - [x] Build `.dmg` and `.exe` installers
+- [x] Plugin fetcher supports branch selection
 
 ### Additional Phase 8 Features (from features-phase8.json)
 - [x] UnifiedAudioEngine
