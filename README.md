@@ -313,6 +313,12 @@ When this flag is active, both audio and video generation rely entirely on the
 local engines (`LocalVoiceAI` and the video routines in `CreatorCoreForge`), so
 clips and narration can be produced without any network connection.
 
+## App Store Compliance
+
+For iOS builds, features that provide explicit NSFW content or haptic device integration are disabled. Age gating and parental controls remain enabled so the apps meet Apple's App Store Review Guidelines.
+Data usage complies with privacy requirements, and only finalized, non-spammy features are shipped.
+See [docs/AppStore_Compliance.md](docs/AppStore_Compliance.md) for more information.
+
 ## Global Missing Items
 
 The following components are planned across all apps but are still works in progress:
