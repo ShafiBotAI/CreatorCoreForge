@@ -19,6 +19,7 @@ Only a subset of those features are shown below for brevity.
 - [x] UnifiedAudioEngine
 - [x] UnifiedVideoEngine
 - [x] AdaptiveLearningEngine
+- [x] LessonCompletionTimestamps
 - [x] AudioEffectsPipeline
 - [x] HighQualityVoiceLibrary
 - [x] GlobalLanguageSupport

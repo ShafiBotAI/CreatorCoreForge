@@ -3,6 +3,7 @@
 ## [Unreleased]
 - Added `UnifiedAudioEngine` shared module and updated all app feature lists.
 - Added `UnifiedVideoEngine` and `AdaptiveLearningEngine` modules for cross-platform video rendering and adaptive learning.
+- Enhanced `AdaptiveLearningEngine` to track lesson completion timestamps.
 - Added `HeatmapAnalytics` and `VersionedExports` features to `CoreForgeAudio` in `features-phase8.json`.
 - Added `SleepMode` utility and accompanying unit tests.
 - Added audio personalization and immersive feature placeholders (`ReplayAnalyticsService`, `SleepReadMode`, `EmotionShiftTracker`, `VoiceReviewSystem`, `AutoCastingEngine`, `PronunciationEditor`, `NarrationScheduler`, `SpatialAudioSupport`, `EmotionPacingEditor`, `SmartAmbientMixer`, `AutoRemixMode`, `AccessibilityOutput`, `WatchSyncService`, `VoicePolls`, `HeartRateAdaptiveAudio`, `UnlockableVoiceSkins`, `PersonalizedGreetingService`, `AdvancedTimelineEditor`, `BrailleOutputService`, `PronunciationDictionary`) to `CoreForgeAudio` in `features-phase8.json`.
