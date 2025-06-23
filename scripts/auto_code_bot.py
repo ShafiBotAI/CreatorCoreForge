@@ -1,5 +1,6 @@
 import os
 import re
+import py_compile
 from typing import List
 
 try:
@@ -45,6 +46,42 @@ def generate_snippet(description: str) -> str:
         return offline_snippet(description)
 
 
+def fix_python_file(path: str) -> bool:
+    """Attempt a minimal offline fix for a Python file.
+
+    Currently this just comments out the line causing a SyntaxError so the
+    file can be imported without crashing.
+    Returns True if the file was valid or fixed, False otherwise.
+    """
+    try:
+        py_compile.compile(path, doraise=True)
+        return True
+    except py_compile.PyCompileError as e:
+        lineno = getattr(e.exc_value, 'lineno', None)
+        if lineno is None:
+            return False
+        try:
+            with open(path, 'r', encoding='utf-8') as f:
+                lines = f.readlines()
+            if 0 <= lineno - 1 < len(lines):
+                lines[lineno - 1] = '# AUTO_FIX: ' + lines[lineno - 1]
+                with open(path, 'w', encoding='utf-8') as f:
+                    f.writelines(lines)
+                return True
+        except Exception:
+            return False
+        return False
+
+
+def fix_repo_code(repo_path: str) -> None:
+    """Scan and attempt offline fixes for Python files."""
+    for root, _, files in os.walk(repo_path):
+        for name in files:
+            if name.endswith('.py'):
+                path = os.path.join(root, name)
+                fix_python_file(path)
+
+
 def create_files(repo_path: str) -> None:
     result = scan_repo(repo_path)
     gen_root = os.path.join(repo_path, "generated")
@@ -70,4 +107,5 @@ def create_files(repo_path: str) -> None:
 if __name__ == "__main__":
     repo = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
     create_files(repo)
+    fix_repo_code(repo)
     print("Auto code generation complete. Check the 'generated' folder.")
