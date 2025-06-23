@@ -28,11 +28,28 @@ public final class AmbientFXEngine {
         return fx
     }
 
-    /// Crossfade from current ambience to a new one.
+    /// Crossfade from the current ambience to a new one.
+    /// The fade is performed asynchronously so playback is not blocked.
     public func crossfade(to name: String, duration: TimeInterval = 1.0) {
         #if canImport(AVFoundation)
+        let previous = manager.currentAmbience
+        guard previous != name else { return }
         manager.playAmbience(named: name)
-        // Stub fade logic for placeholder
+        Task.detached { [manager] in
+            let steps = max(1, Int(duration * 10))
+            let interval = duration / Double(steps)
+            for i in 0...steps {
+                let progress = Float(i) / Float(steps)
+                try? await Task.sleep(nanoseconds: UInt64(interval * 1_000_000_000))
+                DispatchQueue.main.async {
+                    manager.setVolume(for: previous, volume: 1 - progress)
+                    manager.setVolume(for: name, volume: progress)
+                }
+            }
+            DispatchQueue.main.async {
+                manager.stopEffect(named: previous)
+            }
+        }
         #else
         manager.playAmbience(named: name)
         #endif
