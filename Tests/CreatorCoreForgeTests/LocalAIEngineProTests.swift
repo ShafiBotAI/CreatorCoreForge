@@ -33,13 +33,14 @@ final class LocalAIEngineProTests: XCTestCase {
         wait(for: [expectation], timeout: 1)
     }
 
-    func testSummarizeReturnsFirstSentence() {
+    func testSummarizePrefersKeywordDenseSentence() {
         let engine = LocalAIEnginePro()
         let expectation = XCTestExpectation(description: "summary")
-        engine.summarize("First. Second.") { result in
+        let text = "The cat is on the mat. Cats chase mice in gardens." // second sentence has more keywords
+        engine.summarize(text) { result in
             switch result {
             case .success(let summary):
-                XCTAssertFalse(summary.isEmpty)
+                XCTAssertEqual(summary, "Cats chase mice in gardens")
             case .failure:
                 XCTFail("Unexpected failure")
             }

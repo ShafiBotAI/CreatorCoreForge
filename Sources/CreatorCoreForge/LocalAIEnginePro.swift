@@ -57,15 +57,23 @@ public final class LocalAIEnginePro {
                 return
             }
 
+            let stopWords: Set<String> = [
+                "the", "a", "an", "and", "is", "it", "of", "to", "in", "on", "for",
+                "with", "that", "this", "at", "by", "from", "as", "are", "be"
+            ]
             let allWords = text.lowercased().split { !$0.isLetter }
+                .map { String($0) }
+                .filter { !stopWords.contains($0) }
             var freq: [String: Int] = [:]
-            for w in allWords { freq[String(w), default: 0] += 1 }
+            for w in allWords { freq[w, default: 0] += 1 }
 
             var bestSentence = sentences.first!
             var bestScore = -1
             for sentence in sentences {
                 let words = sentence.lowercased().split { !$0.isLetter }
-                let score = words.reduce(0) { $0 + (freq[String($1)] ?? 0) }
+                    .map { String($0) }
+                    .filter { !stopWords.contains($0) }
+                let score = words.reduce(0) { $0 + (freq[$1] ?? 0) }
                 if score > bestScore { bestScore = score; bestSentence = sentence }
             }
 
