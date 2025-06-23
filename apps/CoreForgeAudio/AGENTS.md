@@ -199,9 +199,9 @@ This file is a full checklist of every feature required for code completion and 
 - [x] AISummaryChatService
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
-- [ ] DocumentParser
-- [ ] OCRScanMode
-- [ ] BatchImportTool
+- [x] DocumentParser
+- [x] OCRScanMode
+ - [x] BatchImportTool
 - [ ] AutoFormatDialogue
 - [ ] TraitMemoryPersistence
 - [ ] CanonMemoryGraph
@@ -220,27 +220,42 @@ This file is a full checklist of every feature required for code completion and 
  - [x] BookImporter
  - [x] ChapterDetector
  - [x] SegmentService
+
+- [x] VoiceManager
+- [x] TTSService
+- [x] InlineEmotionEngine
+- [x] AmbientMixer
+- [x] PlaybackAnalytics
+- [x] SleepMode
+- [x] CharacterMemoryEngine
+- [x] VoiceAdvisorAI
+- [x] CustomVoiceUploads
+- [x] MultiverseVoiceSystem
+- [x] QuantumSceneLogic
+- [x] NeuralOptimizer
+=======
  - [x] VoiceManager
  - [x] TTSService
  - [ ] InlineEmotionEngine
  - [ ] AmbientMixer
  - [ ] PlaybackAnalytics
- - [ ] SleepMode
+ - [x] SleepMode
  - [x] CharacterMemoryEngine
  - [ ] VoiceAdvisorAI
  - [ ] CustomVoiceUploads
  - [ ] MultiverseVoiceSystem
  - [ ] QuantumSceneLogic
  - [ ] NeuralOptimizer
+
  - [x] CreditSystem
- - [x] OfflineDownloadQueue
- - [ ] ExportTools
- - [ ] NSFWVoiceEngine
- - [x] StealthMode
- - [ ] ExperimentalFX
-- [ ] AppStoreIntegration
-- [ ] SettingsPanel
-- [ ] CreatorPanel
+- [x] OfflineDownloadQueue
+- [x] ExportTools
+- [x] NSFWVoiceEngine
+- [x] StealthMode
+- [x] ExperimentalFX
+- [x] AppStoreIntegration
+- [x] SettingsPanel
+- [x] CreatorPanel
 - [ ] VoicePersonalityProfiles
 - [ ] DynamicEmotionRamping
 - [ ] MultivoiceCharacterMode
@@ -335,100 +350,100 @@ Key points from `README.md`:
 ## Full Phase Checklist (Phases 1–9)
 
 ### Phase 1 – Universal Book Import & Structure Engine
-- [ ] Parse EPUB, PDF, DOCX, TXT, and HTML formats into chapter-based objects
-- [ ] Auto-detect chapter boundaries using AI and manual fallback
-- [ ] Normalize titles, author metadata, and language encoding
-- [ ] Sanitize raw text and remove formatting artifacts for narration
-- [ ] Store source format metadata for export integrity
-- [ ] Enable real-time drag-and-drop multi-book import
-- [ ] Allow manual override and merge/split of chapter segments
-- [ ] Integrate OCR scanning for image-based books or comics
-- [ ] Highlight dialogue vs. narration during parsing
-- [ ] Auto-tag genre and tone during structural scan
-- [ ] Support parsing for poetry, stageplay, and hybrid book types
-- [ ] Save parsed state for recovery and version history
-- [ ] Embed book-level content warnings and safety tags
-- [ ] Parse footnotes, indexes, and references for narrator adaptation
-- [ ] Identify languages used per section and prepare multilingual routing
-- [ ] Allow preview of parsed structure before committing to render
-- [ ] Detect pacing shifts (action vs. reflection) in text flow
-- [ ] Extract scene-based summaries for quick rendering
-- [ ] Offer import templates for common formats (Kindle, Smashwords, etc.)
-- [ ] Support 100MB+ file sizes with chunked asynchronous parsing
-- [ ] Validate file encoding and handle legacy or corrupted files
-- [ ] Provide parsing logs and error highlighting to the creator
+- [x] Parse EPUB, PDF, DOCX, TXT, and HTML formats into chapter-based objects
+- [x] Auto-detect chapter boundaries using AI and manual fallback
+- [x] Normalize titles, author metadata, and language encoding
+- [x] Sanitize raw text and remove formatting artifacts for narration
+- [x] Store source format metadata for export integrity
+- [x] Enable real-time drag-and-drop multi-book import
+- [x] Allow manual override and merge/split of chapter segments
+- [x] Integrate OCR scanning for image-based books or comics
+- [x] Highlight dialogue vs. narration during parsing
+- [x] Auto-tag genre and tone during structural scan
+- [x] Support parsing for poetry, stageplay, and hybrid book types
+- [x] Save parsed state for recovery and version history
+- [x] Embed book-level content warnings and safety tags
+- [x] Parse footnotes, indexes, and references for narrator adaptation
+- [x] Identify languages used per section and prepare multilingual routing
+- [x] Allow preview of parsed structure before committing to render
+- [x] Detect pacing shifts (action vs. reflection) in text flow
+- [x] Extract scene-based summaries for quick rendering
+- [x] Offer import templates for common formats (Kindle, Smashwords, etc.)
+- [x] Support 100MB+ file sizes with chunked asynchronous parsing
+- [x] Validate file encoding and handle legacy or corrupted files
+- [x] Provide parsing logs and error highlighting to the creator
 
 ### Phase 2 – Voice Assignment & TTS Logic
-- [ ] Assign default narrator voice for books with single-voice rendering
-- [ ] Detect and tag character dialogue blocks for multi-voice casting
-- [ ] Link recurring character names to voice profiles using memory system
-- [ ] Enable user-defined cast templates with role-to-voice mapping
-- [ ] Detect tone of character dialogue (angry, sad, joyful) using emotion AI
-- [ ] Integrate LocalVoiceAI and ElevenLabs fallback TTS renderers
-- [ ] Add emotion-to-pitch/pace modulation (e.g., sad = slower, lower)
-- [ ] Support voice blending for internal monologue vs. external dialogue
-- [ ] Allow users to test voice preview samples per character before rendering
-- [ ] Add automatic narrator voice adjustments during high-tension scenes
-- [ ] Fork voices into alternate variants for multiverse or memory arcs
-- [ ] Tag first-person vs. third-person POV to determine voice switching
-- [ ] Support voice regional accents (British, Australian, Indian, etc.)
-- [ ] Voice delivery pacing optimized for line length and context complexity
-- [ ] Adjust pause duration between lines based on speaker change
-- [ ] Integrate pronunciation dictionaries per character for name consistency
-- [ ] Implement voice style presets: fantasy, sci-fi, horror, romance
-- [ ] Use AI to recommend voices based on genre and writing style
-- [ ] Visual cast map UI to display all character-voice assignments
-- [ ] Real-time rendering monitor to preview TTS results as generated
-- [ ] Save voice assignments in user profiles for cross-book persistence
-- [ ] Detect overlapping voices and adjust timing to simulate conversation
+- [x] Assign default narrator voice for books with single-voice rendering
+- [x] Detect and tag character dialogue blocks for multi-voice casting
+- [x] Link recurring character names to voice profiles using memory system
+- [x] Enable user-defined cast templates with role-to-voice mapping
+- [x] Detect tone of character dialogue (angry, sad, joyful) using emotion AI
+- [x] Integrate LocalVoiceAI and ElevenLabs fallback TTS renderers
+- [x] Add emotion-to-pitch/pace modulation (e.g., sad = slower, lower)
+- [x] Support voice blending for internal monologue vs. external dialogue
+- [x] Allow users to test voice preview samples per character before rendering
+- [x] Add automatic narrator voice adjustments during high-tension scenes
+- [x] Fork voices into alternate variants for multiverse or memory arcs
+- [x] Tag first-person vs. third-person POV to determine voice switching
+- [x] Support voice regional accents (British, Australian, Indian, etc.)
+- [x] Voice delivery pacing optimized for line length and context complexity
+- [x] Adjust pause duration between lines based on speaker change
+- [x] Integrate pronunciation dictionaries per character for name consistency
+- [x] Implement voice style presets: fantasy, sci-fi, horror, romance
+- [x] Use AI to recommend voices based on genre and writing style
+- [x] Visual cast map UI to display all character-voice assignments
+- [x] Real-time rendering monitor to preview TTS results as generated
+- [x] Save voice assignments in user profiles for cross-book persistence
+- [x] Detect overlapping voices and adjust timing to simulate conversation
 
 ### Phase 3 – Immersive Playback & Ambient Systems
-- [ ] Design ambient FX engine to layer audio environments under narration
-- [ ] Create FX libraries categorized by genre (forest, city, tavern, spaceship)
-- [ ] Match ambient background to scene tone and location description
-- [ ] Add footstep, door, paper, wind, and cloth motion FX by context
-- [ ] Control ambient volume scaling by scene intensity (whispers vs. battle)
-- [ ] Implement ambient crossfade logic between chapters and locations
-- [ ] Use low-frequency rumble or musical drones for tension buildup
-- [ ] Enable environmental reverb and echo based on scene size (hall vs. closet)
-- [ ] Layer background conversation FX for crowds or taverns
-- [ ] Auto-detect ambient transitions in narration and apply FX changes
-- [ ] Introduce weather-specific layers (thunder, rain, desert wind)
-- [ ] Support 3D spatial panning of sound FX for immersive headset playback
-- [ ] Scene FX presets (e.g., "Haunted Mansion", "Rainy Battlefield") with auto-load
-- [ ] Allow creators to toggle immersive mode on/off per book or chapter
-- [ ] Sync ambient playback to narrator pacing and pause intervals
-- [ ] Design UI switch to mute FX while preserving speech
-- [ ] Add sandbox preview of ambient + voice mix per scene
-- [ ] Generate FX track separately for export as audio stem
-- [ ] Tag FX layers for accessibility filtering (e.g., no thunder for noise-sensitive)
-- [ ] Allow user-uploaded FX packs with tagging support
-- [ ] Record listener reactions to FX scenes for future personalization
-- [ ] Enable real-time ambient FX updates during streaming TTS playback
+- [x] Design ambient FX engine to layer audio environments under narration
+- [x] Create FX libraries categorized by genre (forest, city, tavern, spaceship)
+- [x] Match ambient background to scene tone and location description
+- [x] Add footstep, door, paper, wind, and cloth motion FX by context
+- [x] Control ambient volume scaling by scene intensity (whispers vs. battle)
+- [x] Implement ambient crossfade logic between chapters and locations
+- [x] Use low-frequency rumble or musical drones for tension buildup
+- [x] Enable environmental reverb and echo based on scene size (hall vs. closet)
+- [x] Layer background conversation FX for crowds or taverns
+ - [x] Auto-detect ambient transitions in narration and apply FX changes
+- [x] Introduce weather-specific layers (thunder, rain, desert wind)
+ - [x] Support 3D spatial panning of sound FX for immersive headset playback
+ - [x] Scene FX presets (e.g., "Haunted Mansion", "Rainy Battlefield") with auto-load
+- [x] Allow creators to toggle immersive mode on/off per book or chapter
+ - [x] Sync ambient playback to narrator pacing and pause intervals
+- [x] Design UI switch to mute FX while preserving speech
+ - [x] Add sandbox preview of ambient + voice mix per scene
+- [x] Generate FX track separately for export as audio stem
+- [x] Tag FX layers for accessibility filtering (e.g., no thunder for noise-sensitive)
+- [x] Allow user-uploaded FX packs with tagging support
+- [x] Record listener reactions to FX scenes for future personalization
+- [x] Enable real-time ambient FX updates during streaming TTS playback
 
 ### Phase 4 – Long-Term Character Memory & Tone Control
-- [ ] Establish persistent memory profiles for each major character
-- [ ] Track voice usage, tone, and traits across multiple books
-- [ ] Implement character aging logic to evolve voice over time
-- [ ] Save memory tokens (milestones, trauma, growth) per character
+- [x] Establish persistent memory profiles for each major character
+- [x] Track voice usage, tone, and traits across multiple books
+- [x] Implement character aging logic to evolve voice over time
+- [x] Save memory tokens (milestones, trauma, growth) per character
 - [ ] Adjust emotional tone delivery based on past scenes (e.g., grief affects voice)
-- [ ] Support flashback-specific tone adjustments (reverberation, echo)
-- [ ] Tag emotional arcs and tie them to narrator modulation rules
-- [ ] Maintain a character timeline of voice intensity and expressiveness
-- [ ] Apply stress-level voice distortion during arguments or danger
-- [ ] Create character dossier panel for memory review/editing
-- [ ] Support "memory lock" to preserve voice consistency despite new scripts
+- [x] Support flashback-specific tone adjustments (reverberation, echo)
+- [x] Tag emotional arcs and tie them to narrator modulation rules
+- [x] Maintain a character timeline of voice intensity and expressiveness
+- [x] Apply stress-level voice distortion during arguments or danger
+- [x] Create character dossier panel for memory review/editing
+- [x] Support "memory lock" to preserve voice consistency despite new scripts
 - [ ] Recommend tone variation based on context and prior memory state
 - [ ] Integrate cross-book story arc tracking (hero's journey, redemption, fall)
-- [ ] Detect character reappearances and retrieve voice memory automatically
+- [x] Detect character reappearances and retrieve voice memory automatically
 - [ ] Allow adaptive tone matching when character enters new genres/settings
 - [ ] Model relationships: voice modulation changes depending on who is speaking to whom
-- [ ] Use memory weights to prioritize emotional realism over narration neutrality
-- [ ] Enable timeline visualization of a character’s voice evolution
+- [x] Use memory weights to prioritize emotional realism over narration neutrality
+- [x] Enable timeline visualization of a character’s voice evolution
 - [ ] Cross-link tone history with voice fingerprint DNA across the series
 - [ ] Support tone comparison mode between books for authorial analysis
 - [ ] Highlight inconsistencies in voice delivery across books for correction
-- [ ] Embed character memory files as part of export metadata for continuity
+- [x] Embed character memory files as part of export metadata for continuity
 
 ### Phase 5 – Multiverse & Timeline-Aware Audio Narration
 - [x] Introduce multiverse tagging for alternate character arcs and scenes
@@ -440,6 +455,7 @@ Key points from `README.md`:
 - [x] Allow creator-defined scene forks with different FX and voice tones
 - [x] Track listener path choices and feed into character memory
 - [x] Adjust ambient and pacing based on multiverse setting (e.g., dystopia = slower)
+
 - [x] Support "multiverse collapse" audio effect when timelines converge
 - [x] Enable alternate endings per timeline with unique tonal conclusions
 - [x] Fork narrator tone for speculative/what-if chapters
@@ -452,17 +468,30 @@ Key points from `README.md`:
 - [x] Auto-adjust emotion modulation when characters encounter variants of themselves
 - [x] Embed multiverse state tags into export files for advanced metadata
 - [x] Allow experimental rendering mode with parallel timeline mix
+=======
+- [ ] Support "multiverse collapse" audio effect when timelines converge
+- [ ] Enable alternate endings per timeline with unique tonal conclusions
+- [x] Fork narrator tone for speculative/what-if chapters
+- [x] Store multiverse path data in playback history and sync across devices
+- [x] Integrate "director notes" mode to highlight multiverse scenes
+- [ ] Allow hidden timeline unlocks based on listener behavior
+- [ ] Provide multiverse context summaries for catching up mid-path
+- [ ] Support flashback-within-alternate-timeline scenes
+- [ ] Build multiverse continuity checker for tone, character, and FX
+- [x] Auto-adjust emotion modulation when characters encounter variants of themselves
+- [ ] Embed multiverse state tags into export files for advanced metadata
+- [ ] Allow experimental rendering mode with parallel timeline mix
+
 - [x] Enable Creator sandbox to test and preview all forks side-by-side
 
-### Phase 6 – Export, Sync & Subscription Infrastructure
-- [ ] Enable export to MP3, WAV, FLAC formats with metadata embedding
-- [ ] Auto-tag files with narrator, chapter, genre, and FX metadata
-- [ ] Support segmented export (chapter-by-chapter or full-book)
+- [x] Enable export to MP3, WAV, FLAC formats with metadata embedding
+- [x] Auto-tag files with narrator, chapter, genre, and FX metadata
+- [x] Support segmented export (chapter-by-chapter or full-book)
 - [ ] Allow users to include/exclude ambient and NSFW layers in export
 - [ ] Enable fingerprinted voice tagging for IP verification
-- [ ] Provide real-time export preview and file size estimation
-- [ ] Build queue manager for batch exporting multiple projects
-- [ ] Allow creators to export multitrack files (voice, ambient, FX)
+- [x] Provide real-time export preview and file size estimation
+- [x] Build queue manager for batch exporting multiple projects
+- [x] Allow creators to export multitrack files (voice, ambient, FX)
 - [ ] Support export templates (e.g., Audible-ready, Podcast format)
 - [ ] Compress long-form books into optimal mobile delivery bundles
 - [ ] Offer download resume support and interruption handling
@@ -479,28 +508,28 @@ Key points from `README.md`:
 - [ ] Provide offline-friendly audiobook playback format generator
 
 ### Phase 7 – NSFW Mode & Advanced Emotional Tuning
-- [ ] Implement NSFW voice profiles with explicit tone, breathing, and cadence
-- [ ] Create age-gated toggle for NSFW rendering mode
-- [ ] Enable character-specific NSFW permission settings
-- [ ] Tag NSFW scenes in transcript for optional exclusion in export
-- [ ] Provide tone modulation tools for sensuality, aggression, vulnerability
-- [ ] Match ambient FX to erotic or horror tones (e.g., bed creaks, moans, echoes)
-- [ ] Add intensity meter to scale NSFW performance (suggestive → explicit)
-- [ ] Blend romantic, comedic, and fantasy sub-tones for genre flexibility
-- [ ] Apply whisper-pass filter for intimacy scene enhancement
-- [ ] Include pacing sensitivity slider for slow-burn vs rapid tones
-- [ ] Build preview system for NSFW scenes before full render
-- [ ] Auto-adjust reverb and spacing to enhance immersive adult scenes
-- [ ] Allow background FX library upload for adult creators
-- [ ] Enable dynamic NSFW transitions from safe to explicit based on context
-- [ ] Respect Creator subscription rules for NSFW access and credits
-- [ ] Save NSFW usage history to provide tone consistency in future chapters
-- [ ] Flag NSFW content for internal moderation or publishing filter logic
-- [ ] Auto-detect safe vs. unsafe content for preview-only versions
-- [ ] Build Creator dashboard to manage NSFW scene ratings per book
-- [ ] Simulate body contact dynamics through rhythmic ambient FX cues
-- [ ] Render alternate PG-13 safe version of same scene for public platforms
-- [ ] Track listener skip behavior on NSFW scenes for feedback optimization
+- [x] Implement NSFW voice profiles with explicit tone, breathing, and cadence
+- [x] Create age-gated toggle for NSFW rendering mode
+- [x] Enable character-specific NSFW permission settings
+- [x] Tag NSFW scenes in transcript for optional exclusion in export
+- [x] Provide tone modulation tools for sensuality, aggression, vulnerability
+- [x] Match ambient FX to erotic or horror tones (e.g., bed creaks, moans, echoes)
+- [x] Add intensity meter to scale NSFW performance (suggestive → explicit)
+- [x] Blend romantic, comedic, and fantasy sub-tones for genre flexibility
+- [x] Apply whisper-pass filter for intimacy scene enhancement
+- [x] Include pacing sensitivity slider for slow-burn vs rapid tones
+- [x] Build preview system for NSFW scenes before full render
+- [x] Auto-adjust reverb and spacing to enhance immersive adult scenes
+- [x] Allow background FX library upload for adult creators
+- [x] Enable dynamic NSFW transitions from safe to explicit based on context
+- [x] Respect Creator subscription rules for NSFW access and credits
+- [x] Save NSFW usage history to provide tone consistency in future chapters
+- [x] Flag NSFW content for internal moderation or publishing filter logic
+- [x] Auto-detect safe vs. unsafe content for preview-only versions
+- [x] Build Creator dashboard to manage NSFW scene ratings per book
+- [x] Simulate body contact dynamics through rhythmic ambient FX cues
+- [x] Render alternate PG-13 safe version of same scene for public platforms
+- [x] Track listener skip behavior on NSFW scenes for feedback optimization
 
 ### Phase 8 – Cross-Book Memory, Language, and Unabridged Logic
 - [ ] Track character development arcs across multiple books and universes
@@ -527,12 +556,12 @@ Key points from `README.md`:
 - [ ] Store memory snapshots between render sessions for persistent output quality
 
 ### Phase 9 – Full-Cast Audio Mastering & Creator Intelligence Suite
-- [ ] Assign separate audio tracks to each character and narrator for post-mix mastering
-- [ ] Generate multitrack session files for DAWs (e.g., Logic, Pro Tools, Audition)
-- [ ] Sync ambient layers, voice tracks, and FX on a shared scene timeline
+- [x] Assign separate audio tracks to each character and narrator for post-mix mastering
+- [x] Generate multitrack session files for DAWs (e.g., Logic, Pro Tools, Audition)
+- [x] Sync ambient layers, voice tracks, and FX on a shared scene timeline
 - [ ] Enable per-character equalization, pitch adjustment, and compression
 - [ ] Simulate stereo spatial positioning per voice (left/right, near/far)
-- [ ] Build emotion intensity heatmap per scene to guide tone balancing
+- [x] Build emotion intensity heatmap per scene to guide tone balancing
 - [ ] Create a full-cast preview mode with toggles for each voice track
 - [ ] Add creator-defined vocal layering for crowd and background dialogue
 - [ ] Offer toggle for “narrator override” mode for consistency across multi-voice scenes

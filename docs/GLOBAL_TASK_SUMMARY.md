@@ -1,15 +1,21 @@
 # Global Task Summary
 
 ## apps
-- Keep each subfolder in sync with master roadmap
 - Coordinate shared assets and templates
 - Ensure CoreForge Audio checklist includes all phases 1-9 features
+
 
 ## apps/CoreForgeAudio
 - AdvancedSkipImport
 - DocumentParser
 - OCRScanMode
 - BatchImportTool
+=======
+- Review cross-app asset licensing
+
+## apps/CoreForgeAudio
+- AdvancedSkipImport
+
 - AutoFormatDialogue
 - TraitMemoryPersistence
 - CanonMemoryGraph
@@ -73,6 +79,7 @@
 - FlashbackSceneEngine
 - ContinuityChecker
 - CrossoverEngine
+
 - Parse EPUB, PDF, DOCX, TXT, and HTML formats into chapter-based objects
 - Auto-detect chapter boundaries using AI and manual fallback
 - Normalize titles, author metadata, and language encoding
@@ -169,6 +176,25 @@
 - Provide real-time export preview and file size estimation
 - Build queue manager for batch exporting multiple projects
 - Allow creators to export multitrack files (voice, ambient, FX)
+=======
+- Adjust emotional tone delivery based on past scenes (e.g., grief affects voice)
+- Recommend tone variation based on context and prior memory state
+- Integrate cross-book story arc tracking (hero's journey, redemption, fall)
+- Allow adaptive tone matching when character enters new genres/settings
+- Model relationships: voice modulation changes depending on who is speaking to whom
+- Cross-link tone history with voice fingerprint DNA across the series
+- Support tone comparison mode between books for authorial analysis
+- Highlight inconsistencies in voice delivery across books for correction
+- Support "multiverse collapse" audio effect when timelines converge
+- Enable alternate endings per timeline with unique tonal conclusions
+- Allow hidden timeline unlocks based on listener behavior
+- Provide multiverse context summaries for catching up mid-path
+- Support flashback-within-alternate-timeline scenes
+- Build multiverse continuity checker for tone, character, and FX
+- Embed multiverse state tags into export files for advanced metadata
+- Allow experimental rendering mode with parallel timeline mix
+- Allow users to include/exclude ambient and NSFW layers in export
+- Enable fingerprinted voice tagging for IP verification
 - Support export templates (e.g., Audible-ready, Podcast format)
 - Compress long-form books into optimal mobile delivery bundles
 - Offer download resume support and interruption handling
@@ -183,6 +209,7 @@
 - Support cloud backup of render states and export templates
 - Add DRM toggle for exports requiring usage protection
 - Provide offline-friendly audiobook playback format generator
+
 - Implement NSFW voice profiles with explicit tone, breathing, and cadence
 - Create age-gated toggle for NSFW rendering mode
 - Enable character-specific NSFW permission settings
@@ -205,6 +232,7 @@
 - Simulate body contact dynamics through rhythmic ambient FX cues
 - Render alternate PG-13 safe version of same scene for public platforms
 - Track listener skip behavior on NSFW scenes for feedback optimization
+
 - Track character development arcs across multiple books and universes
 - Sync voice tone evolution based on previous book outcomes
 - Detect and recall key events from prior titles to affect current narration
@@ -227,12 +255,17 @@
 - Adapt narration style based on genre and reader profile (e.g., thriller vs. memoir)
 - Detect formatting features (lists, quotes, poetry) and adjust narration accordingly
 - Store memory snapshots between render sessions for persistent output quality
+
 - Assign separate audio tracks to each character and narrator for post-mix mastering
 - Generate multitrack session files for DAWs (e.g., Logic, Pro Tools, Audition)
 - Sync ambient layers, voice tracks, and FX on a shared scene timeline
 - Enable per-character equalization, pitch adjustment, and compression
 - Simulate stereo spatial positioning per voice (left/right, near/far)
 - Build emotion intensity heatmap per scene to guide tone balancing
+=======
+- Enable per-character equalization, pitch adjustment, and compression
+- Simulate stereo spatial positioning per voice (left/right, near/far)
+
 - Create a full-cast preview mode with toggles for each voice track
 - Add creator-defined vocal layering for crowd and background dialogue
 - Offer toggle for “narrator override” mode for consistency across multi-voice scenes
@@ -398,4 +431,7 @@
 - Persistent character/world memory and creative DNA
 - Multilingual, NSFW gating, offline writing, community/marketplace
 - Import/export PDF, ePub, TXT, Docx
+
+## docs
+- Cross-reference new API guides
 

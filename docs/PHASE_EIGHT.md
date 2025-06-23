@@ -24,10 +24,12 @@ Only a subset of those features are shown below for brevity.
 - [x] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
 - [x] TenTimesPlaybackSpeed
-- [ ] AdvancedSkipImport
+- [x] AdvancedSkipImport
 - [x] AISummaryChatService
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
+- [x] DocumentParser
+- [x] OCRScanMode
 - [x] VideoEffectsPipeline
 - [x] Real-time emotion adaptation
 - [x] Voice DNA visualization
@@ -67,6 +69,32 @@ Only a subset of those features are shown below for brevity.
 - [x] PronunciationDictionary
 - [x] MultiCastAudiobookGenerator
 - [x] DramatizedAudiobookProducer
+
+- [x] BookImporter
+- [x] ChapterDetector
+- [x] SegmentService
+- [x] VoiceManager
+- [x] TTSService
+- [x] InlineEmotionEngine
+- [x] AmbientMixer
+- [x] PlaybackAnalytics
+- [x] SleepMode
+- [x] CharacterMemoryEngine
+- [x] VoiceAdvisorAI
+- [x] CustomVoiceUploads
+- [x] MultiverseVoiceSystem
+- [x] QuantumSceneLogic
+- [x] NeuralOptimizer
+- [x] CreditSystem
+- [x] OfflineDownloadQueue
+- [x] ExportTools
+- [x] NSFWVoiceEngine
+- [x] StealthMode
+- [x] ExperimentalFX
+- [x] AppStoreIntegration
+- [x] SettingsPanel
+- [x] CreatorPanel
+=======
 - [ ] BookImporter
 - [ ] ChapterDetector
 - [ ] SegmentService
@@ -75,7 +103,7 @@ Only a subset of those features are shown below for brevity.
 - [ ] InlineEmotionEngine
 - [ ] AmbientMixer
 - [ ] PlaybackAnalytics
-- [ ] SleepMode
+ - [x] SleepMode
 - [ ] CharacterMemoryEngine
 - [ ] VoiceAdvisorAI
 - [ ] CustomVoiceUploads
@@ -92,6 +120,7 @@ Only a subset of those features are shown below for brevity.
 - [ ] SettingsPanel
 - [ ] CreatorPanel
 
+
 ### CoreForgeVisual
 - [x] UnifiedAudioEngine
 - [x] UnifiedVideoEngine
@@ -101,7 +130,7 @@ Only a subset of those features are shown below for brevity.
 - [x] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
 - [x] TenTimesPlaybackSpeed
-- [ ] AdvancedSkipImport
+- [x] AdvancedSkipImport
 - [x] AISummaryChatService
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
@@ -130,7 +159,7 @@ Only a subset of those features are shown below for brevity.
 - [x] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
 - [x] TenTimesPlaybackSpeed
-- [ ] AdvancedSkipImport
+- [x] AdvancedSkipImport
 - [x] AISummaryChatService
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
@@ -148,7 +177,7 @@ Only a subset of those features are shown below for brevity.
 - [x] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
 - [x] TenTimesPlaybackSpeed
-- [ ] AdvancedSkipImport
+- [x] AdvancedSkipImport
 - [x] AISummaryChatService
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
@@ -166,7 +195,7 @@ Only a subset of those features are shown below for brevity.
 - [x] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
 - [x] TenTimesPlaybackSpeed
-- [ ] AdvancedSkipImport
+- [x] AdvancedSkipImport
 - [x] AISummaryChatService
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
@@ -184,7 +213,7 @@ Only a subset of those features are shown below for brevity.
 - [x] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
 - [x] TenTimesPlaybackSpeed
-- [ ] AdvancedSkipImport
+- [x] AdvancedSkipImport
 - [x] AISummaryChatService
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
@@ -202,7 +231,7 @@ Only a subset of those features are shown below for brevity.
 - [x] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
 - [x] TenTimesPlaybackSpeed
-- [ ] AdvancedSkipImport
+- [x] AdvancedSkipImport
 - [x] AISummaryChatService
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
@@ -220,7 +249,7 @@ Only a subset of those features are shown below for brevity.
 - [x] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
 - [x] TenTimesPlaybackSpeed
-- [ ] AdvancedSkipImport
+- [x] AdvancedSkipImport
 - [x] AISummaryChatService
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer

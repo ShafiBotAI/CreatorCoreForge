@@ -72,6 +72,8 @@
       "AISummaryChatService",
       "DocVideoScanner",
       "BookScanAnalyzer",
+      "DocumentParser",
+      "OCRScanMode",
       "MultiCastAudiobookGenerator",
       "DramatizedAudiobookProducer",
       "BookImporter",

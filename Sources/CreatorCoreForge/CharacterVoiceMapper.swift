@@ -48,6 +48,40 @@ public final class CharacterVoiceMapper {
         return results
     }
 
+    /// Assign voices using existing voice memory when available and
+    /// automatically store new assignments for future books.
+    public func assignVoicesUsingMemory(to ebookText: String,
+                                        series: String,
+                                        memory: VoiceMemoryManager = .shared) -> [CharacterVoiceMap] {
+        let lines = ebookText.components(separatedBy: "\n")
+        var nameSet = Set<String>()
+        let separators = [":", " - ", " — "]
+        for line in lines {
+            for sep in separators {
+                if line.contains(sep) {
+                    let components = line.components(separatedBy: sep)
+                    let name = components[0].trimmingCharacters(in: .whitespacesAndNewlines)
+                    if !name.isEmpty { nameSet.insert(name) }
+                    break
+                }
+            }
+        }
+
+        var results: [CharacterVoiceMap] = []
+        for name in nameSet.sorted() {
+            let voice: String
+            if let existing = memory.voiceID(for: name, in: series) {
+                voice = existing
+            } else {
+                voice = getNextVoice()
+                memory.assign(voiceID: voice, to: name, in: series)
+            }
+            knownCharacters[name] = voice
+            results.append(CharacterVoiceMap(name: name, assignedVoice: voice))
+        }
+        return results
+    }
+
     private func getNextVoice() -> String {
         let voice = availableVoices[voiceIndex % availableVoices.count]
         voiceIndex += 1
