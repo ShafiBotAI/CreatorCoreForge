@@ -204,14 +204,14 @@ Key points from `README.md`:
 - [x] Output visual scene map to timeline panel for creator editing
 
 ### Phase 2 – Character Design, Scene Casting & Visual Sync Logic
-- [ ] Auto-generate character design profiles from parsed book descriptions
-- [ ] Suggest visual avatars for each major and minor character using AI
-- [ ] Tag characters with genre-based archetypes (hero, mentor, villain)
-- [ ] Map character emotional arc to visual expression library
-- [ ] Assign unique costume layers per scene or timeline
-- [ ] Allow creators to upload reference art or override generated visuals
-- [ ] Store character styles for reuse across scenes and sequels
-- [ ] Adjust posture, facial expressions, and body language based on dialogue tone
+- [x] Auto-generate character design profiles from parsed book descriptions
+- [x] Suggest visual avatars for each major and minor character using AI
+- [x] Tag characters with genre-based archetypes (hero, mentor, villain)
+- [x] Map character emotional arc to visual expression library
+- [x] Assign unique costume layers per scene or timeline
+- [x] Allow creators to upload reference art or override generated visuals
+- [x] Store character styles for reuse across scenes and sequels
+- [x] Adjust posture, facial expressions, and body language based on dialogue tone
 - [ ] Support age-shift modeling (child, teen, adult, elder versions)
 - [ ] Track costume and hairstyle changes throughout story for visual consistency
 - [ ] Sync character movement to dialogue line length and pacing
