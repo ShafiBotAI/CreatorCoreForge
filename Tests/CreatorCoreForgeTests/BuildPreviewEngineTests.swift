@@ -44,4 +44,12 @@ final class BuildPreviewEngineTests: XCTestCase {
         let results = engine.runWebTests(runner: "jest", cases: ["a", "b"])
         XCTAssertEqual(results, ["a": true, "b": true])
     }
+
+    func testDeveloperConsoleToggle() {
+        let engine = BuildPreviewEngine.shared
+        engine.setDeveloperConsole(enabled: true)
+        XCTAssertTrue(engine.isDeveloperConsoleEnabled())
+        engine.setDeveloperConsole(enabled: false)
+        XCTAssertFalse(engine.isDeveloperConsoleEnabled())
+    }
 }
