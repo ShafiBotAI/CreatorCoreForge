@@ -5,6 +5,7 @@ public final class BuildDeploymentEngine {
     public static let shared = BuildDeploymentEngine()
     private var deployHistory: [String] = []
     private var performanceLog: [String: [String: Double]] = [:]
+    private var statusAlerts: [String] = []
     private init() {}
 
     /// Export a build for the specified platform.
@@ -47,18 +48,61 @@ public final class BuildDeploymentEngine {
     }
 
     /// Compress assets during packaging step.
-    public func compressAssets() -> Bool { true }
+    /// Returns paths of compressed files.
+    @discardableResult
+    public func compressAssets(at paths: [String]) -> [String] {
+        var output: [String] = []
+        for path in paths {
+            let compressed = path + ".compressed"
+            // Simulate compression by writing an empty file.
+            FileManager.default.createFile(atPath: compressed, contents: Data(), attributes: nil)
+            output.append(compressed)
+            deployHistory.append("Compressed asset: \(path)")
+        }
+        return output
+    }
 
     /// Render a QR code for quick preview links.
     public func renderQRCode(for url: String) -> String {
         "QRCode:\(url)"
     }
 
+    /// Push a status alert to the deployment dashboard.
+    @discardableResult
+    public func pushStatusAlert(_ message: String) -> Bool {
+        statusAlerts.append(message)
+        deployHistory.append("Alert: \(message)")
+        return true
+    }
+
+    /// Retrieve any status alerts that were pushed.
+    public func alerts() -> [String] { statusAlerts }
+
     /// Deployment event history.
     public func history() -> [String] { deployHistory }
 
-    /// Export all builds with changelog metadata.
-    public func exportAllBuilds(platforms: [String], changelog: String) -> Bool {
+    /// Export all builds with changelog and metadata into the `dist` folder.
+    @discardableResult
+    public func exportAllBuilds(platforms: [String], changelog: String,
+                                metadata: [String: String] = [:]) -> Bool {
+        let fm = FileManager.default
+        let dist = URL(fileURLWithPath: "dist")
+        try? fm.createDirectory(at: dist, withIntermediateDirectories: true)
+
+        for platform in platforms {
+            let file = dist.appendingPathComponent("\(platform).build")
+            try? "build for \(platform)".write(to: file, atomically: true, encoding: .utf8)
+        }
+
+        let changelogURL = dist.appendingPathComponent("CHANGELOG.txt")
+        try? changelog.write(to: changelogURL, atomically: true, encoding: .utf8)
+
+        if !metadata.isEmpty,
+           let data = try? JSONSerialization.data(withJSONObject: metadata) {
+            let metaURL = dist.appendingPathComponent("metadata.json")
+            try? data.write(to: metaURL)
+        }
+
         deployHistory.append("Exported builds: \(platforms.joined(separator: ","))")
         deployHistory.append("Changelog: \(changelog)")
         return true

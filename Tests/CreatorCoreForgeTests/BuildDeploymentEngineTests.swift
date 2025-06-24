@@ -33,6 +33,30 @@ final class BuildDeploymentEngineTests: XCTestCase {
         XCTAssertTrue(engine.pushHotfix(platform: "web"))
     }
 
+    func testStatusAlertRecorded() {
+        let engine = BuildDeploymentEngine.shared
+        _ = engine.pushStatusAlert("Deployed")
+        XCTAssertTrue(engine.alerts().contains("Deployed"))
+    }
+
+    func testCompressAssetsCreatesFiles() {
+        let engine = BuildDeploymentEngine.shared
+        let tmp = FileManager.default.temporaryDirectory.appendingPathComponent("asset.txt")
+        try? "data".write(to: tmp, atomically: true, encoding: .utf8)
+        let outputs = engine.compressAssets(at: [tmp.path])
+        XCTAssertFalse(outputs.isEmpty)
+        XCTAssertTrue(FileManager.default.fileExists(atPath: outputs[0]))
+    }
+
+    func testExportAllBuildsWritesFiles() {
+        let engine = BuildDeploymentEngine.shared
+        let distDir = URL(fileURLWithPath: "dist")
+        try? FileManager.default.removeItem(at: distDir)
+        XCTAssertTrue(engine.exportAllBuilds(platforms: ["ios"], changelog: "c", metadata: ["v": "1"]))
+        XCTAssertTrue(FileManager.default.fileExists(atPath: distDir.appendingPathComponent("ios.build").path))
+        XCTAssertTrue(FileManager.default.fileExists(atPath: distDir.appendingPathComponent("metadata.json").path))
+    }
+
     func testValidateCompliance() {
         let engine = BuildDeploymentEngine.shared
         XCTAssertTrue(engine.validateCompliance(screenshots: true, privacyLabels: true))
