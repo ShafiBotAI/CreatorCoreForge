@@ -41,4 +41,5 @@ export * from './RenderAnalyticsDashboard.tsx';
 export { UnifiedAudioEngine } from './UnifiedAudioEngine.ts';
 export { UnifiedVideoEngine } from './UnifiedVideoEngine.ts';
 export { AdaptiveLearningEngine } from './AdaptiveLearningEngine.ts';
+export { VisualRenderer } from './VisualRenderer.ts';
 

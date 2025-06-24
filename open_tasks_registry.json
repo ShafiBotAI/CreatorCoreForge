@@ -141,10 +141,6 @@
       "source_file": "FEATURES-CODEX-COMPLETE.md"
     },
     {
-      "task": "`VisualRenderer.render(config: RenderConfig): VideoClip`",
-      "source_file": "FEATURES-CODEX-COMPLETE.md"
-    },
-    {
       "task": "Generate video from prompt + voice + ambient FX",
       "source_file": "FEATURES-CODEX-COMPLETE.md"
     },
@@ -312,6 +308,5 @@
       "task": "Developer console toggle (Creator tier)",
       "source_file": "FEATURES-CODEX-COMPLETE.md"
     }
-
   ]
 }
