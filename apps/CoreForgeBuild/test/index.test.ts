@@ -53,9 +53,6 @@ import { ParseHistory } from '../services/ParseHistory';
 
   const diff = new DiffService();
 
-  assert(diff.diff('a', 'b').includes('-a'));
-=======
-
   const diffOutput = diff.diff('a', 'b');
   assert(diffOutput.includes('-a'));
 

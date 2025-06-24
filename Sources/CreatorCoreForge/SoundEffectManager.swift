@@ -6,10 +6,6 @@ import AVFoundation
 
 
 
-/// Manages ambient sound effects for immersive playback.
-public final class SoundEffectManager: ObservableObject {
-    /// Shared singleton instance.
-=======
 #if canImport(Combine)
 import Combine
 #endif
