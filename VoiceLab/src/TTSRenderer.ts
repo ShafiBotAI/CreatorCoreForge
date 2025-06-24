@@ -47,11 +47,5 @@ export class TTSRenderer {
     console.log(
       `Rendered segment ${segment.id} (${blob.size} bytes) with voice ${voice}`
     );
-=======
-  async renderSegment(segment: TTSSegment): Promise<void> {
-    // Placeholder for real TTS logic. Simulate async rendering.
-    await new Promise((res) => setTimeout(res, 10));
-    console.log(`Rendered segment ${segment.id}`);
-
   }
 }

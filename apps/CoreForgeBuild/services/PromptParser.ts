@@ -50,7 +50,7 @@ export class PromptParser {
     const flowTags = Array.from(new Set(flows.flat()));
     const patterns = this.recognizePatterns(normalized);
     const conditionals = this.parseConditionals(normalized);
-    return { language: 'en', layout, flows, flowTags, patterns, conditionals };
+    return { language: detected, layout, flows, flowTags, patterns, conditionals };
   }
 
   /**

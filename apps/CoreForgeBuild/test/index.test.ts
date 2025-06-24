@@ -59,18 +59,8 @@ import { ParseHistory } from '../services/ParseHistory';
   assert(bridge.getCode().includes('<h1>'));
 
   const diff = new DiffService();
-
-=======
-  const diff = new DiffService();
-
   const diffOutput = diff.diff('a', 'b');
   assert(diffOutput.includes('-a'));
-
-  const bridge = new (await import('../services/PreviewBridge')).PreviewBridge(bus);
-  bus.emitParsed(parsed);
-  assert(bridge.getCode().includes('<h1>'));
-
-
 
   const sugg = new UISuggestionService();
   assert(sugg.suggestNext([{ type: "header", props: { text: "Login" } }]).length > 0);
@@ -135,8 +125,6 @@ import { ParseHistory } from '../services/ParseHistory';
   const { AuthScaffolder } = await import('../services/AuthScaffolder');
   const authSnippet = new AuthScaffolder().scaffold('jwt');
   assert(authSnippet.includes('JWT'));
-
-=======
   const { ModuleGenerator } = await import('../services/ModuleGenerator');
   const modules = new ModuleGenerator().generate(parsed.layout);
   assert.strictEqual(modules.length > 0, true);
