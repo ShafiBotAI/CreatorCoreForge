@@ -12,13 +12,6 @@ import requests
 def download_repo(repo: str, dest: Path, branch: str = "master") -> None:
     """Download repo in the form owner/repo to the destination directory.
 
-    If the requested branch returns a 404, fall back to ``main``."""
-    dest.mkdir(parents=True, exist_ok=True)
-
-    branches = [branch]
-    if branch == "master":
-        branches.append("main")
-=======
     If the chosen branch doesn't exist, the function will also try the common
     alternative branch name (``main`` or ``master``).
     """
@@ -31,20 +24,11 @@ def download_repo(repo: str, dest: Path, branch: str = "master") -> None:
     if alternate not in branches:
         branches.append(alternate)
 
-
     for br in branches:
         url = f"https://codeload.github.com/{repo}/zip/refs/heads/{br}"
         resp = requests.get(url, timeout=30)
-
         if resp.status_code == 404:
             continue
-        resp.raise_for_status()
-        with zipfile.ZipFile(io.BytesIO(resp.content)) as zf:
-            zf.extractall(dest)
-        return
-
-    raise RuntimeError(f"Failed to download {repo} from branches {branches}")
-=======
         if resp.status_code == 200:
             with zipfile.ZipFile(io.BytesIO(resp.content)) as zf:
                 zf.extractall(dest)
