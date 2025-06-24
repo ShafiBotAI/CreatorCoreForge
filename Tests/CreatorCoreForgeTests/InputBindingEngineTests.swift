@@ -20,4 +20,14 @@ final class InputBindingEngineSimpleTests: XCTestCase {
         }
         XCTAssertEqual(sum, "3")
     }
+
+    func testComputedWatcherUpdates() {
+        let engine = InputBindingEngine()
+        engine.bindComputed(field: "full") { vals in
+            (vals["first"] ?? "") + (vals["last"] ?? "")
+        }
+        engine.bind(field: "first", value: "A")
+        engine.bind(field: "last", value: "B")
+        XCTAssertEqual(engine.value(for: "full"), "AB")
+    }
 }
