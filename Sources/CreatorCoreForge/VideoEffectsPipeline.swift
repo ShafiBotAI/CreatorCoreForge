@@ -45,6 +45,19 @@ public struct VideoEffectsPipeline {
         return result
     }
 
+    /// Apply transition style keywords between frames based on pacing.
+    public func applyTransitions(to frames: [String], style: String) -> [String] {
+        guard frames.count > 1 else { return frames }
+        var result: [String] = []
+        for (index, frame) in frames.enumerated() {
+            result.append(frame)
+            if index < frames.count - 1 {
+                result.append(style)
+            }
+        }
+        return result
+    }
+
     /// Combines processed frames with an audio track label to produce a clip.
     public func composeVideo(frames: [String], audio: String) -> RenderedClip {
         let tagged = frames.map { "\($0)|audio:\(audio)" }

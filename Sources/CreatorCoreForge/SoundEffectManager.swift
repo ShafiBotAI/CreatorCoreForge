@@ -1,4 +1,3 @@
-
 import Foundation
 #if canImport(AVFoundation)
 import AVFoundation
@@ -8,22 +7,19 @@ import AVFoundation
 // SoundEffectManager.swift
 // CoreForge Audio
 
+
 #if canImport(Combine)
-import Foundation
 import Combine
-#else
-import Foundation
-#endif
-#if canImport(AVFoundation)
-import AVFoundation
 #endif
 
+// SoundEffectManager.swift
+// CoreForge Audio
+
 /// Cross-platform manager for short sound effects and ambience.
+public final class SoundEffectManager {
 #if canImport(Combine)
-public final class SoundEffectManager: ObservableObject {
     @Published public private(set) var currentAmbience: String = "None"
 #else
-public final class SoundEffectManager {
     public private(set) var currentAmbience: String = "None"
 #endif
     public static let shared = SoundEffectManager()
@@ -199,7 +195,10 @@ public final class SoundEffectManager {
         return reverb
     }
 #else
-    public func triggerReverbPreset(preset: ReverbStyle) {}
+    public func triggerReverbPreset(preset: ReverbStyle) -> StubReverb {
+        print("[SoundEffectManager] Reverb preset \(preset.rawValue) not supported on this platform")
+        return StubReverb()
+    }
 #endif
 }
 
@@ -219,6 +218,12 @@ public enum ReverbStyle: String, CaseIterable, Codable {
 #else
 public enum ReverbStyle: String, CaseIterable, Codable {
     case cathedral, cave, underwater, hall, dreamlike
+}
+
+/// Minimal stand-in for `AVAudioUnitReverb` when AVFoundation is unavailable.
+public struct StubReverb {
+    public var wetDryMix: Float = 0.0
+    public init() {}
 }
 #endif
 

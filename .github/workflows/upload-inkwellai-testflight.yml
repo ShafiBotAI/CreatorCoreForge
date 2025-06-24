@@ -26,8 +26,8 @@ jobs:
 
       - name: Build and Upload CoreForge Writer
         env:
-          PROJECT_PATH: apps/CoreForgeWriter/InkwellAIFull/InkwellAI.xcodeproj
-          SCHEME: InkwellAI
+          PROJECT_PATH: apps/CoreForgeWriter/CoreForgeWriter.xcodeproj
+          SCHEME: CoreForgeWriter
           APPSTORECONNECT_KEY_ID: ${{ secrets.APPSTORECONNECT_KEY_ID }}
           APPSTORECONNECT_ISSUER_ID: ${{ secrets.APPSTORECONNECT_ISSUER_ID }}
           APPSTORECONNECT_API_KEY: ${{ secrets.APPSTORECONNECT_API_KEY }}

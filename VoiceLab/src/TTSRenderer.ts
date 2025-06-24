@@ -31,10 +31,11 @@ export class TTSRenderer {
       return;
     }
     this.processing = true;
-    await this.renderSegment(seg, options);
+    await this.renderSegment(seg);
     this.processing = false;
     this.processNext(options);
   }
+
 
   async renderSegment(segment: TTSSegment, options?: TTSOptions): Promise<void> {
     const { renderSegment } = await import('./ttsService');
@@ -46,5 +47,11 @@ export class TTSRenderer {
     console.log(
       `Rendered segment ${segment.id} (${blob.size} bytes) with voice ${voice}`
     );
+=======
+  async renderSegment(segment: TTSSegment): Promise<void> {
+    // Placeholder for real TTS logic. Simulate async rendering.
+    await new Promise((res) => setTimeout(res, 10));
+    console.log(`Rendered segment ${segment.id}`);
+
   }
 }

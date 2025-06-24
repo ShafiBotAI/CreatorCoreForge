@@ -3,17 +3,21 @@ export interface RendererOptions {
   height: number;
 }
 
-export interface GPUVideoClip {
-  frames: any[];
+export interface RenderedFrame<F> {
+  frame: F;
+  size: [number, number];
 }
 
-export class GPUVideoRenderer {
+export interface GPUVideoClip<F = RenderedFrame<unknown>> {
+  frames: F[];
+}
+
+export class GPUVideoRenderer<F = unknown> {
   async render(
-    frames: any[],
+    frames: F[],
     options: RendererOptions
-  ): Promise<GPUVideoClip> {
-    // Attach target resolution metadata to each frame for testing purposes.
-    const processed = frames.map(f => ({ frame: f, size: [options.width, options.height] }));
+  ): Promise<GPUVideoClip<RenderedFrame<F>>> {
+    const processed = frames.map(frame => ({ frame, size: [options.width, options.height] }));
     return { frames: processed };
   }
 }

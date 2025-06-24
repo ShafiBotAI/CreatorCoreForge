@@ -1,4 +1,0 @@
-# Auto-generated for Memory linking across apps
-def memory_linking_across():
-    """Memory linking across apps"""
-    pass

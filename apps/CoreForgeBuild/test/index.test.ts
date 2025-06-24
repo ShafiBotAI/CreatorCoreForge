@@ -127,6 +127,33 @@ import { ParseHistory } from '../services/ParseHistory';
   const authSnippet = new AuthScaffolder().scaffold('jwt');
   assert(authSnippet.includes('JWT'));
 
+  const { ModuleGenerator } = await import('../services/ModuleGenerator');
+  const modules = new ModuleGenerator().generate(parsed.layout);
+  assert.strictEqual(modules.length > 0, true);
+
+  const { ErrorHandlingInjector } = await import('../services/ErrorHandlingInjector');
+  const wrapped = new ErrorHandlingInjector().inject('doWork()');
+  assert(wrapped.includes('try'));
+
+  const { APIGenerator } = await import('../services/APIGenerator');
+  assert(new APIGenerator().generate('rest').includes('/api/hello'));
+
+  const { OpenAPIBinder } = await import('../services/OpenAPIBinder');
+  const binds = new OpenAPIBinder().bind({ paths: { '/x': { get: {} } } });
+  assert(binds[0].includes('/x'));
+
+  const { PlatformConstraintService } = await import('../services/PlatformConstraintService');
+  const issues = new PlatformConstraintService().check([{ type: 'camera' } as any]);
+  assert(issues.length === 1);
+
+  const { ExportService } = await import('../services/ExportService');
+  const annotated = new ExportService().export('console.log("a")', 'annotated');
+  assert(annotated.startsWith('// annotated'));
+
+  const { CodeValidator } = await import('../services/CodeValidator');
+  const warnings = new CodeValidator().validate('var a = 1');
+  assert(warnings.length === 1);
+
   console.log('CoreForgeBuild tests passed');
   require('./collaboration.test');
 })();
