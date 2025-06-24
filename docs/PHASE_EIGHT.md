@@ -13,9 +13,19 @@ Only a subset of those features are shown below for brevity.
 - [x] **Enterprise** – Team collaboration and permissions, White label deployment, Analytics and compliance reports
 - [x] **NSFW** – Explicit content toggle, Consent logs and vaults, Premium NSFW packs
 
+
 ## Application Feature Goals
 
 ### CoreForgeAudio
+
+- [ ] Real-time emotion adaptation
+- [ ] Voice DNA visualization
+- [ ] Quantum AI mode
+- [ ] NSFW mood heatmap analytics
+- [ ] SoundLayerEngine
+- [ ] ChapterAnalyticsService
+- [ ] UserAnnotations
+
 
 - [x] UnifiedAudioEngine
 - [x] Real-time emotion adaptation
@@ -25,6 +35,7 @@ Only a subset of those features are shown below for brevity.
 - [x] SoundLayerEngine
 - [x] ChapterAnalyticsService
 - [x] UserAnnotations
+
 - [ ] VoiceControlService integration
 - [ ] AdaptiveMusicGenerator
 - [ ] CommunityReviews
@@ -54,6 +65,10 @@ Only a subset of those features are shown below for brevity.
 - [ ] AdvancedTimelineEditor
 - [ ] BrailleOutputService
 - [ ] PronunciationDictionary
+
+
+### CoreForgeVisual
+=======
 - [ ] CrossPlatformVideoGenerator
 - [ ] UniversalVideoGenerator
 - [x] UnifiedAudioEngine
@@ -172,7 +187,20 @@ Only a subset of those features are shown below for brevity.
 
 - [ ] AR/VR playback
 - [ ] Quantum reality switcher
+- [ ] TimelineEditor
+- [ ] ColorGradingEngine
+- [ ] BranchingPathsUI
+- [ ] FaceTrackerService
+- [ ] CrowdSimulator
+- [ ] Export360VR
+- [ ] CameraStabilizer
+- [ ] WatermarkService
+- [ ] SubtitleGenerator
+- [ ] RenderAnalyticsDashboard
 
+
+### CoreForgeWriter
+=======
 - [ ] Hero spotlight background (wide format)
 =======
 - [ ] TimelineEditor
@@ -194,12 +222,16 @@ Only a subset of those features are shown below for brevity.
 - [ ] Quantum-choice plotting
 - [ ] Community marketplace
 
+
+### CoreForgeMarket
+=======
 - [ ] CrossPlatformVideoGenerator
 - [ ] UniversalVideoGenerator
 
 
 ### CoreForgeMarket
 - [ ] UnifiedAudioEngine
+
 - [ ] Hybrid quantum trading engine
 - [ ] Team trading and leaderboards
 - [ ] Bot marketplace
@@ -208,16 +240,23 @@ Only a subset of those features are shown below for brevity.
 
 
 ### CoreForgeBuild
+
+
 - [ ] UnifiedAudioEngine
+
 - [ ] Figma-driven UI builder
 - [ ] Auto bundler for all platforms
 - [ ] Debugging assistant
+
+
+### CoreForgeStudio
 
 - [ ] CrossPlatformVideoGenerator
 - [ ] UniversalVideoGenerator
 
 ### CoreForgeStudio
 - [ ] UnifiedAudioEngine
+
 - [ ] Real-time ensemble acting
 - [ ] Quantum edit mode
 - [ ] Template monetization
@@ -226,10 +265,15 @@ Only a subset of those features are shown below for brevity.
 
 
 ### CoreForgeMusic
+
+=======
 - [ ] UnifiedAudioEngine
+
 - [ ] AI vocal production
 - [ ] Commercial export tools
 - [ ] Voice cloning
+
+### CoreForgeLeads
 
 - [ ] CrossPlatformVideoGenerator
 - [ ] UniversalVideoGenerator
@@ -237,11 +281,11 @@ Only a subset of those features are shown below for brevity.
 
 ### CoreForgeLeads
 - [ ] UnifiedAudioEngine
+
 - [ ] Marketplace credit system
 - [ ] Global lead exchange
 - [ ] Advanced scoring
 
-- [ ] CrossPlatformVideoGenerator
 
 ### CoreForgeLearn
 - [ ] UnifiedAudioEngine
@@ -375,3 +419,4 @@ Only a subset of those features are shown below for brevity.
 
 
 Use this checklist to track progress as we implement Phase 8 capabilities across every app.
+
