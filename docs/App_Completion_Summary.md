@@ -15,7 +15,7 @@ This document lists each app and its completion percentage based on task checkli
 | CoreForgeMusic | 96.7% |
 | CoreForgeQuest | 83.3% |
 | CoreForgeStudio | 54.3% |
-| CoreForgeVisual | 46.6% |
+| CoreForgeVisual | 50.0% |
 | CoreForgeVoiceLab | 83.3% |
 | CoreForgeWriter | 53.4% |
 
