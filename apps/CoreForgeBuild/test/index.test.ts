@@ -54,25 +54,12 @@ import { ParseHistory } from '../services/ParseHistory';
   assert.strictEqual(generated, '<div />');
 
   const diff = new DiffService();
-
   const diffOutput = diff.diff('a', 'b');
   assert(diffOutput.includes('-a'));
 
-=======
-  const diffOutput = diff.diff("a", "b");
-  assert(diffOutput.includes("-a"));
-=======
   const bridge = new (await import('../services/PreviewBridge')).PreviewBridge(bus);
   bus.emitParsed(parsed);
   assert(bridge.getCode().includes('<h1>'));
-
-
-  const diff = new DiffService();
-
-  const diffOutput = diff.diff('a', 'b');
-  assert(diffOutput.includes('-a'));
-
-
 
 
   const sugg = new UISuggestionService();
@@ -105,7 +92,7 @@ import { ParseHistory } from '../services/ParseHistory';
 
   // multilingual prompt parsing
   const parsedEs = parser.parse('hola inicio');
-  assert.strictEqual(parsedEs.language, 'en');
+  assert.strictEqual(parsedEs.language, 'es');
 
   // pattern recognition
   const patternParsed = parser.parse('Onboarding flow with tabbed menu');

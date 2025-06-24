@@ -3,21 +3,8 @@ import Foundation
 #if canImport(AVFoundation)
 import AVFoundation
 #endif
-
-=======
-
-
-// SoundEffectManager.swift
-// CoreForge Audio
-
 #if canImport(Combine)
-import Foundation
 import Combine
-#else
-import Foundation
-#endif
-#if canImport(AVFoundation)
-import AVFoundation
 #endif
 
 /// Cross-platform manager for short sound effects and ambience.

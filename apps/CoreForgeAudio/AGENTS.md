@@ -263,9 +263,9 @@ This file is a full checklist of every feature required for code completion and 
 - [x] InlineWhisperSupport
 - [x] MidSentenceToneSwitching
 
-- [ ] SceneVolumeDynamics
-- [ ] SpatialPositioning
-- [ ] RoomSimulation
+- [x] SceneVolumeDynamics
+- [x] SpatialPositioning
+- [x] RoomSimulation
 
  - [x] MultiTrackExport
 - [x] EmotionCurveVisualizer
@@ -275,11 +275,11 @@ This file is a full checklist of every feature required for code completion and 
 - [x] MoodColorCoder
  - [x] AICastingDirector
  - [x] VoiceApprovalWorkflow
-- [ ] ScriptSnippetInjector
-- [ ] CreatorSandboxMode
-- [ ] DualNarratorToggle
-- [ ] VoiceDNAForking
-- [ ] FlashbackSceneEngine
+- [x] ScriptSnippetInjector
+- [x] CreatorSandboxMode
+- [x] DualNarratorToggle
+- [x] VoiceDNAForking
+- [x] FlashbackSceneEngine
 - [ ] ContinuityChecker
 - [ ] CrossoverEngine
 ## NSFW Features & Expansion (If Enabled)
