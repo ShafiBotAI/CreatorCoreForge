@@ -27,14 +27,14 @@
 ### 🎭 Character Identity Mapping
 - [x] Match characters with avatar templates
 - [x] Assign age, gender, personality traits
-- [ ] Support facial expression presets (happy, angry, neutral)
-- [ ] Auto-suggest avatars by genre
+ - [x] Support facial expression presets (happy, angry, neutral)
+ - [x] Auto-suggest avatars by genre
 
 ### 🏗️ Scene Builder
-- [ ] `SceneBuilder.build(scene: Scene): RenderConfig`
-- [ ] Match character(s), setting, props
-- [ ] Annotate shot list (close-up, wide, over-shoulder)
-- [ ] Inject emotion or FX tags into each shot
+- [x] `SceneBuilder.build(scene: Scene): RenderConfig`
+- [x] Match character(s), setting, props
+- [x] Annotate shot list (close-up, wide, over-shoulder)
+- [x] Inject emotion or FX tags into each shot
 
 ---
 
@@ -42,32 +42,32 @@
 
 ### 🎞️ AI Video Generator
 - [x] `VisualRenderer.render(config: RenderConfig): VideoClip`
-- [ ] Generate video from prompt + voice + ambient FX
-- [ ] Integrate with external or local video model
-- [ ] Allow rendering style: anime, fantasy, live-action, etc.
+- [x] Generate video from prompt + voice + ambient FX
+- [x] Integrate with external or local video model
+- [x] Allow rendering style: anime, fantasy, live-action, etc.
 
 ### 🌠 FX Layer System
-- [ ] Add scene-level visual effects (fog, sparks, neon glow)
-- [ ] Overlay genre-specific filters
-- [ ] Allow real-time FX preview
+- [x] Add scene-level visual effects (fog, sparks, neon glow)
+- [x] Overlay genre-specific filters
+- [x] Allow real-time FX preview
 
 ### 🎙 Voice-to-Video Sync
-- [ ] Sync facial movement and scene cuts to speech timing
-- [ ] Support pre-recorded and generated voice tracks
-- [ ] Allow lip-sync toggle for faster rendering
+- [x] Sync facial movement and scene cuts to speech timing
+- [x] Support pre-recorded and generated voice tracks
+- [x] Allow lip-sync toggle for faster rendering
 
 ---
 
 ## ✅ Phase 4 – Adaptive Logic & Memory (Creator Tier)
 
 ### 🧠 Visual Memory Engine
-- [ ] Store character appearances across books
-- [ ] Preserve visual continuity in sequels
-- [ ] Handle outfit/age/mood consistency dynamically
+- [x] Store character appearances across books
+- [x] Preserve visual continuity in sequels
+- [x] Handle outfit/age/mood consistency dynamically
 
 ### 🧬 Scene DNA Tracker
-- [ ] Track changes to scenes (e.g., visual DNA fork)
-- [ ] Let creators “lock” scene visuals for canon
+- [x] Track changes to scenes (e.g., visual DNA fork)
+- [x] Let creators “lock” scene visuals for canon
 - [ ] Link scene DNA to multiverse system
 
 ---

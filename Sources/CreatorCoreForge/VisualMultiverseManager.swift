@@ -52,6 +52,11 @@ public final class VisualMultiverseManager {
         return map
     }
 
+    /// Return timeline variants sorted by description for a scene.
+    public func timelineVariants(for sceneID: String, project: String) -> [VisualOutcome] {
+        outcomes(for: sceneID, project: project).sorted { $0.description < $1.description }
+    }
+
     /// Clear all stored outcomes.
     public func clearAll() {
         outcomes.removeAll()

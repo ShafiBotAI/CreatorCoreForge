@@ -12,9 +12,9 @@ import { DeployService } from '../services/DeployService';
 import { UISuggestionService } from '../services/UISuggestionService';
 import { WireframeParser } from '../services/WireframeParser';
 import { LayoutValidator } from '../services/LayoutValidator';
-import { InputNormalizer } from '../services/InputNormalizer';
 import { InputHistory } from '../services/InputHistory';
 import { LogicVisualizer } from '../services/LogicVisualizer';
+import { InputNormalizer } from "../services/InputNormalizer";
 import { VoicePromptParser } from '../services/VoicePromptParser';
 import { PromptEditor } from '../services/PromptEditor';
 import { ThemeService } from '../services/ThemeService';
@@ -53,20 +53,18 @@ import { ParseHistory } from '../services/ParseHistory';
   bus.emitGenerated('react', '<div />');
   assert.strictEqual(generated, '<div />');
 
+  const diff = new DiffService();
+  const diffOutput = diff.diff('a', 'b');
+  assert(diffOutput.includes('-a'));
+
   const bridge = new (await import('../services/PreviewBridge')).PreviewBridge(bus);
   bus.emitParsed(parsed);
   assert(bridge.getCode().includes('<h1>'));
 
 
-  const diff = new DiffService();
-
-  const diffOutput = diff.diff('a', 'b');
-  assert(diffOutput.includes('-a'));
-
-
   const sugg = new UISuggestionService();
-  assert(sugg.suggestNext([{ type: 'header', props: { text: 'Login' } }]).length > 0);
-  assert(sugg.suggestPatterns('chat').includes('send-button'));
+  assert(sugg.suggestNext([{ type: "header", props: { text: "Login" } }]).length > 0);
+  assert(sugg.suggestPatterns("chat").includes("send-button"));
 
   const wf = new WireframeParser();
   const wire = wf.parse(Buffer.from('abcd'));
@@ -127,6 +125,33 @@ import { ParseHistory } from '../services/ParseHistory';
   const { AuthScaffolder } = await import('../services/AuthScaffolder');
   const authSnippet = new AuthScaffolder().scaffold('jwt');
   assert(authSnippet.includes('JWT'));
+
+  const { ModuleGenerator } = await import('../services/ModuleGenerator');
+  const modules = new ModuleGenerator().generate(parsed.layout);
+  assert.strictEqual(modules.length > 0, true);
+
+  const { ErrorHandlingInjector } = await import('../services/ErrorHandlingInjector');
+  const wrapped = new ErrorHandlingInjector().inject('doWork()');
+  assert(wrapped.includes('try'));
+
+  const { APIGenerator } = await import('../services/APIGenerator');
+  assert(new APIGenerator().generate('rest').includes('/api/hello'));
+
+  const { OpenAPIBinder } = await import('../services/OpenAPIBinder');
+  const binds = new OpenAPIBinder().bind({ paths: { '/x': { get: {} } } });
+  assert(binds[0].includes('/x'));
+
+  const { PlatformConstraintService } = await import('../services/PlatformConstraintService');
+  const issues = new PlatformConstraintService().check([{ type: 'camera' } as any]);
+  assert(issues.length === 1);
+
+  const { ExportService } = await import('../services/ExportService');
+  const annotated = new ExportService().export('console.log("a")', 'annotated');
+  assert(annotated.startsWith('// annotated'));
+
+  const { CodeValidator } = await import('../services/CodeValidator');
+  const warnings = new CodeValidator().validate('var a = 1');
+  assert(warnings.length === 1);
 
   console.log('CoreForgeBuild tests passed');
   require('./collaboration.test');

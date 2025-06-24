@@ -10,14 +10,14 @@ jobs:
       matrix:
         app:
           - name: CoreForge Audio
-            project: apps/CoreForgeAudio/VocalVerseFull/VocalVerse.xcodeproj
-            scheme: VocalVerse
+            project: apps/CoreForgeAudio/CoreForgeAudio.xcodeproj
+            scheme: CoreForgeAudio
           - name: CoreForge Visual
-            project: apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI.xcodeproj
-            scheme: LoreForgeAI
+            project: apps/CoreForgeVisual/CoreForgeVisual.xcodeproj
+            scheme: CoreForgeVisual
           - name: CoreForge Writer
-            project: apps/CoreForgeWriter/InkwellAIFull/InkwellAI.xcodeproj
-            scheme: InkwellAI
+            project: apps/CoreForgeWriter/CoreForgeWriter.xcodeproj
+            scheme: CoreForgeWriter
     steps:
       - uses: actions/checkout@v3
       - name: Set up Xcode

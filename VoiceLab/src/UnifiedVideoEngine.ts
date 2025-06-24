@@ -3,15 +3,27 @@ export interface RendererOptions {
   height: number;
 }
 
-export interface GPUVideoClip {
-  frames: any[];
+export interface RenderedFrame<F> {
+  frame: F;
+  size: [number, number];
 }
 
-export class UnifiedVideoEngine {
+export interface GPUVideoClip<F = RenderedFrame<unknown>> {
+  frames: F[];
+}
+
+export class UnifiedVideoEngine<F = unknown> {
   static shared = new UnifiedVideoEngine();
   private constructor() {}
 
-  async render(frames: any[], options: RendererOptions): Promise<GPUVideoClip> {
-    return { frames };
+  async render(
+    frames: F[],
+    options: RendererOptions
+  ): Promise<GPUVideoClip<RenderedFrame<F>>> {
+    const processed = frames.map(frame => ({
+      frame,
+      size: [options.width, options.height] as [number, number],
+    }));
+    return { frames: processed };
   }
 }
