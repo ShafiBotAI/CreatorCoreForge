@@ -116,7 +116,6 @@ This file is a full checklist of every feature required for code completion and 
 - [x] Apple Watch/mini controller sync for playback
 - [x] In-book voice/tone polls (live user voting)
 
-=======
 
 - [x] Heart-rate integration for adaptive emotion (wearables)
  - [x] Unlockable voice skins, accents, FX presets
