@@ -76,5 +76,13 @@ assert.strictEqual(rendered.style, 'default');
 
 
 
-console.log('New features tests passed');
 
+import { detectCharacters, matchLocationToTemplate, generateStoryboard, detectBookFormat, mergeScenes } from '../src/index.ts';
+
+assert.deepStrictEqual(detectCharacters('Alice meets Bob.'), ['Alice','Bob']);
+assert.strictEqual(matchLocationToTemplate('Old Castle Tower'), 'castle');
+assert.deepStrictEqual(generateStoryboard(['a','b'])[1], { index: 1, text: 'b' });
+assert.strictEqual(detectBookFormat('novel.epub'), 'epub');
+assert.deepStrictEqual(mergeScenes(['a','b','c'],1), ['a','b c']);
+
+console.log('New features tests passed');
