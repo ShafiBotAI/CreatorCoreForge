@@ -8,17 +8,58 @@ Only a subset of those features are shown below for brevity.
 
 ## Tier Features
 
-- [ ] **Free** – Core functionality across apps, Limited export options, Access to community templates
-- [ ] **Creator** – Advanced AI tools, Voice cloning and adaptive scene builders, Personal dashboards and statistics
-- [ ] **Enterprise** – Team collaboration and permissions, White label deployment, Analytics and compliance reports
-- [ ] **NSFW** – Explicit content toggle, Consent logs and vaults, Premium NSFW packs
+- [x] **Free** – Core functionality across apps, Limited export options, Access to community templates
+- [x] **Creator** – Advanced AI tools, Voice cloning and adaptive scene builders, Personal dashboards and statistics
+- [x] **Enterprise** – Team collaboration and permissions, White label deployment, Analytics and compliance reports
+- [x] **NSFW** – Explicit content toggle, Consent logs and vaults, Premium NSFW packs
 
 ## Application Feature Goals
 
 ### CoreForgeAudio
+
+- [ ] UnifiedAudioEngine
+- [ ] Real-time emotion adaptation
+- [ ] Voice DNA visualization
+- [ ] Quantum AI mode
+- [ ] NSFW mood heatmap analytics
+- [ ] SoundLayerEngine
+- [ ] ChapterAnalyticsService
+- [ ] UserAnnotations
+- [ ] VoiceControlService integration
+- [ ] AdaptiveMusicGenerator
+- [ ] CommunityReviews
+- [ ] AudioSearchIndex
+- [ ] ProfanityFilter
+- [ ] VoiceCloneShare
+- [ ] DynamicChapterTransitions
+- [ ] HeatmapAnalytics
+- [ ] VersionedExports
+- [ ] ReplayAnalyticsService
+- [ ] SleepReadMode
+- [ ] EmotionShiftTracker
+- [ ] VoiceReviewSystem
+- [ ] AutoCastingEngine
+- [ ] PronunciationEditor
+- [ ] NarrationScheduler
+- [ ] SpatialAudioSupport
+- [ ] EmotionPacingEditor
+- [ ] SmartAmbientMixer
+- [ ] AutoRemixMode
+- [ ] AccessibilityOutput
+- [ ] WatchSyncService
+- [ ] VoicePolls
+- [ ] HeartRateAdaptiveAudio
+- [ ] UnlockableVoiceSkins
+- [ ] PersonalizedGreetingService
+- [ ] AdvancedTimelineEditor
+- [ ] BrailleOutputService
+- [ ] PronunciationDictionary
+- [ ] UniversalVideoGenerator
+
 - [x] UnifiedAudioEngine
 - [x] UnifiedVideoEngine
 - [x] AdaptiveLearningEngine
+- [x] LessonCompletionTimestamps
 - [x] AudioEffectsPipeline
 - [x] HighQualityVoiceLibrary
 - [x] GlobalLanguageSupport
@@ -94,31 +135,7 @@ Only a subset of those features are shown below for brevity.
 - [x] AppStoreIntegration
 - [x] SettingsPanel
 - [x] CreatorPanel
-=======
-- [ ] BookImporter
-- [ ] ChapterDetector
-- [ ] SegmentService
-- [ ] VoiceManager
-- [ ] TTSService
-- [ ] InlineEmotionEngine
-- [ ] AmbientMixer
-- [ ] PlaybackAnalytics
- - [x] SleepMode
-- [ ] CharacterMemoryEngine
-- [ ] VoiceAdvisorAI
-- [ ] CustomVoiceUploads
-- [ ] MultiverseVoiceSystem
-- [ ] QuantumSceneLogic
-- [ ] NeuralOptimizer
-- [ ] CreditSystem
-- [ ] OfflineDownloadQueue
-- [ ] ExportTools
-- [ ] NSFWVoiceEngine
-- [ ] StealthMode
-- [ ] ExperimentalFX
-- [ ] AppStoreIntegration
-- [ ] SettingsPanel
-- [ ] CreatorPanel
+
 
 
 ### CoreForgeVisual
@@ -136,6 +153,79 @@ Only a subset of those features are shown below for brevity.
 - [x] BookScanAnalyzer
 - [x] VideoEffectsPipeline
 - [ ] Adaptive scene completion
+
+- [x] AR/VR playback
+- [x] Quantum reality switcher
+- [x] TimelineEditor
+- [x] ColorGradingEngine
+- [x] BranchingPathsUI
+- [x] FaceTrackerService
+- [x] CrowdSimulator
+- [x] Export360VR
+- [x] CameraStabilizer
+- [x] WatermarkService
+- [x] SubtitleGenerator
+- [x] RenderAnalyticsDashboard
+- [ ] FrameInterpolationService
+=======
+
+- [ ] AR/VR playback
+- [ ] Quantum reality switcher
+- [ ] TimelineEditor
+- [ ] ColorGradingEngine
+- [ ] BranchingPathsUI
+- [ ] FaceTrackerService
+- [ ] CrowdSimulator
+- [ ] Export360VR
+- [ ] CameraStabilizer
+- [ ] WatermarkService
+- [ ] SubtitleGenerator
+- [ ] RenderAnalyticsDashboard
+- [ ] UniversalVideoGenerator
+
+
+### CoreForgeWriter
+- [ ] UnifiedAudioEngine
+- [ ] Memory pinning
+- [ ] Quantum-choice plotting
+- [ ] Community marketplace
+- [ ] UniversalVideoGenerator
+
+### CoreForgeMarket
+- [ ] UnifiedAudioEngine
+- [ ] Hybrid quantum trading engine
+- [ ] Team trading and leaderboards
+- [ ] Bot marketplace
+- [ ] UniversalVideoGenerator
+
+### CoreForgeBuild
+- [ ] UnifiedAudioEngine
+- [ ] Figma-driven UI builder
+- [ ] Auto bundler for all platforms
+- [ ] Debugging assistant
+- [ ] UniversalVideoGenerator
+
+### CoreForgeStudio
+- [ ] UnifiedAudioEngine
+- [ ] Real-time ensemble acting
+- [ ] Quantum edit mode
+- [ ] Template monetization
+- [ ] UniversalVideoGenerator
+
+### CoreForgeMusic
+- [ ] UnifiedAudioEngine
+- [ ] AI vocal production
+- [ ] Commercial export tools
+- [ ] Voice cloning
+- [ ] UniversalVideoGenerator
+
+### CoreForgeLeads
+- [ ] UnifiedAudioEngine
+- [ ] Marketplace credit system
+- [ ] Global lead exchange
+- [ ] Advanced scoring
+- [ ] UniversalVideoGenerator
+=======
 - [x] AR/VR playback
 - [x] Quantum reality switcher
 - [x] TimelineEditor
@@ -200,9 +290,9 @@ Only a subset of those features are shown below for brevity.
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
 - [x] VideoEffectsPipeline
-- [ ] Figma-driven UI builder
-- [ ] Auto bundler for all platforms
-- [ ] Debugging assistant
+- [x] Figma-driven UI builder
+- [x] Auto bundler for all platforms
+- [x] Debugging assistant
 
 ### CoreForgeStudio
 - [x] UnifiedAudioEngine
@@ -218,7 +308,7 @@ Only a subset of those features are shown below for brevity.
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
 - [x] VideoEffectsPipeline
-- [ ] Real-time ensemble acting
+- [x] Real-time ensemble acting
 - [x] Quantum edit mode
 - [x] Template monetization
 
@@ -236,9 +326,9 @@ Only a subset of those features are shown below for brevity.
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
 - [x] VideoEffectsPipeline
-- [ ] AI vocal production
-- [ ] Commercial export tools
-- [ ] Voice cloning
+- [x] AI vocal production
+- [x] Commercial export tools
+- [x] Voice cloning
 
 ### CoreForgeLeads
 - [x] UnifiedAudioEngine
@@ -254,9 +344,9 @@ Only a subset of those features are shown below for brevity.
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
 - [x] VideoEffectsPipeline
-- [ ] Marketplace credit system
-- [ ] Global lead exchange
-- [ ] Advanced scoring
-- [ ] AdaptiveDocScanner module
+- [x] Marketplace credit system
+- [x] Global lead exchange
+- [x] Advanced scoring
+- [x] AdaptiveDocScanner module
 
 Use this checklist to track progress as we implement Phase 8 capabilities across every app.

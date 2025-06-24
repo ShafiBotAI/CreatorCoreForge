@@ -14,7 +14,9 @@ final class SocialMediaManagerTests: XCTestCase {
             client?.urlProtocol(self, didReceive: response, cacheStoragePolicy: .notAllowed)
             client?.urlProtocolDidFinishLoading(self)
         }
-        override func stopLoading() {}
+        override func stopLoading() {
+            client?.urlProtocolDidFinishLoading(self)
+        }
     }
 
     func testPostUpdateSuccess() {

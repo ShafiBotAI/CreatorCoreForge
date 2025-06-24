@@ -62,7 +62,7 @@ This agent is responsible for building, validating, and maintaining all features
 ---
 
 ## Documentation & Developer Assets
-- [ ] README.md, APISetup.md, PromptTemplates.md, DeveloperSetup.md
+- [x] README.md, APISetup.md, PromptTemplates.md, DeveloperSetup.md
  - [x] App store/launch assets, compliance/user guides
 
 ---
@@ -86,11 +86,11 @@ This agent is responsible for building, validating, and maintaining all features
 - [x] Bot marketplace
 - [x] VideoEffectsPipeline
 - [x] AudioEffectsPipeline
-- [ ] HighQualityVoiceLibrary
+ - [x] HighQualityVoiceLibrary
 - [ ] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
 - [x] TenTimesPlaybackSpeed
-- [ ] AdvancedSkipImport
+ - [x] AdvancedSkipImport
 - [x] AISummaryChatService
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer

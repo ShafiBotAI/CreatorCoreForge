@@ -1,0 +1,4 @@
+# Auto-generated for VoiceControlService integration
+def voicecontrolservice_integration():
+    """VoiceControlService integration"""
+    pass

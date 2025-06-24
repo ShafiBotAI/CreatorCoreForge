@@ -207,6 +207,7 @@
 - **PluginBuilder:** Generates basic plugin templates for new dashboard modules
 - **AIStudioMode:** Adds a studio prefix to prompts when testing features
 - **GenesisModeEngine:** Produces variant ideas for apps and content
+- **SelfRepairEngine:** Scans all app folders and fixes simple `fatalError` placeholders via `BuildImprovementEngine`.
 
 ---
 
@@ -296,8 +297,12 @@ See `docs/LocalOpenAIReplacement.md` for a primer on using the LocalAI engines t
 See `docs/VoiceTrainerGuide.md` for using the local voice training engine.
 See `docs/ModuleMigrationGuide.md` for adopting shared Phase 8 modules across apps.
 All apps now include a `VideoShareManager` for posting generated videos directly to social media.
+
+An accompanying `VideoEffectsPipeline` adds fade transitions, watermarking, and frame interpolation so every generated clip looks professional across apps.
+=======
 The new `SocialMediaManager` module lets apps connect user accounts and post text updates or other content programmatically.
 An accompanying `VideoEffectsPipeline` adds fade transitions, fade-in/out effects, and watermarking so every generated clip looks professional across apps.
+
 The new `AudioEffectsPipeline` provides echo and pitch-shift utilities so exported audio sounds consistent across apps.
 The new `FusionEngine` wrapper automatically selects between `LocalAIEnginePro` and `OpenAIService` for each app, enabling offline-first development when `USE_LOCAL_AI` is set. It now supports contextual memory, parallel execution across multiple engines, emotion tracking, sandbox mode for isolated testing, cross-app voice memory, on-device summarization, and quick scene generation helpers.
 
@@ -312,6 +317,12 @@ For offline development you can set `USE_LOCAL_AI=1` in the environment to enabl
 When this flag is active, both audio and video generation rely entirely on the
 local engines (`LocalVoiceAI` and the video routines in `CreatorCoreForge`), so
 clips and narration can be produced without any network connection.
+
+## App Store Compliance
+
+For iOS builds, features that provide explicit NSFW content or haptic device integration are disabled. Age gating and parental controls remain enabled so the apps meet Apple's App Store Review Guidelines.
+Data usage complies with privacy requirements, and only finalized, non-spammy features are shipped.
+See [docs/AppStore_Compliance.md](docs/AppStore_Compliance.md) for more information.
 
 ## Global Missing Items
 
@@ -360,7 +371,8 @@ Use `scripts/chatterbox_bridge.py` to generate a narrated play from a simple `SP
 ./scripts/chatterbox_bridge.py script.txt
 ```
 
-Run `scripts/progress_bot.py` to view app progress and optionally generate code.
+Run `scripts/progress_bot.py` to view app progress and generate snippet files for missing features.
+Run `scripts/generate_app_completion_report.py` to update `app_completion_report.json` and `docs/App_Completion_Summary.md`.
 See `docs/progress_bot.md` for usage details.
 ## Running Tests
 

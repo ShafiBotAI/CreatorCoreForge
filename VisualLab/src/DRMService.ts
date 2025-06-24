@@ -6,6 +6,7 @@ export class DRMService {
     video: DRMVideoClip,
     config: DRMConfig
   ): Promise<DRMVideoClip> {
-    return video;
+    const frames = video.frames.map(f => ({ ...f, watermark: config.watermark }));
+    return { frames };
   }
 }

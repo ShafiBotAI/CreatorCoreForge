@@ -83,11 +83,11 @@ Purpose: Converts full books into dramatized AI-generated cinematic videos
 - [x] Template monetization
 - [x] VideoEffectsPipeline
 - [x] AudioEffectsPipeline
-- [ ] HighQualityVoiceLibrary
+ - [x] HighQualityVoiceLibrary
 - [ ] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
 - [x] TenTimesPlaybackSpeed
-- [ ] AdvancedSkipImport
+ - [x] AdvancedSkipImport
 - [x] AISummaryChatService
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer

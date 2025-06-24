@@ -6,10 +6,10 @@ Purpose: Consolidate all CreatorCoreForge application packages
 -### Tasks
 - [x] Keep each subfolder in sync with master roadmap
 - [x] Maintain per-app AGENTS.md files
-- [ ] Coordinate shared assets and templates
-- [ ] Ensure CoreForge Audio checklist includes all phases 1-9 features
+- [x] Coordinate shared assets and templates
+- [x] Ensure CoreForge Audio checklist includes all phases 1-9 features
 - [x] Centralize admin contacts for app teams
-- [ ] Review cross-app asset licensing
+- [x] Review cross-app asset licensing
 
 ---
 

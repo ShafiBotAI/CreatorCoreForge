@@ -61,7 +61,7 @@ class myTTS:
         settings = self.params[self.session['tts_engine']]
         settings['sample_rate'] = models[self.session['tts_engine']][self.session['fine_tuned']]['samplerate']
         self.vtt_path = os.path.splitext(self.session['final_name'])[0] + '.vtt'
-        if self.session['tts_engine'] == XXXX:
+        if self.session['tts_engine'] == XTTSv2:
             if self.session['custom_model'] is not None:
                 msg = f"Loading TTS {self.session['tts_engine']} model, it takes a while, please be patient..."
                 print(msg)
@@ -329,7 +329,7 @@ class myTTS:
                         audio_segments.append(silence_tensor.clone())
                         continue
                     audio_part = None
-                    if self.session['tts_engine'] == XXXX:
+                    if self.session['tts_engine'] == XTTSv2:
                         trim_audio_buffer = 0.07 
                         if settings['voice_path'] is not None and settings['voice_path'] in settings['latent_embedding'].keys():
                             settings['gpt_cond_latent'], settings['speaker_embedding'] = settings['latent_embedding'][settings['voice_path']]
@@ -342,7 +342,12 @@ class myTTS:
                                 settings['gpt_cond_latent'], settings['speaker_embedding'] = self.tts.get_conditioning_latents(audio_path=[settings['voice_path']])  
                             settings['latent_embedding'][settings['voice_path']] = settings['gpt_cond_latent'], settings['speaker_embedding']
                         with torch.no_grad():
-                            result = self.tts.XXXX()
+                            result = self.tts.inference(
+                                text=text_part,
+                                language=self.session['language_iso1'],
+                                gpt_cond_latent=settings['gpt_cond_latent'],
+                                speaker_embedding=settings['speaker_embedding']
+                            )
                         audio_part = result.get('wav')
                     if self._is_valid(audio_part):
                         sourceTensor = self._tensor_type(audio_part)

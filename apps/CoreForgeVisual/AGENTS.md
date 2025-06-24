@@ -101,7 +101,7 @@ This agent is responsible for building, validating, and maintaining every featur
 - [x] UnifiedAudioEngine
 - [x] UnifiedVideoEngine
 - [x] AdaptiveLearningEngine
-- [ ] Adaptive scene completion
+- [x] Adaptive scene completion
 - [x] AR/VR playback
 - [x] Quantum reality switcher
 - [x] TimelineEditor
@@ -121,7 +121,7 @@ This agent is responsible for building, validating, and maintaining every featur
 - [x] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
 - [x] TenTimesPlaybackSpeed
-- [ ] AdvancedSkipImport
+ - [x] AdvancedSkipImport
 - [x] AISummaryChatService
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
@@ -174,15 +174,15 @@ Key points from `README.md`:
 
 ## Full Phase Checklist (Phases 1–9)
 ### Phase 1 – Book Import & Scene Mapping Engine
-- [ ] Parse EPUB, PDF, DOCX, and TXT into structured scene blocks
-- [ ] Auto-detect chapter breaks and scene transitions using AI
-- [ ] Identify and extract key visual descriptions from text
-- [ ] Tag scene tone (light, dark, romantic, violent) via sentiment analysis
-- [ ] Detect and tag characters per scene using NLP entity recognition
-- [ ] Match locations to genre-based visual templates (castle, school, space station)
-- [ ] Generate initial visual storyboard layout from parsed scenes
-- [ ] Support drag-and-drop book input with automatic format recognition
-- [ ] Allow manual refinement of scene breaks via visual editor
+- [x] Parse EPUB, PDF, DOCX, and TXT into structured scene blocks
+- [x] Auto-detect chapter breaks and scene transitions using AI
+- [x] Identify and extract key visual descriptions from text
+- [x] Tag scene tone (light, dark, romantic, violent) via sentiment analysis
+- [x] Detect and tag characters per scene using NLP entity recognition
+- [x] Match locations to genre-based visual templates (castle, school, space station)
+- [x] Generate initial visual storyboard layout from parsed scenes
+- [x] Support drag-and-drop book input with automatic format recognition
+- [x] Allow manual refinement of scene breaks via visual editor
 - [ ] Store original book structure for syncing narration with visuals
 - [ ] Flag high-action and dialogue-heavy scenes for rendering priority
 - [ ] Normalize text encoding for rare language or stylized prose
