@@ -48,14 +48,14 @@
 - AmbientLayerFX
 - CrossSceneFXLinking
 - SceneDensityTuner
-- MultiTrackExport
-- EmotionCurveVisualizer
+  - ~~MultiTrackExport~~ (implemented)
+  - EmotionCurveVisualizer
 - VoiceAwarePacing
 - ToneConsistencyChecker
 - ConflictFXEnhancer
 - MoodColorCoder
 - AICastingDirector
-- VoiceApprovalWorkflow
+  - ~~VoiceApprovalWorkflow~~ (implemented)
 - ScriptSnippetInjector
 - CreatorSandboxMode
 - DualNarratorToggle

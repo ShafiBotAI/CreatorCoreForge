@@ -260,14 +260,14 @@ This file is a full checklist of every feature required for code completion and 
 - [ ] AmbientLayerFX
 - [ ] CrossSceneFXLinking
 - [ ] SceneDensityTuner
-- [ ] MultiTrackExport
+ - [x] MultiTrackExport
 - [ ] EmotionCurveVisualizer
 - [ ] VoiceAwarePacing
 - [ ] ToneConsistencyChecker
 - [ ] ConflictFXEnhancer
 - [ ] MoodColorCoder
  - [x] AICastingDirector
-- [ ] VoiceApprovalWorkflow
+ - [x] VoiceApprovalWorkflow
 - [ ] ScriptSnippetInjector
 - [ ] CreatorSandboxMode
 - [ ] DualNarratorToggle

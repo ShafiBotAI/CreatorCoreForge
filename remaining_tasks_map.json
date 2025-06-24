@@ -4962,11 +4962,6 @@
     },
     {
       "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
-      "line": 277,
-      "task": "MultiTrackExport"
-    },
-    {
-      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
       "line": 278,
       "task": "EmotionCurveVisualizer"
     },
@@ -4989,11 +4984,6 @@
       "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
       "line": 282,
       "task": "MoodColorCoder"
-    },
-    {
-      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
-      "line": 284,
-      "task": "VoiceApprovalWorkflow"
     },
     {
       "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
