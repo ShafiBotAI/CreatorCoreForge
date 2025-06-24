@@ -24,7 +24,6 @@ def creatorsandboxmode(log: List[str] | None = None) -> Iterable[Callable[[str],
         yield _record
     finally:
         pass
-=======
 # Auto-generated for CreatorSandboxMode
 """Context manager for temporary sandbox workspaces."""
 

@@ -177,7 +177,6 @@
     emotional logic, AI Studio & Genesis hooks, sandbox AI
 - **LocalVoiceAI:** Full ElevenLabs replacement with advanced cloning and emotion modulation
 - **LocalAIEngine Pro:** OpenAI-free LLM for text, dialogue, and logic
-=======
   - Contextual memory, parallel cores, emotional logic, sandbox AI
 - **LocalVoiceAI:** Full ElevenLabs replacement with advanced cloning and emotion modulation. Includes offline voice cloning and synthesis APIs.
 - **LocalElevenLabsClient:** Mirrors the ElevenLabs API surface to run entirely offline by delegating to `LocalVoiceAI`.
@@ -311,8 +310,6 @@ See `docs/ModuleMigrationGuide.md` for adopting shared Phase 8 modules across ap
 All apps now include a `VideoShareManager` for posting generated videos directly to social media.
 
 An accompanying `VideoEffectsPipeline` adds fade transitions, watermarking, and frame interpolation so every generated clip looks professional across apps.
-=======
-The new `SocialMediaManager` module lets apps connect user accounts and post text updates or other content programmatically.
 An accompanying `VideoEffectsPipeline` adds fade transitions, fade-in/out effects, and watermarking so every generated clip looks professional across apps.
 
 The new `AudioEffectsPipeline` provides echo and pitch-shift utilities so exported audio sounds consistent across apps.

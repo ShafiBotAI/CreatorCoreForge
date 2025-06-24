@@ -14,7 +14,6 @@ def flashbacksceneengine(
     for idx, scene in enumerate(scenes):
         result.append((scene, idx in indices))
     return result
-=======
 # Auto-generated for FlashbackSceneEngine
 """Apply a flashback-style audio effect."""
 

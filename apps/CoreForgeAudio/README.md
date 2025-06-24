@@ -8,7 +8,6 @@ vault system. It is written in SwiftUI and will expand to additional platforms.
  - **Voice variant creation** with `VoiceDNAForker`
 
 - **Dark mode** and theme toggles
-=======
  - **Dark mode** and theme toggles via `ThemeManager`
 
 - **Offline audio storage** with stealth vault option

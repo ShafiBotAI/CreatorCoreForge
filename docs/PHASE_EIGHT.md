@@ -174,7 +174,6 @@ Only a subset of those features are shown below for brevity.
 - [ ] Quantum reality switcher
 
 - [ ] Hero spotlight background (wide format)
-=======
 - [ ] TimelineEditor
 - [ ] ColorGradingEngine
 - [ ] BranchingPathsUI
