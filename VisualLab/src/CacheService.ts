@@ -1,26 +1,39 @@
 export interface CachedVideoClip { frames: any[]; }
 
-export class CacheService {
-  private cache = new Map<string, CachedVideoClip>();
+/**
+ * Generic LRU cache for video clips with optional time-to-live.
+ */
+export class CacheService<T extends CachedVideoClip = CachedVideoClip> {
+  private cache = new Map<string, { clip: T; ts: number }>();
 
-  constructor(private maxEntries = 50) {}
+  constructor(private maxEntries = 50, private ttlMs = 5 * 60_000) {}
 
-  async cacheClip(id: string, clip: CachedVideoClip): Promise<void> {
-    if (this.cache.has(id)) {
-      this.cache.delete(id);
-    } else if (this.cache.size >= this.maxEntries) {
-      const oldest = this.cache.keys().next().value;
-      if (oldest) this.cache.delete(oldest);
-    }
-    this.cache.set(id, clip);
+  async cacheClip(id: string, clip: T): Promise<void> {
+    const now = Date.now();
+    this.cache.delete(id);
+    this.cache.set(id, { clip, ts: now });
+    this.evict(now);
   }
 
-  async loadClip(id: string): Promise<CachedVideoClip | undefined> {
-    const clip = this.cache.get(id);
-    if (clip) {
-      this.cache.delete(id);
-      this.cache.set(id, clip);
+  private evict(now: number) {
+    while (this.cache.size > this.maxEntries) {
+      const oldest = this.cache.keys().next().value;
+      this.cache.delete(oldest);
     }
-    return clip;
+    for (const [key, value] of this.cache) {
+      if (now - value.ts > this.ttlMs) this.cache.delete(key);
+    }
+  }
+
+  async loadClip(id: string): Promise<T | undefined> {
+    const entry = this.cache.get(id);
+    if (!entry) return undefined;
+    if (Date.now() - entry.ts > this.ttlMs) {
+      this.cache.delete(id);
+      return undefined;
+    }
+    this.cache.delete(id);
+    this.cache.set(id, { ...entry, ts: Date.now() });
+    return entry.clip;
   }
 }

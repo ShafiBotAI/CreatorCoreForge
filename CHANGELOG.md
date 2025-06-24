@@ -17,3 +17,4 @@
 - Added cross-app `AudioEffectsPipeline` with echo and pitch-shift utilities. Updated `features-phase8.json` and documentation.
 - Added `AmbientFXEngine` and `FXLibrary` modules to manage immersive ambient playback for CoreForge Audio Phase 3.
 - Optimized `LensFlareService` and `CacheService` for improved video rendering performance.
+- Further optimized lens flare detection loops and added TTL-based eviction to `CacheService`.
