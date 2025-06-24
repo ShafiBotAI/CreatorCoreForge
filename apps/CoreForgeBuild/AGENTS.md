@@ -156,52 +156,52 @@ Key points from `README.md`:
 - [ ] Export plugins as distributable packages for reuse in other CoreForge apps
 
 ### Phase 5 – Real-Time Testing, Debugging, and Live Preview Tools
-- [ ] Support live preview rendering for mobile, web, and desktop views
-- [ ] Simulate multiple device types (iPhone, Android, tablet, browser, macOS)
-- [ ] Enable step-through debugging with inline variable inspector
-- [ ] Generate test cases from prompt-based app descriptions
-- [ ] Auto-detect runtime errors and flag in visual interface
-- [ ] Allow users to inject mock data for testing API endpoints
-- [ ] Display real-time logs and state snapshots per component
-- [ ] Support hot reload for frontend changes during editing
-- [ ] Visualize form submissions and navigation flows in preview window
-- [ ] Enable breakpoint placement in UI logic and generated code
-- [ ] Suggest edge case inputs for stress-testing forms and logic
-- [ ] Provide built-in accessibility testing and WCAG compliance checker
-- [ ] Generate Jest/Mocha/Cypress test files from user flows
-- [ ] Offer per-module test toggle and coverage report
-- [ ] Display performance metrics: FPS, memory usage, UI response time
-- [ ] Support visual regression snapshots and baseline comparison
-- [ ] Integrate emulator support for native iOS/Android testing
-- [ ] Store failed test snapshots for debugging review
-- [ ] Enable dark mode/contrast testing toggle
-- [ ] Allow user-defined test scenarios and replay simulation
-- [ ] Generate deployment readiness score based on test metrics
-- [ ] Push test results to version control metadata or CI system
+- [x] Support live preview rendering for mobile, web, and desktop views
+- [x] Simulate multiple device types (iPhone, Android, tablet, browser, macOS)
+- [x] Enable step-through debugging with inline variable inspector
+- [x] Generate test cases from prompt-based app descriptions
+- [x] Auto-detect runtime errors and flag in visual interface
+- [x] Allow users to inject mock data for testing API endpoints
+- [x] Display real-time logs and state snapshots per component
+- [x] Support hot reload for frontend changes during editing
+- [x] Visualize form submissions and navigation flows in preview window
+- [x] Enable breakpoint placement in UI logic and generated code
+- [x] Suggest edge case inputs for stress-testing forms and logic
+- [x] Provide built-in accessibility testing and WCAG compliance checker
+- [x] Generate Jest/Mocha/Cypress test files from user flows
+- [x] Offer per-module test toggle and coverage report
+- [x] Display performance metrics: FPS, memory usage, UI response time
+- [x] Support visual regression snapshots and baseline comparison
+- [x] Integrate emulator support for native iOS/Android testing
+- [x] Store failed test snapshots for debugging review
+- [x] Enable dark mode/contrast testing toggle
+- [x] Allow user-defined test scenarios and replay simulation
+- [x] Generate deployment readiness score based on test metrics
+- [x] Push test results to version control metadata or CI system
 
 ### Phase 6 – Multi-Platform Build Engine & Deployment Automations
-- [ ] Generate builds for iOS (.ipa), Android (.apk, .aab), macOS (.dmg), Windows (.exe), and Web (PWA/SPA)
-- [ ] Offer export presets: mobile-optimized, desktop-optimized, hybrid
-- [ ] Enable 1-click deployment to App Store Connect, Google Play, and GitHub Pages
-- [ ] Provide auto-generated app icons, splash screens, and store screenshots
-- [ ] Include permission and privacy prompt templates (e.g., location, camera, mic)
-- [ ] Embed metadata and manifest files per platform
-- [ ] Validate build environment and dependencies per target OS
-- [ ] Support universal deployment config editor
-- [ ] Integrate CI/CD pipeline hooks (GitHub Actions, Vercel, Firebase)
-- [ ] Optimize media and assets during packaging (compression, lazy loading)
-- [ ] Auto-generate README.md and INSTALL.md for every build
-- [ ] Track build success/failure and notify via dashboard/email
-- [ ] Store deploy keys securely and link to creator account
-- [ ] Build offline-first web apps with service worker generation
-- [ ] Enable QR code preview link for live testing on mobile
-- [ ] Allow export of white-label templates and custom bundle IDs
-- [ ] Track per-platform performance (crash logs, load times) post-deployment
-- [ ] Offer hotfix push without full redeployment (for web/native hybrid)
-- [ ] Validate App Store compliance (screenshots, privacy labels, age ratings)
-- [ ] Log all deploy events to audit history and changelog
-- [ ] Integrate storefront meta for title, tags, NSFW flags, and description templates
-- [ ] Automate rollout strategies (beta testers, staged release, region filters)
+- [x] Generate builds for iOS (.ipa), Android (.apk, .aab), macOS (.dmg), Windows (.exe), and Web (PWA/SPA)
+- [x] Offer export presets: mobile-optimized, desktop-optimized, hybrid
+- [x] Enable 1-click deployment to App Store Connect, Google Play, and GitHub Pages
+- [x] Provide auto-generated app icons, splash screens, and store screenshots
+- [x] Include permission and privacy prompt templates (e.g., location, camera, mic)
+- [x] Embed metadata and manifest files per platform
+- [x] Validate build environment and dependencies per target OS
+- [x] Support universal deployment config editor
+- [x] Integrate CI/CD pipeline hooks (GitHub Actions, Vercel, Firebase)
+- [x] Optimize media and assets during packaging (compression, lazy loading)
+- [x] Auto-generate README.md and INSTALL.md for every build
+- [x] Track build success/failure and notify via dashboard/email
+- [x] Store deploy keys securely and link to creator account
+- [x] Build offline-first web apps with service worker generation
+- [x] Enable QR code preview link for live testing on mobile
+- [x] Allow export of white-label templates and custom bundle IDs
+- [x] Track per-platform performance (crash logs, load times) post-deployment
+- [x] Offer hotfix push without full redeployment (for web/native hybrid)
+- [x] Validate App Store compliance (screenshots, privacy labels, age ratings)
+- [x] Log all deploy events to audit history and changelog
+- [x] Integrate storefront meta for title, tags, NSFW flags, and description templates
+- [x] Automate rollout strategies (beta testers, staged release, region filters)
 
 ### Phase 7 – Team Collaboration, Versioning, and Role-Based Access Control
 - [ ] Enable team project sharing with edit/view/comment roles
