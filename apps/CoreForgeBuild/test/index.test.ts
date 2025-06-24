@@ -57,6 +57,7 @@ import { ParseHistory } from '../services/ParseHistory';
   bus.emitParsed(parsed);
   assert(bridge.getCode().includes('<h1>'));
 
+
   const diff = new DiffService();
 
   const diffOutput = diff.diff('a', 'b');
