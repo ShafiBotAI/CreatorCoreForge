@@ -285,10 +285,10 @@ Key points from `README.md`:
 - [x] Compare generated apps against platform guidelines for warnings
 - [x] Provide "Ready for App Store" and "Ready for Play Store" indicators
 - [x] Enable security badge printing for white-label partners
-- [ ] Offer final export in ISO-standardized app bundle format (for enterprise)
-- [ ] Store compliance reports with downloadable JSON + PDF exports
-- [ ] Run AI-based smoke tests on all exported builds
-- [ ] Cross-check final render metadata with initial prompt structure
-- [ ] Alert if export lacks privacy policy, TOS, or user consent prompts
-- [ ] Recommend CDN or image optimization rules for live performance
-- [ ] Output a final "pass/fail" matrix for all deployment targets
+- [x] Offer final export in ISO-standardized app bundle format (for enterprise)
+- [x] Store compliance reports with downloadable JSON + PDF exports
+- [x] Run AI-based smoke tests on all exported builds
+- [x] Cross-check final render metadata with initial prompt structure
+- [x] Alert if export lacks privacy policy, TOS, or user consent prompts
+- [x] Recommend CDN or image optimization rules for live performance
+- [x] Output a final "pass/fail" matrix for all deployment targets
