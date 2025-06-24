@@ -13,6 +13,7 @@ public final class BuildPreviewEngine {
     private var breakpoints: Set<String> = []
     private var testResults: [String: Bool] = [:]
     private(set) var device: SimulatedDevice = .web
+    private var developerConsoleEnabled = false
 
     private init() {}
 
@@ -34,6 +35,17 @@ public final class BuildPreviewEngine {
         logEvent("Device selected: \(device.rawValue)")
     }
 
+    /// Enable or disable the inline developer console output.
+    public func setDeveloperConsole(enabled: Bool) {
+        developerConsoleEnabled = enabled
+        logEvent("Developer console \(enabled ? "enabled" : "disabled")")
+    }
+
+    /// Current developer console state.
+    public func isDeveloperConsoleEnabled() -> Bool {
+        developerConsoleEnabled
+    }
+
     /// Render a single frame and return a debug string.
     public func renderFrame() -> String {
         let frame = "Rendered frame on \(device.rawValue)"
@@ -44,6 +56,9 @@ public final class BuildPreviewEngine {
     /// Record a log entry that can be displayed in real time.
     public func logEvent(_ message: String) {
         logs.append(message)
+        if developerConsoleEnabled {
+            print("[DevConsole] \(message)")
+        }
     }
 
     /// Current log history.
