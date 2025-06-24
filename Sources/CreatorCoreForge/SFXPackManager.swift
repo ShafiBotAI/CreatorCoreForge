@@ -24,12 +24,16 @@ public final class SFXPackManager {
 
     /// Register built-in packs for immediate use.
     private func registerBuiltInPacks() {
+        let interface = SFXPack(name: "Interface", files: ["ui_click", "swipe", "error_beep"])
+        let combat = SFXPack(name: "Combat", files: ["sword_swing", "sword_clash", "explosion_big"])
+        let nature = SFXPack(name: "Nature", files: ["forest_day", "water_stream", "fire_crackle"])
+        let sciFi = SFXPack(name: "Sci-Fi", files: ["sci_whoosh", "laser_blast", "spaceship_idle"])
         let softMoans = SFXPack(name: "Soft Moans", files: ["moan_soft1", "moan_soft2"], isNSFW: true)
         let heavyBreathing = SFXPack(name: "Heavy Breathing", files: ["breath1", "breath2"], isNSFW: true)
         let asmrTingles = SFXPack(name: "ASMR Tingles", files: ["asmr_tingle1", "asmr_tingle2"], isNSFW: false)
-        packs[softMoans.name] = softMoans
-        packs[heavyBreathing.name] = heavyBreathing
-        packs[asmrTingles.name] = asmrTingles
+        [interface, combat, nature, sciFi, softMoans, heavyBreathing, asmrTingles].forEach {
+            packs[$0.name] = $0
+        }
     }
 
     /// Register a custom pack.

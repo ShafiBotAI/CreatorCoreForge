@@ -32,6 +32,8 @@ public final class PlaybackManager {
     private var currentIndex = 0
     private var bookmarkIndex: Int?
     private var isPlaying = false
+    /// Playback speed multiplier. Range: 0.5x - 10x. Defaults to 1x.
+    private var playbackSpeed: Double = 1.0
 
     public init() {}
 
@@ -52,9 +54,9 @@ public final class PlaybackManager {
         isPlaying = true
         let chapter = chapters[currentIndex]
         if let url = chapter.audioURL {
-            print("▶️ Playing Chapter \(currentIndex + 1): \(chapter.title) at \(url)")
+            print("▶️ Playing Chapter \(currentIndex + 1) at speed \(playbackSpeed)x: \(chapter.title) at \(url)")
         } else {
-            print("▶️ Playing Chapter \(currentIndex + 1): \(chapter.title)")
+            print("▶️ Playing Chapter \(currentIndex + 1) at speed \(playbackSpeed)x: \(chapter.title)")
         }
         return true
     }
@@ -109,6 +111,12 @@ public final class PlaybackManager {
         currentIndex = idx
         bookmarkIndex = nil
         return playCurrentChapter()
+    }
+
+    /// Sets the playback speed, clamping between 0.5x and 10x.
+    public func setPlaybackSpeed(_ speed: Double) {
+        playbackSpeed = min(max(speed, 0.5), 10.0)
+        print("⏩ Playback speed set to \(playbackSpeed)x")
     }
 }
 

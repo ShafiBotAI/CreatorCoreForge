@@ -140,8 +140,12 @@ final class PracticalPlanFeatureTests: XCTestCase {
 
     func testMindFeatures() {
         let journal = MoodJournal()
-        journal.addEntry("hi")
-        XCTAssertEqual(journal.count, 1)
+        journal.addEntry("I am sad")
+        journal.addEntry("This is amazing!")
+        let breakdown = journal.moodBreakdown()
+        XCTAssertEqual(journal.count, 2)
+        XCTAssertEqual(breakdown["somber"], 1)
+        XCTAssertEqual(breakdown["excited"], 1)
         XCTAssertEqual(GuidedSessions().play(session: "med"), "Playing med")
         let vault = PrivateVault()
         vault.save(key: "k", value: "v")
@@ -164,6 +168,14 @@ final class PracticalPlanFeatureTests: XCTestCase {
         var sync = OfflineSync()
         sync.add("x")
         XCTAssertEqual(sync.count, 1)
+
+        var quiz = QuizBuilder()
+        quiz.add(prompt: "1+1?", answer: "2")
+        XCTAssertEqual(quiz.grade(responses: ["2"]), 1)
+
+        var market = CourseMarketplace()
+        market.publish(course: "Swift")
+        XCTAssertEqual(market.list(), ["Swift"])
     }
 
     func testQuestFeatures() {
@@ -187,5 +199,25 @@ final class PracticalPlanFeatureTests: XCTestCase {
         team.addTrade("buy")
         XCTAssertEqual(team.trades.count, 1)
         XCTAssertTrue(BotMarketplace().publish(bot: "bot"))
+    }
+
+    func testWriterFeatures() {
+        var tracker = SeriesMemoryTracker()
+        tracker.record(book: "Book1", events: ["A"])
+        XCTAssertEqual(tracker.allEvents(), ["A"])
+        let handler = PromoCodeHandler()
+        XCTAssertEqual(handler.apply(code: "FREE100", to: 10), 0)
+        let tuner = WritingMoodTuner()
+        XCTAssertEqual(tuner.tune(text: "Hello", mood: "Happy"), "Happy: Hello")
+    }
+
+    func testStudioFeatures() {
+        let director = SmartCameraDirector()
+        XCTAssertEqual(director.suggestAngles(for: "scene").count, 3)
+        let alt = WhatIfCutsceneMode().alternateScenes(scene: "Scene1")
+        XCTAssertEqual(alt.last, "What if Scene1?")
+        let pipeline = AutoPublishPipeline()
+        let url = URL(fileURLWithPath: "video.mp4")
+        XCTAssertTrue(pipeline.publish(video: url).contains("video.mp4"))
     }
 }

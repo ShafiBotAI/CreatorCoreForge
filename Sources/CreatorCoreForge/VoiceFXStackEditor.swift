@@ -71,6 +71,23 @@ public final class VoiceFXStackEditor: ObservableObject {
     public func clearStack() {
         fxStack.removeAll()
     }
+
+    /// Apply a standard flashback effect using reverb and echo.
+    public func applyFlashbackPreset() {
+        updateStack([.reverb, .echo])
+    }
+
+    /// Adjust the current stack based on a stress level from 0.0 to 1.0.
+    public func applyStressPreset(level: Float) {
+        var effects: [VoiceEffect] = []
+        if level > 0.7 {
+            effects.append(.distortion)
+        }
+        if level > 0.4 {
+            effects.append(.pitchUp)
+        }
+        updateStack(effects)
+    }
 }
 
 #else
@@ -134,6 +151,21 @@ public final class VoiceFXStackEditor {
 
     public func clearStack() {
         fxStack.removeAll()
+    }
+
+    public func applyFlashbackPreset() {
+        updateStack([.reverb, .echo])
+    }
+
+    public func applyStressPreset(level: Float) {
+        var effects: [VoiceEffect] = []
+        if level > 0.7 {
+            effects.append(.distortion)
+        }
+        if level > 0.4 {
+            effects.append(.pitchUp)
+        }
+        updateStack(effects)
     }
 }
 

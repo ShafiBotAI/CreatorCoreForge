@@ -95,14 +95,44 @@ public final class FusionEngine {
         }
     }
 
+    /// Async version of ``sendPrompt(_:)``.
+    @available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
+    public func sendPrompt(_ prompt: String) async throws -> String {
+        try await withCheckedThrowingContinuation { cont in
+            sendPrompt(prompt) { result in
+                cont.resume(with: result)
+            }
+        }
+    }
+
     /// Retrieves an embedding vector using the underlying engine.
     public func sendEmbedding(_ text: String, completion: @escaping (Result<[Double], Error>) -> Void) {
         engine.sendEmbeddingRequest(text: text, completion: completion)
     }
 
+    /// Async version of ``sendEmbedding(_:)``.
+    @available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
+    public func sendEmbedding(_ text: String) async throws -> [Double] {
+        try await withCheckedThrowingContinuation { cont in
+            sendEmbedding(text) { result in
+                cont.resume(with: result)
+            }
+        }
+    }
+
     /// Generate a short summary using the active engine.
     public func summarize(_ text: String, completion: @escaping (Result<String, Error>) -> Void) {
         engine.summarize(text, completion: completion)
+    }
+
+    /// Async version of ``summarize(_:)``.
+    @available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
+    public func summarize(_ text: String) async throws -> String {
+        try await withCheckedThrowingContinuation { cont in
+            summarize(text) { result in
+                cont.resume(with: result)
+            }
+        }
     }
 
     /// Combines memory context and optional sandbox prefix before sending.
@@ -124,6 +154,16 @@ public final class FusionEngine {
                 completion(.success(output))
             case .failure:
                 completion(result)
+            }
+        }
+    }
+
+    /// Async version of ``sendPromptWithMemory(_:)``.
+    @available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
+    public func sendPromptWithMemory(_ prompt: String) async throws -> String {
+        try await withCheckedThrowingContinuation { cont in
+            sendPromptWithMemory(prompt) { result in
+                cont.resume(with: result)
             }
         }
     }
@@ -155,6 +195,16 @@ public final class FusionEngine {
         }
         group.notify(queue: .main) {
             completion(results)
+        }
+    }
+
+    /// Async version of ``sendPromptParallel(_:)``.
+    @available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
+    public func sendPromptParallel(_ prompt: String) async -> [String] {
+        await withCheckedContinuation { cont in
+            sendPromptParallel(prompt) { results in
+                cont.resume(returning: results)
+            }
         }
     }
 

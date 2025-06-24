@@ -1,0 +1,4 @@
+# Auto-generated for Quantum edit mode
+def quantum_edit_mode():
+    """Quantum edit mode"""
+    pass

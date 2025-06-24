@@ -12,7 +12,7 @@
 ---
 
 ## 🔧 Technology Stack
-- LocalAIEngine Pro – local text engine with embeddings and summarization
+- LocalAIEngine Pro – local text engine with embeddings, summarization, and simple sentiment analysis
 - LocalVoiceAI Advanced Mode – offline voice cloning with emotion control
 - FusionEngine™ (modular adaptive AI framework)
 - QuantumConnector™ (real/simulated quantum support)
@@ -40,6 +40,8 @@
   - AnalyticsLogger for basic event tracking
   - PerformanceModeSelector to switch rendering presets
   - FusionVoiceController orchestrates LocalVoiceAI and emotion cues
+  - MultiCastAudiobookGenerator enables ensemble narration
+  - DramatizedAudiobookProducer creates immersive dramatized audiobooks
   - Extra helpers in `Sources/CreatorCoreForge/CoreForgeAudio_MissingFeatures.swift`
     provide offline download and eBook conversion utilities for the app.
 - **Build Status:** Electron PC build in testing
@@ -172,13 +174,16 @@
 - **FusionEngine™:** Master AI layer handling:
   - Contextual memory, parallel cores, emotional logic, sandbox AI
 - **LocalVoiceAI:** Full ElevenLabs replacement with advanced cloning and emotion modulation. Includes offline voice cloning and synthesis APIs.
-- **LocalAIEngine Pro:** OpenAI-free LLM for text, dialogue, logic, and local summarization.
+- **LocalElevenLabsClient:** Mirrors the ElevenLabs API surface to run entirely offline by delegating to `LocalVoiceAI`.
+ - **LocalAIEngine Pro:** OpenAI-free LLM for text, dialogue, logic, local summarization, and basic sentiment analysis.
 - **QuantumConnector:** Optional quantum computing toggle
 - **Virality Engine:** Trend detector, loop optimizer, replay bait, shock factor enhancer
   - Now implemented as a shared module so every app can analyze trending content
     even when offline. `QuantumConnector` performs simple data transformations
     when quantum mode is enabled.
 - **Auto-Updater:** Keeps local builds current and secure
+- **NetworkInfoProvider:** Retrieves real-time data from remote JSON endpoints
+  with a simple API.
 - **AIStateTracker:** Learns from prompt history locally for adaptive responses
 - **Creator Dashboard:** Toggle Voice Memory, Emotion Graphs, Plugin Builder, AI Studio, Genesis, Global Unlock, and Sandbox tools across apps
 - **EmotionGraph:** Cross-app tracker for character emotion intensity
@@ -196,10 +201,13 @@
 - **VoiceDNAVisualizer:** Graphs voice relationships and generates Vector Voice DNA Maps.
 - **VoiceDNAForker:** Creates pitch and speed-based voice variations from a base profile.
 - **VoiceDNAForge:** Stores voice DNA profiles including pitch, cadence, style tags, emotion ranges, and linked characters.
-- **UnifiedAudioEngine:** Global volume and mute control for all apps
+- **UnifiedAudioEngine:** Global volume and mute control with fade transitions for all apps
+- **UnifiedVideoEngine:** Cross-platform video rendering wrapper
+- **AdaptiveLearningEngine:** Tracks lesson progress for personalized learning
 - **PluginBuilder:** Generates basic plugin templates for new dashboard modules
 - **AIStudioMode:** Adds a studio prefix to prompts when testing features
 - **GenesisModeEngine:** Produces variant ideas for apps and content
+- **SelfRepairEngine:** Scans all app folders and fixes simple `fatalError` placeholders via `BuildImprovementEngine`.
 
 ---
 
@@ -285,10 +293,16 @@ For production releases, trigger `upload-appstore.yml` which calls the
 `build_and_deliver` lane to submit the apps directly to App Store Connect.
 
 See `docs/AI-Prompt-Migration.md` for integrating the new OpenAI prompt interface across apps.
+See `docs/LocalOpenAIReplacement.md` for a primer on using the LocalAI engines to mimic OpenAI features without an internet connection.
 See `docs/VoiceTrainerGuide.md` for using the local voice training engine.
 See `docs/ModuleMigrationGuide.md` for adopting shared Phase 8 modules across apps.
 All apps now include a `VideoShareManager` for posting generated videos directly to social media.
-An accompanying `VideoEffectsPipeline` adds fade transitions and watermarking so every generated clip looks professional across apps.
+
+An accompanying `VideoEffectsPipeline` adds fade transitions, watermarking, and frame interpolation so every generated clip looks professional across apps.
+=======
+The new `SocialMediaManager` module lets apps connect user accounts and post text updates or other content programmatically.
+An accompanying `VideoEffectsPipeline` adds fade transitions, fade-in/out effects, and watermarking so every generated clip looks professional across apps.
+
 The new `AudioEffectsPipeline` provides echo and pitch-shift utilities so exported audio sounds consistent across apps.
 The new `FusionEngine` wrapper automatically selects between `LocalAIEnginePro` and `OpenAIService` for each app, enabling offline-first development when `USE_LOCAL_AI` is set. It now supports contextual memory, parallel execution across multiple engines, emotion tracking, sandbox mode for isolated testing, cross-app voice memory, on-device summarization, and quick scene generation helpers.
 
@@ -300,6 +314,15 @@ A shared `ContentPolicyManager` now manages NSFW filtering across apps.
 The new `NSFWManager` tags sensitive voice clips and enables stealth exports when unlocked.
 The `NSFWHabitBehaviorSimulator` lets characters respond with custom audio cues when certain keywords are spoken.
 For offline development you can set `USE_LOCAL_AI=1` in the environment to enable `LocalAIEnginePro`, a lightweight local model stub that replaces OpenAI calls.
+When this flag is active, both audio and video generation rely entirely on the
+local engines (`LocalVoiceAI` and the video routines in `CreatorCoreForge`), so
+clips and narration can be produced without any network connection.
+
+## App Store Compliance
+
+For iOS builds, features that provide explicit NSFW content or haptic device integration are disabled. Age gating and parental controls remain enabled so the apps meet Apple's App Store Review Guidelines.
+Data usage complies with privacy requirements, and only finalized, non-spammy features are shipped.
+See [docs/AppStore_Compliance.md](docs/AppStore_Compliance.md) for more information.
 
 ## Global Missing Items
 
@@ -320,12 +343,37 @@ screen files used for store submission.
 
 Cross-platform builds can be generated using `electron-builder`. Run
 `./scripts/build_desktop.sh` on macOS or Windows to produce `.dmg` and
-`.exe` installers for apps that include a `Desktop` project. See
-`docs/CrossPlatformBuild.md` for details.
+`.exe` installers for apps that include a `Desktop` project. macOS and Linux
+hosts must have `wine` and `mono` installed to generate the Windows builds.
+See
+`docs/CrossPlatformBuild.md` for details. For a full multi-platform build (iOS,
+Android, Web, Chrome, and Edge) execute `./scripts/universal_build.sh` which
+calls the appropriate tools when present.
 
 Each app includes a `Desktop` folder with a starter Electron configuration for
 building installers.
 
+## Ebook2Audiobook Integration
+A snapshot of the open source `ebook2audiobook` project is included under `apps/ebook2audiobook`. Use the helper script `scripts/ebook2audiobook_bridge.py` to convert eBooks to narrated audio from any CoreForge app:
+
+```bash
+./scripts/ebook2audiobook_bridge.py MyBook.epub -o output_audio
+```
+
+This invokes the Python pipeline to generate WAV files in the given directory.
+## AI Video Generator Integration
+A trimmed snapshot of the open source `ai-video-generator` project is included under `apps/AI_VideoGenerator`. Run `python server.py` in that folder to start the FastAPI backend for generating text-to-video clips.
+
+
+## Chatterbox Script Conversion
+Use `scripts/chatterbox_bridge.py` to generate a narrated play from a simple `SPEAKER: line` script. Place `speaker.mp3` samples next to your script and set `CHATTERBOX_API_URL` before running:
+```bash
+./scripts/chatterbox_bridge.py script.txt
+```
+
+Run `scripts/progress_bot.py` to view app progress and generate snippet files for missing features.
+Run `scripts/generate_app_completion_report.py` to update `app_completion_report.json` and `docs/App_Completion_Summary.md`.
+See `docs/progress_bot.md` for usage details.
 ## Running Tests
 
 Install Node dependencies for the labs before running the test suites:
@@ -341,4 +389,15 @@ This ensures `jest`, `ts-node`, and other dev tools are available.
 
 ## CI/CD
 The repository uses GitHub Actions workflows for building, testing, and releasing the apps across platforms. See the files in [.github/workflows](./.github/workflows) for details.
+
+
+
+
+
+## Fetching n8n Workflow Engine
+
+Use `./scripts/fetch_n8n.sh` to clone or update the [n8n](https://github.com/n8n-io/n8n) automation engine under `external/n8n`. Review the license printed at the end of the script before integrating it into your projects.
+
+
+After fetching the repository, you can leverage VoiceLab's `runN8nAssistant` helper to experiment with n8n-inspired AI workflows locally.
 
