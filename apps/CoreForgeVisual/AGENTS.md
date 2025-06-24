@@ -382,28 +382,28 @@ Key points from `README.md`:
 - [x] Hide NSFW rendering options in shared/public projects
 - [x] Tag NSFW export files with proper disclaimers and auto-locks
 - [x] Provide customizable NSFW cover and thumbnail censor options
-- [ ] Track NSFW render usage and tie to creator subscription tier
-- [ ] Integrate NSFW content filter toggle for viewers and collaborators
+- [x] Track NSFW render usage and tie to creator subscription tier
+- [x] Integrate NSFW content filter toggle for viewers and collaborators
 
 ### Phase 8 – Multilingual Support, Cultural Adaptation & Cross-Book Scene Logic
-- [ ] Translate full scripts while preserving pacing, emotion, and visual tags
-- [ ] Detect primary and secondary languages from book text or user input
-- [ ] Sync translated dialogue with lip-sync adjustments per language
-- [ ] Swap visual context (e.g., setting, symbols) to match cultural norms
-- [ ] Match voiceover tone with cultural delivery style (e.g., reserved vs expressive)
-- [ ] Enable dual-language subtitle overlay with toggles
-- [ ] Provide audio language toggle mid-playback (bilingual view mode)
-- [ ] Auto-swap text signage or props in scene to match target language
-- [ ] Save cultural localization settings for franchise or series consistency
-- [ ] Detect idioms and replace with native-equivalent visual cues
-- [ ] Allow creator review of language-adapted visuals before rendering
-- [ ] Flag content sensitive to region/culture for modification options
-- [ ] Support accent-based visual/voice region overlays (UK vs US)
-- [ ] Offer export options for localized versions per country
-- [ ] Recommend artistic adjustments based on visual symbolism norms
-- [ ] Translate creator notes and project metadata for global collaboration
-- [ ] Provide multilingual visual cue glossary with usage examples
-- [ ] Preserve scene framing consistency across languages
+- [x] Translate full scripts while preserving pacing, emotion, and visual tags
+- [x] Detect primary and secondary languages from book text or user input
+- [x] Sync translated dialogue with lip-sync adjustments per language
+- [x] Swap visual context (e.g., setting, symbols) to match cultural norms
+- [x] Match voiceover tone with cultural delivery style (e.g., reserved vs expressive)
+- [x] Enable dual-language subtitle overlay with toggles
+- [x] Provide audio language toggle mid-playback (bilingual view mode)
+- [x] Auto-swap text signage or props in scene to match target language
+- [x] Save cultural localization settings for franchise or series consistency
+- [x] Detect idioms and replace with native-equivalent visual cues
+- [x] Allow creator review of language-adapted visuals before rendering
+- [x] Flag content sensitive to region/culture for modification options
+- [x] Support accent-based visual/voice region overlays (UK vs US)
+- [x] Offer export options for localized versions per country
+- [x] Recommend artistic adjustments based on visual symbolism norms
+- [x] Translate creator notes and project metadata for global collaboration
+- [x] Provide multilingual visual cue glossary with usage examples
+- [x] Preserve scene framing consistency across languages
 - [ ] Embed language metadata in export files for platform distribution
 - [ ] Enable automatic rendering of multiple language versions at once
 - [ ] Support multi-book narrative sync for localized arcs
