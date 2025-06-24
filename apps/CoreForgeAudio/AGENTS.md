@@ -280,8 +280,8 @@ This file is a full checklist of every feature required for code completion and 
 - [x] DualNarratorToggle
 - [x] VoiceDNAForking
 - [x] FlashbackSceneEngine
-- [ ] ContinuityChecker
-- [ ] CrossoverEngine
+- [x] ContinuityChecker
+- [x] CrossoverEngine
 ## NSFW Features & Expansion (If Enabled)
 
 ### NSFW Core
@@ -419,21 +419,21 @@ Key points from `README.md`:
 - [x] Track voice usage, tone, and traits across multiple books
 - [x] Implement character aging logic to evolve voice over time
 - [x] Save memory tokens (milestones, trauma, growth) per character
-- [ ] Adjust emotional tone delivery based on past scenes (e.g., grief affects voice)
+ - [x] Adjust emotional tone delivery based on past scenes (e.g., grief affects voice)
 - [x] Support flashback-specific tone adjustments (reverberation, echo)
 - [x] Tag emotional arcs and tie them to narrator modulation rules
 - [x] Maintain a character timeline of voice intensity and expressiveness
 - [x] Apply stress-level voice distortion during arguments or danger
 - [x] Create character dossier panel for memory review/editing
 - [x] Support "memory lock" to preserve voice consistency despite new scripts
-- [ ] Recommend tone variation based on context and prior memory state
-- [ ] Integrate cross-book story arc tracking (hero's journey, redemption, fall)
+ - [x] Recommend tone variation based on context and prior memory state
+ - [x] Integrate cross-book story arc tracking (hero's journey, redemption, fall)
 - [x] Detect character reappearances and retrieve voice memory automatically
-- [ ] Allow adaptive tone matching when character enters new genres/settings
-- [ ] Model relationships: voice modulation changes depending on who is speaking to whom
+ - [x] Allow adaptive tone matching when character enters new genres/settings
+ - [x] Model relationships: voice modulation changes depending on who is speaking to whom
 - [x] Use memory weights to prioritize emotional realism over narration neutrality
 - [x] Enable timeline visualization of a character’s voice evolution
-- [ ] Cross-link tone history with voice fingerprint DNA across the series
+ - [x] Cross-link tone history with voice fingerprint DNA across the series
 - [ ] Support tone comparison mode between books for authorial analysis
 - [ ] Highlight inconsistencies in voice delivery across books for correction
 - [x] Embed character memory files as part of export metadata for continuity
