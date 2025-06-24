@@ -1,6 +1,7 @@
 # Changelog
 
 ## [Unreleased]
+- Added `SceneDetector` module for basic scene analysis.
 - Optimized `SegmentService` with chunked async processing and LRU caching.
 - Added layout instruction parsing to `MarkdownLayoutParser` and updated Build AGENTS checklist.
 - Implemented `TTSRenderer` and Vue-based `ChapterEditor`, closing related open tasks.
