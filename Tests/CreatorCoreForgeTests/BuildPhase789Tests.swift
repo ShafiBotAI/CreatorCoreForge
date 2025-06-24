@@ -28,6 +28,29 @@ final class BuildPhase789Tests: XCTestCase {
         XCTAssertEqual(manager.activeCollaborators().count, 1)
     }
 
+    func testProjectSharingRolePermissions() {
+        var manager = ProjectSharingManager()
+        manager.invite(Collaborator(userID: "admin", role: .admin))
+        manager.invite(Collaborator(userID: "viewer", role: .viewer))
+        manager.invite(Collaborator(userID: "commenter", role: .commenter))
+
+        XCTAssertTrue(manager.canEdit(userID: "admin"))
+        XCTAssertFalse(manager.canEdit(userID: "viewer"))
+        XCTAssertTrue(manager.canView(userID: "viewer"))
+        XCTAssertTrue(manager.canComment(userID: "commenter"))
+    }
+
+    func testProjectSharingPromoteAndAPIAudit() {
+        var manager = ProjectSharingManager()
+        manager.invite(Collaborator(userID: "dev", role: .developer))
+        manager.promote(userID: "dev", to: .admin)
+        manager.logAPIAccess(userID: "dev", endpoint: "/deploy")
+
+        XCTAssertEqual(manager.role(for: "dev"), .admin)
+        XCTAssertTrue(manager.history().contains { $0.action.contains("role:admin") })
+        XCTAssertTrue(manager.history().contains { $0.action.contains("api:/deploy") })
+    }
+
     func testAICoPilotRedundancy() {
         let code = "print(1)\nprint(1)"
         let copilot = AICoPilot()
