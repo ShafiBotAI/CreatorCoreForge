@@ -1,12 +1,3 @@
 {
-  "open_tasks": [
-    {
-      "task": "NSFW mode toggle (off by default)",
-      "source_file": "FEATURES-CODEX-COMPLETE.md"
-    },
-    {
-      "task": "Developer console toggle (Creator tier)",
-      "source_file": "FEATURES-CODEX-COMPLETE.md"
-    }
-  ]
+  "open_tasks": []
 }
