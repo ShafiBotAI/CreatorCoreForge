@@ -1,0 +1,9 @@
+{
+  "app_name": "CoreForge Market",
+  "version": "1.0.0",
+  "bundle_id": "com.creatorcoreforge.market",
+  "keywords": ["AI trading", "finance", "signals", "automation"],
+  "developer": "CreatorCoreForge",
+  "category": "Finance",
+  "platforms": ["iOS", "Android", "Windows", "macOS", "Web"]
+}

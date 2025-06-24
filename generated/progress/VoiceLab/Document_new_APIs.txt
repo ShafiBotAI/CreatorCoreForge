@@ -1,0 +1,4 @@
+# Auto-generated for Document new APIs
+def document_new_apis():
+    """Document new APIs"""
+    pass

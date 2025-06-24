@@ -6,7 +6,11 @@ vault system. It is written in SwiftUI and will expand to additional platforms.
 ## Key Features
  - **Voice assignment** for characters via `CharacterVoiceMapper`
  - **Voice variant creation** with `VoiceDNAForker`
+
+- **Dark mode** and theme toggles
+=======
  - **Dark mode** and theme toggles via `ThemeManager`
+
 - **Offline audio storage** with stealth vault option
 - **Offline download queue management**
 - **Sleep Read Mode** with fade-out timer
@@ -18,6 +22,8 @@ vault system. It is written in SwiftUI and will expand to additional platforms.
 
 - **Audiobook compilation** with `AudiobookCompiler` for zipped exports
 - **Scene memory simulator** for replaying chapters in different moods
+- **Multi-cast audiobook generation** via `MultiCastAudiobookGenerator`
+- **Immersive dramatized production** with `DramatizedAudiobookProducer`
 
 
 When Stealth Vault is enabled in the Settings screen, downloaded audio is
@@ -30,6 +36,9 @@ you notice missing playback or export features, ensure the package is linked in
 Xcode and reference `Sources/CreatorCoreForge/CoreForgeAudio_MissingFeatures.swift`
 for additional helper functions. These utilities provide an offline download
 queue and an eBook–to–audio converter that complement the app's own classes.
+For advanced conversions using the Python pipeline, run `../../scripts/ebook2audiobook_bridge.py MyBook.epub`.
+You can also turn a dialogue script into audio using `../../scripts/chatterbox_bridge.py script.txt` once your Chatterbox API endpoint is configured.
+
 
 ## Building (iOS)
 1. Open `VocalVerseFull/VocalVerse.xcodeproj` in Xcode.
@@ -58,3 +67,12 @@ keys can be securely stored using `SecureStore.storeApiKey` which writes the
 value to the iOS Keychain.
 An `AppStoreAssets` directory provides screenshots and
 additional artwork required by the store.
+
+## App Capabilities
+
+Highlighted capabilities from `features-phase8.json`:
+- UnifiedAudioEngine
+- UnifiedVideoEngine
+- AdaptiveLearningEngine
+- Real-time emotion adaptation
+- Voice DNA visualization

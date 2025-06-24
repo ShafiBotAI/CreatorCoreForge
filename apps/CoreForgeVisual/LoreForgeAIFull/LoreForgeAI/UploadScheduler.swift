@@ -1,4 +1,7 @@
 import Foundation
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 /// Basic scheduler for uploading videos to various platforms.
 final class UploadScheduler {

@@ -1,1 +1,3 @@
-Placeholder icons for CoreForge Build.
+# App Icons
+
+This folder contains the official production icons for CoreForgeBuild used in publishing.

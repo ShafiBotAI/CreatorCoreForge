@@ -7,6 +7,7 @@ final class AIEmotionEngineTests: XCTestCase {
         engine.clearCues()
         engine.registerCue(trigger: "sobbed", emotion: .sad, intensity: 0.9)
         XCTAssertEqual(engine.analyze(text: "He sobbed loudly."), .sad)
+        XCTAssertEqual(engine.analyze(text: "He absorbed knowledge."), .neutral)
     }
 
     #if canImport(AVFoundation)

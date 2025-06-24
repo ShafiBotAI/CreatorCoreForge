@@ -1,3 +1,3 @@
 # App Store Assets
 
-Placeholder icons and launch screens for CoreForgeMusic. Replace these files with final artwork before submitting to the App Store.
+This directory contains the icons, launch screens, and screenshots used to submit CoreForgeMusic to various app stores. Final production assets are included for store submission.

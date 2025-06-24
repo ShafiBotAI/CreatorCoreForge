@@ -55,3 +55,11 @@ the repository.
 ## Multi-App Interface
 All applications now include `OpenAIService` and `PromptTemplateLoader` for standardized prompts. See `docs/AI-Prompt-Migration.md` for migration steps.
 For local development copy `.env.example` to `.env` and supply your `OPENAI_API_KEY`. This file is ignored by git.
+
+### Electron/Desktop Apps
+Electron-based apps now import a shared `scripts/ai.js` module which exposes
+`generateText` and `synthesizeSpeech` helpers. These functions call the OpenAI
+Chat Completions API and ElevenLabs TTS API respectively using environment
+variables `OPENAI_API_KEY` and `ELEVEN_API_KEY`. Each desktop app's `main.js`
+demonstrates a basic invocation on launch. This ensures OpenAI and ElevenLabs
+services are available across all platforms.

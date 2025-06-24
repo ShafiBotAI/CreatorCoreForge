@@ -1,0 +1,25 @@
+name: VisualLab CI
+
+on:
+  push:
+    paths:
+      - 'VisualLab/**'
+      - '.github/workflows/visual-lab.yml'
+  pull_request:
+    paths:
+      - 'VisualLab/**'
+      - '.github/workflows/visual-lab.yml'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+      - name: Install and Test
+        run: |
+          cd VisualLab
+          npm ci
+          npm test

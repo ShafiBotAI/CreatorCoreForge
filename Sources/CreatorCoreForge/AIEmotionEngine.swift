@@ -29,7 +29,8 @@ public final class AIEmotionEngine: ObservableObject {
     public func analyze(text: String) -> EmotionProfile {
         let lowered = text.lowercased()
         for cue in emotionCues {
-            if lowered.contains(cue.textTrigger.lowercased()) {
+            let pattern = "\\b" + NSRegularExpression.escapedPattern(for: cue.textTrigger.lowercased()) + "\\b"
+            if let _ = lowered.range(of: pattern, options: [.regularExpression]) {
                 return cue.emotion
             }
         }

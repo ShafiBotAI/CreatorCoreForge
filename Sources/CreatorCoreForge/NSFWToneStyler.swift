@@ -6,6 +6,8 @@ public enum NSFWStyle: String, Codable, CaseIterable {
     case sensual
     case dominant
     case whisper
+    case aggressive
+    case vulnerable
 }
 
 /// Output of an NSFW tone styling request.
@@ -31,6 +33,10 @@ public func applyNSFWTone(to sentence: String, context: NSFWStyle) -> StyledVoic
         prefix = "[Dominant]"
     case .whisper:
         prefix = "[Whisper]"
+    case .aggressive:
+        prefix = "[Aggressive]"
+    case .vulnerable:
+        prefix = "[Vulnerable]"
     }
     return StyledVoiceOutput(text: "\(prefix) \(sentence)", style: context)
 }

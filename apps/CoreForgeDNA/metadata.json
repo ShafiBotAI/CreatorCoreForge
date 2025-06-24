@@ -1,0 +1,9 @@
+{
+  "app_name": "CoreForge DNA",
+  "version": "1.0.0",
+  "bundle_id": "com.creatorcoreforge.dna",
+  "keywords": ["character DNA", "multiverse", "visualization", "memory"],
+  "developer": "CreatorCoreForge",
+  "category": "Productivity",
+  "platforms": ["iOS", "Android", "Windows", "macOS", "Web"]
+}

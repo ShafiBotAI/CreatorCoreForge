@@ -15,10 +15,16 @@ public struct AudioSegment {
 public final class EbookConverter {
     private let voiceAI: LocalVoiceAI
     private let voice: VoiceProfile
+    private let sampleRate: Int
+    private let maxConcurrentSynth: Int
 
-    public init(profile: VoiceProfile = VoiceProfile(name: "Narrator")) {
+    public init(profile: VoiceProfile = VoiceProfile(name: "Narrator"),
+                sampleRate: Int = 44100,
+                maxConcurrentSynth: Int = 2) {
         self.voiceAI = LocalVoiceAI()
         self.voice = profile
+        self.sampleRate = sampleRate
+        self.maxConcurrentSynth = maxConcurrentSynth
     }
 
     /// Convert raw ebook text into audio segments.
@@ -27,14 +33,18 @@ public final class EbookConverter {
         var results: [AudioSegment] = []
         let group = DispatchGroup()
         let lock = DispatchQueue(label: "ebook.converter.lock")
+        let semaphore = DispatchSemaphore(value: maxConcurrentSynth)
 
         for (index, chapter) in chapters.enumerated() {
             group.enter()
+            semaphore.wait()
             let tempURL = FileManager.default.temporaryDirectory
                 .appendingPathComponent("chapter\(index + 1)")
                 .appendingPathExtension("wav")
 
-            voiceAI.synthesize(text: chapter, with: voice) { result in
+            voiceAI.synthesize(text: chapter,
+                               with: voice,
+                               sampleRate: sampleRate) { result in
                 if case .success(let data) = result {
                     try? data.write(to: tempURL)
                 }
@@ -42,6 +52,7 @@ public final class EbookConverter {
                     results.append(AudioSegment(chapter: chapter,
                                                 audioFileURL: tempURL.path))
                 }
+                semaphore.signal()
                 group.leave()
             }
         }
