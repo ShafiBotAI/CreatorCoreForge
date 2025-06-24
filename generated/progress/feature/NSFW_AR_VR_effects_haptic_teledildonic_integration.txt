@@ -1,5 +1,4 @@
 # Auto-generated for NSFW AR/VR effects, haptic/teledildonic integration
-def nsfw_ar_vr_effects_haptic():
+def nsfw_ar_vr():
     """NSFW AR/VR effects, haptic/teledildonic integration"""
     pass
-

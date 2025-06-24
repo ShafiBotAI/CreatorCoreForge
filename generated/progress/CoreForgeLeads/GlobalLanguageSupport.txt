@@ -2,4 +2,3 @@
 def globallanguagesupport():
     """GlobalLanguageSupport"""
     pass
-

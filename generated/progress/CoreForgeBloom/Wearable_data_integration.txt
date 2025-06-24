@@ -2,4 +2,3 @@
 def wearable_data_integration():
     """Wearable data integration"""
     pass
-

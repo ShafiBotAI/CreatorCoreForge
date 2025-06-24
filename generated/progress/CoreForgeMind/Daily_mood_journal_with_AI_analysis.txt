@@ -1,5 +1,4 @@
 # Auto-generated for Daily mood journal with AI analysis
-def daily_mood_journal_with_ai():
+def daily_mood_journal():
     """Daily mood journal with AI analysis"""
     pass
-

@@ -2,4 +2,3 @@
 def advanced_scoring():
     """Advanced scoring"""
     pass
-

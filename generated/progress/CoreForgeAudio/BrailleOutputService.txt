@@ -2,4 +2,3 @@
 def brailleoutputservice():
     """BrailleOutputService"""
     pass
-

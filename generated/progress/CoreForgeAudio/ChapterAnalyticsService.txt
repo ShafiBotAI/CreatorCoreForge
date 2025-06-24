@@ -2,4 +2,3 @@
 def chapteranalyticsservice():
     """ChapterAnalyticsService"""
     pass
-

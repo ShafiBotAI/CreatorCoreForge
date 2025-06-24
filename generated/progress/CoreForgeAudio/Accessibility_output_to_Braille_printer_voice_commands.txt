@@ -1,5 +1,4 @@
 # Auto-generated for Accessibility output to Braille printer, voice commands
-def accessibility_output_to_braille_printer():
+def accessibility_output_to():
     """Accessibility output to Braille printer, voice commands"""
     pass
-

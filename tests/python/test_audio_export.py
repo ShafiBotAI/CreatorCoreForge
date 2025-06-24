@@ -5,7 +5,7 @@ import sys
 from pathlib import Path
 
 # Ensure the generated modules are discoverable when running tests locally.
-sys.path.append(str(Path(__file__).resolve().parents[2] / "generated"))
+sys.path.append(str(Path(__file__).resolve().parents[2]))
 
 from generated.CoreForgeAudio.MultiTrackExport import multitrack_export
 from generated.CoreForgeAudio.VoiceApprovalWorkflow import VoiceSegment, approve_segment, reject_segment, summary

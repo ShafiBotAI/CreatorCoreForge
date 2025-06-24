@@ -20,7 +20,9 @@ export class PromptParser {
   parse(prompt: string): ParseResult {
     const language = this.detectLanguage(prompt);
     const normalized = this.normalize(prompt);
-    const layout = this.parseMarkdown(normalized);
+    const layout = /[#\-]/.test(normalized)
+      ? this.parseMarkdown(normalized)
+      : this.parseNaturalLanguage(normalized);
     const flows = this.parseFlows(normalized);
     return { language, layout, flows };
   }
@@ -78,6 +80,29 @@ export class PromptParser {
       }
     }
     return result;
+  }
+
+  /**
+   * Very naive natural language parser that looks for common
+   * UI keywords like "login" or "dashboard" and builds a
+   * minimal layout from the description.
+   */
+  private parseNaturalLanguage(text: string): UIElement[] {
+    const lower = text.toLowerCase();
+    const layout: UIElement[] = [];
+    if (lower.includes('login')) {
+      layout.push({ type: 'header', props: { text: 'Login' } });
+      if (lower.includes('email')) {
+        layout.push({ type: 'paragraph', props: { text: 'Email field' } });
+      }
+      if (lower.includes('password')) {
+        layout.push({ type: 'paragraph', props: { text: 'Password field' } });
+      }
+    }
+    if (layout.length === 0) {
+      layout.push({ type: 'paragraph', props: { text } });
+    }
+    return layout;
   }
 
   /**

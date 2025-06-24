@@ -2,4 +2,3 @@
 def branchingpathsui():
     """BranchingPathsUI"""
     pass
-
