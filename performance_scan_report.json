@@ -1,16 +1,3350 @@
 {
-  "VisualLab/src/lensFlareService.ts": [
+  "stub_helper.py": [
     {
-      "line": 19,
+      "line": 29,
       "optimization": "nested_loop",
-      "suggestion": "Use precomputed offsets array to avoid double iteration"
+      "suggestion": "Consider refactoring nested loops"
     }
   ],
   "VisualLab/src/CacheService.ts": [
     {
+      "line": 4,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "VisualLab/src/lensFlareService.ts": [
+    {
+      "line": 9,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/ProjectSharing.swift": [
+    {
+      "line": 102,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/CharacterMemoryEngine.swift": [
+    {
+      "line": 25,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/ContentPolicyManager.swift": [
+    {
+      "line": 12,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/LibrarySync.swift": [
+    {
+      "line": 32,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    }
+  ],
+  "Sources/CreatorCoreForge/CoreForgeAudio_PlaybackBookmarking.swift": [
+    {
+      "line": 7,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/CoreForgeBuild_MissingFeatures.swift": [
+    {
+      "line": 14,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/VoiceManager.swift": [
+    {
+      "line": 18,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/CharacterDossierEngine.swift": [
+    {
+      "line": 23,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/PronunciationEditor.swift": [
+    {
+      "line": 9,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/CharacterVoiceMapper.swift": [
+    {
+      "line": 29,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/CharacterQuirkEngine.swift": [
+    {
+      "line": 33,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/NetworkInfoProvider.swift": [
+    {
+      "line": 6,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    },
+    {
+      "line": 16,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    }
+  ],
+  "Sources/CreatorCoreForge/PluginDependencyGraph.swift": [
+    {
+      "line": 13,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/SceneIndexGenerator.swift": [
+    {
+      "line": 10,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/VisualMemoryEngine.swift": [
+    {
+      "line": 28,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/NSFWSFXPackManager.swift": [
+    {
+      "line": 32,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/MultiTrackEditor.swift": [
+    {
+      "line": 10,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/LocalVoiceAI.swift": [
+    {
       "line": 3,
-      "optimization": "unbounded_cache",
-      "suggestion": "Add LRU eviction to limit memory usage"
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/VoiceBookmarkService.swift": [
+    {
+      "line": 18,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/AudioExportService.swift": [
+    {
+      "line": 32,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/BuildDeploymentEngine.swift": [
+    {
+      "line": 11,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/InlineEmotionEngine.swift": [
+    {
+      "line": 6,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/AutoTranslateService.swift": [
+    {
+      "line": 11,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/CoreForgeQuest_MissingFeatures.swift": [
+    {
+      "line": 16,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/CoreForgeAudio_MissingFeatures.swift": [
+    {
+      "line": 3,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/StealthModeVaultManager.swift": [
+    {
+      "line": 38,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/VoiceRatingSystem.swift": [
+    {
+      "line": 9,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/MindNSFWModule.swift": [
+    {
+      "line": 9,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/CoreForgeAudio_PlaybackUIController.swift": [
+    {
+      "line": 3,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/TemplateMonetization.swift": [
+    {
+      "line": 3,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/PlaybackProgressSync.swift": [
+    {
+      "line": 33,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    },
+    {
+      "line": 39,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    }
+  ],
+  "Sources/CreatorCoreForge/RealTimeFeedManager.swift": [
+    {
+      "line": 21,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    }
+  ],
+  "Sources/CreatorCoreForge/SceneSoundtrackCoordinator.swift": [
+    {
+      "line": 25,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/VoiceTrainer.swift": [
+    {
+      "line": 17,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/MockDataGenerator.swift": [
+    {
+      "line": 3,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/SceneMapper.swift": [
+    {
+      "line": 27,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/SegmentService.swift": [
+    {
+      "line": 41,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/VisualMultiverseManager.swift": [
+    {
+      "line": 36,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/AmbientFXEngine.swift": [
+    {
+      "line": 41,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/GenesisModeEngine.swift": [
+    {
+      "line": 3,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/BuildImprovementEngine.swift": [
+    {
+      "line": 27,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/ThumbnailGenerator.swift": [
+    {
+      "line": 16,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/InputBindingEngine.swift": [
+    {
+      "line": 22,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/VoiceForkManager.swift": [
+    {
+      "line": 12,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/ReplayAnalyticsService.swift": [
+    {
+      "line": 3,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/NotificationSender.swift": [
+    {
+      "line": 25,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    }
+  ],
+  "Sources/CreatorCoreForge/PluginMarketplace.swift": [
+    {
+      "line": 21,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/VideoExportService.swift": [
+    {
+      "line": 58,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/CharacterTrackManager.swift": [
+    {
+      "line": 3,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/MultiverseVoiceSystem.swift": [
+    {
+      "line": 7,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/AICoPilot.swift": [
+    {
+      "line": 28,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/LongFormPacingEngine.swift": [
+    {
+      "line": 3,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/EmotionGraph.swift": [
+    {
+      "line": 22,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/TraitMemoryPersistence.swift": [
+    {
+      "line": 20,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/CoreForgeMind_MissingFeatures.swift": [
+    {
+      "line": 17,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    },
+    {
+      "line": 35,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    }
+  ],
+  "Sources/CreatorCoreForge/PluginBuilder.swift": [
+    {
+      "line": 3,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/NSFWHabitBehaviorSimulator.swift": [
+    {
+      "line": 23,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/AdaptiveDocScanner.swift": [
+    {
+      "line": 9,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/CanonMemoryGraph.swift": [
+    {
+      "line": 30,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/VoiceTimbreModulator.swift": [
+    {
+      "line": 36,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/MemoryPinning.swift": [
+    {
+      "line": 36,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/ThemeManager.swift": [
+    {
+      "line": 41,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    },
+    {
+      "line": 96,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    }
+  ],
+  "Sources/CreatorCoreForge/TradingLeaderboard.swift": [
+    {
+      "line": 3,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/OfflineTTSCache.swift": [
+    {
+      "line": 10,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/EmotionalArcTracker.swift": [
+    {
+      "line": 33,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/VoiceDNAForker.swift": [
+    {
+      "line": 39,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/FormGenerator.swift": [
+    {
+      "line": 31,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/SyncServiceProtocol.swift": [
+    {
+      "line": 5,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    }
+  ],
+  "Sources/CreatorCoreForge/BookScanAnalyzer.swift": [
+    {
+      "line": 16,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/DAWSessionExporter.swift": [
+    {
+      "line": 11,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/CoreForgeLeads_MissingFeatures.swift": [
+    {
+      "line": 15,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/SceneMemorySimulator.swift": [
+    {
+      "line": 43,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/CommentSystem.swift": [
+    {
+      "line": 30,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/VoiceMultiverseManager.swift": [
+    {
+      "line": 15,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/NSFWPhase7.swift": [
+    {
+      "line": 47,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/AIEmotionEngine.swift": [
+    {
+      "line": 31,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/CameraStabilizer.swift": [
+    {
+      "line": 19,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/AudioExporter.swift": [
+    {
+      "line": 45,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/ExportTools.swift": [
+    {
+      "line": 3,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/FXLibrary.swift": [
+    {
+      "line": 19,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/BuildPreviewEngine.swift": [
+    {
+      "line": 20,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/VoiceReviewSystem.swift": [
+    {
+      "line": 3,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/SceneAtmosphereBuilder.swift": [
+    {
+      "line": 9,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/VoiceDNAForge.swift": [
+    {
+      "line": 56,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/CoreForgeVisual_MissingFeatures.swift": [
+    {
+      "line": 57,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/VoiceDNAVisualizer.swift": [
+    {
+      "line": 45,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/EbookConverter.swift": [
+    {
+      "line": 13,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/AdaptiveLearningEngine.swift": [
+    {
+      "line": 18,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/VoicePolls.swift": [
+    {
+      "line": 3,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/FusionEngine.swift": [
+    {
+      "line": 216,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/OfflineDownloadQueue.swift": [
+    {
+      "line": 90,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/CommunityReviews.swift": [
+    {
+      "line": 3,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/NeuralOptimizer.swift": [
+    {
+      "line": 3,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/AdaptiveSceneCompletion.swift": [
+    {
+      "line": 19,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/CharacterDetectionEngine.swift": [
+    {
+      "line": 14,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/SettingsSync.swift": [
+    {
+      "line": 32,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    }
+  ],
+  "Sources/CreatorCoreForge/ChapterAnalyticsService.swift": [
+    {
+      "line": 8,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/SceneHeatmapManager.swift": [
+    {
+      "line": 3,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/LocalAIEnginePro.swift": [
+    {
+      "line": 68,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Sources/CreatorCoreForge/FusionVoiceController.swift": [
+    {
+      "line": 13,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeWriter/Promo_code_unlocks_for_full_access.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeWriter/Support_for_iOS_Android_PC_macOS_Web.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeWriter/Tag_tracker_for_literary_symbols_and_metaphors.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeWriter/Series_based_memory_for_character_plot_tracking.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeWriter/Scene_temperature_dial_for_delivery_mood_cold_neutral_hot.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeMind/Refer_to_README_for_details.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeMind/Secure_vault_for_private_entries.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Offer_toggle_for_narrator_override_mode_for_consistency_across_multi_voice_scenes.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Allow_background_FX_library_upload_for_adult_creators.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Offer_import_templates_for_common_formats_Kindle_Smashwords_etc.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Generate_multitrack_session_files_for_DAWs_e_g_Logic_Pro_Tools_Audition.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Support_parsing_for_poetry_stageplay_and_hybrid_book_types.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Tag_FX_layers_for_accessibility_filtering_e_g_no_thunder_for_noise_sensitive.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/APISetup_md_integration_steps_for_all_APIs_LocalVoiceAI_Firebase.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Complete_pbxproj_and_build_project_for_all_platforms.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Integrate_pronunciation_dictionaries_per_character_for_name_consistency.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Introduce_multiverse_tagging_for_alternate_character_arcs_and_scenes.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Generate_emotional_arc_summaries_for_each_book_and_voice_profile.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Integrate_with_audio_plugin_systems_for_advanced_mastering_tools.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Auto_casting_engine_for_genre_tone_optimal_voice_selection.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Provide_multiverse_context_summaries_for_catching_up_mid_path.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Sanitize_raw_text_and_remove_formatting_artifacts_for_narration.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Create_character_dossier_panel_for_memory_review_editing.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Voice_delivery_pacing_optimized_for_line_length_and_context_complexity.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Save_voice_assignments_in_user_profiles_for_cross_book_persistence.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Haptic_wearable_feedback_integration_for_erotic_audio.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Fork_narrator_tone_for_speculative_what_if_chapters.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Support_voice_blending_for_internal_monologue_vs_external_dialogue.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Layer_background_conversation_FX_for_crowds_or_taverns.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Provide_tone_modulation_tools_for_sensuality_aggression_vulnerability.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Timeline_editor_for_advanced_pause_resume_voice_swap.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Highlight_inconsistencies_in_voice_delivery_across_books_for_correction.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Parse_footnotes_indexes_and_references_for_narrator_adaptation.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Fork_voices_into_alternate_variants_for_multiverse_or_memory_arcs.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Add_creator_defined_vocal_layering_for_crowd_and_background_dialogue.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Platform_specific_permissions_entitlement_and_environment_config_for_all_platforms.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Security_audit_for_all_data_handling_NSFW_gating_and_API_access.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Translate_entire_books_while_preserving_narrator_tone_and_genre.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Heart_rate_integration_for_adaptive_emotion_wearables.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Record_listener_reactions_to_FX_scenes_for_future_personalization.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Create_age_gated_toggle_for_NSFW_rendering_mode.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Marketplace_for_voices_SFX_templates_narration_packs.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Performance_load_and_latency_benchmarks_esp_for_long_books_multiple_voices.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Embed_multiverse_state_tags_into_export_files_for_advanced_metadata.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Implement_voice_glossaries_for_culturally_relevant_pronunciation.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Smart_auto_updater_system_for_client_and_model_updates_all_platforms.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Design_UI_switch_to_mute_FX_while_preserving_speech.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Map_memory_triggers_to_emotion_modulation_for_recurring_themes.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Emotional_arc_AI_for_mood_tone_shifting_and_scene_adaptation.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Apple_Watch_mini_controller_sync_for_playback.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Blend_romantic_comedic_and_fantasy_sub_tones_for_genre_flexibility.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Multi_cast_audiobook_generation_for_ensemble_narration.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Build_preview_system_for_NSFW_scenes_before_full_render.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Integration_tests_for_all_API_workflows_OpenAI_LocalVoiceAI_Firebase.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Track_listener_skip_behavior_on_NSFW_scenes_for_feedback_optimization.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Social_auto_upload_for_Pro_Creator_tier_viral_listening_challenges.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Creator_Admin_dashboards_for_team_affiliate_revenue.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/GitHub_Actions_for_automated_multi_platform_builds_iOS_Android_PC_Mac.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Data_encryption_for_all_user_assets_and_content.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Build_creator_dashboard_for_real_time_monitoring_of_voice_quality_and_performance.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Flag_NSFW_content_for_internal_moderation_or_publishing_filter_logic.py": [
+    {
+      "line": 33,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Provide_auto_mix_and_export_mode_for_rapid_prototyping.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Support_tone_comparison_mode_between_books_for_authorial_analysis.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Integrate_OCR_scanning_for_image_based_books_or_comics.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Tag_NSFW_scenes_in_transcript_for_optional_exclusion_in_export.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Flag_idioms_and_phrases_for_creative_language_adaptation.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Build_multiverse_continuity_checker_for_tone_character_and_FX.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Establish_persistent_memory_profiles_for_each_major_character.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Emotion_shift_graph_tracker_for_narration.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Generate_FX_track_separately_for_export_as_audio_stem.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Add_DRM_toggle_for_exports_requiring_usage_protection.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Add_genre_aware_translation_modes_e_g_poetic_for_fantasy_direct_for_nonfiction.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/AI_coach_for_pronunciation_pacing_performance_feedback.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/User_guides_for_all_tiers_and_NSFW_mode.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Include_pacing_sensitivity_slider_for_slow_burn_vs_rapid_tones.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Offer_credit_bundles_and_auto_top_up_for_high_volume_creators.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Offer_beta_features_audio_fingerprints_for_licensing_alternate_casting_previews.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Embed_character_memory_files_as_part_of_export_metadata_for_continuity.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Apply_whisper_pass_filter_for_intimacy_scene_enhancement.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Support_3D_spatial_panning_of_sound_FX_for_immersive_headset_playback.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Store_source_format_metadata_for_export_integrity.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Respect_Creator_subscription_rules_for_NSFW_access_and_credits.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/1_year_persistent_memory_pinning_for_series_and_sequels.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Age_ID_verification_for_all_explicit_content.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Assign_separate_audio_tracks_to_each_character_and_narrator_for_post_mix_mastering.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Detect_and_tag_character_dialogue_blocks_for_multi_voice_casting.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Use_low_frequency_rumble_or_musical_drones_for_tension_buildup.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Track_export_credit_usage_for_pay_as_you_go_systems.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Real_time_AI_improviser_for_interactive_or_roleplay_narration.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Assign_default_narrator_voice_for_books_with_single_voice_rendering.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Extract_scene_based_summaries_for_quick_rendering.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Automated_onboarding_tutorial_and_help_flows_for_all_user_tiers.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Enable_fingerprinted_voice_tagging_for_IP_verification.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Render_alternate_PG_13_safe_version_of_same_scene_for_public_platforms.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Provide_unabridged_to_abridged_summarization_mode_for_preview.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Create_a_full_cast_preview_mode_with_toggles_for_each_voice_track.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Build_queue_manager_for_batch_exporting_multiple_projects.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Paywall_tip_jar_premium_unlocks_for_NSFW_content.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Store_memory_snapshots_between_render_sessions_for_persistent_output_quality.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Unit_tests_for_every_critical_function_and_core_module.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Settings_screen_for_voice_assignment_emotion_presets_NSFW_parental_controls.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Save_parsed_state_for_recovery_and_version_history.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeAudio/Drag_and_drop_builder_for_scenes_chapters_voice_mapping_and_SFX.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/VisualLab/Maintain_CI_workflow_for_npm_test.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/github/Refer_to_README_for_details.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/github/Update_workflow_scripts_for_new_platforms.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Store_FX_template_libraries_per_genre_for_reuse.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Embed_chapter_metadata_and_timeline_jump_points_for_playback_platforms.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Enable_live_panel_layout_for_comic_manga_style_visual_composition.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Add_multi_timeline_variants_for_multiverse_visual_branching.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Support_multi_book_narrative_sync_for_localized_arcs.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Enable_facial_motion_layer_export_for_animator_sync.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Highlight_symbols_and_metaphors_for_optional_artistic_visuals.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Suggest_duo_frame_or_over_the_shoulder_compositions_for_dialogue_scenes.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Reuse_location_models_and_scene_layouts_for_consistency_across_chapters_books.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Embed_multiverse_state_in_exported_metadata_for_reuse.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Store_parsing_configuration_profiles_for_series_consistency.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Output_visual_scene_map_to_timeline_panel_for_creator_editing.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Store_creator_defined_presets_for_framing_color_grade_and_cut_style.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Embed_language_metadata_in_export_files_for_platform_distribution.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Translate_creator_notes_and_project_metadata_for_global_collaboration.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Create_parallel_visual_identities_for_characters_e_g_Hero_vs_Villain_versions.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Enable_cutaway_logic_for_interior_vs_exterior_visual_blending.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/NSFW_habit_behavior_simulator_for_triggering_custom_SFX_cues.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Lore_compression_tool_for_summarizing_long_passages.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Auto_updater_embedded_for_all_builds.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Add_blur_shake_or_light_flash_FX_for_dramatic_or_horror_moments.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Visualize_tone_deviation_and_intensity_spikes_for_debugging.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Smart_auto_updater_for_models_assets.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Save_cultural_localization_settings_for_franchise_or_series_consistency.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Support_dynamic_shadows_and_ambient_occlusion_for_realism.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Provide_Director_Mode_for_manual_camera_and_FX_control.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Tag_and_index_NSFW_scenes_for_optional_inclusion_exclusion_in_exports.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/GitHub_Actions_for_multi_platform_builds.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Track_costume_and_hairstyle_changes_throughout_story_for_visual_consistency.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Settings_for_visual_style_voices_NSFW_gating.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Normalize_text_encoding_for_rare_language_or_stylized_prose.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Store_alternate_visual_outcomes_for_the_same_chapter_scene.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Integrate_facial_motion_tracking_for_emotional_match_rendering.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/NSFW_toggle_with_a_stealth_vault_for_private_content.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Group_Watch_rooms_for_live_viewing_chat_and_voting.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Platform_specific_permissions_configuration_for_all_platforms.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Support_for_iOS_Android_PC_macOS_and_Web.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Store_and_lock_multiverse_visual_states_for_version_tracking.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Visualize_FX_layering_structure_for_post_editing.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/AI_scene_dramatization_engine_for_turning_text_into_short_clips.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Store_NSFW_render_settings_as_presets_for_series_genre.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Highlight_visual_identity_conflicts_for_creator_review_e_g_two_similar_characters.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Store_original_book_structure_for_syncing_narration_with_visuals.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Layer_particle_FX_rain_fire_fog_dust_for_environmental_realism.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Offer_export_options_for_localized_versions_per_country.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Flag_high_action_and_dialogue_heavy_scenes_for_rendering_priority.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Generate_recap_videos_per_timeline_path_for_audience_immersion.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Simulate_full_cast_rehearsal_playback_for_pacing_checks_and_scene_balance.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Bundle_FX_character_and_voice_layers_for_full_scene_archives.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Recommend_lighting_configurations_for_cast_mood_amplification.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Visual_arc_timeline_for_each_character_first_appearance_to_final_scene.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Allow_in_app_purchases_for_one_time_HD_or_commercial_use_licenses.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Store_character_styles_for_reuse_across_scenes_and_sequels.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Provide_Creator_Control_Panel_for_full_preview_edit_of_visual_audio_logic.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Provide_intensity_control_slider_for_visual_eroticism_or_violence.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Flag_content_sensitive_to_region_culture_for_modification_options.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Provide_toggle_to_collapse_alternate_scenes_into_one_for_export.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Store_FX_history_e_g_specific_lightning_type_for_trauma_scene.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Build_continuity_checker_across_timelines_for_style_cohesion.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Provide_DRM_encoding_option_for_IP_protected_outputs.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Embed_NSFW_warning_overlays_for_early_scene_detection.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Enable_multi_resolution_export_for_preview_vs_final_render.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Suggest_visual_avatars_for_each_major_and_minor_character_using_AI.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Unit_integration_tests_for_scene_rendering_memory_export.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Integrate_NSFW_content_filter_toggle_for_viewers_and_collaborators.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Translate_full_scripts_while_preserving_pacing_emotion_and_visual_tags.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Export_each_character_s_voice_and_animation_to_separate_tracks_for_post_editing.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Provide_separate_rendering_logic_for_explicit_vs_suggestive_visual_scenes.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Enable_auto_generation_of_visual_variations_for_key_choice_points.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Enable_AI_suggestions_for_retiming_scene_flow_or_voice_cadence.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Auto_tag_scene_rhythm_slow_burn_montage_high_speed_for_rendering_optimization.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Real_time_AI_director_for_storyboarding_shot_voice_suggestions.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Detect_scene_setting_shifts_and_auto_tag_as_indoor_outdoor_for_lighting_logic.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Generate_parallel_safe_for_stream_scenes_with_auto_adaptation.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Team_portals_collab_editing_marketplace_for_templates_assets.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVisual/Auto_optimize_exports_for_bandwidth_constrained_environments.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeStudio/Action_rhythm_controller_tempo_pacing_for_dynamic_scenes.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeStudio/Add_What_If_Mode_for_branching_episode_possibilities.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeStudio/Overlay_FX_editor_for_text_and_post_processing.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeStudio/Render_2hr_videos_while_managing_memory.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeStudio/Directorial_note_system_for_each_scene_or_shot.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeStudio/Build_Emotion_Arc_Visualizer_for_cinematic_flow.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeQuest/Refer_to_README_for_details.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeDNA/Refer_to_README_for_details.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/docs/Keep_PHASE_EIGHT_md_synced_with_features_phase8_json.py": [
+    {
+      "line": 41,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/docs/Update_migration_guides_for_new_modules.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/docs/Review_diagrams_and_images_for_accuracy.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/AI_VideoGenerator/Refer_to_README_for_details.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/apps/Review_cross_app_asset_licensing.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/apps/Coordinate_shared_assets_and_templates.py": [
+    {
+      "line": 24,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/apps/Centralize_admin_contacts_for_app_teams.py": [
+    {
+      "line": 13,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/fastlane/Update_ExportOptions_plist_for_new_entitlements.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/fastlane/Refer_to_README_for_details.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/fastlane/Maintain_Fastfile_lanes_for_all_apps.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeBuild/Auto_bundler_for_iOS_Android_PC_VR_Codex.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeBuild/Next_gen_AI_reasoning_engine_for_debugging_and_enhancements_Codex.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeBuild/Plugin_fetcher_supports_branch_selection.py": [
+    {
+      "line": 1,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    },
+    {
+      "line": 3,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    }
+  ],
+  "generated/CoreForgeBuild/Auto_bundler_for_all_platforms.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeLearn/Refer_to_README_for_details.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/Tests/Refer_to_README_for_details.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/Tests/Expand_coverage_for_AI_engines.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/Tests/Add_regression_tests_for_bug_fixes.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeBloom/Refer_to_README_for_details.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/VoiceLab/Includes_UnifiedAudioEngine_for_global_volume_control_and_fade_transitions_across_web_tools.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Embed_chapter_metadata_and_timeline_jump_points_for_playback_platforms.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Support_multi_book_narrative_sync_for_localized_arcs.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Enable_facial_motion_layer_export_for_animator_sync.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Highlight_symbols_and_metaphors_for_optional_artistic_visuals.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Suggest_duo_frame_or_over_the_shoulder_compositions_for_dialogue_scenes.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Reuse_location_models_and_scene_layouts_for_consistency_across_chapters_books.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Refer_to_features_phase8_json_and_NSFWExpansion_md_for_raw_task_breakdowns.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Store_creator_defined_presets_for_framing_color_grade_and_cut_style.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Translate_creator_notes_and_project_metadata_for_global_collaboration.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Create_parallel_visual_identities_for_characters_e_g_Hero_vs_Villain_versions.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Enable_cutaway_logic_for_interior_vs_exterior_visual_blending.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Add_blur_shake_or_light_flash_FX_for_dramatic_or_horror_moments.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Visualize_tone_deviation_and_intensity_spikes_for_debugging.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Save_cultural_localization_settings_for_franchise_or_series_consistency.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Support_dynamic_shadows_and_ambient_occlusion_for_realism.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Tag_and_index_NSFW_scenes_for_optional_inclusion_exclusion_in_exports.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Contextual_pause_resume_biometric_locks_for_vaults.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Track_costume_and_hairstyle_changes_throughout_story_for_visual_consistency.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Normalize_text_encoding_for_rare_language_or_stylized_prose.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Store_alternate_visual_outcomes_for_the_same_chapter_scene.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Integrate_facial_motion_tracking_for_emotional_match_rendering.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/AI_director_coaching_for_storyboarding_shot_camera_suggestions.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Store_and_lock_multiverse_visual_states_for_version_tracking.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Visualize_FX_layering_structure_for_post_editing.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/AI_coach_and_performance_review_for_narration_voice.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Highlight_visual_identity_conflicts_for_creator_review_e_g_two_similar_characters.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Store_original_book_structure_for_syncing_narration_with_visuals.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Layer_particle_FX_rain_fire_fog_dust_for_environmental_realism.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Offer_export_options_for_localized_versions_per_country.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Generate_recap_videos_per_timeline_path_for_audience_immersion.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Simulate_full_cast_rehearsal_playback_for_pacing_checks_and_scene_balance.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Bundle_FX_character_and_voice_layers_for_full_scene_archives.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Recommend_lighting_configurations_for_cast_mood_amplification.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Visual_arc_timeline_for_each_character_first_appearance_to_final_scene.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Allow_in_app_purchases_for_one_time_HD_or_commercial_use_licenses.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Store_character_styles_for_reuse_across_scenes_and_sequels.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Provide_intensity_control_slider_for_visual_eroticism_or_violence.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Flag_content_sensitive_to_region_culture_for_modification_options.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Store_FX_history_e_g_specific_lightning_type_for_trauma_scene.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Build_continuity_checker_across_timelines_for_style_cohesion.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Provide_DRM_encoding_option_for_IP_protected_outputs.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Integrate_NSFW_content_filter_toggle_for_viewers_and_collaborators.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Translate_full_scripts_while_preserving_pacing_emotion_and_visual_tags.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Provide_separate_rendering_logic_for_explicit_vs_suggestive_visual_scenes.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Enable_AI_suggestions_for_retiming_scene_flow_or_voice_cadence.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Auto_tag_scene_rhythm_slow_burn_montage_high_speed_for_rendering_optimization.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Detect_scene_setting_shifts_and_auto_tag_as_indoor_outdoor_for_lighting_logic.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Generate_parallel_safe_for_stream_scenes_with_auto_adaptation.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CreatorCoreForge/Auto_optimize_exports_for_bandwidth_constrained_environments.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/scripts/fetch_plugins_sh_download_plugin_repositories_listed_in_plugin_list_txt_using_pull_plugins_py.py": [
+    {
+      "line": 1,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    },
+    {
+      "line": 2,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    },
+    {
+      "line": 3,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    }
+  ],
+  "generated/CoreForgeVoiceLab/Refer_to_README_for_details.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeVoiceLab/Training_pipeline_for_custom_voices.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeMarket/Marketplace_for_bots_plugins_signals_analytics.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeMarket/FusionEngine_plugin_marketplace_for_bots_strategies.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeMarket/API_for_external_tools_compliance_legal_automation.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeMarket/Settings_for_risk_strategy_notifications.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "generated/CoreForgeMarket/OpenAI_LocalAI_for_sentiment_news_risk_analytics.py": [
+    {
+      "line": 1,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/LeadMiner.swift": [
+    {
+      "line": 23,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/ReferralTokenManager.swift": [
+    {
+      "line": 3,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/DFSignalAPI.swift": [
+    {
+      "line": 35,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    }
+  ],
+  "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/ProspectingWorkflow.swift": [
+    {
+      "line": 21,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/VideoShareManager.swift": [
+    {
+      "line": 6,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/CoreForgeWriter/InkwellAIFull/InkwellAI/BookBuilder.swift": [
+    {
+      "line": 5,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/CoreForgeWriter/InkwellAIFull/InkwellAI/AdaptiveCharacterMemory.swift": [
+    {
+      "line": 11,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/CoreForgeWriter/InkwellAIFull/InkwellAI/VideoShareManager.swift": [
+    {
+      "line": 6,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/CoreForgeWriter/InkwellAIFull/InkwellAI/MemoryTracker.swift": [
+    {
+      "line": 62,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/CoreForgeMind/MoodJournal.swift": [
+    {
+      "line": 20,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/CoreForgeAudio/VocalVerseFull/VocalVerse/VoiceAssigner.swift": [
+    {
+      "line": 6,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/CoreForgeAudio/VocalVerseFull/VocalVerse/ContentView.swift": [
+    {
+      "line": 165,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/CoreForgeAudio/VocalVerseFull/VocalVerse/VideoShareManager.swift": [
+    {
+      "line": 6,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/CoreForgeAudio/VocalVerseFull/VocalVerse/DownloadQueue.swift": [
+    {
+      "line": 98,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/CharacterStatTracker.swift": [
+    {
+      "line": 13,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/ContentPolicyManager.swift": [
+    {
+      "line": 13,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/AITrendDetector.swift": [
+    {
+      "line": 12,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/AniListAPI.swift": [
+    {
+      "line": 20,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    }
+  ],
+  "apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/VideoShareManager.swift": [
+    {
+      "line": 6,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/CoreForgeVisual/LoreForgeAIFull/Tests/LoreForgeAITests/CharacterStatTrackerTests.swift": [
+    {
+      "line": 8,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    },
+    {
+      "line": 10,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    },
+    {
+      "line": 11,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    },
+    {
+      "line": 12,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    }
+  ],
+  "apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/VideoSceneGenerator.swift": [
+    {
+      "line": 22,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/VideoExportManager.swift": [
+    {
+      "line": 38,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/VideoShareManager.swift": [
+    {
+      "line": 6,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/FanCameoGenerator.swift": [
+    {
+      "line": 3,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/MetadataAutoSync.swift": [
+    {
+      "line": 31,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/CoreForgeMusic/VerseForgeAIFull/Sources/VerseForgeAI/VideoShareManager.swift": [
+    {
+      "line": 6,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/CoreForgeDNA/MemoryLinkService.swift": [
+    {
+      "line": 3,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/ebook2audiobook/app.py": [
+    {
+      "line": 62,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/ebook2audiobook/lib/functions.py": [
+    {
+      "line": 74,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/ebook2audiobook/lib/classes/voice_extractor.py": [
+    {
+      "line": 207,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/ebook2audiobook/lib/classes/argos_translator.py": [
+    {
+      "line": 30,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/ebook2audiobook/lib/classes/redirect_console.py": [
+    {
+      "line": 8,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/ebook2audiobook/lib/classes/tts_engines/coqui.py": [
+    {
+      "line": 111,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/ebook2audiobook/tools/normalize_wav_folder.py": [
+    {
+      "line": 5,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/CoreForgeBuild/services/CodeGenService.ts": [
+    {
+      "line": 4,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Sources/TradeMindAI/StrategyBuilder.swift": [
+    {
+      "line": 9,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Sources/TradeMindAI/MultiMarketScanner.swift": [
+    {
+      "line": 3,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    },
+    {
+      "line": 5,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    },
+    {
+      "line": 18,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    },
+    {
+      "line": 23,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Sources/TradeMindAI/ExchangeSyncManager.swift": [
+    {
+      "line": 18,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Sources/TradeMindAI/InsiderFlowTracker.swift": [
+    {
+      "line": 15,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Sources/TradeMindAI/ShadowTrader.swift": [
+    {
+      "line": 26,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    },
+    {
+      "line": 27,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Sources/TradeMindAI/AutoUpdateManager.swift": [
+    {
+      "line": 7,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Sources/TradeMindAI/SentimentDetector.swift": [
+    {
+      "line": 10,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Sources/TradeMindAI/ExchangeAPI.swift": [
+    {
+      "line": 23,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Sources/TradeMindAI/VideoShareManager.swift": [
+    {
+      "line": 6,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Sources/TradeMindAI/OpenAIService.swift": [
+    {
+      "line": 72,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Tests/TradeMindAITests/MultiMarketScannerTests.swift": [
+    {
+      "line": 6,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    },
+    {
+      "line": 14,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Tests/TradeMindAITests/OpenAIServiceTests.swift": [
+    {
+      "line": 87,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/NSFWHabitBehaviorSimulatorTests.swift": [
+    {
+      "line": 8,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/SceneGapFillerTests.swift": [
+    {
+      "line": 12,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/CharacterMemoryEngineTests.swift": [
+    {
+      "line": 8,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/VoiceDNAForkerTests.swift": [
+    {
+      "line": 18,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/AdaptiveLearningEngineTests.swift": [
+    {
+      "line": 8,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/CodeGeneratorTests.swift": [
+    {
+      "line": 14,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/VoiceDNAForgeTests.swift": [
+    {
+      "line": 8,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/EmotionAnalyzerTests.swift": [
+    {
+      "line": 7,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/LibrarySyncTests.swift": [
+    {
+      "line": 52,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    },
+    {
+      "line": 53,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/BuildDeploymentEngineTests.swift": [
+    {
+      "line": 11,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/CharacterVoiceMapperTests.swift": [
+    {
+      "line": 14,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/VisualMultiverseManagerTests.swift": [
+    {
+      "line": 10,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/PluginMarketplaceTests.swift": [
+    {
+      "line": 9,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/FormGeneratorTests.swift": [
+    {
+      "line": 15,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/VoiceTrainerTests.swift": [
+    {
+      "line": 7,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/RealTimeFeedManagerTests.swift": [
+    {
+      "line": 40,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    },
+    {
+      "line": 59,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/NSFWContentManagerTests.swift": [
+    {
+      "line": 39,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/PracticalPlanFeatureTests.swift": [
+    {
+      "line": 152,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/VoiceMemoryManagerTests.swift": [
+    {
+      "line": 17,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/CharacterTrackManagerTests.swift": [
+    {
+      "line": 8,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/TraitMemoryPersistenceTests.swift": [
+    {
+      "line": 9,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/VoiceBookmarkServiceTests.swift": [
+    {
+      "line": 8,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/SceneMemorySimulatorTests.swift": [
+    {
+      "line": 9,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/NetworkInfoProviderTests.swift": [
+    {
+      "line": 35,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    },
+    {
+      "line": 50,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/LongFormPacingEngineTests.swift": [
+    {
+      "line": 9,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/ReplayAnalyticsTests.swift": [
+    {
+      "line": 7,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/MemoryPinningTests.swift": [
+    {
+      "line": 7,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/PlaybackProgressSyncTests.swift": [
+    {
+      "line": 7,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    },
+    {
+      "line": 12,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    },
+    {
+      "line": 13,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    },
+    {
+      "line": 34,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    }
+  ],
+  "VoiceLab/src/acxExporter.ts": [
+    {
+      "line": 6,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "VoiceLab/test/openaiService.test.ts": [
+    {
+      "line": 3,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    },
+    {
+      "line": 6,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    },
+    {
+      "line": 13,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    },
+    {
+      "line": 16,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    }
+  ],
+  "scripts/placeholder_scan.py": [
+    {
+      "line": 23,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "scripts/feature_audit.py": [
+    {
+      "line": 7,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "scripts/update_agents_phase_features.py": [
+    {
+      "line": 50,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "scripts/ensure_200_features.py": [
+    {
+      "line": 44,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "scripts/progress_bot.py": [
+    {
+      "line": 105,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "scripts/auto_code_bot.py": [
+    {
+      "line": 139,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "scripts/check_app_store_compliance.py": [
+    {
+      "line": 16,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "scripts/scan_open_tasks.py": [
+    {
+      "line": 29,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "scripts/full_app_scan.py": [
+    {
+      "line": 26,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "scripts/compliance_scanner.py": [
+    {
+      "line": 26,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    },
+    {
+      "line": 22,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    },
+    {
+      "line": 49,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
+    }
+  ],
+  "scripts/aggregate_tasks.py": [
+    {
+      "line": 41,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    }
+  ],
+  "scripts/performance_scan.py": [
+    {
+      "line": 20,
+      "optimization": "nested_loop",
+      "suggestion": "Consider refactoring nested loops"
+    },
+    {
+      "line": 8,
+      "optimization": "blocking_network_call",
+      "suggestion": "Use async calls or background tasks"
     }
   ]
 }

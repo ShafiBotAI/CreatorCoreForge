@@ -1,26 +1,6 @@
 {
   "open_tasks": [
     {
-      "task": "Scan each file for:",
-      "source_file": "CODEX-TODO-ENHANCE-CODE-QUALITY-PERFORMANCE.md"
-    },
-    {
-      "task": "Evaluate all components for:",
-      "source_file": "CODEX-TODO-ENHANCE-CODE-QUALITY-PERFORMANCE.md"
-    },
-    {
-      "task": "Log findings to `performance_scan_report.json` with:",
-      "source_file": "CODEX-TODO-ENHANCE-CODE-QUALITY-PERFORMANCE.md"
-    },
-    {
-      "task": "**Task:** Enhance `[FILENAME]`",
-      "source_file": "CODEX-TODO-ENHANCE-CODE-QUALITY-PERFORMANCE.md"
-    },
-    {
-      "task": "Run performance tests before/after each refactor",
-      "source_file": "CODEX-TODO-ENHANCE-CODE-QUALITY-PERFORMANCE.md"
-    },
-    {
       "task": "Measure memory footprint and latency where applicable",
       "source_file": "CODEX-TODO-ENHANCE-CODE-QUALITY-PERFORMANCE.md"
     },
