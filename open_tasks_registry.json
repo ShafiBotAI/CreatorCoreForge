@@ -18,7 +18,9 @@
     },
     {
       "task": "Optimize `SegmentService.swift`",
-      "source_file": "CODEX-TODO-ENHANCE-CODE-QUALITY-PERFORMANCE.md"
+      "source_file": "CODEX-TODO-ENHANCE-CODE-QUALITY-PERFORMANCE.md",
+      "target_file": "Sources/CreatorCoreForge/SegmentService.swift",
+      "language": "Swift"
     },
     {
       "task": "Enhance `TTSRenderer.ts`",
@@ -209,7 +211,7 @@
       "source_file": "FEATURES-CODEX-COMPLETE.md"
     },
     {
-      "task": "Let creators \u201clock\u201d scene visuals for canon",
+      "task": "Let creators “lock” scene visuals for canon",
       "source_file": "FEATURES-CODEX-COMPLETE.md"
     },
     {

@@ -1,6 +1,7 @@
 # Changelog
 
 ## [Unreleased]
+- Optimized `SegmentService` with chunked async processing and LRU caching.
 - Added `UnifiedAudioEngine` shared module and updated all app feature lists.
 - Added `UnifiedVideoEngine` and `AdaptiveLearningEngine` modules for cross-platform video rendering and adaptive learning.
 - Enhanced `AdaptiveLearningEngine` to track lesson completion timestamps.

@@ -56,6 +56,15 @@ final class AudioVisualPhaseOneTests: XCTestCase {
         await fulfillment(of: [expectation], timeout: 1)
     }
 
+    func testSegmentServiceAsyncChunked() async {
+        let chapters = [
+            Chapter(title: "C1", text: "A\n\nB"),
+            Chapter(title: "C2", text: "C\n\nD")
+        ]
+        let segs = await SegmentService().segmentAsyncChunked(chapters, chunkSize: 1)
+        XCTAssertEqual(segs.count, 4)
+    }
+
     func testStreamAssembler() {
         let a = Data([0,1])
         let b = Data([2])
