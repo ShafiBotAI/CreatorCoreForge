@@ -183,14 +183,14 @@ Key points from `README.md`:
 - [x] Generate initial visual storyboard layout from parsed scenes
 - [x] Support drag-and-drop book input with automatic format recognition
 - [x] Allow manual refinement of scene breaks via visual editor
-- [ ] Store original book structure for syncing narration with visuals
-- [ ] Flag high-action and dialogue-heavy scenes for rendering priority
-- [ ] Normalize text encoding for rare language or stylized prose
-- [ ] Split monologue-heavy sections into animated visual layers
-- [ ] Extract scene descriptions from footnotes or appendices if referenced
-- [ ] Enable prologue/epilogue special treatment (visual tone, transitions)
-- [ ] Highlight symbols and metaphors for optional artistic visuals
-- [ ] Store parsing configuration profiles for series consistency
+- [x] Store original book structure for syncing narration with visuals
+- [x] Flag high-action and dialogue-heavy scenes for rendering priority
+- [x] Normalize text encoding for rare language or stylized prose
+- [x] Split monologue-heavy sections into animated visual layers
+- [x] Extract scene descriptions from footnotes or appendices if referenced
+- [x] Enable prologue/epilogue special treatment (visual tone, transitions)
+- [x] Highlight symbols and metaphors for optional artistic visuals
+- [x] Store parsing configuration profiles for series consistency
 - [ ] Offer real-time preview of parsed scene map before rendering
 - [ ] Sync parsed book structure with audio narration framework
 - [ ] Validate scene continuity and chronology from source text
