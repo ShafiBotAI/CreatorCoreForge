@@ -12,6 +12,7 @@ public final class BuildPreviewEngine {
     private var state: [String: Any] = [:]
     private var breakpoints: Set<String> = []
     private var testResults: [String: Bool] = [:]
+    private var warnings: [String] = []
     private(set) var device: SimulatedDevice = .web
     private var developerConsoleEnabled = false
 
@@ -131,5 +132,38 @@ public final class BuildPreviewEngine {
     /// Simple performance metrics placeholder.
     public func performanceMetrics() -> [String: Double] {
         ["loadTime": 1.0, "memory": 100.0, "fps": 60.0]
+    }
+
+    /// Compute a simple diff between two code strings.
+    public func diff(old: String, new: String) -> String {
+        let oldLines = old.split(separator: "\n")
+        let newLines = new.split(separator: "\n")
+        var output: [String] = []
+        for (o, n) in zip(oldLines, newLines) {
+            if o != n { output.append("-\(o)") ; output.append("+\(n)") }
+        }
+        if oldLines.count > newLines.count {
+            for line in oldLines[newLines.count...] { output.append("-\(line)") }
+        } else if newLines.count > oldLines.count {
+            for line in newLines[oldLines.count...] { output.append("+\(line)") }
+        }
+        return output.joined(separator: "\n")
+    }
+
+    /// Return code split into old/new sections for side-by-side preview.
+    public func splitCodePreview(old: String, new: String) -> (String, String) {
+        (old, new)
+    }
+
+    /// Log a warning message to be displayed in preview panels.
+    public func logWarning(_ message: String) {
+        warnings.append(message)
+        logEvent("Warning: \(message)")
+    }
+
+    /// Preview a form's logic flow and return a textual representation.
+    public func previewFormLogic(template: FormTemplate) -> String {
+        let arrows = template.fields.map { $0.name }.joined(separator: " -> ")
+        return "[Logic] " + arrows
     }
 }
