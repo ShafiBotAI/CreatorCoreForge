@@ -42,7 +42,8 @@ import {
   UnifiedAudioEngine,
   UnifiedVideoEngine,
   AdaptiveLearningEngine,
-  PerformanceService
+  PerformanceService,
+  VisualRenderer
 } from "../src/index.ts";
 const engine = UnifiedAudioEngine.shared;
 engine.setVolume(1.5);
@@ -66,6 +67,13 @@ assert.strictEqual(learn.completionCount('l1'), 1);
 const perf = new PerformanceService();
 const opt = perf.adjustSettings({ gpuScore: 9, memory: 16 });
 assert.strictEqual(opt.resolution, 2160);
+
+const renderer = new VisualRenderer();
+const rendered = await renderer.render({ frames: [Buffer.from('f')] });
+assert.strictEqual(rendered.frames.length, 1);
+assert.strictEqual(rendered.audio.length, 0);
+assert.strictEqual(rendered.style, 'default');
+
 
 
 console.log('New features tests passed');

@@ -16,7 +16,7 @@ Purpose: Next-gen AI tool for lead generation, prospecting, and B2B intelligence
 - [x] Auto-personalize outreach scripts
 - [x] Score and qualify lead segments
 - [x] Recommend high-converting personas
-- [ ] Fix and complete the `.pbxproj` project file (Codex)
+- [x] Fix and complete the `.pbxproj` project file (Codex)
 
 ### Files of Interest:
 - `LeadMiner.swift`
@@ -44,7 +44,7 @@ Purpose: Next-gen AI tool for lead generation, prospecting, and B2B intelligence
 - [x] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
 - [x] TenTimesPlaybackSpeed
-- [ ] AdvancedSkipImport
+ - [x] AdvancedSkipImport
 - [x] AISummaryChatService
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer

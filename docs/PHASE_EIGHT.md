@@ -8,10 +8,10 @@ Only a subset of those features are shown below for brevity.
 
 ## Tier Features
 
-- [ ] **Free** – Core functionality across apps, Limited export options, Access to community templates
-- [ ] **Creator** – Advanced AI tools, Voice cloning and adaptive scene builders, Personal dashboards and statistics
-- [ ] **Enterprise** – Team collaboration and permissions, White label deployment, Analytics and compliance reports
-- [ ] **NSFW** – Explicit content toggle, Consent logs and vaults, Premium NSFW packs
+- [x] **Free** – Core functionality across apps, Limited export options, Access to community templates
+- [x] **Creator** – Advanced AI tools, Voice cloning and adaptive scene builders, Personal dashboards and statistics
+- [x] **Enterprise** – Team collaboration and permissions, White label deployment, Analytics and compliance reports
+- [x] **NSFW** – Explicit content toggle, Consent logs and vaults, Premium NSFW packs
 
 ## Application Feature Goals
 
@@ -95,31 +95,6 @@ Only a subset of those features are shown below for brevity.
 - [x] AppStoreIntegration
 - [x] SettingsPanel
 - [x] CreatorPanel
-=======
-- [ ] BookImporter
-- [ ] ChapterDetector
-- [ ] SegmentService
-- [ ] VoiceManager
-- [ ] TTSService
-- [ ] InlineEmotionEngine
-- [ ] AmbientMixer
-- [ ] PlaybackAnalytics
- - [x] SleepMode
-- [ ] CharacterMemoryEngine
-- [ ] VoiceAdvisorAI
-- [ ] CustomVoiceUploads
-- [ ] MultiverseVoiceSystem
-- [ ] QuantumSceneLogic
-- [ ] NeuralOptimizer
-- [ ] CreditSystem
-- [ ] OfflineDownloadQueue
-- [ ] ExportTools
-- [ ] NSFWVoiceEngine
-- [ ] StealthMode
-- [ ] ExperimentalFX
-- [ ] AppStoreIntegration
-- [ ] SettingsPanel
-- [ ] CreatorPanel
 
 
 ### CoreForgeVisual
@@ -201,9 +176,9 @@ Only a subset of those features are shown below for brevity.
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
 - [x] VideoEffectsPipeline
-- [ ] Figma-driven UI builder
-- [ ] Auto bundler for all platforms
-- [ ] Debugging assistant
+- [x] Figma-driven UI builder
+- [x] Auto bundler for all platforms
+- [x] Debugging assistant
 
 ### CoreForgeStudio
 - [x] UnifiedAudioEngine
@@ -219,7 +194,7 @@ Only a subset of those features are shown below for brevity.
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
 - [x] VideoEffectsPipeline
-- [ ] Real-time ensemble acting
+- [x] Real-time ensemble acting
 - [x] Quantum edit mode
 - [x] Template monetization
 
@@ -237,9 +212,9 @@ Only a subset of those features are shown below for brevity.
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
 - [x] VideoEffectsPipeline
-- [ ] AI vocal production
-- [ ] Commercial export tools
-- [ ] Voice cloning
+- [x] AI vocal production
+- [x] Commercial export tools
+- [x] Voice cloning
 
 ### CoreForgeLeads
 - [x] UnifiedAudioEngine
@@ -255,9 +230,9 @@ Only a subset of those features are shown below for brevity.
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
 - [x] VideoEffectsPipeline
-- [ ] Marketplace credit system
-- [ ] Global lead exchange
-- [ ] Advanced scoring
-- [ ] AdaptiveDocScanner module
+- [x] Marketplace credit system
+- [x] Global lead exchange
+- [x] Advanced scoring
+- [x] AdaptiveDocScanner module
 
 Use this checklist to track progress as we implement Phase 8 capabilities across every app.

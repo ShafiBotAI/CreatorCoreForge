@@ -207,6 +207,7 @@
 - **PluginBuilder:** Generates basic plugin templates for new dashboard modules
 - **AIStudioMode:** Adds a studio prefix to prompts when testing features
 - **GenesisModeEngine:** Produces variant ideas for apps and content
+- **SelfRepairEngine:** Scans all app folders and fixes simple `fatalError` placeholders via `BuildImprovementEngine`.
 
 ---
 
@@ -313,6 +314,12 @@ When this flag is active, both audio and video generation rely entirely on the
 local engines (`LocalVoiceAI` and the video routines in `CreatorCoreForge`), so
 clips and narration can be produced without any network connection.
 
+## App Store Compliance
+
+For iOS builds, features that provide explicit NSFW content or haptic device integration are disabled. Age gating and parental controls remain enabled so the apps meet Apple's App Store Review Guidelines.
+Data usage complies with privacy requirements, and only finalized, non-spammy features are shipped.
+See [docs/AppStore_Compliance.md](docs/AppStore_Compliance.md) for more information.
+
 ## Global Missing Items
 
 The following components are planned across all apps but are still works in progress:
@@ -361,6 +368,7 @@ Use `scripts/chatterbox_bridge.py` to generate a narrated play from a simple `SP
 ```
 
 Run `scripts/progress_bot.py` to view app progress and generate snippet files for missing features.
+Run `scripts/generate_app_completion_report.py` to update `app_completion_report.json` and `docs/App_Completion_Summary.md`.
 See `docs/progress_bot.md` for usage details.
 ## Running Tests
 

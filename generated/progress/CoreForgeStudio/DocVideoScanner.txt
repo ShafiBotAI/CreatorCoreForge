@@ -2,4 +2,3 @@
 def docvideoscanner():
     """DocVideoScanner"""
     pass
-

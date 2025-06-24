@@ -1,5 +1,59 @@
+
 # Auto-generated for PromptTemplates.md (AI workflows, sample prompts)
-def prompttemplates_md_ai_workflows_sample():
+def prompttemplates_md_ai():
     """PromptTemplates.md (AI workflows, sample prompts)"""
     pass
+=======
+"""Prompt Template Parser
+
+This module parses a Markdown file containing AI workflow
+prompt templates. Templates are returned in a structured form
+for use throughout the application.
+"""
+from __future__ import annotations
+
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Dict, List
+import asyncio
+import re
+
+
+@dataclass
+class PromptTemplate:
+    """Container for a single prompt template."""
+    title: str
+    body: str
+
+
+class PromptTemplateParser:
+    """Parser for markdown-based prompt templates."""
+
+    TEMPLATE_HEADING = re.compile(r"^###\s*(.+)")
+
+    def __init__(self, path: Path):
+        self.path = path
+
+    async def parse(self) -> List[PromptTemplate]:
+        """Asynchronously parse templates from the markdown file."""
+        loop = asyncio.get_event_loop()
+        content = await loop.run_in_executor(None, self.path.read_text)
+        return self._parse_content(content)
+
+    def _parse_content(self, text: str) -> List[PromptTemplate]:
+        templates: List[PromptTemplate] = []
+        current_title = None
+        current_body: List[str] = []
+        for line in text.splitlines():
+            heading_match = self.TEMPLATE_HEADING.match(line)
+            if heading_match:
+                if current_title:
+                    templates.append(PromptTemplate(current_title, "\n".join(current_body).strip()))
+                current_title = heading_match.group(1)
+                current_body = []
+            else:
+                current_body.append(line)
+        if current_title:
+            templates.append(PromptTemplate(current_title, "\n".join(current_body).strip()))
+        return templates
 

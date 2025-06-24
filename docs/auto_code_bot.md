@@ -8,6 +8,24 @@
 python scripts/auto_code_bot.py
 ```
 
+To replace existing placeholder files with new code generated via OpenAI, run:
+
+```bash
+python scripts/auto_code_bot.py --upgrade-placeholders
+```
+
 The script outputs generated files in subdirectories of `generated/`, one per app. These files are safe to edit or replace with full implementations.
 
 Generated filenames now match the detected language. For example, a Swift feature results in `feature.swift`, while a Python task becomes `feature.py`. Every run also scans existing Python files and comments out lines with syntax errors to keep the repository importable when offline.
+
+
+### New Features
+
+- `--tasks-file my_tasks.txt` – optionally generate code for custom task lines
+  contained in `my_tasks.txt`. Generated files are placed under
+  `generated/manual/`.
+- Offline mode now detects common keywords and produces more complete templates
+  for CLI scripts, simple Flask APIs, or contact registries when OpenAI is not
+  available.
+=======
+In addition to the `generated/` folder, each run now writes a copy of the snippet into language specific folders under `output/`. The filename is suffixed with a timestamp for easy version tracking, e.g. `output/python/login_handler_20240101123000.py`.

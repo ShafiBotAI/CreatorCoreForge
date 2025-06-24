@@ -2,4 +2,3 @@
 def procedural_challenge_generator():
     """Procedural challenge generator"""
     pass
-

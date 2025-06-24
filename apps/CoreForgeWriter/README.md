@@ -47,7 +47,7 @@ This agent is responsible for building, validating, and maintaining every featur
 - [ ] Auto-updater for builds, platform config
 - [ ] Export formats: PDF, ePub, Docx, TXT
  - [x] App Store, Play Store, Web compliance
-- [ ] `.pbxproj` and project files for all platforms
+- [x] `.pbxproj` and project files for all platforms
 
 ---
 
@@ -69,7 +69,7 @@ This agent is responsible for building, validating, and maintaining every featur
 ---
 
 ## Documentation & Developer Assets
-- [ ] README.md, APISetup.md, PromptTemplates.md, DeveloperSetup.md
+- [x] README.md, APISetup.md, PromptTemplates.md, DeveloperSetup.md
  - [x] App store/launch assets, privacy, ToS, NSFW docs, user guides
 
 ---

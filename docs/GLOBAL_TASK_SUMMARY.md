@@ -6,22 +6,27 @@
 - Review cross-app asset licensing
 
 ## apps/CoreForgeAudio
-- AdvancedSkipImport
-- AutoFormatDialogue
-- TraitMemoryPersistence
-- CanonMemoryGraph
-- MemoryAnchorService
-- MultiverseBookLinker
-- AutoTranslateService
-- AccentSwitcher
-- MultilingualVoiceBlend
-- SemanticSegmenter
-- SceneIndexGenerator
-- LongFormPacingEngine
+- AdvancedSkipImport ✅
+- AutoFormatDialogue ✅
+- TraitMemoryPersistence ✅
+- CanonMemoryGraph ✅
+- MemoryAnchorService ✅
+- MultiverseBookLinker ✅
+- AutoTranslateService ✅
+- AccentSwitcher ✅
+- MultilingualVoiceBlend ✅
+- SemanticSegmenter ✅
+- SceneIndexGenerator ✅
+- LongFormPacingEngine ✅
+- FullBookRender ✅
+- AudiobookStoreExporter ✅
+- PublishingReportGenerator ✅
+=======
 - FullBookRender
 - AudiobookStoreExporter
 - PublishingReportGenerator
-- SeriesManager
+
+- SeriesManager ✅
 - InlineEmotionEngine
 - AmbientMixer
 - PlaybackAnalytics
@@ -48,14 +53,14 @@
 - AmbientLayerFX
 - CrossSceneFXLinking
 - SceneDensityTuner
-- MultiTrackExport
-- EmotionCurveVisualizer
+  - ~~MultiTrackExport~~ (implemented)
+  - EmotionCurveVisualizer
 - VoiceAwarePacing
 - ToneConsistencyChecker
 - ConflictFXEnhancer
 - MoodColorCoder
 - AICastingDirector
-- VoiceApprovalWorkflow
+  - ~~VoiceApprovalWorkflow~~ (implemented)
 - ScriptSnippetInjector
 - CreatorSandboxMode
 - DualNarratorToggle

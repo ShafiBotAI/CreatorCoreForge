@@ -195,28 +195,34 @@ This file is a full checklist of every feature required for code completion and 
 - [x] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
 - [x] TenTimesPlaybackSpeed
-- [ ] AdvancedSkipImport
+ - [x] AdvancedSkipImport
 - [x] AISummaryChatService
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
 - [x] DocumentParser
 - [x] OCRScanMode
  - [x] BatchImportTool
-- [ ] AutoFormatDialogue
-- [ ] TraitMemoryPersistence
-- [ ] CanonMemoryGraph
-- [ ] MemoryAnchorService
-- [ ] MultiverseBookLinker
-- [ ] AutoTranslateService
-- [ ] AccentSwitcher
-- [ ] MultilingualVoiceBlend
-- [ ] SemanticSegmenter
-- [ ] SceneIndexGenerator
-- [ ] LongFormPacingEngine
+- [x] AutoFormatDialogue
+- [x] TraitMemoryPersistence
+- [x] CanonMemoryGraph
+- [x] MemoryAnchorService
+- [x] MultiverseBookLinker
+- [x] AutoTranslateService
+ - [x] AccentSwitcher
+- [x] MultilingualVoiceBlend
+- [x] SemanticSegmenter
+- [x] SceneIndexGenerator
+- [x] LongFormPacingEngine
+
+- [x] FullBookRender
+- [x] AudiobookStoreExporter
+- [x] PublishingReportGenerator
+=======
 - [ ] FullBookRender
 - [ ] AudiobookStoreExporter
 - [ ] PublishingReportGenerator
-- [ ] SeriesManager
+
+- [x] SeriesManager
  - [x] BookImporter
  - [x] ChapterDetector
  - [x] SegmentService
@@ -233,20 +239,6 @@ This file is a full checklist of every feature required for code completion and 
 - [x] MultiverseVoiceSystem
 - [x] QuantumSceneLogic
 - [x] NeuralOptimizer
-=======
- - [x] VoiceManager
- - [x] TTSService
- - [ ] InlineEmotionEngine
- - [ ] AmbientMixer
- - [ ] PlaybackAnalytics
- - [x] SleepMode
- - [x] CharacterMemoryEngine
- - [ ] VoiceAdvisorAI
- - [ ] CustomVoiceUploads
- - [ ] MultiverseVoiceSystem
- - [ ] QuantumSceneLogic
- - [ ] NeuralOptimizer
-
  - [x] CreditSystem
 - [x] OfflineDownloadQueue
 - [x] ExportTools
@@ -274,14 +266,14 @@ This file is a full checklist of every feature required for code completion and 
 - [ ] AmbientLayerFX
 - [ ] CrossSceneFXLinking
 - [ ] SceneDensityTuner
-- [ ] MultiTrackExport
+ - [x] MultiTrackExport
 - [ ] EmotionCurveVisualizer
 - [ ] VoiceAwarePacing
 - [ ] ToneConsistencyChecker
 - [ ] ConflictFXEnhancer
 - [ ] MoodColorCoder
-- [ ] AICastingDirector
-- [ ] VoiceApprovalWorkflow
+ - [x] AICastingDirector
+ - [x] VoiceApprovalWorkflow
 - [ ] ScriptSnippetInjector
 - [ ] CreatorSandboxMode
 - [ ] DualNarratorToggle
@@ -468,12 +460,6 @@ Key points from `README.md`:
 - [x] Auto-adjust emotion modulation when characters encounter variants of themselves
 - [x] Embed multiverse state tags into export files for advanced metadata
 - [x] Allow experimental rendering mode with parallel timeline mix
-=======
-- [ ] Support "multiverse collapse" audio effect when timelines converge
-- [ ] Enable alternate endings per timeline with unique tonal conclusions
-- [x] Fork narrator tone for speculative/what-if chapters
-- [x] Store multiverse path data in playback history and sync across devices
-- [x] Integrate "director notes" mode to highlight multiverse scenes
 - [ ] Allow hidden timeline unlocks based on listener behavior
 - [ ] Provide multiverse context summaries for catching up mid-path
 - [ ] Support flashback-within-alternate-timeline scenes

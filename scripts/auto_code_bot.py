@@ -2,6 +2,7 @@ import os
 import re
 import py_compile
 from typing import List
+from datetime import datetime
 
 try:
     import openai
@@ -10,10 +11,31 @@ except ImportError:
     OPENAI_AVAILABLE = False
 
 from feature_audit import scan_repo
+import argparse
+
+
+def parse_tasks_file(path: str) -> List[str]:
+    """Return a list of task descriptions from a plain text file."""
+    tasks: List[str] = []
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip().lstrip("- ")
+                if line:
+                    tasks.append(line)
+    except Exception:
+        pass
+    return tasks
 
 
 def offline_snippet(description: str, ext: str) -> str:
-    """Return a language-aware placeholder snippet."""
+    """Return a language-aware placeholder snippet.
+
+    The logic attempts to create slightly more useful code templates when
+    running without OpenAI access.  Simple heuristics detect whether a task
+    describes a CLI script, an HTTP service, or a small data registry and
+    returns a fitting skeleton instead of a bare ``pass`` statement.
+    """
     tokens = re.findall(r"[a-zA-Z_]+", description)[:3]
     base = sanitize("_".join(tokens).lower()) or "feature"
     lower = description.lower()
@@ -24,6 +46,39 @@ def offline_snippet(description: str, ext: str) -> str:
         return f"fun {base}() {{\n    // {description}\n}}\n"
     if ext == ".ts" or "typescript" in lower or "javascript" in lower:
         return f"export function {base}() {{\n  // {description}\n}}\n"
+
+    if ext == ".py":
+        if any(k in lower for k in ["cli", "script", "command line", "steps"]):
+            return (
+                "import argparse\n\n"
+                f"def main():\n"
+                f"    \"\"\"{description}\"\"\"\n"
+                "    parser = argparse.ArgumentParser(description=\""" + description + "\")\n"
+                "    parser.add_argument('--verbose', action='store_true')\n"
+                "    args = parser.parse_args()\n"
+                "    print('Running', args)\n\n"
+                "if __name__ == '__main__':\n"
+                "    main()\n"
+            )
+        if any(k in lower for k in ["server", "http", "api"]):
+            return (
+                "from flask import Flask, jsonify\n\n"
+                f"app = Flask(__name__)\n\n"
+                f"@app.route('/{base}', methods=['GET'])\n"
+                f"def {base}():\n"
+                f"    \"\"\"{description}\"\"\"\n"
+                "    return jsonify(status='ok')\n\n"
+                "if __name__ == '__main__':\n"
+                "    app.run(debug=True)\n"
+            )
+        if "contact" in lower:
+            return (
+                "CONTACTS = {}\n\n"
+                "def add_contact(name: str, email: str) -> None:\n"
+                "    CONTACTS[name] = email\n\n"
+                "def get_contact(name: str) -> str | None:\n"
+                "    return CONTACTS.get(name)\n"
+            )
 
     if "class" in lower:
         class_name = base.title().replace("_", "")
@@ -57,6 +112,31 @@ def determine_extension(description: str) -> str:
     if "typescript" in lower or "javascript" in lower:
         return ".ts"
     return ".py"
+
+
+def language_from_extension(ext: str) -> str:
+    """Map a file extension to a language name for the output directory."""
+    mapping = {
+        ".py": "python",
+        ".ts": "javascript",
+        ".js": "javascript",
+        ".swift": "swift",
+        ".kt": "kotlin",
+    }
+    return mapping.get(ext, "misc")
+
+
+def save_output_snippet(base_path: str, feature: str, ext: str, snippet: str) -> None:
+    """Save the snippet in /output/<language> with a timestamp."""
+    language = language_from_extension(ext)
+    output_dir = os.path.join(base_path, "output", language)
+    os.makedirs(output_dir, exist_ok=True)
+    timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
+    fname = f"{sanitize(feature)}_{timestamp}{ext}"
+    out_path = os.path.join(output_dir, fname)
+    with open(out_path, "w", encoding="utf-8") as out:
+        out.write(f"# Auto-generated for {feature}\n")
+        out.write(snippet)
 
 
 def generate_snippet(description: str, ext: str) -> str:
@@ -117,7 +197,7 @@ def fix_repo_code(repo_path: str) -> None:
                 fix_python_file(path)
 
 
-def create_files(repo_path: str) -> None:
+def create_files(repo_path: str, extra_tasks: List[str] | None = None) -> None:
     result = scan_repo(repo_path)
     gen_root = os.path.join(repo_path, "generated")
     os.makedirs(gen_root, exist_ok=True)
@@ -138,10 +218,72 @@ def create_files(repo_path: str) -> None:
             with open(fpath, "w", encoding="utf-8") as f:
                 f.write(f"# Auto-generated for {feature}\n")
                 f.write(snippet)
+            save_output_snippet(repo_path, feature, ext, snippet)
+
+    if extra_tasks:
+        manual_dir = os.path.join(gen_root, "manual")
+        os.makedirs(manual_dir, exist_ok=True)
+        for feature in extra_tasks:
+            ext = determine_extension(feature)
+            fname = sanitize(feature) + ext
+            fpath = os.path.join(manual_dir, fname)
+            if os.path.exists(fpath):
+                continue
+            snippet = generate_snippet(feature, ext)
+            with open(fpath, "w", encoding="utf-8") as f:
+                f.write(f"# Auto-generated for {feature}\n")
+                f.write(snippet)
+
+
+def _parse_placeholder_line(line: str) -> str | None:
+    match = re.search(r"Auto-generated for\s+(.*)", line)
+    if match:
+        return match.group(1).strip()
+    return None
+
+
+def upgrade_placeholders(gen_root: str) -> None:
+    for root, _, files in os.walk(gen_root):
+        for name in files:
+            path = os.path.join(root, name)
+            try:
+                with open(path, "r", encoding="utf-8") as f:
+                    first = f.readline()
+            except Exception:
+                continue
+            feature = _parse_placeholder_line(first)
+            if not feature:
+                continue
+            ext = os.path.splitext(name)[1]
+            snippet = generate_snippet(feature, ext)
+            with open(path, "w", encoding="utf-8") as f:
+                f.write(first)
+                f.write(snippet)
+            base_repo = os.path.abspath(os.path.join(gen_root, ".."))
+            save_output_snippet(base_repo, feature, ext, snippet)
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Generate or upgrade placeholder code files")
+    parser.add_argument(
+        "--upgrade-placeholders",
+        action="store_true",
+        help="Replace existing placeholders in the generated folder using OpenAI",
+    )
+    parser.add_argument(
+        "--tasks-file",
+        help="Optional text file containing additional tasks to generate code for",
+    )
+    args = parser.parse_args()
+
     repo = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-    create_files(repo)
+
+    extra = parse_tasks_file(args.tasks_file) if args.tasks_file else None
+
+    if args.upgrade_placeholders:
+        upgrade_placeholders(os.path.join(repo, "generated"))
+    else:
+        create_files(repo, extra_tasks=extra)
+
     fix_repo_code(repo)
-    print("Auto code generation complete. Check the 'generated' folder.")
+    print("Auto code generation complete. Check the 'generated' and 'output' folders.")
