@@ -8,16 +8,16 @@
 ## apps/CoreForgeAudio
 - AdvancedSkipImport ✅
 - AutoFormatDialogue ✅
-- TraitMemoryPersistence
-- CanonMemoryGraph
-- MemoryAnchorService
+- TraitMemoryPersistence ✅
+- CanonMemoryGraph ✅
+- MemoryAnchorService ✅
 - MultiverseBookLinker
-- AutoTranslateService
+- AutoTranslateService ✅
 - AccentSwitcher ✅
-- MultilingualVoiceBlend
-- SemanticSegmenter
-- SceneIndexGenerator
-- LongFormPacingEngine
+- MultilingualVoiceBlend ✅
+- SemanticSegmenter ✅
+- SceneIndexGenerator ✅
+- LongFormPacingEngine ✅
 - FullBookRender
 - AudiobookStoreExporter
 - PublishingReportGenerator

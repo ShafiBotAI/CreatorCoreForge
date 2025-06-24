@@ -203,16 +203,16 @@ This file is a full checklist of every feature required for code completion and 
 - [x] OCRScanMode
  - [x] BatchImportTool
 - [x] AutoFormatDialogue
-- [ ] TraitMemoryPersistence
-- [ ] CanonMemoryGraph
-- [ ] MemoryAnchorService
+- [x] TraitMemoryPersistence
+- [x] CanonMemoryGraph
+- [x] MemoryAnchorService
 - [ ] MultiverseBookLinker
-- [ ] AutoTranslateService
+- [x] AutoTranslateService
  - [x] AccentSwitcher
-- [ ] MultilingualVoiceBlend
-- [ ] SemanticSegmenter
-- [ ] SceneIndexGenerator
-- [ ] LongFormPacingEngine
+- [x] MultilingualVoiceBlend
+- [x] SemanticSegmenter
+- [x] SceneIndexGenerator
+- [x] LongFormPacingEngine
 - [ ] FullBookRender
 - [ ] AudiobookStoreExporter
 - [ ] PublishingReportGenerator
