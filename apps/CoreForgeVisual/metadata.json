@@ -1,0 +1,9 @@
+{
+  "app_name": "CoreForge Visual",
+  "version": "1.0.0",
+  "bundle_id": "com.creatorcoreforge.visual",
+  "keywords": ["book to video", "AI animation", "storyboard", "cinematic"],
+  "developer": "CreatorCoreForge",
+  "category": "Photo & Video",
+  "platforms": ["iOS", "Android", "Windows", "macOS", "Web"]
+}

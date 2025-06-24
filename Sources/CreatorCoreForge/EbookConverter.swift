@@ -1,4 +1,7 @@
 import Foundation
+#if canImport(AVFoundation)
+import AVFoundation
+#endif
 
 /// Represents a single audio segment generated from a chapter.
 public struct AudioSegment {
@@ -7,20 +10,54 @@ public struct AudioSegment {
 }
 
 /// Simple converter that splits an ebook's text by blank lines and generates
-/// placeholder audio file URLs for each chapter.
+/// synthesized audio files for each chapter. Uses `LocalVoiceAI` on all
+/// platforms and `AVFoundation` when available for higher quality output.
 public final class EbookConverter {
-    public init() {}
+    private let voiceAI: LocalVoiceAI
+    private let voice: VoiceProfile
+    private let sampleRate: Int
+    private let maxConcurrentSynth: Int
+
+    public init(profile: VoiceProfile = VoiceProfile(name: "Narrator"),
+                sampleRate: Int = 44100,
+                maxConcurrentSynth: Int = 2) {
+        self.voiceAI = LocalVoiceAI()
+        self.voice = profile
+        self.sampleRate = sampleRate
+        self.maxConcurrentSynth = maxConcurrentSynth
+    }
 
     /// Convert raw ebook text into audio segments.
     public func convertEbookToAudio(ebookText: String) -> [AudioSegment] {
         let chapters = ebookText.components(separatedBy: "\n\n")
         var results: [AudioSegment] = []
+        let group = DispatchGroup()
+        let lock = DispatchQueue(label: "ebook.converter.lock")
+        let semaphore = DispatchSemaphore(value: maxConcurrentSynth)
+
         for (index, chapter) in chapters.enumerated() {
-            let fileURL = "/local/audio/chapter_\(index + 1).mp3"
-            // Placeholder logic for generating audio
-            print("Converting Chapter \(index + 1): \(chapter.prefix(30))...")
-            results.append(AudioSegment(chapter: chapter, audioFileURL: fileURL))
+            group.enter()
+            semaphore.wait()
+            let tempURL = FileManager.default.temporaryDirectory
+                .appendingPathComponent("chapter\(index + 1)")
+                .appendingPathExtension("wav")
+
+            voiceAI.synthesize(text: chapter,
+                               with: voice,
+                               sampleRate: sampleRate) { result in
+                if case .success(let data) = result {
+                    try? data.write(to: tempURL)
+                }
+                lock.sync {
+                    results.append(AudioSegment(chapter: chapter,
+                                                audioFileURL: tempURL.path))
+                }
+                semaphore.signal()
+                group.leave()
+            }
         }
-        return results
+
+        group.wait()
+        return results.sorted { $0.audioFileURL < $1.audioFileURL }
     }
 }

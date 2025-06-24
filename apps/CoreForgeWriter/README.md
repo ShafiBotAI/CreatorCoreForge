@@ -1,25 +1,116 @@
-# CoreForge Writer
+# Agent: Full Feature Integration – CoreForge Writer
 
-CoreForge Writer is a writing assistant focused on book creation. The iOS client is built with SwiftUI while desktop versions target Electron and .NET MAUI.
+## Description
+This agent is responsible for building, validating, and maintaining every feature of the CoreForge Writer application. It ensures robust AI writing, genre adaptation, persistent world/character memory, collaboration, monetization, privacy, and full NSFW expansion.
 
-## Key Features
-- **Series-based memory** for tracking characters and plots
-- **Genre templates** with fast draft mode
-- **Promo code unlocks** for additional content
-- **Video sharing** to social platforms
-- **Export to ePub, PDF, and audiobook formats** via `BookExporter`
-- **Automatic character voice mapping** with `CharacterVoiceMapper`
-- **Bestseller structure engine** for common outlines
-- **Multi-book generation** supporting large series
-- **Import ePub, PDF, and TXT files** via `EbookImporter`
-- **NSFW toggle with parental PIN lock**
-- **NSFW habit behavior simulator** for vocal reactions during narration
+## Objectives
+- [ ] End-to-end AI writing studio (books, scripts, stories)
+- [ ] Persistent character/world memory and creative DNA
+ - [x] Support for iOS, Android, PC, macOS, Web
+- [ ] Multilingual, NSFW gating, offline writing, community/marketplace
 
-## Building (iOS)
-1. Open `InkwellAIFull/InkwellAI.xcodeproj` in Xcode.
-2. Select the **InkwellAI** scheme and run on your device or simulator.
+---
 
-## Offline Mode
-Enable the environment variable `USE_LOCAL_AI=1` to run CoreForge Writer without
-network access. The shared `FusionEngine` will automatically select
-`LocalAIEnginePro` to generate responses locally.
+## Core Features (Detailed)
+
+### Core Functionalities
+- [ ] Import/export PDF, ePub, TXT, Docx
+- [ ] AI co-writing, rewriting, genre adaptation
+- [ ] Persistent character/world memory, creative DNA
+- [ ] Scene/chapter/plot builder UI
+- [ ] Peer/community feedback, review, collaboration tools
+- [ ] Monetizable story packs, templates, review marketplace
+- [ ] Subscription/credit engine, affiliate dashboard
+- [ ] Offline writing and save, encrypted vaults
+
+### AI & API Integration
+- [ ] OpenAI/LocalAI creative, genre, and plot modeling
+- [x] FusionEngine macro scripting, plugin extensions
+- [ ] Prompt enhancer, style adaptation, memory linking
+- [ ] Cross-app asset/memory import/export
+- [ ] Admin dashboard: usage, quota, reporting, moderation
+
+### UX/UI Components
+- [ ] Drag-and-drop scene/chapter/plot editor
+- [x] Settings for style, NSFW filter, accessibility
+- [ ] Dark/light mode, multiple fonts, focus mode
+- [ ] Version history, backup/restore, undo/redo
+- [ ] Feedback/review UI, progress dashboard
+- [ ] Community/marketplace browse, buy, sell
+
+---
+
+## System Integration Requirements
+- [ ] LocalAI, prompt templating, plugin support
+- [ ] GDPR, CCPA, COPPA compliance, secure API key
+- [ ] Firebase/Firestore (or equivalent): Auth, Storage, Analytics
+- [ ] Auto-updater for builds, platform config
+- [ ] Export formats: PDF, ePub, Docx, TXT
+ - [x] App Store, Play Store, Web compliance
+- [x] `.pbxproj` and project files for all platforms
+
+---
+
+## Testing Requirements
+- [x] Unit/integration tests (AI writing, memory, import/export)
+- [ ] UI/UX tests (all platforms)
+- [ ] Accessibility (screen readers, vision)
+- [ ] Performance (large docs, fast AI, low-latency)
+- [ ] Security, privacy, NSFW gating tests
+
+---
+
+## Deployment & CI/CD
+- [ ] GitHub Actions, multi-platform
+- [ ] Tagging, changelogs, automated deploy (TestFlight, Play, Drive)
+- [ ] Auto-updater for features/models
+ - [x] App store asset/policy checks
+
+---
+
+## Documentation & Developer Assets
+- [x] README.md, APISetup.md, PromptTemplates.md, DeveloperSetup.md
+ - [x] App store/launch assets, privacy, ToS, NSFW docs, user guides
+
+---
+
+## Next-Gen & Phase 8 Features
+- [ ] Quantum story forking, alternate ending generator
+- [ ] Emotional arc, creative DNA tree, multiverse plotting
+- [ ] AI “what if?” explorer, memory pinning, feedback optimizer
+- [ ] Macro scripting, versioning, lore/encyclopedia builder
+- [ ] Peer review, NFT licensing, paid templates
+- [ ] Fan challenges, viral writing, leaderboard
+- [ ] Live collaboration, community voting, gamified writing
+
+---
+
+## NSFW Features & Expansion (If Enabled)
+- [ ] Erotic/romance scene AI, consent tools
+- [ ] Explicit language, privacy vaults, secret clubs
+- [ ] Paywall, tip jar, premium NSFW stories
+- [ ] Community moderation, age/ID controls
+- [ ] NSFW sandbox, decoy/stealth mode
+- [x] NSFW content mode dial (slow, medium, extreme)
+
+---
+
+## Global Missing/Launch Items
+- [ ] All platform project files, export tests
+- [ ] Final UI/UX polish, onboarding flows
+- [ ] Accessibility and compliance review
+- [ ] Full CI/CD pipeline and test deployment
+
+---
+
+## Codex/AI Agent Note
+Every unchecked item is a priority. Use as requirements for app completion, verification, and compliance.
+
+## App Capabilities
+
+Highlighted capabilities from `features-phase8.json`:
+- UnifiedAudioEngine
+- UnifiedVideoEngine
+- AdaptiveLearningEngine
+- Memory pinning
+- Quantum-choice plotting

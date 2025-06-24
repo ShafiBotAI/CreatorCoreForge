@@ -18,6 +18,23 @@ final class LocalVoiceAITests: XCTestCase {
         wait(for: [expectation], timeout: 1)
     }
 
+    func testCustomSampleRate() {
+        let engine = LocalVoiceAI()
+        let profile = VoiceProfile(name: "Test")
+        let expectation = XCTestExpectation(description: "rate")
+        engine.synthesize(text: "Hi", with: profile, sampleRate: 22_050) { result in
+            switch result {
+            case .success(let data):
+                let rate = data.subdata(in: 24..<28).withUnsafeBytes { $0.load(as: UInt32.self) }
+                XCTAssertEqual(rate, 22_050)
+            case .failure:
+                XCTFail("Unexpected failure")
+            }
+            expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: 1)
+    }
+
     func testCloneProducesProfile() {
         let engine = LocalVoiceAI()
         let expectation = XCTestExpectation(description: "clone")
@@ -29,3 +46,4 @@ final class LocalVoiceAITests: XCTestCase {
         wait(for: [expectation], timeout: 1)
     }
 }
+

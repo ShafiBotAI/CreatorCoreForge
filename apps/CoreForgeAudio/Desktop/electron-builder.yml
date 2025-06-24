@@ -1,0 +1,6 @@
+appId: com.creatorcoreforge.audio
+productName: CoreForgeAudio
+files:
+  - '**/*'
+directories:
+  output: dist

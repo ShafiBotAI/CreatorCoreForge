@@ -1,20 +1,25 @@
 import Foundation
 
-/// Simple forecasting engine placeholder.
+/// Lightweight forecasting engine using an exponential moving average.
 public final class TitanEngine {
     private var history: [Double] = []
+    private let smoothing: Double
 
-    public init() {}
+    public init(smoothing: Double = 0.3) {
+        self.smoothing = smoothing
+    }
 
     public func log(price: Double) {
         history.append(price)
     }
 
-    /// Return a naive forecast based on average change.
+    /// Returns the next predicted value using EMA of the logged prices.
     public func forecastNext() -> Double? {
-        guard history.count > 1 else { return history.last }
-        let deltas = zip(history.dropFirst(), history).map(-)
-        let avg = deltas.reduce(0, +) / Double(deltas.count)
-        return history.last.map { $0 + avg }
+        guard !history.isEmpty else { return nil }
+        var ema = history[0]
+        for value in history.dropFirst() {
+            ema = smoothing * value + (1 - smoothing) * ema
+        }
+        return ema
     }
 }

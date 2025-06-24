@@ -9,4 +9,11 @@ final class EmotionAnalyzerTests: XCTestCase {
         XCTAssertEqual(analyzer.recommendTone(for: "He was furious"), "angry")
         XCTAssertEqual(analyzer.recommendTone(for: "Just reading"), "calm")
     }
+
+    func testAnalyzeEmotion() {
+        let analyzer = EmotionAnalyzer()
+        let profile = analyzer.analyzeEmotion(from: "I am furious!!")
+        XCTAssertEqual(profile.emotion, "angry")
+        XCTAssertTrue(profile.intensity > 0.5)
+    }
 }

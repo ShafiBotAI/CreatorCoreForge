@@ -1,0 +1,4 @@
+# Auto-generated for EmotionPacingEditor
+def emotionpacingeditor():
+    """EmotionPacingEditor"""
+    pass

@@ -1,0 +1,9 @@
+{
+  "app_name": "CoreForge Writer",
+  "version": "1.0.0",
+  "bundle_id": "com.creatorcoreforge.writer",
+  "keywords": ["AI writing", "co-author", "world building", "multiverse"],
+  "developer": "CreatorCoreForge",
+  "category": "Books & Reference",
+  "platforms": ["iOS", "Android", "Windows", "macOS", "Web"]
+}

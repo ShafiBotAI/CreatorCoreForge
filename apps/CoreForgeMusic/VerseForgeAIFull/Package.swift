@@ -9,9 +9,17 @@ let package = Package(
     products: [
         .library(name: "VerseForgeAI", targets: ["VerseForgeAI"])
     ],
-    dependencies: [],
+    dependencies: [
+        .package(name: "CreatorCoreForge", path: "../../..")
+    ],
     targets: [
-        .target(name: "VerseForgeAI", resources: [.copy("beats.json")]),
+        .target(
+            name: "VerseForgeAI",
+            dependencies: [
+                .product(name: "CreatorCoreForge", package: "CreatorCoreForge")
+            ],
+            resources: [.copy("beats.json")]
+        ),
         .testTarget(name: "VerseForgeAITests", dependencies: ["VerseForgeAI"])
     ]
 )

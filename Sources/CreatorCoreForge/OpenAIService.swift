@@ -53,7 +53,7 @@ public final class OpenAIService {
             ]
             request.httpBody = try? JSONSerialization.data(withJSONObject: body)
 
-            let task = self.session.dataTask(with: request) { data, response, error in
+            let task = self.session.dataTask(with: request) { [attempt] data, response, error in
                 if let error = error {
                     if attempt < self.retries {
                         makeRequest(attempt: attempt + 1)

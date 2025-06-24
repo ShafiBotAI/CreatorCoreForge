@@ -21,4 +21,12 @@ final class VoiceDNAForgeTests: XCTestCase {
         XCTAssertTrue(dna?.linkedCharacters.contains("villain") ?? false)
         XCTAssertEqual(dna?.emotionRange["anger"], 0.5)
     }
+
+    func testGetVoiceProfile() {
+        let forge = VoiceDNAForge.shared
+        forge.resetAllDNA()
+        forge.createDNA(for: "testChar", basePitch: 1.0, cadence: 1.0, toneProfile: "calm", emotionRange: [:], styleTags: [])
+        let dna = forge.getVoiceProfile(for: "testChar")
+        XCTAssertEqual(dna?.toneProfile, "calm")
+    }
 }

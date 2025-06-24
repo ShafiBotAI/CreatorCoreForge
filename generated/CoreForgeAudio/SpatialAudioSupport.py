@@ -1,0 +1,4 @@
+# Auto-generated for SpatialAudioSupport
+def spatialaudiosupport():
+    """SpatialAudioSupport"""
+    pass

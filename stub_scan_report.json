@@ -1,0 +1,306 @@
+{
+  "VoiceLab/src/vaultService.ts": [
+    {
+      "line": 21,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/AutoUpdaterTests.swift": [
+    {
+      "line": 21,
+      "type": "empty_braces_function"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/RealTimeFeedManagerTests.swift": [
+    {
+      "line": 25,
+      "type": "empty_braces_function"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/NetworkInfoProviderTests.swift": [
+    {
+      "line": 21,
+      "type": "empty_braces_function"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/LibrarySyncTests.swift": [
+    {
+      "line": 24,
+      "type": "empty_braces_function"
+    }
+  ],
+  "Tests/CreatorCoreForgeTests/SocialMediaManagerTests.swift": [
+    {
+      "line": 17,
+      "type": "empty_braces_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/AudioExporter.swift": [
+    {
+      "line": 109,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "Sources/CreatorCoreForge/CoreForgeVisual_MissingFeatures.swift": [
+    {
+      "line": 104,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "Sources/CreatorCoreForge/AdaptiveMusicGenerator.swift": [
+    {
+      "line": 60,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "Sources/CreatorCoreForge/NSFWHabitBehaviorSimulator.swift": [
+    {
+      "line": 47,
+      "type": "return_nil_or_null"
+    },
+    {
+      "line": 97,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "Sources/CreatorCoreForge/ChapterManager.swift": [
+    {
+      "line": 14,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "Sources/CreatorCoreForge/VaultService.swift": [
+    {
+      "line": 25,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "Sources/CreatorCoreForge/SceneAtmosphereBuilder.swift": [
+    {
+      "line": 29,
+      "type": "return_nil_or_null"
+    },
+    {
+      "line": 37,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "Sources/CreatorCoreForge/EPUBParser.swift": [
+    {
+      "line": 58,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "Sources/CreatorCoreForge/VoiceManager.swift": [
+    {
+      "line": 20,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "Sources/CreatorCoreForge/VoiceDNAForge.swift": [
+    {
+      "line": 93,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "Sources/CreatorCoreForge/VisualMemoryEngine.swift": [
+    {
+      "line": 14,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "Sources/CreatorCoreForge/EmotionGraph.swift": [
+    {
+      "line": 25,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "Sources/CreatorCoreForge/SoundEffectManager.swift": [
+    {
+      "line": 189,
+      "type": "empty_braces_function"
+    }
+  ],
+  "Sources/CreatorCoreForge/AmbientFXEngine.swift": [
+    {
+      "line": 101,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "apps/CoreForgeAudio/VocalVerseFull/VocalVerse/CharacterVoiceMemory.swift": [
+    {
+      "line": 21,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "apps/CoreForgeAudio/VocalVerseFull/VocalVerse/PromptTemplateLoader.swift": [
+    {
+      "line": 20,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "apps/CoreForgeAudio/VocalVerseFull/VocalVerse/SecureStore.swift": [
+    {
+      "line": 25,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "apps/CoreForgeBloom/PrivateVault.swift": [
+    {
+      "line": 46,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "apps/CoreForgeWriter/InkwellAIFull/InkwellAI/MemoryTracker.swift": [
+    {
+      "line": 58,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "apps/CoreForgeWriter/InkwellAIFull/InkwellAI/PromptTemplateLoader.swift": [
+    {
+      "line": 20,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Tests/TradeMindAITests/OpenAIServiceTests.swift": [
+    {
+      "line": 31,
+      "type": "empty_braces_function"
+    },
+    {
+      "line": 71,
+      "type": "empty_braces_function"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Tests/TradeMindAITests/AdminServiceTests.swift": [
+    {
+      "line": 20,
+      "type": "empty_braces_function"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Tests/TradeMindAITests/StrategyBuilderTests.swift": [
+    {
+      "line": 20,
+      "type": "empty_braces_function"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Tests/TradeMindAITests/AutoUpdateManagerTests.swift": [
+    {
+      "line": 20,
+      "type": "empty_braces_function"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Tests/TradeMindAITests/ReportingServiceTests.swift": [
+    {
+      "line": 20,
+      "type": "empty_braces_function"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Sources/TradeMindAI/ChartAnalyzer.swift": [
+    {
+      "line": 20,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Sources/TradeMindAI/PromptTemplateLoader.swift": [
+    {
+      "line": 20,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Sources/TradeMindAI/ChartScreenshotAnalyzer.swift": [
+    {
+      "line": 19,
+      "type": "return_nil_or_null"
+    },
+    {
+      "line": 37,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "apps/CoreForgeMarket/TradeMindAIFull/Sources/TradeMindAI/TitanEngine.swift": [
+    {
+      "line": 18,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "apps/ebook2audiobook/lib/functions.py": [
+    {
+      "line": 3082,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "apps/CoreForgeMusic/VerseForgeAIFull/Sources/VerseForgeAI/HookSplitTester.swift": [
+    {
+      "line": 8,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "apps/CoreForgeMusic/VerseForgeAIFull/Sources/VerseForgeAI/PromptTemplateLoader.swift": [
+    {
+      "line": 20,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "apps/CoreForgeLeads/DataForgeAIFull/Tests/DataForgeAITests/AIEmailCopilotTests.swift": [
+    {
+      "line": 19,
+      "type": "empty_braces_function"
+    }
+  ],
+  "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/PromptTemplateLoader.swift": [
+    {
+      "line": 20,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/LeadMarketplace.swift": [
+    {
+      "line": 24,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/AdaptiveAISceneManager.swift": [
+    {
+      "line": 22,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/PromptTemplateLoader.swift": [
+    {
+      "line": 20,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/IMDbAPI.swift": [
+    {
+      "line": 38,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/SecureStore.swift": [
+    {
+      "line": 25,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/UI/SchedulerDashboard.swift": [
+    {
+      "line": 51,
+      "type": "empty_braces_function"
+    }
+  ],
+  "apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/PromptTemplateLoader.swift": [
+    {
+      "line": 20,
+      "type": "return_nil_or_null"
+    }
+  ],
+  "apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/MetadataAutoSync.swift": [
+    {
+      "line": 16,
+      "type": "return_nil_or_null"
+    }
+  ]
+}

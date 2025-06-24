@@ -1,0 +1,24 @@
+name: Desktop Build
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'apps/**'
+      - 'scripts/build_desktop.sh'
+      - '.github/workflows/desktop-build.yml'
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+      - name: Build desktop installers
+        shell: bash
+        run: ./scripts/build_desktop.sh

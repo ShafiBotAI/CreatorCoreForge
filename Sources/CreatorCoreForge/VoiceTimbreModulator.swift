@@ -29,15 +29,24 @@ public final class VoiceTimbreModulator: ObservableObject {
         let selectedProfile = profile ?? activeProfile
         let selectedIntensity = intensity ?? modulationIntensity
 
-        // Placeholder for signal processing algorithm
-        // Actual DSP can be integrated here using AVAudioEngine or other libs.
-        _ = selectedProfile
-        _ = selectedIntensity
-
-        guard let copy = audioBuffer.copy() as? AVAudioPCMBuffer else {
+        guard let buffer = AVAudioPCMBuffer(pcmFormat: audioBuffer.format, frameCapacity: audioBuffer.frameCapacity) else {
             return audioBuffer
         }
-        return copy
+        buffer.frameLength = audioBuffer.frameLength
+        let gainValue = gain(for: selectedProfile) * (1 + selectedIntensity * 0.5)
+        let frames = Int(audioBuffer.frameLength)
+        for ch in 0..<Int(audioBuffer.format.channelCount) {
+            if let src = audioBuffer.floatChannelData?[ch], let dst = buffer.floatChannelData?[ch] {
+                for i in 0..<frames { dst[i] = src[i] * gainValue }
+            }
+        }
+        return buffer
+    }
+
+    /// Convenience overload using a non-optional profile parameter.
+    public func applyTimbre(to buffer: AVAudioPCMBuffer,
+                            profile: TimbreProfile) -> AVAudioPCMBuffer {
+        applyTimbre(to: buffer, with: profile, intensity: nil)
     }
 
     /// Update the active timbre profile.
@@ -53,6 +62,18 @@ public final class VoiceTimbreModulator: ObservableObject {
     /// Return all available timbre profiles.
     public func availableProfiles() -> [TimbreProfile] {
         TimbreProfile.allCases
+    }
+
+    private func gain(for profile: TimbreProfile) -> Float {
+        switch profile {
+        case .warm: return 1.05
+        case .sharp: return 1.15
+        case .breathy: return 0.9
+        case .deep: return 0.8
+        case .robotic: return 1.0
+        case .whispery: return 0.5
+        case .cinematic: return 1.2
+        }
     }
 }
 #else
@@ -76,12 +97,26 @@ public final class VoiceTimbreModulator {
     public func applyTimbre(to audioBuffer: AVAudioPCMBuffer,
                             with profile: TimbreProfile? = nil,
                             intensity: Float? = nil) -> AVAudioPCMBuffer {
-        let _ = profile ?? activeProfile
-        let _ = intensity ?? modulationIntensity
-        guard let copy = audioBuffer.copy() as? AVAudioPCMBuffer else {
+        let selectedProfile = profile ?? activeProfile
+        let selectedIntensity = intensity ?? modulationIntensity
+        guard let buffer = AVAudioPCMBuffer(pcmFormat: audioBuffer.format, frameCapacity: audioBuffer.frameCapacity) else {
             return audioBuffer
         }
-        return copy
+        buffer.frameLength = audioBuffer.frameLength
+        let gainValue = gain(for: selectedProfile) * (1 + selectedIntensity * 0.5)
+        let frames = Int(audioBuffer.frameLength)
+        for ch in 0..<Int(audioBuffer.format.channelCount) {
+            if let src = audioBuffer.floatChannelData?[ch], let dst = buffer.floatChannelData?[ch] {
+                for i in 0..<frames { dst[i] = src[i] * gainValue }
+            }
+        }
+        return buffer
+    }
+
+    /// Convenience overload using a non-optional profile parameter.
+    public func applyTimbre(to buffer: AVAudioPCMBuffer,
+                            profile: TimbreProfile) -> AVAudioPCMBuffer {
+        applyTimbre(to: buffer, with: profile, intensity: nil)
     }
 #else
     public func applyTimbre(to audioBuffer: Any,
@@ -99,6 +134,18 @@ public final class VoiceTimbreModulator {
 
     public func availableProfiles() -> [TimbreProfile] {
         TimbreProfile.allCases
+    }
+
+    private func gain(for profile: TimbreProfile) -> Float {
+        switch profile {
+        case .warm: return 1.05
+        case .sharp: return 1.15
+        case .breathy: return 0.9
+        case .deep: return 0.8
+        case .robotic: return 1.0
+        case .whispery: return 0.5
+        case .cinematic: return 1.2
+        }
     }
 }
 #endif

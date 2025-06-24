@@ -21,4 +21,11 @@ final class VoiceMultiverseLinkerTests: XCTestCase {
         linker.removeLink(firstID)
         XCTAssertTrue(linker.links.isEmpty)
     }
+
+    func testSimpleLink() {
+        let linker = VoiceMultiverseLinker()
+        linker.clearAll()
+        linker.linkVoices(primaryID: "a", secondaryID: "b")
+        XCTAssertEqual(linker.getLinks(for: "a").count, 1)
+    }
 }
