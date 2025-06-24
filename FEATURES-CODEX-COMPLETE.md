@@ -68,20 +68,20 @@
 ### 🧬 Scene DNA Tracker
 - [x] Track changes to scenes (e.g., visual DNA fork)
 - [x] Let creators “lock” scene visuals for canon
-- [ ] Link scene DNA to multiverse system
+- [x] Link scene DNA to multiverse system
 
 ---
 
 ## ✅ Phase 5 – Multiverse Tools (Creator Tier)
 
 ### 🕸 Multiverse Timeline Manager
-- [ ] Display alternate visual paths for the same book
-- [ ] Allow creators to preview multiple visual outcomes
-- [ ] Tag scene outcomes with timeline markers
+- [x] Display alternate visual paths for the same book
+- [x] Allow creators to preview multiple visual outcomes
+- [x] Tag scene outcomes with timeline markers
 
 ### 📊 Scene Branching & Recall
-- [ ] Store viewer path history (timeline A/B/C)
-- [ ] Replay scenes with alternate visuals
+- [x] Store viewer path history (timeline A/B/C)
+- [x] Replay scenes with alternate visuals
 - [ ] Adjust future render suggestions based on prior paths
 
 ---
