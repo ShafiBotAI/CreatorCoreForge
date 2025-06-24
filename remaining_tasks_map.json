@@ -4717,56 +4717,6 @@
     },
     {
       "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
-      "line": 430,
-      "task": "Support tone comparison mode between books for authorial analysis"
-    },
-    {
-      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
-      "line": 431,
-      "task": "Highlight inconsistencies in voice delivery across books for correction"
-    },
-    {
-      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
-      "line": 457,
-      "task": "Allow hidden timeline unlocks based on listener behavior"
-    },
-    {
-      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
-      "line": 458,
-      "task": "Provide multiverse context summaries for catching up mid-path"
-    },
-    {
-      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
-      "line": 459,
-      "task": "Support flashback-within-alternate-timeline scenes"
-    },
-    {
-      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
-      "line": 460,
-      "task": "Build multiverse continuity checker for tone, character, and FX"
-    },
-    {
-      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
-      "line": 462,
-      "task": "Embed multiverse state tags into export files for advanced metadata"
-    },
-    {
-      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
-      "line": 463,
-      "task": "Allow experimental rendering mode with parallel timeline mix"
-    },
-    {
-      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
-      "line": 470,
-      "task": "Allow users to include/exclude ambient and NSFW layers in export"
-    },
-    {
-      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
-      "line": 471,
-      "task": "Enable fingerprinted voice tagging for IP verification"
-    },
-    {
-      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
       "line": 475,
       "task": "Support export templates (e.g., Audible-ready, Podcast format)"
     },

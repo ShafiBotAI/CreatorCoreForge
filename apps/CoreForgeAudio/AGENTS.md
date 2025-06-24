@@ -434,8 +434,8 @@ Key points from `README.md`:
 - [x] Use memory weights to prioritize emotional realism over narration neutrality
 - [x] Enable timeline visualization of a character’s voice evolution
  - [x] Cross-link tone history with voice fingerprint DNA across the series
-- [ ] Support tone comparison mode between books for authorial analysis
-- [ ] Highlight inconsistencies in voice delivery across books for correction
+- [x] Support tone comparison mode between books for authorial analysis
+- [x] Highlight inconsistencies in voice delivery across books for correction
 - [x] Embed character memory files as part of export metadata for continuity
 
 ### Phase 5 – Multiverse & Timeline-Aware Audio Narration
@@ -461,21 +461,21 @@ Key points from `README.md`:
 - [x] Auto-adjust emotion modulation when characters encounter variants of themselves
 - [x] Embed multiverse state tags into export files for advanced metadata
 - [x] Allow experimental rendering mode with parallel timeline mix
-- [ ] Allow hidden timeline unlocks based on listener behavior
-- [ ] Provide multiverse context summaries for catching up mid-path
-- [ ] Support flashback-within-alternate-timeline scenes
-- [ ] Build multiverse continuity checker for tone, character, and FX
+- [x] Allow hidden timeline unlocks based on listener behavior
+- [x] Provide multiverse context summaries for catching up mid-path
+- [x] Support flashback-within-alternate-timeline scenes
+- [x] Build multiverse continuity checker for tone, character, and FX
 - [x] Auto-adjust emotion modulation when characters encounter variants of themselves
-- [ ] Embed multiverse state tags into export files for advanced metadata
-- [ ] Allow experimental rendering mode with parallel timeline mix
+- [x] Embed multiverse state tags into export files for advanced metadata
+- [x] Allow experimental rendering mode with parallel timeline mix
 
 - [x] Enable Creator sandbox to test and preview all forks side-by-side
 
 - [x] Enable export to MP3, WAV, FLAC formats with metadata embedding
 - [x] Auto-tag files with narrator, chapter, genre, and FX metadata
 - [x] Support segmented export (chapter-by-chapter or full-book)
-- [ ] Allow users to include/exclude ambient and NSFW layers in export
-- [ ] Enable fingerprinted voice tagging for IP verification
+- [x] Allow users to include/exclude ambient and NSFW layers in export
+- [x] Enable fingerprinted voice tagging for IP verification
 - [x] Provide real-time export preview and file size estimation
 - [x] Build queue manager for batch exporting multiple projects
 - [x] Allow creators to export multitrack files (voice, ambient, FX)
