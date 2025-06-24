@@ -479,20 +479,20 @@ Key points from `README.md`:
 - [x] Provide real-time export preview and file size estimation
 - [x] Build queue manager for batch exporting multiple projects
 - [x] Allow creators to export multitrack files (voice, ambient, FX)
-- [ ] Support export templates (e.g., Audible-ready, Podcast format)
-- [ ] Compress long-form books into optimal mobile delivery bundles
-- [ ] Offer download resume support and interruption handling
-- [ ] Add cross-device sync: track last listened chapter, scene, and timestamp
-- [ ] Sync memory state and emotional arc history between devices
-- [ ] Allow per-user customization of export format defaults
-- [ ] Enable Creator subscription tier detection and permission gating
-- [ ] Track export credit usage for pay-as-you-go systems
-- [ ] Offer credit bundles and auto-top-up for high-volume creators
-- [ ] Show subscription tier benefits in dashboard with upgrade CTA
-- [ ] Integrate analytics reporting on export/download performance
-- [ ] Support cloud backup of render states and export templates
-- [ ] Add DRM toggle for exports requiring usage protection
-- [ ] Provide offline-friendly audiobook playback format generator
+- [x] Support export templates (e.g., Audible-ready, Podcast format)
+- [x] Compress long-form books into optimal mobile delivery bundles
+- [x] Offer download resume support and interruption handling
+- [x] Add cross-device sync: track last listened chapter, scene, and timestamp
+- [x] Sync memory state and emotional arc history between devices
+- [x] Allow per-user customization of export format defaults
+- [x] Enable Creator subscription tier detection and permission gating
+- [x] Track export credit usage for pay-as-you-go systems
+- [x] Offer credit bundles and auto-top-up for high-volume creators
+- [x] Show subscription tier benefits in dashboard with upgrade CTA
+- [x] Integrate analytics reporting on export/download performance
+- [x] Support cloud backup of render states and export templates
+- [x] Add DRM toggle for exports requiring usage protection
+- [x] Provide offline-friendly audiobook playback format generator
 
 ### Phase 7 – NSFW Mode & Advanced Emotional Tuning
 - [x] Implement NSFW voice profiles with explicit tone, breathing, and cadence
@@ -519,12 +519,12 @@ Key points from `README.md`:
 - [x] Track listener skip behavior on NSFW scenes for feedback optimization
 
 ### Phase 8 – Cross-Book Memory, Language, and Unabridged Logic
-- [ ] Track character development arcs across multiple books and universes
-- [ ] Sync voice tone evolution based on previous book outcomes
-- [ ] Detect and recall key events from prior titles to affect current narration
-- [ ] Map memory triggers to emotion modulation for recurring themes
-- [ ] Generate emotional arc summaries for each book and voice profile
-- [ ] Translate entire books while preserving narrator tone and genre
+- [x] Track character development arcs across multiple books and universes
+- [x] Sync voice tone evolution based on previous book outcomes
+- [x] Detect and recall key events from prior titles to affect current narration
+- [x] Map memory triggers to emotion modulation for recurring themes
+- [x] Generate emotional arc summaries for each book and voice profile
+- [x] Translate entire books while preserving narrator tone and genre
 - [ ] Match accents to region and character origin dynamically
 - [ ] Create multilingual narration with seamless voice switch per language
 - [ ] Add genre-aware translation modes (e.g., poetic for fantasy, direct for nonfiction)
