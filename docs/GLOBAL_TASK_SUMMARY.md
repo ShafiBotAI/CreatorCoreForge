@@ -38,11 +38,11 @@
 - NeuralOptimizer
 - VoicePersonalityProfiles
 - DynamicEmotionRamping
-- MultivoiceCharacterMode
-- CharacterTics
-- VoiceReactivity
-- CharacterVoiceAging
-- AccentGenerator
+- MultivoiceCharacterMode ✅
+- CharacterTics ✅
+- VoiceReactivity ✅
+- CharacterVoiceAging ✅
+- AccentGenerator ✅
 - CadenceModulation
 - InterruptSimulation
 - StutterLaughGenerator

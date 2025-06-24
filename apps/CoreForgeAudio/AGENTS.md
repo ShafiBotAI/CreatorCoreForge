@@ -258,11 +258,11 @@ This file is a full checklist of every feature required for code completion and 
 - [x] CreatorPanel
  - [x] VoicePersonalityProfiles
  - [x] DynamicEmotionRamping
-- [ ] MultivoiceCharacterMode
-- [ ] CharacterTics
-- [ ] VoiceReactivity
-- [ ] CharacterVoiceAging
-- [ ] AccentGenerator
+- [x] MultivoiceCharacterMode
+- [x] CharacterTics
+- [x] VoiceReactivity
+- [x] CharacterVoiceAging
+- [x] AccentGenerator
 - [ ] CadenceModulation
 - [ ] InterruptSimulation
 - [ ] StutterLaughGenerator
