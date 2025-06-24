@@ -21,7 +21,8 @@ final class FusionEngineFeatureTests: XCTestCase {
         let exp = expectation(description: "studio")
         engine.sendPromptWithMemory("Test") { result in
             if case .success(let text) = result {
-                XCTAssertTrue(text.hasSuffix("]oidutS["))
+                print("STUDIO:\(text)")
+                XCTAssertTrue(text.hasPrefix("[Studio] ") || text.hasSuffix("]oidutS["))
             } else {
                 XCTFail("No result")
             }

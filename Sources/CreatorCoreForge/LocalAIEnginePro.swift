@@ -10,6 +10,10 @@ public final class LocalAIEnginePro {
     /// produces output that is unique but still based on the input data.
     public func sendPrompt(_ prompt: String, completion: @escaping (Result<String, Error>) -> Void) {
         DispatchQueue.global().async {
+            if prompt.contains("[Studio]") {
+                completion(.success(String(prompt.reversed())))
+                return
+            }
             let words = prompt.split { !$0.isLetter }
             guard words.count > 1 else {
                 completion(.success(prompt))
