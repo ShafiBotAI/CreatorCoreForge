@@ -335,6 +335,7 @@ clips and narration can be produced without any network connection.
 For iOS builds, features that provide explicit NSFW content or haptic device integration are disabled. Age gating and parental controls remain enabled so the apps meet Apple's App Store Review Guidelines.
 Data usage complies with privacy requirements, and only finalized, non-spammy features are shipped.
 See [docs/AppStore_Compliance.md](docs/AppStore_Compliance.md) for more information.
+See [docs/AppStore_Upload_Scheme.md](docs/AppStore_Upload_Scheme.md) for per-app upload details.
 
 ## Global Missing Items
 
