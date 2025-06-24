@@ -75,3 +75,5 @@ Codex should implement advanced improvements to all valid files, enhancing speed
 - [x] Confirm visual/functional behavior remains consistent
 - [x] Document improvements in module-level CHANGELOG
 
+
+Validation completed using scripts/measure_performance.py and scripts/full_app_scan.py.
