@@ -195,14 +195,14 @@ This file is a full checklist of every feature required for code completion and 
 - [x] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
 - [x] TenTimesPlaybackSpeed
-- [ ] AdvancedSkipImport
+ - [x] AdvancedSkipImport
 - [x] AISummaryChatService
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
 - [x] DocumentParser
 - [x] OCRScanMode
  - [x] BatchImportTool
-- [ ] AutoFormatDialogue
+- [x] AutoFormatDialogue
 - [ ] TraitMemoryPersistence
 - [ ] CanonMemoryGraph
 - [ ] MemoryAnchorService
