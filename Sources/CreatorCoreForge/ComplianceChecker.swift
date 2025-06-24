@@ -14,4 +14,9 @@ public struct ComplianceChecker {
     public func generateReport(for path: String) -> [String: Bool] {
         ["privacyDocs": validatePrivacyDocs(at: path)]
     }
+
+    /// Basic check for data privacy compliance flags.
+    public func validateDataCompliance(for platform: String) -> Bool {
+        ["gdpr", "ccpa", "apple", "google"].contains { platform.lowercased().contains($0) }
+    }
 }

@@ -67,4 +67,16 @@ final class BuildDeploymentEngineTests: XCTestCase {
         XCTAssertTrue(engine.rollout(strategy: "beta"))
         XCTAssertTrue(engine.history().contains { $0.contains("beta") })
     }
+
+    func testNewDeploymentUtilities() {
+        let engine = BuildDeploymentEngine.shared
+        let profile = engine.aiPerformanceProfile(buildPath: "app")
+        XCTAssertNotNil(profile["cpu"])
+        XCTAssertTrue(engine.bundleSizeHints(for: ["lib"]).first?.contains("lib") ?? false)
+        XCTAssertTrue(engine.generatePermissionsManifest(platform: "ios").contains("camera"))
+        XCTAssertTrue(engine.verifyOfflineMode(path: "Package.swift"))
+        XCTAssertGreaterThan(engine.recordFirstRender(startTime: 0, firstRender: 1), 0)
+        XCTAssertTrue(engine.readyForStores())
+        XCTAssertTrue(engine.securityBadge(partner: "abc").contains("abc"))
+    }
 }

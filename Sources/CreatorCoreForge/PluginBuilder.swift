@@ -14,4 +14,11 @@ public struct PluginBuilder {
         let featureList = features.map { "- \($0)" }.joined(separator: "\n")
         return [header, "Plugin: \(name)", "Features:", featureList].joined(separator: "\n")
     }
+
+    /// Create a plugin template with co-pilot documentation attached.
+    public func createIntegratedPlugin(name: String, features: [String], copilot: AICoPilot = AICoPilot()) -> String {
+        let base = createTemplate(name: name, features: features)
+        let docs = copilot.generateDocs(for: name)
+        return base + "\n" + docs
+    }
 }
