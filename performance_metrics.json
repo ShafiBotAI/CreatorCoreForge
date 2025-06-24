@@ -1,0 +1,9 @@
+{
+  "cmd": "python3 scripts/full_app_scan.py",
+  "returncode": 0,
+  "latency_sec": 0.11,
+  "memory_before_mb": 14.73,
+  "memory_after_mb": 14.73,
+  "stdout": "Scan complete. Report written to full_app_scan_report.json\n",
+  "stderr": ""
+}

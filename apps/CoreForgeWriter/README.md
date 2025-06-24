@@ -46,8 +46,8 @@ This agent is responsible for building, validating, and maintaining every featur
 - [ ] Firebase/Firestore (or equivalent): Auth, Storage, Analytics
 - [ ] Auto-updater for builds, platform config
 - [ ] Export formats: PDF, ePub, Docx, TXT
-- [ ] App Store, Play Store, Web compliance
-- [ ] `.pbxproj` and project files for all platforms
+ - [x] App Store, Play Store, Web compliance
+- [x] `.pbxproj` and project files for all platforms
 
 ---
 
@@ -64,13 +64,13 @@ This agent is responsible for building, validating, and maintaining every featur
 - [ ] GitHub Actions, multi-platform
 - [ ] Tagging, changelogs, automated deploy (TestFlight, Play, Drive)
 - [ ] Auto-updater for features/models
-- [ ] App store asset/policy checks
+ - [x] App store asset/policy checks
 
 ---
 
 ## Documentation & Developer Assets
-- [ ] README.md, APISetup.md, PromptTemplates.md, DeveloperSetup.md
-- [ ] App store/launch assets, privacy, ToS, NSFW docs, user guides
+- [x] README.md, APISetup.md, PromptTemplates.md, DeveloperSetup.md
+ - [x] App store/launch assets, privacy, ToS, NSFW docs, user guides
 
 ---
 
@@ -105,3 +105,12 @@ This agent is responsible for building, validating, and maintaining every featur
 
 ## Codex/AI Agent Note
 Every unchecked item is a priority. Use as requirements for app completion, verification, and compliance.
+
+## App Capabilities
+
+Highlighted capabilities from `features-phase8.json`:
+- UnifiedAudioEngine
+- UnifiedVideoEngine
+- AdaptiveLearningEngine
+- Memory pinning
+- Quantum-choice plotting

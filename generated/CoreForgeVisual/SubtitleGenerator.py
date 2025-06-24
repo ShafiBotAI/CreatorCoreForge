@@ -1,0 +1,4 @@
+# Auto-generated for SubtitleGenerator
+def subtitlegenerator():
+    """SubtitleGenerator"""
+    pass

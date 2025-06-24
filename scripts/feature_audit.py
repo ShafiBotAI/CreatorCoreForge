@@ -2,6 +2,7 @@ import os
 import re
 import argparse
 import json
+from typing import Dict, List
 
 # Define keywords to search for in code to match agent tasks
 def extract_keywords(task: str):
@@ -31,6 +32,25 @@ def parse_features(lines):
     return features
 
 
+def build_code_index(
+    repo_path: str, extensions: List[str], ignore_dirs: List[str]
+) -> Dict[str, str]:
+    """Return a mapping of file paths to lowercase text."""
+    index: Dict[str, str] = {}
+    for root, dirs, files in os.walk(repo_path):
+        dirs[:] = [d for d in dirs if os.path.join(root, d) not in ignore_dirs]
+        for file in files:
+            if any(file.endswith(ext) for ext in extensions):
+                path = os.path.join(root, file)
+                try:
+                    with open(path, "r", encoding="utf-8") as fh:
+                        index[os.path.abspath(path)] = fh.read().lower()
+                except Exception:
+                    # Ignore unreadable files
+                    continue
+    return index
+
+
 def scan_repo(repo_path: str, extensions=None, ignore_dirs=None):
     """Scan the repo and check each AGENTS.md feature against source code."""
     if extensions is None:
@@ -38,40 +58,46 @@ def scan_repo(repo_path: str, extensions=None, ignore_dirs=None):
     if ignore_dirs is None:
         ignore_dirs = []
 
+    ignore_dirs = [os.path.abspath(d) for d in ignore_dirs]
+
+    # Build a global file index once for efficiency
+    file_index = build_code_index(repo_path, extensions, ignore_dirs)
+
     feature_results = {}
     for root, dirs, files in os.walk(repo_path):
-        # Skip ignored directories
         dirs[:] = [d for d in dirs if os.path.join(root, d) not in ignore_dirs]
         for file in files:
             if file.lower() == "agents.md":
                 app_name = os.path.basename(root)
                 with open(os.path.join(root, file), "r", encoding="utf-8") as f:
-                    lines = f.readlines()
-                    features = parse_features(lines)
+                    features = parse_features(f.readlines())
+
                 feature_results[app_name] = {"implemented": [], "missing": []}
-                # Combine all source code in this folder
-                code_blob = ""
-                for subroot, _, code_files in os.walk(root):
-                    for code_file in code_files:
-                        if any(code_file.endswith(ext) for ext in extensions):
-                            try:
-                                with open(
-                                    os.path.join(subroot, code_file),
-                                    "r",
-                                    encoding="utf-8",
-                                ) as cf:
-                                    code_blob += cf.read().lower()
-                            except Exception:
-                                continue
+                code_paths = [
+                    p
+                    for p in file_index
+                    if os.path.abspath(p).startswith(os.path.abspath(root) + os.sep)
+                ]
+                code_blob = "".join(file_index[p] for p in code_paths)
+
                 for feature in features:
-                    keywords = extract_keywords(feature)
-                    found = all(
-                        kw in code_blob for kw in keywords if len(kw) > 3
-                    )
+                    keywords = [kw for kw in extract_keywords(feature) if len(kw) > 3]
+                    found = all(kw in code_blob for kw in keywords)
                     if found:
-                        feature_results[app_name]["implemented"].append(feature)
+                        found_path = None
+                        for path in code_paths:
+                            if all(kw in file_index[path] for kw in keywords):
+                                found_path = os.path.relpath(path, repo_path)
+                                break
+                        if found_path:
+                            feature_results[app_name]["implemented"].append(
+                                f"{feature} (`{found_path}`)"
+                            )
+                        else:
+                            feature_results[app_name]["implemented"].append(feature)
                     else:
                         feature_results[app_name]["missing"].append(feature)
+
     return feature_results
 
 
@@ -103,9 +129,7 @@ if __name__ == "__main__":
         for e in args.extensions.split(",")
         if e.strip()
     ]
-    ignore_dirs = [os.path.abspath(d) for d in args.ignore]
-
-    result = scan_repo(args.repo_path, extensions=ext_list, ignore_dirs=ignore_dirs)
+    result = scan_repo(args.repo_path, extensions=ext_list, ignore_dirs=args.ignore)
 
     print("\n\U0001F9E0 FEATURE IMPLEMENTATION REPORT\n")
     for app, data in result.items():

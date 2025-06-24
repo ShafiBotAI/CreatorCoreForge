@@ -1,4 +1,15 @@
 import Foundation
+#if canImport(AVFoundation)
+import AVFoundation
+import CoreMedia
+import CoreVideo
+import CoreText
+#if os(macOS)
+import AppKit
+#elseif os(iOS)
+import UIKit
+#endif
+#endif
 
 /// Utilities bridging missing CoreForge Visual features.
 public struct CoreForgeVisualFeatures {

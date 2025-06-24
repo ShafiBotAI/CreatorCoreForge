@@ -1,0 +1,486 @@
+# Global Task Summary
+
+## apps
+- Coordinate shared assets and templates
+- Ensure CoreForge Audio checklist includes all phases 1-9 features
+- Review cross-app asset licensing
+
+## apps/CoreForgeAudio
+- AdvancedSkipImport ✅
+- AutoFormatDialogue ✅
+- TraitMemoryPersistence ✅
+- CanonMemoryGraph ✅
+- MemoryAnchorService ✅
+- MultiverseBookLinker ✅
+- AutoTranslateService ✅
+- AccentSwitcher ✅
+- MultilingualVoiceBlend ✅
+- SemanticSegmenter ✅
+- SceneIndexGenerator ✅
+- LongFormPacingEngine ✅
+- FullBookRender ✅
+- AudiobookStoreExporter ✅
+- PublishingReportGenerator ✅
+=======
+- FullBookRender
+- AudiobookStoreExporter
+- PublishingReportGenerator
+
+- SeriesManager ✅
+- InlineEmotionEngine
+- AmbientMixer
+- PlaybackAnalytics
+- VoiceAdvisorAI
+- CustomVoiceUploads
+- MultiverseVoiceSystem
+- QuantumSceneLogic
+- NeuralOptimizer
+- VoicePersonalityProfiles
+- DynamicEmotionRamping
+- MultivoiceCharacterMode
+- CharacterTics
+- VoiceReactivity
+- CharacterVoiceAging
+- AccentGenerator
+- CadenceModulation
+- InterruptSimulation
+- StutterLaughGenerator
+- InlineWhisperSupport
+- MidSentenceToneSwitching
+- SceneVolumeDynamics
+- SpatialPositioning
+- RoomSimulation
+- AmbientLayerFX
+- CrossSceneFXLinking
+- SceneDensityTuner
+  - ~~MultiTrackExport~~ (implemented)
+  - EmotionCurveVisualizer
+- VoiceAwarePacing
+- ToneConsistencyChecker
+- ConflictFXEnhancer
+- MoodColorCoder
+- AICastingDirector
+  - ~~VoiceApprovalWorkflow~~ (implemented)
+- ScriptSnippetInjector
+- CreatorSandboxMode
+- DualNarratorToggle
+- VoiceDNAForking
+- FlashbackSceneEngine
+- ContinuityChecker
+- CrossoverEngine
+- Adjust emotional tone delivery based on past scenes (e.g., grief affects voice)
+- Recommend tone variation based on context and prior memory state
+- Integrate cross-book story arc tracking (hero's journey, redemption, fall)
+- Allow adaptive tone matching when character enters new genres/settings
+- Model relationships: voice modulation changes depending on who is speaking to whom
+- Cross-link tone history with voice fingerprint DNA across the series
+- Support tone comparison mode between books for authorial analysis
+- Highlight inconsistencies in voice delivery across books for correction
+- Support "multiverse collapse" audio effect when timelines converge
+- Enable alternate endings per timeline with unique tonal conclusions
+- Allow hidden timeline unlocks based on listener behavior
+- Provide multiverse context summaries for catching up mid-path
+- Support flashback-within-alternate-timeline scenes
+- Build multiverse continuity checker for tone, character, and FX
+- Embed multiverse state tags into export files for advanced metadata
+- Allow experimental rendering mode with parallel timeline mix
+- Allow users to include/exclude ambient and NSFW layers in export
+- Enable fingerprinted voice tagging for IP verification
+- Support export templates (e.g., Audible-ready, Podcast format)
+- Compress long-form books into optimal mobile delivery bundles
+- Offer download resume support and interruption handling
+- Add cross-device sync: track last listened chapter, scene, and timestamp
+- Sync memory state and emotional arc history between devices
+- Allow per-user customization of export format defaults
+- Enable Creator subscription tier detection and permission gating
+- Track export credit usage for pay-as-you-go systems
+- Offer credit bundles and auto-top-up for high-volume creators
+- Show subscription tier benefits in dashboard with upgrade CTA
+- Integrate analytics reporting on export/download performance
+- Support cloud backup of render states and export templates
+- Add DRM toggle for exports requiring usage protection
+- Provide offline-friendly audiobook playback format generator
+- Track character development arcs across multiple books and universes
+- Sync voice tone evolution based on previous book outcomes
+- Detect and recall key events from prior titles to affect current narration
+- Map memory triggers to emotion modulation for recurring themes
+- Generate emotional arc summaries for each book and voice profile
+- Translate entire books while preserving narrator tone and genre
+- Match accents to region and character origin dynamically
+- Create multilingual narration with seamless voice switch per language
+- Add genre-aware translation modes (e.g., poetic for fantasy, direct for nonfiction)
+- Enable narrator tone matching during back-translations (reverse language)
+- Preserve paragraph-level pacing in translated output
+- Flag idioms and phrases for creative language adaptation
+- Allow inline multilingual conversations with character accent routing
+- Implement voice glossaries for culturally relevant pronunciation
+- Render unabridged books up to 40+ hours without loss of pacing
+- Optimize long-form rendering using audio caching checkpoints
+- Insert smart bookmarks at scene/act/chapter transitions
+- Auto-generate full table of contents with audio-linked sections
+- Provide unabridged-to-abridged summarization mode for preview
+- Adapt narration style based on genre and reader profile (e.g., thriller vs. memoir)
+- Detect formatting features (lists, quotes, poetry) and adjust narration accordingly
+- Store memory snapshots between render sessions for persistent output quality
+- Enable per-character equalization, pitch adjustment, and compression
+- Simulate stereo spatial positioning per voice (left/right, near/far)
+- Create a full-cast preview mode with toggles for each voice track
+- Add creator-defined vocal layering for crowd and background dialogue
+- Offer toggle for “narrator override” mode for consistency across multi-voice scenes
+- Auto-suggest optimal scene pacing based on text intensity and emotion tags
+- Detect dialogue overlap potential and adjust timing automatically
+- Use AI to recommend narration cadence per genre and reader preference
+- Export final audio as flattened or layered file based on creator choice
+- Tag character emotional states per segment to match musical score inputs
+- Link scene-based voice dynamics to background music templates
+- Integrate with audio plugin systems for advanced mastering tools
+- Enable Creator AI Assistant to generate scene-specific mastering presets
+- Provide auto-mix-and-export mode for rapid prototyping
+- Build creator dashboard for real-time monitoring of voice quality and performance
+- Visualize voice dominance per chapter using waveform or tone charts
+- Offer beta features: audio fingerprints for licensing, alternate casting previews
+- AI-based performance coach to recommend enhancements after preview
+
+## apps/CoreForgeBloom
+- Finalize production UI components
+
+## apps/CoreForgeBuild
+- Finalize production UI components
+- AdvancedSkipImport
+- End-to-end drag-and-drop AI app builder, export to all platforms
+- Persistent creative DNA, team and white label controls, template marketplace
+- Multilingual, NSFW gating, cloud/local deploy, CI/CD auto-update
+- Drag-and-drop UI/logic builder (blocks, templates, plugins)
+
+## apps/CoreForgeDNA
+- Complete `.pbxproj` project file
+
+## apps/CoreForgeLeads
+- Fix and complete the `.pbxproj` project file (Codex)
+- Finalize production UI components
+- AdvancedSkipImport
+- End-to-end lead generation, scoring, enrichment, and CRM sync
+- Persistent memory, custom agent builder, AI automation, and analytics
+- Global languages, NSFW gating, offline, marketplace, affiliate features
+- Import/export CSV, XLSX, JSON, API sync
+
+## apps/CoreForgeMarket
+- Fully functional AI trading, alerts, analytics, multi-platform
+- Persistent memory, multi-strategy, social trading, and dashboards
+- Compliance, risk management, and white label/enterprise features
+- Portfolio and analytics dashboards
+- Settings for risk, strategy, notifications
+- Dark/light mode, accessibility
+- Copy trading, social sharing, leaderboards
+- Alerts, notifications, trade confirmation UI
+- LocalAI, plugin modules, secure API keys
+- GDPR, CCPA, KYC/AML compliance
+- Firebase/Firestore: Auth, Data, Analytics
+- Auto-updater, platform config, app store compliance
+- Export: CSV, PDF, JSON
+- All platform project files
+- UI/UX (all platforms)
+- Performance, compliance, risk, security
+- GitHub Actions, tagging, changelogs, auto-deploy
+- README.md, APISetup.md, PromptTemplates.md, DeveloperSetup.md
+- Quantum/AI hybrid mode, parallel simulation, anomaly detection
+- Multibrain risk/speed/profit settings
+- Team/group trading, portfolio sharing, leaderboards
+- Marketplace for bots, plugins, signals, analytics
+- API for external tools, compliance/legal automation
+- HighQualityVoiceLibrary
+- GlobalLanguageSupport
+- AdvancedSkipImport
+- Final UI polish, onboarding, tutorial flows
+- Full CI/CD deployment test, compliance review
+
+## apps/CoreForgeMind
+- Finalize production UI components
+
+## apps/CoreForgeMusic
+- Fix and complete the `.pbxproj` project file (Codex)
+- Finalize production UI components
+- AdvancedSkipImport
+
+## apps/CoreForgeQuest
+- Finalize production UI components
+
+## apps/CoreForgeStudio
+- Finalize production UI components
+- Hybrid visual style merger (anime/noir/fantasy combos)
+- Directorial note system for each scene or shot
+- Action rhythm controller (tempo pacing for dynamic scenes)
+- Audiovisual director diary (scene logs)
+- Subtitle dialect localizer (slang, accents, formal, etc.)
+- Trigger warning detector (auto flag sensitive content)
+- Overlay FX editor for text and post-processing
+- Location soundscape auto-generator
+- Emotion layer system (alternate tone variants per scene)
+- Scene performance estimator (views, replays, saves)
+- Alternate ending generator
+- Interactive video QTE (viewer-triggered choices)
+- Self-rating engine (scene quality based on AI criteria)
+- Replay prediction engine (likely rewatch scenes)
+- Add AI Scene Editor Timeline View
+- Build Smart Camera Direction AI (zoom/pan/hold)
+- Add Lip Sync + Voice Sync to Visuals
+- Auto-add crowd and ambient SFX
+- Enable Style Export: Anime, Noir, Realistic, Fantasy
+- Build Emotion Arc Visualizer for cinematic flow
+- Add Live Dubbing Room + Creator Voice Import
+- Add What-If Mode for branching episode possibilities
+- Create Auto-Publish pipeline to YouTube/TikTok with metadata
+- Auto-generate Trailer + Behind-the-Scenes packs
+- Add voice/scene-to-video alignment overlays
+- Real-time ensemble acting
+- HighQualityVoiceLibrary
+- GlobalLanguageSupport
+- AdvancedSkipImport
+- Full AI-powered multi-track audio/video production suite
+- Persistent voice/scene memory, macro builder, team dashboard
+- Multi-language, NSFW gating, offline-first, viral/social creator tools
+- Multi-track AI audio/video editor (all formats)
+
+## apps/CoreForgeVisual
+- Adaptive scene completion
+- AdvancedSkipImport
+- Parse EPUB, PDF, DOCX, and TXT into structured scene blocks
+- Auto-detect chapter breaks and scene transitions using AI
+- Identify and extract key visual descriptions from text
+- Tag scene tone (light, dark, romantic, violent) via sentiment analysis
+- Detect and tag characters per scene using NLP entity recognition
+- Match locations to genre-based visual templates (castle, school, space station)
+- Generate initial visual storyboard layout from parsed scenes
+- Support drag-and-drop book input with automatic format recognition
+- Allow manual refinement of scene breaks via visual editor
+- Store original book structure for syncing narration with visuals
+- Flag high-action and dialogue-heavy scenes for rendering priority
+- Normalize text encoding for rare language or stylized prose
+- Split monologue-heavy sections into animated visual layers
+- Extract scene descriptions from footnotes or appendices if referenced
+- Enable prologue/epilogue special treatment (visual tone, transitions)
+- Highlight symbols and metaphors for optional artistic visuals
+- Store parsing configuration profiles for series consistency
+- Offer real-time preview of parsed scene map before rendering
+- Sync parsed book structure with audio narration framework
+- Validate scene continuity and chronology from source text
+- Detect scene setting shifts and auto-tag as indoor/outdoor for lighting logic
+- Output visual scene map to timeline panel for creator editing
+- Auto-generate character design profiles from parsed book descriptions
+- Suggest visual avatars for each major and minor character using AI
+- Tag characters with genre-based archetypes (hero, mentor, villain)
+- Map character emotional arc to visual expression library
+- Assign unique costume layers per scene or timeline
+- Allow creators to upload reference art or override generated visuals
+- Store character styles for reuse across scenes and sequels
+- Adjust posture, facial expressions, and body language based on dialogue tone
+- Support age-shift modeling (child, teen, adult, elder versions)
+- Track costume and hairstyle changes throughout story for visual consistency
+- Sync character movement to dialogue line length and pacing
+- Render close-up, medium, or wide shots based on character’s narrative importance
+- Link voice performance timing with facial movement and lip sync
+- Detect speaker shifts and auto-adjust scene framing/camera position
+- Suggest duo-frame or over-the-shoulder compositions for dialogue scenes
+- Store scene-specific animation presets (reaction styles, gestures)
+- Identify group scenes and auto-generate spatial layouts
+- Highlight visual identity conflicts for creator review (e.g., two similar characters)
+- Apply genre-tuned color palettes to each character
+- Recommend lighting configurations for cast mood amplification
+- Add multi-timeline variants for multiverse visual branching
+- Provide creator dashboard to preview, test, and lock character animations
+- Generate scene backgrounds using genre-trained visual models (e.g., fantasy, dystopia)
+- Match lighting conditions to time-of-day, tone, and setting
+- Render characters in cinematic compositions (rule of thirds, motion focus)
+- Apply scene transitions (fade, cut, swipe, glitch) based on pacing tags
+- Layer particle FX (rain, fire, fog, dust) for environmental realism
+- Auto-render camera movement (zoom, pan, tilt) based on action intensity
+- Enable cutaway logic for interior vs exterior visual blending
+- Simulate mood via hue shifting and saturation overlays
+- Support dynamic shadows and ambient occlusion for realism
+- Trigger visual filters (noir, dream, sepia, neon) based on scene metadata
+- Identify high-impact moments and render with frame-by-frame detail
+- Support 16:9, vertical, and square rendering formats
+- Enable "live panel" layout for comic/manga-style visual composition
+- Add blur, shake, or light flash FX for dramatic or horror moments
+- Sync scene tone to ambient background FX audio
+- Store FX template libraries per genre for reuse
+- Allow creator to preview FX before rendering full scenes
+- Provide toggle between high-quality and quick-preview render settings
+- Visualize FX layering structure for post-editing
+- Integrate facial motion tracking for emotional match rendering
+- Track render time estimates and optimize batch processing queue
+- Tag visual rhythm speed (slow visual poetry vs fast action montage)
+- Persist character visuals across multiple books, including costume and evolution
+- Maintain memory of key visual motifs and use them in flashbacks or callouts
+- Store visual timeline of each character’s age, look, and setting impact
+- Flag continuity errors in casting, color palette, or background reuse
+- Allow timeline shifting to accommodate prequels and sequels
+- Sync character visual memory with voice tone evolution
+- Store FX history (e.g., specific lightning type for trauma scene)
+- Reuse location models and scene layouts for consistency across chapters/books
+- Auto-recommend filters and FX based on prior book rendering
+- Tag series-specific visual themes (e.g., "gold light = safety")
+- Enable multibook project dashboard to track consistency
+- Visual arc timeline for each character (first appearance to final scene)
+- Adapt framing techniques based on memory weight (e.g., past = faded, current = vivid)
+- Cross-reference visual scene files with narration or audio timeline
+- Alert creators to inconsistencies in character hairstyle, outfit, or body type
+- Recommend background reuse based on memory location detection
+- Provide character memory "lock" toggle to prevent style drift
+- Highlight visual callbacks to past books/scenes in creator view
+- Allow AI assistant to generate recap montage from memory visuals
+- Integrate memory graphs into multiverse and branch visualizers
+- Detect and annotate recurring visual cues across book entries
+- Support visual memory handoff to other creator accounts or teams
+- Implement scene forking with timeline tag (A, B, Prime, etc.)
+- Store alternate visual outcomes for the same chapter/scene
+- Display visual multiverse map with branches and connections
+- Allow creators to preview all timeline outcomes in side-by-side mode
+- Enable auto-generation of visual variations for key choice points
+- Sync visual changes with multiverse-aware voice and FX layers
+- Recommend color palette and lighting changes based on timeline branch
+- Track viewer navigation across different visual storylines
+- Highlight multiverse divergence points in scene editing panel
+- Store and lock multiverse visual states for version tracking
+- Provide toggle to collapse alternate scenes into one for export
+- Create parallel visual identities for characters (e.g., Hero vs Villain versions)
+- Match branching logic with alternate soundtracks and FX profiles
+- Offer predictive timeline generator based on character decisions
+- Generate recap videos per timeline path for audience immersion
+- Support layered rendering (shared visuals + unique overlays)
+- Build continuity checker across timelines for style cohesion
+- Visualize alternate emotional arcs using heatmap overlays
+- Allow creator-defined "main" timeline and secondary forks
+- Embed multiverse state in exported metadata for reuse
+- Detect and flag conflicts when characters appear in multiple branches simultaneously
+- Enable AI director mode to guide scene transitions across branches
+- Export rendered video in MP4, MOV, and WebM formats with selectable quality levels
+- Allow vertical, square, and widescreen aspect ratio export options
+- Include thumbnail and cover art generation from key frames
+- Auto-generate subtitle tracks synced with voice and visuals
+- Embed chapter metadata and timeline jump points for playback platforms
+- Export to YouTube, TikTok, and Instagram Reels via platform integrations
+- Sync export state with cloud and local storage
+- Track export history by book, scene, and version
+- Bundle FX, character, and voice layers for full scene archives
+- Offer watermarking and brand tagging options
+- Enable multi-resolution export for preview vs final render
+- Gate export privileges by subscription tier (e.g., 4K = Creator+ only)
+- Support batch export queue with export profile presets
+- Auto-optimize exports for bandwidth-constrained environments
+- Enable NSFW-safe export modes (blur, replace, censor layers)
+- Support creator-stamped end credits or intro overlays
+- Track subscription credits and export quota by user
+- Allow in-app purchases for one-time HD or commercial use licenses
+- Provide DRM encoding option for IP-protected outputs
+- Sync exported files across devices with user authentication
+- Offer creator-branded export template themes (logos, font, outro)
+- Generate trailer versions from book-to-video projects automatically
+- Add NSFW mode toggle with age-gated access and verification
+- Provide separate rendering logic for explicit vs suggestive visual scenes
+- Allow per-character NSFW permissions and tone preferences
+- Tag and index NSFW scenes for optional inclusion/exclusion in exports
+- Offer NSFW visual FX library (shadows, fog, body simulation overlays)
+- Blur or censor sensitive body areas based on creator control
+- Support dual rendering: NSFW and Safe version from same scene
+- Enable private-only scene generation with encrypted preview keys
+- Provide intensity control slider for visual eroticism or violence
+- Sync NSFW tone with voice and ambient FX layers
+- Allow creator notes to guide scene rendering boundaries
+- Embed NSFW warning overlays for early scene detection
+- Generate parallel safe-for-stream scenes with auto-adaptation
+- Store NSFW render settings as presets for series/genre
+- Offer Creator dashboard to review flagged or reported NSFW content
+- Filter NSFW content in search, preview, and trailer modes
+- Apply scene tone validator to suggest safe/NSFW rating per visual sequence
+- Hide NSFW rendering options in shared/public projects
+- Tag NSFW export files with proper disclaimers and auto-locks
+- Provide customizable NSFW cover and thumbnail censor options
+- Track NSFW render usage and tie to creator subscription tier
+- Integrate NSFW content filter toggle for viewers and collaborators
+- Translate full scripts while preserving pacing, emotion, and visual tags
+- Detect primary and secondary languages from book text or user input
+- Sync translated dialogue with lip-sync adjustments per language
+- Swap visual context (e.g., setting, symbols) to match cultural norms
+- Match voiceover tone with cultural delivery style (e.g., reserved vs expressive)
+- Enable dual-language subtitle overlay with toggles
+- Provide audio language toggle mid-playback (bilingual view mode)
+- Auto-swap text signage or props in scene to match target language
+- Save cultural localization settings for franchise or series consistency
+- Detect idioms and replace with native-equivalent visual cues
+- Allow creator review of language-adapted visuals before rendering
+- Flag content sensitive to region/culture for modification options
+- Support accent-based visual/voice region overlays (UK vs US)
+- Offer export options for localized versions per country
+- Recommend artistic adjustments based on visual symbolism norms
+- Translate creator notes and project metadata for global collaboration
+- Provide multilingual visual cue glossary with usage examples
+- Preserve scene framing consistency across languages
+- Embed language metadata in export files for platform distribution
+- Enable automatic rendering of multiple language versions at once
+- Support multi-book narrative sync for localized arcs
+- Cross-link translated memory arcs and character expressions over series
+- Export each character's voice and animation to separate tracks for post-editing
+- Provide DAW-compatible multitrack timelines with labeled scene markers
+- Enable facial motion layer export for animator sync
+- Allow lip sync intensity control and timing nudge tools
+- Build emotion heatmap across chapters to guide visual tone
+- Auto-tag scene rhythm (slow burn, montage, high-speed) for rendering optimization
+- Sync character spotlighting and focus shifts with narration peaks
+- Offer sandbox playback with per-layer mute/toggle options
+- Allow real-time override of generated framing or pacing
+- Provide "Director Mode" for manual camera and FX control
+- Add timeline scrubber with visual peaks and dialog markers
+- Visualize tone deviation and intensity spikes for debugging
+- Enable AI suggestions for retiming scene flow or voice cadence
+- Store creator-defined presets for framing, color grade, and cut style
+- Allow version comparison mode between two scene outputs
+- Offer creator commentary overlay mode during video review
+- Export scene reports including tone maps, keyframes, and alt takes
+- Support beta tools: voice fingerprint preview, animation merge tester
+- Bundle scene elements into shareable .cvsx format (CoreForge Scene Exchange)
+- Provide Creator Control Panel for full preview/edit of visual/audio logic
+- Enable collaborative comments and timeline feedback from teams
+- Simulate full-cast rehearsal playback for pacing checks and scene balance
+
+## apps/CoreForgeVoiceLab
+- Finalize production UI components
+
+## apps/CoreForgeWriter
+- Finalize production UI components
+- Scene temperature dial for delivery mood (cold/neutral/hot)
+- Meta writing mode (4th-wall awareness)
+- Book-to-song interlude generator
+- Dual-edit co-author editor with live AI collaboration
+- Timeline visualizer of all story events
+- Serialized release engine (auto episodic drop)
+- Romance path visual heatmap
+- Real dialogue tone checker (based on real speech data)
+- Tag/tracker for literary symbols and metaphors
+- Legacy continuation mode (generate from unfinished stories)
+- Reverse plot planner (end-first logic fill-in)
+- Tone lock system to maintain story feel
+- Genre rewrite engine (sci-fi → noir, etc.)
+- Hidden bonus chapter unlock engine
+- Book-to-NFT or collectible printable setup
+- Monetization-split tracking per co-author
+- Accessibility scoring and feedback panel
+- Emotional writing boost generator (mood-based prompts)
+- Add Genre Mimicry Engine and Thematic Analyzer
+- Build AI outline → full manuscript generator
+- Add writing mood tuner (slow burn, fast-paced, dark, comedic)
+- Build AI Sandbox co-author tool
+- Add auto-expand subplots + side character arcs
+- Add Royalty-Free Illustration bundle creator
+- Embed Booktok Trailer Generator + auto-caption tool
+- Integrate reader relatability + pacing metrics
+- Enable Book-to-Pitch feature (TV/Film pitch toolkit)
+- Export script to CoreForge Studio with assigned voices
+- HighQualityVoiceLibrary
+- GlobalLanguageSupport
+- AdvancedSkipImport
+- End-to-end AI writing studio (books, scripts, stories)
+- Persistent character/world memory and creative DNA
+- Multilingual, NSFW gating, offline writing, community/marketplace
+- Import/export PDF, ePub, TXT, Docx
+

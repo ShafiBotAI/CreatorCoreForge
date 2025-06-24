@@ -64,8 +64,8 @@ This agent is responsible for building, validating, and maintaining all features
 ---
 
 ## Documentation & Developer Assets
-- [ ] README.md, APISetup.md, PromptTemplates.md, DeveloperSetup.md
-- [ ] App store/launch assets, privacy/NSFW docs, affiliate guides
+- [x] README.md, APISetup.md, PromptTemplates.md, DeveloperSetup.md
+ - [x] App store/launch assets, privacy/NSFW docs, affiliate guides
 
 ---
 
@@ -96,3 +96,12 @@ This agent is responsible for building, validating, and maintaining all features
 
 ## Codex/AI Agent Note
 Treat every unchecked item as a requirement for app completion, compliance, and launch.
+
+## App Capabilities
+
+Highlighted capabilities from `features-phase8.json`:
+- UnifiedAudioEngine
+- UnifiedVideoEngine
+- AdaptiveLearningEngine
+- Marketplace credit system
+- Global lead exchange
