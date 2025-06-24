@@ -70,3 +70,7 @@ assert.strictEqual(deploy.deploy('dist/sample'), 'dist/sample');
 
 console.log('CoreForgeBuild tests passed');
 
+
+// run additional tests
+require('./collaboration.test');
+=======
