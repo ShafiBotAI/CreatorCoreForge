@@ -4,7 +4,7 @@ This document lists each app and its completion percentage based on task checkli
 
 | App | Completion |
 |-----|------------|
-| CoreForgeAudio | 74.6% |
+| CoreForgeAudio | 76.8% |
 | CoreForgeBloom | 83.3% |
 | CoreForgeBuild | 32.8% |
 | CoreForgeDNA | 100.0% |

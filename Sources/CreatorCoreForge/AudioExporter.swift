@@ -18,6 +18,19 @@ public struct AudioMetadata: Codable {
     }
 }
 
+/// Options for customizing multitrack export behavior.
+public struct ExportOptions {
+    /// Include the ambient track in the exported archive.
+    public var includeAmbient: Bool
+    /// Include the FX/NSFW track in the exported archive.
+    public var includeFX: Bool
+
+    public init(includeAmbient: Bool = true, includeFX: Bool = true) {
+        self.includeAmbient = includeAmbient
+        self.includeFX = includeFX
+    }
+}
+
 /// Handles exporting audio data into various formats and packaging options.
 public final class AudioExporter {
     private let exportDirectory: URL
@@ -90,19 +103,24 @@ public final class AudioExporter {
                                  ambient: Data? = nil,
                                  fx: Data? = nil,
                                  baseName: String,
-                                 metadata: AudioMetadata? = nil) -> String? {
+                                 metadata: AudioMetadata? = nil,
+                                 options: ExportOptions = ExportOptions()) -> String? {
         let voicePath = exportDirectory.appendingPathComponent(baseName + "_voice.wav")
         let ambientPath = ambient != nil ? exportDirectory.appendingPathComponent(baseName + "_ambient.wav") : nil
         let fxPath = fx != nil ? exportDirectory.appendingPathComponent(baseName + "_fx.wav") : nil
 
         do {
             try voice.write(to: voicePath)
-            if let a = ambient, let path = ambientPath { try a.write(to: path) }
-            if let f = fx, let path = fxPath { try f.write(to: path) }
+            if options.includeAmbient, let a = ambient, let path = ambientPath {
+                try a.write(to: path)
+            }
+            if options.includeFX, let f = fx, let path = fxPath {
+                try f.write(to: path)
+            }
             if let meta = metadata { writeMetadata(meta, for: voicePath.deletingPathExtension()) }
             var files = [voicePath.path]
-            if let path = ambientPath?.path { files.append(path) }
-            if let path = fxPath?.path { files.append(path) }
+            if options.includeAmbient, let path = ambientPath?.path { files.append(path) }
+            if options.includeFX, let path = fxPath?.path { files.append(path) }
             return compressToZip(filePaths: files, zipName: baseName)
         } catch {
             print("Failed to export multitrack: \(error)")

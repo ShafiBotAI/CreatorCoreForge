@@ -1,46 +1,6 @@
 {
   "open_tasks": [
     {
-      "task": "Scan each file for:",
-      "source_file": "CODEX-TODO-ENHANCE-CODE-QUALITY-PERFORMANCE.md"
-    },
-    {
-      "task": "Evaluate all components for:",
-      "source_file": "CODEX-TODO-ENHANCE-CODE-QUALITY-PERFORMANCE.md"
-    },
-    {
-      "task": "Log findings to `performance_scan_report.json` with:",
-      "source_file": "CODEX-TODO-ENHANCE-CODE-QUALITY-PERFORMANCE.md"
-    },
-    {
-      "task": "**Task:** Enhance `[FILENAME]`",
-      "source_file": "CODEX-TODO-ENHANCE-CODE-QUALITY-PERFORMANCE.md"
-    },
-    {
-      "task": "Run performance tests before/after each refactor",
-      "source_file": "CODEX-TODO-ENHANCE-CODE-QUALITY-PERFORMANCE.md"
-    },
-    {
-      "task": "Measure memory footprint and latency where applicable",
-      "source_file": "CODEX-TODO-ENHANCE-CODE-QUALITY-PERFORMANCE.md"
-    },
-    {
-      "task": "Confirm visual/functional behavior remains consistent",
-      "source_file": "CODEX-TODO-ENHANCE-CODE-QUALITY-PERFORMANCE.md"
-    },
-    {
-      "task": "Document improvements in module-level CHANGELOG",
-      "source_file": "CODEX-TODO-ENHANCE-CODE-QUALITY-PERFORMANCE.md"
-    },
-    {
-      "task": "Run `scripts/full_app_scan.py` to identify missing directories, file types, and incomplete implementations.",
-      "source_file": "CODEX-TODO-FULL-APP-READINESS-CHECKLIST.md"
-    },
-    {
-      "task": "Review generated `full_app_scan_report.json` for issues per app and platform.",
-      "source_file": "CODEX-TODO-FULL-APP-READINESS-CHECKLIST.md"
-    },
-    {
       "task": "Implement any modules or files reported as missing.",
       "source_file": "CODEX-TODO-FULL-APP-READINESS-CHECKLIST.md"
     },
