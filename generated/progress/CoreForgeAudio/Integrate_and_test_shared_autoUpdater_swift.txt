@@ -1,5 +1,4 @@
 # Auto-generated for Integrate and test shared `autoUpdater.swift`
-def integrate_and_test_shared_autoupdater():
-    """Integrate and test shared `autoUpdater.swift`"""
-    pass
-
+func integrate_and_test() {
+    // Integrate and test shared `autoUpdater.swift`
+}

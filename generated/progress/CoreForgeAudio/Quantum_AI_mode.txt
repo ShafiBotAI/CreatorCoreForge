@@ -2,4 +2,3 @@
 def quantum_ai_mode():
     """Quantum AI mode"""
     pass
-

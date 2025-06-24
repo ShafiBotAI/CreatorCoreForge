@@ -1,3 +1,9 @@
+
+# Auto-generated for AISummaryChatService
+def aisummarychatservice():
+    """AISummaryChatService"""
+    pass
+=======
 # Simple summary and chat service used in tests.
 class AISummaryChatService:
     def summarize(self, text: str, max_chars: int = 120) -> str:
@@ -9,4 +15,5 @@ class AISummaryChatService:
     def chat(self, prompt: str) -> str:
         prompt = prompt.strip()
         return f"You said: {prompt}" if prompt else ""
+
 

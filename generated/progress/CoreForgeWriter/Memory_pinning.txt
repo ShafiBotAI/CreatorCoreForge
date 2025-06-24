@@ -2,4 +2,3 @@
 def memory_pinning():
     """Memory pinning"""
     pass
-

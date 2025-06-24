@@ -1,5 +1,4 @@
 # Auto-generated for Alerts, notifications, trade confirmation UI
-def alerts_notifications_trade_confirmation_ui():
+def alerts_notifications_trade():
     """Alerts, notifications, trade confirmation UI"""
     pass
-

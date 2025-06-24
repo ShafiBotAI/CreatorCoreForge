@@ -1,5 +1,4 @@
 # Auto-generated for Group live NSFW video, live collab acting rooms
-def group_live_nsfw_video_live():
+def group_live_nsfw():
     """Group live NSFW video, live collab acting rooms"""
     pass
-

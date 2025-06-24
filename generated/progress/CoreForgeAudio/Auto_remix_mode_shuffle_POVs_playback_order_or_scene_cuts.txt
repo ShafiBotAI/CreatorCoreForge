@@ -1,5 +1,4 @@
 # Auto-generated for Auto-remix mode: shuffle POVs, playback order, or scene cuts
-def auto_remix_mode_shuffle_povs():
+def auto_remix_mode():
     """Auto-remix mode: shuffle POVs, playback order, or scene cuts"""
     pass
-

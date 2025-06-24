@@ -2,4 +2,3 @@
 def voicecontrolservice_integration():
     """VoiceControlService integration"""
     pass
-

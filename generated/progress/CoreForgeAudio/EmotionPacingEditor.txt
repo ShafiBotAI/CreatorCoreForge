@@ -2,4 +2,3 @@
 def emotionpacingeditor():
     """EmotionPacingEditor"""
     pass
-

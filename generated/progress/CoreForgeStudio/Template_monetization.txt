@@ -2,4 +2,3 @@
 def template_monetization():
     """Template monetization"""
     pass
-

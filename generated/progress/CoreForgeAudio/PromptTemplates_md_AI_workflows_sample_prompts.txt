@@ -1,3 +1,9 @@
+
+# Auto-generated for PromptTemplates.md (AI workflows, sample prompts)
+def prompttemplates_md_ai():
+    """PromptTemplates.md (AI workflows, sample prompts)"""
+    pass
+=======
 """Prompt Template Parser
 
 This module parses a Markdown file containing AI workflow
@@ -50,3 +56,4 @@ class PromptTemplateParser:
         if current_title:
             templates.append(PromptTemplate(current_title, "\n".join(current_body).strip()))
         return templates
+

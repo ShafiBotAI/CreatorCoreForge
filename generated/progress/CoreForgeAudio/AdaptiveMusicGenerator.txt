@@ -2,4 +2,3 @@
 def adaptivemusicgenerator():
     """AdaptiveMusicGenerator"""
     pass
-
