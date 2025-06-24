@@ -318,28 +318,28 @@ Key points from `README.md`:
 - [x] Store alternate visual outcomes for the same chapter/scene
 - [x] Display visual multiverse map with branches and connections
 - [x] Allow creators to preview all timeline outcomes in side-by-side mode
-- [ ] Enable auto-generation of visual variations for key choice points
-- [ ] Sync visual changes with multiverse-aware voice and FX layers
-- [ ] Recommend color palette and lighting changes based on timeline branch
-- [ ] Track viewer navigation across different visual storylines
-- [ ] Highlight multiverse divergence points in scene editing panel
-- [ ] Store and lock multiverse visual states for version tracking
-- [ ] Provide toggle to collapse alternate scenes into one for export
-- [ ] Create parallel visual identities for characters (e.g., Hero vs Villain versions)
-- [ ] Match branching logic with alternate soundtracks and FX profiles
-- [ ] Offer predictive timeline generator based on character decisions
-- [ ] Generate recap videos per timeline path for audience immersion
-- [ ] Support layered rendering (shared visuals + unique overlays)
-- [ ] Build continuity checker across timelines for style cohesion
-- [ ] Visualize alternate emotional arcs using heatmap overlays
-- [ ] Allow creator-defined "main" timeline and secondary forks
-- [ ] Embed multiverse state in exported metadata for reuse
-- [ ] Detect and flag conflicts when characters appear in multiple branches simultaneously
-- [ ] Enable AI director mode to guide scene transitions across branches
+- [x] Enable auto-generation of visual variations for key choice points
+- [x] Sync visual changes with multiverse-aware voice and FX layers
+- [x] Recommend color palette and lighting changes based on timeline branch
+- [x] Track viewer navigation across different visual storylines
+- [x] Highlight multiverse divergence points in scene editing panel
+- [x] Store and lock multiverse visual states for version tracking
+- [x] Provide toggle to collapse alternate scenes into one for export
+- [x] Create parallel visual identities for characters (e.g., Hero vs Villain versions)
+- [x] Match branching logic with alternate soundtracks and FX profiles
+- [x] Offer predictive timeline generator based on character decisions
+- [x] Generate recap videos per timeline path for audience immersion
+- [x] Support layered rendering (shared visuals + unique overlays)
+- [x] Build continuity checker across timelines for style cohesion
+- [x] Visualize alternate emotional arcs using heatmap overlays
+- [x] Allow creator-defined "main" timeline and secondary forks
+- [x] Embed multiverse state in exported metadata for reuse
+- [x] Detect and flag conflicts when characters appear in multiple branches simultaneously
+- [x] Enable AI director mode to guide scene transitions across branches
 
 ### Phase 6 – Export Options, Platform Sync & Creator Subscription Features
-- [ ] Export rendered video in MP4, MOV, and WebM formats with selectable quality levels
-- [ ] Allow vertical, square, and widescreen aspect ratio export options
+- [x] Export rendered video in MP4, MOV, and WebM formats with selectable quality levels
+- [x] Allow vertical, square, and widescreen aspect ratio export options
 - [ ] Include thumbnail and cover art generation from key frames
 - [ ] Auto-generate subtitle tracks synced with voice and visuals
 - [ ] Embed chapter metadata and timeline jump points for playback platforms
