@@ -8,6 +8,9 @@
     "Tests/CreatorCoreForgeTests/AudioVisualPhaseOneTests.swift",
     "Tests/CreatorCoreForgeTests/MarkdownLayoutParserTests.swift",
     "apps/CoreForgeBuild/AGENTS.md",
-    "open_tasks_registry.json"
+    "open_tasks_registry.json",
+    "VoiceLab/src/TTSRenderer.ts",
+    "VoiceLab/src/ChapterEditor.vue",
+    "VoiceLab/test/ttsRenderer.test.ts"
   ]
 }

@@ -22,16 +22,6 @@
     },
     {
       "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-CODE-QUALITY-PERFORMANCE.md",
-      "line": 53,
-      "task": "Enhance `TTSRenderer.ts`"
-    },
-    {
-      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-CODE-QUALITY-PERFORMANCE.md",
-      "line": 61,
-      "task": "Refactor `ChapterEditor.vue`"
-    },
-    {
-      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-CODE-QUALITY-PERFORMANCE.md",
       "line": 73,
       "task": "Run performance tests before/after each refactor"
     },

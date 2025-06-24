@@ -17,20 +17,6 @@
       "source_file": "CODEX-TODO-ENHANCE-CODE-QUALITY-PERFORMANCE.md"
     },
     {
-      "task": "Optimize `SegmentService.swift`",
-      "source_file": "CODEX-TODO-ENHANCE-CODE-QUALITY-PERFORMANCE.md",
-      "target_file": "Sources/CreatorCoreForge/SegmentService.swift",
-      "language": "Swift"
-    },
-    {
-      "task": "Enhance `TTSRenderer.ts`",
-      "source_file": "CODEX-TODO-ENHANCE-CODE-QUALITY-PERFORMANCE.md"
-    },
-    {
-      "task": "Refactor `ChapterEditor.vue`",
-      "source_file": "CODEX-TODO-ENHANCE-CODE-QUALITY-PERFORMANCE.md"
-    },
-    {
       "task": "Run performance tests before/after each refactor",
       "source_file": "CODEX-TODO-ENHANCE-CODE-QUALITY-PERFORMANCE.md"
     },
@@ -325,12 +311,7 @@
     {
       "task": "Developer console toggle (Creator tier)",
       "source_file": "FEATURES-CODEX-COMPLETE.md"
-    },
-    {
-      "task": "Enable markdown-style layout instructions (e.g., \"2-column login form\")",
-      "source_file": "apps/CoreForgeBuild/AGENTS.md",
-      "target_file": "Sources/CreatorCoreForge/MarkdownLayoutParser.swift",
-      "language": "Swift"
     }
+
   ]
 }
