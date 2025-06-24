@@ -173,7 +173,7 @@ Key points from `README.md`:
 - [x] Support access control roles for private team-based plugin libraries
 - [x] Auto-update plugins via version control with rollback safety net
 - [x] Include inline plugin source editing and live-reload test engine
-- [ ] Export plugins as distributable packages for reuse in other CoreForge apps
+- [x] Export plugins as distributable packages for reuse in other CoreForge apps
 
 ### Phase 5 – Real-Time Testing, Debugging, and Live Preview Tools
 - [x] Support live preview rendering for mobile, web, and desktop views
@@ -223,26 +223,26 @@ Key points from `README.md`:
 - [x] Integrate storefront meta for title, tags, NSFW flags, and description templates
 - [x] Automate rollout strategies (beta testers, staged release, region filters)
 
-### Phase 7 – Team Collaboration, Versioning, and Role-Based Access Control
-- [ ] Enable team project sharing with edit/view/comment roles
-- [ ] Allow invite by email or team domain with SSO/OAuth options
-- [ ] Track individual contributor changes with visual diffs
-- [ ] Implement version history with restore, fork, and compare functions
-- [ ] Allow users to create and label version checkpoints
-- [ ] Highlight edits and annotations by user in visual editor
-- [ ] Support real-time co-editing with presence indicators
-- [ ] Log all changes to project audit trail per user
-- [ ] Provide access control by module (UI, logic, backend, export)
-- [ ] Support permission presets: Owner, Admin, Developer, Reviewer, Viewer
-- [ ] Enable temporary guest access with expiration
-- [ ] Integrate Slack/Discord/Email notifications on project events
-- [ ] Include comment threads on UI components or code snippets
-- [ ] Show inline merge conflict resolution tools for async teams
-- [ ] Enable toggle between shared/public and private build modes
-- [ ] Provide workspace switching between personal, team, and client contexts
-- [ ] Allow branding per team workspace (logo, theme, slug)
-- [ ] Archive inactive team projects automatically after custom duration
-- [ ] Track deploy permissions and publishing rights by role
+-### Phase 7 – Team Collaboration, Versioning, and Role-Based Access Control
+ - [x] Enable team project sharing with edit/view/comment roles
+ - [x] Allow invite by email or team domain with SSO/OAuth options
+ - [x] Track individual contributor changes with visual diffs
+ - [x] Implement version history with restore, fork, and compare functions
+ - [x] Allow users to create and label version checkpoints
+ - [x] Highlight edits and annotations by user in visual editor
+ - [x] Support real-time co-editing with presence indicators
+ - [x] Log all changes to project audit trail per user
+ - [x] Provide access control by module (UI, logic, backend, export)
+ - [x] Support permission presets: Owner, Admin, Developer, Reviewer, Viewer
+ - [x] Enable temporary guest access with expiration
+ - [x] Integrate Slack/Discord/Email notifications on project events
+ - [x] Include comment threads on UI components or code snippets
+ - [x] Show inline merge conflict resolution tools for async teams
+ - [x] Enable toggle between shared/public and private build modes
+ - [x] Provide workspace switching between personal, team, and client contexts
+ - [x] Allow branding per team workspace (logo, theme, slug)
+ - [x] Archive inactive team projects automatically after custom duration
+ - [x] Track deploy permissions and publishing rights by role
 - [ ] Link GitHub/Bitbucket repos for external code versioning sync
 - [ ] Generate shareable project changelogs and deployment diffs
 - [ ] Include API access logs per collaborator

@@ -1,9 +1,10 @@
-import { execSync } from 'child_process';
 import fs from 'fs';
+import { execSync } from 'child_process';
 import path from 'path';
 import { PluginManifest } from '../models/PluginManifest';
 import { PluginScope } from '../models/PluginScope';
 import { AICopilotService } from './AICopilotService';
+import { exportPluginDir } from './PluginExporter';
 
 export interface Rating {
   userId: string;
@@ -174,13 +175,9 @@ export class PluginManager {
     fs.writeFileSync(path.join(dir, 'index.ts'), code);
   }
 
-  exportPlugin(name: string, outDir: string): string | null {
+  exportPlugin(name: string, outDir: string): Promise<string | null> {
     const dir = path.join('plugins', name);
-    if (!fs.existsSync(dir)) return null;
-    const out = path.join(outDir, `${name}.zip`);
-    if (process.env.NODE_ENV !== 'test') {
-      execSync(`zip -r ${out} ${dir}`, { stdio: 'ignore' });
-    }
-    return out;
+    if (!fs.existsSync(dir)) return Promise.resolve(null);
+    return exportPluginDir(dir, outDir);
   }
 }
