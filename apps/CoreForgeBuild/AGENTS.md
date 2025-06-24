@@ -80,16 +80,16 @@ Key points from `README.md`:
 - [x] Detect nested conditional UIs and represent visually (e.g., modal → success → redirect)
 - [x] Offer AI-generated design themes based on brand input
 - [x] Store parsing outcomes in history buffer with version rollback
-- [ ] Connect prompt parser to code output preview via event bridge
-- [ ] Validate parsed layouts against mobile and desktop resolution grids
-- [ ] Include onboarding UI examples for prompt learning
+- [x] Connect prompt parser to code output preview via event bridge
+- [x] Validate parsed layouts against mobile and desktop resolution grids
+- [x] Include onboarding UI examples for prompt learning
 
-### Phase 2 – Code Generation Engine & Language Support Matrix
-- [ ] Generate fully typed code in JavaScript, TypeScript, Swift, Kotlin, Dart, Python
-- [ ] Detect app architecture (SPA, MVC, MVVM) from prompt or UI map
-- [ ] Offer choice of frontend frameworks (React, Vue, Flutter, SwiftUI)
-- [ ] Offer choice of backend frameworks (Express, FastAPI, Firebase, Supabase)
-- [ ] Scaffold authentication logic (JWT, OAuth2, magic link, social login)
+-### Phase 2 – Code Generation Engine & Language Support Matrix
+- [x] Generate fully typed code in JavaScript, TypeScript, Swift, Kotlin, Dart, Python
+- [x] Detect app architecture (SPA, MVC, MVVM) from prompt or UI map
+- [x] Offer choice of frontend frameworks (React, Vue, Flutter, SwiftUI)
+- [x] Offer choice of backend frameworks (Express, FastAPI, Firebase, Supabase)
+- [x] Scaffold authentication logic (JWT, OAuth2, magic link, social login)
 - [ ] Modularize generated code into atomic components or services
 - [ ] Comment code with explainable AI summaries per function
 - [ ] Provide toggle for minimalist, verbose, or intermediate code style
