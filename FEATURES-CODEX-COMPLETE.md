@@ -9,7 +9,7 @@
 ## ✅ Phase 1 – Scene Import & Breakdown (Free Tier)
 
 ### 📚 Book Import & Scene Parser
-- [ ] `BookImporter.import(file): Promise<Scene[]>`
+ - [x] `BookImporter.import(file): Promise<Scene[]>`
 - [ ] Parse EPUB/PDF/TXT into story blocks
 - [ ] Extract visual scene descriptors and dialogue
 - [ ] Normalize chapters into visual sequences
