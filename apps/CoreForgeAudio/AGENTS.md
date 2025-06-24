@@ -525,32 +525,32 @@ Key points from `README.md`:
 - [x] Map memory triggers to emotion modulation for recurring themes
 - [x] Generate emotional arc summaries for each book and voice profile
 - [x] Translate entire books while preserving narrator tone and genre
-- [ ] Match accents to region and character origin dynamically
-- [ ] Create multilingual narration with seamless voice switch per language
-- [ ] Add genre-aware translation modes (e.g., poetic for fantasy, direct for nonfiction)
-- [ ] Enable narrator tone matching during back-translations (reverse language)
-- [ ] Preserve paragraph-level pacing in translated output
-- [ ] Flag idioms and phrases for creative language adaptation
-- [ ] Allow inline multilingual conversations with character accent routing
-- [ ] Implement voice glossaries for culturally relevant pronunciation
-- [ ] Render unabridged books up to 40+ hours without loss of pacing
-- [ ] Optimize long-form rendering using audio caching checkpoints
-- [ ] Insert smart bookmarks at scene/act/chapter transitions
-- [ ] Auto-generate full table of contents with audio-linked sections
-- [ ] Provide unabridged-to-abridged summarization mode for preview
-- [ ] Adapt narration style based on genre and reader profile (e.g., thriller vs. memoir)
-- [ ] Detect formatting features (lists, quotes, poetry) and adjust narration accordingly
-- [ ] Store memory snapshots between render sessions for persistent output quality
+- [x] Match accents to region and character origin dynamically
+- [x] Create multilingual narration with seamless voice switch per language
+- [x] Add genre-aware translation modes (e.g., poetic for fantasy, direct for nonfiction)
+- [x] Enable narrator tone matching during back-translations (reverse language)
+- [x] Preserve paragraph-level pacing in translated output
+- [x] Flag idioms and phrases for creative language adaptation
+- [x] Allow inline multilingual conversations with character accent routing
+- [x] Implement voice glossaries for culturally relevant pronunciation
+- [x] Render unabridged books up to 40+ hours without loss of pacing
+- [x] Optimize long-form rendering using audio caching checkpoints
+- [x] Insert smart bookmarks at scene/act/chapter transitions
+- [x] Auto-generate full table of contents with audio-linked sections
+- [x] Provide unabridged-to-abridged summarization mode for preview
+- [x] Adapt narration style based on genre and reader profile (e.g., thriller vs. memoir)
+- [x] Detect formatting features (lists, quotes, poetry) and adjust narration accordingly
+- [x] Store memory snapshots between render sessions for persistent output quality
 
 ### Phase 9 – Full-Cast Audio Mastering & Creator Intelligence Suite
 - [x] Assign separate audio tracks to each character and narrator for post-mix mastering
 - [x] Generate multitrack session files for DAWs (e.g., Logic, Pro Tools, Audition)
 - [x] Sync ambient layers, voice tracks, and FX on a shared scene timeline
-- [ ] Enable per-character equalization, pitch adjustment, and compression
-- [ ] Simulate stereo spatial positioning per voice (left/right, near/far)
+- [x] Enable per-character equalization, pitch adjustment, and compression
+- [x] Simulate stereo spatial positioning per voice (left/right, near/far)
 - [x] Build emotion intensity heatmap per scene to guide tone balancing
-- [ ] Create a full-cast preview mode with toggles for each voice track
-- [ ] Add creator-defined vocal layering for crowd and background dialogue
+- [x] Create a full-cast preview mode with toggles for each voice track
+- [x] Add creator-defined vocal layering for crowd and background dialogue
 - [ ] Offer toggle for “narrator override” mode for consistency across multi-voice scenes
 - [ ] Auto-suggest optimal scene pacing based on text intensity and emotion tags
 - [ ] Detect dialogue overlap potential and adjust timing automatically
