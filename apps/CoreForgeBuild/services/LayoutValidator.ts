@@ -33,4 +33,12 @@ export class LayoutValidator {
     }
     return result.join('');
   }
+
+  /**
+   * Validate that the layout size roughly matches common resolution grids.
+   */
+  validateGrid(layout: { type: string }[], grid: 'mobile' | 'desktop'): boolean {
+    const limit = grid === 'mobile' ? 15 : 30;
+    return layout.length <= limit;
+  }
 }
