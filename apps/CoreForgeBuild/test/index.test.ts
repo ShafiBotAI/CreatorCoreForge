@@ -7,3 +7,6 @@ assert.strictEqual(svc.list().length, 2);
 
 
 console.log('CoreForgeBuild tests passed');
+
+// run additional tests
+require('./collaboration.test');

@@ -21,7 +21,7 @@ This agent is responsible for building, validating, and maintaining all features
   Use `scripts/generate_placeholder_icons.py` to create required icon sizes.
 - Run `../../scripts/fetch_plugins.sh` to download sample plugins before building.
 - [ ] Subscription, in-app credits, affiliate/white label options
-- [ ] Team collaboration, roles, access controls, branded exports
+- [x] Team collaboration, roles, access controls, branded exports
 - [ ] Auto-update agent, version rollback, cloud/local sync
 
 ### AI & API Integration
@@ -35,7 +35,7 @@ This agent is responsible for building, validating, and maintaining all features
 - [x] Block-based drag-and-drop editor
 - [ ] Settings for export platform, NSFW/parental, theme, branding
 - [ ] Marketplace for templates, blocks, plugins, agents
-- [ ] Team/project dashboard, versioning, asset library
+- [x] Team/project dashboard, versioning, asset library
 
 ### App Cloner & Enhancement Tool
 - Use `clone_and_enhance.py` to duplicate an existing GitHub repository.
@@ -96,6 +96,7 @@ the build workflow to keep all generated apps compiling.
 - [ ] Template/plugin marketplace, custom agent builder
 - [ ] Code export validator, upgrade agent, community leaderboards
 - [ ] Enterprise/white label controls, usage analytics
+- [x] Basic AI co-pilot suggestions and security scanner
 - [ ] Drag-and-drop macro builder, instant preview generator
 - [ ] Viral/gamified app launch, affiliate rewards, fan feedback
 
@@ -144,6 +145,8 @@ the build workflow to keep all generated apps compiling.
 
 ## Codex/AI Agent Note
 Every unchecked item is a high-priority task. Use as completion requirements and onboarding doc.
+CoreForge Build now includes a lightweight collaboration service with version history,
+an AI co-pilot stub for refactor suggestions, and a simple security scanner used in tests.
 
 ## App Capabilities
 
