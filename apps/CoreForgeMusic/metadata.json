@@ -1,0 +1,9 @@
+{
+  "app_name": "CoreForge Music",
+  "version": "1.0.0",
+  "bundle_id": "com.creatorcoreforge.music",
+  "keywords": ["music composition", "AI remix", "collaboration", "sound design"],
+  "developer": "CreatorCoreForge",
+  "category": "Music",
+  "platforms": ["iOS", "Android", "Windows", "macOS", "Web"]
+}

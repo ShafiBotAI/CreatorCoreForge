@@ -1,4 +1,7 @@
 import Foundation
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 /// Basic scheduler for uploading videos to various platforms.
 final class UploadScheduler {
@@ -6,6 +9,14 @@ final class UploadScheduler {
         case youtube
         case tiktok
         case instagram
+
+        var endpoint: URL {
+            switch self {
+            case .youtube: return URL(string: "https://example.com/youtube/upload")!
+            case .tiktok: return URL(string: "https://example.com/tiktok/upload")!
+            case .instagram: return URL(string: "https://example.com/instagram/upload")!
+            }
+        }
     }
 
     private var queue: [(url: URL, platform: Platform, date: Date)] = []
@@ -33,8 +44,22 @@ final class UploadScheduler {
         if queue.isEmpty { timer?.invalidate(); timer = nil }
     }
 
+    private let session: URLSession
+
+    init(session: URLSession = .shared) {
+        self.session = session
+    }
+
     private func performUpload(url: URL, to platform: Platform) {
-        // Placeholder for API-specific upload logic.
-        print("Uploading \(url.lastPathComponent) to \(platform)")
+        var request = URLRequest(url: platform.endpoint)
+        request.httpMethod = "POST"
+        let task = session.uploadTask(with: request, fromFile: url) { data, _, error in
+            if let error = error {
+                print("Upload failed: \(error.localizedDescription)")
+            } else {
+                print("Uploaded \(url.lastPathComponent) to \(platform)")
+            }
+        }
+        task.resume()
     }
 }

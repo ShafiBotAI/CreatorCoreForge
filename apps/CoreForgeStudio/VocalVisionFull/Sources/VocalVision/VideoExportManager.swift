@@ -1,4 +1,5 @@
 import Foundation
+import CreatorCoreForge
 
 /// High level manager that orchestrates generating scenes and exporting a video.
 public final class VideoExportManager {
@@ -54,5 +55,33 @@ public final class VideoExportManager {
                                      birthDate: birthDate,
                                       progress: progress,
                                       completion: completion)
+    }
+
+    /// Export only the most emotional scenes as a highlight reel.
+    public func exportMoodMix(bookText: String,
+                              to outputURL: URL,
+                              intensityThreshold: Double = 0.5,
+                              nsfw: Bool = false,
+                              birthDate: Date = Date(timeIntervalSince1970: 0),
+                              progress: @escaping (Double) -> Void,
+                              completion: @escaping (URL?) -> Void) {
+        let scenes = sceneGenerator.generateScenes(from: bookText)
+        let analyzer = EmotionAnalyzer()
+        let highlights = scenes.filter { scene in
+            Double(analyzer.analyzeEmotion(from: scene.description).intensity) >= intensityThreshold
+        }
+        guard !highlights.isEmpty else {
+            completion(nil)
+            return
+        }
+        _ = voiceMapper.assignVoices(to: bookText)
+        let voiced = caster.assignVoices(to: highlights)
+        renderer.exportMultiHourVideo(scenes: voiced,
+                                     to: outputURL,
+                                     metadata: ["filter": "moodmix"],
+                                     nsfw: nsfw,
+                                     birthDate: birthDate,
+                                     progress: progress,
+                                     completion: completion)
     }
 }

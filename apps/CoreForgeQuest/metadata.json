@@ -1,0 +1,9 @@
+{
+  "app_name": "CoreForge Quest",
+  "version": "1.0.0",
+  "bundle_id": "com.creatorcoreforge.quest",
+  "keywords": ["gaming AI", "procedural generation", "infinite levels", "challenges"],
+  "developer": "CreatorCoreForge",
+  "category": "Games",
+  "platforms": ["iOS", "Android", "Windows", "macOS", "Web"]
+}

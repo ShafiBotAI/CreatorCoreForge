@@ -1,0 +1,4 @@
+# Auto-generated for Integration tests for all API workflows (OpenAI, LocalVoiceAI, Firebase)
+def integration_tests_for():
+    """Integration tests for all API workflows (OpenAI, LocalVoiceAI, Firebase)"""
+    pass
