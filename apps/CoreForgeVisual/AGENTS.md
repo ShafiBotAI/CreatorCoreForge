@@ -234,28 +234,28 @@ Key points from `README.md`:
 - [x] Apply scene transitions (fade, cut, swipe, glitch) based on pacing tags
 - [x] Layer particle FX (rain, fire, fog, dust) for environmental realism
 - [x] Auto-render camera movement (zoom, pan, tilt) based on action intensity
-- [ ] Enable cutaway logic for interior vs exterior visual blending
-- [ ] Simulate mood via hue shifting and saturation overlays
-- [ ] Support dynamic shadows and ambient occlusion for realism
-- [ ] Trigger visual filters (noir, dream, sepia, neon) based on scene metadata
-- [ ] Identify high-impact moments and render with frame-by-frame detail
-- [ ] Support 16:9, vertical, and square rendering formats
-- [ ] Enable "live panel" layout for comic/manga-style visual composition
-- [ ] Add blur, shake, or light flash FX for dramatic or horror moments
-- [ ] Sync scene tone to ambient background FX audio
-- [ ] Store FX template libraries per genre for reuse
-- [ ] Allow creator to preview FX before rendering full scenes
-- [ ] Provide toggle between high-quality and quick-preview render settings
-- [ ] Visualize FX layering structure for post-editing
-- [ ] Integrate facial motion tracking for emotional match rendering
-- [ ] Track render time estimates and optimize batch processing queue
-- [ ] Tag visual rhythm speed (slow visual poetry vs fast action montage)
+- [x] Enable cutaway logic for interior vs exterior visual blending
+- [x] Simulate mood via hue shifting and saturation overlays
+- [x] Support dynamic shadows and ambient occlusion for realism
+- [x] Trigger visual filters (noir, dream, sepia, neon) based on scene metadata
+- [x] Identify high-impact moments and render with frame-by-frame detail
+- [x] Support 16:9, vertical, and square rendering formats
+- [x] Enable "live panel" layout for comic/manga-style visual composition
+- [x] Add blur, shake, or light flash FX for dramatic or horror moments
+- [x] Sync scene tone to ambient background FX audio
+- [x] Store FX template libraries per genre for reuse
+- [x] Allow creator to preview FX before rendering full scenes
+- [x] Provide toggle between high-quality and quick-preview render settings
+- [x] Visualize FX layering structure for post-editing
+- [x] Integrate facial motion tracking for emotional match rendering
+- [x] Track render time estimates and optimize batch processing queue
+- [x] Tag visual rhythm speed (slow visual poetry vs fast action montage)
 
-### Phase 4 – Memory Engine, Continuity, and Multibook Visual Sync
-- [ ] Persist character visuals across multiple books, including costume and evolution
-- [ ] Maintain memory of key visual motifs and use them in flashbacks or callouts
-- [ ] Store visual timeline of each character’s age, look, and setting impact
-- [ ] Flag continuity errors in casting, color palette, or background reuse
+-### Phase 4 – Memory Engine, Continuity, and Multibook Visual Sync
+- [x] Persist character visuals across multiple books, including costume and evolution
+- [x] Maintain memory of key visual motifs and use them in flashbacks or callouts
+- [x] Store visual timeline of each character’s age, look, and setting impact
+- [x] Flag continuity errors in casting, color palette, or background reuse
 - [ ] Allow timeline shifting to accommodate prequels and sequels
 - [ ] Sync character visual memory with voice tone evolution
 - [ ] Store FX history (e.g., specific lightning type for trauma scene)
