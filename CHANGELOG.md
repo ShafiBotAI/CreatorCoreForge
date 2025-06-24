@@ -4,6 +4,7 @@
 - Optimized `SegmentService` with chunked async processing and LRU caching.
 - Added layout instruction parsing to `MarkdownLayoutParser` and updated Build AGENTS checklist.
 - Implemented `TTSRenderer` and Vue-based `ChapterEditor`, closing related open tasks.
+- Ran `scripts/full_app_scan.py` and updated readiness checklist. Verified test suites via `run_all_tests.sh`.
 - Added developer console toggle to `BuildPreviewEngine`.
 - Added `UnifiedAudioEngine` shared module and updated all app feature lists.
 - Added `UnifiedVideoEngine` and `AdaptiveLearningEngine` modules for cross-platform video rendering and adaptive learning.
