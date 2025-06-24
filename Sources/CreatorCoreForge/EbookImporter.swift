@@ -78,6 +78,18 @@ public class EbookImporter {
         return splitIntoChapters(simulatedText)
     }
 
+    /// Import all supported ebook files within a directory.
+    /// Returns combined chapter strings in order of discovery.
+    public func importFromDirectory(_ directory: String) -> [String] {
+        guard let files = try? FileManager.default.contentsOfDirectory(atPath: directory) else { return [] }
+        var chapters: [String] = []
+        for file in files {
+            let path = (directory as NSString).appendingPathComponent(file)
+            chapters += importEbook(from: path)
+        }
+        return chapters
+    }
+
     private func splitIntoChapters(_ content: String) -> [String] {
         let rawChapters = content.components(separatedBy: "\n\n")
         return rawChapters.filter { !$0.trimmingCharacters(in: .whitespaces).isEmpty }

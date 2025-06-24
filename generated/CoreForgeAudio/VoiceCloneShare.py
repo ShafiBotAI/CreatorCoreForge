@@ -1,0 +1,4 @@
+# Auto-generated for VoiceCloneShare
+def voicecloneshare():
+    """VoiceCloneShare"""
+    pass

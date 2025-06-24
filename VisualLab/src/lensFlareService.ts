@@ -1,13 +1,25 @@
+export type Frame = number[][];
+
+/**
+ * Lens flare utility with optimized pixel scanning.
+ */
 export class LensFlareService {
-  detectBrightSpots(frame: number[][], threshold = 250): [number, number][] {
+  /**
+   * Detect bright pixels above the given threshold.
+   * Uses raw loops for performance rather than nested callbacks.
+   */
+  detectBrightSpots(frame: Frame, threshold = 250): [number, number][] {
     const spots: [number, number][] = [];
-    frame.forEach((row, y) => row.forEach((v, x) => {
-      if (v > threshold) spots.push([x, y]);
-    }));
+    for (let y = 0; y < frame.length; y++) {
+      const row = frame[y];
+      for (let x = 0; x < row.length; x++) {
+        if (row[x] > threshold) spots.push([x, y]);
+      }
+    }
     return spots;
   }
 
-  applyLensFlare(frame: number[][]): number[][] {
+  applyLensFlare(frame: Frame): Frame {
     const result = frame.map(row => row.slice());
     const spots = this.detectBrightSpots(frame);
     const addIntensity = (x: number, y: number, inc: number) => {
@@ -16,16 +28,27 @@ export class LensFlareService {
       }
     };
 
+    const offsets: [number, number, number][] = LensFlareService.OFFSETS;
+
     spots.forEach(([x, y]) => {
-      addIntensity(x, y, 30);
-      for (let dx = -1; dx <= 1; dx++) {
-        for (let dy = -1; dy <= 1; dy++) {
-          if (dx === 0 && dy === 0) continue;
-          addIntensity(x + dx, y + dy, 20 - (Math.abs(dx) + Math.abs(dy)) * 5);
-        }
+      for (const [dx, dy, inc] of offsets) {
+        addIntensity(x + dx, y + dy, inc);
       }
     });
 
     return result;
   }
+
+  /** Offsets for flare intensity, ordered from strongest to weakest. */
+  private static readonly OFFSETS: [number, number, number][] = [
+    [0, 0, 30],
+    [0, -1, 15],
+    [0, 1, 15],
+    [-1, 0, 15],
+    [1, 0, 15],
+    [-1, -1, 10],
+    [-1, 1, 10],
+    [1, -1, 10],
+    [1, 1, 10]
+  ];
 }

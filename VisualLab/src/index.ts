@@ -40,3 +40,15 @@ export * from './SubtitleGenerator.ts';
 export * from './RenderAnalyticsDashboard.tsx';
 export { UnifiedAudioEngine } from './UnifiedAudioEngine.ts';
 
+export * from './frameInterpolator.ts';
+=======
+export { UnifiedVideoEngine } from './UnifiedVideoEngine.ts';
+export { AdaptiveLearningEngine } from './AdaptiveLearningEngine.ts';
+export { VisualRenderer } from './VisualRenderer.ts';
+
+
+export * from './characterDetector.ts';
+export * from './locationTemplateMatcher.ts';
+export * from './storyboardGenerator.ts';
+export * from './dragDropHelper.ts';
+export * from './sceneBreakEditor.ts';

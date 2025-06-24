@@ -26,6 +26,11 @@ public final class CharacterMemoryEngine {
         traits[character.lowercased()]?[trait]
     }
 
+    /// Retrieve all stored traits for the specified character.
+    public func traits(for character: String) -> [String: String] {
+        traits[character.lowercased()] ?? [:]
+    }
+
     public func clearAll() {
         traits.removeAll()
         persist()

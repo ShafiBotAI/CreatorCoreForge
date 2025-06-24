@@ -39,15 +39,15 @@ public final class UniversalMediaGenerator {
         let scenes = sceneGenerator.generateScenes(from: text)
         actionEngine.record("generateScenes")
 
-        // Placeholder audio samples for each scene
-        let samples = scenes.enumerated().map { "sound\($0.offset)" }
+        // Derive pseudo audio sample identifiers from the scene text
+        let samples = scenes.map { "sound-\($0.hashValue)" }
         var processed = audioPipeline.addEcho(to: samples)
         processed = audioPipeline.shiftPitch(of: processed, factor: 1.0)
         let audioTrack = audioPipeline.mix(samples: processed)
         actionEngine.record("generateAudio")
 
-        // Placeholder frames for each scene
-        let frames = scenes.enumerated().map { "frame\($0.offset)" }
+        // Derive pseudo frame identifiers from the scene text
+        let frames = scenes.map { "frame-\($0.hashValue)" }
         let faded = videoPipeline.applyFadeTransitions(to: frames)
         let watermarked = videoPipeline.addWatermark(to: faded, watermark: "wm")
         let clip = videoPipeline.composeVideo(frames: watermarked, audio: audioTrack)

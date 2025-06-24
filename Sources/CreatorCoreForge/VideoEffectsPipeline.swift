@@ -17,9 +17,32 @@ public struct VideoEffectsPipeline {
         return result
     }
 
+    /// Inserts interpolated frame tags between each pair of frames.
+    public func interpolateFrames(_ frames: [String]) -> [String] {
+        guard frames.count > 1 else { return frames }
+        var result: [String] = []
+        for i in 0..<frames.count - 1 {
+            let current = frames[i]
+            let next = frames[i + 1]
+            result.append(current)
+            result.append("\(current)_\(next)_interp")
+        }
+        result.append(frames.last!)
+        return result
+    }
+
     /// Overlays a simple watermark string onto each frame identifier.
     public func addWatermark(to frames: [String], watermark: String) -> [String] {
         frames.map { "\($0)-\(watermark)" }
+    }
+
+    /// Adds a fade-in at the beginning and fade-out at the end of the frame list.
+    public func applyFadeInOut(to frames: [String]) -> [String] {
+        guard !frames.isEmpty else { return [] }
+        var result = ["fade-in"]
+        result.append(contentsOf: frames)
+        result.append("fade-out")
+        return result
     }
 
     /// Combines processed frames with an audio track label to produce a clip.

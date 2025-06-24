@@ -21,7 +21,9 @@ final class LibrarySyncTests: XCTestCase {
             }
             client?.urlProtocolDidFinishLoading(self)
         }
-        override func stopLoading() {}
+        override func stopLoading() {
+            client?.urlProtocolDidFinishLoading(self)
+        }
     }
 
     func testUploadProgressSuccess() {
