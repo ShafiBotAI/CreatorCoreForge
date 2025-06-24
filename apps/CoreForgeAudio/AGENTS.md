@@ -116,7 +116,6 @@ This file is a full checklist of every feature required for code completion and 
 - [x] Apple Watch/mini controller sync for playback
 - [x] In-book voice/tone polls (live user voting)
 
-=======
 
 - [x] Heart-rate integration for adaptive emotion (wearables)
  - [x] Unlockable voice skins, accents, FX presets
@@ -268,12 +267,24 @@ This file is a full checklist of every feature required for code completion and 
 - [x] StutterLaughGenerator
 - [x] InlineWhisperSupport
 - [x] MidSentenceToneSwitching
+
+- [ ] SceneVolumeDynamics
+- [ ] SpatialPositioning
+- [ ] RoomSimulation
+=======
 - [x] SceneVolumeDynamics
 - [x] SpatialPositioning
 - [x] RoomSimulation
+
 - [x] AmbientLayerFX
 - [x] CrossSceneFXLinking
 - [x] SceneDensityTuner
+=======
+
+- [ ] AmbientLayerFX
+- [ ] CrossSceneFXLinking
+- [ ] SceneDensityTuner
+
  - [x] MultiTrackExport
 - [x] EmotionCurveVisualizer
 - [x] VoiceAwarePacing

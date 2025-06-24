@@ -21,6 +21,10 @@ import { DeployService } from '../services/DeployService';
 import { InputNormalizer } from '../services/InputNormalizer';
 import { InputHistory } from '../services/InputHistory';
 import { LogicVisualizer } from '../services/LogicVisualizer';
+import { VoicePromptParser } from '../services/VoicePromptParser';
+import { PromptEditor } from '../services/PromptEditor';
+import { ThemeService } from '../services/ThemeService';
+import { ParseHistory } from '../services/ParseHistory';
 
 (async () => {
 
@@ -58,8 +62,6 @@ import { LogicVisualizer } from '../services/LogicVisualizer';
 
   const diffOutput = diff.diff('a', 'b');
   assert(diffOutput.includes('-a'));
-=======
-  assert(diff.diff('a', 'b').includes('-a'));
 
 
   const sugg = new UISuggestionService();
@@ -88,14 +90,37 @@ import { LogicVisualizer } from '../services/LogicVisualizer';
   const deploy = new DeployService();
   assert.strictEqual(deploy.deploy('dist/sample'), 'dist/sample');
 
-=======
   const history = new InputHistory();
-  history.add('First');
+  history.add('First', parsed);
   assert.strictEqual(history.list().length, 1);
 
   const normalizer = new InputNormalizer();
   assert(normalizer.toASUIM('Simple text').length > 0);
   assert(normalizer.toASUIM(Buffer.from('abc')).length > 0);
+
+  // multilingual prompt parsing
+  const parsedEs = parser.parse('hola inicio');
+  assert.strictEqual(parsedEs.language, 'es');
+
+  // pattern recognition
+  const patternParsed = parser.parse('Onboarding flow with tabbed menu');
+  assert(patternParsed.patterns?.includes('onboarding'));
+  assert(patternParsed.patterns?.includes('tabbed-navigation'));
+
+  const voiceParser = new VoicePromptParser();
+  const voiceResult = voiceParser.parseVoice(Buffer.from('login -> dashboard'));
+  assert(voiceResult.flows.length > 0);
+
+  const editor = new PromptEditor();
+  const corrected = editor.applyCorrection([{ type: 'paragraph', props: { text: 'old' } }], { index: 0, text: 'new' });
+  assert.strictEqual(corrected[0].props?.text, 'new');
+
+  const themeSvc = new ThemeService();
+  assert(themeSvc.suggestThemes('Dark Brand')[0] === 'dark');
+
+  const parseHistory = new ParseHistory();
+  parseHistory.add(parsed);
+  assert.strictEqual(parseHistory.all().length, 1);
 
   const visualizer = new LogicVisualizer();
   const ascii = visualizer.toASCII([{ type: 'header', props: { text: 'Title' } }]);
