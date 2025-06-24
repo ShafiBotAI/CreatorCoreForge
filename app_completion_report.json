@@ -68,5 +68,15 @@
     "done": 6,
     "total": 6,
     "percent_complete": 100.0
+  },
+  "AI_VideoGenerator": {
+    "done": 0,
+    "total": 0,
+    "percent_complete": 0
+  },
+  "ebook2audiobook": {
+    "done": 0,
+    "total": 0,
+    "percent_complete": 0
   }
 }
