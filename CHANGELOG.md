@@ -1,6 +1,8 @@
 # Changelog
 
 ## [Unreleased]
+- Implemented `VoicePersonalityProfiles` and `DynamicEmotionRamping` utilities.
+- Marked initial CoreForge Audio checklist items as complete and added tests.
 - Added `SceneDetector` module for basic scene analysis.
 - Optimized `SegmentService` with chunked async processing and LRU caching.
 - Added layout instruction parsing to `MarkdownLayoutParser` and updated Build AGENTS checklist.
