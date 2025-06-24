@@ -1,5 +1,4 @@
 import assert from 'node:assert';
-import fs from 'fs';
 import { TemplateService } from '../services/TemplateService';
 import { BuildEngine } from '../services/BuildEngine';
 import { BuilderEngine } from '../services/BuilderEngine';
@@ -8,22 +7,16 @@ import { CodeGenService } from '../services/CodeGenService';
 import { FigmaImporter } from '../services/FigmaImporter';
 import { EventBus } from '../services/EventBus';
 import { DiffService } from '../services/DiffService';
-
-import { BuilderEngine } from '../services/BuilderEngine';
 import { CreativeDNAService } from '../services/CreativeDNAService';
 import { DeployService } from '../services/DeployService';
-
 import { UISuggestionService } from '../services/UISuggestionService';
 import { WireframeParser } from '../services/WireframeParser';
 import { LayoutValidator } from '../services/LayoutValidator';
-import { CreativeDNAService } from '../services/CreativeDNAService';
-import { DeployService } from '../services/DeployService';
 import { InputNormalizer } from '../services/InputNormalizer';
 import { InputHistory } from '../services/InputHistory';
 import { LogicVisualizer } from '../services/LogicVisualizer';
 
 (async () => {
-
   const templates = new TemplateService();
   assert.strictEqual(templates.list().length, 2);
 
@@ -55,17 +48,11 @@ import { LogicVisualizer } from '../services/LogicVisualizer';
   assert.strictEqual(generated, '<div />');
 
   const diff = new DiffService();
-
-  const diffOutput = diff.diff('a', 'b');
-  assert(diffOutput.includes('-a'));
-=======
   assert(diff.diff('a', 'b').includes('-a'));
-
 
   const sugg = new UISuggestionService();
   assert(sugg.suggestNext([{ type: 'header', props: { text: 'Login' } }]).length > 0);
   assert(sugg.suggestPatterns('chat').includes('send-button'));
-
 
   const wf = new WireframeParser();
   const wire = wf.parse(Buffer.from('abcd'));
@@ -74,12 +61,6 @@ import { LogicVisualizer } from '../services/LogicVisualizer';
   const validator = new LayoutValidator();
   const fixed = validator.correct('<div><span></div>');
   assert.strictEqual(fixed, '<div><span></span></div>');
-  const wireframe = new WireframeParser();
-  assert.strictEqual(wireframe.parse(Buffer.from('abcd'))[0].type, 'container');
-
-  const validator = new LayoutValidator();
-  assert.strictEqual(validator.correct('<div><span></div>'), '<div><span></span></div>');
-
 
   const dnaSvc = new CreativeDNAService();
   dnaSvc.save({ team: 'X', whiteLabel: true });
@@ -88,7 +69,6 @@ import { LogicVisualizer } from '../services/LogicVisualizer';
   const deploy = new DeployService();
   assert.strictEqual(deploy.deploy('dist/sample'), 'dist/sample');
 
-=======
   const history = new InputHistory();
   history.add('First');
   assert.strictEqual(history.list().length, 1);
@@ -100,7 +80,6 @@ import { LogicVisualizer } from '../services/LogicVisualizer';
   const visualizer = new LogicVisualizer();
   const ascii = visualizer.toASCII([{ type: 'header', props: { text: 'Title' } }]);
   assert(ascii.includes('header'));
-
 
   console.log('CoreForgeBuild tests passed');
   require('./collaboration.test');
