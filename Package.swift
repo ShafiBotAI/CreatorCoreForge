@@ -3,7 +3,10 @@ import PackageDescription
 
 let package = Package(
     name: "CreatorCoreForge",
-    platforms: [ .iOS(.v14) ],
+    platforms: [
+        .iOS(.v14),
+        .macOS(.v10_15)
+    ],
     products: [
         .library(name: "CreatorCoreForge", targets: ["CreatorCoreForge"])
     ],
