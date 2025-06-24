@@ -64,6 +64,9 @@
       "BrailleOutputService",
       "PronunciationDictionary",
       "VideoEffectsPipeline",
+<
+      "UniversalVideoGenerator"
+=======
       "AudioEffectsPipeline",
       "HighQualityVoiceLibrary",
       "GlobalLanguageSupport",
@@ -252,6 +255,7 @@
       "IntegratedAudioWorkflow198",
       "ProAudioPipeline199",
       "AdaptiveAudioEngine200"
+
     ],
     "CoreForgeVisual": [
       "UnifiedAudioEngine",
@@ -270,6 +274,10 @@
       "WatermarkService",
       "SubtitleGenerator",
       "RenderAnalyticsDashboard",
+
+      "VideoEffectsPipeline",
+      "UniversalVideoGenerator"
+=======
       "4KVideoExport",
       "VideoEffectsPipeline",
       "AudioEffectsPipeline",
@@ -454,6 +462,7 @@
       "IntegratedVisualWorkflow198",
       "ProVisualPipeline199",
       "AdaptiveVisualEngine200"
+
     ],
     "CoreForgeWriter": [
       "UnifiedAudioEngine",
@@ -463,6 +472,9 @@
       "Quantum-choice plotting",
       "Community marketplace",
       "VideoEffectsPipeline",
+
+      "UniversalVideoGenerator"
+=======
       "AudioEffectsPipeline",
       "HighQualityVoiceLibrary",
       "GlobalLanguageSupport",
@@ -656,6 +668,7 @@
       "IntegratedWriterWorkflow198",
       "ProWriterPipeline199",
       "AdaptiveWriterEngine200"
+
     ],
     "CoreForgeMarket": [
       "UnifiedAudioEngine",
@@ -665,6 +678,9 @@
       "Team trading and leaderboards",
       "Bot marketplace",
       "VideoEffectsPipeline",
+
+      "UniversalVideoGenerator"
+=======
       "AudioEffectsPipeline",
       "HighQualityVoiceLibrary",
       "GlobalLanguageSupport",
@@ -858,6 +874,7 @@
       "IntegratedMarketWorkflow198",
       "ProMarketPipeline199",
       "AdaptiveMarketEngine200"
+
     ],
     "CoreForgeBuild": [
       "UnifiedAudioEngine",
@@ -867,6 +884,9 @@
       "Auto bundler for all platforms",
       "Debugging assistant",
       "VideoEffectsPipeline",
+
+      "UniversalVideoGenerator"
+=======
       "AudioEffectsPipeline",
       "HighQualityVoiceLibrary",
       "GlobalLanguageSupport",
@@ -1060,6 +1080,7 @@
       "IntegratedBuildWorkflow198",
       "ProBuildPipeline199",
       "AdaptiveBuildEngine200"
+
     ],
     "CoreForgeStudio": [
       "UnifiedAudioEngine",
@@ -1069,6 +1090,9 @@
       "Quantum edit mode",
       "Template monetization",
       "VideoEffectsPipeline",
+
+      "UniversalVideoGenerator"
+=======
       "AudioEffectsPipeline",
       "HighQualityVoiceLibrary",
       "GlobalLanguageSupport",
@@ -1262,6 +1286,7 @@
       "IntegratedStudioWorkflow198",
       "ProStudioPipeline199",
       "AdaptiveStudioEngine200"
+
     ],
     "CoreForgeMusic": [
       "UnifiedAudioEngine",
@@ -1271,6 +1296,9 @@
       "Commercial export tools",
       "Voice cloning",
       "VideoEffectsPipeline",
+
+      "UniversalVideoGenerator"
+=======
       "AudioEffectsPipeline",
       "HighQualityVoiceLibrary",
       "GlobalLanguageSupport",
@@ -1464,6 +1492,7 @@
       "IntegratedMusicWorkflow198",
       "ProMusicPipeline199",
       "AdaptiveMusicEngine200"
+
     ],
     "CoreForgeLeads": [
       "UnifiedAudioEngine",
@@ -1473,6 +1502,9 @@
       "Global lead exchange",
       "Advanced scoring",
       "VideoEffectsPipeline",
+
+      "UniversalVideoGenerator"
+=======
       "AudioEffectsPipeline",
       "HighQualityVoiceLibrary",
       "GlobalLanguageSupport",
@@ -1666,6 +1698,7 @@
       "IntegratedLeadsWorkflow198",
       "ProLeadsPipeline199",
       "AdaptiveLeadsEngine200"
+
     ]
   }
 }

@@ -16,6 +16,46 @@ Only a subset of those features are shown below for brevity.
 ## Application Feature Goals
 
 ### CoreForgeAudio
+
+- [ ] UnifiedAudioEngine
+- [ ] Real-time emotion adaptation
+- [ ] Voice DNA visualization
+- [ ] Quantum AI mode
+- [ ] NSFW mood heatmap analytics
+- [ ] SoundLayerEngine
+- [ ] ChapterAnalyticsService
+- [ ] UserAnnotations
+- [ ] VoiceControlService integration
+- [ ] AdaptiveMusicGenerator
+- [ ] CommunityReviews
+- [ ] AudioSearchIndex
+- [ ] ProfanityFilter
+- [ ] VoiceCloneShare
+- [ ] DynamicChapterTransitions
+- [ ] HeatmapAnalytics
+- [ ] VersionedExports
+- [ ] ReplayAnalyticsService
+- [ ] SleepReadMode
+- [ ] EmotionShiftTracker
+- [ ] VoiceReviewSystem
+- [ ] AutoCastingEngine
+- [ ] PronunciationEditor
+- [ ] NarrationScheduler
+- [ ] SpatialAudioSupport
+- [ ] EmotionPacingEditor
+- [ ] SmartAmbientMixer
+- [ ] AutoRemixMode
+- [ ] AccessibilityOutput
+- [ ] WatchSyncService
+- [ ] VoicePolls
+- [ ] HeartRateAdaptiveAudio
+- [ ] UnlockableVoiceSkins
+- [ ] PersonalizedGreetingService
+- [ ] AdvancedTimelineEditor
+- [ ] BrailleOutputService
+- [ ] PronunciationDictionary
+- [ ] UniversalVideoGenerator
+
 - [x] UnifiedAudioEngine
 - [x] UnifiedVideoEngine
 - [x] AdaptiveLearningEngine
@@ -97,6 +137,7 @@ Only a subset of those features are shown below for brevity.
 - [x] CreatorPanel
 
 
+
 ### CoreForgeVisual
 - [x] UnifiedAudioEngine
 - [x] UnifiedVideoEngine
@@ -112,6 +153,63 @@ Only a subset of those features are shown below for brevity.
 - [x] BookScanAnalyzer
 - [x] VideoEffectsPipeline
 - [ ] Adaptive scene completion
+
+- [ ] AR/VR playback
+- [ ] Quantum reality switcher
+- [ ] TimelineEditor
+- [ ] ColorGradingEngine
+- [ ] BranchingPathsUI
+- [ ] FaceTrackerService
+- [ ] CrowdSimulator
+- [ ] Export360VR
+- [ ] CameraStabilizer
+- [ ] WatermarkService
+- [ ] SubtitleGenerator
+- [ ] RenderAnalyticsDashboard
+- [ ] UniversalVideoGenerator
+
+### CoreForgeWriter
+- [ ] UnifiedAudioEngine
+- [ ] Memory pinning
+- [ ] Quantum-choice plotting
+- [ ] Community marketplace
+- [ ] UniversalVideoGenerator
+
+### CoreForgeMarket
+- [ ] UnifiedAudioEngine
+- [ ] Hybrid quantum trading engine
+- [ ] Team trading and leaderboards
+- [ ] Bot marketplace
+- [ ] UniversalVideoGenerator
+
+### CoreForgeBuild
+- [ ] UnifiedAudioEngine
+- [ ] Figma-driven UI builder
+- [ ] Auto bundler for all platforms
+- [ ] Debugging assistant
+- [ ] UniversalVideoGenerator
+
+### CoreForgeStudio
+- [ ] UnifiedAudioEngine
+- [ ] Real-time ensemble acting
+- [ ] Quantum edit mode
+- [ ] Template monetization
+- [ ] UniversalVideoGenerator
+
+### CoreForgeMusic
+- [ ] UnifiedAudioEngine
+- [ ] AI vocal production
+- [ ] Commercial export tools
+- [ ] Voice cloning
+- [ ] UniversalVideoGenerator
+
+### CoreForgeLeads
+- [ ] UnifiedAudioEngine
+- [ ] Marketplace credit system
+- [ ] Global lead exchange
+- [ ] Advanced scoring
+- [ ] UniversalVideoGenerator
+=======
 - [x] AR/VR playback
 - [x] Quantum reality switcher
 - [x] TimelineEditor
