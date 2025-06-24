@@ -1,0 +1,4 @@
+# Auto-generated for WatermarkService
+def watermarkservice():
+    """WatermarkService"""
+    pass

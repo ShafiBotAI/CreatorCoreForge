@@ -1,0 +1,4 @@
+# Auto-generated for VoicePolls
+def voicepolls():
+    """VoicePolls"""
+    pass

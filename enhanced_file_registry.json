@@ -1,0 +1,16 @@
+{
+  "enhanced_files": [
+    "CHANGELOG.md",
+    "CODEX-TODO-ENHANCE-ALL-OPEN-TASKS.md",
+    "CODEX-TODO-ENHANCE-CODE-QUALITY-PERFORMANCE.md",
+    "Sources/CreatorCoreForge/MarkdownLayoutParser.swift",
+    "Sources/CreatorCoreForge/SegmentService.swift",
+    "Tests/CreatorCoreForgeTests/AudioVisualPhaseOneTests.swift",
+    "Tests/CreatorCoreForgeTests/MarkdownLayoutParserTests.swift",
+    "apps/CoreForgeBuild/AGENTS.md",
+    "open_tasks_registry.json",
+    "VoiceLab/src/TTSRenderer.ts",
+    "VoiceLab/src/ChapterEditor.vue",
+    "VoiceLab/test/ttsRenderer.test.ts"
+  ]
+}

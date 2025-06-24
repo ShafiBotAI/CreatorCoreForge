@@ -39,7 +39,21 @@ public final class AudioPlaybackEngine {
     }
 
     public func setSpeed(_ rate: Double) {
-        speed = max(0.5, min(rate, 3.0))
+        speed = max(0.5, min(rate, 10.0))
         print("⚡️ Speed set to \(speed)x")
+    }
+
+    public func currentSpeed() -> Double {
+        speed
+    }
+
+    /// Skip forward by the specified number of seconds.
+    public func skipForward(_ seconds: Double) {
+        seek(to: position + seconds)
+    }
+
+    /// Skip backward by the specified number of seconds.
+    public func skipBackward(_ seconds: Double) {
+        seek(to: max(position - seconds, 0))
     }
 }

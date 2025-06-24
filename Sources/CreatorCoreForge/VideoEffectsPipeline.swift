@@ -36,6 +36,15 @@ public struct VideoEffectsPipeline {
         frames.map { "\($0)-\(watermark)" }
     }
 
+    /// Adds a fade-in at the beginning and fade-out at the end of the frame list.
+    public func applyFadeInOut(to frames: [String]) -> [String] {
+        guard !frames.isEmpty else { return [] }
+        var result = ["fade-in"]
+        result.append(contentsOf: frames)
+        result.append("fade-out")
+        return result
+    }
+
     /// Combines processed frames with an audio track label to produce a clip.
     public func composeVideo(frames: [String], audio: String) -> RenderedClip {
         let tagged = frames.map { "\($0)|audio:\(audio)" }

@@ -23,6 +23,6 @@ final class ProductionRoadmapMissingFeaturesTests: XCTestCase {
     func testCommunityMarketplace() {
         let market = CommunityMarketplace()
         XCTAssertTrue(market.publish(item: "story"))
-        XCTAssertTrue(market.browse().isEmpty)
+        XCTAssertEqual(market.browse(), ["story"])
     }
 }
