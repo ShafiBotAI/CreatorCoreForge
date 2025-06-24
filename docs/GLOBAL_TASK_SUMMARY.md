@@ -51,15 +51,15 @@
 - SceneVolumeDynamics
 - SpatialPositioning
 - RoomSimulation
-- AmbientLayerFX
-- CrossSceneFXLinking
-- SceneDensityTuner
+- ~~AmbientLayerFX~~ (implemented)
+- ~~CrossSceneFXLinking~~ (implemented)
+- ~~SceneDensityTuner~~ (implemented)
   - ~~MultiTrackExport~~ (implemented)
-  - EmotionCurveVisualizer
-- VoiceAwarePacing
-- ToneConsistencyChecker
-- ConflictFXEnhancer
-- MoodColorCoder
+-  - ~~EmotionCurveVisualizer~~ (implemented)
+- ~~VoiceAwarePacing~~ (implemented)
+- ~~ToneConsistencyChecker~~ (implemented)
+- ~~ConflictFXEnhancer~~ (implemented)
+- ~~MoodColorCoder~~ (implemented)
 - AICastingDirector
   - ~~VoiceApprovalWorkflow~~ (implemented)
 - ScriptSnippetInjector
