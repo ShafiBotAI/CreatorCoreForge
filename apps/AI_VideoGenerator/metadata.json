@@ -1,0 +1,9 @@
+{
+  "app_name": "AI Video Generator",
+  "version": "1.0.0",
+  "bundle_id": "com.creatorcoreforge.aivideogenerator",
+  "keywords": ["video", "ai", "generator", "fastapi"],
+  "developer": "CreatorCoreForge",
+  "category": "Photo & Video",
+  "platforms": ["iOS", "Android", "Windows", "macOS", "Web"]
+}

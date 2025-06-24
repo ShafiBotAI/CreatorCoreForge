@@ -1,4 +1,4 @@
-name: Upload LoreForgeAI to TestFlight
+name: Upload CoreForge Visual to TestFlight
 
 on:
   workflow_dispatch:
