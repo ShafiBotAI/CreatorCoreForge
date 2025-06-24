@@ -58,8 +58,6 @@ export class PromptParser {
    */
   private detectLanguage(text: string): string {
 
-    // check translation dictionaries for common words first
-
     const lower = text.toLowerCase();
     for (const [lang, dict] of Object.entries(this.translations)) {
       for (const word of Object.keys(dict)) {
@@ -69,7 +67,6 @@ export class PromptParser {
       }
     }
 
-    // fall back to regex-based detection
 
     for (const [lang, regex] of Object.entries(this.languages)) {
       if (regex.test(text)) {

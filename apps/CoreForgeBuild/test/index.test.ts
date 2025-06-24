@@ -53,7 +53,16 @@ import { ParseHistory } from '../services/ParseHistory';
   bus.emitGenerated('react', '<div />');
   assert.strictEqual(generated, '<div />');
 
+
+  const bridge = new (await import('../services/PreviewBridge')).PreviewBridge(bus);
+  bus.emitParsed(parsed);
+  assert(bridge.getCode().includes('<h1>'));
+
   const diff = new DiffService();
+
+=======
+  const diff = new DiffService();
+
   const diffOutput = diff.diff('a', 'b');
   assert(diffOutput.includes('-a'));
 
@@ -127,6 +136,7 @@ import { ParseHistory } from '../services/ParseHistory';
   const authSnippet = new AuthScaffolder().scaffold('jwt');
   assert(authSnippet.includes('JWT'));
 
+=======
   const { ModuleGenerator } = await import('../services/ModuleGenerator');
   const modules = new ModuleGenerator().generate(parsed.layout);
   assert.strictEqual(modules.length > 0, true);
@@ -153,6 +163,7 @@ import { ParseHistory } from '../services/ParseHistory';
   const { CodeValidator } = await import('../services/CodeValidator');
   const warnings = new CodeValidator().validate('var a = 1');
   assert(warnings.length === 1);
+
 
   console.log('CoreForgeBuild tests passed');
   require('./collaboration.test');
