@@ -1,4 +1,0 @@
-# Auto-generated for Fan challenges, interactive “choose your path” videos
-def fan_challenges_interactive():
-    """Fan challenges, interactive “choose your path” videos"""
-    pass
