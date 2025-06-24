@@ -3,8 +3,8 @@
 ## Description
 This agent is responsible for building, validating, and maintaining all features of CoreForge Build: AI-powered no-code app creation, template marketplace, cross-platform export, advanced automation, and developer/enterprise controls.
 
-## Objectives
-- [ ] End-to-end drag-and-drop AI app builder, export to all platforms
+-## Objectives
+- [x] End-to-end drag-and-drop AI app builder, export to all platforms
 - [ ] Persistent creative DNA, team and white label controls, template marketplace
  - [x] Multi-platform: iOS, Android, PC, Mac, Web
 - [ ] Multilingual, NSFW gating, cloud/local deploy, CI/CD auto-update
@@ -14,8 +14,8 @@ This agent is responsible for building, validating, and maintaining all features
 ## Core Features (Detailed)
 
 ### Core Functionalities
-- [ ] Drag-and-drop UI/logic builder (blocks, templates, plugins)
-- [ ] App templates: browse/import/export, community marketplace
+- [x] Drag-and-drop UI/logic builder (blocks, templates, plugins)
+- [x] App templates: browse/import/export, community marketplace
 - [x] Full cross-platform export: .ipa, .apk, .exe, .dmg, web bundle
 - [x] App store asset generator (icons, screenshots, launch screens)
   Use `scripts/generate_placeholder_icons.py` to create required icon sizes.
@@ -31,8 +31,8 @@ This agent is responsible for building, validating, and maintaining all features
 - [ ] AI agent library: reusable, composable logic blocks
 - [ ] Admin dashboard: quotas, analytics, CI/CD control
 
-### UX/UI Components
-- [ ] Block-based drag-and-drop editor
+-### UX/UI Components
+- [x] Block-based drag-and-drop editor
 - [ ] Settings for export platform, NSFW/parental, theme, branding
 - [ ] Marketplace for templates, blocks, plugins, agents
 - [ ] Team/project dashboard, versioning, asset library

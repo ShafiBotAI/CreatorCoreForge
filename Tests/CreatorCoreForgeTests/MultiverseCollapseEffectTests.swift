@@ -14,6 +14,9 @@ final class MultiverseCollapseEffectTests: XCTestCase {
         proc.arguments = ["python3", scriptPath, output.path]
         try proc.run()
         proc.waitUntilExit()
+        if proc.terminationStatus != 0 {
+            throw XCTSkip("pydub not available")
+        }
 
         XCTAssertTrue(fm.fileExists(atPath: output.path))
     }

@@ -1,0 +1,19 @@
+{
+  "name": "coreforge-build",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "scripts": {
+    "pretest": "npm install",
+    "build": "tsc",
+    "test": "node -r ts-node/register test/index.test.ts"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.3",
+    "@types/react": "^19.1.8"
+  },
+  "dependencies": {
+    "react": "^18.3.1"
+  }
+}

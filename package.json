@@ -3,7 +3,8 @@
   "private": true,
   "workspaces": [
     "VisualLab",
-    "VoiceLab"
+    "VoiceLab",
+    "apps/CoreForgeBuild"
   ],
   "scripts": {
     "test": "npm test --workspaces"
