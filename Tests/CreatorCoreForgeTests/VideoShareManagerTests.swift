@@ -1,8 +1,8 @@
 import XCTest
+@testable import CreatorCoreForge
 #if canImport(UIKit)
 import UIKit
 #endif
-@testable import TradeMindAI
 
 final class VideoShareManagerTests: XCTestCase {
     func testActivityControllerType() {
@@ -11,7 +11,7 @@ final class VideoShareManagerTests: XCTestCase {
 #if canImport(UIKit)
         XCTAssertTrue(controller is UIActivityViewController)
 #else
-        XCTAssertTrue((controller as? URL) == url)
+        XCTAssertEqual(controller as? URL, url)
 #endif
     }
 }
