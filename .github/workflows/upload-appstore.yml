@@ -7,6 +7,20 @@ jobs:
   build-and-upload:
     runs-on: macos-latest
 
+=======
+    strategy:
+      matrix:
+        app:
+          - name: CoreForge Audio
+            path: apps/CoreForgeAudio
+            scheme: CoreForgeAudio
+          - name: CoreForge Visual
+            path: apps/CoreForgeVisual
+            scheme: CoreForgeVisual
+          - name: CoreForge Writer
+            path: apps/CoreForgeWriter
+            scheme: CoreForgeWriter
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3

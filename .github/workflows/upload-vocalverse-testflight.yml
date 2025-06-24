@@ -26,8 +26,8 @@ jobs:
 
       - name: Build and Upload CoreForge Audio
         env:
-          PROJECT_PATH: apps/CoreForgeAudio/VocalVerseFull/VocalVerse.xcodeproj
-          SCHEME: VocalVerse
+          PROJECT_PATH: apps/CoreForgeAudio/CoreForgeAudio.xcodeproj
+          SCHEME: CoreForgeAudio
           APPSTORECONNECT_KEY_ID: ${{ secrets.APPSTORECONNECT_KEY_ID }}
           APPSTORECONNECT_ISSUER_ID: ${{ secrets.APPSTORECONNECT_ISSUER_ID }}
           APPSTORECONNECT_API_KEY: ${{ secrets.APPSTORECONNECT_API_KEY }}
