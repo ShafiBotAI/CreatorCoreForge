@@ -12,25 +12,15 @@ import requests
 def download_repo(repo: str, dest: Path, branch: str = "master") -> None:
     """Download repo in the form owner/repo to the destination directory.
 
-    If the requested branch returns a 404, fall back to ``main``."""
-    dest.mkdir(parents=True, exist_ok=True)
-
-    branches = [branch]
-    if branch == "master":
-        branches.append("main")
-=======
     If the chosen branch doesn't exist, the function will also try the common
-    alternative branch name (``main`` or ``master``).
-    """
+    alternative branch name (``main`` or ``master``)."""
 
     dest.mkdir(parents=True, exist_ok=True)
 
     branches = [branch]
-    # Try the alternate branch name if the requested one fails
     alternate = "main" if branch == "master" else "master"
     if alternate not in branches:
         branches.append(alternate)
-
 
     for br in branches:
         url = f"https://codeload.github.com/{repo}/zip/refs/heads/{br}"
@@ -38,13 +28,6 @@ def download_repo(repo: str, dest: Path, branch: str = "master") -> None:
 
         if resp.status_code == 404:
             continue
-        resp.raise_for_status()
-        with zipfile.ZipFile(io.BytesIO(resp.content)) as zf:
-            zf.extractall(dest)
-        return
-
-    raise RuntimeError(f"Failed to download {repo} from branches {branches}")
-=======
         if resp.status_code == 200:
             with zipfile.ZipFile(io.BytesIO(resp.content)) as zf:
                 zf.extractall(dest)
@@ -53,7 +36,7 @@ def download_repo(repo: str, dest: Path, branch: str = "master") -> None:
         else:
             print(f"Failed to download {repo}@{br}: HTTP {resp.status_code}")
 
-    raise RuntimeError(f"Could not download {repo}; checked branches: {branches}")
+    raise RuntimeError(f"Failed to download {repo}; checked branches: {branches}")
 
 
 if __name__ == "__main__":
