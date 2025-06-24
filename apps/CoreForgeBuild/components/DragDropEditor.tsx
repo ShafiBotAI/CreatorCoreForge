@@ -1,14 +1,31 @@
 import React from 'react';
 
-export interface DragDropEditorProps {
-  onFiles?: (files: FileList) => void;
+export interface DragItem {
+  type: string;
+  content: string;
 }
 
-export const DragDropEditor: React.FC<DragDropEditorProps> = ({ onFiles }) => {
+export interface DragDropEditorProps {
+  onFiles?: (files: FileList) => void;
+  onBlock?: (block: DragItem) => void;
+}
+
+export const DragDropEditor: React.FC<DragDropEditorProps> = ({ onFiles, onBlock }) => {
   const handle = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
     if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
       onFiles?.(e.dataTransfer.files);
+    }
+    const json = e.dataTransfer.getData('application/json');
+    if (json) {
+      try {
+        const block = JSON.parse(json) as DragItem;
+        if (block && block.type) {
+          onBlock?.(block);
+        }
+      } catch {
+        /* ignore invalid */
+      }
     }
   };
   return (
