@@ -120,26 +120,26 @@ This document details all AI agent capabilities, engine modules, and next-genera
 - [x] Output visual scene map to timeline panel for creator editing
 
 ### Phase 2 – Character Design, Scene Casting & Visual Sync Logic
-- [ ] Auto-generate character design profiles from parsed book descriptions
-- [ ] Suggest visual avatars for each major and minor character using AI
-- [ ] Tag characters with genre-based archetypes (hero, mentor, villain)
-- [ ] Map character emotional arc to visual expression library
-- [ ] Assign unique costume layers per scene or timeline
-- [ ] Allow creators to upload reference art or override generated visuals
-- [ ] Store character styles for reuse across scenes and sequels
-- [ ] Adjust posture, facial expressions, and body language based on dialogue tone
-- [ ] Support age-shift modeling (child, teen, adult, elder versions)
-- [ ] Track costume and hairstyle changes throughout story for visual consistency
-- [ ] Sync character movement to dialogue line length and pacing
-- [ ] Render close-up, medium, or wide shots based on character’s narrative importance
-- [ ] Link voice performance timing with facial movement and lip sync
-- [ ] Detect speaker shifts and auto-adjust scene framing/camera position
-- [ ] Suggest duo-frame or over-the-shoulder compositions for dialogue scenes
-- [ ] Store scene-specific animation presets (reaction styles, gestures)
-- [ ] Identify group scenes and auto-generate spatial layouts
-- [ ] Highlight visual identity conflicts for creator review (e.g., two similar characters)
-- [ ] Apply genre-tuned color palettes to each character
-- [ ] Recommend lighting configurations for cast mood amplification
+- [x] Auto-generate character design profiles from parsed book descriptions
+- [x] Suggest visual avatars for each major and minor character using AI
+- [x] Tag characters with genre-based archetypes (hero, mentor, villain)
+- [x] Map character emotional arc to visual expression library
+- [x] Assign unique costume layers per scene or timeline
+- [x] Allow creators to upload reference art or override generated visuals
+- [x] Store character styles for reuse across scenes and sequels
+- [x] Adjust posture, facial expressions, and body language based on dialogue tone
+- [x] Support age-shift modeling (child, teen, adult, elder versions)
+- [x] Track costume and hairstyle changes throughout story for visual consistency
+- [x] Sync character movement to dialogue line length and pacing
+- [x] Render close-up, medium, or wide shots based on character’s narrative importance
+- [x] Link voice performance timing with facial movement and lip sync
+- [x] Detect speaker shifts and auto-adjust scene framing/camera position
+- [x] Suggest duo-frame or over-the-shoulder compositions for dialogue scenes
+- [x] Store scene-specific animation presets (reaction styles, gestures)
+- [x] Identify group scenes and auto-generate spatial layouts
+- [x] Highlight visual identity conflicts for creator review (e.g., two similar characters)
+- [x] Apply genre-tuned color palettes to each character
+- [x] Recommend lighting configurations for cast mood amplification
 - [ ] Add multi-timeline variants for multiverse visual branching
 - [ ] Provide creator dashboard to preview, test, and lock character animations
 
