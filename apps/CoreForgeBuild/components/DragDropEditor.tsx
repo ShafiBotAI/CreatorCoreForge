@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { UISuggestionService } from '../services/UISuggestionService';
 
 export interface DragItem {
   type: string;
@@ -11,6 +12,9 @@ export interface DragDropEditorProps {
 }
 
 export const DragDropEditor: React.FC<DragDropEditorProps> = ({ onFiles, onBlock }) => {
+  const [suggestions, setSuggestions] = useState<string[]>([]);
+  const suggester = new UISuggestionService();
+
   const handle = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
     if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
@@ -22,6 +26,7 @@ export const DragDropEditor: React.FC<DragDropEditorProps> = ({ onFiles, onBlock
         const block = JSON.parse(json) as DragItem;
         if (block && block.type) {
           onBlock?.(block);
+          setSuggestions(suggester.suggestNext([{ type: block.type }] as any));
         }
       } catch {
         /* ignore invalid */
@@ -36,6 +41,13 @@ export const DragDropEditor: React.FC<DragDropEditorProps> = ({ onFiles, onBlock
       style={{ border: '1px dashed gray', padding: 20 }}
     >
       Drop files here
+      {suggestions.length > 0 && (
+        <ul>
+          {suggestions.map((s) => (
+            <li key={s}>{s}</li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 };
