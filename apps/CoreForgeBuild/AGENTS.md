@@ -72,14 +72,14 @@ Key points from `README.md`:
 - [x] Tag user flows during prompt parsing for logic inference
 - [x] Visualize parsed UI logic before code generation begins
 - [x] Store input history to refine and compare prompt evolution
-- [ ] Enable multilingual prompt input (English, Spanish, Chinese, etc.)
-- [ ] Recognize UX patterns like onboarding, tabbed navigation, floating action buttons
-- [ ] Support voice-to-UI parsing from microphone input
-- [ ] Allow inline prompt corrections and real-time layout preview
-- [ ] Embed accessibility tagging logic at the parsing layer
-- [ ] Detect nested conditional UIs and represent visually (e.g., modal → success → redirect)
-- [ ] Offer AI-generated design themes based on brand input
-- [ ] Store parsing outcomes in history buffer with version rollback
+- [x] Enable multilingual prompt input (English, Spanish, Chinese, etc.)
+- [x] Recognize UX patterns like onboarding, tabbed navigation, floating action buttons
+- [x] Support voice-to-UI parsing from microphone input
+- [x] Allow inline prompt corrections and real-time layout preview
+- [x] Embed accessibility tagging logic at the parsing layer
+- [x] Detect nested conditional UIs and represent visually (e.g., modal → success → redirect)
+- [x] Offer AI-generated design themes based on brand input
+- [x] Store parsing outcomes in history buffer with version rollback
 - [ ] Connect prompt parser to code output preview via event bridge
 - [ ] Validate parsed layouts against mobile and desktop resolution grids
 - [ ] Include onboarding UI examples for prompt learning

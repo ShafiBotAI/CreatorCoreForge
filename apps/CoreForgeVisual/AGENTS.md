@@ -188,9 +188,15 @@ Key points from `README.md`:
 - [x] Normalize text encoding for rare language or stylized prose
 - [x] Split monologue-heavy sections into animated visual layers
 - [x] Extract scene descriptions from footnotes or appendices if referenced
+
 - [x] Enable prologue/epilogue special treatment (visual tone, transitions)
 - [x] Highlight symbols and metaphors for optional artistic visuals
 - [x] Store parsing configuration profiles for series consistency
+=======
+- [ ] Enable prologue/epilogue special treatment (visual tone, transitions)
+- [ ] Highlight symbols and metaphors for optional artistic visuals
+- [ ] Store parsing configuration profiles for series consistency
+
 - [ ] Offer real-time preview of parsed scene map before rendering
 - [ ] Sync parsed book structure with audio narration framework
 - [ ] Validate scene continuity and chronology from source text

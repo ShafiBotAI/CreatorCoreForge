@@ -1,5 +1,8 @@
+import { ParseResult } from './PromptParser';
+
 export interface HistoryEntry {
   prompt: string;
+  result?: ParseResult;
   timestamp: number;
 }
 
@@ -10,8 +13,8 @@ export interface HistoryEntry {
 export class InputHistory {
   private history: HistoryEntry[] = [];
 
-  add(prompt: string): void {
-    this.history.push({ prompt, timestamp: Date.now() });
+  add(prompt: string, result?: ParseResult): void {
+    this.history.push({ prompt, result, timestamp: Date.now() });
   }
 
   list(): HistoryEntry[] {

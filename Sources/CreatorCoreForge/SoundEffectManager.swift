@@ -2,6 +2,14 @@ import Foundation
 #if canImport(AVFoundation)
 import AVFoundation
 #endif
+
+
+
+
+/// Manages ambient sound effects for immersive playback.
+public final class SoundEffectManager: ObservableObject {
+    /// Shared singleton instance.
+=======
 #if canImport(Combine)
 import Combine
 #endif
@@ -13,6 +21,7 @@ public final class SoundEffectManager {
 #else
     public private(set) var currentAmbience: String = "None"
 #endif
+
     public static let shared = SoundEffectManager()
     private init() {}
 
