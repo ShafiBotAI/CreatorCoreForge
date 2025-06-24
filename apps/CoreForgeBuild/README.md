@@ -83,6 +83,12 @@ missing implementations and potential vulnerabilities. It can automatically
 replace common "Not implemented" placeholders, recommend refactors through
 `AICoPilot`, and verify basic compliance documents are present.
 
+### SelfRepairEngine
+`SelfRepairEngine` leverages `BuildImprovementEngine` to scan every app in the
+repository and automatically replace simple `fatalError("Not implemented")`
+markers. It provides a summary of issues found and can be triggered as part of
+the build workflow to keep all generated apps compiling.
+
 ---
 
 ## Next-Gen & Phase 8 Features
