@@ -60,9 +60,8 @@ Key points from `README.md`:
 
 ## Full Phase Checklist (Phases 1–9)
 
-### Phase 1 – Core Input Engine & UI Parsing Logic
 - [ ] Accept natural language prompts to describe app ideas and interface goals
-- [ ] Enable markdown-style layout instructions (e.g., "2-column login form")
+- [x] Enable markdown-style layout instructions (e.g., "2-column login form")
 - [ ] Support drag-and-drop UI builder with AI-generated suggestions
 - [ ] Parse screenshots or hand-drawn wireframes into editable layout code
 - [ ] Extract UI structure from Figma, Sketch, and Adobe XD import

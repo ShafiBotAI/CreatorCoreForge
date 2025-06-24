@@ -325,6 +325,12 @@
     {
       "task": "Developer console toggle (Creator tier)",
       "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Enable markdown-style layout instructions (e.g., \"2-column login form\")",
+      "source_file": "apps/CoreForgeBuild/AGENTS.md",
+      "target_file": "Sources/CreatorCoreForge/MarkdownLayoutParser.swift",
+      "language": "Swift"
     }
   ]
 }
