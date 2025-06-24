@@ -1,72 +1,72 @@
 {
-  "CoreForgeMarket": {
-    "done": 32,
-    "total": 57,
-    "percent_complete": 56.1
-  },
-  "CoreForgeStudio": {
-    "done": 38,
-    "total": 70,
-    "percent_complete": 54.3
-  },
-  "CoreForgeAudio": {
-    "done": 350,
-    "total": 469,
-    "percent_complete": 74.6
-  },
-  "CoreForgeBloom": {
-    "done": 5,
-    "total": 6,
-    "percent_complete": 83.3
-  },
-  "CoreForgeWriter": {
-    "done": 39,
-    "total": 73,
-    "percent_complete": 53.4
-  },
-  "CoreForgeDNA": {
-    "done": 6,
-    "total": 6,
-    "percent_complete": 100.0
-  },
-  "CoreForgeLeads": {
-    "done": 32,
-    "total": 37,
-    "percent_complete": 86.5
-  },
-  "CoreForgeLearn": {
-    "done": 6,
-    "total": 6,
-    "percent_complete": 100.0
-  },
-  "CoreForgeVisual": {
-    "done": 94,
-    "total": 293,
-    "percent_complete": 32.1
-  },
-  "CoreForgeVoiceLab": {
-    "done": 5,
-    "total": 6,
-    "percent_complete": 83.3
-  },
-  "CoreForgeBuild": {
-    "done": 77,
-    "total": 235,
-    "percent_complete": 32.8
+  "CoreForgeMusic": {
+    "done": 29,
+    "total": 30,
+    "percent_complete": 96.7
   },
   "CoreForgeMind": {
     "done": 5,
     "total": 6,
     "percent_complete": 83.3
   },
+  "CoreForgeStudio": {
+    "done": 38,
+    "total": 70,
+    "percent_complete": 54.3
+  },
+  "CoreForgeVisual": {
+    "done": 94,
+    "total": 293,
+    "percent_complete": 32.1
+  },
+  "CoreForgeLearn": {
+    "done": 6,
+    "total": 6,
+    "percent_complete": 100.0
+  },
+  "CoreForgeDNA": {
+    "done": 6,
+    "total": 6,
+    "percent_complete": 100.0
+  },
+  "CoreForgeWriter": {
+    "done": 39,
+    "total": 73,
+    "percent_complete": 53.4
+  },
+  "CoreForgeBloom": {
+    "done": 5,
+    "total": 6,
+    "percent_complete": 83.3
+  },
+  "CoreForgeLeads": {
+    "done": 32,
+    "total": 37,
+    "percent_complete": 86.5
+  },
+  "CoreForgeBuild": {
+    "done": 77,
+    "total": 235,
+    "percent_complete": 32.8
+  },
   "CoreForgeQuest": {
     "done": 5,
     "total": 6,
     "percent_complete": 83.3
   },
-  "CoreForgeMusic": {
-    "done": 29,
-    "total": 30,
-    "percent_complete": 96.7
+  "CoreForgeMarket": {
+    "done": 32,
+    "total": 57,
+    "percent_complete": 56.1
+  },
+  "CoreForgeAudio": {
+    "done": 339,
+    "total": 452,
+    "percent_complete": 75.0
+  },
+  "CoreForgeVoiceLab": {
+    "done": 5,
+    "total": 6,
+    "percent_complete": 83.3
   }
 }
