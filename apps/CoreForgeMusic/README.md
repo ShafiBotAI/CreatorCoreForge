@@ -25,3 +25,15 @@ in future releases.
 `USE_LOCAL_AI=1` enables offline operation through `LocalAIEnginePro`.
 `FusionEngine` automatically switches to the local engine when this variable is
 set.
+
+## Shared Module
+VerseForgeAI links against the **CreatorCoreForge** Swift package for components like `AutoUpdater`. Add the local package when opening the project.
+
+## App Capabilities
+
+Highlighted capabilities from `features-phase8.json`:
+- UnifiedAudioEngine
+- UnifiedVideoEngine
+- AdaptiveLearningEngine
+- AI vocal production
+- Commercial export tools

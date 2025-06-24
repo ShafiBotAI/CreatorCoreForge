@@ -8,10 +8,12 @@ CoreForge Visual is a cross-platform tool for generating video and story content
 - **Multilingual content generation** with automatic language selection
 - **Adaptive AI memory** to maintain story and character continuity
 - **NSFW toggle** with a stealth vault for private content
+- **NSFW habit behavior simulator** for triggering custom SFX cues
 - **Auto-upload and social sharing** to platforms like YouTube and TikTok
 - **Virality Engine** with a publishing scheduler
 - **Lore compression tool** for summarizing long passages
 - **Character stat tracker** to manage RPG-style attributes
+- **Import ePub, PDF, and TXT files** via `EbookImporter`
 
 ## Building (iOS)
 1. Open `LoreForgeAI.xcodeproj` found in `LoreForgeAIFull`.
@@ -28,3 +30,15 @@ Configure these variables or files before building:
 ## Offline Mode
 CoreForge Visual supports offline development. Set `USE_LOCAL_AI=1` to activate
 `LocalAIEnginePro` via `FusionEngine` and bypass the OpenAI API.
+
+## Shared Module
+This app relies on the root **CreatorCoreForge** Swift package for core utilities such as `AutoUpdater` and `ContentPolicyManager`. Ensure the package is linked when building.
+
+## App Capabilities
+
+Highlighted capabilities from `features-phase8.json`:
+- UnifiedAudioEngine
+- UnifiedVideoEngine
+- AdaptiveLearningEngine
+- Adaptive scene completion
+- AR/VR playback

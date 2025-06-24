@@ -1,5 +1,6 @@
 #if canImport(SwiftUI)
 import SwiftUI
+import CreatorCoreForge
 
 struct ContentView: View {
     @State private var text = ""
@@ -30,6 +31,7 @@ struct ContentView: View {
     }
 
     private let voices = VoiceConfig.voices.map { $0.name }
+    private let voiceMapper = CharacterVoiceMapper()
 
     var body: some View {
         NavigationView {
@@ -112,7 +114,7 @@ struct ContentView: View {
                 }
                 .padding(.top, 10)
             }
-            .navigationTitle("VocalVerse")
+            .navigationTitle("CoreForge Audio")
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
                     Button(action: playAudio) {
@@ -152,6 +154,18 @@ struct ContentView: View {
     }
 
     private func playAudio() {
+        // Map character voices from the current text
+        let mappings = voiceMapper.assignVoices(to: text)
+        for map in mappings {
+            VoiceConfig.addVoice(id: map.assignedVoice.lowercased(), name: map.assignedVoice)
+            let voice = Voice(id: map.assignedVoice.lowercased(), name: map.assignedVoice)
+            CharacterVoiceMemory.shared.assignVoice(voice, to: map.name)
+        }
+
+        // Demo quirk playback for the main narrator
+        CharacterQuirkEngine.shared.assignQuirks(to: "Narrator", quirks: [.sigh, .whisper])
+        CharacterQuirkEngine.shared.triggerQuirks(for: "Narrator")
+
         // Open the first recording in the vault when available
         if let first = recordings.first,
            let url = vault.retrieve(named: first) {
@@ -162,23 +176,29 @@ struct ContentView: View {
     }
 
     private func previewVoice() {
-        // Placeholder for voice preview implementation
+        let voice = Voice(id: selectedVoice.lowercased(), name: selectedVoice)
+        let profile = VoiceProfile(id: voice.id, name: voice.name)
+        LocalVoiceAI().synthesize(text: text.isEmpty ? "Preview" : text,
+                                  with: profile) { result in
+            if case .success(let data) = result {
+                let file = FileManager.default.temporaryDirectory.appendingPathComponent("preview.wav")
+                try? data.write(to: file)
+                let player = AudioPlaybackEngine()
+                player.load(url: file)
+                player.play()
+            }
+        }
         VoiceHistory.shared.record(voice: selectedVoice)
-        showPreviewAlert = true
     }
 
     private func uploadAudio() {
-        // Placeholder for auto upload implementation
-        if saveOffline {
-            if let url = URL(string: "https://example.com/\(UUID().uuidString).mp3") {
-                downloadQueue.enqueue(url, voice: selectedVoice) { local in
-                    try? vault.store(url: local, named: local.lastPathComponent)
-                    recordings = vault.listFiles()
-                }
-                downloadQueue.start()
-            }
-        }
-        // When implemented, this will send the recorded audio to cloud storage
+        guard let first = recordings.first,
+              let localURL = vault.retrieve(named: first) else { return }
+        var request = URLRequest(url: URL(string: "https://httpbin.org/post")!)
+        request.httpMethod = "POST"
+        URLSession.shared.uploadTask(with: request, fromFile: localURL) { _, _, _ in
+            print("Uploaded \(localURL.lastPathComponent)")
+        }.resume()
     }
 }
 

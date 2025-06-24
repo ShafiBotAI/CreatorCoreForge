@@ -1,0 +1,75 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+
+  build-test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install Node dependencies
+        working-directory: VoiceLab
+        run: npm install
+
+      - name: Node lint
+        working-directory: VoiceLab
+        run: npx eslint . --ext .ts,.tsx || true
+
+      - name: Node build
+        working-directory: VoiceLab
+        run: npm run build
+
+      - name: Node test
+        working-directory: VoiceLab
+        run: npm test
+
+      - name: Set up Swift
+        uses: swift-actions/setup-swift@v1
+        with:
+          swift-version: '5.7'
+
+      - name: Swift lint
+        run: swiftformat . --lint
+
+      - name: Swift build
+        run: swift build
+
+      - name: Swift test
+        run: swift test --enable-code-coverage
+=======
+  build:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+      - name: Test VoiceLab
+        run: |
+          cd VoiceLab
+          npm ci
+          npm run lint
+          npm run build
+          npm test
+          npm run train-sample
+      - name: Test VisualLab
+        run: |
+          cd VisualLab
+          npm ci
+          npm test
+      - uses: swift-actions/setup-swift@v1
+        with:
+          swift-version: '5.7'
+      - run: swift test --enable-code-coverage

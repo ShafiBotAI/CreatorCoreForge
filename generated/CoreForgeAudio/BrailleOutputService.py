@@ -1,0 +1,4 @@
+# Auto-generated for BrailleOutputService
+def brailleoutputservice():
+    """BrailleOutputService"""
+    pass

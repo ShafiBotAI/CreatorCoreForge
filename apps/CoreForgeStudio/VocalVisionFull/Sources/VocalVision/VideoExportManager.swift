@@ -1,10 +1,12 @@
 import Foundation
+import CreatorCoreForge
 
 /// High level manager that orchestrates generating scenes and exporting a video.
 public final class VideoExportManager {
     private let sceneGenerator: VideoSceneGenerator
     private let caster: VoiceCastingEngine
     private let renderer: RendererControl
+    private let voiceMapper = CharacterVoiceMapper()
 
     public init(sceneGenerator: VideoSceneGenerator = VideoSceneGenerator(),
                 caster: VoiceCastingEngine = VoiceCastingEngine(),
@@ -22,6 +24,7 @@ public final class VideoExportManager {
                        progress: @escaping (Double) -> Void,
                        completion: @escaping (URL?) -> Void) {
         let scenes = sceneGenerator.generateScenes(from: bookText)
+        _ = voiceMapper.assignVoices(to: bookText)
         let voiced = caster.assignVoices(to: scenes)
         renderer.exportMultiHourVideo(scenes: voiced,
                                       to: outputURL,
@@ -43,13 +46,42 @@ public final class VideoExportManager {
                                           completion: @escaping (URL?) -> Void) {
         var metadata = ["unabridged": "3h"]
         let scenes = sceneGenerator.generateScenes(from: bookText)
+        _ = voiceMapper.assignVoices(to: bookText)
         let voiced = caster.assignVoices(to: scenes)
         renderer.exportMultiHourVideo(scenes: voiced,
-                                      to: outputURL,
-                                      metadata: metadata,
-                                      nsfw: nsfw,
-                                      birthDate: birthDate,
+                                     to: outputURL,
+                                     metadata: metadata,
+                                     nsfw: nsfw,
+                                     birthDate: birthDate,
                                       progress: progress,
                                       completion: completion)
+    }
+
+    /// Export only the most emotional scenes as a highlight reel.
+    public func exportMoodMix(bookText: String,
+                              to outputURL: URL,
+                              intensityThreshold: Double = 0.5,
+                              nsfw: Bool = false,
+                              birthDate: Date = Date(timeIntervalSince1970: 0),
+                              progress: @escaping (Double) -> Void,
+                              completion: @escaping (URL?) -> Void) {
+        let scenes = sceneGenerator.generateScenes(from: bookText)
+        let analyzer = EmotionAnalyzer()
+        let highlights = scenes.filter { scene in
+            Double(analyzer.analyzeEmotion(from: scene.description).intensity) >= intensityThreshold
+        }
+        guard !highlights.isEmpty else {
+            completion(nil)
+            return
+        }
+        _ = voiceMapper.assignVoices(to: bookText)
+        let voiced = caster.assignVoices(to: highlights)
+        renderer.exportMultiHourVideo(scenes: voiced,
+                                     to: outputURL,
+                                     metadata: ["filter": "moodmix"],
+                                     nsfw: nsfw,
+                                     birthDate: birthDate,
+                                     progress: progress,
+                                     completion: completion)
     }
 }

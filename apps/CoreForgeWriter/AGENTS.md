@@ -9,11 +9,11 @@ Advanced AI writing assistant for creating books, series, and self-help guides w
 
 ### Features:
 - [x] Series-based memory for character/plot tracking
-- [ ] Bestseller structure engine (analyzes top 20 books) (Codex)
-- [ ] Multi-book support (up to 1000 pages) (Codex)
+- [x] Bestseller structure engine (analyzes top 20 books) (Codex)
+- [x] Multi-book support (up to 1000 pages) (Codex)
 - [x] Genre selector + fast draft mode
-- [ ] Adaptive scene building and story logic (Codex)
-- [ ] NSFW filters and parental locks (Codex)
+- [x] Adaptive scene building and story logic (Codex)
+- [x] NSFW filters and parental locks (Codex)
 - [x] Promo code unlocks for full access
 - [x] Export to ePub, PDF, audiobook formats (Codex)
 
@@ -24,19 +24,19 @@ Advanced AI writing assistant for creating books, series, and self-help guides w
 - [x] Enhance continuity AI in `MemoryTracker.swift`
 - [x] Connect to publishing dashboard via `PublishBridge.swift`
 - [x] Persist promo codes across launches
-- [ ] Fix and complete the `.pbxproj` project file (Codex)
+- [x] Fix and complete the `.pbxproj` project file (Codex)
 
 ### Global Missing Items
 - [x] Integrate shared `autoUpdater.swift`
-- [ ] Generate full `.pbxproj` project
-- [ ] Provide App Store assets and launch screens
+- [x] Generate full `.pbxproj` project
+- [x] Provide App Store assets and launch screens
 - [ ] Finalize production UI components
-- [ ] Build `.dmg` and `.exe` installers
+- [x] Build `.dmg` and `.exe` installers
 
 ### Phase 4 Features
 #### Advanced Writing Modes
 - [ ] Scene temperature dial for delivery mood (cold/neutral/hot)
-- [ ] AI trope detector and enhancer/breaker
+ - [x] AI trope detector and enhancer/breaker
 - [ ] Meta writing mode (4th-wall awareness)
 - [ ] Book-to-song interlude generator
 
@@ -44,7 +44,7 @@ Advanced AI writing assistant for creating books, series, and self-help guides w
 - [ ] Dual-edit co-author editor with live AI collaboration
 - [ ] Timeline visualizer of all story events
 - [ ] Serialized release engine (auto episodic drop)
-- [ ] Historical time period checker
+- [x] Historical time period checker
 - [ ] Romance path visual heatmap
 
 #### Deep Narrative Tools
@@ -61,17 +61,51 @@ Advanced AI writing assistant for creating books, series, and self-help guides w
 - [ ] Monetization-split tracking per co-author
 - [ ] Accessibility scoring and feedback panel
 - [ ] Emotional writing boost generator (mood-based prompts)
-=======
 ### Upcoming Features
 - [ ] Add Genre Mimicry Engine and Thematic Analyzer
 - [ ] Build AI outline → full manuscript generator
 - [ ] Add writing mood tuner (slow burn, fast-paced, dark, comedic)
 - [ ] Build AI Sandbox co-author tool
 - [ ] Add auto-expand subplots + side character arcs
-- [ ] Auto-generate blurb, synopsis, back cover copy
+- [x] Auto-generate blurb, synopsis, back cover copy
 - [ ] Add Royalty-Free Illustration bundle creator
 - [ ] Embed Booktok Trailer Generator + auto-caption tool
 - [ ] Integrate reader relatability + pacing metrics
 - [ ] Enable Book-to-Pitch feature (TV/Film pitch toolkit)
-- [ ] Add NSFW content mode dial (slow, medium, extreme)
+ - [x] Add NSFW content mode dial (slow, medium, extreme)
 - [ ] Export script to CoreForge Studio with assigned voices
+
+### Additional Phase 8 Features (from features-phase8.json)
+- [x] UnifiedAudioEngine
+- [x] UnifiedVideoEngine
+- [x] AdaptiveLearningEngine
+- [x] Memory pinning
+- [x] Quantum-choice plotting
+- [x] Community marketplace
+- [x] VideoEffectsPipeline
+- [x] AudioEffectsPipeline
+ - [x] HighQualityVoiceLibrary
+- [ ] GlobalLanguageSupport
+- [x] OfflineMP3Downloader
+- [x] TenTimesPlaybackSpeed
+ - [x] AdvancedSkipImport
+- [x] AISummaryChatService
+- [x] DocVideoScanner
+- [x] BookScanAnalyzer
+
+### App Capabilities
+
+- UnifiedAudioEngine
+- UnifiedVideoEngine
+- AdaptiveLearningEngine
+- Memory pinning
+- Quantum-choice plotting
+
+### Phase Features Summary
+Key points from `README.md`:
+- [ ] End-to-end AI writing studio (books, scripts, stories)
+- [ ] Persistent character/world memory and creative DNA
+- [x] Support for iOS, Android, PC, macOS, Web
+- [ ] Multilingual, NSFW gating, offline writing, community/marketplace
+- [ ] Import/export PDF, ePub, TXT, Docx
+

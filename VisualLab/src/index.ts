@@ -1,0 +1,54 @@
+export * from './backgroundGenerator.ts';
+export * from './motionBlurService.ts';
+export * from './depthOfFieldEngine.ts';
+export * from './lensFlareService.ts';
+export * from './semanticTagger.ts';
+export * from './colorPaletteExtractor.ts';
+export * from './interactiveOverlay.tsx';
+export * from './multiAngleRenderer.ts';
+export * from './3DModelInserter.ts';
+export * from './streamingOptimizer.ts';
+export * from './cacheManager.ts';
+export * from './sceneTransitionGenerator.ts';
+export * from './textOverlayService.ts';
+export * from './audioSyncService.ts';
+export * from './renderQueueManager.ts';
+export * from './errorRecoveryService.ts';
+export * from './thumbnailGenerator.ts';
+export * from './LivePreviewComponent.tsx';
+export * from './performanceProfiler.ts';
+export * from './ARService.ts';
+export * from './GPUVideoRenderer.ts';
+export * from './CacheService.ts';
+export * from './PerformanceService.ts';
+export * from './TileStreamer.ts';
+export * from './ChromaKeyService.ts';
+export * from './BatchJobService.ts';
+export * from './SignLanguageService.ts';
+export * from './LocalizationService.ts';
+export * from './DRMService.ts';
+export * from './streamingService.ts';
+export * from './TimelineEditor.ts';
+export * from './ColorGradingEngine.ts';
+export * from './BranchingPathsUI.tsx';
+export * from './FaceTrackerService.ts';
+export * from './CrowdSimulator.ts';
+export * from './Export360VR.ts';
+export * from './CameraStabilizer.ts';
+export * from './WatermarkService.ts';
+export * from './SubtitleGenerator.ts';
+export * from './RenderAnalyticsDashboard.tsx';
+export { UnifiedAudioEngine } from './UnifiedAudioEngine.ts';
+
+export * from './frameInterpolator.ts';
+=======
+export { UnifiedVideoEngine } from './UnifiedVideoEngine.ts';
+export { AdaptiveLearningEngine } from './AdaptiveLearningEngine.ts';
+export { VisualRenderer } from './VisualRenderer.ts';
+
+
+export * from './characterDetector.ts';
+export * from './locationTemplateMatcher.ts';
+export * from './storyboardGenerator.ts';
+export * from './dragDropHelper.ts';
+export * from './sceneBreakEditor.ts';
