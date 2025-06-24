@@ -28,6 +28,8 @@ public final class SceneDetector {
     }
 
     /// Analyze the provided text and return a map of scenes.
+    /// Scene boundaries are detected using double newlines and
+    /// simple time/location keywords.
     public func analyze(text: String) -> SceneMap {
         let rawScenes = text.components(separatedBy: "\n\n")
         var markers: [SceneMarker] = []

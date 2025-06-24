@@ -25,7 +25,6 @@ def download_repo(repo: str, dest: Path, branch: str = "master") -> None:
     for br in branches:
         url = f"https://codeload.github.com/{repo}/zip/refs/heads/{br}"
         resp = requests.get(url, timeout=30)
-
         if resp.status_code == 404:
             continue
         if resp.status_code == 200:

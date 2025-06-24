@@ -8,7 +8,8 @@ final class AdaptiveLearningEngineTests: XCTestCase {
         engine.record(topic: "Math", score: 8)
         engine.record(topic: "Science", score: 5)
         XCTAssertEqual(engine.nextTopic(), "Science")
-=======
+    }
+
     func testRecordAndCount() {
         let engine = AdaptiveLearningEngine()
         engine.reset()

@@ -66,20 +66,20 @@ Key points from `README.md`:
  - [x] Support drag-and-drop UI builder with AI-generated suggestions
  - [x] Parse screenshots or hand-drawn wireframes into editable layout code
  - [x] Extract UI structure from Figma, Sketch, and Adobe XD import
- - [x] Detect and correct malformed component trees or invalid HTML
-- [ ] Normalize multi-format inputs into abstract syntax UI model (ASUIM)
-- [ ] Auto-suggest UI patterns based on app type (e.g., chat, dashboard, calculator)
-- [ ] Tag user flows during prompt parsing for logic inference
-- [ ] Visualize parsed UI logic before code generation begins
-- [ ] Store input history to refine and compare prompt evolution
-- [ ] Enable multilingual prompt input (English, Spanish, Chinese, etc.)
-- [ ] Recognize UX patterns like onboarding, tabbed navigation, floating action buttons
-- [ ] Support voice-to-UI parsing from microphone input
-- [ ] Allow inline prompt corrections and real-time layout preview
-- [ ] Embed accessibility tagging logic at the parsing layer
-- [ ] Detect nested conditional UIs and represent visually (e.g., modal → success → redirect)
-- [ ] Offer AI-generated design themes based on brand input
-- [ ] Store parsing outcomes in history buffer with version rollback
+- [x] Detect and correct malformed component trees or invalid HTML
+- [x] Normalize multi-format inputs into abstract syntax UI model (ASUIM)
+- [x] Auto-suggest UI patterns based on app type (e.g., chat, dashboard, calculator)
+- [x] Tag user flows during prompt parsing for logic inference
+- [x] Visualize parsed UI logic before code generation begins
+- [x] Store input history to refine and compare prompt evolution
+- [x] Enable multilingual prompt input (English, Spanish, Chinese, etc.)
+- [x] Recognize UX patterns like onboarding, tabbed navigation, floating action buttons
+- [x] Support voice-to-UI parsing from microphone input
+- [x] Allow inline prompt corrections and real-time layout preview
+- [x] Embed accessibility tagging logic at the parsing layer
+- [x] Detect nested conditional UIs and represent visually (e.g., modal → success → redirect)
+- [x] Offer AI-generated design themes based on brand input
+- [x] Store parsing outcomes in history buffer with version rollback
 - [ ] Connect prompt parser to code output preview via event bridge
 - [ ] Validate parsed layouts against mobile and desktop resolution grids
 - [ ] Include onboarding UI examples for prompt learning

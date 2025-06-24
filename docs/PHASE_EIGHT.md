@@ -172,6 +172,9 @@ Only a subset of those features are shown below for brevity.
 
 - [ ] AR/VR playback
 - [ ] Quantum reality switcher
+
+- [ ] Hero spotlight background (wide format)
+=======
 - [ ] TimelineEditor
 - [ ] ColorGradingEngine
 - [ ] BranchingPathsUI
