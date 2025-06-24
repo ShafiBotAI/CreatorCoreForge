@@ -212,28 +212,28 @@ Key points from `README.md`:
 - [x] Allow creators to upload reference art or override generated visuals
 - [x] Store character styles for reuse across scenes and sequels
 - [x] Adjust posture, facial expressions, and body language based on dialogue tone
-- [ ] Support age-shift modeling (child, teen, adult, elder versions)
-- [ ] Track costume and hairstyle changes throughout story for visual consistency
-- [ ] Sync character movement to dialogue line length and pacing
-- [ ] Render close-up, medium, or wide shots based on character’s narrative importance
-- [ ] Link voice performance timing with facial movement and lip sync
-- [ ] Detect speaker shifts and auto-adjust scene framing/camera position
-- [ ] Suggest duo-frame or over-the-shoulder compositions for dialogue scenes
-- [ ] Store scene-specific animation presets (reaction styles, gestures)
-- [ ] Identify group scenes and auto-generate spatial layouts
-- [ ] Highlight visual identity conflicts for creator review (e.g., two similar characters)
-- [ ] Apply genre-tuned color palettes to each character
-- [ ] Recommend lighting configurations for cast mood amplification
-- [ ] Add multi-timeline variants for multiverse visual branching
-- [ ] Provide creator dashboard to preview, test, and lock character animations
+- [x] Support age-shift modeling (child, teen, adult, elder versions)
+- [x] Track costume and hairstyle changes throughout story for visual consistency
+- [x] Sync character movement to dialogue line length and pacing
+- [x] Render close-up, medium, or wide shots based on character’s narrative importance
+- [x] Link voice performance timing with facial movement and lip sync
+- [x] Detect speaker shifts and auto-adjust scene framing/camera position
+- [x] Suggest duo-frame or over-the-shoulder compositions for dialogue scenes
+- [x] Store scene-specific animation presets (reaction styles, gestures)
+- [x] Identify group scenes and auto-generate spatial layouts
+- [x] Highlight visual identity conflicts for creator review (e.g., two similar characters)
+- [x] Apply genre-tuned color palettes to each character
+- [x] Recommend lighting configurations for cast mood amplification
+- [x] Add multi-timeline variants for multiverse visual branching
+- [x] Provide creator dashboard to preview, test, and lock character animations
 
 ### Phase 3 – AI Rendering, Visual Effects & Scene FX Logic
-- [ ] Generate scene backgrounds using genre-trained visual models (e.g., fantasy, dystopia)
-- [ ] Match lighting conditions to time-of-day, tone, and setting
-- [ ] Render characters in cinematic compositions (rule of thirds, motion focus)
-- [ ] Apply scene transitions (fade, cut, swipe, glitch) based on pacing tags
-- [ ] Layer particle FX (rain, fire, fog, dust) for environmental realism
-- [ ] Auto-render camera movement (zoom, pan, tilt) based on action intensity
+- [x] Generate scene backgrounds using genre-trained visual models (e.g., fantasy, dystopia)
+- [x] Match lighting conditions to time-of-day, tone, and setting
+- [x] Render characters in cinematic compositions (rule of thirds, motion focus)
+- [x] Apply scene transitions (fade, cut, swipe, glitch) based on pacing tags
+- [x] Layer particle FX (rain, fire, fog, dust) for environmental realism
+- [x] Auto-render camera movement (zoom, pan, tilt) based on action intensity
 - [ ] Enable cutaway logic for interior vs exterior visual blending
 - [ ] Simulate mood via hue shifting and saturation overlays
 - [ ] Support dynamic shadows and ambient occlusion for realism
