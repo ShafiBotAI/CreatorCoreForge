@@ -7,7 +7,8 @@ export interface Template {
 export class TemplateService {
   private templates: Template[] = [
     { id: 'blank', name: 'Blank Project' },
-    { id: 'todo', name: 'Todo App' }
+    { id: 'todo', name: 'Todo App' },
+    { id: 'onboarding', name: 'Onboarding Flow Example' }
   ];
 
   list(): Template[] {

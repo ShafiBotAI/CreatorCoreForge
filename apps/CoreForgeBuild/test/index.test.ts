@@ -22,7 +22,7 @@ import { ParseHistory } from '../services/ParseHistory';
 
 (async () => {
   const templates = new TemplateService();
-  assert.strictEqual(templates.list().length, 2);
+  assert.strictEqual(templates.list().length, 3);
 
   process.env.NODE_ENV = 'test';
   const build = new BuildEngine('/tmp');
@@ -40,6 +40,8 @@ import { ParseHistory } from '../services/ParseHistory';
   const codegen = new CodeGenService();
   const reactCode = codegen.generate(parsed.layout, 'react');
   assert(reactCode.includes('<ul>'));
+  assert(codegen.generateTyped(parsed.layout, 'typescript').includes('export interface'));
+  assert(codegen.supportedFrontends().includes('vue'));
 
   const figma = new FigmaImporter();
   const nodes = figma.parse('{"nodes": [{"name": "Frame1", "type": "FRAME"}]}');
@@ -51,10 +53,11 @@ import { ParseHistory } from '../services/ParseHistory';
   bus.emitGenerated('react', '<div />');
   assert.strictEqual(generated, '<div />');
 
-  const diff = new DiffService();
+  const bridge = new (await import('../services/PreviewBridge')).PreviewBridge(bus);
+  bus.emitParsed(parsed);
+  assert(bridge.getCode().includes('<h1>'));
 
-  assert(diff.diff('a', 'b').includes('-a'));
-=======
+  const diff = new DiffService();
 
   const diffOutput = diff.diff('a', 'b');
   assert(diffOutput.includes('-a'));
@@ -71,6 +74,7 @@ import { ParseHistory } from '../services/ParseHistory';
   const validator = new LayoutValidator();
   const fixed = validator.correct('<div><span></div>');
   assert.strictEqual(fixed, '<div><span></span></div>');
+  assert(validator.validateGrid([{ type: 'p' }], 'mobile'));
 
   const dnaSvc = new CreativeDNAService();
   dnaSvc.save({ team: 'X', whiteLabel: true });
@@ -114,6 +118,14 @@ import { ParseHistory } from '../services/ParseHistory';
   const visualizer = new LogicVisualizer();
   const ascii = visualizer.toASCII([{ type: 'header', props: { text: 'Title' } }]);
   assert(ascii.includes('header'));
+
+  const { ArchitectureDetector } = await import('../services/ArchitectureDetector');
+  const arch = new ArchitectureDetector().detect('This is an SPA example');
+  assert.strictEqual(arch, 'spa');
+
+  const { AuthScaffolder } = await import('../services/AuthScaffolder');
+  const authSnippet = new AuthScaffolder().scaffold('jwt');
+  assert(authSnippet.includes('JWT'));
 
   console.log('CoreForgeBuild tests passed');
   require('./collaboration.test');
