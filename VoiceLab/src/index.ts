@@ -37,3 +37,4 @@ export { UnifiedVideoEngine } from './UnifiedVideoEngine';
 export { AdaptiveLearningEngine } from './AdaptiveLearningEngine';
 export * as OpenAIService from './openaiService';
 
+export { runN8nAssistant, AssistantOptions } from './n8nAssistant';

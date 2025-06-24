@@ -1,4 +1,6 @@
-# Simple summary and chat service used in tests.
+"""Simple summary and chat service used in tests."""
+
+
 class AISummaryChatService:
     def summarize(self, text: str, max_chars: int = 120) -> str:
         cleaned = " ".join(text.split())

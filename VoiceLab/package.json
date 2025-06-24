@@ -6,9 +6,15 @@
   "scripts": {
     "pretest": "npm install",
     "build": "tsc",
+
+    "pretest": "npm install",
+    "test": "rm -rf dist && jest",
+    "lint": "eslint 'src/**/*.{ts,tsx}'"
+=======
     "test": "rimraf dist && jest",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "train-sample": "ts-node scripts/train-sample.ts"
+
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.1.2",

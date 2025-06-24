@@ -54,8 +54,8 @@ Only a subset of those features are shown below for brevity.
 - [ ] AdvancedTimelineEditor
 - [ ] BrailleOutputService
 - [ ] PronunciationDictionary
+- [ ] CrossPlatformVideoGenerator
 - [ ] UniversalVideoGenerator
-
 - [x] UnifiedAudioEngine
 - [x] UnifiedVideoEngine
 - [x] AdaptiveLearningEngine
@@ -166,8 +166,9 @@ Only a subset of those features are shown below for brevity.
 - [x] WatermarkService
 - [x] SubtitleGenerator
 - [x] RenderAnalyticsDashboard
+
+- [ ] CrossPlatformVideoGenerator
 - [ ] FrameInterpolationService
-=======
 
 - [ ] AR/VR playback
 - [ ] Quantum reality switcher
@@ -189,20 +190,27 @@ Only a subset of those features are shown below for brevity.
 - [ ] Memory pinning
 - [ ] Quantum-choice plotting
 - [ ] Community marketplace
+
+- [ ] CrossPlatformVideoGenerator
 - [ ] UniversalVideoGenerator
+
 
 ### CoreForgeMarket
 - [ ] UnifiedAudioEngine
 - [ ] Hybrid quantum trading engine
 - [ ] Team trading and leaderboards
 - [ ] Bot marketplace
+- [ ] CrossPlatformVideoGenerator
 - [ ] UniversalVideoGenerator
+
 
 ### CoreForgeBuild
 - [ ] UnifiedAudioEngine
 - [ ] Figma-driven UI builder
 - [ ] Auto bundler for all platforms
 - [ ] Debugging assistant
+
+- [ ] CrossPlatformVideoGenerator
 - [ ] UniversalVideoGenerator
 
 ### CoreForgeStudio
@@ -210,22 +218,35 @@ Only a subset of those features are shown below for brevity.
 - [ ] Real-time ensemble acting
 - [ ] Quantum edit mode
 - [ ] Template monetization
+- [ ] CrossPlatformVideoGenerator
 - [ ] UniversalVideoGenerator
+
 
 ### CoreForgeMusic
 - [ ] UnifiedAudioEngine
 - [ ] AI vocal production
 - [ ] Commercial export tools
 - [ ] Voice cloning
+
+- [ ] CrossPlatformVideoGenerator
 - [ ] UniversalVideoGenerator
+
 
 ### CoreForgeLeads
 - [ ] UnifiedAudioEngine
 - [ ] Marketplace credit system
 - [ ] Global lead exchange
 - [ ] Advanced scoring
+
+- [ ] CrossPlatformVideoGenerator
+
+### CoreForgeLearn
+- [ ] UnifiedAudioEngine
+- [ ] AdaptiveLearningEngine
+- [ ] CrossPlatformVideoGenerator
+- [ ] VideoEffectsPipeline
+- [ ] AudioEffectsPipeline
 - [ ] UniversalVideoGenerator
-=======
 - [x] AR/VR playback
 - [x] Quantum reality switcher
 - [x] TimelineEditor
@@ -348,5 +369,6 @@ Only a subset of those features are shown below for brevity.
 - [x] Global lead exchange
 - [x] Advanced scoring
 - [x] AdaptiveDocScanner module
+
 
 Use this checklist to track progress as we implement Phase 8 capabilities across every app.
