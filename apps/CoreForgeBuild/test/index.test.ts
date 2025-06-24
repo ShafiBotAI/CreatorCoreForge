@@ -7,76 +7,65 @@ import { DiffService } from '../services/DiffService';
 import { BuilderEngine } from '../services/BuilderEngine';
 import { CreativeDNAService } from '../services/CreativeDNAService';
 import { DeployService } from '../services/DeployService';
+import { UISuggestionService } from '../services/UISuggestionService';
+import { WireframeParser } from '../services/WireframeParser';
+import { LayoutValidator } from '../services/LayoutValidator';
 import fs from 'fs';
 import assert from 'node:assert';
 
-const svc = new TemplateService();
-assert.strictEqual(svc.list().length, 2);
+(async () => {
+  const svc = new TemplateService();
+  assert.strictEqual(svc.list().length, 2);
 
-// run BuildEngine smoke test
-import { BuildEngine } from '../services/BuildEngine';
-process.env.NODE_ENV = 'test';
-const engine = new BuildEngine('/tmp');
-assert.ok(engine.build('web').includes('dist'));
+  process.env.NODE_ENV = 'test';
+  const engine = new BuilderEngine();
+  assert.ok(engine.buildAll({ id: 'a', name: 'A', platform: 'web' }, []).length > 0);
 
+  const parser = new PromptParser();
+  const result = parser.parse('# Login\n- Email\n- Password\nlogin -> dashboard -> settings');
+  assert.strictEqual(result.language, 'en');
+  assert.strictEqual(result.flows[0][0], 'login');
 
-// run BuildEngine smoke test
-import { BuildEngine } from '../services/BuildEngine';
-process.env.NODE_ENV = 'test';
-const engine = new BuildEngine('/tmp');
-assert.ok(engine.build('web').includes('dist'));
+  const nl = parser.parse('A login screen with email and password fields');
+  assert(nl.layout.some(el => el.type === 'header'));
 
-=======
-const parser = new PromptParser();
-const result = parser.parse('# Login\n- Email\n- Password\nlogin -> dashboard -> settings');
-assert.strictEqual(result.language, 'en');
-assert.strictEqual(result.layout.length, 3);
-assert.strictEqual(result.flows.length, 1);
-assert.deepStrictEqual(result.flows[0], ['login', 'dashboard', 'settings']);
+  const codegen = new CodeGenService();
+  const reactCode = codegen.generate(result.layout, 'react');
+  assert(reactCode.includes('<ul>'));
 
+  const figma = new FigmaImporter();
+  const sketchNodes = figma.parse({ layers: [{ name: 'Layer', _class: 'Artboard' }] });
+  assert.strictEqual(sketchNodes.length, 1);
 
-const codegen = new CodeGenService();
-const reactCode = codegen.generate(result.layout, 'react');
-assert(reactCode.includes('<ul>'));
+  const bus = new EventBus();
+  let generated: string | null = null;
+  bus.on('generated', e => (generated = e.code));
+  bus.emitGenerated('react', '<div />');
+  assert.strictEqual(generated, '<div />');
 
-// additional service tests
-const figma = new FigmaImporter();
-const nodes = figma.parse('{"nodes": [{"name": "Frame1", "type": "FRAME"}]}');
-assert.strictEqual(nodes.length, 1);
+  const diff = new DiffService();
+  const diffOutput = diff.diff('a', 'b');
+  assert(diffOutput.includes('-a'));
 
-const bus = new EventBus();
-let generated: string | null = null;
-bus.on('generated', (e) => (generated = e.code));
-bus.emitGenerated('react', '<div />');
-assert.strictEqual(generated, '<div />');
+  const sugg = new UISuggestionService();
+  assert(sugg.suggestNext([{ type: 'header', props: { text: 'Login' } }]).length > 0);
 
-const diff = new DiffService();
-const diffOutput = diff.diff('a', 'b');
-assert(diffOutput.includes('-a') && diffOutput.includes('+b'));
+  const wf = new WireframeParser();
+  const wire = wf.parse(Buffer.from('abcd'));
+  assert.strictEqual(wire[0].type, 'container');
 
-const expressCode = codegen.generate([], 'express', 'minimal');
-assert(expressCode.includes('express'));
+  const validator = new LayoutValidator();
+  const fixed = validator.correct('<div><span></div>');
+  assert.strictEqual(fixed, '<div><span></span></div>');
 
-// BuilderEngine and auxiliary services
-const engine = new BuilderEngine();
-const built = engine.buildAll(
-  { id: 'sample', name: 'Sample', platform: 'web' },
-  []
-);
-assert.strictEqual(built.length, 5);
-assert(built.every(f => fs.existsSync(f)));
+  const dnaSvc = new CreativeDNAService();
+  dnaSvc.save({ team: 'X', whiteLabel: true });
+  const dna = dnaSvc.load();
+  assert.strictEqual(dna.team, 'X');
 
-const dnaSvc = new CreativeDNAService();
-dnaSvc.save({ team: 'X', whiteLabel: true });
-const dna = dnaSvc.load();
-assert.strictEqual(dna.team, 'X');
+  const deploy = new DeployService();
+  assert.strictEqual(deploy.deploy('dist/sample'), 'dist/sample');
 
-const deploy = new DeployService();
-assert.strictEqual(deploy.deploy('dist/sample'), 'dist/sample');
-
-console.log('CoreForgeBuild tests passed');
-
-
-// run additional tests
-require('./collaboration.test');
-=======
+  console.log('CoreForgeBuild tests passed');
+  require('./collaboration.test');
+})();

@@ -61,12 +61,12 @@ Key points from `README.md`:
 
 ## Full Phase Checklist (Phases 1–9)
 
-- [ ] Accept natural language prompts to describe app ideas and interface goals
+ - [x] Accept natural language prompts to describe app ideas and interface goals
 - [x] Enable markdown-style layout instructions (e.g., "2-column login form")
-- [ ] Support drag-and-drop UI builder with AI-generated suggestions
-- [ ] Parse screenshots or hand-drawn wireframes into editable layout code
-- [ ] Extract UI structure from Figma, Sketch, and Adobe XD import
-- [ ] Detect and correct malformed component trees or invalid HTML
+ - [x] Support drag-and-drop UI builder with AI-generated suggestions
+ - [x] Parse screenshots or hand-drawn wireframes into editable layout code
+ - [x] Extract UI structure from Figma, Sketch, and Adobe XD import
+ - [x] Detect and correct malformed component trees or invalid HTML
 - [ ] Normalize multi-format inputs into abstract syntax UI model (ASUIM)
 - [ ] Auto-suggest UI patterns based on app type (e.g., chat, dashboard, calculator)
 - [ ] Tag user flows during prompt parsing for logic inference
