@@ -96,11 +96,11 @@ This document details all AI agent capabilities, engine modules, and next-genera
 - Full Phase checklist now maintained in `apps/CoreForgeVisual/AGENTS.md` (Phases 1–9)
 ### Full Feature Checklist (Phases 1–9)
 ### Phase 1 – Book Import & Scene Mapping Engine
-- [ ] Parse EPUB, PDF, DOCX, and TXT into structured scene blocks
-- [ ] Auto-detect chapter breaks and scene transitions using AI
-- [ ] Identify and extract key visual descriptions from text
-- [ ] Tag scene tone (light, dark, romantic, violent) via sentiment analysis
-- [ ] Detect and tag characters per scene using NLP entity recognition
+- [x] Parse EPUB, PDF, DOCX, and TXT into structured scene blocks
+- [x] Auto-detect chapter breaks and scene transitions using AI
+- [x] Identify and extract key visual descriptions from text
+- [x] Tag scene tone (light, dark, romantic, violent) via sentiment analysis
+- [x] Detect and tag characters per scene using NLP entity recognition
 - [ ] Match locations to genre-based visual templates (castle, school, space station)
 - [ ] Generate initial visual storyboard layout from parsed scenes
 - [ ] Support drag-and-drop book input with automatic format recognition

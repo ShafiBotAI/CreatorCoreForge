@@ -1,20 +1,35 @@
 {
-  "CoreForgeMarket": {
-    "done": 32,
-    "total": 57,
-    "percent_complete": 56.1
+  "CoreForgeMusic": {
+    "done": 29,
+    "total": 30,
+    "percent_complete": 96.7
   },
-  "CoreForgeStudio": {
-    "done": 38,
-    "total": 70,
-    "percent_complete": 54.3
+  "CoreForgeVisual": {
+    "done": 94,
+    "total": 293,
+    "percent_complete": 32.1
+  },
+  "CoreForgeLearn": {
+    "done": 6,
+    "total": 6,
+    "percent_complete": 100.0
   },
   "CoreForgeAudio": {
-    "done": 350,
-    "total": 469,
-    "percent_complete": 74.6
+    "done": 347,
+    "total": 452,
+    "percent_complete": 76.8
   },
-  "CoreForgeBloom": {
+  "CoreForgeLeads": {
+    "done": 32,
+    "total": 37,
+    "percent_complete": 86.5
+  },
+  "CoreForgeDNA": {
+    "done": 6,
+    "total": 6,
+    "percent_complete": 100.0
+  },
+  "CoreForgeMind": {
     "done": 5,
     "total": 6,
     "percent_complete": 83.3
@@ -24,49 +39,34 @@
     "total": 73,
     "percent_complete": 53.4
   },
-  "CoreForgeDNA": {
-    "done": 6,
-    "total": 6,
-    "percent_complete": 100.0
-  },
-  "CoreForgeLeads": {
-    "done": 32,
-    "total": 37,
-    "percent_complete": 86.5
-  },
-  "CoreForgeLearn": {
-    "done": 6,
-    "total": 6,
-    "percent_complete": 100.0
-  },
-  "CoreForgeVisual": {
-    "done": 94,
-    "total": 293,
-    "percent_complete": 32.1
-  },
-  "CoreForgeVoiceLab": {
+  "CoreForgeBloom": {
     "done": 5,
     "total": 6,
     "percent_complete": 83.3
+  },
+  "CoreForgeStudio": {
+    "done": 38,
+    "total": 70,
+    "percent_complete": 54.3
   },
   "CoreForgeBuild": {
     "done": 77,
     "total": 235,
     "percent_complete": 32.8
   },
-  "CoreForgeMind": {
-    "done": 5,
-    "total": 6,
-    "percent_complete": 83.3
-  },
   "CoreForgeQuest": {
     "done": 5,
     "total": 6,
     "percent_complete": 83.3
   },
-  "CoreForgeMusic": {
-    "done": 29,
-    "total": 30,
-    "percent_complete": 96.7
+  "CoreForgeVoiceLab": {
+    "done": 5,
+    "total": 6,
+    "percent_complete": 83.3
+  },
+  "CoreForgeMarket": {
+    "done": 32,
+    "total": 57,
+    "percent_complete": 56.1
   }
 }

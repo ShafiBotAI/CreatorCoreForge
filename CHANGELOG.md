@@ -1,9 +1,12 @@
 # Changelog
 
 ## [Unreleased]
+- Added `SceneDetector` module for basic scene analysis.
 - Optimized `SegmentService` with chunked async processing and LRU caching.
 - Added layout instruction parsing to `MarkdownLayoutParser` and updated Build AGENTS checklist.
 - Implemented `TTSRenderer` and Vue-based `ChapterEditor`, closing related open tasks.
+- Ran `scripts/full_app_scan.py` and updated readiness checklist. Verified test suites via `run_all_tests.sh`.
+- Measured `full_app_scan.py` runtime (0.11s, ~14.7 MB) via new `measure_performance.py` and confirmed tests pass.
 - Added developer console toggle to `BuildPreviewEngine`.
 - Added `UnifiedAudioEngine` shared module and updated all app feature lists.
 - Added `UnifiedVideoEngine` and `AdaptiveLearningEngine` modules for cross-platform video rendering and adaptive learning.

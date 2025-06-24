@@ -5,9 +5,9 @@ This agent is responsible for building, validating, and maintaining all features
 
 -## Objectives
 - [x] End-to-end drag-and-drop AI app builder, export to all platforms
-- [ ] Persistent creative DNA, team and white label controls, template marketplace
+ - [x] Persistent creative DNA, team and white label controls, template marketplace
  - [x] Multi-platform: iOS, Android, PC, Mac, Web
-- [ ] Multilingual, NSFW gating, cloud/local deploy, CI/CD auto-update
+ - [x] Multilingual, NSFW gating, cloud/local deploy, CI/CD auto-update
 
 ---
 
@@ -24,9 +24,9 @@ This agent is responsible for building, validating, and maintaining all features
 - [x] Multi-platform build engine with deploy history
   Use `scripts/generate_placeholder_icons.py` to create required icon sizes.
 - Run `../../scripts/fetch_plugins.sh` to download sample plugins before building.
-- [ ] Subscription, in-app credits, affiliate/white label options
-- [ ] Team collaboration, roles, access controls, branded exports
-- [ ] Auto-update agent, version rollback, cloud/local sync
+ - [x] Subscription, in-app credits, affiliate/white label options
+ - [x] Team collaboration, roles, access controls, branded exports
+ - [x] Auto-update agent, version rollback, cloud/local sync
 
 ### AI & API Integration
 - [ ] LocalAI/BuildAI code generator (UI, logic, assets)
