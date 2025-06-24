@@ -6,8 +6,8 @@
 - Review cross-app asset licensing
 
 ## apps/CoreForgeAudio
-- AdvancedSkipImport
-- AutoFormatDialogue
+- AdvancedSkipImport ✅
+- AutoFormatDialogue ✅
 - TraitMemoryPersistence
 - CanonMemoryGraph
 - MemoryAnchorService
