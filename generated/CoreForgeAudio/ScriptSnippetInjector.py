@@ -1,6 +1,5 @@
 
 """Utilities to insert text snippets into a script."""
-=======
 # Auto-generated for ScriptSnippetInjector
 """Utilities to inject text snippets into a script."""
 
@@ -13,7 +12,6 @@ def scriptsnippetinjector(
     script: str, snippet: str, position: int | None = None
 ) -> str:
     """Return ``script`` with ``snippet`` inserted at ``position``.
-=======
 def scriptsnippetinjector(script: str, snippet: str, line: int | None = None) -> str:
     """Return ``script`` with ``snippet`` inserted at ``line``.
 
@@ -33,7 +31,6 @@ def scriptsnippetinjector(script: str, snippet: str, line: int | None = None) ->
         lines.append(snippet)
     else:
         lines.insert(max(position, 0), snippet)
-=======
         Original script text.
     snippet:
         Text to insert.

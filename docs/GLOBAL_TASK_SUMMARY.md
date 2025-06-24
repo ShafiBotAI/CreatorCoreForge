@@ -22,8 +22,6 @@
 - AudiobookStoreExporter ✅
 - PublishingReportGenerator ✅
 
-=======
-=======
 - FullBookRender ✅
 - AudiobookStoreExporter ✅
 - PublishingReportGenerator ✅

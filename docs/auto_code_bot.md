@@ -27,5 +27,4 @@ Generated filenames now match the detected language. For example, a Swift featur
 - Offline mode now detects common keywords and produces more complete templates
   for CLI scripts, simple Flask APIs, or contact registries when OpenAI is not
   available.
-=======
 In addition to the `generated/` folder, each run now writes a copy of the snippet into language specific folders under `output/`. The filename is suffixed with a timestamp for easy version tracking, e.g. `output/python/login_handler_20240101123000.py`.

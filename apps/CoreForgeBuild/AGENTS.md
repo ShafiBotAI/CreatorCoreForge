@@ -86,7 +86,6 @@ Key points from `README.md`:
 
 
 -### Phase 2 – Code Generation Engine & Language Support Matrix
-=======
 ### Phase 2 – Code Generation Engine & Language Support Matrix
 
 - [x] Generate fully typed code in JavaScript, TypeScript, Swift, Kotlin, Dart, Python
@@ -107,7 +106,6 @@ Key points from `README.md`:
 - [x] Automatically detect platform constraints (e.g., iOS privacy alerts) and inject support
 - [x] Offer raw code, AI-annotated, and production-ready export versions
 - [x] Validate generated code for known bugs or deprecated APIs
-=======
 - [x] Modularize generated code into atomic components or services
 - [x] Comment code with explainable AI summaries per function
 - [x] Provide toggle for minimalist, verbose, or intermediate code style
