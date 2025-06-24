@@ -243,28 +243,28 @@ Key points from `README.md`:
  - [x] Allow branding per team workspace (logo, theme, slug)
  - [x] Archive inactive team projects automatically after custom duration
  - [x] Track deploy permissions and publishing rights by role
-- [ ] Link GitHub/Bitbucket repos for external code versioning sync
-- [ ] Generate shareable project changelogs and deployment diffs
-- [ ] Include API access logs per collaborator
+- [x] Link GitHub/Bitbucket repos for external code versioning sync
+- [x] Generate shareable project changelogs and deployment diffs
+- [x] Include API access logs per collaborator
 
 ### Phase 8 – Advanced AI Co-Pilot, Contextual Logic Advisor, and Code Refactor Tools
-- [ ] Integrate AI co-pilot chat sidebar for contextual coding questions
-- [ ] Enable real-time code annotation and explanation overlays
-- [ ] Suggest logic flow improvements and highlight inefficiencies
-- [ ] Recommend component extraction from complex functions
-- [ ] Offer AI-generated alternatives for every key module or feature
-- [ ] Support natural language queries like "optimize this function"
-- [ ] Auto-generate test cases based on logic structure and edge scenarios
-- [ ] Refactor long functions into readable, typed, testable methods
-- [ ] Detect anti-patterns and deprecated APIs with upgrade suggestions
-- [ ] Allow users to ask "why" a decision was made by the AI coder
-- [ ] Log all co-pilot suggestions and accepted changes
-- [ ] Support voice commands for "insert state handler", "make API call", etc.
-- [ ] Recommend data structures based on logic complexity and performance
-- [ ] Show performance impact forecast for proposed logic changes
-- [ ] Provide real-time security suggestions for form inputs and API calls
-- [ ] Suggest proper async vs sync usage across app logic
-- [ ] Generate documentation for modules, components, and services automatically
+- [x] Integrate AI co-pilot chat sidebar for contextual coding questions
+- [x] Enable real-time code annotation and explanation overlays
+- [x] Suggest logic flow improvements and highlight inefficiencies
+- [x] Recommend component extraction from complex functions
+- [x] Offer AI-generated alternatives for every key module or feature
+- [x] Support natural language queries like "optimize this function"
+- [x] Auto-generate test cases based on logic structure and edge scenarios
+- [x] Refactor long functions into readable, typed, testable methods
+- [x] Detect anti-patterns and deprecated APIs with upgrade suggestions
+- [x] Allow users to ask "why" a decision was made by the AI coder
+- [x] Log all co-pilot suggestions and accepted changes
+- [x] Support voice commands for "insert state handler", "make API call", etc.
+- [x] Recommend data structures based on logic complexity and performance
+- [x] Show performance impact forecast for proposed logic changes
+- [x] Provide real-time security suggestions for form inputs and API calls
+- [x] Suggest proper async vs sync usage across app logic
+- [x] Generate documentation for modules, components, and services automatically
 - [ ] Offer optional autocomplete based on style guide preferences
 - [ ] Link co-pilot to plugin generator to create smart integrations
 - [ ] Enable inline "refactor now" buttons on AI-flagged complexity warnings
