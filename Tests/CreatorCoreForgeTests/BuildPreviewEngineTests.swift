@@ -25,4 +25,23 @@ final class BuildPreviewEngineTests: XCTestCase {
         let cases = BuildPreviewEngine.shared.generateTestCases(from: ["login", "dashboard"])
         XCTAssertEqual(cases, ["test_login", "test_dashboard"])
     }
+
+    func testSelectDeviceAndRenderFrame() {
+        let engine = BuildPreviewEngine.shared
+        engine.selectDevice(.android)
+        let frame = engine.renderFrame()
+        XCTAssertTrue(frame.contains("android"))
+    }
+
+    func testSimulateErrorRecorded() {
+        let engine = BuildPreviewEngine.shared
+        engine.simulateError("network")
+        XCTAssertEqual(engine.inspectVariable("error") as? String, "network")
+    }
+
+    func testRunWebTestsReturnsResults() {
+        let engine = BuildPreviewEngine.shared
+        let results = engine.runWebTests(runner: "jest", cases: ["a", "b"])
+        XCTAssertEqual(results, ["a": true, "b": true])
+    }
 }

@@ -4,6 +4,7 @@ import Foundation
 public final class BuildDeploymentEngine {
     public static let shared = BuildDeploymentEngine()
     private var deployHistory: [String] = []
+    private var performanceLog: [String: [String: Double]] = [:]
     private init() {}
 
     /// Export a build for the specified platform.
@@ -65,4 +66,34 @@ public final class BuildDeploymentEngine {
 
     /// Generate store screenshots and privacy labels.
     public func generateStoreAssets() -> Bool { true }
+
+    /// Record performance metrics for a platform.
+    public func trackPerformance(for platform: String, metrics: [String: Double]) {
+        performanceLog[platform] = metrics
+        deployHistory.append("Performance recorded for \(platform)")
+    }
+
+    /// Retrieve performance metrics for a platform.
+    public func performance(for platform: String) -> [String: Double]? {
+        performanceLog[platform]
+    }
+
+    /// Push a lightweight hotfix without full redeploy.
+    public func pushHotfix(platform: String) -> Bool {
+        deployHistory.append("Hotfix deployed to \(platform)")
+        return true
+    }
+
+    /// Validate that required store compliance items exist.
+    public func validateCompliance(screenshots: Bool, privacyLabels: Bool) -> Bool {
+        let pass = screenshots && privacyLabels
+        deployHistory.append("Compliance \(pass ? "passed" : "failed")")
+        return pass
+    }
+
+    /// Record rollout strategy used for deployment.
+    public func rollout(strategy: String) -> Bool {
+        deployHistory.append("Rollout strategy: \(strategy)")
+        return true
+    }
 }
