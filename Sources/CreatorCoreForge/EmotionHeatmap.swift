@@ -1,5 +1,8 @@
 import Foundation
 
+
+/// Generates a real-time emotion heatmap from logged intensities or raw text.
+=======
 /// Generates a real-time emotion heatmap from text or logged intensity values.
 
 public final class EmotionHeatmap {
