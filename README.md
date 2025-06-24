@@ -293,15 +293,16 @@ exposes this manager along with a built-in `SceneGenerator` and hooks for
 `AIStudioMode` and `GenesisModeEngine` so each app can reuse the same logic.
 
 TestFlight workflows are provided under `.github/workflows` for continuous delivery.
-Pushes to `main` automatically run `fastlane-testflight.yml` which builds the iOS
-projects (CoreForge Audio, CoreForge Visual, and CoreForge Writer) and uploads them to TestFlight
-using the `build_and_upload` lane. Configure `APPSTORECONNECT_*` secrets in your
+Pushes to `main` automatically run `fastlane-testflight.yml` which builds **all** iOS
+projects under `apps/` and uploads them to TestFlight
+using the `build_all` lane. Configure `APPSTORECONNECT_*` secrets in your
 repository so the workflow can authenticate with App Store Connect. You can also
 manually trigger `upload-testflight.yml` from the Actions tab when a one-off
 build is ready for distribution.
 
-For production releases, trigger `upload-appstore.yml` which calls the
-`build_and_deliver` lane to submit the apps directly to App Store Connect.
+For production releases, trigger `upload-appstore.yml` which uses the
+`build_all` lane to build every iOS project and submit the resulting
+artifacts directly to App Store Connect.
 
 See `docs/AI-Prompt-Migration.md` for integrating the new OpenAI prompt interface across apps.
 See `docs/LocalOpenAIReplacement.md` for a primer on using the LocalAI engines to mimic OpenAI features without an internet connection.
