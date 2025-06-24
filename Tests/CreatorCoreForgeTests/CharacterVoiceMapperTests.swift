@@ -17,4 +17,15 @@ final class CharacterVoiceMapperTests: XCTestCase {
         XCTAssertNotNil(bobVoice)
         XCTAssertNotEqual(aliceVoice, bobVoice)
     }
+
+    func testParsesDashSeparatedDialogue() {
+        let mapper = CharacterVoiceMapper(voices: ["One", "Two"])
+        let text = """
+        Alice - Hello
+        Bob — Hi there
+        """
+        let result = mapper.assignVoices(to: text)
+        XCTAssertEqual(result.count, 2)
+        XCTAssertEqual(result.map { $0.assignedVoice }, ["One", "Two"])
+    }
 }

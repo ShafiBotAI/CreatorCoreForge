@@ -1,0 +1,9 @@
+{
+  "app_name": "CoreForge Voice Lab",
+  "version": "1.0.0",
+  "bundle_id": "com.creatorcoreforge.voicelab",
+  "keywords": ["voice cloning", "TTS", "voice modulation", "analytics"],
+  "developer": "CreatorCoreForge",
+  "category": "Music & Audio",
+  "platforms": ["iOS", "Android", "Windows", "macOS", "Web"]
+}

@@ -1,0 +1,9 @@
+{
+  "app_name": "CoreForge Build",
+  "version": "1.0.0",
+  "bundle_id": "com.creatorcoreforge.build",
+  "keywords": ["no-code", "app builder", "drag-and-drop", "cross-platform"],
+  "developer": "CreatorCoreForge",
+  "category": "Developer Tools",
+  "platforms": ["iOS", "Android", "Windows", "macOS", "Web"]
+}

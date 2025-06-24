@@ -57,19 +57,47 @@ public final class LocalAIEnginePro {
                 return
             }
 
+            let stopWords: Set<String> = [
+                "the", "a", "an", "and", "is", "it", "of", "to", "in", "on", "for",
+                "with", "that", "this", "at", "by", "from", "as", "are", "be"
+            ]
             let allWords = text.lowercased().split { !$0.isLetter }
+                .map { String($0) }
+                .filter { !stopWords.contains($0) }
             var freq: [String: Int] = [:]
-            for w in allWords { freq[String(w), default: 0] += 1 }
+            for w in allWords { freq[w, default: 0] += 1 }
 
             var bestSentence = sentences.first!
             var bestScore = -1
             for sentence in sentences {
                 let words = sentence.lowercased().split { !$0.isLetter }
-                let score = words.reduce(0) { $0 + (freq[String($1)] ?? 0) }
+                    .map { String($0) }
+                    .filter { !stopWords.contains($0) }
+                let score = words.reduce(0) { $0 + (freq[$1] ?? 0) }
                 if score > bestScore { bestScore = score; bestSentence = sentence }
             }
 
             completion(.success(String(bestSentence).trimmingCharacters(in: .whitespacesAndNewlines)))
         }
+    }
+
+    /// Very small sentiment analyzer used for demos. Counts positive and
+    /// negative keywords and returns the dominant sentiment.
+    public enum Sentiment: String {
+        case positive, negative, neutral
+    }
+
+    public func analyzeSentiment(_ text: String) -> Sentiment {
+        let positives: Set<String> = ["good", "great", "excellent", "amazing", "wonderful", "positive"]
+        let negatives: Set<String> = ["bad", "terrible", "awful", "horrible", "negative", "poor"]
+
+        var score = 0
+        for word in text.lowercased().split(whereSeparator: { !$0.isLetter }) {
+            if positives.contains(String(word)) { score += 1 }
+            if negatives.contains(String(word)) { score -= 1 }
+        }
+        if score > 0 { return .positive }
+        if score < 0 { return .negative }
+        return .neutral
     }
 }

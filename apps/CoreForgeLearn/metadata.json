@@ -1,0 +1,20 @@
+{
+  "app_name": "CoreForge Learn",
+  "version": "1.0.0",
+  "bundle_id": "com.creatorcoreforge.learn",
+  "keywords": [
+    "education",
+    "adaptive learning",
+    "gamification",
+    "quizzes"
+  ],
+  "developer": "CreatorCoreForge",
+  "category": "Education",
+  "platforms": [
+    "iOS",
+    "Android",
+    "Web",
+    "Windows",
+    "macOS"
+  ]
+}

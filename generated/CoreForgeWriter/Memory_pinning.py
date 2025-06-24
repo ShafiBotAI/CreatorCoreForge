@@ -1,0 +1,4 @@
+# Auto-generated for Memory pinning
+def memory_pinning():
+    """Memory pinning"""
+    pass

@@ -1,1 +1,3 @@
-Placeholder icons for CoreForgeMusic.
+# App Icons
+
+This folder contains the official production icons for CoreForgeMusic used in publishing.

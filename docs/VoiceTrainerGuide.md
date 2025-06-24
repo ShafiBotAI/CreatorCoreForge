@@ -13,3 +13,4 @@ if trainer.trainVoice(for: "Hero") {
 ```
 
 Use `listTrainedVoices()` to print all available custom voices. Samples can be shared between apps via `VoiceMemoryManager`.
+The new `LocalElevenLabsClient` wraps these voices and exposes an ElevenLabs-compatible API for offline synthesis.

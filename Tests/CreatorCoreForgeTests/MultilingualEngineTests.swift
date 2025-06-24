@@ -8,6 +8,7 @@ final class MultilingualEngineTests: XCTestCase {
         XCTAssertEqual(engine.detectLanguage(of: "Bonjour"), .french)
         XCTAssertEqual(engine.detectLanguage(of: "Guten Morgen"), .german)
         XCTAssertEqual(engine.detectLanguage(of: "Ciao"), .italian)
+        XCTAssertEqual(engine.detectLanguage(of: "你好"), .chinese)
         XCTAssertEqual(engine.detectLanguage(of: "Hello"), .english)
     }
 
@@ -17,6 +18,7 @@ final class MultilingualEngineTests: XCTestCase {
         XCTAssertEqual(engine.modelForText("Bonjour"), "LocalVoiceAI-Fr")
         XCTAssertEqual(engine.modelForText("Guten Tag"), "LocalVoiceAI-De")
         XCTAssertEqual(engine.modelForText("Ciao"), "LocalVoiceAI-It")
+        XCTAssertEqual(engine.modelForText("你好"), "LocalVoiceAI-Zh")
         XCTAssertEqual(engine.modelForText("Hi"), "LocalVoiceAI-En")
     }
 }

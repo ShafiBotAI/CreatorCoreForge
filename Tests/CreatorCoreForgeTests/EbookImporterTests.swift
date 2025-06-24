@@ -23,7 +23,7 @@ final class EbookImporterTests: XCTestCase {
 
     func testImportMobi() {
         let path = "/tmp/test.mobi"
-        FileManager.default.createFile(atPath: path, contents: Data(), attributes: nil)
+        _ = FileManager.default.createFile(atPath: path, contents: Data(), attributes: nil)
         let importer = EbookImporter()
         let chapters = importer.importEbook(from: path)
         XCTAssertEqual(chapters.count, 2)
@@ -31,7 +31,7 @@ final class EbookImporterTests: XCTestCase {
 
     func testImportAzw() {
         let path = "/tmp/test.azw"
-        FileManager.default.createFile(atPath: path, contents: Data(), attributes: nil)
+        _ = FileManager.default.createFile(atPath: path, contents: Data(), attributes: nil)
         let importer = EbookImporter()
         let chapters = importer.importEbook(from: path)
         XCTAssertEqual(chapters.count, 2)

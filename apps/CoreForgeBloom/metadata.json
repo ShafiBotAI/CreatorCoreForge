@@ -1,0 +1,9 @@
+{
+  "app_name": "CoreForge Bloom",
+  "version": "1.0.0",
+  "bundle_id": "com.creatorcoreforge.bloom",
+  "keywords": ["women’s health", "cycle tracking", "sexual wellness", "AI coach"],
+  "developer": "CreatorCoreForge",
+  "category": "Health & Fitness",
+  "platforms": ["iOS", "Android", "Windows", "macOS", "Web"]
+}

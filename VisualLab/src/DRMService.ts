@@ -1,8 +1,12 @@
 export interface DRMConfig { watermark: string; }
-export interface VideoClip { frames: any[]; }
+export interface DRMVideoClip { frames: any[]; }
 
 export class DRMService {
-  async embedWatermark(video: VideoClip, config: DRMConfig): Promise<VideoClip> {
-    return video;
+  async embedWatermark(
+    video: DRMVideoClip,
+    config: DRMConfig
+  ): Promise<DRMVideoClip> {
+    const frames = video.frames.map(f => ({ ...f, watermark: config.watermark }));
+    return { frames };
   }
 }
