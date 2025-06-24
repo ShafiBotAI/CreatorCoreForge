@@ -222,18 +222,18 @@ Key points from `README.md`:
 - [x] Store scene-specific animation presets (reaction styles, gestures)
 - [x] Identify group scenes and auto-generate spatial layouts
 - [x] Highlight visual identity conflicts for creator review (e.g., two similar characters)
-- [ ] Apply genre-tuned color palettes to each character
-- [ ] Recommend lighting configurations for cast mood amplification
-- [ ] Add multi-timeline variants for multiverse visual branching
-- [ ] Provide creator dashboard to preview, test, and lock character animations
+- [x] Apply genre-tuned color palettes to each character
+- [x] Recommend lighting configurations for cast mood amplification
+- [x] Add multi-timeline variants for multiverse visual branching
+- [x] Provide creator dashboard to preview, test, and lock character animations
 
 ### Phase 3 – AI Rendering, Visual Effects & Scene FX Logic
-- [ ] Generate scene backgrounds using genre-trained visual models (e.g., fantasy, dystopia)
-- [ ] Match lighting conditions to time-of-day, tone, and setting
-- [ ] Render characters in cinematic compositions (rule of thirds, motion focus)
-- [ ] Apply scene transitions (fade, cut, swipe, glitch) based on pacing tags
-- [ ] Layer particle FX (rain, fire, fog, dust) for environmental realism
-- [ ] Auto-render camera movement (zoom, pan, tilt) based on action intensity
+- [x] Generate scene backgrounds using genre-trained visual models (e.g., fantasy, dystopia)
+- [x] Match lighting conditions to time-of-day, tone, and setting
+- [x] Render characters in cinematic compositions (rule of thirds, motion focus)
+- [x] Apply scene transitions (fade, cut, swipe, glitch) based on pacing tags
+- [x] Layer particle FX (rain, fire, fog, dust) for environmental realism
+- [x] Auto-render camera movement (zoom, pan, tilt) based on action intensity
 - [ ] Enable cutaway logic for interior vs exterior visual blending
 - [ ] Simulate mood via hue shifting and saturation overlays
 - [ ] Support dynamic shadows and ambient occlusion for realism
