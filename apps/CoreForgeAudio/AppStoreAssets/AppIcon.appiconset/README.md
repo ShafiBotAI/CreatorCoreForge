@@ -1,1 +1,3 @@
-Placeholder app icons for CoreForgeAudio
+# App Icons
+
+This folder contains the official production icons for CoreForgeAudio used in publishing.

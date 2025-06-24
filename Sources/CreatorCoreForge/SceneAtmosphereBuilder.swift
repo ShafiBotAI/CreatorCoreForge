@@ -63,7 +63,7 @@ public final class SceneAtmosphereBuilder {
         let tempDir = FileManager.default.temporaryDirectory
         let fileURL = tempDir.appendingPathComponent("atmo_\(mood.rawValue)").appendingPathExtension("caf")
         if !FileManager.default.fileExists(atPath: fileURL.path) {
-            FileManager.default.createFile(atPath: fileURL.path, contents: Data(), attributes: nil)
+            _ = FileManager.default.createFile(atPath: fileURL.path, contents: Data(), attributes: nil)
         }
 
         print("Atmosphere generation skipped for \(mood.rawValue) — AVFoundation unavailable")
@@ -73,6 +73,7 @@ public final class SceneAtmosphereBuilder {
 
     public func playAtmosphere(for mood: Mood, in engine: Any, player: Any) {
         // Simply log the call since playback isn't supported without AVFoundation
+
         _ = generateAtmosphere(for: mood, duration: 0)
         print("Atmosphere playback skipped — AVFoundation unavailable")
     }

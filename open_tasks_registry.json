@@ -1,0 +1,272 @@
+{
+  "open_tasks": [
+    {
+      "task": "Implement any modules or files reported as missing.",
+      "source_file": "CODEX-TODO-FULL-APP-READINESS-CHECKLIST.md"
+    },
+    {
+      "task": "Replace all placeholder or TODO code with production-ready logic.",
+      "source_file": "CODEX-TODO-FULL-APP-READINESS-CHECKLIST.md"
+    },
+    {
+      "task": "Add test suites for new and existing modules.",
+      "source_file": "CODEX-TODO-FULL-APP-READINESS-CHECKLIST.md"
+    },
+    {
+      "task": "Ensure `scripts/run_all_tests.sh` passes without errors.",
+      "source_file": "CODEX-TODO-FULL-APP-READINESS-CHECKLIST.md"
+    },
+    {
+      "task": "Confirm build scripts generate output for iOS, Android, macOS, Windows, and Web.",
+      "source_file": "CODEX-TODO-FULL-APP-READINESS-CHECKLIST.md"
+    },
+    {
+      "task": "Verify all assets and configuration files are in place for production.",
+      "source_file": "CODEX-TODO-FULL-APP-READINESS-CHECKLIST.md"
+    },
+    {
+      "task": "All folders and files exist with completed logic.",
+      "source_file": "CODEX-TODO-FULL-APP-READINESS-CHECKLIST.md"
+    },
+    {
+      "task": "All tests pass and coverage reports are up to date.",
+      "source_file": "CODEX-TODO-FULL-APP-READINESS-CHECKLIST.md"
+    },
+    {
+      "task": "Deployment artifacts are generated in the `dist/` directory for each platform.",
+      "source_file": "CODEX-TODO-FULL-APP-READINESS-CHECKLIST.md"
+    },
+    {
+      "task": "`BookImporter.import(file): Promise<Scene[]>`",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Parse EPUB/PDF/TXT into story blocks",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Extract visual scene descriptors and dialogue",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Normalize chapters into visual sequences",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "`SceneDetector.analyze(text): SceneMap`",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Detect scene shifts via NLP (e.g., time jump, location change)",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Tag scenes with estimated tone, setting, pacing",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Save scene structure in persistent format",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Match characters with avatar templates",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Assign age, gender, personality traits",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Support facial expression presets (happy, angry, neutral)",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Auto-suggest avatars by genre",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "`SceneBuilder.build(scene: Scene): RenderConfig`",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Match character(s), setting, props",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Annotate shot list (close-up, wide, over-shoulder)",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Inject emotion or FX tags into each shot",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Generate video from prompt + voice + ambient FX",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Integrate with external or local video model",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Allow rendering style: anime, fantasy, live-action, etc.",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Add scene-level visual effects (fog, sparks, neon glow)",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Overlay genre-specific filters",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Allow real-time FX preview",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Sync facial movement and scene cuts to speech timing",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Support pre-recorded and generated voice tracks",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Allow lip-sync toggle for faster rendering",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Store character appearances across books",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Preserve visual continuity in sequels",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Handle outfit/age/mood consistency dynamically",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Track changes to scenes (e.g., visual DNA fork)",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Let creators “lock” scene visuals for canon",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Link scene DNA to multiverse system",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Display alternate visual paths for the same book",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Allow creators to preview multiple visual outcomes",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Tag scene outcomes with timeline markers",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Store viewer path history (timeline A/B/C)",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Replay scenes with alternate visuals",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Adjust future render suggestions based on prior paths",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Allow 1 book-to-video conversion per month (Pro)",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Allow 3 books/month for Creator Tier",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Sell extra video credits for $79.99 each",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Auto-upload unlock for $24.99 (2 platforms)",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "NSFW unlock ($25/month or bundle $60/all apps)",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Creator tab unlocked via promo code",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Toggle for erotic/fantasy/surreal scenes",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Hide NSFW previews unless verified",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Censor layer options for safe version rendering",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Scene fusion mode (blended timelines)",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Hallucinogenic visual filters",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Realistic surrealism toggle (dream logic effects)",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Export full video to device (MP4)",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Auto-generate thumbnails and cover art",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Add platform-ready metadata",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Upload 1 platform/channel by default",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Add-on unlock for second channel/platform",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Show upload status and logs in dashboard",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Style picker (anime, noir, fantasy, etc.)",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "NSFW mode toggle (off by default)",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    },
+    {
+      "task": "Developer console toggle (Creator tier)",
+      "source_file": "FEATURES-CODEX-COMPLETE.md"
+    }
+  ]
+}

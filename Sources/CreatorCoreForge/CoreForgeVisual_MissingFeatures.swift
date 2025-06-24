@@ -1,4 +1,15 @@
 import Foundation
+#if canImport(AVFoundation)
+import AVFoundation
+import CoreMedia
+import CoreVideo
+import CoreText
+#if os(macOS)
+import AppKit
+#elseif os(iOS)
+import UIKit
+#endif
+#endif
 
 /// Utilities bridging missing CoreForge Visual features.
 public struct CoreForgeVisualFeatures {
@@ -74,6 +85,11 @@ public struct CoreForgeVisualFeatures {
     /// simply returns a confirmation string.
     public func uploadToPlatform(_ url: URL, platform: String) -> String {
         "Uploaded \(url.lastPathComponent) to \(platform)"
+    }
+
+    /// Retrieve emotion details from the shared database for scene tuning.
+    public func emotionInfo(for label: String) -> EmotionRecord? {
+        EmotionDatabase.shared.record(for: label)
     }
 
     #if canImport(AVFoundation)

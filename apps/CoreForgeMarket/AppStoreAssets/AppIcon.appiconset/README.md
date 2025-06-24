@@ -1,1 +1,3 @@
-Placeholder icons for CoreForgeMarket.
+# App Icons
+
+This folder contains the official production icons for CoreForgeMarket used in publishing.

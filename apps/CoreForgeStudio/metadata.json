@@ -1,0 +1,9 @@
+{
+  "app_name": "CoreForge Studio",
+  "version": "1.0.0",
+  "bundle_id": "com.creatorcoreforge.studio",
+  "keywords": ["audio editing", "video production", "live collaboration", "macro automation"],
+  "developer": "CreatorCoreForge",
+  "category": "Photo & Video",
+  "platforms": ["iOS", "Android", "Windows", "macOS", "Web"]
+}

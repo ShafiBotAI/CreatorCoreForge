@@ -42,9 +42,12 @@ public final class LocalVoiceAI {
     ///   - profile: Voice profile to use during synthesis.
     ///   - emotionShift: Optional adjustment to the base emotion.
     ///   - completion: Returns synthesized audio data (mocked).
-    public func synthesize(text: String, with profile: VoiceProfile, emotionShift: Double = 0.0, completion: @escaping (Result<Data, Error>) -> Void) {
+    public func synthesize(text: String,
+                           with profile: VoiceProfile,
+                           emotionShift: Double = 0.0,
+                           sampleRate: Int = 44100,
+                           completion: @escaping (Result<Data, Error>) -> Void) {
         DispatchQueue.global().async {
-            let sampleRate = 44100
             var samples: [Int16] = []
             for ch in text.utf8 {
                 let baseFreq = 200.0 + Double(ch % 40) * 10.0

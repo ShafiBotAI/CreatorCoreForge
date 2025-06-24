@@ -1,0 +1,4 @@
+# Auto-generated for AdaptiveMusicGenerator
+def adaptivemusicgenerator():
+    """AdaptiveMusicGenerator"""
+    pass

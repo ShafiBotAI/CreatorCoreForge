@@ -28,3 +28,27 @@ export * from './SignLanguageService.ts';
 export * from './LocalizationService.ts';
 export * from './DRMService.ts';
 export * from './streamingService.ts';
+export * from './TimelineEditor.ts';
+export * from './ColorGradingEngine.ts';
+export * from './BranchingPathsUI.tsx';
+export * from './FaceTrackerService.ts';
+export * from './CrowdSimulator.ts';
+export * from './Export360VR.ts';
+export * from './CameraStabilizer.ts';
+export * from './WatermarkService.ts';
+export * from './SubtitleGenerator.ts';
+export * from './RenderAnalyticsDashboard.tsx';
+export { UnifiedAudioEngine } from './UnifiedAudioEngine.ts';
+
+export * from './frameInterpolator.ts';
+=======
+export { UnifiedVideoEngine } from './UnifiedVideoEngine.ts';
+export { AdaptiveLearningEngine } from './AdaptiveLearningEngine.ts';
+export { VisualRenderer } from './VisualRenderer.ts';
+
+
+export * from './characterDetector.ts';
+export * from './locationTemplateMatcher.ts';
+export * from './storyboardGenerator.ts';
+export * from './dragDropHelper.ts';
+export * from './sceneBreakEditor.ts';

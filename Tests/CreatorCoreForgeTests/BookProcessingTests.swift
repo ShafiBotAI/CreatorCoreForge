@@ -7,6 +7,7 @@ final class BookProcessingTests: XCTestCase {
         try? "Chapter 1\nHello\n\nChapter 2\nWorld".write(to: tmp, atomically: true, encoding: .utf8)
         let chapters = BookProcessing.importBook(filePath: tmp.path)
         XCTAssertEqual(chapters.count, 2)
+        XCTAssertTrue(chapters[0].text.contains("Chapter 1"))
     }
 
     func testAssignVoices() {

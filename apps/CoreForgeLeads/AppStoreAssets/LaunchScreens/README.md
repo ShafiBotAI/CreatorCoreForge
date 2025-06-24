@@ -1,1 +1,3 @@
-Placeholder launch screen images for CoreForgeLeads.
+# Launch Screens
+
+This folder contains the final splash screen designs for CoreForgeLeads across all target platforms.
