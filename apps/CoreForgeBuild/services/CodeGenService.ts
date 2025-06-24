@@ -5,10 +5,17 @@ import { UIElement } from '../models/UIElement';
  * front-end frameworks. This is a minimal proof of concept used for tests.
  */
 export type FrontendTarget = 'react' | 'vue' | 'flutter' | 'swiftui' | 'html';
-export type BackendTarget = 'express' | 'fastapi' | 'firebase';
+export type BackendTarget = 'express' | 'fastapi' | 'firebase' | 'supabase';
 export type OutputStyle = 'minimal' | 'intermediate' | 'verbose';
 
 export class CodeGenService {
+  supportedFrontends(): FrontendTarget[] {
+    return ['react', 'vue', 'flutter', 'swiftui', 'html'];
+  }
+
+  supportedBackends(): BackendTarget[] {
+    return ['express', 'fastapi', 'firebase', 'supabase'];
+  }
   generate(
     layout: UIElement[],
     target: FrontendTarget | BackendTarget,
@@ -37,11 +44,33 @@ export class CodeGenService {
       case 'firebase':
         code = this.generateFirebase();
         break;
+      case 'supabase':
+        code = this.generateSupabase();
+        break;
       case 'html':
       default:
         code = this.generateHTML(layout);
     }
     return this.applyStyle(code, style);
+  }
+
+  /** Generate fully typed code in the given language. */
+  generateTyped(layout: UIElement[], language: 'javascript' | 'typescript' | 'swift' | 'kotlin' | 'dart' | 'python'): string {
+    switch (language) {
+      case 'typescript':
+        return `export interface Element { type: string; props?: any; }\n` + this.generate(layout, 'react');
+      case 'swift':
+        return this.generate(layout, 'swiftui');
+      case 'kotlin':
+        return '// AI-generated Kotlin code\nfun build() = listOf("UI")';
+      case 'dart':
+        return this.generate(layout, 'flutter');
+      case 'python':
+        return this.generateFastAPI();
+      case 'javascript':
+      default:
+        return this.generate(layout, 'react');
+    }
   }
 
   private wrapComment(text: string): string {
@@ -171,6 +200,10 @@ export class CodeGenService {
 
   private generateFirebase(): string {
     return `// AI-generated Firebase Functions\nconst functions = require('firebase-functions');\nexports.hello = functions.https.onRequest((req, res) => {\n  res.send('Hello');\n});`;
+  }
+
+  private generateSupabase(): string {
+    return `-- AI-generated Supabase Edge Function\ncreate or replace function hello()\nreturns text as $$\nbegin\n  return 'Hello';\nend;\n$$ language plpgsql;`;
   }
 
   private applyStyle(code: string, style: OutputStyle): string {

@@ -57,6 +57,14 @@ export class PromptParser {
    * Very naive language detection. Defaults to 'en'.
    */
   private detectLanguage(text: string): string {
+    const lower = text.toLowerCase();
+    for (const [lang, dict] of Object.entries(this.translations)) {
+      for (const word of Object.keys(dict)) {
+        if (lower.includes(word)) {
+          return lang;
+        }
+      }
+    }
     for (const [lang, regex] of Object.entries(this.languages)) {
       if (regex.test(text)) {
         return lang;
