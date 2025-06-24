@@ -1,0 +1,89 @@
+{
+  "subjects": [
+    {
+      "name": "Pre-production",
+      "topics": [
+        "Scriptwriting",
+        "Storyboarding",
+        "Budgeting",
+        "Location Scouting",
+        "Casting",
+        "Scheduling"
+      ]
+    },
+    {
+      "name": "Production",
+      "topics": [
+        "Camera Operation",
+        "Lighting Techniques",
+        "Directing",
+        "Audio Capture",
+        "Set Design",
+        "Acting",
+        "Cinematography",
+        "On-set Safety"
+      ]
+    },
+    {
+      "name": "Post-production",
+      "topics": [
+        "Video Editing",
+        "Sound Design",
+        "Color Grading",
+        "Visual Effects",
+        "Animation",
+        "Motion Graphics",
+        "Audio Mixing",
+        "Subtitles and Captioning"
+      ]
+    },
+    {
+      "name": "Distribution",
+      "topics": [
+        "Video Platforms",
+        "Marketing Strategies",
+        "Monetization",
+        "Analytics",
+        "Archiving"
+      ]
+    },
+    {
+      "name": "Technology and Tools",
+      "topics": [
+        "Cameras and Lenses",
+        "Drones",
+        "Capture Cards",
+        "Editing Software",
+        "Render Engines",
+        "Storage Solutions",
+        "Codecs and Formats",
+        "Frame Rates",
+        "Streaming Protocols"
+      ]
+    },
+    {
+      "name": "Specialties",
+      "topics": [
+        "Documentary Filmmaking",
+        "Animation Production",
+        "Virtual Reality",
+        "Augmented Reality",
+        "Live Streaming",
+        "Short Form Content",
+        "Feature Films",
+        "Music Videos"
+      ]
+    },
+    {
+      "name": "Creative Techniques",
+      "topics": [
+        "Storytelling",
+        "Visual Composition",
+        "Editing Styles",
+        "Soundtrack Selection",
+        "Motion Capture",
+        "Compositing"
+      ]
+    }
+  ]
+}

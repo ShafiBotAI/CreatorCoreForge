@@ -1,5 +1,14 @@
 import Foundation
 
+/// Suggests optimal voice profiles based on genre and tone.
+public final class AutoCastingEngine {
+    public init() {}
+
+    /// Return a suggested voice profile for the provided genre and tone.
+    public func suggestVoice(for genre: String, tone: String) -> VoiceProfile {
+        let name = "\(genre.capitalized) \(tone.capitalized)"
+        return VoiceProfile(name: name, emotion: tone.lowercased())
+=======
 /// Suggests voices based on genre and tone.
 public final class AutoCastingEngine {
     public init() {}
@@ -9,5 +18,6 @@ public final class AutoCastingEngine {
             return VoiceProfile(name: "Spooky", emotion: "tense")
         }
         return VoiceProfile(name: "Narrator", emotion: "neutral")
+
     }
 }

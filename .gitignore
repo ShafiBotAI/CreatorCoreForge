@@ -3,3 +3,9 @@
 .env
 node_modules/
 VoiceLab/node_modules/
+
+external/
+__pycache__/
+*.pyc
+dist/
+tests/python/__pycache__/

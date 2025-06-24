@@ -14,7 +14,7 @@ export const VoiceLabUI: React.FC = () => {
 
   return (
     <div>
-      <input type="file" accept="audio/*" onChange={handleAudioChange} />
+      <input data-testid="file-input" type="file" accept="audio/*" onChange={handleAudioChange} />
       {metrics && (
         <ul>
           <li>Pitch: {metrics.pitch}</li>

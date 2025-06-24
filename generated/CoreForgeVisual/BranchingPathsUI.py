@@ -1,0 +1,4 @@
+# Auto-generated for BranchingPathsUI
+def branchingpathsui():
+    """BranchingPathsUI"""
+    pass
