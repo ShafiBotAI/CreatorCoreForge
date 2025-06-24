@@ -11,16 +11,21 @@
 - TraitMemoryPersistence ✅
 - CanonMemoryGraph ✅
 - MemoryAnchorService ✅
-- MultiverseBookLinker
+- MultiverseBookLinker ✅
 - AutoTranslateService ✅
 - AccentSwitcher ✅
 - MultilingualVoiceBlend ✅
 - SemanticSegmenter ✅
 - SceneIndexGenerator ✅
 - LongFormPacingEngine ✅
+- FullBookRender ✅
+- AudiobookStoreExporter ✅
+- PublishingReportGenerator ✅
+=======
 - FullBookRender
 - AudiobookStoreExporter
 - PublishingReportGenerator
+
 - SeriesManager ✅
 - InlineEmotionEngine
 - AmbientMixer
