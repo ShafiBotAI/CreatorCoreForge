@@ -58,22 +58,9 @@ import { ParseHistory } from '../services/ParseHistory';
   const diffOutput = diff.diff('a', 'b');
   assert(diffOutput.includes('-a'));
 
-=======
-  const diffOutput = diff.diff("a", "b");
-  assert(diffOutput.includes("-a"));
-=======
   const bridge = new (await import('../services/PreviewBridge')).PreviewBridge(bus);
   bus.emitParsed(parsed);
   assert(bridge.getCode().includes('<h1>'));
-
-
-  const diff = new DiffService();
-
-  const diffOutput = diff.diff('a', 'b');
-  assert(diffOutput.includes('-a'));
-
-
-
 
   const sugg = new UISuggestionService();
   assert(sugg.suggestNext([{ type: "header", props: { text: "Login" } }]).length > 0);
