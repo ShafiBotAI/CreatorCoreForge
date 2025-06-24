@@ -68,6 +68,12 @@ This agent is responsible for building, validating, and maintaining all features
 - [x] README.md, APISetup.md, PromptTemplates.md, DeveloperSetup.md
  - [x] App store/launch assets, user/enterprise guides
 
+### BuildImprovementEngine
+New in this release, `BuildImprovementEngine` scans existing projects for
+missing implementations and potential vulnerabilities. It can automatically
+replace common "Not implemented" placeholders, recommend refactors through
+`AICoPilot`, and verify basic compliance documents are present.
+
 ---
 
 ## Next-Gen & Phase 8 Features
