@@ -117,9 +117,9 @@
 ## ✅ Phase 8 – Compliance, Exports & UI Polish
 
 ### 📱 Export Manager
-- [ ] Export full video to device (MP4)
-- [ ] Auto-generate thumbnails and cover art
-- [ ] Add platform-ready metadata
+- [x] Export full video to device (MP4)
+- [x] Auto-generate thumbnails and cover art
+- [x] Add platform-ready metadata
 
 ### 📤 Platform Upload Tools
 - [ ] Upload 1 platform/channel by default

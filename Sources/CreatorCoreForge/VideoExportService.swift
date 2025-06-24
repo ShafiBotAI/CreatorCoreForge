@@ -41,5 +41,23 @@ public final class VideoExportService {
 #endif
         return url
     }
+
+    /// Export frames as an MP4 file and optionally write platform metadata
+    /// to a sidecar JSON file.
+    public func exportVideoMP4(frames: [String], metadata: VideoMetadata?) -> URL {
+        let url = exportVideoMP4(frames: frames)
+        if let meta = metadata {
+            let metaURL = url.deletingPathExtension().appendingPathExtension("json")
+            if let data = try? JSONEncoder().encode(meta) {
+                try? data.write(to: metaURL)
+            }
+        }
+        return url
+    }
+
+    /// Convenience helper to generate a thumbnail PNG for a rendered video.
+    public func generateThumbnail(for videoURL: URL) -> URL {
+        ThumbnailGenerator().generateThumbnail(for: videoURL)
+    }
 }
 
