@@ -218,9 +218,9 @@ This file is a full checklist of every feature required for code completion and 
 - [x] AudiobookStoreExporter
 - [x] PublishingReportGenerator
 =======
-- [ ] FullBookRender
-- [ ] AudiobookStoreExporter
-- [ ] PublishingReportGenerator
+- [x] FullBookRender
+- [x] AudiobookStoreExporter
+- [x] PublishingReportGenerator
 
 - [x] SeriesManager
  - [x] BookImporter
@@ -248,8 +248,8 @@ This file is a full checklist of every feature required for code completion and 
 - [x] AppStoreIntegration
 - [x] SettingsPanel
 - [x] CreatorPanel
-- [ ] VoicePersonalityProfiles
-- [ ] DynamicEmotionRamping
+ - [x] VoicePersonalityProfiles
+ - [x] DynamicEmotionRamping
 - [ ] MultivoiceCharacterMode
 - [ ] CharacterTics
 - [ ] VoiceReactivity
