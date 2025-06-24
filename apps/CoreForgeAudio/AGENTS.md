@@ -206,17 +206,17 @@ This file is a full checklist of every feature required for code completion and 
 - [x] TraitMemoryPersistence
 - [x] CanonMemoryGraph
 - [x] MemoryAnchorService
-- [ ] MultiverseBookLinker
+- [x] MultiverseBookLinker
 - [x] AutoTranslateService
  - [x] AccentSwitcher
 - [x] MultilingualVoiceBlend
 - [x] SemanticSegmenter
 - [x] SceneIndexGenerator
 - [x] LongFormPacingEngine
-- [ ] FullBookRender
-- [ ] AudiobookStoreExporter
-- [ ] PublishingReportGenerator
-- [ ] SeriesManager
+- [x] FullBookRender
+- [x] AudiobookStoreExporter
+- [x] PublishingReportGenerator
+- [x] SeriesManager
  - [x] BookImporter
  - [x] ChapterDetector
  - [x] SegmentService
