@@ -201,7 +201,10 @@ public final class SoundEffectManager {
         return reverb
     }
 #else
-    public func triggerReverbPreset(preset: ReverbStyle) {}
+    public func triggerReverbPreset(preset: ReverbStyle) -> StubReverb {
+        print("[SoundEffectManager] Reverb preset \(preset.rawValue) not supported on this platform")
+        return StubReverb()
+    }
 #endif
 }
 
@@ -221,6 +224,12 @@ public enum ReverbStyle: String, CaseIterable, Codable {
 #else
 public enum ReverbStyle: String, CaseIterable, Codable {
     case cathedral, cave, underwater, hall, dreamlike
+}
+
+/// Minimal stand-in for `AVAudioUnitReverb` when AVFoundation is unavailable.
+public struct StubReverb {
+    public var wetDryMix: Float = 0.0
+    public init() {}
 }
 #endif
 
