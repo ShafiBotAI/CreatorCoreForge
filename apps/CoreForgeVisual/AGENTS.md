@@ -212,16 +212,16 @@ Key points from `README.md`:
 - [x] Allow creators to upload reference art or override generated visuals
 - [x] Store character styles for reuse across scenes and sequels
 - [x] Adjust posture, facial expressions, and body language based on dialogue tone
-- [ ] Support age-shift modeling (child, teen, adult, elder versions)
-- [ ] Track costume and hairstyle changes throughout story for visual consistency
-- [ ] Sync character movement to dialogue line length and pacing
-- [ ] Render close-up, medium, or wide shots based on character’s narrative importance
-- [ ] Link voice performance timing with facial movement and lip sync
-- [ ] Detect speaker shifts and auto-adjust scene framing/camera position
-- [ ] Suggest duo-frame or over-the-shoulder compositions for dialogue scenes
-- [ ] Store scene-specific animation presets (reaction styles, gestures)
-- [ ] Identify group scenes and auto-generate spatial layouts
-- [ ] Highlight visual identity conflicts for creator review (e.g., two similar characters)
+- [x] Support age-shift modeling (child, teen, adult, elder versions)
+- [x] Track costume and hairstyle changes throughout story for visual consistency
+- [x] Sync character movement to dialogue line length and pacing
+- [x] Render close-up, medium, or wide shots based on character’s narrative importance
+- [x] Link voice performance timing with facial movement and lip sync
+- [x] Detect speaker shifts and auto-adjust scene framing/camera position
+- [x] Suggest duo-frame or over-the-shoulder compositions for dialogue scenes
+- [x] Store scene-specific animation presets (reaction styles, gestures)
+- [x] Identify group scenes and auto-generate spatial layouts
+- [x] Highlight visual identity conflicts for creator review (e.g., two similar characters)
 - [ ] Apply genre-tuned color palettes to each character
 - [ ] Recommend lighting configurations for cast mood amplification
 - [ ] Add multi-timeline variants for multiverse visual branching
