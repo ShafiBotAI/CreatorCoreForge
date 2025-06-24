@@ -36,7 +36,7 @@ Purpose: AI-driven app builder with automated code generation and packaging
 - [x] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
 - [x] TenTimesPlaybackSpeed
-- [ ] AdvancedSkipImport
+ - [x] AdvancedSkipImport
 - [x] AISummaryChatService
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer

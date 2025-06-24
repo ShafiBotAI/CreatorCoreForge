@@ -42,7 +42,7 @@ Purpose: Hit songwriting engine with AI beat matching, hooks, and lyric generati
 - [x] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
 - [x] TenTimesPlaybackSpeed
-- [ ] AdvancedSkipImport
+ - [x] AdvancedSkipImport
 - [x] AISummaryChatService
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
