@@ -3,6 +3,7 @@ import { UIElement } from '../models/UIElement';
 export interface ParseResult {
   language: string;
   layout: UIElement[];
+  flows: string[][];
 }
 
 /**
@@ -20,7 +21,8 @@ export class PromptParser {
     const language = this.detectLanguage(prompt);
     const normalized = this.normalize(prompt);
     const layout = this.parseMarkdown(normalized);
-    return { language, layout };
+    const flows = this.parseFlows(normalized);
+    return { language, layout, flows };
   }
 
   /**
@@ -76,5 +78,27 @@ export class PromptParser {
       }
     }
     return result;
+  }
+
+  /**
+   * Parse simple user flow descriptions like
+   * "login -> dashboard -> settings" into arrays
+   * of step names.
+   */
+  private parseFlows(text: string): string[][] {
+    const flows: string[][] = [];
+    const lines = text.split(/\n+/);
+    for (const line of lines) {
+      if (line.includes('->')) {
+        const steps = line
+          .split(/->/)
+          .map((s) => s.trim())
+          .filter(Boolean);
+        if (steps.length > 1) {
+          flows.push(steps);
+        }
+      }
+    }
+    return flows;
   }
 }
