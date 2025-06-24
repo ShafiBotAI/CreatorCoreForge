@@ -54,7 +54,6 @@ import { ParseHistory } from '../services/ParseHistory';
   assert.strictEqual(generated, '<div />');
 
   const diff = new DiffService();
-
   const diffOutput = diff.diff('a', 'b');
   assert(diffOutput.includes('-a'));
 
@@ -92,7 +91,7 @@ import { ParseHistory } from '../services/ParseHistory';
 
   // multilingual prompt parsing
   const parsedEs = parser.parse('hola inicio');
-  assert.strictEqual(parsedEs.language, 'en');
+  assert.strictEqual(parsedEs.language, 'es');
 
   // pattern recognition
   const patternParsed = parser.parse('Onboarding flow with tabbed menu');
