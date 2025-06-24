@@ -1,4 +1,17 @@
-# Auto-generated for Build creator dashboard for real-time monitoring of voice quality and performance
-def build_creator_dashboard():
-    """Build creator dashboard for real-time monitoring of voice quality and performance"""
-    pass
+"""HTML dashboard generator for voice metrics."""
+
+from __future__ import annotations
+
+from typing import Dict
+
+
+def build_creator_dashboard(metrics: Dict[str, float]) -> str:
+    """Return a simple HTML table for ``metrics``."""
+
+    rows = "".join(
+        f"<tr><td>{k}</td><td>{v:.2f}</td></tr>" for k, v in metrics.items()
+    )
+    return f"<table>{rows}</table>"
+
+
+__all__ = ["build_creator_dashboard"]

@@ -14,8 +14,12 @@
   <true/>
   <key>provisioningProfiles</key>
   <dict>
-    <key>com.creatorcoreforge.app</key>
-    <string>match AppStore com.creatorcoreforge.app</string>
+    <key>com.creatorcoreforge.audio</key>
+    <string>match AppStore com.creatorcoreforge.audio</string>
+    <key>com.creatorcoreforge.visual</key>
+    <string>match AppStore com.creatorcoreforge.visual</string>
+    <key>com.creatorcoreforge.writer</key>
+    <string>match AppStore com.creatorcoreforge.writer</string>
   </dict>
 </dict>
 </plist>

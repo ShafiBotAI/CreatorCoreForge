@@ -84,12 +84,17 @@ Key points from `README.md`:
 - [x] Validate parsed layouts against mobile and desktop resolution grids
 - [x] Include onboarding UI examples for prompt learning
 
+
 -### Phase 2 – Code Generation Engine & Language Support Matrix
+=======
+### Phase 2 – Code Generation Engine & Language Support Matrix
+
 - [x] Generate fully typed code in JavaScript, TypeScript, Swift, Kotlin, Dart, Python
 - [x] Detect app architecture (SPA, MVC, MVVM) from prompt or UI map
 - [x] Offer choice of frontend frameworks (React, Vue, Flutter, SwiftUI)
 - [x] Offer choice of backend frameworks (Express, FastAPI, Firebase, Supabase)
 - [x] Scaffold authentication logic (JWT, OAuth2, magic link, social login)
+
 - [ ] Modularize generated code into atomic components or services
 - [ ] Comment code with explainable AI summaries per function
 - [ ] Provide toggle for minimalist, verbose, or intermediate code style
@@ -102,6 +107,20 @@ Key points from `README.md`:
 - [ ] Automatically detect platform constraints (e.g., iOS privacy alerts) and inject support
 - [ ] Offer raw code, AI-annotated, and production-ready export versions
 - [ ] Validate generated code for known bugs or deprecated APIs
+=======
+- [x] Modularize generated code into atomic components or services
+- [x] Comment code with explainable AI summaries per function
+- [x] Provide toggle for minimalist, verbose, or intermediate code style
+- [x] Inject error handling templates with async support
+- [x] Support REST and GraphQL generation modes
+- [x] Allow import of OpenAPI spec to bind to real backend API
+- [x] Generate full mobile, desktop, or web app packages
+- [x] Provide coding “style guides” to match creator branding or company standards
+- [x] Support dark/light theme CSS logic generation
+- [x] Automatically detect platform constraints (e.g., iOS privacy alerts) and inject support
+- [x] Offer raw code, AI-annotated, and production-ready export versions
+- [x] Validate generated code for known bugs or deprecated APIs
+
 - [ ] Allow real-time preview of generated code in split panel view
 - [ ] Train private models per user to reflect their coding style over time
 - [ ] Export language-specific bundles for VSCode, Xcode, or Android Studio

@@ -1,4 +1,0 @@
-# Auto-generated for Alternate ending generator
-def alternate_ending_generator():
-    """Alternate ending generator"""
-    pass

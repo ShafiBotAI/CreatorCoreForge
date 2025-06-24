@@ -48,8 +48,16 @@ final class ScheduleModel: ObservableObject {
 #else
 final class ScheduleModel {
     static let shared = ScheduleModel()
-    func schedule(url: URL, platform: UploadScheduler.Platform, date: Date) {}
-    var items: [ScheduleItem] { [] }
+    private var internalItems: [ScheduleItem] = []
+    private let scheduler = UploadScheduler()
+
+    func schedule(url: URL, platform: UploadScheduler.Platform, date: Date) {
+        internalItems.append(ScheduleItem(url: url, platform: platform, date: date))
+        internalItems.sort { $0.date < $1.date }
+        scheduler.scheduleUpload(url: url, platform: platform, at: date)
+    }
+
+    var items: [ScheduleItem] { internalItems }
     struct ScheduleItem { let id = UUID(); let url: URL; let platform: UploadScheduler.Platform; let date: Date }
 }
 #endif

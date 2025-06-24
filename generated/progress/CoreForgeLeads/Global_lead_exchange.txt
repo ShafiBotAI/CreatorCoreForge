@@ -1,4 +1,0 @@
-# Auto-generated for Global lead exchange
-def global_lead_exchange():
-    """Global lead exchange"""
-    pass

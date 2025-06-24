@@ -1,4 +1,0 @@
-# Auto-generated for Quantum-choice plotting
-def quantum_choice_plotting():
-    """Quantum-choice plotting"""
-    pass

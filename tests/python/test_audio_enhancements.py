@@ -14,6 +14,12 @@ from generated.CoreForgeAudio.MidSentenceToneSwitching import midsentencetoneswi
 from generated.CoreForgeAudio.SceneVolumeDynamics import scenevolumedynamics
 from generated.CoreForgeAudio.SpatialPositioning import spatialpositioning
 from generated.CoreForgeAudio.RoomSimulation import roomsimulation
+from generated.CoreForgeAudio.ScriptSnippetInjector import scriptsnippetinjector
+from generated.CoreForgeAudio.CreatorSandboxMode import creatorsandboxmode
+from generated.CoreForgeAudio.DualNarratorToggle import dualnarratortoggle
+from generated.CoreForgeAudio.VoiceDNAForking import voicednaforking
+from generated.CoreForgeAudio.FlashbackSceneEngine import flashbacksceneengine
+from generated.CoreForgeAudio.VoicePersonalityProfiles import VoiceProfile
 
 
 def _tone(duration=200):
@@ -65,4 +71,38 @@ def test_spatial_positioning():
 def test_room_simulation():
     tone = _tone(300)
     out = roomsimulation(tone, delay_ms=50, decay=0.5, repeats=1)
+    assert len(out) >= len(tone)
+
+
+def test_script_snippet_injector():
+    script = "a\nb"
+    out = scriptsnippetinjector(script, "X", 1)
+    assert out.splitlines()[1] == "X"
+
+
+def test_creator_sandbox_mode(tmp_path: Path):
+    with creatorsandboxmode() as path:
+        p = path / "test.txt"
+        p.write_text("hi")
+        assert p.is_file()
+    assert not p.exists()
+
+
+def test_dual_narrator_toggle():
+    primary = _tone(200)
+    secondary = _tone(200)
+    out = dualnarratortoggle(primary, secondary, enabled=True)
+    assert len(out) == len(primary)
+
+
+def test_voice_dna_forking():
+    base = VoiceProfile(name="hero")
+    fork = voicednaforking(base, pitch=1.1)
+    assert fork.name != base.name
+    assert fork.pitch == 1.1
+
+
+def test_flashback_scene_engine():
+    tone = _tone(200)
+    out = flashbacksceneengine(tone)
     assert len(out) >= len(tone)
