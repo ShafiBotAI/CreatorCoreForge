@@ -1,0 +1,5164 @@
+{
+  "tasks": [
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 13,
+      "task": "Parse EPUB/PDF/TXT into story blocks"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 14,
+      "task": "Extract visual scene descriptors and dialogue"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 15,
+      "task": "Normalize chapters into visual sequences"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 18,
+      "task": "`SceneDetector.analyze(text): SceneMap`"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 19,
+      "task": "Detect scene shifts via NLP (e.g., time jump, location change)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 20,
+      "task": "Tag scenes with estimated tone, setting, pacing"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 21,
+      "task": "Save scene structure in persistent format"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 28,
+      "task": "Match characters with avatar templates"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 29,
+      "task": "Assign age, gender, personality traits"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 30,
+      "task": "Support facial expression presets (happy, angry, neutral)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 31,
+      "task": "Auto-suggest avatars by genre"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 34,
+      "task": "`SceneBuilder.build(scene: Scene): RenderConfig`"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 35,
+      "task": "Match character(s), setting, props"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 36,
+      "task": "Annotate shot list (close-up, wide, over-shoulder)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 37,
+      "task": "Inject emotion or FX tags into each shot"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 45,
+      "task": "Generate video from prompt + voice + ambient FX"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 46,
+      "task": "Integrate with external or local video model"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 47,
+      "task": "Allow rendering style: anime, fantasy, live-action, etc."
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 50,
+      "task": "Add scene-level visual effects (fog, sparks, neon glow)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 51,
+      "task": "Overlay genre-specific filters"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 52,
+      "task": "Allow real-time FX preview"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 55,
+      "task": "Sync facial movement and scene cuts to speech timing"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 56,
+      "task": "Support pre-recorded and generated voice tracks"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 57,
+      "task": "Allow lip-sync toggle for faster rendering"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 64,
+      "task": "Store character appearances across books"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 65,
+      "task": "Preserve visual continuity in sequels"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 66,
+      "task": "Handle outfit/age/mood consistency dynamically"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 69,
+      "task": "Track changes to scenes (e.g., visual DNA fork)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 70,
+      "task": "Let creators \u201clock\u201d scene visuals for canon"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 71,
+      "task": "Link scene DNA to multiverse system"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 78,
+      "task": "Display alternate visual paths for the same book"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 79,
+      "task": "Allow creators to preview multiple visual outcomes"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 80,
+      "task": "Tag scene outcomes with timeline markers"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 83,
+      "task": "Store viewer path history (timeline A/B/C)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 84,
+      "task": "Replay scenes with alternate visuals"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 85,
+      "task": "Adjust future render suggestions based on prior paths"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 92,
+      "task": "Allow 1 book-to-video conversion per month (Pro)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 93,
+      "task": "Allow 3 books/month for Creator Tier"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 94,
+      "task": "Sell extra video credits for $79.99 each"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 97,
+      "task": "Auto-upload unlock for $24.99 (2 platforms)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 98,
+      "task": "NSFW unlock ($25/month or bundle $60/all apps)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 99,
+      "task": "Creator tab unlocked via promo code"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 106,
+      "task": "Toggle for erotic/fantasy/surreal scenes"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 107,
+      "task": "Hide NSFW previews unless verified"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 108,
+      "task": "Censor layer options for safe version rendering"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 111,
+      "task": "Scene fusion mode (blended timelines)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 112,
+      "task": "Hallucinogenic visual filters"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 113,
+      "task": "Realistic surrealism toggle (dream logic effects)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 125,
+      "task": "Upload 1 platform/channel by default"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 126,
+      "task": "Add-on unlock for second channel/platform"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 127,
+      "task": "Show upload status and logs in dashboard"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 130,
+      "task": "Style picker (anime, noir, fantasy, etc.)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/FEATURES-CODEX-COMPLETE.md",
+      "line": 131,
+      "task": "NSFW mode toggle (off by default)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-ALL-OPEN-TASKS.md",
+      "line": 15,
+      "task": "Scan all `FEATURES-CODEX-COMPLETE.md` and `CODEX-TODO-*` files for:"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-ALL-OPEN-TASKS.md",
+      "line": 18,
+      "task": "Match each open task with expected source file(s) and language"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-ALL-OPEN-TASKS.md",
+      "line": 19,
+      "task": "Output a task-to-file map in `open_tasks_registry.json`"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-ALL-OPEN-TASKS.md",
+      "line": 29,
+      "task": "**Task:** Implement or complete logic for `[OPEN TASK DESCRIPTION]`"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-ALL-OPEN-TASKS.md",
+      "line": 43,
+      "task": "Build `formGenerator.tsx`"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-ALL-OPEN-TASKS.md",
+      "line": 48,
+      "task": "Complete `LivePreviewPane.vue`"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-ALL-OPEN-TASKS.md",
+      "line": 53,
+      "task": "Finish `PluginManager.ts`"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-ALL-OPEN-TASKS.md",
+      "line": 62,
+      "task": "Run unit and integration tests for all created or updated files"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-ALL-OPEN-TASKS.md",
+      "line": 63,
+      "task": "Confirm output accuracy with test case assertions"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-ALL-OPEN-TASKS.md",
+      "line": 64,
+      "task": "Add updated files to GitHub commits with changelog"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-ALL-OPEN-TASKS.md",
+      "line": 65,
+      "task": "Track files in `enhanced_file_registry.json`"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-ALL-OPEN-TASKS.md",
+      "line": 71,
+      "task": "Ensure every open Codex task has a completed file"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-ALL-OPEN-TASKS.md",
+      "line": 72,
+      "task": "Confirm all generated files meet App Store & platform export requirements"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-ALL-OPEN-TASKS.md",
+      "line": 73,
+      "task": "Mark tasks complete in all related markdowns and registry logs"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-CODE-QUALITY-NEXTGEN-OUTCOME.md",
+      "line": 19,
+      "task": "Identify all key logic layers: input parsing, code generation, plugin loading, rendering, export, testing"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-CODE-QUALITY-NEXTGEN-OUTCOME.md",
+      "line": 20,
+      "task": "Detect overly nested, imperative, or brittle patterns"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-CODE-QUALITY-NEXTGEN-OUTCOME.md",
+      "line": 21,
+      "task": "Flag low-cohesion files for abstraction and separation of concerns"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-CODE-QUALITY-NEXTGEN-OUTCOME.md",
+      "line": 22,
+      "task": "Audit function names, variable naming, and interface documentation"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-CODE-QUALITY-NEXTGEN-OUTCOME.md",
+      "line": 23,
+      "task": "Output review log to `upgrade_scan_report.json`"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-CODE-QUALITY-NEXTGEN-OUTCOME.md",
+      "line": 31,
+      "task": "**Task:** Refactor `[MODULE_NAME]`"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-CODE-QUALITY-NEXTGEN-OUTCOME.md",
+      "line": 46,
+      "task": "Refactor `CodePreviewPanel.tsx`"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-CODE-QUALITY-NEXTGEN-OUTCOME.md",
+      "line": 51,
+      "task": "Enhance `formLogicBuilder.ts`"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-CODE-QUALITY-NEXTGEN-OUTCOME.md",
+      "line": 56,
+      "task": "Modernize `PluginExecutor.swift`"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-CODE-QUALITY-NEXTGEN-OUTCOME.md",
+      "line": 65,
+      "task": "Unit test upgraded modules against all edge cases"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-CODE-QUALITY-NEXTGEN-OUTCOME.md",
+      "line": 66,
+      "task": "Visual inspect any UI component modifications"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-CODE-QUALITY-NEXTGEN-OUTCOME.md",
+      "line": 67,
+      "task": "Compare output structure/UX before vs after upgrade"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-CODE-QUALITY-NEXTGEN-OUTCOME.md",
+      "line": 68,
+      "task": "Benchmark improved functions for performance gain"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-CODE-QUALITY-NEXTGEN-OUTCOME.md",
+      "line": 69,
+      "task": "Push to GitHub with upgrade changelogs per module"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-CODE-QUALITY-NEXTGEN-OUTCOME.md",
+      "line": 75,
+      "task": "Confirm all upgraded files pass compatibility and export tests"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-CODE-QUALITY-NEXTGEN-OUTCOME.md",
+      "line": 76,
+      "task": "Replace old versions in production bundles"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-CODE-QUALITY-NEXTGEN-OUTCOME.md",
+      "line": 77,
+      "task": "Summarize completed upgrades in `upgrade_report.md`"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/README.md",
+      "line": 330,
+      "task": "Final production UI polish"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-CODE-QUALITY-PERFORMANCE.md",
+      "line": 53,
+      "task": "Enhance `TTSRenderer.ts`"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/CODEX-TODO-ENHANCE-CODE-QUALITY-PERFORMANCE.md",
+      "line": 61,
+      "task": "Refactor `ChapterEditor.vue`"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 104,
+      "task": "Match locations to genre-based visual templates (castle, school, space station)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 105,
+      "task": "Generate initial visual storyboard layout from parsed scenes"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 106,
+      "task": "Support drag-and-drop book input with automatic format recognition"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 107,
+      "task": "Allow manual refinement of scene breaks via visual editor"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 108,
+      "task": "Store original book structure for syncing narration with visuals"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 109,
+      "task": "Flag high-action and dialogue-heavy scenes for rendering priority"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 110,
+      "task": "Normalize text encoding for rare language or stylized prose"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 111,
+      "task": "Split monologue-heavy sections into animated visual layers"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 112,
+      "task": "Extract scene descriptions from footnotes or appendices if referenced"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 113,
+      "task": "Enable prologue/epilogue special treatment (visual tone, transitions)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 114,
+      "task": "Highlight symbols and metaphors for optional artistic visuals"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 115,
+      "task": "Store parsing configuration profiles for series consistency"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 116,
+      "task": "Offer real-time preview of parsed scene map before rendering"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 117,
+      "task": "Sync parsed book structure with audio narration framework"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 118,
+      "task": "Validate scene continuity and chronology from source text"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 119,
+      "task": "Detect scene setting shifts and auto-tag as indoor/outdoor for lighting logic"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 120,
+      "task": "Output visual scene map to timeline panel for creator editing"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 123,
+      "task": "Auto-generate character design profiles from parsed book descriptions"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 124,
+      "task": "Suggest visual avatars for each major and minor character using AI"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 125,
+      "task": "Tag characters with genre-based archetypes (hero, mentor, villain)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 126,
+      "task": "Map character emotional arc to visual expression library"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 127,
+      "task": "Assign unique costume layers per scene or timeline"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 128,
+      "task": "Allow creators to upload reference art or override generated visuals"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 129,
+      "task": "Store character styles for reuse across scenes and sequels"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 130,
+      "task": "Adjust posture, facial expressions, and body language based on dialogue tone"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 131,
+      "task": "Support age-shift modeling (child, teen, adult, elder versions)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 132,
+      "task": "Track costume and hairstyle changes throughout story for visual consistency"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 133,
+      "task": "Sync character movement to dialogue line length and pacing"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 134,
+      "task": "Render close-up, medium, or wide shots based on character\u2019s narrative importance"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 135,
+      "task": "Link voice performance timing with facial movement and lip sync"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 136,
+      "task": "Detect speaker shifts and auto-adjust scene framing/camera position"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 137,
+      "task": "Suggest duo-frame or over-the-shoulder compositions for dialogue scenes"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 138,
+      "task": "Store scene-specific animation presets (reaction styles, gestures)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 139,
+      "task": "Identify group scenes and auto-generate spatial layouts"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 140,
+      "task": "Highlight visual identity conflicts for creator review (e.g., two similar characters)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 141,
+      "task": "Apply genre-tuned color palettes to each character"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 142,
+      "task": "Recommend lighting configurations for cast mood amplification"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 143,
+      "task": "Add multi-timeline variants for multiverse visual branching"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 144,
+      "task": "Provide creator dashboard to preview, test, and lock character animations"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 147,
+      "task": "Generate scene backgrounds using genre-trained visual models (e.g., fantasy, dystopia)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 148,
+      "task": "Match lighting conditions to time-of-day, tone, and setting"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 149,
+      "task": "Render characters in cinematic compositions (rule of thirds, motion focus)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 150,
+      "task": "Apply scene transitions (fade, cut, swipe, glitch) based on pacing tags"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 151,
+      "task": "Layer particle FX (rain, fire, fog, dust) for environmental realism"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 152,
+      "task": "Auto-render camera movement (zoom, pan, tilt) based on action intensity"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 153,
+      "task": "Enable cutaway logic for interior vs exterior visual blending"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 154,
+      "task": "Simulate mood via hue shifting and saturation overlays"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 155,
+      "task": "Support dynamic shadows and ambient occlusion for realism"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 156,
+      "task": "Trigger visual filters (noir, dream, sepia, neon) based on scene metadata"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 157,
+      "task": "Identify high-impact moments and render with frame-by-frame detail"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 158,
+      "task": "Support 16:9, vertical, and square rendering formats"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 159,
+      "task": "Enable \"live panel\" layout for comic/manga-style visual composition"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 160,
+      "task": "Add blur, shake, or light flash FX for dramatic or horror moments"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 161,
+      "task": "Sync scene tone to ambient background FX audio"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 162,
+      "task": "Store FX template libraries per genre for reuse"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 163,
+      "task": "Allow creator to preview FX before rendering full scenes"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 164,
+      "task": "Provide toggle between high-quality and quick-preview render settings"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 165,
+      "task": "Visualize FX layering structure for post-editing"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 166,
+      "task": "Integrate facial motion tracking for emotional match rendering"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 167,
+      "task": "Track render time estimates and optimize batch processing queue"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 168,
+      "task": "Tag visual rhythm speed (slow visual poetry vs fast action montage)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 171,
+      "task": "Persist character visuals across multiple books, including costume and evolution"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 172,
+      "task": "Maintain memory of key visual motifs and use them in flashbacks or callouts"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 173,
+      "task": "Store visual timeline of each character\u2019s age, look, and setting impact"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 174,
+      "task": "Flag continuity errors in casting, color palette, or background reuse"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 175,
+      "task": "Allow timeline shifting to accommodate prequels and sequels"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 176,
+      "task": "Sync character visual memory with voice tone evolution"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 177,
+      "task": "Store FX history (e.g., specific lightning type for trauma scene)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 178,
+      "task": "Reuse location models and scene layouts for consistency across chapters/books"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 179,
+      "task": "Auto-recommend filters and FX based on prior book rendering"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 180,
+      "task": "Tag series-specific visual themes (e.g., \"gold light = safety\")"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 181,
+      "task": "Enable multibook project dashboard to track consistency"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 182,
+      "task": "Visual arc timeline for each character (first appearance to final scene)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 183,
+      "task": "Adapt framing techniques based on memory weight (e.g., past = faded, current = vivid)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 184,
+      "task": "Cross-reference visual scene files with narration or audio timeline"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 185,
+      "task": "Alert creators to inconsistencies in character hairstyle, outfit, or body type"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 186,
+      "task": "Recommend background reuse based on memory location detection"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 187,
+      "task": "Provide character memory \"lock\" toggle to prevent style drift"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 188,
+      "task": "Highlight visual callbacks to past books/scenes in creator view"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 189,
+      "task": "Allow AI assistant to generate recap montage from memory visuals"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 190,
+      "task": "Integrate memory graphs into multiverse and branch visualizers"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 191,
+      "task": "Detect and annotate recurring visual cues across book entries"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 192,
+      "task": "Support visual memory handoff to other creator accounts or teams"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 195,
+      "task": "Implement scene forking with timeline tag (A, B, Prime, etc.)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 196,
+      "task": "Store alternate visual outcomes for the same chapter/scene"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 197,
+      "task": "Display visual multiverse map with branches and connections"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 198,
+      "task": "Allow creators to preview all timeline outcomes in side-by-side mode"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 199,
+      "task": "Enable auto-generation of visual variations for key choice points"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 200,
+      "task": "Sync visual changes with multiverse-aware voice and FX layers"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 201,
+      "task": "Recommend color palette and lighting changes based on timeline branch"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 202,
+      "task": "Track viewer navigation across different visual storylines"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 203,
+      "task": "Highlight multiverse divergence points in scene editing panel"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 204,
+      "task": "Store and lock multiverse visual states for version tracking"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 205,
+      "task": "Provide toggle to collapse alternate scenes into one for export"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 206,
+      "task": "Create parallel visual identities for characters (e.g., Hero vs Villain versions)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 207,
+      "task": "Match branching logic with alternate soundtracks and FX profiles"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 208,
+      "task": "Offer predictive timeline generator based on character decisions"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 209,
+      "task": "Generate recap videos per timeline path for audience immersion"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 210,
+      "task": "Support layered rendering (shared visuals + unique overlays)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 211,
+      "task": "Build continuity checker across timelines for style cohesion"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 212,
+      "task": "Visualize alternate emotional arcs using heatmap overlays"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 213,
+      "task": "Allow creator-defined \"main\" timeline and secondary forks"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 214,
+      "task": "Embed multiverse state in exported metadata for reuse"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 215,
+      "task": "Detect and flag conflicts when characters appear in multiple branches simultaneously"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 216,
+      "task": "Enable AI director mode to guide scene transitions across branches"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 219,
+      "task": "Export rendered video in MP4, MOV, and WebM formats with selectable quality levels"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 220,
+      "task": "Allow vertical, square, and widescreen aspect ratio export options"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 221,
+      "task": "Include thumbnail and cover art generation from key frames"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 222,
+      "task": "Auto-generate subtitle tracks synced with voice and visuals"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 223,
+      "task": "Embed chapter metadata and timeline jump points for playback platforms"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 224,
+      "task": "Export to YouTube, TikTok, and Instagram Reels via platform integrations"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 225,
+      "task": "Sync export state with cloud and local storage"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 226,
+      "task": "Track export history by book, scene, and version"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 227,
+      "task": "Bundle FX, character, and voice layers for full scene archives"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 228,
+      "task": "Offer watermarking and brand tagging options"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 229,
+      "task": "Enable multi-resolution export for preview vs final render"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 230,
+      "task": "Gate export privileges by subscription tier (e.g., 4K = Creator+ only)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 231,
+      "task": "Support batch export queue with export profile presets"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 232,
+      "task": "Auto-optimize exports for bandwidth-constrained environments"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 233,
+      "task": "Enable NSFW-safe export modes (blur, replace, censor layers)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 234,
+      "task": "Support creator-stamped end credits or intro overlays"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 235,
+      "task": "Track subscription credits and export quota by user"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 236,
+      "task": "Allow in-app purchases for one-time HD or commercial use licenses"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 237,
+      "task": "Provide DRM encoding option for IP-protected outputs"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 238,
+      "task": "Sync exported files across devices with user authentication"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 239,
+      "task": "Offer creator-branded export template themes (logos, font, outro)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 240,
+      "task": "Generate trailer versions from book-to-video projects automatically"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 243,
+      "task": "Add NSFW mode toggle with age-gated access and verification"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 244,
+      "task": "Provide separate rendering logic for explicit vs suggestive visual scenes"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 245,
+      "task": "Allow per-character NSFW permissions and tone preferences"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 246,
+      "task": "Tag and index NSFW scenes for optional inclusion/exclusion in exports"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 247,
+      "task": "Offer NSFW visual FX library (shadows, fog, body simulation overlays)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 248,
+      "task": "Blur or censor sensitive body areas based on creator control"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 249,
+      "task": "Support dual rendering: NSFW and Safe version from same scene"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 250,
+      "task": "Enable private-only scene generation with encrypted preview keys"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 251,
+      "task": "Provide intensity control slider for visual eroticism or violence"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 252,
+      "task": "Sync NSFW tone with voice and ambient FX layers"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 253,
+      "task": "Allow creator notes to guide scene rendering boundaries"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 254,
+      "task": "Embed NSFW warning overlays for early scene detection"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 255,
+      "task": "Generate parallel safe-for-stream scenes with auto-adaptation"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 256,
+      "task": "Store NSFW render settings as presets for series/genre"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 257,
+      "task": "Offer Creator dashboard to review flagged or reported NSFW content"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 258,
+      "task": "Filter NSFW content in search, preview, and trailer modes"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 259,
+      "task": "Apply scene tone validator to suggest safe/NSFW rating per visual sequence"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 260,
+      "task": "Hide NSFW rendering options in shared/public projects"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 261,
+      "task": "Tag NSFW export files with proper disclaimers and auto-locks"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 262,
+      "task": "Provide customizable NSFW cover and thumbnail censor options"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 263,
+      "task": "Track NSFW render usage and tie to creator subscription tier"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 264,
+      "task": "Integrate NSFW content filter toggle for viewers and collaborators"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 267,
+      "task": "Translate full scripts while preserving pacing, emotion, and visual tags"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 268,
+      "task": "Detect primary and secondary languages from book text or user input"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 269,
+      "task": "Sync translated dialogue with lip-sync adjustments per language"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 270,
+      "task": "Swap visual context (e.g., setting, symbols) to match cultural norms"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 271,
+      "task": "Match voiceover tone with cultural delivery style (e.g., reserved vs expressive)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 272,
+      "task": "Enable dual-language subtitle overlay with toggles"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 273,
+      "task": "Provide audio language toggle mid-playback (bilingual view mode)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 274,
+      "task": "Auto-swap text signage or props in scene to match target language"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 275,
+      "task": "Save cultural localization settings for franchise or series consistency"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 276,
+      "task": "Detect idioms and replace with native-equivalent visual cues"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 277,
+      "task": "Allow creator review of language-adapted visuals before rendering"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 278,
+      "task": "Flag content sensitive to region/culture for modification options"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 279,
+      "task": "Support accent-based visual/voice region overlays (UK vs US)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 280,
+      "task": "Offer export options for localized versions per country"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 281,
+      "task": "Recommend artistic adjustments based on visual symbolism norms"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 282,
+      "task": "Translate creator notes and project metadata for global collaboration"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 283,
+      "task": "Provide multilingual visual cue glossary with usage examples"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 284,
+      "task": "Preserve scene framing consistency across languages"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 285,
+      "task": "Embed language metadata in export files for platform distribution"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 286,
+      "task": "Enable automatic rendering of multiple language versions at once"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 287,
+      "task": "Support multi-book narrative sync for localized arcs"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 288,
+      "task": "Cross-link translated memory arcs and character expressions over series"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 291,
+      "task": "Export each character's voice and animation to separate tracks for post-editing"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 292,
+      "task": "Provide DAW-compatible multitrack timelines with labeled scene markers"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 293,
+      "task": "Enable facial motion layer export for animator sync"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 294,
+      "task": "Allow lip sync intensity control and timing nudge tools"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 295,
+      "task": "Build emotion heatmap across chapters to guide visual tone"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 296,
+      "task": "Auto-tag scene rhythm (slow burn, montage, high-speed) for rendering optimization"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 297,
+      "task": "Sync character spotlighting and focus shifts with narration peaks"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 298,
+      "task": "Offer sandbox playback with per-layer mute/toggle options"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 299,
+      "task": "Allow real-time override of generated framing or pacing"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 300,
+      "task": "Provide \"Director Mode\" for manual camera and FX control"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 301,
+      "task": "Add timeline scrubber with visual peaks and dialog markers"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 302,
+      "task": "Visualize tone deviation and intensity spikes for debugging"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 303,
+      "task": "Enable AI suggestions for retiming scene flow or voice cadence"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 304,
+      "task": "Store creator-defined presets for framing, color grade, and cut style"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 305,
+      "task": "Allow version comparison mode between two scene outputs"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 306,
+      "task": "Offer creator commentary overlay mode during video review"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 307,
+      "task": "Export scene reports including tone maps, keyframes, and alt takes"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 308,
+      "task": "Support beta tools: voice fingerprint preview, animation merge tester"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 309,
+      "task": "Bundle scene elements into shareable .cvsx format (CoreForge Scene Exchange)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 310,
+      "task": "Provide Creator Control Panel for full preview/edit of visual/audio logic"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 311,
+      "task": "Enable collaborative comments and timeline feedback from teams"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/AGENTS.md",
+      "line": 312,
+      "task": "Simulate full-cast rehearsal playback for pacing checks and scene balance"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeMind/AGENTS.md",
+      "line": 15,
+      "task": "Finalize production UI components"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeQuest/AGENTS.md",
+      "line": 15,
+      "task": "Finalize production UI components"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeMusic/AGENTS.md",
+      "line": 31,
+      "task": "Finalize production UI components"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBloom/AGENTS.md",
+      "line": 15,
+      "task": "Finalize production UI components"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeMarket/AGENTS.md",
+      "line": 7,
+      "task": "Fully functional AI trading, alerts, analytics, multi-platform"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeMarket/AGENTS.md",
+      "line": 8,
+      "task": "Persistent memory, multi-strategy, social trading, and dashboards"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeMarket/AGENTS.md",
+      "line": 9,
+      "task": "Compliance, risk management, and white label/enterprise features"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeMarket/AGENTS.md",
+      "line": 32,
+      "task": "Portfolio and analytics dashboards"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeMarket/AGENTS.md",
+      "line": 33,
+      "task": "Settings for risk, strategy, notifications"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeMarket/AGENTS.md",
+      "line": 34,
+      "task": "Dark/light mode, accessibility"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeMarket/AGENTS.md",
+      "line": 35,
+      "task": "Copy trading, social sharing, leaderboards"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeMarket/AGENTS.md",
+      "line": 36,
+      "task": "Alerts, notifications, trade confirmation UI"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeMarket/AGENTS.md",
+      "line": 41,
+      "task": "LocalAI, plugin modules, secure API keys"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeMarket/AGENTS.md",
+      "line": 42,
+      "task": "GDPR, CCPA, KYC/AML compliance"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeMarket/AGENTS.md",
+      "line": 43,
+      "task": "Firebase/Firestore: Auth, Data, Analytics"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeMarket/AGENTS.md",
+      "line": 44,
+      "task": "Auto-updater, platform config, app store compliance"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeMarket/AGENTS.md",
+      "line": 45,
+      "task": "Export: CSV, PDF, JSON"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeMarket/AGENTS.md",
+      "line": 46,
+      "task": "All platform project files"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeMarket/AGENTS.md",
+      "line": 52,
+      "task": "UI/UX (all platforms)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeMarket/AGENTS.md",
+      "line": 53,
+      "task": "Performance, compliance, risk, security"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeMarket/AGENTS.md",
+      "line": 59,
+      "task": "GitHub Actions, tagging, changelogs, auto-deploy"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeMarket/AGENTS.md",
+      "line": 71,
+      "task": "Quantum/AI hybrid mode, parallel simulation, anomaly detection"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeMarket/AGENTS.md",
+      "line": 72,
+      "task": "Multibrain risk/speed/profit settings"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeMarket/AGENTS.md",
+      "line": 73,
+      "task": "Team/group trading, portfolio sharing, leaderboards"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeMarket/AGENTS.md",
+      "line": 74,
+      "task": "Marketplace for bots, plugins, signals, analytics"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeMarket/AGENTS.md",
+      "line": 75,
+      "task": "API for external tools, compliance/legal automation"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeMarket/AGENTS.md",
+      "line": 90,
+      "task": "GlobalLanguageSupport"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeMarket/AGENTS.md",
+      "line": 98,
+      "task": "Final UI polish, onboarding, tutorial flows"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeMarket/AGENTS.md",
+      "line": 99,
+      "task": "Full CI/CD deployment test, compliance review"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVoiceLab/AGENTS.md",
+      "line": 15,
+      "task": "Finalize production UI components"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 181,
+      "task": "Detect and tag characters per scene using NLP entity recognition"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 182,
+      "task": "Match locations to genre-based visual templates (castle, school, space station)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 183,
+      "task": "Generate initial visual storyboard layout from parsed scenes"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 184,
+      "task": "Support drag-and-drop book input with automatic format recognition"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 185,
+      "task": "Allow manual refinement of scene breaks via visual editor"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 186,
+      "task": "Store original book structure for syncing narration with visuals"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 187,
+      "task": "Flag high-action and dialogue-heavy scenes for rendering priority"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 188,
+      "task": "Normalize text encoding for rare language or stylized prose"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 189,
+      "task": "Split monologue-heavy sections into animated visual layers"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 190,
+      "task": "Extract scene descriptions from footnotes or appendices if referenced"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 191,
+      "task": "Enable prologue/epilogue special treatment (visual tone, transitions)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 192,
+      "task": "Highlight symbols and metaphors for optional artistic visuals"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 193,
+      "task": "Store parsing configuration profiles for series consistency"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 194,
+      "task": "Offer real-time preview of parsed scene map before rendering"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 195,
+      "task": "Sync parsed book structure with audio narration framework"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 196,
+      "task": "Validate scene continuity and chronology from source text"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 197,
+      "task": "Detect scene setting shifts and auto-tag as indoor/outdoor for lighting logic"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 198,
+      "task": "Output visual scene map to timeline panel for creator editing"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 201,
+      "task": "Auto-generate character design profiles from parsed book descriptions"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 202,
+      "task": "Suggest visual avatars for each major and minor character using AI"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 203,
+      "task": "Tag characters with genre-based archetypes (hero, mentor, villain)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 204,
+      "task": "Map character emotional arc to visual expression library"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 205,
+      "task": "Assign unique costume layers per scene or timeline"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 206,
+      "task": "Allow creators to upload reference art or override generated visuals"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 207,
+      "task": "Store character styles for reuse across scenes and sequels"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 208,
+      "task": "Adjust posture, facial expressions, and body language based on dialogue tone"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 209,
+      "task": "Support age-shift modeling (child, teen, adult, elder versions)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 210,
+      "task": "Track costume and hairstyle changes throughout story for visual consistency"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 211,
+      "task": "Sync character movement to dialogue line length and pacing"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 212,
+      "task": "Render close-up, medium, or wide shots based on character\u2019s narrative importance"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 213,
+      "task": "Link voice performance timing with facial movement and lip sync"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 214,
+      "task": "Detect speaker shifts and auto-adjust scene framing/camera position"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 215,
+      "task": "Suggest duo-frame or over-the-shoulder compositions for dialogue scenes"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 216,
+      "task": "Store scene-specific animation presets (reaction styles, gestures)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 217,
+      "task": "Identify group scenes and auto-generate spatial layouts"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 218,
+      "task": "Highlight visual identity conflicts for creator review (e.g., two similar characters)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 219,
+      "task": "Apply genre-tuned color palettes to each character"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 220,
+      "task": "Recommend lighting configurations for cast mood amplification"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 221,
+      "task": "Add multi-timeline variants for multiverse visual branching"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 222,
+      "task": "Provide creator dashboard to preview, test, and lock character animations"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 225,
+      "task": "Generate scene backgrounds using genre-trained visual models (e.g., fantasy, dystopia)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 226,
+      "task": "Match lighting conditions to time-of-day, tone, and setting"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 227,
+      "task": "Render characters in cinematic compositions (rule of thirds, motion focus)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 228,
+      "task": "Apply scene transitions (fade, cut, swipe, glitch) based on pacing tags"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 229,
+      "task": "Layer particle FX (rain, fire, fog, dust) for environmental realism"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 230,
+      "task": "Auto-render camera movement (zoom, pan, tilt) based on action intensity"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 231,
+      "task": "Enable cutaway logic for interior vs exterior visual blending"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 232,
+      "task": "Simulate mood via hue shifting and saturation overlays"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 233,
+      "task": "Support dynamic shadows and ambient occlusion for realism"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 234,
+      "task": "Trigger visual filters (noir, dream, sepia, neon) based on scene metadata"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 235,
+      "task": "Identify high-impact moments and render with frame-by-frame detail"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 236,
+      "task": "Support 16:9, vertical, and square rendering formats"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 237,
+      "task": "Enable \"live panel\" layout for comic/manga-style visual composition"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 238,
+      "task": "Add blur, shake, or light flash FX for dramatic or horror moments"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 239,
+      "task": "Sync scene tone to ambient background FX audio"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 240,
+      "task": "Store FX template libraries per genre for reuse"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 241,
+      "task": "Allow creator to preview FX before rendering full scenes"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 242,
+      "task": "Provide toggle between high-quality and quick-preview render settings"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 243,
+      "task": "Visualize FX layering structure for post-editing"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 244,
+      "task": "Integrate facial motion tracking for emotional match rendering"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 245,
+      "task": "Track render time estimates and optimize batch processing queue"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 246,
+      "task": "Tag visual rhythm speed (slow visual poetry vs fast action montage)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 249,
+      "task": "Persist character visuals across multiple books, including costume and evolution"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 250,
+      "task": "Maintain memory of key visual motifs and use them in flashbacks or callouts"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 251,
+      "task": "Store visual timeline of each character\u2019s age, look, and setting impact"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 252,
+      "task": "Flag continuity errors in casting, color palette, or background reuse"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 253,
+      "task": "Allow timeline shifting to accommodate prequels and sequels"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 254,
+      "task": "Sync character visual memory with voice tone evolution"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 255,
+      "task": "Store FX history (e.g., specific lightning type for trauma scene)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 256,
+      "task": "Reuse location models and scene layouts for consistency across chapters/books"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 257,
+      "task": "Auto-recommend filters and FX based on prior book rendering"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 258,
+      "task": "Tag series-specific visual themes (e.g., \"gold light = safety\")"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 259,
+      "task": "Enable multibook project dashboard to track consistency"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 260,
+      "task": "Visual arc timeline for each character (first appearance to final scene)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 261,
+      "task": "Adapt framing techniques based on memory weight (e.g., past = faded, current = vivid)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 262,
+      "task": "Cross-reference visual scene files with narration or audio timeline"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 263,
+      "task": "Alert creators to inconsistencies in character hairstyle, outfit, or body type"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 264,
+      "task": "Recommend background reuse based on memory location detection"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 265,
+      "task": "Provide character memory \"lock\" toggle to prevent style drift"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 266,
+      "task": "Highlight visual callbacks to past books/scenes in creator view"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 267,
+      "task": "Allow AI assistant to generate recap montage from memory visuals"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 268,
+      "task": "Integrate memory graphs into multiverse and branch visualizers"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 269,
+      "task": "Detect and annotate recurring visual cues across book entries"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 270,
+      "task": "Support visual memory handoff to other creator accounts or teams"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 273,
+      "task": "Implement scene forking with timeline tag (A, B, Prime, etc.)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 274,
+      "task": "Store alternate visual outcomes for the same chapter/scene"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 275,
+      "task": "Display visual multiverse map with branches and connections"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 276,
+      "task": "Allow creators to preview all timeline outcomes in side-by-side mode"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 277,
+      "task": "Enable auto-generation of visual variations for key choice points"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 278,
+      "task": "Sync visual changes with multiverse-aware voice and FX layers"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 279,
+      "task": "Recommend color palette and lighting changes based on timeline branch"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 280,
+      "task": "Track viewer navigation across different visual storylines"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 281,
+      "task": "Highlight multiverse divergence points in scene editing panel"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 282,
+      "task": "Store and lock multiverse visual states for version tracking"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 283,
+      "task": "Provide toggle to collapse alternate scenes into one for export"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 284,
+      "task": "Create parallel visual identities for characters (e.g., Hero vs Villain versions)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 285,
+      "task": "Match branching logic with alternate soundtracks and FX profiles"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 286,
+      "task": "Offer predictive timeline generator based on character decisions"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 287,
+      "task": "Generate recap videos per timeline path for audience immersion"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 288,
+      "task": "Support layered rendering (shared visuals + unique overlays)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 289,
+      "task": "Build continuity checker across timelines for style cohesion"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 290,
+      "task": "Visualize alternate emotional arcs using heatmap overlays"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 291,
+      "task": "Allow creator-defined \"main\" timeline and secondary forks"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 292,
+      "task": "Embed multiverse state in exported metadata for reuse"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 293,
+      "task": "Detect and flag conflicts when characters appear in multiple branches simultaneously"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 294,
+      "task": "Enable AI director mode to guide scene transitions across branches"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 297,
+      "task": "Export rendered video in MP4, MOV, and WebM formats with selectable quality levels"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 298,
+      "task": "Allow vertical, square, and widescreen aspect ratio export options"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 299,
+      "task": "Include thumbnail and cover art generation from key frames"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 300,
+      "task": "Auto-generate subtitle tracks synced with voice and visuals"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 301,
+      "task": "Embed chapter metadata and timeline jump points for playback platforms"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 302,
+      "task": "Export to YouTube, TikTok, and Instagram Reels via platform integrations"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 303,
+      "task": "Sync export state with cloud and local storage"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 304,
+      "task": "Track export history by book, scene, and version"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 305,
+      "task": "Bundle FX, character, and voice layers for full scene archives"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 306,
+      "task": "Offer watermarking and brand tagging options"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 307,
+      "task": "Enable multi-resolution export for preview vs final render"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 308,
+      "task": "Gate export privileges by subscription tier (e.g., 4K = Creator+ only)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 309,
+      "task": "Support batch export queue with export profile presets"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 310,
+      "task": "Auto-optimize exports for bandwidth-constrained environments"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 311,
+      "task": "Enable NSFW-safe export modes (blur, replace, censor layers)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 312,
+      "task": "Support creator-stamped end credits or intro overlays"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 313,
+      "task": "Track subscription credits and export quota by user"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 314,
+      "task": "Allow in-app purchases for one-time HD or commercial use licenses"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 315,
+      "task": "Provide DRM encoding option for IP-protected outputs"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 316,
+      "task": "Sync exported files across devices with user authentication"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 317,
+      "task": "Offer creator-branded export template themes (logos, font, outro)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 318,
+      "task": "Generate trailer versions from book-to-video projects automatically"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 321,
+      "task": "Add NSFW mode toggle with age-gated access and verification"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 322,
+      "task": "Provide separate rendering logic for explicit vs suggestive visual scenes"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 323,
+      "task": "Allow per-character NSFW permissions and tone preferences"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 324,
+      "task": "Tag and index NSFW scenes for optional inclusion/exclusion in exports"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 325,
+      "task": "Offer NSFW visual FX library (shadows, fog, body simulation overlays)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 326,
+      "task": "Blur or censor sensitive body areas based on creator control"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 327,
+      "task": "Support dual rendering: NSFW and Safe version from same scene"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 328,
+      "task": "Enable private-only scene generation with encrypted preview keys"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 329,
+      "task": "Provide intensity control slider for visual eroticism or violence"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 330,
+      "task": "Sync NSFW tone with voice and ambient FX layers"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 331,
+      "task": "Allow creator notes to guide scene rendering boundaries"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 332,
+      "task": "Embed NSFW warning overlays for early scene detection"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 333,
+      "task": "Generate parallel safe-for-stream scenes with auto-adaptation"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 334,
+      "task": "Store NSFW render settings as presets for series/genre"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 335,
+      "task": "Offer Creator dashboard to review flagged or reported NSFW content"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 336,
+      "task": "Filter NSFW content in search, preview, and trailer modes"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 337,
+      "task": "Apply scene tone validator to suggest safe/NSFW rating per visual sequence"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 338,
+      "task": "Hide NSFW rendering options in shared/public projects"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 339,
+      "task": "Tag NSFW export files with proper disclaimers and auto-locks"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 340,
+      "task": "Provide customizable NSFW cover and thumbnail censor options"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 341,
+      "task": "Track NSFW render usage and tie to creator subscription tier"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 342,
+      "task": "Integrate NSFW content filter toggle for viewers and collaborators"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 345,
+      "task": "Translate full scripts while preserving pacing, emotion, and visual tags"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 346,
+      "task": "Detect primary and secondary languages from book text or user input"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 347,
+      "task": "Sync translated dialogue with lip-sync adjustments per language"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 348,
+      "task": "Swap visual context (e.g., setting, symbols) to match cultural norms"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 349,
+      "task": "Match voiceover tone with cultural delivery style (e.g., reserved vs expressive)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 350,
+      "task": "Enable dual-language subtitle overlay with toggles"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 351,
+      "task": "Provide audio language toggle mid-playback (bilingual view mode)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 352,
+      "task": "Auto-swap text signage or props in scene to match target language"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 353,
+      "task": "Save cultural localization settings for franchise or series consistency"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 354,
+      "task": "Detect idioms and replace with native-equivalent visual cues"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 355,
+      "task": "Allow creator review of language-adapted visuals before rendering"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 356,
+      "task": "Flag content sensitive to region/culture for modification options"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 357,
+      "task": "Support accent-based visual/voice region overlays (UK vs US)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 358,
+      "task": "Offer export options for localized versions per country"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 359,
+      "task": "Recommend artistic adjustments based on visual symbolism norms"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 360,
+      "task": "Translate creator notes and project metadata for global collaboration"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 361,
+      "task": "Provide multilingual visual cue glossary with usage examples"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 362,
+      "task": "Preserve scene framing consistency across languages"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 363,
+      "task": "Embed language metadata in export files for platform distribution"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 364,
+      "task": "Enable automatic rendering of multiple language versions at once"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 365,
+      "task": "Support multi-book narrative sync for localized arcs"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 366,
+      "task": "Cross-link translated memory arcs and character expressions over series"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 369,
+      "task": "Export each character's voice and animation to separate tracks for post-editing"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 370,
+      "task": "Provide DAW-compatible multitrack timelines with labeled scene markers"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 371,
+      "task": "Enable facial motion layer export for animator sync"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 372,
+      "task": "Allow lip sync intensity control and timing nudge tools"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 373,
+      "task": "Build emotion heatmap across chapters to guide visual tone"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 374,
+      "task": "Auto-tag scene rhythm (slow burn, montage, high-speed) for rendering optimization"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 375,
+      "task": "Sync character spotlighting and focus shifts with narration peaks"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 376,
+      "task": "Offer sandbox playback with per-layer mute/toggle options"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 377,
+      "task": "Allow real-time override of generated framing or pacing"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 378,
+      "task": "Provide \"Director Mode\" for manual camera and FX control"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 379,
+      "task": "Add timeline scrubber with visual peaks and dialog markers"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 380,
+      "task": "Visualize tone deviation and intensity spikes for debugging"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 381,
+      "task": "Enable AI suggestions for retiming scene flow or voice cadence"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 382,
+      "task": "Store creator-defined presets for framing, color grade, and cut style"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 383,
+      "task": "Allow version comparison mode between two scene outputs"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 384,
+      "task": "Offer creator commentary overlay mode during video review"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 385,
+      "task": "Export scene reports including tone maps, keyframes, and alt takes"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 386,
+      "task": "Support beta tools: voice fingerprint preview, animation merge tester"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 387,
+      "task": "Bundle scene elements into shareable .cvsx format (CoreForge Scene Exchange)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 388,
+      "task": "Provide Creator Control Panel for full preview/edit of visual/audio logic"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 389,
+      "task": "Enable collaborative comments and timeline feedback from teams"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeVisual/AGENTS.md",
+      "line": 390,
+      "task": "Simulate full-cast rehearsal playback for pacing checks and scene balance"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 8,
+      "task": "Persistent creative DNA, team and white label controls, template marketplace"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 10,
+      "task": "Multilingual, NSFW gating, cloud/local deploy, CI/CD auto-update"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 23,
+      "task": "Subscription, in-app credits, affiliate/white label options"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 24,
+      "task": "Team collaboration, roles, access controls, branded exports"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 25,
+      "task": "Auto-update agent, version rollback, cloud/local sync"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 28,
+      "task": "LocalAI/BuildAI code generator (UI, logic, assets)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 30,
+      "task": "Smart prompt templates for apps, workflows"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 31,
+      "task": "AI agent library: reusable, composable logic blocks"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 32,
+      "task": "Admin dashboard: quotas, analytics, CI/CD control"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 36,
+      "task": "Settings for export platform, NSFW/parental, theme, branding"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 37,
+      "task": "Marketplace for templates, blocks, plugins, agents"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 38,
+      "task": "Team/project dashboard, versioning, asset library"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 52,
+      "task": "Code signing, notarization, export for all platforms"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 53,
+      "task": "Secure API keys, GDPR/CCPA compliance"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 54,
+      "task": "Firebase/Firestore or custom backend"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 55,
+      "task": "CI/CD pipeline, auto-update agent, rollback"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 63,
+      "task": "UI/UX and drag-and-drop flows (all platforms)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 64,
+      "task": "Security/privacy, role/access, template/plugin import"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 65,
+      "task": "Performance (large projects, real-time edits)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 70,
+      "task": "GitHub Actions, tagging, changelogs, multi-platform deploy"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 71,
+      "task": "Template/plugin asset pipeline"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 95,
+      "task": "Quantum/hybrid AI generation modes, auto-updating models"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 96,
+      "task": "Template/plugin marketplace, custom agent builder"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 97,
+      "task": "Code export validator, upgrade agent, community leaderboards"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 98,
+      "task": "Enterprise/white label controls, usage analytics"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 99,
+      "task": "Drag-and-drop macro builder, instant preview generator"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 100,
+      "task": "Viral/gamified app launch, affiliate rewards, fan feedback"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 132,
+      "task": "NSFW gating for templates/assets (age/region control)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 133,
+      "task": "Secure export, private vault for sensitive projects"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 134,
+      "task": "Consent, compliance, moderation tools"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 139,
+      "task": "All platform project files, onboarding"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 140,
+      "task": "Export/import/compile asset tests"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/README.md",
+      "line": 141,
+      "task": "Final UI polish, launch flows, CI/CD, compliance review"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 23,
+      "task": "Finalize production UI components"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 55,
+      "task": "End-to-end drag-and-drop AI app builder, export to all platforms"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 56,
+      "task": "Persistent creative DNA, team and white label controls, template marketplace"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 58,
+      "task": "Multilingual, NSFW gating, cloud/local deploy, CI/CD auto-update"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 59,
+      "task": "Drag-and-drop UI/logic builder (blocks, templates, plugins)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 64,
+      "task": "Accept natural language prompts to describe app ideas and interface goals"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 66,
+      "task": "Support drag-and-drop UI builder with AI-generated suggestions"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 67,
+      "task": "Parse screenshots or hand-drawn wireframes into editable layout code"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 68,
+      "task": "Extract UI structure from Figma, Sketch, and Adobe XD import"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 69,
+      "task": "Detect and correct malformed component trees or invalid HTML"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 70,
+      "task": "Normalize multi-format inputs into abstract syntax UI model (ASUIM)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 71,
+      "task": "Auto-suggest UI patterns based on app type (e.g., chat, dashboard, calculator)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 72,
+      "task": "Tag user flows during prompt parsing for logic inference"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 73,
+      "task": "Visualize parsed UI logic before code generation begins"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 74,
+      "task": "Store input history to refine and compare prompt evolution"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 75,
+      "task": "Enable multilingual prompt input (English, Spanish, Chinese, etc.)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 76,
+      "task": "Recognize UX patterns like onboarding, tabbed navigation, floating action buttons"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 77,
+      "task": "Support voice-to-UI parsing from microphone input"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 78,
+      "task": "Allow inline prompt corrections and real-time layout preview"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 79,
+      "task": "Embed accessibility tagging logic at the parsing layer"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 80,
+      "task": "Detect nested conditional UIs and represent visually (e.g., modal \u2192 success \u2192 redirect)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 81,
+      "task": "Offer AI-generated design themes based on brand input"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 82,
+      "task": "Store parsing outcomes in history buffer with version rollback"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 83,
+      "task": "Connect prompt parser to code output preview via event bridge"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 84,
+      "task": "Validate parsed layouts against mobile and desktop resolution grids"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 85,
+      "task": "Include onboarding UI examples for prompt learning"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 88,
+      "task": "Generate fully typed code in JavaScript, TypeScript, Swift, Kotlin, Dart, Python"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 89,
+      "task": "Detect app architecture (SPA, MVC, MVVM) from prompt or UI map"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 90,
+      "task": "Offer choice of frontend frameworks (React, Vue, Flutter, SwiftUI)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 91,
+      "task": "Offer choice of backend frameworks (Express, FastAPI, Firebase, Supabase)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 92,
+      "task": "Scaffold authentication logic (JWT, OAuth2, magic link, social login)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 93,
+      "task": "Modularize generated code into atomic components or services"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 94,
+      "task": "Comment code with explainable AI summaries per function"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 95,
+      "task": "Provide toggle for minimalist, verbose, or intermediate code style"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 96,
+      "task": "Inject error handling templates with async support"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 97,
+      "task": "Support REST and GraphQL generation modes"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 98,
+      "task": "Allow import of OpenAPI spec to bind to real backend API"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 99,
+      "task": "Generate full mobile, desktop, or web app packages"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 100,
+      "task": "Provide coding \u201cstyle guides\u201d to match creator branding or company standards"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 101,
+      "task": "Support dark/light theme CSS logic generation"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 102,
+      "task": "Automatically detect platform constraints (e.g., iOS privacy alerts) and inject support"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 103,
+      "task": "Offer raw code, AI-annotated, and production-ready export versions"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 104,
+      "task": "Validate generated code for known bugs or deprecated APIs"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 105,
+      "task": "Allow real-time preview of generated code in split panel view"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 106,
+      "task": "Train private models per user to reflect their coding style over time"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 107,
+      "task": "Export language-specific bundles for VSCode, Xcode, or Android Studio"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 108,
+      "task": "Tag generated code with feature map metadata for Codex traceability"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 109,
+      "task": "Provide diff viewer for regenerated versions after UI prompt change"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 112,
+      "task": "Auto-generate logic for forms (login, register, contact, checkout) with state handling"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 113,
+      "task": "Provide real-time data binding across frontend inputs and backend models"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 114,
+      "task": "Detect required fields, validations, and error states from prompt"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 115,
+      "task": "Bind input types to UI components with proper attributes (e.g., email, date, password)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 116,
+      "task": "Support nested forms and conditional field rendering"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 117,
+      "task": "Generate multi-step wizards with built-in validation and UX transitions"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 118,
+      "task": "Auto-generate CRUD logic for custom data models"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 119,
+      "task": "Build reusable logic blocks for timers, counters, toggles, dropdowns"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 120,
+      "task": "Support computed fields and derived logic with reactivity"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 121,
+      "task": "Integrate third-party form libraries (Formik, Vuelidate, Flutter Formz)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 122,
+      "task": "Offer graphical flowchart editor to define user journey logic"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 123,
+      "task": "Allow drag-to-bind inputs to business logic functions"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 124,
+      "task": "Support cross-field dependency logic (e.g., field B disabled unless A is checked)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 125,
+      "task": "Provide inline preview of logic execution and data flow per form"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 126,
+      "task": "Visualize errors/warnings in code preview panel with highlights"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 127,
+      "task": "Enable clipboard-to-form parser (paste field list to generate full form)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 128,
+      "task": "Store reusable form blueprints in Creator library"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 129,
+      "task": "Implement smart save states with form session memory"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 130,
+      "task": "Generate confirmation dialogs and UI state management for success/error flows"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 131,
+      "task": "Integrate basic analytics hooks (field abandon rate, success funnel)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 132,
+      "task": "Support internationalization/localization of form labels and error messages"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 133,
+      "task": "Export forms as standalone React/Vue components or JSON schema"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 136,
+      "task": "Enable AI-generated plugin templates with automatic integration"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 137,
+      "task": "Support drag-and-drop plugins from CoreForge Marketplace"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 138,
+      "task": "Allow developers to upload custom plugin modules with manifest.json"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 139,
+      "task": "Validate plugin inputs, outputs, and lifecycle methods automatically"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 140,
+      "task": "Auto-generate plugin documentation from code annotations"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 141,
+      "task": "Support visual plugin previews in app canvas"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 142,
+      "task": "Enable import of NPM, SwiftPM, or Python packages into app builds"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 143,
+      "task": "Track plugin usage per project and flag deprecated packages"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 144,
+      "task": "Provide dependency conflict detection and resolution prompts"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 145,
+      "task": "Allow toggle of plugin scopes: global, component-level, or route-based"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 146,
+      "task": "Embed creator rating and review system for plugins in Marketplace"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 147,
+      "task": "Integrate GitHub import for open-source plugin sync"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 148,
+      "task": "Support local and cloud plugin installation"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 149,
+      "task": "Offer sandbox mode to test plugin behavior before committing"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 150,
+      "task": "Visualize plugin dependency graph and logic influence zones"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 151,
+      "task": "Generate plugin analytics (load time, usage frequency)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 152,
+      "task": "Allow Creator to monetize plugins via premium unlocks"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 153,
+      "task": "Provide AI assistant for plugin debugging and refactoring"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 154,
+      "task": "Support access control roles for private team-based plugin libraries"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 155,
+      "task": "Auto-update plugins via version control with rollback safety net"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 156,
+      "task": "Include inline plugin source editing and live-reload test engine"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 157,
+      "task": "Export plugins as distributable packages for reuse in other CoreForge apps"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 208,
+      "task": "Enable team project sharing with edit/view/comment roles"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 209,
+      "task": "Allow invite by email or team domain with SSO/OAuth options"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 210,
+      "task": "Track individual contributor changes with visual diffs"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 211,
+      "task": "Implement version history with restore, fork, and compare functions"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 212,
+      "task": "Allow users to create and label version checkpoints"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 213,
+      "task": "Highlight edits and annotations by user in visual editor"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 214,
+      "task": "Support real-time co-editing with presence indicators"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 215,
+      "task": "Log all changes to project audit trail per user"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 216,
+      "task": "Provide access control by module (UI, logic, backend, export)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 217,
+      "task": "Support permission presets: Owner, Admin, Developer, Reviewer, Viewer"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 218,
+      "task": "Enable temporary guest access with expiration"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 219,
+      "task": "Integrate Slack/Discord/Email notifications on project events"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 220,
+      "task": "Include comment threads on UI components or code snippets"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 221,
+      "task": "Show inline merge conflict resolution tools for async teams"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 222,
+      "task": "Enable toggle between shared/public and private build modes"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 223,
+      "task": "Provide workspace switching between personal, team, and client contexts"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 224,
+      "task": "Allow branding per team workspace (logo, theme, slug)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 225,
+      "task": "Archive inactive team projects automatically after custom duration"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 226,
+      "task": "Track deploy permissions and publishing rights by role"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 227,
+      "task": "Link GitHub/Bitbucket repos for external code versioning sync"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 228,
+      "task": "Generate shareable project changelogs and deployment diffs"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 229,
+      "task": "Include API access logs per collaborator"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 232,
+      "task": "Integrate AI co-pilot chat sidebar for contextual coding questions"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 233,
+      "task": "Enable real-time code annotation and explanation overlays"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 234,
+      "task": "Suggest logic flow improvements and highlight inefficiencies"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 235,
+      "task": "Recommend component extraction from complex functions"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 236,
+      "task": "Offer AI-generated alternatives for every key module or feature"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 237,
+      "task": "Support natural language queries like \"optimize this function\""
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 238,
+      "task": "Auto-generate test cases based on logic structure and edge scenarios"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 239,
+      "task": "Refactor long functions into readable, typed, testable methods"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 240,
+      "task": "Detect anti-patterns and deprecated APIs with upgrade suggestions"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 241,
+      "task": "Allow users to ask \"why\" a decision was made by the AI coder"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 242,
+      "task": "Log all co-pilot suggestions and accepted changes"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 243,
+      "task": "Support voice commands for \"insert state handler\", \"make API call\", etc."
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 244,
+      "task": "Recommend data structures based on logic complexity and performance"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 245,
+      "task": "Show performance impact forecast for proposed logic changes"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 246,
+      "task": "Provide real-time security suggestions for form inputs and API calls"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 247,
+      "task": "Suggest proper async vs sync usage across app logic"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 248,
+      "task": "Generate documentation for modules, components, and services automatically"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 249,
+      "task": "Offer optional autocomplete based on style guide preferences"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 250,
+      "task": "Link co-pilot to plugin generator to create smart integrations"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 251,
+      "task": "Enable inline \"refactor now\" buttons on AI-flagged complexity warnings"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 252,
+      "task": "Provide hotkey trigger for co-pilot enhancement pass"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 253,
+      "task": "Track AI usage and suggest team-wide optimization patterns"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 256,
+      "task": "Run AI-driven performance profiling on generated app builds"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 257,
+      "task": "Suggest bundle size optimizations and unused dependency pruning"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 258,
+      "task": "Execute automated security scans for XSS, CSRF, and token leakage"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 259,
+      "task": "Validate GDPR, CCPA, and Apple/Google data privacy compliance"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 260,
+      "task": "Auto-generate permissions manifest for mobile platforms"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 261,
+      "task": "Inject pre-launch QA checklist into creator dashboard"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 262,
+      "task": "Auto-generate optimization score with key improvement suggestions"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 263,
+      "task": "Run background AI test suites for UI/logic regressions"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 264,
+      "task": "Test form fields for injection vulnerability and field exhaustion"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 265,
+      "task": "Validate accessibility standards and color contrast ratios"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 266,
+      "task": "Verify offline mode and cache-first readiness for PWA builds"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 267,
+      "task": "Track load performance and first render time with simulated traffic"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 268,
+      "task": "Compare generated apps against platform guidelines for warnings"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 269,
+      "task": "Provide \"Ready for App Store\" and \"Ready for Play Store\" indicators"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 270,
+      "task": "Enable security badge printing for white-label partners"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 271,
+      "task": "Offer final export in ISO-standardized app bundle format (for enterprise)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 272,
+      "task": "Store compliance reports with downloadable JSON + PDF exports"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 273,
+      "task": "Run AI-based smoke tests on all exported builds"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 274,
+      "task": "Cross-check final render metadata with initial prompt structure"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 275,
+      "task": "Alert if export lacks privacy policy, TOS, or user consent prompts"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 276,
+      "task": "Recommend CDN or image optimization rules for live performance"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeBuild/AGENTS.md",
+      "line": 277,
+      "task": "Output a final \"pass/fail\" matrix for all deployment targets"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 7,
+      "task": "End-to-end lead generation, scoring, enrichment, and CRM sync"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 8,
+      "task": "Persistent memory, custom agent builder, AI automation, and analytics"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 10,
+      "task": "Global languages, NSFW gating, offline, marketplace, affiliate features"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 17,
+      "task": "Import/export CSV, XLSX, JSON, API sync"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 18,
+      "task": "AI signal extraction, intent prediction, lead scoring"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 20,
+      "task": "Real-time lead enrichment (contact, company, social)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 21,
+      "task": "Team dashboards, multi-user assignment, lead pools"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 22,
+      "task": "Drag-and-drop campaign builder, segment automation"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 23,
+      "task": "Cross-app lead sharing, smart asset marketplace"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 24,
+      "task": "Subscription, credit engine, in-app purchases, affiliate system"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 27,
+      "task": "LocalAI/SignalAI intent modeling and scoring"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 29,
+      "task": "Smart prompt templates, multi-lingual support"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 30,
+      "task": "Global data enrichment and compliance API sync"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 31,
+      "task": "Admin dashboard: quotas, reporting, compliance tools"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 34,
+      "task": "Drag-and-drop pipeline/campaign editor"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 35,
+      "task": "Settings for CRM/API, signals, NSFW, compliance"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 36,
+      "task": "Dashboards: lead stats, team analytics, progress"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 37,
+      "task": "Marketplace: browse/buy/sell leads, templates, automations"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 38,
+      "task": "Leaderboards, badges, referral links, achievement tracker"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 43,
+      "task": "Secure API key storage, GDPR/CCPA/industry compliance"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 44,
+      "task": "Firebase/Firestore or custom backend"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 45,
+      "task": "Auto-updater, platform config, app store/web compliance"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 46,
+      "task": "Export formats: CSV, XLSX, JSON, API"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 47,
+      "task": "Full project files for all platforms"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 53,
+      "task": "UI/UX and workflow tests (all platforms)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 54,
+      "task": "Security/privacy/compliance, access levels"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 55,
+      "task": "Performance and scaling (large data sets)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 60,
+      "task": "GitHub Actions, tagging, changelogs, multi-platform deploy"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 61,
+      "task": "Marketplace asset pipeline"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 62,
+      "task": "Compliance, legal, and onboarding automation"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 73,
+      "task": "Predictive lead scoring, smart signal blending"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 74,
+      "task": "Deal coach, AI CRM assistant, competitive intelligence AI"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 75,
+      "task": "Cross-market intent scoring, smart auto-segments"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 76,
+      "task": "Marketplace for agents, templates, automations, plugins"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 77,
+      "task": "White label/enterprise dashboards, multi-org support"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 78,
+      "task": "Community-driven lead pools, affiliate/partner expansion"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 79,
+      "task": "Gamified prospecting, leaderboard rewards"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 84,
+      "task": "NSFW gating for certain market segments (if allowed)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 85,
+      "task": "Secure, private vaults for age-restricted categories"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 86,
+      "task": "Consent/legal compliance for NSFW/regulated leads"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 91,
+      "task": "All platform project files, onboarding flows"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 92,
+      "task": "Export/import asset tests, compliance review"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/README.md",
+      "line": 93,
+      "task": "Final UI polish, team onboarding, tutorial flows"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/AGENTS.md",
+      "line": 31,
+      "task": "Finalize production UI components"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/AGENTS.md",
+      "line": 62,
+      "task": "End-to-end lead generation, scoring, enrichment, and CRM sync"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/AGENTS.md",
+      "line": 63,
+      "task": "Persistent memory, custom agent builder, AI automation, and analytics"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/AGENTS.md",
+      "line": 65,
+      "task": "Global languages, NSFW gating, offline, marketplace, affiliate features"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeLeads/AGENTS.md",
+      "line": 66,
+      "task": "Import/export CSV, XLSX, JSON, API sync"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 7,
+      "task": "End-to-end AI writing studio (books, scripts, stories)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 8,
+      "task": "Persistent character/world memory and creative DNA"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 10,
+      "task": "Multilingual, NSFW gating, offline writing, community/marketplace"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 17,
+      "task": "Import/export PDF, ePub, TXT, Docx"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 18,
+      "task": "AI co-writing, rewriting, genre adaptation"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 19,
+      "task": "Persistent character/world memory, creative DNA"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 20,
+      "task": "Scene/chapter/plot builder UI"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 21,
+      "task": "Peer/community feedback, review, collaboration tools"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 22,
+      "task": "Monetizable story packs, templates, review marketplace"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 23,
+      "task": "Subscription/credit engine, affiliate dashboard"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 24,
+      "task": "Offline writing and save, encrypted vaults"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 27,
+      "task": "OpenAI/LocalAI creative, genre, and plot modeling"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 29,
+      "task": "Prompt enhancer, style adaptation, memory linking"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 30,
+      "task": "Cross-app asset/memory import/export"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 31,
+      "task": "Admin dashboard: usage, quota, reporting, moderation"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 34,
+      "task": "Drag-and-drop scene/chapter/plot editor"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 36,
+      "task": "Dark/light mode, multiple fonts, focus mode"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 37,
+      "task": "Version history, backup/restore, undo/redo"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 38,
+      "task": "Feedback/review UI, progress dashboard"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 39,
+      "task": "Community/marketplace browse, buy, sell"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 44,
+      "task": "LocalAI, prompt templating, plugin support"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 45,
+      "task": "GDPR, CCPA, COPPA compliance, secure API key"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 46,
+      "task": "Firebase/Firestore (or equivalent): Auth, Storage, Analytics"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 47,
+      "task": "Auto-updater for builds, platform config"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 48,
+      "task": "Export formats: PDF, ePub, Docx, TXT"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 56,
+      "task": "UI/UX tests (all platforms)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 57,
+      "task": "Accessibility (screen readers, vision)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 58,
+      "task": "Performance (large docs, fast AI, low-latency)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 59,
+      "task": "Security, privacy, NSFW gating tests"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 64,
+      "task": "GitHub Actions, multi-platform"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 65,
+      "task": "Tagging, changelogs, automated deploy (TestFlight, Play, Drive)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 66,
+      "task": "Auto-updater for features/models"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 78,
+      "task": "Quantum story forking, alternate ending generator"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 79,
+      "task": "Emotional arc, creative DNA tree, multiverse plotting"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 80,
+      "task": "AI \u201cwhat if?\u201d explorer, memory pinning, feedback optimizer"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 81,
+      "task": "Macro scripting, versioning, lore/encyclopedia builder"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 82,
+      "task": "Peer review, NFT licensing, paid templates"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 83,
+      "task": "Fan challenges, viral writing, leaderboard"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 84,
+      "task": "Live collaboration, community voting, gamified writing"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 89,
+      "task": "Erotic/romance scene AI, consent tools"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 90,
+      "task": "Explicit language, privacy vaults, secret clubs"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 91,
+      "task": "Paywall, tip jar, premium NSFW stories"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 92,
+      "task": "Community moderation, age/ID controls"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 93,
+      "task": "NSFW sandbox, decoy/stealth mode"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 99,
+      "task": "All platform project files, export tests"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 100,
+      "task": "Final UI/UX polish, onboarding flows"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 101,
+      "task": "Accessibility and compliance review"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/README.md",
+      "line": 102,
+      "task": "Full CI/CD pipeline and test deployment"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 33,
+      "task": "Finalize production UI components"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 38,
+      "task": "Scene temperature dial for delivery mood (cold/neutral/hot)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 40,
+      "task": "Meta writing mode (4th-wall awareness)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 41,
+      "task": "Book-to-song interlude generator"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 44,
+      "task": "Dual-edit co-author editor with live AI collaboration"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 45,
+      "task": "Timeline visualizer of all story events"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 46,
+      "task": "Serialized release engine (auto episodic drop)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 48,
+      "task": "Romance path visual heatmap"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 51,
+      "task": "Real dialogue tone checker (based on real speech data)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 52,
+      "task": "Tag/tracker for literary symbols and metaphors"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 53,
+      "task": "Legacy continuation mode (generate from unfinished stories)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 54,
+      "task": "Reverse plot planner (end-first logic fill-in)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 55,
+      "task": "Tone lock system to maintain story feel"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 58,
+      "task": "Genre rewrite engine (sci-fi \u2192 noir, etc.)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 59,
+      "task": "Hidden bonus chapter unlock engine"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 60,
+      "task": "Book-to-NFT or collectible printable setup"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 61,
+      "task": "Monetization-split tracking per co-author"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 62,
+      "task": "Accessibility scoring and feedback panel"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 63,
+      "task": "Emotional writing boost generator (mood-based prompts)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 65,
+      "task": "Add Genre Mimicry Engine and Thematic Analyzer"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 66,
+      "task": "Build AI outline \u2192 full manuscript generator"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 67,
+      "task": "Add writing mood tuner (slow burn, fast-paced, dark, comedic)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 68,
+      "task": "Build AI Sandbox co-author tool"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 69,
+      "task": "Add auto-expand subplots + side character arcs"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 71,
+      "task": "Add Royalty-Free Illustration bundle creator"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 72,
+      "task": "Embed Booktok Trailer Generator + auto-caption tool"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 73,
+      "task": "Integrate reader relatability + pacing metrics"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 74,
+      "task": "Enable Book-to-Pitch feature (TV/Film pitch toolkit)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 76,
+      "task": "Export script to CoreForge Studio with assigned voices"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 88,
+      "task": "GlobalLanguageSupport"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 106,
+      "task": "End-to-end AI writing studio (books, scripts, stories)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 107,
+      "task": "Persistent character/world memory and creative DNA"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 109,
+      "task": "Multilingual, NSFW gating, offline writing, community/marketplace"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeWriter/AGENTS.md",
+      "line": 110,
+      "task": "Import/export PDF, ePub, TXT, Docx"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 7,
+      "task": "Full AI-powered multi-track audio/video production suite"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 8,
+      "task": "Persistent voice/scene memory, macro builder, team dashboard"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 10,
+      "task": "Multi-language, NSFW gating, offline-first, viral/social creator tools"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 17,
+      "task": "Multi-track AI audio/video editor (all formats)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 18,
+      "task": "Real-time ensemble acting/reading/collab rooms"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 19,
+      "task": "Drag-and-drop macro automation builder"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 20,
+      "task": "Custom voice/SFX/visual asset library"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 21,
+      "task": "Cloud/local export, encrypted vault, auto-backup"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 22,
+      "task": "Team/enterprise dashboard, usage analytics"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 23,
+      "task": "Creator/affiliate marketplace for templates, assets"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 26,
+      "task": "LocalAI/VoiceAI/VisualAI pipeline (editing, rendering, asset tagging)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 27,
+      "task": "Macro script/plugin extension support"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 28,
+      "task": "AI director for shot/scene feedback, performance"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 29,
+      "task": "Asset management, cross-app sharing"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 30,
+      "task": "Admin controls: roles, quotas, reporting"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 33,
+      "task": "Multi-track timeline UI, drag-and-drop editor"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 34,
+      "task": "Settings: voices, templates, NSFW, automation"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 35,
+      "task": "Dark/light themes, accessibility"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 36,
+      "task": "Team roles, project dashboards, live chat/collab"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 37,
+      "task": "Live performance analytics, asset library UI"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 42,
+      "task": "LocalAI, VisualAI, VoiceAI support"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 43,
+      "task": "Secure API, GDPR/CCPA/COPPA"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 44,
+      "task": "Firebase/Firestore: Auth, Storage, Analytics"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 45,
+      "task": "Auto-updater, platform config"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 46,
+      "task": "Export formats: WAV, MP3, MP4, GIF, etc."
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 47,
+      "task": "All platform project files, app store compliance"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 53,
+      "task": "UI/UX, accessibility (all platforms)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 54,
+      "task": "Security, privacy, NSFW"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 55,
+      "task": "Performance (large projects, high-res)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 60,
+      "task": "GitHub Actions, automated tagging, changelogs"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 61,
+      "task": "Multi-platform deploy, app store assets"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 62,
+      "task": "Auto-updater"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 73,
+      "task": "Quantum edit mode, parallel project branching"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 74,
+      "task": "Viral meme/gif/video generator, social overlays"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 75,
+      "task": "AI \u201cdirector\u201d feedback, branded export tools"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 76,
+      "task": "Macro scripting, version rollback, creative automation"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 77,
+      "task": "Group live editing, real-time audience interaction"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 78,
+      "task": "Marketplace, tip jars, premium unlocks"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 83,
+      "task": "Age-verified NSFW editing suite, privacy controls"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 85,
+      "task": "Live NSFW rooms, tip jars, secret sessions"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 86,
+      "task": "Pay-per-view, aftercare, private vaults"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 87,
+      "task": "Consent/parental controls, region gating"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 92,
+      "task": "All platform project files, export, UI polish"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 93,
+      "task": "CI/CD deployment test, onboarding flows"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/README.md",
+      "line": 94,
+      "task": "Compliance, accessibility, app store tests"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/AGENTS.md",
+      "line": 30,
+      "task": "Finalize production UI components"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/AGENTS.md",
+      "line": 42,
+      "task": "Hybrid visual style merger (anime/noir/fantasy combos)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/AGENTS.md",
+      "line": 44,
+      "task": "Directorial note system for each scene or shot"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/AGENTS.md",
+      "line": 45,
+      "task": "Action rhythm controller (tempo pacing for dynamic scenes)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/AGENTS.md",
+      "line": 46,
+      "task": "Audiovisual director diary (scene logs)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/AGENTS.md",
+      "line": 49,
+      "task": "Subtitle dialect localizer (slang, accents, formal, etc.)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/AGENTS.md",
+      "line": 50,
+      "task": "Trigger warning detector (auto flag sensitive content)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/AGENTS.md",
+      "line": 51,
+      "task": "Overlay FX editor for text and post-processing"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/AGENTS.md",
+      "line": 52,
+      "task": "Location soundscape auto-generator"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/AGENTS.md",
+      "line": 53,
+      "task": "Emotion layer system (alternate tone variants per scene)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/AGENTS.md",
+      "line": 57,
+      "task": "Scene performance estimator (views, replays, saves)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/AGENTS.md",
+      "line": 58,
+      "task": "Alternate ending generator"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/AGENTS.md",
+      "line": 59,
+      "task": "Interactive video QTE (viewer-triggered choices)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/AGENTS.md",
+      "line": 60,
+      "task": "Self-rating engine (scene quality based on AI criteria)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/AGENTS.md",
+      "line": 61,
+      "task": "Replay prediction engine (likely rewatch scenes)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/AGENTS.md",
+      "line": 63,
+      "task": "Add AI Scene Editor Timeline View"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/AGENTS.md",
+      "line": 64,
+      "task": "Build Smart Camera Direction AI (zoom/pan/hold)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/AGENTS.md",
+      "line": 65,
+      "task": "Add Lip Sync + Voice Sync to Visuals"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/AGENTS.md",
+      "line": 66,
+      "task": "Auto-add crowd and ambient SFX"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/AGENTS.md",
+      "line": 67,
+      "task": "Enable Style Export: Anime, Noir, Realistic, Fantasy"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/AGENTS.md",
+      "line": 68,
+      "task": "Build Emotion Arc Visualizer for cinematic flow"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/AGENTS.md",
+      "line": 69,
+      "task": "Add Live Dubbing Room + Creator Voice Import"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/AGENTS.md",
+      "line": 72,
+      "task": "Add What-If Mode for branching episode possibilities"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/AGENTS.md",
+      "line": 73,
+      "task": "Create Auto-Publish pipeline to YouTube/TikTok with metadata"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/AGENTS.md",
+      "line": 74,
+      "task": "Auto-generate Trailer + Behind-the-Scenes packs"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/AGENTS.md",
+      "line": 75,
+      "task": "Add voice/scene-to-video alignment overlays"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/AGENTS.md",
+      "line": 81,
+      "task": "Real-time ensemble acting"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/AGENTS.md",
+      "line": 87,
+      "task": "GlobalLanguageSupport"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/AGENTS.md",
+      "line": 105,
+      "task": "Full AI-powered multi-track audio/video production suite"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/AGENTS.md",
+      "line": 106,
+      "task": "Persistent voice/scene memory, macro builder, team dashboard"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/AGENTS.md",
+      "line": 108,
+      "task": "Multi-language, NSFW gating, offline-first, viral/social creator tools"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeStudio/AGENTS.md",
+      "line": 109,
+      "task": "Multi-track AI audio/video editor (all formats)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 209,
+      "task": "MultiverseBookLinker"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 216,
+      "task": "FullBookRender"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 217,
+      "task": "AudiobookStoreExporter"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 218,
+      "task": "PublishingReportGenerator"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 219,
+      "task": "SeriesManager"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 245,
+      "task": "VoicePersonalityProfiles"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 246,
+      "task": "DynamicEmotionRamping"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 247,
+      "task": "MultivoiceCharacterMode"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 248,
+      "task": "CharacterTics"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 249,
+      "task": "VoiceReactivity"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 250,
+      "task": "CharacterVoiceAging"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 251,
+      "task": "AccentGenerator"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 252,
+      "task": "CadenceModulation"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 253,
+      "task": "InterruptSimulation"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 254,
+      "task": "StutterLaughGenerator"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 255,
+      "task": "InlineWhisperSupport"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 256,
+      "task": "MidSentenceToneSwitching"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 257,
+      "task": "SceneVolumeDynamics"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 258,
+      "task": "SpatialPositioning"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 259,
+      "task": "RoomSimulation"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 260,
+      "task": "AmbientLayerFX"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 261,
+      "task": "CrossSceneFXLinking"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 262,
+      "task": "SceneDensityTuner"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 264,
+      "task": "EmotionCurveVisualizer"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 265,
+      "task": "VoiceAwarePacing"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 266,
+      "task": "ToneConsistencyChecker"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 267,
+      "task": "ConflictFXEnhancer"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 268,
+      "task": "MoodColorCoder"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 271,
+      "task": "ScriptSnippetInjector"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 272,
+      "task": "CreatorSandboxMode"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 273,
+      "task": "DualNarratorToggle"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 274,
+      "task": "VoiceDNAForking"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 275,
+      "task": "FlashbackSceneEngine"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 276,
+      "task": "ContinuityChecker"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 277,
+      "task": "CrossoverEngine"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 415,
+      "task": "Adjust emotional tone delivery based on past scenes (e.g., grief affects voice)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 422,
+      "task": "Recommend tone variation based on context and prior memory state"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 423,
+      "task": "Integrate cross-book story arc tracking (hero's journey, redemption, fall)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 425,
+      "task": "Allow adaptive tone matching when character enters new genres/settings"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 426,
+      "task": "Model relationships: voice modulation changes depending on who is speaking to whom"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 429,
+      "task": "Cross-link tone history with voice fingerprint DNA across the series"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 430,
+      "task": "Support tone comparison mode between books for authorial analysis"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 431,
+      "task": "Highlight inconsistencies in voice delivery across books for correction"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 457,
+      "task": "Allow hidden timeline unlocks based on listener behavior"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 458,
+      "task": "Provide multiverse context summaries for catching up mid-path"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 459,
+      "task": "Support flashback-within-alternate-timeline scenes"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 460,
+      "task": "Build multiverse continuity checker for tone, character, and FX"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 462,
+      "task": "Embed multiverse state tags into export files for advanced metadata"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 463,
+      "task": "Allow experimental rendering mode with parallel timeline mix"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 470,
+      "task": "Allow users to include/exclude ambient and NSFW layers in export"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 471,
+      "task": "Enable fingerprinted voice tagging for IP verification"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 475,
+      "task": "Support export templates (e.g., Audible-ready, Podcast format)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 476,
+      "task": "Compress long-form books into optimal mobile delivery bundles"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 477,
+      "task": "Offer download resume support and interruption handling"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 478,
+      "task": "Add cross-device sync: track last listened chapter, scene, and timestamp"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 479,
+      "task": "Sync memory state and emotional arc history between devices"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 480,
+      "task": "Allow per-user customization of export format defaults"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 481,
+      "task": "Enable Creator subscription tier detection and permission gating"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 482,
+      "task": "Track export credit usage for pay-as-you-go systems"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 483,
+      "task": "Offer credit bundles and auto-top-up for high-volume creators"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 484,
+      "task": "Show subscription tier benefits in dashboard with upgrade CTA"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 485,
+      "task": "Integrate analytics reporting on export/download performance"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 486,
+      "task": "Support cloud backup of render states and export templates"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 487,
+      "task": "Add DRM toggle for exports requiring usage protection"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 488,
+      "task": "Provide offline-friendly audiobook playback format generator"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 515,
+      "task": "Track character development arcs across multiple books and universes"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 516,
+      "task": "Sync voice tone evolution based on previous book outcomes"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 517,
+      "task": "Detect and recall key events from prior titles to affect current narration"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 518,
+      "task": "Map memory triggers to emotion modulation for recurring themes"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 519,
+      "task": "Generate emotional arc summaries for each book and voice profile"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 520,
+      "task": "Translate entire books while preserving narrator tone and genre"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 521,
+      "task": "Match accents to region and character origin dynamically"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 522,
+      "task": "Create multilingual narration with seamless voice switch per language"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 523,
+      "task": "Add genre-aware translation modes (e.g., poetic for fantasy, direct for nonfiction)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 524,
+      "task": "Enable narrator tone matching during back-translations (reverse language)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 525,
+      "task": "Preserve paragraph-level pacing in translated output"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 526,
+      "task": "Flag idioms and phrases for creative language adaptation"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 527,
+      "task": "Allow inline multilingual conversations with character accent routing"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 528,
+      "task": "Implement voice glossaries for culturally relevant pronunciation"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 529,
+      "task": "Render unabridged books up to 40+ hours without loss of pacing"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 530,
+      "task": "Optimize long-form rendering using audio caching checkpoints"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 531,
+      "task": "Insert smart bookmarks at scene/act/chapter transitions"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 532,
+      "task": "Auto-generate full table of contents with audio-linked sections"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 533,
+      "task": "Provide unabridged-to-abridged summarization mode for preview"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 534,
+      "task": "Adapt narration style based on genre and reader profile (e.g., thriller vs. memoir)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 535,
+      "task": "Detect formatting features (lists, quotes, poetry) and adjust narration accordingly"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 536,
+      "task": "Store memory snapshots between render sessions for persistent output quality"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 542,
+      "task": "Enable per-character equalization, pitch adjustment, and compression"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 543,
+      "task": "Simulate stereo spatial positioning per voice (left/right, near/far)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 545,
+      "task": "Create a full-cast preview mode with toggles for each voice track"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 546,
+      "task": "Add creator-defined vocal layering for crowd and background dialogue"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 547,
+      "task": "Offer toggle for \u201cnarrator override\u201d mode for consistency across multi-voice scenes"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 548,
+      "task": "Auto-suggest optimal scene pacing based on text intensity and emotion tags"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 549,
+      "task": "Detect dialogue overlap potential and adjust timing automatically"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 550,
+      "task": "Use AI to recommend narration cadence per genre and reader preference"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 551,
+      "task": "Export final audio as flattened or layered file based on creator choice"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 552,
+      "task": "Tag character emotional states per segment to match musical score inputs"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 553,
+      "task": "Link scene-based voice dynamics to background music templates"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 554,
+      "task": "Integrate with audio plugin systems for advanced mastering tools"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 555,
+      "task": "Enable Creator AI Assistant to generate scene-specific mastering presets"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 556,
+      "task": "Provide auto-mix-and-export mode for rapid prototyping"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 557,
+      "task": "Build creator dashboard for real-time monitoring of voice quality and performance"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 558,
+      "task": "Visualize voice dominance per chapter using waveform or tone charts"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 559,
+      "task": "Offer beta features: audio fingerprints for licensing, alternate casting previews"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/apps/CoreForgeAudio/AGENTS.md",
+      "line": 560,
+      "task": "AI-based performance coach to recommend enhancements after preview"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/docs/PHASE_NINE.md",
+      "line": 12,
+      "task": "Enable per-character equalization, pitch adjustment, and compression"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/docs/PHASE_NINE.md",
+      "line": 13,
+      "task": "Simulate stereo spatial positioning per voice (left/right, near/far)"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/docs/PHASE_NINE.md",
+      "line": 15,
+      "task": "Create a full-cast preview mode with toggles for each voice track"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/docs/PHASE_NINE.md",
+      "line": 16,
+      "task": "Add creator-defined vocal layering for crowd and background dialogue"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/docs/PHASE_NINE.md",
+      "line": 17,
+      "task": "Offer toggle for \"narrator override\" mode for consistency across multi-voice scenes"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/docs/PHASE_NINE.md",
+      "line": 18,
+      "task": "Auto-suggest optimal scene pacing based on text intensity and emotion tags"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/docs/PHASE_NINE.md",
+      "line": 19,
+      "task": "Detect dialogue overlap potential and adjust timing automatically"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/docs/PHASE_NINE.md",
+      "line": 20,
+      "task": "Use AI to recommend narration cadence per genre and reader preference"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/docs/PHASE_NINE.md",
+      "line": 21,
+      "task": "Export final audio as flattened or layered file based on creator choice"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/docs/PHASE_NINE.md",
+      "line": 22,
+      "task": "Tag character emotional states per segment to match musical score inputs"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/docs/PHASE_NINE.md",
+      "line": 23,
+      "task": "Link scene-based voice dynamics to background music templates"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/docs/PHASE_NINE.md",
+      "line": 24,
+      "task": "Integrate with audio plugin systems for advanced mastering tools"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/docs/PHASE_NINE.md",
+      "line": 25,
+      "task": "Enable Creator AI Assistant to generate scene-specific mastering presets"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/docs/PHASE_NINE.md",
+      "line": 26,
+      "task": "Provide auto-mix-and-export mode for rapid prototyping"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/docs/PHASE_NINE.md",
+      "line": 27,
+      "task": "Build creator dashboard for real-time monitoring of voice quality and performance"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/docs/PHASE_NINE.md",
+      "line": 28,
+      "task": "Visualize voice dominance per chapter using waveform or tone charts"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/docs/PHASE_NINE.md",
+      "line": 29,
+      "task": "Offer beta features: audio fingerprints for licensing, alternate casting previews"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/docs/PHASE_NINE.md",
+      "line": 30,
+      "task": "AI-based performance coach to recommend enhancements after preview"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/docs/PHASE_EIGHT.md",
+      "line": 114,
+      "task": "Adaptive scene completion"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/.github/PULL_REQUEST_TEMPLATE.md",
+      "line": 7,
+      "task": "Unit tests"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/.github/PULL_REQUEST_TEMPLATE.md",
+      "line": 8,
+      "task": "Integration tests"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/.github/PULL_REQUEST_TEMPLATE.md",
+      "line": 9,
+      "task": "Manual testing"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/.github/PULL_REQUEST_TEMPLATE.md",
+      "line": 12,
+      "task": "My code follows the project's style guidelines"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/.github/PULL_REQUEST_TEMPLATE.md",
+      "line": 13,
+      "task": "I have performed a self-review of my own code"
+    },
+    {
+      "file": "/workspace/CreatorCoreForge/.github/PULL_REQUEST_TEMPLATE.md",
+      "line": 14,
+      "task": "I have commented my code, particularly in hard-to-understand areas"
+    }
+  ]
+}

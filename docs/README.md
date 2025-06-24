@@ -17,7 +17,7 @@ Additional guides and phase planning documents for the CreatorCoreForge ecosyste
 - `DocVideoScanner.md` – document and video scanning utilities
 - `progress_bot.py` – calculates app progress from `OPEN_TASKS.md` and optionally suggests code using OpenAI.
 - `progress_bot.md` – additional usage notes for the progress bot script
-- `auto_code_bot.py` – generates placeholder code files for missing features. It now includes an offline mode and a `--upgrade-placeholders` option to replace stubs with OpenAI-generated code when an API key is available.
+ - `auto_code_bot.py` – generates placeholder code files for missing features. It now includes an offline mode, a `--upgrade-placeholders` option, and writes timestamped snippets to language folders under `output/`.
 - `auto_code_bot.md` – documentation for the auto code generation bot
 - `ADMIN_AUTOMATION.md` – automation guidelines and script execution steps
 

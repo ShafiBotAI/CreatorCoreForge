@@ -9,7 +9,7 @@
 ## ✅ Phase 1 – Scene Import & Breakdown (Free Tier)
 
 ### 📚 Book Import & Scene Parser
-- [ ] `BookImporter.import(file): Promise<Scene[]>`
+ - [x] `BookImporter.import(file): Promise<Scene[]>`
 - [ ] Parse EPUB/PDF/TXT into story blocks
 - [ ] Extract visual scene descriptors and dialogue
 - [ ] Normalize chapters into visual sequences
@@ -41,7 +41,7 @@
 ## ✅ Phase 3 – Visual Generator & Renderer (Pro+ Tier)
 
 ### 🎞️ AI Video Generator
-- [ ] `VisualRenderer.render(config: RenderConfig): VideoClip`
+- [x] `VisualRenderer.render(config: RenderConfig): VideoClip`
 - [ ] Generate video from prompt + voice + ambient FX
 - [ ] Integrate with external or local video model
 - [ ] Allow rendering style: anime, fantasy, live-action, etc.
@@ -117,9 +117,9 @@
 ## ✅ Phase 8 – Compliance, Exports & UI Polish
 
 ### 📱 Export Manager
-- [ ] Export full video to device (MP4)
-- [ ] Auto-generate thumbnails and cover art
-- [ ] Add platform-ready metadata
+- [x] Export full video to device (MP4)
+- [x] Auto-generate thumbnails and cover art
+- [x] Add platform-ready metadata
 
 ### 📤 Platform Upload Tools
 - [ ] Upload 1 platform/channel by default
@@ -129,7 +129,7 @@
 ### ⚙️ Settings Panel
 - [ ] Style picker (anime, noir, fantasy, etc.)
 - [ ] NSFW mode toggle (off by default)
-- [ ] Developer console toggle (Creator tier)
+ - [x] Developer console toggle (Creator tier)
 
 ---
 

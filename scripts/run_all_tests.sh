@@ -13,5 +13,10 @@ pushd VisualLab >/dev/null
 npm test
 popd >/dev/null
 
+# run CoreForgeBuild tests
+pushd apps/CoreForgeBuild >/dev/null
+npm test
+popd >/dev/null
+
 # run Swift tests
 swift test

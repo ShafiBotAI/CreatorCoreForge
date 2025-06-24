@@ -84,11 +84,11 @@ Advanced AI writing assistant for creating books, series, and self-help guides w
 - [x] Community marketplace
 - [x] VideoEffectsPipeline
 - [x] AudioEffectsPipeline
-- [ ] HighQualityVoiceLibrary
+ - [x] HighQualityVoiceLibrary
 - [ ] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
 - [x] TenTimesPlaybackSpeed
-- [ ] AdvancedSkipImport
+ - [x] AdvancedSkipImport
 - [x] AISummaryChatService
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer

@@ -1,4 +1,66 @@
+
 # Auto-generated for Prompt validation with multiple sample inputs and outputs
 def prompt_validation_with():
     """Prompt validation with multiple sample inputs and outputs"""
     pass
+=======
+"""Prompt Validation Manager
+
+This module provides utility functions to validate AI prompts
+against multiple sample input/output pairs. It can be used in
+unit tests or as part of a quality assurance pipeline to ensure
+that prompt templates behave consistently across examples.
+"""
+from __future__ import annotations
+
+from dataclasses import dataclass
+from typing import Callable, Iterable, List, Tuple
+import asyncio
+
+
+@dataclass
+class PromptSample:
+    """Represents a single prompt sample."""
+    input_text: str
+    expected_output: str
+
+
+class PromptValidationManager:
+    """Validates prompts against sample inputs and expected outputs."""
+
+    def __init__(self, model: Callable[[str], str]):
+        """Create a manager with a text generation callable.
+
+        The callable should accept a prompt string and return a generated
+        string. This allows the validator to work with different AI models
+        without direct dependencies.
+        """
+        self._model = model
+
+    async def validate_samples(self, prompt: str, samples: Iterable[PromptSample]) -> List[bool]:
+        """Validate a list of samples asynchronously.
+
+        Parameters
+        ----------
+        prompt: str
+            The base prompt template.
+        samples: Iterable[PromptSample]
+            Collection of samples containing inputs and expected outputs.
+
+        Returns
+        -------
+        List[bool]
+            A list of booleans indicating whether each sample passed.
+        """
+        results: List[bool] = []
+        for sample in samples:
+            combined = prompt.format(sample.input_text)
+            generated = await self._async_generate(combined)
+            results.append(sample.expected_output.strip() in generated.strip())
+        return results
+
+    async def _async_generate(self, text: str) -> str:
+        """Helper to run the model callable asynchronously."""
+        loop = asyncio.get_event_loop()
+        return await loop.run_in_executor(None, self._model, text)
+
