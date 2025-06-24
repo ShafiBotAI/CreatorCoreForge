@@ -4,6 +4,11 @@ export interface ParseResult {
   language: string;
   layout: UIElement[];
   flows: string[][];
+  /**
+   * Unique flow step tags extracted from the prompt. These can be
+   * used for quick logic inference without inspecting the raw flows.
+   */
+  flowTags: string[];
 }
 
 /**
@@ -24,7 +29,8 @@ export class PromptParser {
       ? this.parseMarkdown(normalized)
       : this.parseNaturalLanguage(normalized);
     const flows = this.parseFlows(normalized);
-    return { language, layout, flows };
+    const flowTags = Array.from(new Set(flows.flat()));
+    return { language, layout, flows, flowTags };
   }
 
   /**
