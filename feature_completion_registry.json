@@ -5,5 +5,9 @@
     "Tests/CreatorCoreForgeTests/NetworkInfoProviderTests.swift",
     "Tests/CreatorCoreForgeTests/LibrarySyncTests.swift",
     "Tests/CreatorCoreForgeTests/SocialMediaManagerTests.swift"
+  ,
+    "VoiceLab/src/TTSRenderer.ts",
+    "VoiceLab/src/ChapterEditor.vue",
+    "VoiceLab/test/ttsRenderer.test.ts"
   ]
 }
