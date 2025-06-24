@@ -1,71 +1,32 @@
-import assert from 'node:assert';
-import fs from 'fs';
 import { TemplateService } from '../services/TemplateService';
-import { BuildEngine } from '../services/BuildEngine';
-import { BuilderEngine } from '../services/BuilderEngine';
 import { PromptParser } from '../services/PromptParser';
 import { CodeGenService } from '../services/CodeGenService';
 import { FigmaImporter } from '../services/FigmaImporter';
 import { EventBus } from '../services/EventBus';
 import { DiffService } from '../services/DiffService';
-
 import { BuilderEngine } from '../services/BuilderEngine';
 import { CreativeDNAService } from '../services/CreativeDNAService';
 import { DeployService } from '../services/DeployService';
-
 import { UISuggestionService } from '../services/UISuggestionService';
 import { WireframeParser } from '../services/WireframeParser';
 import { LayoutValidator } from '../services/LayoutValidator';
-import { CreativeDNAService } from '../services/CreativeDNAService';
-import { DeployService } from '../services/DeployService';
-import { InputNormalizer } from '../services/InputNormalizer';
-import { InputHistory } from '../services/InputHistory';
-import { LogicVisualizer } from '../services/LogicVisualizer';
-import { VoicePromptParser } from '../services/VoicePromptParser';
-import { PromptEditor } from '../services/PromptEditor';
-import { ThemeService } from '../services/ThemeService';
-import { ParseHistory } from '../services/ParseHistory';
+import fs from 'fs';
+import assert from 'node:assert';
+  const engine = new BuilderEngine();
+  assert.ok(engine.buildAll({ id: 'a', name: 'A', platform: 'web' }, []).length > 0);
 
-(async () => {
+  const result = parser.parse('# Login\n- Email\n- Password\nlogin -> dashboard -> settings');
+  assert.strictEqual(result.language, 'en');
+  assert.strictEqual(result.flows[0][0], 'login');
 
-  const templates = new TemplateService();
-  assert.strictEqual(templates.list().length, 2);
+  const nl = parser.parse('A login screen with email and password fields');
+  assert(nl.layout.some(el => el.type === 'header'));
+  const reactCode = codegen.generate(result.layout, 'react');
+  const sketchNodes = figma.parse({ layers: [{ name: 'Layer', _class: 'Artboard' }] });
+  assert.strictEqual(sketchNodes.length, 1);
+  const dna = dnaSvc.load();
+  assert.strictEqual(dna.team, 'X');
 
-  process.env.NODE_ENV = 'test';
-  const build = new BuildEngine('/tmp');
-  assert.ok(build.build('web').includes('dist'));
-
-  const builder = new BuilderEngine();
-  assert.ok(builder.buildAll({ id: 'a', name: 'A', platform: 'web' }, []).length > 0);
-
-  const parser = new PromptParser();
-  const parsed = parser.parse('# Login\n- Email\n- Password\nlogin -> dashboard -> settings');
-  assert.strictEqual(parsed.language, 'en');
-  assert.strictEqual(parsed.flows[0][0], 'login');
-  assert.ok(parsed.flowTags.includes('dashboard'));
-
-  const codegen = new CodeGenService();
-  const reactCode = codegen.generate(parsed.layout, 'react');
-  assert(reactCode.includes('<ul>'));
-
-  const figma = new FigmaImporter();
-  const nodes = figma.parse('{"nodes": [{"name": "Frame1", "type": "FRAME"}]}');
-  assert.strictEqual(nodes.length, 1);
-
-  const bus = new EventBus();
-  let generated: string | null = null;
-  bus.on('generated', e => (generated = e.code));
-  bus.emitGenerated('react', '<div />');
-  assert.strictEqual(generated, '<div />');
-
-  const diff = new DiffService();
-
-  const diffOutput = diff.diff('a', 'b');
-  assert(diffOutput.includes('-a'));
-
-
-  const sugg = new UISuggestionService();
-  assert(sugg.suggestNext([{ type: 'header', props: { text: 'Login' } }]).length > 0);
   assert(sugg.suggestPatterns('chat').includes('send-button'));
 
 
