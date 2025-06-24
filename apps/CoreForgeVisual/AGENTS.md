@@ -212,28 +212,29 @@ Key points from `README.md`:
 - [x] Allow creators to upload reference art or override generated visuals
 - [x] Store character styles for reuse across scenes and sequels
 - [x] Adjust posture, facial expressions, and body language based on dialogue tone
-- [ ] Support age-shift modeling (child, teen, adult, elder versions)
-- [ ] Track costume and hairstyle changes throughout story for visual consistency
-- [ ] Sync character movement to dialogue line length and pacing
-- [ ] Render close-up, medium, or wide shots based on character’s narrative importance
-- [ ] Link voice performance timing with facial movement and lip sync
-- [ ] Detect speaker shifts and auto-adjust scene framing/camera position
-- [ ] Suggest duo-frame or over-the-shoulder compositions for dialogue scenes
-- [ ] Store scene-specific animation presets (reaction styles, gestures)
-- [ ] Identify group scenes and auto-generate spatial layouts
-- [ ] Highlight visual identity conflicts for creator review (e.g., two similar characters)
-- [ ] Apply genre-tuned color palettes to each character
-- [ ] Recommend lighting configurations for cast mood amplification
-- [ ] Add multi-timeline variants for multiverse visual branching
-- [ ] Provide creator dashboard to preview, test, and lock character animations
+- [x] Support age-shift modeling (child, teen, adult, elder versions)
+- [x] Track costume and hairstyle changes throughout story for visual consistency
+- [x] Sync character movement to dialogue line length and pacing
+- [x] Render close-up, medium, or wide shots based on character’s narrative importance
+- [x] Link voice performance timing with facial movement and lip sync
+- [x] Detect speaker shifts and auto-adjust scene framing/camera position
+- [x] Suggest duo-frame or over-the-shoulder compositions for dialogue scenes
+- [x] Store scene-specific animation presets (reaction styles, gestures)
+- [x] Identify group scenes and auto-generate spatial layouts
+- [x] Highlight visual identity conflicts for creator review (e.g., two similar characters)
+- [x] Apply genre-tuned color palettes to each character
+- [x] Recommend lighting configurations for cast mood amplification
+- [x] Add multi-timeline variants for multiverse visual branching
+- [x] Provide creator dashboard to preview, test, and lock character animations
 
 ### Phase 3 – AI Rendering, Visual Effects & Scene FX Logic
-- [ ] Generate scene backgrounds using genre-trained visual models (e.g., fantasy, dystopia)
-- [ ] Match lighting conditions to time-of-day, tone, and setting
-- [ ] Render characters in cinematic compositions (rule of thirds, motion focus)
-- [ ] Apply scene transitions (fade, cut, swipe, glitch) based on pacing tags
-- [ ] Layer particle FX (rain, fire, fog, dust) for environmental realism
-- [ ] Auto-render camera movement (zoom, pan, tilt) based on action intensity
+- [x] Generate scene backgrounds using genre-trained visual models (e.g., fantasy, dystopia)
+- [x] Match lighting conditions to time-of-day, tone, and setting
+- [x] Render characters in cinematic compositions (rule of thirds, motion focus)
+- [x] Apply scene transitions (fade, cut, swipe, glitch) based on pacing tags
+- [x] Layer particle FX (rain, fire, fog, dust) for environmental realism
+- [x] Auto-render camera movement (zoom, pan, tilt) based on action intensity
+
 - [ ] Enable cutaway logic for interior vs exterior visual blending
 - [ ] Simulate mood via hue shifting and saturation overlays
 - [ ] Support dynamic shadows and ambient occlusion for realism
@@ -274,10 +275,52 @@ Key points from `README.md`:
 - [ ] Integrate memory graphs into multiverse and branch visualizers
 - [ ] Detect and annotate recurring visual cues across book entries
 - [ ] Support visual memory handoff to other creator accounts or teams
+=======
+- [x] Enable cutaway logic for interior vs exterior visual blending
+- [x] Simulate mood via hue shifting and saturation overlays
+- [x] Support dynamic shadows and ambient occlusion for realism
+- [x] Trigger visual filters (noir, dream, sepia, neon) based on scene metadata
+- [x] Identify high-impact moments and render with frame-by-frame detail
+- [x] Support 16:9, vertical, and square rendering formats
+- [x] Enable "live panel" layout for comic/manga-style visual composition
+- [x] Add blur, shake, or light flash FX for dramatic or horror moments
+- [x] Sync scene tone to ambient background FX audio
+- [x] Store FX template libraries per genre for reuse
+- [x] Allow creator to preview FX before rendering full scenes
+- [x] Provide toggle between high-quality and quick-preview render settings
+- [x] Visualize FX layering structure for post-editing
+- [x] Integrate facial motion tracking for emotional match rendering
+- [x] Track render time estimates and optimize batch processing queue
+- [x] Tag visual rhythm speed (slow visual poetry vs fast action montage)
+
+-### Phase 4 – Memory Engine, Continuity, and Multibook Visual Sync
+- [x] Persist character visuals across multiple books, including costume and evolution
+- [x] Maintain memory of key visual motifs and use them in flashbacks or callouts
+- [x] Store visual timeline of each character’s age, look, and setting impact
+- [x] Flag continuity errors in casting, color palette, or background reuse
+- [x] Allow timeline shifting to accommodate prequels and sequels
+- [x] Sync character visual memory with voice tone evolution
+- [x] Store FX history (e.g., specific lightning type for trauma scene)
+- [x] Reuse location models and scene layouts for consistency across chapters/books
+- [x] Auto-recommend filters and FX based on prior book rendering
+- [x] Tag series-specific visual themes (e.g., "gold light = safety")
+- [x] Enable multibook project dashboard to track consistency
+- [x] Visual arc timeline for each character (first appearance to final scene)
+- [x] Adapt framing techniques based on memory weight (e.g., past = faded, current = vivid)
+- [x] Cross-reference visual scene files with narration or audio timeline
+- [x] Alert creators to inconsistencies in character hairstyle, outfit, or body type
+- [x] Recommend background reuse based on memory location detection
+- [x] Provide character memory "lock" toggle to prevent style drift
+- [x] Highlight visual callbacks to past books/scenes in creator view
+- [x] Allow AI assistant to generate recap montage from memory visuals
+- [x] Integrate memory graphs into multiverse and branch visualizers
+- [x] Detect and annotate recurring visual cues across book entries
+- [x] Support visual memory handoff to other creator accounts or teams
+
 
 ### Phase 5 – Multiverse Branching, Alternate Paths & Visual Timeline Control
-- [ ] Implement scene forking with timeline tag (A, B, Prime, etc.)
-- [ ] Store alternate visual outcomes for the same chapter/scene
+- [x] Implement scene forking with timeline tag (A, B, Prime, etc.)
+- [x] Store alternate visual outcomes for the same chapter/scene
 - [ ] Display visual multiverse map with branches and connections
 - [ ] Allow creators to preview all timeline outcomes in side-by-side mode
 - [ ] Enable auto-generation of visual variations for key choice points

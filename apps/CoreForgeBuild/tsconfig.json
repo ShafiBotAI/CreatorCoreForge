@@ -9,7 +9,18 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "allowImportingTsExtensions": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "typeRoots": [
+      "./@types",
+      "./node_modules/@types"
+    ]
   },
-  "include": ["components/**/*.tsx", "services/**/*.ts", "hooks/**/*.ts", "models/**/*.ts", "views/**/*.tsx", "test/**/*.ts"]
+  "include": [
+    "components/**/*.tsx",
+    "services/**/*.ts",
+    "hooks/**/*.ts",
+    "models/**/*.ts",
+    "views/**/*.tsx",
+    "test/**/*.ts"
+  ]
 }

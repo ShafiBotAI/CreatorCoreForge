@@ -1,4 +1,0 @@
-# Auto-generated for AI vocal production
-def ai_vocal_production():
-    """AI vocal production"""
-    pass

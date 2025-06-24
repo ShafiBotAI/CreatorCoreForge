@@ -1,26 +1,6 @@
 {
   "open_tasks": [
     {
-      "task": "Implement any modules or files reported as missing.",
-      "source_file": "CODEX-TODO-FULL-APP-READINESS-CHECKLIST.md"
-    },
-    {
-      "task": "Replace all placeholder or TODO code with production-ready logic.",
-      "source_file": "CODEX-TODO-FULL-APP-READINESS-CHECKLIST.md"
-    },
-    {
-      "task": "Add test suites for new and existing modules.",
-      "source_file": "CODEX-TODO-FULL-APP-READINESS-CHECKLIST.md"
-    },
-    {
-      "task": "Ensure `scripts/run_all_tests.sh` passes without errors.",
-      "source_file": "CODEX-TODO-FULL-APP-READINESS-CHECKLIST.md"
-    },
-    {
-      "task": "Confirm build scripts generate output for iOS, Android, macOS, Windows, and Web.",
-      "source_file": "CODEX-TODO-FULL-APP-READINESS-CHECKLIST.md"
-    },
-    {
       "task": "Verify all assets and configuration files are in place for production.",
       "source_file": "CODEX-TODO-FULL-APP-READINESS-CHECKLIST.md"
     },
@@ -74,86 +54,6 @@
     },
     {
       "task": "Assign age, gender, personality traits",
-      "source_file": "FEATURES-CODEX-COMPLETE.md"
-    },
-    {
-      "task": "Support facial expression presets (happy, angry, neutral)",
-      "source_file": "FEATURES-CODEX-COMPLETE.md"
-    },
-    {
-      "task": "Auto-suggest avatars by genre",
-      "source_file": "FEATURES-CODEX-COMPLETE.md"
-    },
-    {
-      "task": "`SceneBuilder.build(scene: Scene): RenderConfig`",
-      "source_file": "FEATURES-CODEX-COMPLETE.md"
-    },
-    {
-      "task": "Match character(s), setting, props",
-      "source_file": "FEATURES-CODEX-COMPLETE.md"
-    },
-    {
-      "task": "Annotate shot list (close-up, wide, over-shoulder)",
-      "source_file": "FEATURES-CODEX-COMPLETE.md"
-    },
-    {
-      "task": "Inject emotion or FX tags into each shot",
-      "source_file": "FEATURES-CODEX-COMPLETE.md"
-    },
-    {
-      "task": "Generate video from prompt + voice + ambient FX",
-      "source_file": "FEATURES-CODEX-COMPLETE.md"
-    },
-    {
-      "task": "Integrate with external or local video model",
-      "source_file": "FEATURES-CODEX-COMPLETE.md"
-    },
-    {
-      "task": "Allow rendering style: anime, fantasy, live-action, etc.",
-      "source_file": "FEATURES-CODEX-COMPLETE.md"
-    },
-    {
-      "task": "Add scene-level visual effects (fog, sparks, neon glow)",
-      "source_file": "FEATURES-CODEX-COMPLETE.md"
-    },
-    {
-      "task": "Overlay genre-specific filters",
-      "source_file": "FEATURES-CODEX-COMPLETE.md"
-    },
-    {
-      "task": "Allow real-time FX preview",
-      "source_file": "FEATURES-CODEX-COMPLETE.md"
-    },
-    {
-      "task": "Sync facial movement and scene cuts to speech timing",
-      "source_file": "FEATURES-CODEX-COMPLETE.md"
-    },
-    {
-      "task": "Support pre-recorded and generated voice tracks",
-      "source_file": "FEATURES-CODEX-COMPLETE.md"
-    },
-    {
-      "task": "Allow lip-sync toggle for faster rendering",
-      "source_file": "FEATURES-CODEX-COMPLETE.md"
-    },
-    {
-      "task": "Store character appearances across books",
-      "source_file": "FEATURES-CODEX-COMPLETE.md"
-    },
-    {
-      "task": "Preserve visual continuity in sequels",
-      "source_file": "FEATURES-CODEX-COMPLETE.md"
-    },
-    {
-      "task": "Handle outfit/age/mood consistency dynamically",
-      "source_file": "FEATURES-CODEX-COMPLETE.md"
-    },
-    {
-      "task": "Track changes to scenes (e.g., visual DNA fork)",
-      "source_file": "FEATURES-CODEX-COMPLETE.md"
-    },
-    {
-      "task": "Let creators “lock” scene visuals for canon",
       "source_file": "FEATURES-CODEX-COMPLETE.md"
     },
     {
