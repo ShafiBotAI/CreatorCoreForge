@@ -1,17 +1,14 @@
+// SoundEffectManager.swift
+// CoreForge Audio
+
+#if canImport(Combine)
 import Foundation
+import Combine
+#else
+import Foundation
+#endif
 #if canImport(AVFoundation)
 import AVFoundation
-#endif
-
-
-
-
-/// Manages ambient sound effects for immersive playback.
-public final class SoundEffectManager: ObservableObject {
-    /// Shared singleton instance.
-=======
-#if canImport(Combine)
-import Combine
 #endif
 
 /// Cross-platform manager for short sound effects and ambience.
