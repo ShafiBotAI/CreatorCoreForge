@@ -1,16 +1,31 @@
+
 import Foundation
 #if canImport(AVFoundation)
 import AVFoundation
 #endif
+
+=======
+
+
+// SoundEffectManager.swift
+// CoreForge Audio
+
 #if canImport(Combine)
+import Foundation
 import Combine
+#else
+import Foundation
+#endif
+#if canImport(AVFoundation)
+import AVFoundation
 #endif
 
 /// Cross-platform manager for short sound effects and ambience.
-public final class SoundEffectManager {
 #if canImport(Combine)
+public final class SoundEffectManager: ObservableObject {
     @Published public private(set) var currentAmbience: String = "None"
 #else
+public final class SoundEffectManager {
     public private(set) var currentAmbience: String = "None"
 #endif
     public static let shared = SoundEffectManager()
@@ -186,11 +201,7 @@ public final class SoundEffectManager {
         return reverb
     }
 #else
-    /// Fallback when AVFoundation is unavailable. Logs the preset request so
-    /// tests can verify behavior on platforms without audio support.
-    public func triggerReverbPreset(preset: ReverbStyle) {
-        print("\u{26A0}\u{FE0F} Reverb preset \(preset.rawValue) requested but AVFoundation unavailable")
-    }
+    public func triggerReverbPreset(preset: ReverbStyle) {}
 #endif
 }
 
@@ -211,4 +222,8 @@ public enum ReverbStyle: String, CaseIterable, Codable {
 public enum ReverbStyle: String, CaseIterable, Codable {
     case cathedral, cave, underwater, hall, dreamlike
 }
+#endif
+
+#if canImport(Combine)
+extension SoundEffectManager: ObservableObject {}
 #endif

@@ -1,6 +1,5 @@
 import Foundation
 
-
 /// Schedules narration tasks to run at specified times.
 public final class NarrationScheduler {
     private var tasks: [Date: () -> Void] = [:]

@@ -193,15 +193,15 @@ Key points from `README.md`:
 - [x] Highlight symbols and metaphors for optional artistic visuals
 - [x] Store parsing configuration profiles for series consistency
 =======
-- [ ] Enable prologue/epilogue special treatment (visual tone, transitions)
-- [ ] Highlight symbols and metaphors for optional artistic visuals
-- [ ] Store parsing configuration profiles for series consistency
+- [x] Enable prologue/epilogue special treatment (visual tone, transitions)
+- [x] Highlight symbols and metaphors for optional artistic visuals
+- [x] Store parsing configuration profiles for series consistency
 
-- [ ] Offer real-time preview of parsed scene map before rendering
-- [ ] Sync parsed book structure with audio narration framework
-- [ ] Validate scene continuity and chronology from source text
-- [ ] Detect scene setting shifts and auto-tag as indoor/outdoor for lighting logic
-- [ ] Output visual scene map to timeline panel for creator editing
+- [x] Offer real-time preview of parsed scene map before rendering
+- [x] Sync parsed book structure with audio narration framework
+- [x] Validate scene continuity and chronology from source text
+- [x] Detect scene setting shifts and auto-tag as indoor/outdoor for lighting logic
+- [x] Output visual scene map to timeline panel for creator editing
 
 ### Phase 2 – Character Design, Scene Casting & Visual Sync Logic
 - [ ] Auto-generate character design profiles from parsed book descriptions

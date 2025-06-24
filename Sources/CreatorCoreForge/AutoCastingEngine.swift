@@ -8,6 +8,7 @@ public final class AutoCastingEngine {
     public func suggestVoice(for genre: String, tone: String) -> VoiceProfile {
         let name = "\(genre.capitalized) \(tone.capitalized)"
         return VoiceProfile(name: name, emotion: tone.lowercased())
+
     }
 
     /// Suggest a default voice based solely on genre.
@@ -16,5 +17,6 @@ public final class AutoCastingEngine {
             return VoiceProfile(name: "Spooky", emotion: "tense")
         }
         return VoiceProfile(name: "Narrator", emotion: "neutral")
+
     }
 }
