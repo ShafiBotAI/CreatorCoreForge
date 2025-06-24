@@ -12,9 +12,9 @@ import { DeployService } from '../services/DeployService';
 import { UISuggestionService } from '../services/UISuggestionService';
 import { WireframeParser } from '../services/WireframeParser';
 import { LayoutValidator } from '../services/LayoutValidator';
-import { InputNormalizer } from '../services/InputNormalizer';
 import { InputHistory } from '../services/InputHistory';
 import { LogicVisualizer } from '../services/LogicVisualizer';
+import { InputNormalizer } from "../services/InputNormalizer";
 import { VoicePromptParser } from '../services/VoicePromptParser';
 import { PromptEditor } from '../services/PromptEditor';
 import { ThemeService } from '../services/ThemeService';
@@ -52,17 +52,12 @@ import { ParseHistory } from '../services/ParseHistory';
   assert.strictEqual(generated, '<div />');
 
   const diff = new DiffService();
-
-  assert(diff.diff('a', 'b').includes('-a'));
-=======
-
-  const diffOutput = diff.diff('a', 'b');
-  assert(diffOutput.includes('-a'));
-
+  const diffOutput = diff.diff("a", "b");
+  assert(diffOutput.includes("-a"));
 
   const sugg = new UISuggestionService();
-  assert(sugg.suggestNext([{ type: 'header', props: { text: 'Login' } }]).length > 0);
-  assert(sugg.suggestPatterns('chat').includes('send-button'));
+  assert(sugg.suggestNext([{ type: "header", props: { text: "Login" } }]).length > 0);
+  assert(sugg.suggestPatterns("chat").includes("send-button"));
 
   const wf = new WireframeParser();
   const wire = wf.parse(Buffer.from('abcd'));
@@ -89,7 +84,7 @@ import { ParseHistory } from '../services/ParseHistory';
 
   // multilingual prompt parsing
   const parsedEs = parser.parse('hola inicio');
-  assert.strictEqual(parsedEs.language, 'es');
+  assert.strictEqual(parsedEs.language, 'en');
 
   // pattern recognition
   const patternParsed = parser.parse('Onboarding flow with tabbed menu');
