@@ -43,13 +43,9 @@ You can also turn a dialogue script into audio using `../../scripts/chatterbox_b
 ## Building (iOS)
 1. Open `CoreForgeAudio.xcodeproj` in Xcode.
 2. If the **CoreForgeAudio** scheme is missing, create a new scheme that targets
-   the `CoreForgeAudio` application target and mark it as shared ("Manage
-
-   Schemes" → **Shared**). This ensures `xcodebuild` can detect the scheme when
-=======
-   Schemes" -> **Shared**). This ensures `xcodebuild` can detect the scheme when
-
-   building from the command line.
+   the `CoreForgeAudio` application target and mark it as shared ("Manage Schemes"
+   → **Shared**). This ensures `xcodebuild` can detect the scheme when building
+   from the command line.
 3. Select the **CoreForgeAudio** scheme and build or run.
 
 ## Environment Configuration
