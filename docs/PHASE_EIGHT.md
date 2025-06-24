@@ -154,6 +154,21 @@ Only a subset of those features are shown below for brevity.
 - [x] VideoEffectsPipeline
 - [ ] Adaptive scene completion
 
+- [x] AR/VR playback
+- [x] Quantum reality switcher
+- [x] TimelineEditor
+- [x] ColorGradingEngine
+- [x] BranchingPathsUI
+- [x] FaceTrackerService
+- [x] CrowdSimulator
+- [x] Export360VR
+- [x] CameraStabilizer
+- [x] WatermarkService
+- [x] SubtitleGenerator
+- [x] RenderAnalyticsDashboard
+- [ ] FrameInterpolationService
+=======
+
 - [ ] AR/VR playback
 - [ ] Quantum reality switcher
 - [ ] TimelineEditor
@@ -167,6 +182,7 @@ Only a subset of those features are shown below for brevity.
 - [ ] SubtitleGenerator
 - [ ] RenderAnalyticsDashboard
 - [ ] UniversalVideoGenerator
+
 
 ### CoreForgeWriter
 - [ ] UnifiedAudioEngine

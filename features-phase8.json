@@ -275,7 +275,10 @@
       "SubtitleGenerator",
       "RenderAnalyticsDashboard",
 
-      "VideoEffectsPipeline",
+
+      "FrameInterpolationService",
+      "AudioEffectsPipeline"
+=======
       "UniversalVideoGenerator"
 =======
       "4KVideoExport",
@@ -462,6 +465,7 @@
       "IntegratedVisualWorkflow198",
       "ProVisualPipeline199",
       "AdaptiveVisualEngine200"
+
 
     ],
     "CoreForgeWriter": [
