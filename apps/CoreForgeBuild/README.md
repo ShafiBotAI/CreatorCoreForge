@@ -18,6 +18,10 @@ This agent is responsible for building, validating, and maintaining all features
 - [x] App templates: browse/import/export, community marketplace
 - [x] Full cross-platform export: .ipa, .apk, .exe, .dmg, web bundle
 - [x] App store asset generator (icons, screenshots, launch screens)
+- [x] Live preview renderer with device simulator
+- [x] Real-time logs panel and state visualizer
+- [x] Code coverage and accessibility checker
+- [x] Multi-platform build engine with deploy history
   Use `scripts/generate_placeholder_icons.py` to create required icon sizes.
 - Run `../../scripts/fetch_plugins.sh` to download sample plugins before building.
  - [x] Subscription, in-app credits, affiliate/white label options

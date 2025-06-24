@@ -18,8 +18,10 @@ export class CacheService<T extends CachedVideoClip = CachedVideoClip> {
 
   private evict(now: number) {
     while (this.cache.size > this.maxEntries) {
-      const oldest = this.cache.keys().next().value;
-      this.cache.delete(oldest);
+      const iter = this.cache.keys().next();
+      if (!iter.done) {
+        this.cache.delete(iter.value);
+      }
     }
     for (const [key, value] of this.cache) {
       if (now - value.ts > this.ttlMs) this.cache.delete(key);

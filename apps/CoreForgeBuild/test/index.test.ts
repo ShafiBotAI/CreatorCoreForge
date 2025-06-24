@@ -13,12 +13,21 @@ import assert from 'node:assert';
 const svc = new TemplateService();
 assert.strictEqual(svc.list().length, 2);
 
+
+// run BuildEngine smoke test
+import { BuildEngine } from '../services/BuildEngine';
+process.env.NODE_ENV = 'test';
+const engine = new BuildEngine('/tmp');
+assert.ok(engine.build('web').includes('dist'));
+
+=======
 const parser = new PromptParser();
 const result = parser.parse('# Login\n- Email\n- Password\nlogin -> dashboard -> settings');
 assert.strictEqual(result.language, 'en');
 assert.strictEqual(result.layout.length, 3);
 assert.strictEqual(result.flows.length, 1);
 assert.deepStrictEqual(result.flows[0], ['login', 'dashboard', 'settings']);
+
 
 const codegen = new CodeGenService();
 const reactCode = codegen.generate(result.layout, 'react');
