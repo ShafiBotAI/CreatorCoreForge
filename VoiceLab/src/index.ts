@@ -36,5 +36,6 @@ export { UnifiedAudioEngine } from './UnifiedAudioEngine';
 export { UnifiedVideoEngine } from './UnifiedVideoEngine';
 export { AdaptiveLearningEngine } from './AdaptiveLearningEngine';
 export * as OpenAIService from './openaiService';
+export * from './voiceEffects';
 
 export { runN8nAssistant, AssistantOptions } from './n8nAssistant';
