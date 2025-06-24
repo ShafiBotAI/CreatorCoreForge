@@ -58,7 +58,7 @@ platform :ios do
 
   desc "Build and upload all iOS apps"
   lane :build_all do
-    Dir["../apps/**/*.xcodeproj"].each do |project|
+    Dir["../apps/CoreForge*/CoreForge*.xcodeproj"].each do |project|
       next if project.include?("openai-swift")
       scheme = File.basename(project, ".xcodeproj")
       sh("bundle exec fastlane build_and_upload PROJECT_PATH=#{project} SCHEME=#{scheme}")
