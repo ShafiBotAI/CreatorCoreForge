@@ -25,4 +25,10 @@ final class VideoEffectsPipelineTests: XCTestCase {
         let clip = pipeline.composeVideo(frames: ["f1"], audio: "track")
         XCTAssertEqual(clip.frames.first, "f1|audio:track")
     }
+
+    func testInterpolateFrames() {
+        let pipeline = VideoEffectsPipeline()
+        let result = pipeline.interpolateFrames(["a", "b"])
+        XCTAssertEqual(result, ["a", "a_b_interp", "b"])
+    }
 }

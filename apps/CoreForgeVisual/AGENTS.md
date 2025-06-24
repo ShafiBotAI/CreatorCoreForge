@@ -178,11 +178,11 @@ Key points from `README.md`:
 - [x] Auto-detect chapter breaks and scene transitions using AI
 - [x] Identify and extract key visual descriptions from text
 - [x] Tag scene tone (light, dark, romantic, violent) via sentiment analysis
-- [ ] Detect and tag characters per scene using NLP entity recognition
-- [ ] Match locations to genre-based visual templates (castle, school, space station)
-- [ ] Generate initial visual storyboard layout from parsed scenes
-- [ ] Support drag-and-drop book input with automatic format recognition
-- [ ] Allow manual refinement of scene breaks via visual editor
+- [x] Detect and tag characters per scene using NLP entity recognition
+- [x] Match locations to genre-based visual templates (castle, school, space station)
+- [x] Generate initial visual storyboard layout from parsed scenes
+- [x] Support drag-and-drop book input with automatic format recognition
+- [x] Allow manual refinement of scene breaks via visual editor
 - [ ] Store original book structure for syncing narration with visuals
 - [ ] Flag high-action and dialogue-heavy scenes for rendering priority
 - [ ] Normalize text encoding for rare language or stylized prose
