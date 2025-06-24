@@ -1,0 +1,8 @@
+{
+  "enhanced_files": [
+    "Sources/CreatorCoreForge/SegmentService.swift",
+    "Tests/CreatorCoreForgeTests/AudioVisualPhaseOneTests.swift",
+    "CODEX-TODO-ENHANCE-ALL-OPEN-TASKS.md",
+    "open_tasks_registry.json"
+  ]
+}
