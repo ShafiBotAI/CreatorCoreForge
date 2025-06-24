@@ -19,4 +19,4 @@ SCHEME=CoreForgeWriter bundle exec fastlane build_and_upload
 bundle exec fastlane build_all
 ```
 
-`build_all` iterates over each directory in `../apps` (excluding `AGENTS.md` and `README.md`) and runs `build_and_upload` with the matching scheme name.
+`build_all` searches for every `.xcodeproj` under `../apps` and runs `build_and_upload` with the matching scheme. Projects under `openai-swift` are skipped.
