@@ -5,6 +5,8 @@
 - Marked initial CoreForge Audio checklist items as complete and added tests.
 - Added `SceneDetector` module for basic scene analysis.
 - Optimized `SegmentService` with chunked async processing and LRU caching.
+- Completed the first twenty CoreForge Build tasks with `AdvancedBuildService`
+  and updated README and AGENTS checklists.
 - Added layout instruction parsing to `MarkdownLayoutParser` and updated Build AGENTS checklist.
 - Implemented `TTSRenderer` and Vue-based `ChapterEditor`, closing related open tasks.
 - Ran `scripts/full_app_scan.py` and updated readiness checklist. Verified test suites via `run_all_tests.sh`.
