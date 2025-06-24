@@ -37,6 +37,15 @@ This agent is responsible for building, validating, and maintaining all features
 - [ ] Marketplace for templates, blocks, plugins, agents
 - [ ] Team/project dashboard, versioning, asset library
 
+### App Cloner & Enhancement Tool
+- Use `clone_and_enhance.py` to duplicate an existing GitHub repository.
+- The script prints **25** recommended next-gen features from `features-phase8.json`.
+- Integrate these suggestions to rapidly upgrade the cloned project.
+
+```bash
+python3 clone_and_enhance.py https://github.com/example/myapp cloned_app
+```
+
 ---
 
 ## System Integration Requirements
@@ -83,6 +92,33 @@ replace common "Not implemented" placeholders, recommend refactors through
 - [ ] Enterprise/white label controls, usage analytics
 - [ ] Drag-and-drop macro builder, instant preview generator
 - [ ] Viral/gamified app launch, affiliate rewards, fan feedback
+
+### Sample Next-Gen Features Automatically Suggested
+- UnifiedAudioEngine
+- UnifiedVideoEngine
+- AdaptiveLearningEngine
+- Figma-driven UI builder
+- Auto bundler for all platforms
+- Debugging assistant
+- VideoEffectsPipeline
+- AudioEffectsPipeline
+- HighQualityVoiceLibrary
+- GlobalLanguageSupport
+- OfflineMP3Downloader
+- TenTimesPlaybackSpeed
+- AdvancedSkipImport
+- AISummaryChatService
+- DocVideoScanner
+- BookScanAnalyzer
+- VirtualBuildAnalyzer017
+- IntegratedBuildWorkflow018
+- ProBuildPipeline019
+- AdaptiveBuildEngine020
+- AdvancedBuildModule021
+- QuantumBuildManager022
+- SmartBuildService023
+- DynamicBuildToolkit024
+- AutomatedBuildSystem025
 
 ---
 

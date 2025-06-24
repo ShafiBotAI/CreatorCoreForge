@@ -14,6 +14,7 @@ Purpose: AI-driven app builder with automated code generation and packaging
 - [x] Monetization logic builder (subscriptions, IAPs) (Codex)
 - [x] Virality engine with upload integration (Codex)
  - [x] Auto bundler for iOS, Android, PC, VR (Codex)
+- [x] **App cloning utility** with automatic feature suggestions
 
 ### Global Missing Items
 - [x] Integrate shared `autoUpdater.swift`
