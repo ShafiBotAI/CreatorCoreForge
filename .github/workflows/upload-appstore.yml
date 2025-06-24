@@ -7,7 +7,6 @@ jobs:
   build-and-upload:
     runs-on: macos-latest
 
-=======
     strategy:
       matrix:
         app:
