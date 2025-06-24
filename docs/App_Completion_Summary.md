@@ -4,9 +4,9 @@ This document lists each app and its completion percentage based on task checkli
 
 | App | Completion |
 |-----|------------|
-| CoreForgeAudio | 76.8% |
+| CoreForgeAudio | 88.1% |
 | CoreForgeBloom | 83.3% |
-| CoreForgeBuild | 32.8% |
+| CoreForgeBuild | 42.6% |
 | CoreForgeDNA | 100.0% |
 | CoreForgeLeads | 86.5% |
 | CoreForgeLearn | 100.0% |
@@ -15,8 +15,8 @@ This document lists each app and its completion percentage based on task checkli
 | CoreForgeMusic | 96.7% |
 | CoreForgeQuest | 83.3% |
 | CoreForgeStudio | 54.3% |
-| CoreForgeVisual | 32.1% |
+| CoreForgeVisual | 46.6% |
 | CoreForgeVoiceLab | 83.3% |
 | CoreForgeWriter | 53.4% |
 
-**Apps above 80% completion:** CoreForgeBloom, CoreForgeDNA, CoreForgeLeads, CoreForgeLearn, CoreForgeMind, CoreForgeMusic, CoreForgeQuest, CoreForgeVoiceLab
+**Apps above 80% completion:** CoreForgeAudio, CoreForgeBloom, CoreForgeDNA, CoreForgeLeads, CoreForgeLearn, CoreForgeMind, CoreForgeMusic, CoreForgeQuest, CoreForgeVoiceLab
