@@ -213,9 +213,15 @@ This file is a full checklist of every feature required for code completion and 
 - [x] SemanticSegmenter
 - [x] SceneIndexGenerator
 - [x] LongFormPacingEngine
+
 - [x] FullBookRender
 - [x] AudiobookStoreExporter
 - [x] PublishingReportGenerator
+=======
+- [ ] FullBookRender
+- [ ] AudiobookStoreExporter
+- [ ] PublishingReportGenerator
+
 - [x] SeriesManager
  - [x] BookImporter
  - [x] ChapterDetector

@@ -4,16 +4,6 @@
     "total": 30,
     "percent_complete": 96.7
   },
-  "CoreForgeMind": {
-    "done": 5,
-    "total": 6,
-    "percent_complete": 83.3
-  },
-  "CoreForgeStudio": {
-    "done": 38,
-    "total": 70,
-    "percent_complete": 54.3
-  },
   "CoreForgeVisual": {
     "done": 94,
     "total": 293,
@@ -24,10 +14,25 @@
     "total": 6,
     "percent_complete": 100.0
   },
+  "CoreForgeAudio": {
+    "done": 347,
+    "total": 452,
+    "percent_complete": 76.8
+  },
+  "CoreForgeLeads": {
+    "done": 32,
+    "total": 37,
+    "percent_complete": 86.5
+  },
   "CoreForgeDNA": {
     "done": 6,
     "total": 6,
     "percent_complete": 100.0
+  },
+  "CoreForgeMind": {
+    "done": 5,
+    "total": 6,
+    "percent_complete": 83.3
   },
   "CoreForgeWriter": {
     "done": 39,
@@ -39,10 +44,10 @@
     "total": 6,
     "percent_complete": 83.3
   },
-  "CoreForgeLeads": {
-    "done": 32,
-    "total": 37,
-    "percent_complete": 86.5
+  "CoreForgeStudio": {
+    "done": 38,
+    "total": 70,
+    "percent_complete": 54.3
   },
   "CoreForgeBuild": {
     "done": 77,
@@ -54,19 +59,14 @@
     "total": 6,
     "percent_complete": 83.3
   },
-  "CoreForgeMarket": {
-    "done": 32,
-    "total": 57,
-    "percent_complete": 56.1
-  },
-  "CoreForgeAudio": {
-    "done": 339,
-    "total": 452,
-    "percent_complete": 75.0
-  },
   "CoreForgeVoiceLab": {
     "done": 5,
     "total": 6,
     "percent_complete": 83.3
+  },
+  "CoreForgeMarket": {
+    "done": 32,
+    "total": 57,
+    "percent_complete": 56.1
   }
 }
