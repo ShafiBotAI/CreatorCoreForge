@@ -268,9 +268,15 @@ This file is a full checklist of every feature required for code completion and 
 - [x] StutterLaughGenerator
 - [x] InlineWhisperSupport
 - [x] MidSentenceToneSwitching
+
+- [ ] SceneVolumeDynamics
+- [ ] SpatialPositioning
+- [ ] RoomSimulation
+=======
 - [x] SceneVolumeDynamics
 - [x] SpatialPositioning
 - [x] RoomSimulation
+
 - [ ] AmbientLayerFX
 - [ ] CrossSceneFXLinking
 - [ ] SceneDensityTuner
