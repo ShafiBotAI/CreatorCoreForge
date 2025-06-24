@@ -21,7 +21,7 @@
 - FullBookRender
 - AudiobookStoreExporter
 - PublishingReportGenerator
-- SeriesManager
+- SeriesManager ✅
 - InlineEmotionEngine
 - AmbientMixer
 - PlaybackAnalytics
