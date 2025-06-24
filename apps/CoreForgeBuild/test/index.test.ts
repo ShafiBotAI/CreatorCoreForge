@@ -62,6 +62,7 @@ import { ParseHistory } from '../services/ParseHistory';
   assert(bridge.getCode().includes('<h1>'));
 
 
+
   const sugg = new UISuggestionService();
   assert(sugg.suggestNext([{ type: "header", props: { text: "Login" } }]).length > 0);
   assert(sugg.suggestPatterns("chat").includes("send-button"));
