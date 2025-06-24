@@ -263,11 +263,11 @@ This file is a full checklist of every feature required for code completion and 
 - [x] VoiceReactivity
 - [x] CharacterVoiceAging
 - [x] AccentGenerator
-- [ ] CadenceModulation
-- [ ] InterruptSimulation
-- [ ] StutterLaughGenerator
-- [ ] InlineWhisperSupport
-- [ ] MidSentenceToneSwitching
+- [x] CadenceModulation
+- [x] InterruptSimulation
+- [x] StutterLaughGenerator
+- [x] InlineWhisperSupport
+- [x] MidSentenceToneSwitching
 - [ ] SceneVolumeDynamics
 - [ ] SpatialPositioning
 - [ ] RoomSimulation
