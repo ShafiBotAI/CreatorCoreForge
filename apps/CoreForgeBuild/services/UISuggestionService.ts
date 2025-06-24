@@ -22,4 +22,23 @@ export class UISuggestionService {
     }
     return ['paragraph'];
   }
+
+  /**
+   * Suggest common UI building blocks based on the overall
+   * application type. This helps creators scaffold layouts
+   * before dropping specific components.
+   */
+  suggestPatterns(appType: string): string[] {
+    const type = appType.toLowerCase();
+    if (type.includes('chat')) {
+      return ['message-list', 'input-box', 'send-button'];
+    }
+    if (type.includes('dashboard')) {
+      return ['sidebar', 'stats-grid', 'chart'];
+    }
+    if (type.includes('calculator')) {
+      return ['display', 'button-grid'];
+    }
+    return ['header', 'content', 'footer'];
+  }
 }

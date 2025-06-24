@@ -43,6 +43,12 @@ This file is a full checklist of every feature required for code completion and 
 - [x] Drag-and-drop builder for scenes, chapters, voice mapping, and SFX
 - [x] Scene and voice tagging UI, live emotion indicators
 
+- [x] Group "Live Read" rooms with chat, co-narration, and moderator controls
+- [x] Voice glossary/bookmark UI for in-app notes
+- [x] Scene tagging and visual timeline editor
+- [x] User profile dashboard with achievements, history, and sharing
+
+
 
 ---
 
@@ -109,6 +115,8 @@ This file is a full checklist of every feature required for code completion and 
 - [x] Accessibility output to Braille printer, voice commands
 - [x] Apple Watch/mini controller sync for playback
 - [x] In-book voice/tone polls (live user voting)
+
+=======
 
 - [x] Heart-rate integration for adaptive emotion (wearables)
  - [x] Unlockable voice skins, accents, FX presets
@@ -250,11 +258,11 @@ This file is a full checklist of every feature required for code completion and 
 - [x] CreatorPanel
  - [x] VoicePersonalityProfiles
  - [x] DynamicEmotionRamping
-- [ ] MultivoiceCharacterMode
-- [ ] CharacterTics
-- [ ] VoiceReactivity
-- [ ] CharacterVoiceAging
-- [ ] AccentGenerator
+- [x] MultivoiceCharacterMode
+- [x] CharacterTics
+- [x] VoiceReactivity
+- [x] CharacterVoiceAging
+- [x] AccentGenerator
 - [ ] CadenceModulation
 - [ ] InterruptSimulation
 - [ ] StutterLaughGenerator
@@ -564,3 +572,4 @@ Key points from `README.md`:
 - [ ] Visualize voice dominance per chapter using waveform or tone charts
 - [ ] Offer beta features: audio fingerprints for licensing, alternate casting previews
 - [ ] AI-based performance coach to recommend enhancements after preview
+

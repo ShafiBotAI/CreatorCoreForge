@@ -16,6 +16,10 @@ public final class FusionEngine {
 
     public let memory: ContextualMemory
     public let emotionGraph: EmotionGraph
+    public let voiceMemory: VoiceMemoryManager
+    public let sceneGenerator: SceneGenerator
+    public let studioMode: AIStudioMode
+    public let genesisEngine: GenesisModeEngine
     public var sandboxEnabled: Bool = false
     
     /// Initializes the engine using `AIEngineFactory` based on the given mode.
@@ -24,12 +28,22 @@ public final class FusionEngine {
                 emotionGraph: EmotionGraph = EmotionGraph(),
                 voiceMemory: VoiceMemoryManager = .shared,
                 sceneGenerator: SceneGenerator = SceneGenerator(),
+
+                studioMode: AIStudioMode = AIStudioMode(),
+                genesisEngine: GenesisModeEngine = GenesisModeEngine()) {
+=======
                 plugins: [FusionEnginePlugin] = []) {
+
         self.memory = memory
         self.emotionGraph = emotionGraph
         self.voiceMemory = voiceMemory
         self.sceneGenerator = sceneGenerator
+
+        self.studioMode = studioMode
+        self.genesisEngine = genesisEngine
+=======
         self.plugins = plugins
+
         self.parallelEngines = nil
         switch mode {
         case .local:
@@ -45,7 +59,12 @@ public final class FusionEngine {
                 emotionGraph: EmotionGraph = EmotionGraph(),
                 voiceMemory: VoiceMemoryManager = .shared,
                 sceneGenerator: SceneGenerator = SceneGenerator(),
+
+                studioMode: AIStudioMode = AIStudioMode(),
+                genesisEngine: GenesisModeEngine = GenesisModeEngine()) {
+=======
                 plugins: [FusionEnginePlugin] = []) {
+
         precondition(!parallelEngines.isEmpty, "parallelEngines must not be empty")
         self.engine = parallelEngines[0]
         self.parallelEngines = parallelEngines
@@ -53,6 +72,10 @@ public final class FusionEngine {
         self.emotionGraph = emotionGraph
         self.voiceMemory = voiceMemory
         self.sceneGenerator = sceneGenerator
+
+        self.studioMode = studioMode
+        self.genesisEngine = genesisEngine
+=======
         self.plugins = plugins
     }
 
@@ -137,7 +160,7 @@ public final class FusionEngine {
 
     /// Combines memory context and optional sandbox prefix before sending.
     public func sendPromptWithMemory(_ prompt: String, completion: @escaping (Result<String, Error>) -> Void) {
-        var finalPrompt = prompt
+        var finalPrompt = studioMode.apply(to: prompt)
         let context = memory.contextString()
         if !context.isEmpty {
             finalPrompt = context + "\n" + finalPrompt
@@ -213,16 +236,36 @@ public final class FusionEngine {
         emotionGraph.record(emotion: emotion, intensity: intensity)
     }
 
+    /// Generate scene outlines from text using the shared scene generator.
+    public func generateScenes(from text: String, maxScenes: Int = 3) -> [String] {
+        sceneGenerator.generateScenes(from: text, maxScenes: maxScenes)
+    }
+
+    /// Manage voice assignments across series via the voice memory manager.
+=======
     /// Assign a voice ID to a character in a series for cross-app reuse.
+
     public func assignVoice(_ voiceID: String, to character: String, in series: String) {
         voiceMemory.assign(voiceID: voiceID, to: character, in: series)
     }
 
+    /// Retrieve the assigned voice ID for a character in a series.
+=======
     /// Retrieve the assigned voice ID for a character if available.
+
     public func voiceID(for character: String, in series: String) -> String? {
         voiceMemory.voiceID(for: character, in: series)
     }
 
+    /// Toggle studio mode for applying the [Studio] prefix to prompts.
+    public func toggleStudioMode() {
+        studioMode.toggle()
+    }
+
+    /// Generate variant ideas using the genesis engine helper.
+    public func generateVariants(for idea: String, count: Int = 3) -> [String] {
+        genesisEngine.generateVariants(for: idea, count: count)
+=======
     /// Generate simple storyboard scenes from a text block.
     public func generateScenes(from text: String, limit: Int = 3) -> [String] {
         sceneGenerator.generateScenes(from: text, maxScenes: limit)
@@ -236,6 +279,7 @@ public final class FusionEngine {
     /// Removes all registered plugins.
     public func removeAllPlugins() {
         plugins.removeAll()
+
     }
 }
 
