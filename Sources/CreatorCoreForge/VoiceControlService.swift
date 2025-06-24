@@ -1,11 +1,21 @@
 import Foundation
 
-/// Placeholder voice control integration service.
+/// Basic voice control integration service.
+/// Consumers can route recognized voice commands to this service
+/// which then forwards callbacks to the application layer.
 public final class VoiceControlService {
+    public enum VoiceCommand: String {
+        case play, pause, stop, next, previous
+    }
+
+    /// Optional handler invoked when a command is received.
+    public var onCommand: ((VoiceCommand) -> Void)?
+
     public init() {}
 
-    /// Send a simple command to the voice controller.
-    public func sendCommand(_ command: String) {
-        print("Voice control command: \(command)")
+    /// Send a command to the voice controller.
+    /// The command is dispatched to the `onCommand` closure if set.
+    public func sendCommand(_ command: VoiceCommand) {
+        onCommand?(command)
     }
 }

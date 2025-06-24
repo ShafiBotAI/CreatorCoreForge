@@ -16,6 +16,10 @@ public final class FusionEngine {
 
     public let memory: ContextualMemory
     public let emotionGraph: EmotionGraph
+    public let voiceMemory: VoiceMemoryManager
+    public let sceneGenerator: SceneGenerator
+    public let studioMode: AIStudioMode
+    public let genesisEngine: GenesisModeEngine
     public var sandboxEnabled: Bool = false
     
     /// Initializes the engine using `AIEngineFactory` based on the given mode.
@@ -24,12 +28,22 @@ public final class FusionEngine {
                 emotionGraph: EmotionGraph = EmotionGraph(),
                 voiceMemory: VoiceMemoryManager = .shared,
                 sceneGenerator: SceneGenerator = SceneGenerator(),
+
+                studioMode: AIStudioMode = AIStudioMode(),
+                genesisEngine: GenesisModeEngine = GenesisModeEngine()) {
+=======
                 plugins: [FusionEnginePlugin] = []) {
+
         self.memory = memory
         self.emotionGraph = emotionGraph
         self.voiceMemory = voiceMemory
         self.sceneGenerator = sceneGenerator
+
+        self.studioMode = studioMode
+        self.genesisEngine = genesisEngine
+=======
         self.plugins = plugins
+
         self.parallelEngines = nil
         switch mode {
         case .local:
@@ -45,7 +59,12 @@ public final class FusionEngine {
                 emotionGraph: EmotionGraph = EmotionGraph(),
                 voiceMemory: VoiceMemoryManager = .shared,
                 sceneGenerator: SceneGenerator = SceneGenerator(),
+
+                studioMode: AIStudioMode = AIStudioMode(),
+                genesisEngine: GenesisModeEngine = GenesisModeEngine()) {
+=======
                 plugins: [FusionEnginePlugin] = []) {
+
         precondition(!parallelEngines.isEmpty, "parallelEngines must not be empty")
         self.engine = parallelEngines[0]
         self.parallelEngines = parallelEngines
@@ -53,6 +72,10 @@ public final class FusionEngine {
         self.emotionGraph = emotionGraph
         self.voiceMemory = voiceMemory
         self.sceneGenerator = sceneGenerator
+
+        self.studioMode = studioMode
+        self.genesisEngine = genesisEngine
+=======
         self.plugins = plugins
     }
 
@@ -95,9 +118,29 @@ public final class FusionEngine {
         }
     }
 
+    /// Async version of ``sendPrompt(_:)``.
+    @available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
+    public func sendPrompt(_ prompt: String) async throws -> String {
+        try await withCheckedThrowingContinuation { cont in
+            sendPrompt(prompt) { result in
+                cont.resume(with: result)
+            }
+        }
+    }
+
     /// Retrieves an embedding vector using the underlying engine.
     public func sendEmbedding(_ text: String, completion: @escaping (Result<[Double], Error>) -> Void) {
         engine.sendEmbeddingRequest(text: text, completion: completion)
+    }
+
+    /// Async version of ``sendEmbedding(_:)``.
+    @available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
+    public func sendEmbedding(_ text: String) async throws -> [Double] {
+        try await withCheckedThrowingContinuation { cont in
+            sendEmbedding(text) { result in
+                cont.resume(with: result)
+            }
+        }
     }
 
     /// Generate a short summary using the active engine.
@@ -105,9 +148,19 @@ public final class FusionEngine {
         engine.summarize(text, completion: completion)
     }
 
+    /// Async version of ``summarize(_:)``.
+    @available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
+    public func summarize(_ text: String) async throws -> String {
+        try await withCheckedThrowingContinuation { cont in
+            summarize(text) { result in
+                cont.resume(with: result)
+            }
+        }
+    }
+
     /// Combines memory context and optional sandbox prefix before sending.
     public func sendPromptWithMemory(_ prompt: String, completion: @escaping (Result<String, Error>) -> Void) {
-        var finalPrompt = prompt
+        var finalPrompt = studioMode.apply(to: prompt)
         let context = memory.contextString()
         if !context.isEmpty {
             finalPrompt = context + "\n" + finalPrompt
@@ -124,6 +177,16 @@ public final class FusionEngine {
                 completion(.success(output))
             case .failure:
                 completion(result)
+            }
+        }
+    }
+
+    /// Async version of ``sendPromptWithMemory(_:)``.
+    @available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
+    public func sendPromptWithMemory(_ prompt: String) async throws -> String {
+        try await withCheckedThrowingContinuation { cont in
+            sendPromptWithMemory(prompt) { result in
+                cont.resume(with: result)
             }
         }
     }
@@ -158,21 +221,51 @@ public final class FusionEngine {
         }
     }
 
+    /// Async version of ``sendPromptParallel(_:)``.
+    @available(macOS 10.15, iOS 13, tvOS 13, watchOS 6, *)
+    public func sendPromptParallel(_ prompt: String) async -> [String] {
+        await withCheckedContinuation { cont in
+            sendPromptParallel(prompt) { results in
+                cont.resume(returning: results)
+            }
+        }
+    }
+
     /// Record an emotion intensity in the shared emotion graph.
     public func recordEmotion(_ emotion: String, intensity: Double) {
         emotionGraph.record(emotion: emotion, intensity: intensity)
     }
 
+    /// Generate scene outlines from text using the shared scene generator.
+    public func generateScenes(from text: String, maxScenes: Int = 3) -> [String] {
+        sceneGenerator.generateScenes(from: text, maxScenes: maxScenes)
+    }
+
+    /// Manage voice assignments across series via the voice memory manager.
+=======
     /// Assign a voice ID to a character in a series for cross-app reuse.
+
     public func assignVoice(_ voiceID: String, to character: String, in series: String) {
         voiceMemory.assign(voiceID: voiceID, to: character, in: series)
     }
 
+    /// Retrieve the assigned voice ID for a character in a series.
+=======
     /// Retrieve the assigned voice ID for a character if available.
+
     public func voiceID(for character: String, in series: String) -> String? {
         voiceMemory.voiceID(for: character, in: series)
     }
 
+    /// Toggle studio mode for applying the [Studio] prefix to prompts.
+    public func toggleStudioMode() {
+        studioMode.toggle()
+    }
+
+    /// Generate variant ideas using the genesis engine helper.
+    public func generateVariants(for idea: String, count: Int = 3) -> [String] {
+        genesisEngine.generateVariants(for: idea, count: count)
+=======
     /// Generate simple storyboard scenes from a text block.
     public func generateScenes(from text: String, limit: Int = 3) -> [String] {
         sceneGenerator.generateScenes(from: text, maxScenes: limit)
@@ -186,6 +279,7 @@ public final class FusionEngine {
     /// Removes all registered plugins.
     public func removeAllPlugins() {
         plugins.removeAll()
+
     }
 }
 

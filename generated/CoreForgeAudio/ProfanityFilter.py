@@ -1,0 +1,4 @@
+# Auto-generated for ProfanityFilter
+def profanityfilter():
+    """ProfanityFilter"""
+    pass

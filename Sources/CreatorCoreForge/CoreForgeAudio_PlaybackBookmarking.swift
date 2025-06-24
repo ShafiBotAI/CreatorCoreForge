@@ -1,11 +1,27 @@
 import Foundation
 
 /// Manages chapter-based audio playback with simple bookmarking support.
-public struct Chapter {
+public struct Chapter: Codable {
+    /// Title of the chapter if known.
     public let title: String
-    public let audioURL: String
-    public init(title: String, audioURL: String) {
+    /// Raw text contents for narration or analysis.
+    public let text: String
+    /// Order within the book. Defaults to zero when unspecified.
+    public let order: Int
+    /// Optional additional metadata for the chapter.
+    public var metadata: [String: String]?
+    /// Optional URL to pre-rendered audio for playback.
+    public var audioURL: String?
+
+    public init(title: String,
+                text: String,
+                order: Int = 0,
+                metadata: [String: String]? = nil,
+                audioURL: String? = nil) {
         self.title = title
+        self.text = text
+        self.order = order
+        self.metadata = metadata
         self.audioURL = audioURL
     }
 }
@@ -16,6 +32,8 @@ public final class PlaybackManager {
     private var currentIndex = 0
     private var bookmarkIndex: Int?
     private var isPlaying = false
+    /// Playback speed multiplier. Range: 0.5x - 10x. Defaults to 1x.
+    private var playbackSpeed: Double = 1.0
 
     public init() {}
 
@@ -35,7 +53,11 @@ public final class PlaybackManager {
         }
         isPlaying = true
         let chapter = chapters[currentIndex]
-        print("▶️ Playing Chapter \(currentIndex + 1): \(chapter.title) at \(chapter.audioURL)")
+        if let url = chapter.audioURL {
+            print("▶️ Playing Chapter \(currentIndex + 1) at speed \(playbackSpeed)x: \(chapter.title) at \(url)")
+        } else {
+            print("▶️ Playing Chapter \(currentIndex + 1) at speed \(playbackSpeed)x: \(chapter.title)")
+        }
         return true
     }
 
@@ -89,6 +111,12 @@ public final class PlaybackManager {
         currentIndex = idx
         bookmarkIndex = nil
         return playCurrentChapter()
+    }
+
+    /// Sets the playback speed, clamping between 0.5x and 10x.
+    public func setPlaybackSpeed(_ speed: Double) {
+        playbackSpeed = min(max(speed, 0.5), 10.0)
+        print("⏩ Playback speed set to \(playbackSpeed)x")
     }
 }
 

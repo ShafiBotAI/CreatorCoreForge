@@ -1,0 +1,4 @@
+# Auto-generated for AudioSearchIndex
+def audiosearchindex():
+    """AudioSearchIndex"""
+    pass

@@ -8,6 +8,7 @@ public final class MultilingualEngine {
         case french  = "fr"
         case german  = "de"
         case italian = "it"
+        case chinese = "zh"
         case unknown = "unknown"
     }
 
@@ -28,6 +29,9 @@ public final class MultilingualEngine {
         if lower.contains("ciao") || text.range(of: "[àèìòù]", options: .regularExpression) != nil {
             return .italian
         }
+        if text.unicodeScalars.contains(where: { $0.value >= 0x4E00 && $0.value <= 0x9FFF }) {
+            return .chinese
+        }
         if text.range(of: "[a-zA-Z]", options: .regularExpression) != nil {
             return .english
         }
@@ -42,6 +46,7 @@ public final class MultilingualEngine {
         case .french:  return "LocalVoiceAI-Fr"
         case .german:  return "LocalVoiceAI-De"
         case .italian: return "LocalVoiceAI-It"
+        case .chinese: return "LocalVoiceAI-Zh"
         case .unknown: return "LocalVoiceAI-Default"
         }
     }

@@ -10,5 +10,20 @@
     <string>1</string>
     <key>CFBundleShortVersionString</key>
     <string>1.0</string>
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>Saves exported manuscripts to your library.</string>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>api.openai.com</key>
+            <dict>
+                <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                <false/>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+            </dict>
+        </dict>
+    </dict>
 </dict>
 </plist>

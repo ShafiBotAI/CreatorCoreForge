@@ -11,5 +11,11 @@
     <string>1</string>
     <key>CFBundleShortVersionString</key>
     <string>1.0</string>
+    <key>NSCameraUsageDescription</key>
+    <string>Allows recording video content for scenes.</string>
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>Saves generated videos to your library.</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Enables narration capture for your projects.</string>
 </dict>
 </plist>

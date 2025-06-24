@@ -1,0 +1,4 @@
+# Auto-generated for BookScanAnalyzer
+def bookscananalyzer():
+    """BookScanAnalyzer"""
+    pass
