@@ -192,11 +192,6 @@ Key points from `README.md`:
 - [x] Enable prologue/epilogue special treatment (visual tone, transitions)
 - [x] Highlight symbols and metaphors for optional artistic visuals
 - [x] Store parsing configuration profiles for series consistency
-=======
-- [x] Enable prologue/epilogue special treatment (visual tone, transitions)
-- [x] Highlight symbols and metaphors for optional artistic visuals
-- [x] Store parsing configuration profiles for series consistency
-
 - [x] Offer real-time preview of parsed scene map before rendering
 - [x] Sync parsed book structure with audio narration framework
 - [x] Validate scene continuity and chronology from source text
@@ -252,46 +247,6 @@ Key points from `README.md`:
 - [x] Track render time estimates and optimize batch processing queue
 - [x] Tag visual rhythm speed (slow visual poetry vs fast action montage)
 
-### Phase 4 – Memory Engine, Continuity, and Multibook Visual Sync
-- [x] Persist character visuals across multiple books, including costume and evolution
-- [x] Maintain memory of key visual motifs and use them in flashbacks or callouts
-- [x] Store visual timeline of each character’s age, look, and setting impact
-- [x] Flag continuity errors in casting, color palette, or background reuse
-- [ ] Allow timeline shifting to accommodate prequels and sequels
-- [ ] Sync character visual memory with voice tone evolution
-- [ ] Store FX history (e.g., specific lightning type for trauma scene)
-- [ ] Reuse location models and scene layouts for consistency across chapters/books
-- [ ] Auto-recommend filters and FX based on prior book rendering
-- [ ] Tag series-specific visual themes (e.g., "gold light = safety")
-- [ ] Enable multibook project dashboard to track consistency
-- [ ] Visual arc timeline for each character (first appearance to final scene)
-- [ ] Adapt framing techniques based on memory weight (e.g., past = faded, current = vivid)
-- [ ] Cross-reference visual scene files with narration or audio timeline
-- [ ] Alert creators to inconsistencies in character hairstyle, outfit, or body type
-- [ ] Recommend background reuse based on memory location detection
-- [ ] Provide character memory "lock" toggle to prevent style drift
-- [ ] Highlight visual callbacks to past books/scenes in creator view
-- [ ] Allow AI assistant to generate recap montage from memory visuals
-- [ ] Integrate memory graphs into multiverse and branch visualizers
-- [ ] Detect and annotate recurring visual cues across book entries
-- [ ] Support visual memory handoff to other creator accounts or teams
-=======
-- [x] Enable cutaway logic for interior vs exterior visual blending
-- [x] Simulate mood via hue shifting and saturation overlays
-- [x] Support dynamic shadows and ambient occlusion for realism
-- [x] Trigger visual filters (noir, dream, sepia, neon) based on scene metadata
-- [x] Identify high-impact moments and render with frame-by-frame detail
-- [x] Support 16:9, vertical, and square rendering formats
-- [x] Enable "live panel" layout for comic/manga-style visual composition
-- [x] Add blur, shake, or light flash FX for dramatic or horror moments
-- [x] Sync scene tone to ambient background FX audio
-- [x] Store FX template libraries per genre for reuse
-- [x] Allow creator to preview FX before rendering full scenes
-- [x] Provide toggle between high-quality and quick-preview render settings
-- [x] Visualize FX layering structure for post-editing
-- [x] Integrate facial motion tracking for emotional match rendering
-- [x] Track render time estimates and optimize batch processing queue
-- [x] Tag visual rhythm speed (slow visual poetry vs fast action montage)
 
 -### Phase 4 – Memory Engine, Continuity, and Multibook Visual Sync
 - [x] Persist character visuals across multiple books, including costume and evolution
@@ -321,8 +276,8 @@ Key points from `README.md`:
 ### Phase 5 – Multiverse Branching, Alternate Paths & Visual Timeline Control
 - [x] Implement scene forking with timeline tag (A, B, Prime, etc.)
 - [x] Store alternate visual outcomes for the same chapter/scene
-- [ ] Display visual multiverse map with branches and connections
-- [ ] Allow creators to preview all timeline outcomes in side-by-side mode
+- [x] Display visual multiverse map with branches and connections
+- [x] Allow creators to preview all timeline outcomes in side-by-side mode
 - [ ] Enable auto-generation of visual variations for key choice points
 - [ ] Sync visual changes with multiverse-aware voice and FX layers
 - [ ] Recommend color palette and lighting changes based on timeline branch
