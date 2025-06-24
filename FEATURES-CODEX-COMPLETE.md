@@ -9,14 +9,14 @@
 ## ✅ Phase 1 – Scene Import & Breakdown (Free Tier)
 
 ### 📚 Book Import & Scene Parser
- - [x] `BookImporter.import(file): Promise<Scene[]>`
-- [ ] Parse EPUB/PDF/TXT into story blocks
-- [ ] Extract visual scene descriptors and dialogue
-- [ ] Normalize chapters into visual sequences
+- [x] `BookImporter.import(file): Promise<Scene[]>`
+- [x] Parse EPUB/PDF/TXT into story blocks
+- [x] Extract visual scene descriptors and dialogue
+- [x] Normalize chapters into visual sequences
 
 ### 🧠 Scene Detector
-- [ ] `SceneDetector.analyze(text): SceneMap`
-- [ ] Detect scene shifts via NLP (e.g., time jump, location change)
+- [x] `SceneDetector.analyze(text): SceneMap`
+- [x] Detect scene shifts via NLP (e.g., time jump, location change)
 - [ ] Tag scenes with estimated tone, setting, pacing
 - [ ] Save scene structure in persistent format
 

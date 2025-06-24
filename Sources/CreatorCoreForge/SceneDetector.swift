@@ -28,9 +28,43 @@ public final class SceneDetector {
     }
 
     /// Analyze the provided text and return a map of scenes.
+    /// Scene boundaries are detected using double newlines and
+    /// simple time/location keywords.
     public func analyze(text: String) -> SceneMap {
-        let rawScenes = text.components(separatedBy: "\n\n")
+        let paragraphs = text.components(separatedBy: "\n\n")
         var markers: [SceneMarker] = []
+
+        var index = 0
+        let shiftKeywords = ["later", "meanwhile", "the next", "in the", "at the"]
+
+        for para in paragraphs {
+            let trimmed = para.trimmingCharacters(in: .whitespacesAndNewlines)
+            guard !trimmed.isEmpty else { continue }
+
+            var buffer = ""
+            let sentences = trimmed.split(separator: ".")
+            for part in sentences {
+                let sentence = part.trimmingCharacters(in: .whitespacesAndNewlines)
+                guard !sentence.isEmpty else { continue }
+                buffer += sentence + ". "
+                let lower = sentence.lowercased()
+                if shiftKeywords.contains(where: { lower.contains($0) }) {
+                    let sceneText = buffer.trimmingCharacters(in: .whitespacesAndNewlines)
+                    if !sceneText.isEmpty {
+                        let tone = sentimentEngine.analyzeSentiment(sceneText)
+                        markers.append(SceneMarker(index: index, text: sceneText, sentiment: tone))
+                        index += 1
+                        buffer = ""
+                    }
+                }
+            }
+            if !buffer.isEmpty {
+                let sceneText = buffer.trimmingCharacters(in: .whitespacesAndNewlines)
+                let tone = sentimentEngine.analyzeSentiment(sceneText)
+                markers.append(SceneMarker(index: index, text: sceneText, sentiment: tone))
+                index += 1
+            }
+=======
         var lastLocation: String?
         for (idx, raw) in rawScenes.enumerated() {
             let trimmed = raw.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -45,6 +79,7 @@ public final class SceneDetector {
                 lastLocation = loc
             }
             markers.append(SceneMarker(index: idx, text: trimmed, sentiment: tone, shifts: shifts))
+
         }
         return SceneMap(scenes: markers)
     }
