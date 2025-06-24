@@ -3,11 +3,11 @@
 ## Description
 This agent is responsible for building, validating, and maintaining all features of CoreForge Build: AI-powered no-code app creation, template marketplace, cross-platform export, advanced automation, and developer/enterprise controls.
 
--## Objectives
+## Objectives
 - [x] End-to-end drag-and-drop AI app builder, export to all platforms
- - [x] Persistent creative DNA, team and white label controls, template marketplace
- - [x] Multi-platform: iOS, Android, PC, Mac, Web
- - [x] Multilingual, NSFW gating, cloud/local deploy, CI/CD auto-update
+- [x] Persistent creative DNA, team and white label controls, template marketplace
+- [x] Multi-platform: iOS, Android, PC, Mac, Web
+- [x] Multilingual, NSFW gating, cloud/local deploy, CI/CD auto-update
 
 ---
 
@@ -24,16 +24,6 @@ This agent is responsible for building, validating, and maintaining all features
 - [x] Multi-platform build engine with deploy history
   Use `scripts/generate_placeholder_icons.py` to create required icon sizes.
 - Run `../../scripts/fetch_plugins.sh` to download sample plugins before building.
-
-- [ ] Subscription, in-app credits, affiliate/white label options
-- [x] Team collaboration, roles, access controls, branded exports
-- [ ] Auto-update agent, version rollback, cloud/local sync
-=======
- - [x] Subscription, in-app credits, affiliate/white label options
- - [x] Team collaboration, roles, access controls, branded exports
- - [x] Auto-update agent, version rollback, cloud/local sync
-
-
 ### AI & API Integration
 - [ ] LocalAI/BuildAI code generator (UI, logic, assets)
 - [x] FusionEngine macro scripting and plugin automation
@@ -41,7 +31,7 @@ This agent is responsible for building, validating, and maintaining all features
 - [ ] AI agent library: reusable, composable logic blocks
 - [ ] Admin dashboard: quotas, analytics, CI/CD control
 
--### UX/UI Components
+### UX/UI Components
 - [x] Block-based drag-and-drop editor
 - [ ] Settings for export platform, NSFW/parental, theme, branding
 - [ ] Marketplace for templates, blocks, plugins, agents
@@ -63,12 +53,12 @@ python3 clone_and_enhance.py https://github.com/example/myapp cloned_app
 - [ ] Secure API keys, GDPR/CCPA compliance
 - [ ] Firebase/Firestore or custom backend
 - [ ] CI/CD pipeline, auto-update agent, rollback
- - [x] App store export asset compliance
- - [x] All project files for iOS, Android, Mac, PC, Web
+- [x] App store export asset compliance
+- [x] All project files for iOS, Android, Mac, PC, Web
 
 ---
 
--## Testing Requirements
+## Testing Requirements
 - [x] Unit/integration tests (export, UI, logic)
 - [ ] UI/UX and drag-and-drop flows (all platforms)
 - [ ] Security/privacy, role/access, template/plugin import
@@ -79,13 +69,13 @@ python3 clone_and_enhance.py https://github.com/example/myapp cloned_app
 ## Deployment & CI/CD
 - [ ] GitHub Actions, tagging, changelogs, multi-platform deploy
 - [ ] Template/plugin asset pipeline
- - [x] Automated onboarding, compliance checks
+- [x] Automated onboarding, compliance checks
 
 ---
 
 ## Documentation & Developer Assets
 - [x] README.md, APISetup.md, PromptTemplates.md, DeveloperSetup.md
- - [x] App store/launch assets, user/enterprise guides
+- [x] App store/launch assets, user/enterprise guides
 
 ### BuildImprovementEngine
 New in this release, `BuildImprovementEngine` scans existing projects for
