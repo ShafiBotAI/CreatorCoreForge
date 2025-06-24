@@ -101,23 +101,23 @@ This document details all AI agent capabilities, engine modules, and next-genera
 - [x] Identify and extract key visual descriptions from text
 - [x] Tag scene tone (light, dark, romantic, violent) via sentiment analysis
 - [x] Detect and tag characters per scene using NLP entity recognition
-- [ ] Match locations to genre-based visual templates (castle, school, space station)
-- [ ] Generate initial visual storyboard layout from parsed scenes
-- [ ] Support drag-and-drop book input with automatic format recognition
-- [ ] Allow manual refinement of scene breaks via visual editor
-- [ ] Store original book structure for syncing narration with visuals
-- [ ] Flag high-action and dialogue-heavy scenes for rendering priority
-- [ ] Normalize text encoding for rare language or stylized prose
-- [ ] Split monologue-heavy sections into animated visual layers
-- [ ] Extract scene descriptions from footnotes or appendices if referenced
-- [ ] Enable prologue/epilogue special treatment (visual tone, transitions)
-- [ ] Highlight symbols and metaphors for optional artistic visuals
-- [ ] Store parsing configuration profiles for series consistency
-- [ ] Offer real-time preview of parsed scene map before rendering
-- [ ] Sync parsed book structure with audio narration framework
-- [ ] Validate scene continuity and chronology from source text
-- [ ] Detect scene setting shifts and auto-tag as indoor/outdoor for lighting logic
-- [ ] Output visual scene map to timeline panel for creator editing
+- [x] Match locations to genre-based visual templates (castle, school, space station)
+- [x] Generate initial visual storyboard layout from parsed scenes
+- [x] Support drag-and-drop book input with automatic format recognition
+- [x] Allow manual refinement of scene breaks via visual editor
+- [x] Store original book structure for syncing narration with visuals
+- [x] Flag high-action and dialogue-heavy scenes for rendering priority
+- [x] Normalize text encoding for rare language or stylized prose
+- [x] Split monologue-heavy sections into animated visual layers
+- [x] Extract scene descriptions from footnotes or appendices if referenced
+- [x] Enable prologue/epilogue special treatment (visual tone, transitions)
+- [x] Highlight symbols and metaphors for optional artistic visuals
+- [x] Store parsing configuration profiles for series consistency
+- [x] Offer real-time preview of parsed scene map before rendering
+- [x] Sync parsed book structure with audio narration framework
+- [x] Validate scene continuity and chronology from source text
+- [x] Detect scene setting shifts and auto-tag as indoor/outdoor for lighting logic
+- [x] Output visual scene map to timeline panel for creator editing
 
 ### Phase 2 – Character Design, Scene Casting & Visual Sync Logic
 - [ ] Auto-generate character design profiles from parsed book descriptions
