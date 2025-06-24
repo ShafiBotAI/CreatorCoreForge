@@ -276,6 +276,9 @@
       "SubtitleGenerator",
       "RenderAnalyticsDashboard",
 
+      "Hero spotlight background (wide format)"
+=======
+
       "CrossPlatformVideoGenerator",
       "VideoEffectsPipeline",
 
