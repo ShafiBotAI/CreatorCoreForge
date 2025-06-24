@@ -255,7 +255,7 @@
 				INFOPLIST_FILE = LoreForgeAI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fwdthinking.loreforgeai;
+                               PRODUCT_BUNDLE_IDENTIFIER = com.creatorcoreforge.visual;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -271,7 +271,7 @@
 				INFOPLIST_FILE = LoreForgeAI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fwdthinking.loreforgeai;
+                               PRODUCT_BUNDLE_IDENTIFIER = com.creatorcoreforge.visual;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

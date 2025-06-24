@@ -41,12 +41,12 @@ You can also turn a dialogue script into audio using `../../scripts/chatterbox_b
 
 
 ## Building (iOS)
-1. Open `VocalVerseFull/VocalVerse.xcodeproj` in Xcode.
-2. If the **VocalVerse** scheme is missing, create a new scheme that targets the
-   `VocalVerse` application target and mark it as shared ("Manage Schemes" ->
+1. Open `CoreForgeAudioFull/CoreForgeAudioFull.xcodeproj` in Xcode.
+2. If the **CoreForgeAudioFull** scheme is missing, create a new scheme that targets the
+   `CoreForgeAudioFull` application target and mark it as shared ("Manage Schemes" ->
    **Shared**). This ensures `xcodebuild` can detect the scheme when building
    from the command line.
-3. Select the **VocalVerse** scheme and build or run.
+3. Select the **CoreForgeAudioFull** scheme and build or run.
 
 ## Environment Configuration
 Set the following environment variables in your Xcode scheme or `.env` file:

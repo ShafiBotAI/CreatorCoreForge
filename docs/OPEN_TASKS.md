@@ -135,14 +135,14 @@
 
 📦 App: CoreForgeStudio
 ✅ Implemented Features: 9
-   - Scene-by-scene AI dramatization (`apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/VideoSceneGenerator.swift`)
+   - Scene-by-scene AI dramatization (`apps/CoreForgeStudio/CoreForgeStudioFull/Sources/VocalVision/VideoSceneGenerator.swift`)
    - Book-to-video rendering with voices
    - Parse books into scenes with action/setting
-   - Assign character voices per scene (`apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/VoiceCastingEngine.swift`)
-   - `VideoSceneGenerator.swift` (`apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/VideoSceneGenerator.swift`)
+   - Assign character voices per scene (`apps/CoreForgeStudio/CoreForgeStudioFull/Sources/VocalVision/VoiceCastingEngine.swift`)
+   - `VideoSceneGenerator.swift` (`apps/CoreForgeStudio/CoreForgeStudioFull/Sources/VocalVision/VideoSceneGenerator.swift`)
    - `VoiceCastingEngine.swift`
-   - `RendererControl.swift` (`apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/RendererControl.swift`)
-   - "Mood Mix" export filter (emotional highlights only) (`apps/CoreForgeStudio/VocalVisionFull/Sources/VocalVision/VideoExportManager.swift`)
+   - `RendererControl.swift` (`apps/CoreForgeStudio/CoreForgeStudioFull/Sources/VocalVision/RendererControl.swift`)
+   - "Mood Mix" export filter (emotional highlights only) (`apps/CoreForgeStudio/CoreForgeStudioFull/Sources/VocalVision/VideoExportManager.swift`)
    - OfflineMP3Downloader (`apps/CoreForgeStudio/Desktop/main.js`)
 
 ❌ Missing or Incomplete Features: 64
@@ -215,18 +215,18 @@
 
 📦 App: CoreForgeLeads
 ✅ Implemented Features: 12
-   - Multilingual and regional targeting (`apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/LeadRegionalTargeter.swift`)
+   - Multilingual and regional targeting (`apps/CoreForgeLeads/CoreForgeLeadsFull/Sources/DataForgeAI/LeadRegionalTargeter.swift`)
    - CRM integration and DF Signal API
-   - Multilingual and regional targeting (`apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/LeadRegionalTargeter.swift`)
+   - Multilingual and regional targeting (`apps/CoreForgeLeads/CoreForgeLeadsFull/Sources/DataForgeAI/LeadRegionalTargeter.swift`)
    - Analyze user’s target market
-   - Auto-personalize outreach scripts (`apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/ProspectingWorkflow.swift`)
+   - Auto-personalize outreach scripts (`apps/CoreForgeLeads/CoreForgeLeadsFull/Sources/DataForgeAI/ProspectingWorkflow.swift`)
    - `LeadMiner.swift`
    - `SignalTracker.swift`
    - `AIAgentScoring.swift`
    - `MarketplaceCreditSystem.swift`
-   - Marketplace credit system (`apps/CoreForgeLeads/DataForgeAIFull/Tests/DataForgeAITests/MarketplaceCreditSystemTests.swift`)
-   - OfflineMP3Downloader (`apps/CoreForgeLeads/DataForgeAIFull/Package.swift`)
-   - Marketplace credit system (`apps/CoreForgeLeads/DataForgeAIFull/Tests/DataForgeAITests/MarketplaceCreditSystemTests.swift`)
+   - Marketplace credit system (`apps/CoreForgeLeads/CoreForgeLeadsFull/Tests/DataForgeAITests/MarketplaceCreditSystemTests.swift`)
+   - OfflineMP3Downloader (`apps/CoreForgeLeads/CoreForgeLeadsFull/Package.swift`)
+   - Marketplace credit system (`apps/CoreForgeLeads/CoreForgeLeadsFull/Tests/DataForgeAITests/MarketplaceCreditSystemTests.swift`)
 
 ❌ Missing or Incomplete Features: 33
    - Real-time signal tracking + AI lead scoring
@@ -288,11 +288,11 @@
 📦 App: CoreForgeMusic
 ✅ Implemented Features: 6
    - Match vocals to beat tempo/mood
-   - Split-test hooks for virality (`apps/CoreForgeMusic/VerseForgeAIFull/Sources/VerseForgeAI/HookCrafter.swift`)
+   - Split-test hooks for virality (`apps/CoreForgeMusic/CoreForgeMusicFull/Sources/VerseForgeAI/HookCrafter.swift`)
    - `HookCrafter.swift`
    - `VocalEnginePro.swift`
    - `BeatMatcher.swift`
-   - OfflineMP3Downloader (`apps/CoreForgeMusic/VerseForgeAIFull/Package.swift`)
+   - OfflineMP3Downloader (`apps/CoreForgeMusic/CoreForgeMusicFull/Package.swift`)
 
 ❌ Missing or Incomplete Features: 32
    - Hook generator + song structure templates
@@ -334,7 +334,7 @@
 ✅ Implemented Features: 4
    - Adaptive AI trading strategy engine
    - Export: CSV, PDF, JSON
-   - UI/UX (all platforms) (`apps/CoreForgeMarket/TradeMindAIFull/Package.swift`)
+   - UI/UX (all platforms) (`apps/CoreForgeMarket/CoreForgeMarketFull/Package.swift`)
    - OfflineMP3Downloader (`apps/CoreForgeMarket/openai-swift/Package.swift`)
 
 ❌ Missing or Incomplete Features: 59
@@ -446,7 +446,7 @@
 ✅ Implemented Features: 3
    - Add new genre templates in `GenreConfig.swift`
    - Connect to publishing dashboard via `PublishBridge.swift`
-   - OfflineMP3Downloader (`apps/CoreForgeWriter/InkwellAIFull/InkwellAI/SettingsView.swift`)
+   - OfflineMP3Downloader (`apps/CoreForgeWriter/CoreForgeWriterFull/InkwellAI/SettingsView.swift`)
 
 ❌ Missing or Incomplete Features: 70
    - Series-based memory for character/plot tracking

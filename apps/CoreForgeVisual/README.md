@@ -16,8 +16,8 @@ CoreForge Visual is a cross-platform tool for generating video and story content
 - **Import ePub, PDF, and TXT files** via `EbookImporter`
 
 ## Building (iOS)
-1. Open `LoreForgeAI.xcodeproj` found in `LoreForgeAIFull`.
-2. Select the **LoreForgeAI** scheme and your target device or simulator.
+1. Open `CoreForgeVisualFull/CoreForgeVisualFull.xcodeproj`.
+2. Select the **CoreForgeVisualFull** scheme and your target device or simulator.
 3. Build and run from Xcode. TestFlight builds are handled via GitHub Actions.
 
 

@@ -16,7 +16,7 @@ services.
 - **Auto-update checks** using the shared `AutoUpdater` module
 
 ## Building (Swift Package)
-1. Open `TradeMindAIFull` in Xcode and run `swift test`.
+1. Open `CoreForgeMarketFull` in Xcode and run `swift test`.
 2. Configure `OPENAI_API_KEY` for integration tests when needed.
 
 ## Offline Mode
