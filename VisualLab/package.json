@@ -6,7 +6,7 @@
   "scripts": {
     "pretest": "npm install",
     "build": "tsc",
-    "test": "cross-env TS_NODE_TRANSPILE_ONLY=1 node --loader ts-node/esm test/index.test.ts && cross-env TS_NODE_TRANSPILE_ONLY=1 node --loader ts-node/esm test/newFeatures.test.ts"
+    "test": "cross-env TS_NODE_TRANSPILE_ONLY=1 node --loader ts-node/esm test/index.test.ts && cross-env TS_NODE_TRANSPILE_ONLY=1 node --loader ts-node/esm test/newFeatures.test.ts && cross-env TS_NODE_TRANSPILE_ONLY=1 node --loader ts-node/esm test/openTasks.test.ts"
   },
   "devDependencies": {
     "@types/react": "^19.1.8",
