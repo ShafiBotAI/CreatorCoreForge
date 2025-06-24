@@ -6,6 +6,8 @@ on:
 jobs:
   build-and-upload:
     runs-on: macos-latest
+
+=======
     strategy:
       matrix:
         app:
@@ -18,6 +20,7 @@ jobs:
           - name: CoreForge Writer
             path: apps/CoreForgeWriter
             scheme: CoreForgeWriter
+
 
     steps:
       - name: Checkout code
@@ -36,21 +39,19 @@ jobs:
       - name: Install Fastlane
         run: gem install fastlane
 
-      - name: Build and Upload ${{ matrix.app.name }}
+      - name: Build and Upload All Apps
         env:
-          PROJECT_PATH: ${{ matrix.app.path }}/${{ matrix.app.scheme }}.xcodeproj
-          SCHEME: ${{ matrix.app.scheme }}
           APPSTORECONNECT_KEY_ID: ${{ secrets.APPSTORECONNECT_KEY_ID }}
           APPSTORECONNECT_ISSUER_ID: ${{ secrets.APPSTORECONNECT_ISSUER_ID }}
           APPSTORECONNECT_API_KEY: ${{ secrets.APPSTORECONNECT_API_KEY }}
           APPSTORECONNECT_TEAM_ID: ${{ secrets.APPSTORECONNECT_TEAM_ID }}
-        run: fastlane build_and_upload
+        run: fastlane build_all
 
-      - name: Upload IPA to Google Drive
+      - name: Upload All IPAs to Google Drive
         env:
           GDRIVE_TOKEN: ${{ secrets.GDRIVE_TOKEN }}
           GDRIVE_FOLDER_ID: ${{ secrets.GDRIVE_FOLDER_ID }}
         run: |
-          ./scripts/upload_to_drive.sh \
-            build/${{ matrix.app.scheme }}/${{ matrix.app.scheme }}.ipa \
-            "$GDRIVE_FOLDER_ID"
+          find build -name '*.ipa' -print0 | while IFS= read -r -d '' ipa; do
+            ./scripts/upload_to_drive.sh "$ipa" "$GDRIVE_FOLDER_ID"
+          done
