@@ -1,26 +1,6 @@
 {
   "open_tasks": [
     {
-      "task": "Implement any modules or files reported as missing.",
-      "source_file": "CODEX-TODO-FULL-APP-READINESS-CHECKLIST.md"
-    },
-    {
-      "task": "Replace all placeholder or TODO code with production-ready logic.",
-      "source_file": "CODEX-TODO-FULL-APP-READINESS-CHECKLIST.md"
-    },
-    {
-      "task": "Add test suites for new and existing modules.",
-      "source_file": "CODEX-TODO-FULL-APP-READINESS-CHECKLIST.md"
-    },
-    {
-      "task": "Ensure `scripts/run_all_tests.sh` passes without errors.",
-      "source_file": "CODEX-TODO-FULL-APP-READINESS-CHECKLIST.md"
-    },
-    {
-      "task": "Confirm build scripts generate output for iOS, Android, macOS, Windows, and Web.",
-      "source_file": "CODEX-TODO-FULL-APP-READINESS-CHECKLIST.md"
-    },
-    {
       "task": "Verify all assets and configuration files are in place for production.",
       "source_file": "CODEX-TODO-FULL-APP-READINESS-CHECKLIST.md"
     },

@@ -11,6 +11,10 @@
     "open_tasks_registry.json",
     "VoiceLab/src/TTSRenderer.ts",
     "VoiceLab/src/ChapterEditor.vue",
-    "VoiceLab/test/ttsRenderer.test.ts"
+    "VoiceLab/test/ttsRenderer.test.ts",
+    "apps/CoreForgeBuild/services/VoicePromptParser.ts",
+    "Sources/CreatorCoreForge/BuildBridge.swift",
+    "Tests/CreatorCoreForgeTests/BuildBridgeTests.swift",
+    "open_tasks_registry.json"
   ]
 }
