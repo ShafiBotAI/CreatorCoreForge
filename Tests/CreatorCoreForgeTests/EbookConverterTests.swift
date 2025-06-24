@@ -21,6 +21,7 @@ final class EbookConverterTests: XCTestCase {
         let rate = data.subdata(in: 24..<28).withUnsafeBytes { $0.load(as: UInt32.self) }
         XCTAssertEqual(rate, 22_050)
 
+
     }
 }
 

@@ -1,4 +1,0 @@
-# Auto-generated for Real-time bot marketplace and plugin extension
-def real_time_bot():
-    """Real-time bot marketplace and plugin extension"""
-    pass

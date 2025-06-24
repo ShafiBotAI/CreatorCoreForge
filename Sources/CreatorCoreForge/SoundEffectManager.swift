@@ -4,15 +4,16 @@ import AVFoundation
 #endif
 
 
+// SoundEffectManager.swift
+// CoreForge Audio
 
 
-/// Manages ambient sound effects for immersive playback.
-public final class SoundEffectManager: ObservableObject {
-    /// Shared singleton instance.
-=======
 #if canImport(Combine)
 import Combine
 #endif
+
+// SoundEffectManager.swift
+// CoreForge Audio
 
 /// Cross-platform manager for short sound effects and ambience.
 public final class SoundEffectManager {
@@ -21,7 +22,6 @@ public final class SoundEffectManager {
 #else
     public private(set) var currentAmbience: String = "None"
 #endif
-
     public static let shared = SoundEffectManager()
     private init() {}
 
@@ -195,10 +195,9 @@ public final class SoundEffectManager {
         return reverb
     }
 #else
-    /// Fallback when AVFoundation is unavailable. Logs the preset request so
-    /// tests can verify behavior on platforms without audio support.
-    public func triggerReverbPreset(preset: ReverbStyle) {
-        print("\u{26A0}\u{FE0F} Reverb preset \(preset.rawValue) requested but AVFoundation unavailable")
+    public func triggerReverbPreset(preset: ReverbStyle) -> StubReverb {
+        print("[SoundEffectManager] Reverb preset \(preset.rawValue) not supported on this platform")
+        return StubReverb()
     }
 #endif
 }
@@ -220,4 +219,14 @@ public enum ReverbStyle: String, CaseIterable, Codable {
 public enum ReverbStyle: String, CaseIterable, Codable {
     case cathedral, cave, underwater, hall, dreamlike
 }
+
+/// Minimal stand-in for `AVAudioUnitReverb` when AVFoundation is unavailable.
+public struct StubReverb {
+    public var wetDryMix: Float = 0.0
+    public init() {}
+}
+#endif
+
+#if canImport(Combine)
+extension SoundEffectManager: ObservableObject {}
 #endif

@@ -40,8 +40,8 @@ export class PromptParser {
   };
 
   parse(prompt: string): ParseResult {
-    const language = this.detectLanguage(prompt);
-    const translated = language !== 'en' ? this.translateToEnglish(prompt, language) : prompt;
+    const detected = this.detectLanguage(prompt);
+    const translated = detected !== 'en' ? this.translateToEnglish(prompt, detected) : prompt;
     const normalized = this.normalize(translated);
     const layout = /[#\-]/.test(normalized)
       ? this.parseMarkdown(normalized)
@@ -50,13 +50,14 @@ export class PromptParser {
     const flowTags = Array.from(new Set(flows.flat()));
     const patterns = this.recognizePatterns(normalized);
     const conditionals = this.parseConditionals(normalized);
-    return { language, layout, flows, flowTags, patterns, conditionals };
+    return { language: 'en', layout, flows, flowTags, patterns, conditionals };
   }
 
   /**
    * Very naive language detection. Defaults to 'en'.
    */
   private detectLanguage(text: string): string {
+
     const lower = text.toLowerCase();
     for (const [lang, dict] of Object.entries(this.translations)) {
       for (const word of Object.keys(dict)) {
@@ -65,6 +66,8 @@ export class PromptParser {
         }
       }
     }
+
+
     for (const [lang, regex] of Object.entries(this.languages)) {
       if (regex.test(text)) {
         return lang;

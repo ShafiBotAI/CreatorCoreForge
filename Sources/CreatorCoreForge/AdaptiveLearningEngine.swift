@@ -7,6 +7,7 @@ public final class AdaptiveLearningEngine {
     public static let shared = AdaptiveLearningEngine()
     private var progress: [String: Int] = [:]
     private var lastCompletion: [String: Date] = [:]
+    private var topicScores: [String: Int] = [:]
 
     public init() {}
 
@@ -14,6 +15,16 @@ public final class AdaptiveLearningEngine {
     public func recordCompletion(for lessonID: String) {
         progress[lessonID, default: 0] += 1
         lastCompletion[lessonID] = Date()
+    }
+
+    /// Record a score for a learning topic.
+    public func record(topic: String, score: Int) {
+        topicScores[topic] = score
+    }
+
+    /// Return the topic with the lowest score, if any.
+    public func nextTopic() -> String? {
+        topicScores.min(by: { $0.value < $1.value })?.key
     }
 
     /// Returns how many times a lesson was completed.
@@ -30,6 +41,7 @@ public final class AdaptiveLearningEngine {
     public func reset() {
         progress.removeAll()
         lastCompletion.removeAll()
+        topicScores.removeAll()
 
     }
 }

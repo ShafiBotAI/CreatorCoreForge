@@ -18,11 +18,11 @@
     111111111111111111111111 /* Project object */ = {
       isa = PBXProject;
       attributes = {
-        LastUpgradeCheck = 1500;
+        LastUpgradeCheck = 1600;
         ORGANIZATIONNAME = "";
       };
       buildConfigurationList = 111111111111111111111112 /* Build configuration list for PBXProject */;
-      compatibilityVersion = "Xcode 15.0";
+      compatibilityVersion = "Xcode 16.0";
       developmentRegion = en;
       hasScannedForEncodings = 0;
       mainGroup = 111111111111111111111113;

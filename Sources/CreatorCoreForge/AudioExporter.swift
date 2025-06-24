@@ -135,6 +135,8 @@ public final class AudioExporter {
             .appendingPathComponent(zipName)
             .appendingPathExtension("zip")
         print("\u{1F4DC} Compressing files into: \(zipPath.path)")
+      // Simplified implementation: just create an empty zip placeholder
+
         let tempDir = exportDirectory
             .appendingPathComponent(UUID().uuidString, isDirectory: true)
         do {
