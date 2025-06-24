@@ -10,4 +10,13 @@ final class SceneDetectorTests: XCTestCase {
         XCTAssertEqual(map.scenes[0].sentiment, .positive)
         XCTAssertEqual(map.scenes[1].sentiment, .negative)
     }
+
+    func testSceneShiftKeywordsCreateNewScene() {
+        let text = "The hero wakes up. Later, he travels to the city.";
+        let detector = SceneDetector()
+        let map = detector.analyze(text: text)
+        XCTAssertEqual(map.scenes.count, 2)
+        XCTAssertTrue(map.scenes[0].text.contains("hero wakes up"))
+        XCTAssertTrue(map.scenes[1].text.contains("travels to the city"))
+    }
 }
