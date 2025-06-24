@@ -1,10 +1,13 @@
 {
   "enhanced_files": [
+    "CHANGELOG.md",
+    "CODEX-TODO-ENHANCE-ALL-OPEN-TASKS.md",
+    "CODEX-TODO-ENHANCE-CODE-QUALITY-PERFORMANCE.md",
+    "Sources/CreatorCoreForge/MarkdownLayoutParser.swift",
     "Sources/CreatorCoreForge/SegmentService.swift",
     "Tests/CreatorCoreForgeTests/AudioVisualPhaseOneTests.swift",
-    "CODEX-TODO-ENHANCE-ALL-OPEN-TASKS.md",
-    "open_tasks_registry.json",
-    "CODEX-TODO-ENHANCE-CODE-QUALITY-PERFORMANCE.md",
-    "CHANGELOG.md"
+    "Tests/CreatorCoreForgeTests/MarkdownLayoutParserTests.swift",
+    "apps/CoreForgeBuild/AGENTS.md",
+    "open_tasks_registry.json"
   ]
 }
