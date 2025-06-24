@@ -280,8 +280,13 @@ This file is a full checklist of every feature required for code completion and 
 - [x] DualNarratorToggle
 - [x] VoiceDNAForking
 - [x] FlashbackSceneEngine
+
+- [ ] ContinuityChecker
+- [ ] CrossoverEngine
+=======
 - [x] ContinuityChecker
 - [x] CrossoverEngine
+
 ## NSFW Features & Expansion (If Enabled)
 
 ### NSFW Core
