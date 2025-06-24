@@ -72,7 +72,6 @@ public final class SceneAtmosphereBuilder {
     }
 
     public func playAtmosphere(for mood: Mood, in engine: Any, player: Any) {
-
         // Simply log the call since playback isn't supported without AVFoundation
 
         _ = generateAtmosphere(for: mood, duration: 0)
