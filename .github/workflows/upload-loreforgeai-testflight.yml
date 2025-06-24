@@ -24,10 +24,10 @@ jobs:
       - name: Install Fastlane
         run: gem install fastlane
 
-      - name: Build and Upload LoreForgeAI
+      - name: Build and Upload CoreForge Visual
         env:
-          PROJECT_PATH: apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI.xcodeproj
-          SCHEME: LoreForgeAI
+          PROJECT_PATH: apps/CoreForgeVisual/CoreForgeVisual.xcodeproj
+          SCHEME: CoreForgeVisual
           APPSTORECONNECT_KEY_ID: ${{ secrets.APPSTORECONNECT_KEY_ID }}
           APPSTORECONNECT_ISSUER_ID: ${{ secrets.APPSTORECONNECT_ISSUER_ID }}
           APPSTORECONNECT_API_KEY: ${{ secrets.APPSTORECONNECT_API_KEY }}
