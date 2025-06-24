@@ -2,4 +2,3 @@
 def quantum_choice_plotting():
     """Quantum-choice plotting"""
     pass
-

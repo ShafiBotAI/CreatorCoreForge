@@ -1,17 +1,4 @@
 # Auto-generated for Keep PHASE_EIGHT.md synced with features-phase8.json
-def keep_phase_eight_md_synced_with(json_file="features-phase8.json", output_md="docs/PHASE_EIGHT.md"):
-    """Regenerate PHASE_EIGHT.md based on features-phase8.json."""
-    import json, os
-    if not os.path.exists(json_file):
-        return False
-    with open(json_file, "r") as f:
-        data = json.load(f)
-    lines = ["# Phase Eight Tasks", "", "## Tier Features"]
-    tiers = data.get("tierFeatures", {})
-    for tier, feats in tiers.items():
-        lines.append(f"- **{tier}**")
-        for feat in feats[:5]:
-            lines.append(f"  - {feat}")
-    with open(output_md, "w") as md:
-        md.write("\n".join(lines) + "\n")
-    return True
+def keep_phase_eight_md():
+    """Keep PHASE_EIGHT.md synced with features-phase8.json"""
+    pass

@@ -10,7 +10,8 @@ import {
   stabilizeCamera,
   applyWatermark,
   generateSubtitles,
-  RenderAnalyticsDashboard
+  RenderAnalyticsDashboard,
+  interpolateFrames
 } from '../src/index.ts';
 import React from 'react';
 import assert from 'node:assert';
@@ -35,6 +36,7 @@ export360VR([]);
 stabilizeCamera([]);
 applyWatermark('f', 'wm');
 generateSubtitles('hello');
+assert.deepStrictEqual(interpolateFrames(['f1', 'f2']), ['f1', 'f1-f2-interp', 'f2']);
 
 React.createElement(BranchingPathsUI, { options: [] });
 React.createElement(RenderAnalyticsDashboard, { metrics: [] });

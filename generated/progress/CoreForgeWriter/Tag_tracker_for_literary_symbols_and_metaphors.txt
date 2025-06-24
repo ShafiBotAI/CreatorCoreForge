@@ -1,5 +1,4 @@
 # Auto-generated for Tag/tracker for literary symbols and metaphors
-def tag_tracker_for_literary_symbols():
+def tag_tracker_for():
     """Tag/tracker for literary symbols and metaphors"""
     pass
-

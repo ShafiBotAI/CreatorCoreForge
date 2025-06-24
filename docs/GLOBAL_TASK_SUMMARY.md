@@ -22,9 +22,9 @@
 - AudiobookStoreExporter ✅
 - PublishingReportGenerator ✅
 =======
-- FullBookRender
-- AudiobookStoreExporter
-- PublishingReportGenerator
+- FullBookRender ✅
+- AudiobookStoreExporter ✅
+- PublishingReportGenerator ✅
 
 - SeriesManager ✅
 - InlineEmotionEngine

@@ -2,4 +2,3 @@
 def community_marketplace():
     """Community marketplace"""
     pass
-

@@ -2,4 +2,3 @@
 def heartrateadaptiveaudio():
     """HeartRateAdaptiveAudio"""
     pass
-

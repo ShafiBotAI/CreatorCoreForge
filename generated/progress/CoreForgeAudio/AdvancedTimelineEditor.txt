@@ -2,4 +2,3 @@
 def advancedtimelineeditor():
     """AdvancedTimelineEditor"""
     pass
-

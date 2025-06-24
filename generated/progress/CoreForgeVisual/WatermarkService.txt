@@ -2,4 +2,3 @@
 def watermarkservice():
     """WatermarkService"""
     pass
-

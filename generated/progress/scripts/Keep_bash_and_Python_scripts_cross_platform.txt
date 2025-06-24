@@ -1,5 +1,4 @@
 # Auto-generated for Keep bash and Python scripts cross-platform
-def keep_bash_and_python_scripts():
+def keep_bash_and():
     """Keep bash and Python scripts cross-platform"""
     pass
-

@@ -1,5 +1,4 @@
 # Auto-generated for NSFW emotion/mood heatmap and scene analytics
-def nsfw_emotion_mood_heatmap_and():
+def nsfw_emotion_mood():
     """NSFW emotion/mood heatmap and scene analytics"""
     pass
-

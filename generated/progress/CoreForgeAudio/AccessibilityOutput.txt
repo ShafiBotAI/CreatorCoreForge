@@ -2,4 +2,3 @@
 def accessibilityoutput():
     """AccessibilityOutput"""
     pass
-

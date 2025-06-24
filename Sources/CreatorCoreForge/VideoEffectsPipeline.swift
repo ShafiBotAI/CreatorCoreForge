@@ -17,6 +17,20 @@ public struct VideoEffectsPipeline {
         return result
     }
 
+    /// Inserts interpolated frame tags between each pair of frames.
+    public func interpolateFrames(_ frames: [String]) -> [String] {
+        guard frames.count > 1 else { return frames }
+        var result: [String] = []
+        for i in 0..<frames.count - 1 {
+            let current = frames[i]
+            let next = frames[i + 1]
+            result.append(current)
+            result.append("\(current)_\(next)_interp")
+        }
+        result.append(frames.last!)
+        return result
+    }
+
     /// Overlays a simple watermark string onto each frame identifier.
     public func addWatermark(to frames: [String], watermark: String) -> [String] {
         frames.map { "\($0)-\(watermark)" }
