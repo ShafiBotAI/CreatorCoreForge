@@ -22,3 +22,4 @@
 - Added `AmbientFXEngine` and `FXLibrary` modules to manage immersive ambient playback for CoreForge Audio Phase 3.
 - Optimized `LensFlareService` and `CacheService` for improved video rendering performance.
 - Further optimized lens flare detection loops and added TTL-based eviction to `CacheService`.
+- Implemented `multitrack_export` utility and `VoiceApprovalWorkflow` helpers for CoreForge Audio.
