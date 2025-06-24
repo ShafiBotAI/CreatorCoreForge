@@ -66,12 +66,12 @@ Key points from `README.md`:
  - [x] Support drag-and-drop UI builder with AI-generated suggestions
  - [x] Parse screenshots or hand-drawn wireframes into editable layout code
  - [x] Extract UI structure from Figma, Sketch, and Adobe XD import
- - [x] Detect and correct malformed component trees or invalid HTML
-- [ ] Normalize multi-format inputs into abstract syntax UI model (ASUIM)
-- [ ] Auto-suggest UI patterns based on app type (e.g., chat, dashboard, calculator)
-- [ ] Tag user flows during prompt parsing for logic inference
-- [ ] Visualize parsed UI logic before code generation begins
-- [ ] Store input history to refine and compare prompt evolution
+- [x] Detect and correct malformed component trees or invalid HTML
+- [x] Normalize multi-format inputs into abstract syntax UI model (ASUIM)
+- [x] Auto-suggest UI patterns based on app type (e.g., chat, dashboard, calculator)
+- [x] Tag user flows during prompt parsing for logic inference
+- [x] Visualize parsed UI logic before code generation begins
+- [x] Store input history to refine and compare prompt evolution
 - [ ] Enable multilingual prompt input (English, Spanish, Chinese, etc.)
 - [ ] Recognize UX patterns like onboarding, tabbed navigation, floating action buttons
 - [ ] Support voice-to-UI parsing from microphone input
