@@ -38,12 +38,22 @@ final class AudioVisualPhaseOneTests: XCTestCase {
     }
 
     func testSegmentServiceAndTTS() {
-        let chapters = [Chapter(title: "C1", text: "A\n\nB")] 
+        let chapters = [Chapter(title: "C1", text: "A\n\nB")]
         let segs = SegmentService().segment(chapters)
         XCTAssertEqual(segs.count, 2)
         let tts = TTSService()
         let blob = tts.renderSegment(segs[0], voiceId: "v1")
         XCTAssertTrue(String(data: blob, encoding: .utf8)?.contains("voice:v1") ?? false)
+    }
+
+    func testSegmentServiceAsync() async {
+        let chapters = [Chapter(title: "C1", text: "A\n\nB\n\nC")]
+        let expectation = XCTestExpectation(description: "async segments")
+        SegmentService().segmentAsync(chapters) { segs in
+            XCTAssertEqual(segs.count, 3)
+            expectation.fulfill()
+        }
+        await fulfillment(of: [expectation], timeout: 1)
     }
 
     func testStreamAssembler() {
