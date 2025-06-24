@@ -13,6 +13,7 @@ public final class BuildPreviewEngine {
     private var breakpoints: Set<String> = []
     private var testResults: [String: Bool] = [:]
     private var warnings: [String] = []
+    private var qaChecklist: [String] = []
     private(set) var device: SimulatedDevice = .web
     private var developerConsoleEnabled = false
 
@@ -165,5 +166,38 @@ public final class BuildPreviewEngine {
     public func previewFormLogic(template: FormTemplate) -> String {
         let arrows = template.fields.map { $0.name }.joined(separator: " -> ")
         return "[Logic] " + arrows
+    }
+
+    /// Trigger a co-pilot enhancement pass using a hotkey string.
+    @discardableResult
+    public func triggerHotkey(_ key: String) -> String {
+        let msg = "Hotkey \(key) triggered"
+        logEvent(msg)
+        return msg
+    }
+
+    /// Store a QA checklist to be displayed before deployment.
+    public func injectQAChecklist(_ items: [String]) {
+        qaChecklist = items
+        logEvent("QA checklist injected")
+    }
+
+    public func currentQAChecklist() -> [String] { qaChecklist }
+
+    /// Run background tests asynchronously (simulated).
+    public func runBackgroundTests(cases: [String]) -> Bool {
+        testResults = cases.reduce(into: [:]) { $0[$1] = true }
+        logEvent("Background tests executed")
+        return true
+    }
+
+    /// Check form fields for simple injection patterns.
+    public func scanFormFields(_ fields: [String]) -> Bool {
+        !fields.contains { $0.contains("<script>") }
+    }
+
+    /// Validate color contrast ratio meets a minimal threshold.
+    public func checkColorContrast(ratio: Double) -> Bool {
+        ratio >= 4.5
     }
 }

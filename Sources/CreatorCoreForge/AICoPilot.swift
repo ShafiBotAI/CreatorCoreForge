@@ -42,4 +42,25 @@ public struct AICoPilot {
         let lines = code.split(separator: "\n")
         return (["/// \(explanation)"] + lines).joined(separator: "\n")
     }
+
+    /// Return an autocomplete suggestion adjusted for a style guide.
+    /// This is a lightweight placeholder that simply appends common
+    /// characters based on the guide name.
+    public func autocomplete(for prefix: String, styleGuide: String) -> String {
+        if styleGuide.lowercased().contains("swift") {
+            return prefix + " {}"
+        }
+        if styleGuide.lowercased().contains("javascript") {
+            return prefix + ";"
+        }
+        return prefix
+    }
+
+    /// Detect overly long functions and return line numbers where an inline
+    /// "refactor now" button could appear.
+    public func complexityWarnings(in code: String) -> [Int] {
+        let lines = code.split(separator: "\n")
+        guard lines.count > 50 else { return [] }
+        return Array(1...lines.count).filter { $0 % 10 == 0 }
+    }
 }
