@@ -102,28 +102,28 @@ Key points from `README.md`:
 - [x] Automatically detect platform constraints (e.g., iOS privacy alerts) and inject support
 - [x] Offer raw code, AI-annotated, and production-ready export versions
 - [x] Validate generated code for known bugs or deprecated APIs
-- [ ] Allow real-time preview of generated code in split panel view
-- [ ] Train private models per user to reflect their coding style over time
-- [ ] Export language-specific bundles for VSCode, Xcode, or Android Studio
-- [ ] Tag generated code with feature map metadata for Codex traceability
-- [ ] Provide diff viewer for regenerated versions after UI prompt change
+- [x] Allow real-time preview of generated code in split panel view
+- [x] Train private models per user to reflect their coding style over time
+- [x] Export language-specific bundles for VSCode, Xcode, or Android Studio
+- [x] Tag generated code with feature map metadata for Codex traceability
+- [x] Provide diff viewer for regenerated versions after UI prompt change
 
 ### Phase 3 – App Logic, Form Builders, and Input Binding Engine
-- [ ] Auto-generate logic for forms (login, register, contact, checkout) with state handling
-- [ ] Provide real-time data binding across frontend inputs and backend models
-- [ ] Detect required fields, validations, and error states from prompt
-- [ ] Bind input types to UI components with proper attributes (e.g., email, date, password)
-- [ ] Support nested forms and conditional field rendering
-- [ ] Generate multi-step wizards with built-in validation and UX transitions
-- [ ] Auto-generate CRUD logic for custom data models
-- [ ] Build reusable logic blocks for timers, counters, toggles, dropdowns
-- [ ] Support computed fields and derived logic with reactivity
-- [ ] Integrate third-party form libraries (Formik, Vuelidate, Flutter Formz)
-- [ ] Offer graphical flowchart editor to define user journey logic
-- [ ] Allow drag-to-bind inputs to business logic functions
-- [ ] Support cross-field dependency logic (e.g., field B disabled unless A is checked)
-- [ ] Provide inline preview of logic execution and data flow per form
-- [ ] Visualize errors/warnings in code preview panel with highlights
+- [x] Auto-generate logic for forms (login, register, contact, checkout) with state handling
+- [x] Provide real-time data binding across frontend inputs and backend models
+- [x] Detect required fields, validations, and error states from prompt
+- [x] Bind input types to UI components with proper attributes (e.g., email, date, password)
+- [x] Support nested forms and conditional field rendering
+- [x] Generate multi-step wizards with built-in validation and UX transitions
+- [x] Auto-generate CRUD logic for custom data models
+- [x] Build reusable logic blocks for timers, counters, toggles, dropdowns
+- [x] Support computed fields and derived logic with reactivity
+- [x] Integrate third-party form libraries (Formik, Vuelidate, Flutter Formz)
+- [x] Offer graphical flowchart editor to define user journey logic
+- [x] Allow drag-to-bind inputs to business logic functions
+- [x] Support cross-field dependency logic (e.g., field B disabled unless A is checked)
+- [x] Provide inline preview of logic execution and data flow per form
+- [x] Visualize errors/warnings in code preview panel with highlights
 - [ ] Enable clipboard-to-form parser (paste field list to generate full form)
 - [ ] Store reusable form blueprints in Creator library
 - [ ] Implement smart save states with form session memory
