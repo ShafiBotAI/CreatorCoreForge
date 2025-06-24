@@ -30,4 +30,12 @@ final class InputBindingEngineSimpleTests: XCTestCase {
         engine.bind(field: "last", value: "B")
         XCTAssertEqual(engine.value(for: "full"), "AB")
     }
+
+    func testWatcherCallbackRuns() {
+        let engine = InputBindingEngine()
+        var captured = ""
+        engine.addWatcher(for: "name") { captured = $0 }
+        engine.bind(field: "name", value: "Jane")
+        XCTAssertEqual(captured, "Jane")
+    }
 }
