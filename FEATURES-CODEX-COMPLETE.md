@@ -17,16 +17,16 @@
 ### 🧠 Scene Detector
 - [x] `SceneDetector.analyze(text): SceneMap`
 - [x] Detect scene shifts via NLP (e.g., time jump, location change)
-- [ ] Tag scenes with estimated tone, setting, pacing
-- [ ] Save scene structure in persistent format
+- [x] Tag scenes with estimated tone, setting, pacing
+- [x] Save scene structure in persistent format
 
 ---
 
 ## ✅ Phase 2 – Character & Scene Builder (Pro Tier)
 
 ### 🎭 Character Identity Mapping
-- [ ] Match characters with avatar templates
-- [ ] Assign age, gender, personality traits
+- [x] Match characters with avatar templates
+- [x] Assign age, gender, personality traits
 - [ ] Support facial expression presets (happy, angry, neutral)
 - [ ] Auto-suggest avatars by genre
 

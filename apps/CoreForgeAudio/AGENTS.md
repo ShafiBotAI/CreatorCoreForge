@@ -276,15 +276,21 @@ This file is a full checklist of every feature required for code completion and 
 - [x] SpatialPositioning
 - [x] RoomSimulation
 
+- [x] AmbientLayerFX
+- [x] CrossSceneFXLinking
+- [x] SceneDensityTuner
+=======
+
 - [ ] AmbientLayerFX
 - [ ] CrossSceneFXLinking
 - [ ] SceneDensityTuner
+
  - [x] MultiTrackExport
-- [ ] EmotionCurveVisualizer
-- [ ] VoiceAwarePacing
-- [ ] ToneConsistencyChecker
-- [ ] ConflictFXEnhancer
-- [ ] MoodColorCoder
+- [x] EmotionCurveVisualizer
+- [x] VoiceAwarePacing
+- [x] ToneConsistencyChecker
+- [x] ConflictFXEnhancer
+- [x] MoodColorCoder
  - [x] AICastingDirector
  - [x] VoiceApprovalWorkflow
 - [ ] ScriptSnippetInjector

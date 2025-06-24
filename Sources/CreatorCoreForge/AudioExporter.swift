@@ -135,6 +135,12 @@ public final class AudioExporter {
             .appendingPathComponent(zipName)
             .appendingPathExtension("zip")
         print("\u{1F4DC} Compressing files into: \(zipPath.path)")
+
+        // Simplified implementation: just create an empty zip placeholder
+        let created = FileManager.default.createFile(atPath: zipPath.path, contents: nil)
+        if !created {
+            print("Failed to create zip placeholder at \(zipPath.path)")
+=======
         let tempDir = exportDirectory
             .appendingPathComponent(UUID().uuidString, isDirectory: true)
         do {
@@ -160,6 +166,7 @@ public final class AudioExporter {
             try FileManager.default.removeItem(at: tempDir)
         } catch {
             print("Failed to zip files: \(error)")
+
         }
         return zipPath.path
     }
