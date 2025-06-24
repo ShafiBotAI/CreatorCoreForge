@@ -2,6 +2,7 @@ import os
 import re
 import py_compile
 from typing import List
+from datetime import datetime
 
 try:
     import openai
@@ -58,6 +59,31 @@ def determine_extension(description: str) -> str:
     if "typescript" in lower or "javascript" in lower:
         return ".ts"
     return ".py"
+
+
+def language_from_extension(ext: str) -> str:
+    """Map a file extension to a language name for the output directory."""
+    mapping = {
+        ".py": "python",
+        ".ts": "javascript",
+        ".js": "javascript",
+        ".swift": "swift",
+        ".kt": "kotlin",
+    }
+    return mapping.get(ext, "misc")
+
+
+def save_output_snippet(base_path: str, feature: str, ext: str, snippet: str) -> None:
+    """Save the snippet in /output/<language> with a timestamp."""
+    language = language_from_extension(ext)
+    output_dir = os.path.join(base_path, "output", language)
+    os.makedirs(output_dir, exist_ok=True)
+    timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
+    fname = f"{sanitize(feature)}_{timestamp}{ext}"
+    out_path = os.path.join(output_dir, fname)
+    with open(out_path, "w", encoding="utf-8") as out:
+        out.write(f"# Auto-generated for {feature}\n")
+        out.write(snippet)
 
 
 def generate_snippet(description: str, ext: str) -> str:
@@ -139,6 +165,7 @@ def create_files(repo_path: str) -> None:
             with open(fpath, "w", encoding="utf-8") as f:
                 f.write(f"# Auto-generated for {feature}\n")
                 f.write(snippet)
+            save_output_snippet(repo_path, feature, ext, snippet)
 
 
 def _parse_placeholder_line(line: str) -> str | None:
@@ -165,6 +192,8 @@ def upgrade_placeholders(gen_root: str) -> None:
             with open(path, "w", encoding="utf-8") as f:
                 f.write(first)
                 f.write(snippet)
+            base_repo = os.path.abspath(os.path.join(gen_root, ".."))
+            save_output_snippet(base_repo, feature, ext, snippet)
 
 
 if __name__ == "__main__":
@@ -184,4 +213,4 @@ if __name__ == "__main__":
         create_files(repo)
 
     fix_repo_code(repo)
-    print("Auto code generation complete. Check the 'generated' folder.")
+    print("Auto code generation complete. Check the 'generated' and 'output' folders.")
