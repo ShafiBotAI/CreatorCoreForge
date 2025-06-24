@@ -121,7 +121,7 @@ This agent is responsible for building, validating, and maintaining every featur
 - [x] GlobalLanguageSupport
 - [x] OfflineMP3Downloader
 - [x] TenTimesPlaybackSpeed
-- [ ] AdvancedSkipImport
+ - [x] AdvancedSkipImport
 - [x] AISummaryChatService
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
