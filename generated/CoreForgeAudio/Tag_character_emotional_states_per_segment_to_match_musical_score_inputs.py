@@ -1,4 +1,16 @@
-# Auto-generated for Tag character emotional states per segment to match musical score inputs
-def tag_character_emotional():
-    """Tag character emotional states per segment to match musical score inputs"""
-    pass
+"""Utilities for tagging segments with emotion labels."""
+
+from __future__ import annotations
+
+from typing import Iterable, List, Tuple
+
+
+def tag_character_emotional(
+    segments: Iterable[str], labels: Iterable[str]
+) -> List[Tuple[str, str]]:
+    """Pair ``segments`` with emotion ``labels``."""
+
+    return list(zip(segments, labels))
+
+
+__all__ = ["tag_character_emotional"]
