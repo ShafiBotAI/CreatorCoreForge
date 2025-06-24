@@ -82,35 +82,35 @@
 ### 📊 Scene Branching & Recall
 - [x] Store viewer path history (timeline A/B/C)
 - [x] Replay scenes with alternate visuals
-- [ ] Adjust future render suggestions based on prior paths
+- [x] Adjust future render suggestions based on prior paths
 
 ---
 
 ## ✅ Phase 6 – Monetization & Subscription (All Tiers)
 
 ### 💵 Credit Engine
-- [ ] Allow 1 book-to-video conversion per month (Pro)
-- [ ] Allow 3 books/month for Creator Tier
-- [ ] Sell extra video credits for $79.99 each
+- [x] Allow 1 book-to-video conversion per month (Pro)
+- [x] Allow 3 books/month for Creator Tier
+- [x] Sell extra video credits for $79.99 each
 
 ### 🔓 Unlocks & Add-ons
-- [ ] Auto-upload unlock for $24.99 (2 platforms)
-- [ ] NSFW unlock ($25/month or bundle $60/all apps)
-- [ ] Creator tab unlocked via promo code
+- [x] Auto-upload unlock for $24.99 (2 platforms)
+- [x] NSFW unlock ($25/month or bundle $60/all apps)
+- [x] Creator tab unlocked via promo code
 
 ---
 
 ## ✅ Phase 7 – NSFW + Experimental Visual Modes (18+ Creator Tier)
 
 ### 🔞 NSFW Visual Mode
-- [ ] Toggle for erotic/fantasy/surreal scenes
-- [ ] Hide NSFW previews unless verified
-- [ ] Censor layer options for safe version rendering
+- [x] Toggle for erotic/fantasy/surreal scenes
+- [x] Hide NSFW previews unless verified
+- [x] Censor layer options for safe version rendering
 
 ### 🧪 Experimental FX
-- [ ] Scene fusion mode (blended timelines)
-- [ ] Hallucinogenic visual filters
-- [ ] Realistic surrealism toggle (dream logic effects)
+- [x] Scene fusion mode (blended timelines)
+- [x] Hallucinogenic visual filters
+- [x] Realistic surrealism toggle (dream logic effects)
 
 ---
 
@@ -122,12 +122,12 @@
 - [x] Add platform-ready metadata
 
 ### 📤 Platform Upload Tools
-- [ ] Upload 1 platform/channel by default
-- [ ] Add-on unlock for second channel/platform
-- [ ] Show upload status and logs in dashboard
+- [x] Upload 1 platform/channel by default
+- [x] Add-on unlock for second channel/platform
+- [x] Show upload status and logs in dashboard
 
 ### ⚙️ Settings Panel
-- [ ] Style picker (anime, noir, fantasy, etc.)
+- [x] Style picker (anime, noir, fantasy, etc.)
 - [ ] NSFW mode toggle (off by default)
  - [x] Developer console toggle (Creator tier)
 
