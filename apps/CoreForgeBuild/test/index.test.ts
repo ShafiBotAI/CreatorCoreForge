@@ -4,6 +4,10 @@ import { CodeGenService } from '../services/CodeGenService';
 import { FigmaImporter } from '../services/FigmaImporter';
 import { EventBus } from '../services/EventBus';
 import { DiffService } from '../services/DiffService';
+import { BuilderEngine } from '../services/BuilderEngine';
+import { CreativeDNAService } from '../services/CreativeDNAService';
+import { DeployService } from '../services/DeployService';
+import fs from 'fs';
 import assert from 'node:assert';
 
 const svc = new TemplateService();
@@ -37,6 +41,23 @@ assert(diffOutput.includes('-a') && diffOutput.includes('+b'));
 
 const expressCode = codegen.generate([], 'express', 'minimal');
 assert(expressCode.includes('express'));
+
+// BuilderEngine and auxiliary services
+const engine = new BuilderEngine();
+const built = engine.buildAll(
+  { id: 'sample', name: 'Sample', platform: 'web' },
+  []
+);
+assert.strictEqual(built.length, 5);
+assert(built.every(f => fs.existsSync(f)));
+
+const dnaSvc = new CreativeDNAService();
+dnaSvc.save({ team: 'X', whiteLabel: true });
+const dna = dnaSvc.load();
+assert.strictEqual(dna.team, 'X');
+
+const deploy = new DeployService();
+assert.strictEqual(deploy.deploy('dist/sample'), 'dist/sample');
 
 console.log('CoreForgeBuild tests passed');
 
