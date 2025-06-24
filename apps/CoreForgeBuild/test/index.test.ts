@@ -52,13 +52,8 @@ import { ParseHistory } from '../services/ParseHistory';
   assert.strictEqual(generated, '<div />');
 
   const diff = new DiffService();
-
-  assert(diff.diff('a', 'b').includes('-a'));
-=======
-
   const diffOutput = diff.diff('a', 'b');
   assert(diffOutput.includes('-a'));
-
 
   const sugg = new UISuggestionService();
   assert(sugg.suggestNext([{ type: 'header', props: { text: 'Login' } }]).length > 0);
