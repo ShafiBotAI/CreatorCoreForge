@@ -404,28 +404,27 @@ Key points from `README.md`:
 - [x] Translate creator notes and project metadata for global collaboration
 - [x] Provide multilingual visual cue glossary with usage examples
 - [x] Preserve scene framing consistency across languages
-- [ ] Embed language metadata in export files for platform distribution
-- [ ] Enable automatic rendering of multiple language versions at once
-- [ ] Support multi-book narrative sync for localized arcs
-- [ ] Cross-link translated memory arcs and character expressions over series
+- [x] Embed language metadata in export files for platform distribution
+- [x] Enable automatic rendering of multiple language versions at once
+- [x] Support multi-book narrative sync for localized arcs
+- [x] Cross-link translated memory arcs and character expressions over series
 
-### Phase 9 – Full-Cast Mastering, Scene Intelligence & Creator Studio Tools
-- [ ] Export each character's voice and animation to separate tracks for post-editing
-- [ ] Provide DAW-compatible multitrack timelines with labeled scene markers
-- [ ] Enable facial motion layer export for animator sync
-- [ ] Allow lip sync intensity control and timing nudge tools
-- [ ] Build emotion heatmap across chapters to guide visual tone
-- [ ] Auto-tag scene rhythm (slow burn, montage, high-speed) for rendering optimization
-- [ ] Sync character spotlighting and focus shifts with narration peaks
-- [ ] Offer sandbox playback with per-layer mute/toggle options
-- [ ] Allow real-time override of generated framing or pacing
-- [ ] Provide "Director Mode" for manual camera and FX control
-- [ ] Add timeline scrubber with visual peaks and dialog markers
-- [ ] Visualize tone deviation and intensity spikes for debugging
-- [ ] Enable AI suggestions for retiming scene flow or voice cadence
-- [ ] Store creator-defined presets for framing, color grade, and cut style
-- [ ] Allow version comparison mode between two scene outputs
-- [ ] Offer creator commentary overlay mode during video review
+- [x] Export each character's voice and animation to separate tracks for post-editing
+- [x] Provide DAW-compatible multitrack timelines with labeled scene markers
+- [x] Enable facial motion layer export for animator sync
+- [x] Allow lip sync intensity control and timing nudge tools
+- [x] Build emotion heatmap across chapters to guide visual tone
+- [x] Auto-tag scene rhythm (slow burn, montage, high-speed) for rendering optimization
+- [x] Sync character spotlighting and focus shifts with narration peaks
+- [x] Offer sandbox playback with per-layer mute/toggle options
+- [x] Allow real-time override of generated framing or pacing
+- [x] Provide "Director Mode" for manual camera and FX control
+- [x] Add timeline scrubber with visual peaks and dialog markers
+- [x] Visualize tone deviation and intensity spikes for debugging
+- [x] Enable AI suggestions for retiming scene flow or voice cadence
+- [x] Store creator-defined presets for framing, color grade, and cut style
+- [x] Allow version comparison mode between two scene outputs
+- [x] Offer creator commentary overlay mode during video review
 - [ ] Export scene reports including tone maps, keyframes, and alt takes
 - [ ] Support beta tools: voice fingerprint preview, animation merge tester
 - [ ] Bundle scene elements into shareable .cvsx format (CoreForge Scene Exchange)
