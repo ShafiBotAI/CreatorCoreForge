@@ -153,26 +153,26 @@ Key points from `README.md`:
 
 ### Phase 4 – Plugin System, Marketplace, and Custom Code Injection
  - [x] Enable AI-generated plugin templates with automatic integration
-- [ ] Support drag-and-drop plugins from CoreForge Marketplace
-- [ ] Allow developers to upload custom plugin modules with manifest.json
-- [ ] Validate plugin inputs, outputs, and lifecycle methods automatically
-- [ ] Auto-generate plugin documentation from code annotations
-- [ ] Support visual plugin previews in app canvas
-- [ ] Enable import of NPM, SwiftPM, or Python packages into app builds
-- [ ] Track plugin usage per project and flag deprecated packages
-- [ ] Provide dependency conflict detection and resolution prompts
-- [ ] Allow toggle of plugin scopes: global, component-level, or route-based
-- [ ] Embed creator rating and review system for plugins in Marketplace
-- [ ] Integrate GitHub import for open-source plugin sync
-- [ ] Support local and cloud plugin installation
-- [ ] Offer sandbox mode to test plugin behavior before committing
-- [ ] Visualize plugin dependency graph and logic influence zones
-- [ ] Generate plugin analytics (load time, usage frequency)
-- [ ] Allow Creator to monetize plugins via premium unlocks
-- [ ] Provide AI assistant for plugin debugging and refactoring
-- [ ] Support access control roles for private team-based plugin libraries
-- [ ] Auto-update plugins via version control with rollback safety net
-- [ ] Include inline plugin source editing and live-reload test engine
+- [x] Support drag-and-drop plugins from CoreForge Marketplace
+- [x] Allow developers to upload custom plugin modules with manifest.json
+- [x] Validate plugin inputs, outputs, and lifecycle methods automatically
+- [x] Auto-generate plugin documentation from code annotations
+- [x] Support visual plugin previews in app canvas
+- [x] Enable import of NPM, SwiftPM, or Python packages into app builds
+- [x] Track plugin usage per project and flag deprecated packages
+- [x] Provide dependency conflict detection and resolution prompts
+- [x] Allow toggle of plugin scopes: global, component-level, or route-based
+- [x] Embed creator rating and review system for plugins in Marketplace
+- [x] Integrate GitHub import for open-source plugin sync
+- [x] Support local and cloud plugin installation
+- [x] Offer sandbox mode to test plugin behavior before committing
+- [x] Visualize plugin dependency graph and logic influence zones
+- [x] Generate plugin analytics (load time, usage frequency)
+- [x] Allow Creator to monetize plugins via premium unlocks
+- [x] Provide AI assistant for plugin debugging and refactoring
+- [x] Support access control roles for private team-based plugin libraries
+- [x] Auto-update plugins via version control with rollback safety net
+- [x] Include inline plugin source editing and live-reload test engine
 - [ ] Export plugins as distributable packages for reuse in other CoreForge apps
 
 ### Phase 5 – Real-Time Testing, Debugging, and Live Preview Tools

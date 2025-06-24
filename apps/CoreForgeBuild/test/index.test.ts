@@ -155,4 +155,5 @@ import { ParseHistory } from '../services/ParseHistory';
 
   console.log('CoreForgeBuild tests passed');
   require('./collaboration.test');
+  require('./pluginmanager.test');
 })();
