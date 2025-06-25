@@ -24,6 +24,7 @@ vault system. It is written in SwiftUI and will expand to additional platforms.
 - **Multi-cast audiobook generation** via `MultiCastAudiobookGenerator`
 - **Immersive dramatized production** with `DramatizedAudiobookProducer`
 - **Dashboard** tab with usage analytics and achievements
+- **Favorite Voices** tab for quickly selecting preferred voices
 - **Highlighted reading** during playback
 
 
