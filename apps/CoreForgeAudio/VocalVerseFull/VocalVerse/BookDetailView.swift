@@ -4,6 +4,7 @@ import SwiftUI
 /// Displays details for a selected book with chapter list and voice casting.
 struct BookDetailView: View {
     @State private var showVoiceCast = false
+    @EnvironmentObject var library: LibraryModel
     var book: Book
 
     var body: some View {
@@ -28,11 +29,18 @@ struct BookDetailView: View {
                             Image(systemName: "waveform")
                         }
                     }
+                    .contentShape(Rectangle())
+                    .onTapGesture {
+                        library.select(book: book, chapter: chapter)
+                    }
                 }
             }
         }
         .toolbar {
             Button("Voices") { showVoiceCast = true }
+            Button("Play") {
+                library.select(book: book, chapter: book.chapters.first)
+            }
         }
         .sheet(isPresented: $showVoiceCast) {
             VoiceCastView(characters: extractCharacters(from: book))

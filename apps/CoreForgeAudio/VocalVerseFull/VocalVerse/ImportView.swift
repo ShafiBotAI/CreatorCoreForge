@@ -4,14 +4,14 @@ import SwiftUI
 /// Placeholder import screen for eBook files.
 struct ImportView: View {
     @State private var showingImporter = false
-    @State private var importedBooks: [Book] = []
+    @EnvironmentObject var library: LibraryModel
 
     var body: some View {
         VStack(spacing: 20) {
             Button("Import Book") { showingImporter = true }
                 .buttonStyle(.borderedProminent)
-            if !importedBooks.isEmpty {
-                List(importedBooks) { book in
+            if !library.books.isEmpty {
+                List(library.books) { book in
                     Text(book.title)
                 }
             }
@@ -24,7 +24,7 @@ struct ImportView: View {
                 if let url = urls.first {
                     let chapters = EbookImporter().importEbook(from: url.path).map { Chapter(title: "Chapter", text: $0) }
                     let book = Book(title: url.lastPathComponent, author: "", chapters: chapters)
-                    importedBooks.append(book)
+                    library.addBook(book)
                 }
             case .failure:
                 break
