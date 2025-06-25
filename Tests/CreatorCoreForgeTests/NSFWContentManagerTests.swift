@@ -5,6 +5,7 @@ final class NSFWContentManagerTests: XCTestCase {
     func testUnlockWithPromoCode() {
         let manager = NSFWContentManager.shared
         manager.unlocked = false
+        manager.verifyAge(20)
         manager.unlock(with: "creatoraccess")
         XCTAssertTrue(manager.unlocked)
     }
@@ -47,5 +48,13 @@ final class NSFWContentManagerTests: XCTestCase {
         let second = manager.nextAftercarePrompt()
         XCTAssertNotEqual(first, "")
         XCTAssertNotEqual(second, "")
+    }
+
+    func testAgeVerification() {
+        let manager = NSFWContentManager.shared
+        manager.verifyAge(16)
+        XCTAssertFalse(manager.ageVerified)
+        manager.verifyAge(18)
+        XCTAssertTrue(manager.ageVerified)
     }
 }

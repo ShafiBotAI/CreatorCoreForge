@@ -14,8 +14,10 @@ public struct NSFWSceneToggle {
     }
 
     /// Toggle global NSFW mode using the standard unlock code.
-    public func setEnabled(_ enabled: Bool) {
+    /// Age must meet `ContentPolicyManager.ageLimit`.
+    public func setEnabled(_ enabled: Bool, age: Int = 0) {
         if enabled {
+            manager.verifyAge(age)
             manager.unlock(with: "creatoraccess")
         } else {
             manager.unlocked = false
