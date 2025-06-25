@@ -75,6 +75,8 @@ const rendered = await renderer.render({ frames: [Buffer.from('f')] });
 assert.strictEqual(rendered.frames.length, 1);
 assert.strictEqual(rendered.audio.length, 0);
 assert.strictEqual(rendered.style, 'default');
+const dual = await renderer.renderDual({ frames: [Buffer.from('f')], censorLevel: 2 });
+assert.strictEqual(dual.safe.frames[0].toString(), 'f-censored-2');
 
 
 
