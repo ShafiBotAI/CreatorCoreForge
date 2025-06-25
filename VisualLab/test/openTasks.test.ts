@@ -5,6 +5,7 @@ import {
   SceneToggleService,
   ContentFilter,
   censorLayer,
+  censorRegions,
   fuseScenes,
   applyHallucinogenicFilter,
   applySurrealism,
@@ -41,6 +42,10 @@ const filter = new ContentFilter();
 filter.verify('u');
 assert.ok(filter.canPreview('u'));
 assert.strictEqual(censorLayer('frame',1),'frame-censored-1');
+assert.strictEqual(
+  censorRegions('frame', [{ region: 'chest', level: 2 }]),
+  'frame-chest-blur2'
+);
 
 assert.deepStrictEqual(fuseScenes(['a'],['b']), ['a|b']);
 assert.deepStrictEqual(applyHallucinogenicFilter(['f']), ['f-trippy']);
