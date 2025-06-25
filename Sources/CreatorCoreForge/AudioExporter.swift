@@ -147,18 +147,7 @@ public final class AudioExporter {
                 let dst = tempDir.appendingPathComponent(src.lastPathComponent)
                 try FileManager.default.copyItem(at: src, to: dst)
             }
-            #if canImport(Compression)
-            try FileManager.default.zipItem(at: tempDir, to: zipPath)
-            #elseif os(macOS) || os(Linux)
-            let process = Process()
-            process.executableURL = URL(fileURLWithPath: "/usr/bin/zip")
-            process.currentDirectoryURL = tempDir
-            process.arguments = ["-r", zipPath.path, "."]
-            try process.run()
-            process.waitUntilExit()
-            #else
-            print("Compression framework unavailable on this platform")
-            #endif
+            try FileManager.default.codexZipItem(at: tempDir, to: zipPath)
             try FileManager.default.removeItem(at: tempDir)
         } catch {
             print("Failed to zip files: \(error)")

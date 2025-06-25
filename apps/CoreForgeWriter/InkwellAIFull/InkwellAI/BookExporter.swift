@@ -17,7 +17,7 @@ struct BookExporter {
         let html = "<html><body>\n" + text.replacingOccurrences(of: "\n", with: "<br>") + "\n</body></html>"
         try html.write(to: tempDir.appendingPathComponent("index.html"),
                        atomically: true, encoding: .utf8)
-        try FileManager.default.zipItem(at: tempDir, to: url)
+        try FileManager.default.codexZipItem(at: tempDir, to: url)
         try FileManager.default.removeItem(at: tempDir)
         return url
     }
