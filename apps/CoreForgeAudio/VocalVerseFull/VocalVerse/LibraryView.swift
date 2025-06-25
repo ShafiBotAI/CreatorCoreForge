@@ -2,16 +2,11 @@
 import SwiftUI
 
 struct LibraryView: View {
-    @State private var books: [Book] = [
-        Book(title: "Sample Adventure", author: "A. Author", coverImage: nil, chapters: [
-            Chapter(title: "Intro", text: "@Hero begins the journey."),
-            Chapter(title: "Conflict", text: "@Villain appears in town.")
-        ])
-    ]
+    @EnvironmentObject var library: LibraryModel
 
     var body: some View {
         NavigationView {
-            List(books) { book in
+            List(library.books) { book in
                 NavigationLink(destination: BookDetailView(book: book)) {
                     VStack(alignment: .leading) {
                         Text(book.title)

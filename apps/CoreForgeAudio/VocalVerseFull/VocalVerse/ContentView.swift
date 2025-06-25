@@ -3,11 +3,13 @@ import SwiftUI
 
 struct ContentView: View {
     @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding = false
+    @StateObject private var library = LibraryModel()
 
     var body: some View {
         Group {
             if hasSeenOnboarding {
                 MainTabView()
+                    .environmentObject(library)
                     .transition(.opacity)
             } else {
                 OnboardingView(hasSeenOnboarding: $hasSeenOnboarding)
@@ -19,17 +21,22 @@ struct ContentView: View {
 }
 
 struct MainTabView: View {
+    @EnvironmentObject var library: LibraryModel
+
     var body: some View {
         TabView {
             LibraryView()
+                .environmentObject(library)
                 .tabItem {
                     Label("Library", systemImage: "books.vertical")
                 }
             ImportView()
+                .environmentObject(library)
                 .tabItem {
                     Label("Import", systemImage: "square.and.arrow.down")
                 }
             PlayerView()
+                .environmentObject(library)
                 .tabItem {
                     Label("Player", systemImage: "play.circle")
                 }
