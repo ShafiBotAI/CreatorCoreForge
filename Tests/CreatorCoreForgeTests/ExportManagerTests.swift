@@ -8,6 +8,12 @@ final class ExportManagerTests: XCTestCase {
         XCTAssertTrue(manager.validate(path: path))
     }
 
+
+    func testDetectExportBlockers() {
+        let manager = ExportManager()
+        XCTAssertEqual(manager.detectExportBlockers(screens: 0, logicValid: false).count, 2)
+        XCTAssertEqual(manager.detectExportBlockers(screens: 1, logicValid: true), [])
+
     func testDetectBlockers() {
         let manager = ExportManager()
         let none = manager.detectBlockers(projectFiles: ["LoginScreen", "icon.png", "validation.js"])
@@ -16,5 +22,6 @@ final class ExportManagerTests: XCTestCase {
         XCTAssertTrue(issues.contains("missing login screen"))
         XCTAssertTrue(issues.contains("missing app icon"))
         XCTAssertTrue(issues.contains("no validation logic found"))
+
     }
 }
