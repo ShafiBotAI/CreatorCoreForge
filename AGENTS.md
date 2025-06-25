@@ -140,28 +140,28 @@ This document details all AI agent capabilities, engine modules, and next-genera
 - [x] Highlight visual identity conflicts for creator review (e.g., two similar characters)
 - [x] Apply genre-tuned color palettes to each character
 - [x] Recommend lighting configurations for cast mood amplification
-- [ ] Add multi-timeline variants for multiverse visual branching
-- [ ] Provide creator dashboard to preview, test, and lock character animations
+- [x] Add multi-timeline variants for multiverse visual branching
+- [x] Provide creator dashboard to preview, test, and lock character animations
 
 ### Phase 3 – AI Rendering, Visual Effects & Scene FX Logic
-- [ ] Generate scene backgrounds using genre-trained visual models (e.g., fantasy, dystopia)
-- [ ] Match lighting conditions to time-of-day, tone, and setting
-- [ ] Render characters in cinematic compositions (rule of thirds, motion focus)
-- [ ] Apply scene transitions (fade, cut, swipe, glitch) based on pacing tags
-- [ ] Layer particle FX (rain, fire, fog, dust) for environmental realism
-- [ ] Auto-render camera movement (zoom, pan, tilt) based on action intensity
-- [ ] Enable cutaway logic for interior vs exterior visual blending
-- [ ] Simulate mood via hue shifting and saturation overlays
-- [ ] Support dynamic shadows and ambient occlusion for realism
-- [ ] Trigger visual filters (noir, dream, sepia, neon) based on scene metadata
-- [ ] Identify high-impact moments and render with frame-by-frame detail
-- [ ] Support 16:9, vertical, and square rendering formats
-- [ ] Enable "live panel" layout for comic/manga-style visual composition
-- [ ] Add blur, shake, or light flash FX for dramatic or horror moments
-- [ ] Sync scene tone to ambient background FX audio
-- [ ] Store FX template libraries per genre for reuse
-- [ ] Allow creator to preview FX before rendering full scenes
-- [ ] Provide toggle between high-quality and quick-preview render settings
+- [x] Generate scene backgrounds using genre-trained visual models (e.g., fantasy, dystopia)
+- [x] Match lighting conditions to time-of-day, tone, and setting
+- [x] Render characters in cinematic compositions (rule of thirds, motion focus)
+- [x] Apply scene transitions (fade, cut, swipe, glitch) based on pacing tags
+- [x] Layer particle FX (rain, fire, fog, dust) for environmental realism
+- [x] Auto-render camera movement (zoom, pan, tilt) based on action intensity
+- [x] Enable cutaway logic for interior vs exterior visual blending
+- [x] Simulate mood via hue shifting and saturation overlays
+- [x] Support dynamic shadows and ambient occlusion for realism
+- [x] Trigger visual filters (noir, dream, sepia, neon) based on scene metadata
+- [x] Identify high-impact moments and render with frame-by-frame detail
+- [x] Support 16:9, vertical, and square rendering formats
+- [x] Enable "live panel" layout for comic/manga-style visual composition
+- [x] Add blur, shake, or light flash FX for dramatic or horror moments
+- [x] Sync scene tone to ambient background FX audio
+- [x] Store FX template libraries per genre for reuse
+- [x] Allow creator to preview FX before rendering full scenes
+- [x] Provide toggle between high-quality and quick-preview render settings
 - [ ] Visualize FX layering structure for post-editing
 - [ ] Integrate facial motion tracking for emotional match rendering
 - [ ] Track render time estimates and optimize batch processing queue
