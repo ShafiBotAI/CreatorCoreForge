@@ -240,11 +240,11 @@ This document details all AI agent capabilities, engine modules, and next-genera
 - [x] Generate trailer versions from book-to-video projects automatically
 
 ### Phase 7 – NSFW Visual Modes, Content Filtering, and Creator Privacy Controls
-- [ ] Add NSFW mode toggle with age-gated access and verification
-- [ ] Provide separate rendering logic for explicit vs suggestive visual scenes
-- [ ] Allow per-character NSFW permissions and tone preferences
-- [ ] Tag and index NSFW scenes for optional inclusion/exclusion in exports
-- [ ] Offer NSFW visual FX library (shadows, fog, body simulation overlays)
+- [x] Add NSFW mode toggle with age-gated access and verification
+- [x] Provide separate rendering logic for explicit vs suggestive visual scenes
+- [x] Allow per-character NSFW permissions and tone preferences
+- [x] Tag and index NSFW scenes for optional inclusion/exclusion in exports
+- [x] Offer NSFW visual FX library (shadows, fog, body simulation overlays)
 - [ ] Blur or censor sensitive body areas based on creator control
 - [ ] Support dual rendering: NSFW and Safe version from same scene
 - [ ] Enable private-only scene generation with encrypted preview keys
