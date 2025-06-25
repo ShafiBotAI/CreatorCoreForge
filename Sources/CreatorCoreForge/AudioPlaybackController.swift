@@ -4,6 +4,8 @@ import Foundation
 public final class AudioPlaybackController {
     private let engine: AudioPlaybackEngine
     private let ui: PlaybackUIController
+    private var queue: [URL] = []
+    private var isPlaying = false
 
     public init(engine: AudioPlaybackEngine = .init(),
                 ui: PlaybackUIController = .init()) {
@@ -16,6 +18,7 @@ public final class AudioPlaybackController {
         engine.load(url: url)
         ui.displayChapterTitle(url.deletingPathExtension().lastPathComponent)
         engine.play()
+        isPlaying = true
         ui.showPlayButton()
     }
 
@@ -26,11 +29,27 @@ public final class AudioPlaybackController {
 
     public func resume() {
         engine.play()
+        isPlaying = true
         ui.showPlayButton()
     }
 
     public func stop() {
         engine.stop()
+        isPlaying = false
         ui.enableControls(false)
+    }
+
+    /// Queue multiple audio files for sequential playback.
+    public func queue(_ urls: [URL]) {
+        queue.append(contentsOf: urls)
+        if !isPlaying {
+            playNext()
+        }
+    }
+
+    private func playNext() {
+        guard !queue.isEmpty else { return }
+        let next = queue.removeFirst()
+        loadAndPlay(url: next)
     }
 }

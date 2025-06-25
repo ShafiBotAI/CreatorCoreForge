@@ -13,6 +13,11 @@ public final class OfflineQueue {
         process()
     }
 
+    /// Cancel all pending tasks without executing them.
+    public func cancelAll() {
+        tasks.removeAll()
+    }
+
     private func process() {
         guard !isProcessing, !tasks.isEmpty else { return }
         isProcessing = true

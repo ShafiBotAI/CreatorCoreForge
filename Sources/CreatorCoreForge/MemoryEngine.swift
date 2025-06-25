@@ -26,4 +26,9 @@ public final class MemoryEngine {
     public func frames(for project: String) -> [String] {
         visual.frames(for: project)
     }
+
+    /// Persist a voice assignment so it can be reused across books.
+    public func rememberVoice(_ voice: VoiceProfile, for character: String, in series: String) {
+        VoiceMemoryManager.shared.assign(voiceID: voice.id, to: character, in: series)
+    }
 }
