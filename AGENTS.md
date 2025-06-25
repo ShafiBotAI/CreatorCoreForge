@@ -162,28 +162,28 @@ This document details all AI agent capabilities, engine modules, and next-genera
 - [x] Store FX template libraries per genre for reuse
 - [x] Allow creator to preview FX before rendering full scenes
 - [x] Provide toggle between high-quality and quick-preview render settings
-- [ ] Visualize FX layering structure for post-editing
-- [ ] Integrate facial motion tracking for emotional match rendering
-- [ ] Track render time estimates and optimize batch processing queue
-- [ ] Tag visual rhythm speed (slow visual poetry vs fast action montage)
+- [x] Visualize FX layering structure for post-editing
+- [x] Integrate facial motion tracking for emotional match rendering
+- [x] Track render time estimates and optimize batch processing queue
+- [x] Tag visual rhythm speed (slow visual poetry vs fast action montage)
 
 ### Phase 4 – Memory Engine, Continuity, and Multibook Visual Sync
-- [ ] Persist character visuals across multiple books, including costume and evolution
-- [ ] Maintain memory of key visual motifs and use them in flashbacks or callouts
-- [ ] Store visual timeline of each character’s age, look, and setting impact
-- [ ] Flag continuity errors in casting, color palette, or background reuse
-- [ ] Allow timeline shifting to accommodate prequels and sequels
-- [ ] Sync character visual memory with voice tone evolution
-- [ ] Store FX history (e.g., specific lightning type for trauma scene)
-- [ ] Reuse location models and scene layouts for consistency across chapters/books
-- [ ] Auto-recommend filters and FX based on prior book rendering
-- [ ] Tag series-specific visual themes (e.g., "gold light = safety")
-- [ ] Enable multibook project dashboard to track consistency
-- [ ] Visual arc timeline for each character (first appearance to final scene)
-- [ ] Adapt framing techniques based on memory weight (e.g., past = faded, current = vivid)
-- [ ] Cross-reference visual scene files with narration or audio timeline
-- [ ] Alert creators to inconsistencies in character hairstyle, outfit, or body type
-- [ ] Recommend background reuse based on memory location detection
+- [x] Persist character visuals across multiple books, including costume and evolution
+- [x] Maintain memory of key visual motifs and use them in flashbacks or callouts
+- [x] Store visual timeline of each character’s age, look, and setting impact
+- [x] Flag continuity errors in casting, color palette, or background reuse
+- [x] Allow timeline shifting to accommodate prequels and sequels
+- [x] Sync character visual memory with voice tone evolution
+- [x] Store FX history (e.g., specific lightning type for trauma scene)
+- [x] Reuse location models and scene layouts for consistency across chapters/books
+- [x] Auto-recommend filters and FX based on prior book rendering
+- [x] Tag series-specific visual themes (e.g., "gold light = safety")
+- [x] Enable multibook project dashboard to track consistency
+- [x] Visual arc timeline for each character (first appearance to final scene)
+- [x] Adapt framing techniques based on memory weight (e.g., past = faded, current = vivid)
+- [x] Cross-reference visual scene files with narration or audio timeline
+- [x] Alert creators to inconsistencies in character hairstyle, outfit, or body type
+- [x] Recommend background reuse based on memory location detection
 - [ ] Provide character memory "lock" toggle to prevent style drift
 - [ ] Highlight visual callbacks to past books/scenes in creator view
 - [ ] Allow AI assistant to generate recap montage from memory visuals
