@@ -17,4 +17,23 @@ public final class SegmentEngine {
     public func segmentsAsync(from text: String, completion: @escaping ([Segment]) -> Void) {
         service.segmentAsync([Chapter(title: "", text: text)], completion: completion)
     }
+
+    /// Dynamically split text using punctuation for finer voice blocks.
+    public func dynamicSegments(from text: String) -> [Segment] {
+        var segments: [Segment] = []
+        var buffer = ""
+        for ch in text {
+            buffer.append(ch)
+            if ".!?".contains(ch) {
+                let trimmed = buffer.trimmingCharacters(in: .whitespacesAndNewlines)
+                if !trimmed.isEmpty {
+                    segments.append(Segment(text: trimmed))
+                }
+                buffer.removeAll()
+            }
+        }
+        let tail = buffer.trimmingCharacters(in: .whitespacesAndNewlines)
+        if !tail.isEmpty { segments.append(Segment(text: tail)) }
+        return segments
+    }
 }

@@ -35,4 +35,11 @@ public final class NSFWMode {
         settings.allowNSFW = false
         settings.save()
     }
+
+    /// Returns true if the provided text is allowed under the current NSFW settings.
+    /// Unsafe content is blocked when NSFW mode is disabled.
+    public func isTextAllowed(_ text: String) -> Bool {
+        guard !isEnabled else { return true }
+        return !NSFWModerationFlagger().flag(text)
+    }
 }
