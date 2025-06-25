@@ -1,10 +1,12 @@
 #if canImport(SwiftUI)
 import SwiftUI
+import CreatorCoreForge
 #if canImport(AVFoundation)
 import AVFoundation
 #endif
 
 struct PlayerView: View {
+    var namespace: Namespace.ID
     @EnvironmentObject var library: LibraryModel
     @EnvironmentObject var usage: UsageStats
 #if canImport(AVFoundation)
@@ -14,6 +16,8 @@ struct PlayerView: View {
 #if canImport(AVFoundation)
     @State private var playStart: Date?
 #endif
+    @State private var speed: Double = 1.0
+    @State private var voice: String = VoiceConfig.voices.first?.name ?? "Default"
 
     var body: some View {
         Group {
@@ -34,8 +38,10 @@ struct PlayerView: View {
                         toggleSpeech(text: chapter.text)
                     }
                     .buttonStyle(.borderedProminent)
+                    PlaybackSpeedControlView(speed: $speed, voice: $voice)
                 }
                 .padding()
+                .matchedGeometryEffect(id: "player", in: namespace)
             } else {
                 Text("Select a chapter from the Library")
                     .font(.headline)
