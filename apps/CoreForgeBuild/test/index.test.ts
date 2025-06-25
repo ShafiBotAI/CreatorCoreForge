@@ -182,6 +182,7 @@ import { ParseHistory } from '../services/ParseHistory';
 
   console.log('CoreForgeBuild tests passed');
   require('./collaboration.test');
+  require("./autoupdater.test");
   require('./pluginmanager.test');
   require('./advanced.test');
 })();
