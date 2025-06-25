@@ -5,6 +5,7 @@ import SwiftUI
 struct ImportView: View {
     @State private var showingImporter = false
     @EnvironmentObject var library: LibraryModel
+    @EnvironmentObject var usage: UsageStats
 
     var body: some View {
         VStack(spacing: 20) {
@@ -25,6 +26,7 @@ struct ImportView: View {
                     let chapters = EbookImporter().importEbook(from: url.path).map { Chapter(title: "Chapter", text: $0) }
                     let book = Book(title: url.lastPathComponent, author: "", chapters: chapters)
                     library.addBook(book)
+                    usage.recordImport()
                 }
             case .failure:
                 break
