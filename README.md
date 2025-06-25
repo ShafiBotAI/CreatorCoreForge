@@ -235,7 +235,7 @@
 - Creator, Pro, Enterprise, White Label tiers per app
 - In-app credits, NSFW add-ons, voice packs, templates
 - Referral, affiliate, and creator monetization models included
-- Editable referral program with cross-app referral dashboard
+- Referral program customizable per app with cross-app referral dashboard
 
 ---
 

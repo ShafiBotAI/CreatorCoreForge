@@ -13,6 +13,7 @@ public final class ReferralProgram {
     }
 
     private var info: ProgramInfo
+    private var infoByApp: [String: ProgramInfo] = [:]
     private var stats: [String: Int] = [:]
 
     public init(info: ProgramInfo = .init()) {
@@ -37,14 +38,21 @@ public final class ReferralProgram {
         stats[code] ?? 0
     }
 
-    /// Update program terms.
-    public func updateTerms(_ newTerms: String) {
-        info.terms = newTerms
+    /// Update program terms. When `app` is provided, update terms only for that app.
+    public func updateTerms(_ newTerms: String, forApp app: String? = nil) {
+        if let app = app {
+            infoByApp[app] = ProgramInfo(terms: newTerms)
+        } else {
+            info.terms = newTerms
+        }
     }
 
-    /// Current program info.
-    public func currentInfo() -> ProgramInfo {
-        info
+    /// Current program info. When `app` is provided, returns app-specific terms if set.
+    public func currentInfo(forApp app: String? = nil) -> ProgramInfo {
+        if let app = app, let appInfo = infoByApp[app] {
+            return appInfo
+        }
+        return info
     }
 
     /// All referral statistics.
