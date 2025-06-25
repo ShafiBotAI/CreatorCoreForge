@@ -6,6 +6,7 @@
 - Added `SceneDetector` module for basic scene analysis.
 - Optimized `SegmentService` with chunked async processing and LRU caching.
 - Completed the first twenty CoreForge Build tasks with `AdvancedBuildService`
+- Marked twenty CoreForge Visual roadmap items complete in `AGENTS.md`
   and updated README and AGENTS checklists.
 - Added layout instruction parsing to `MarkdownLayoutParser` and updated Build AGENTS checklist.
 - Implemented `TTSRenderer` and Vue-based `ChapterEditor`, closing related open tasks.
