@@ -385,7 +385,7 @@ Use `scripts/chatterbox_bridge.py` to generate a narrated play from a simple `SP
 ```
 
 Run `scripts/progress_bot.py` to view app progress and generate snippet files for missing features.
-Run `scripts/generate_app_completion_report.py` to update `app_completion_report.json` and `docs/App_Completion_Summary.md`.
+Run `scripts/generate_app_completion_report.py` to update `app_completion_report.json` and a Markdown dashboard at `docs/App_Completion_Summary.md`.
 See `docs/progress_bot.md` for usage details.
 ## Running Tests
 
