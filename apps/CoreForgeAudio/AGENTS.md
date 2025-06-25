@@ -281,10 +281,8 @@ This file is a full checklist of every feature required for code completion and 
 - [x] VoiceDNAForking
 - [x] FlashbackSceneEngine
 
-- [ ] ContinuityChecker
-- [ ] CrossoverEngine
-- [x] ContinuityChecker
-- [x] CrossoverEngine
+ - [x] ContinuityChecker
+ - [x] CrossoverEngine
 
 ## NSFW Features & Expansion (If Enabled)
 
