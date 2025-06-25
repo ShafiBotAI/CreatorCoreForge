@@ -13,6 +13,7 @@ final class ExportManagerTests: XCTestCase {
         let manager = ExportManager()
         XCTAssertEqual(manager.detectExportBlockers(screens: 0, logicValid: false).count, 2)
         XCTAssertEqual(manager.detectExportBlockers(screens: 1, logicValid: true), [])
+    }
 
     func testDetectBlockers() {
         let manager = ExportManager()
