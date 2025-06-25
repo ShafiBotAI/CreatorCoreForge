@@ -184,60 +184,60 @@ This document details all AI agent capabilities, engine modules, and next-genera
 - [x] Cross-reference visual scene files with narration or audio timeline
 - [x] Alert creators to inconsistencies in character hairstyle, outfit, or body type
 - [x] Recommend background reuse based on memory location detection
-- [ ] Provide character memory "lock" toggle to prevent style drift
-- [ ] Highlight visual callbacks to past books/scenes in creator view
-- [ ] Allow AI assistant to generate recap montage from memory visuals
-- [ ] Integrate memory graphs into multiverse and branch visualizers
-- [ ] Detect and annotate recurring visual cues across book entries
-- [ ] Support visual memory handoff to other creator accounts or teams
+- [x] Provide character memory "lock" toggle to prevent style drift
+- [x] Highlight visual callbacks to past books/scenes in creator view
+- [x] Allow AI assistant to generate recap montage from memory visuals
+- [x] Integrate memory graphs into multiverse and branch visualizers
+- [x] Detect and annotate recurring visual cues across book entries
+- [x] Support visual memory handoff to other creator accounts or teams
 
 ### Phase 5 – Multiverse Branching, Alternate Paths & Visual Timeline Control
-- [ ] Implement scene forking with timeline tag (A, B, Prime, etc.)
-- [ ] Store alternate visual outcomes for the same chapter/scene
-- [ ] Display visual multiverse map with branches and connections
-- [ ] Allow creators to preview all timeline outcomes in side-by-side mode
-- [ ] Enable auto-generation of visual variations for key choice points
-- [ ] Sync visual changes with multiverse-aware voice and FX layers
-- [ ] Recommend color palette and lighting changes based on timeline branch
-- [ ] Track viewer navigation across different visual storylines
-- [ ] Highlight multiverse divergence points in scene editing panel
-- [ ] Store and lock multiverse visual states for version tracking
-- [ ] Provide toggle to collapse alternate scenes into one for export
-- [ ] Create parallel visual identities for characters (e.g., Hero vs Villain versions)
-- [ ] Match branching logic with alternate soundtracks and FX profiles
-- [ ] Offer predictive timeline generator based on character decisions
-- [ ] Generate recap videos per timeline path for audience immersion
-- [ ] Support layered rendering (shared visuals + unique overlays)
-- [ ] Build continuity checker across timelines for style cohesion
-- [ ] Visualize alternate emotional arcs using heatmap overlays
-- [ ] Allow creator-defined "main" timeline and secondary forks
-- [ ] Embed multiverse state in exported metadata for reuse
-- [ ] Detect and flag conflicts when characters appear in multiple branches simultaneously
-- [ ] Enable AI director mode to guide scene transitions across branches
+- [x] Implement scene forking with timeline tag (A, B, Prime, etc.)
+- [x] Store alternate visual outcomes for the same chapter/scene
+- [x] Display visual multiverse map with branches and connections
+- [x] Allow creators to preview all timeline outcomes in side-by-side mode
+- [x] Enable auto-generation of visual variations for key choice points
+- [x] Sync visual changes with multiverse-aware voice and FX layers
+- [x] Recommend color palette and lighting changes based on timeline branch
+- [x] Track viewer navigation across different visual storylines
+- [x] Highlight multiverse divergence points in scene editing panel
+- [x] Store and lock multiverse visual states for version tracking
+- [x] Provide toggle to collapse alternate scenes into one for export
+- [x] Create parallel visual identities for characters (e.g., Hero vs Villain versions)
+- [x] Match branching logic with alternate soundtracks and FX profiles
+- [x] Offer predictive timeline generator based on character decisions
+- [x] Generate recap videos per timeline path for audience immersion
+- [x] Support layered rendering (shared visuals + unique overlays)
+- [x] Build continuity checker across timelines for style cohesion
+- [x] Visualize alternate emotional arcs using heatmap overlays
+- [x] Allow creator-defined "main" timeline and secondary forks
+- [x] Embed multiverse state in exported metadata for reuse
+- [x] Detect and flag conflicts when characters appear in multiple branches simultaneously
+- [x] Enable AI director mode to guide scene transitions across branches
 
 ### Phase 6 – Export Options, Platform Sync & Creator Subscription Features
-- [ ] Export rendered video in MP4, MOV, and WebM formats with selectable quality levels
-- [ ] Allow vertical, square, and widescreen aspect ratio export options
-- [ ] Include thumbnail and cover art generation from key frames
-- [ ] Auto-generate subtitle tracks synced with voice and visuals
-- [ ] Embed chapter metadata and timeline jump points for playback platforms
-- [ ] Export to YouTube, TikTok, and Instagram Reels via platform integrations
-- [ ] Sync export state with cloud and local storage
-- [ ] Track export history by book, scene, and version
-- [ ] Bundle FX, character, and voice layers for full scene archives
-- [ ] Offer watermarking and brand tagging options
-- [ ] Enable multi-resolution export for preview vs final render
-- [ ] Gate export privileges by subscription tier (e.g., 4K = Creator+ only)
-- [ ] Support batch export queue with export profile presets
-- [ ] Auto-optimize exports for bandwidth-constrained environments
-- [ ] Enable NSFW-safe export modes (blur, replace, censor layers)
-- [ ] Support creator-stamped end credits or intro overlays
-- [ ] Track subscription credits and export quota by user
-- [ ] Allow in-app purchases for one-time HD or commercial use licenses
-- [ ] Provide DRM encoding option for IP-protected outputs
-- [ ] Sync exported files across devices with user authentication
-- [ ] Offer creator-branded export template themes (logos, font, outro)
-- [ ] Generate trailer versions from book-to-video projects automatically
+- [x] Export rendered video in MP4, MOV, and WebM formats with selectable quality levels
+- [x] Allow vertical, square, and widescreen aspect ratio export options
+- [x] Include thumbnail and cover art generation from key frames
+- [x] Auto-generate subtitle tracks synced with voice and visuals
+- [x] Embed chapter metadata and timeline jump points for playback platforms
+- [x] Export to YouTube, TikTok, and Instagram Reels via platform integrations
+- [x] Sync export state with cloud and local storage
+- [x] Track export history by book, scene, and version
+- [x] Bundle FX, character, and voice layers for full scene archives
+- [x] Offer watermarking and brand tagging options
+- [x] Enable multi-resolution export for preview vs final render
+- [x] Gate export privileges by subscription tier (e.g., 4K = Creator+ only)
+- [x] Support batch export queue with export profile presets
+- [x] Auto-optimize exports for bandwidth-constrained environments
+- [x] Enable NSFW-safe export modes (blur, replace, censor layers)
+- [x] Support creator-stamped end credits or intro overlays
+- [x] Track subscription credits and export quota by user
+- [x] Allow in-app purchases for one-time HD or commercial use licenses
+- [x] Provide DRM encoding option for IP-protected outputs
+- [x] Sync exported files across devices with user authentication
+- [x] Offer creator-branded export template themes (logos, font, outro)
+- [x] Generate trailer versions from book-to-video projects automatically
 
 ### Phase 7 – NSFW Visual Modes, Content Filtering, and Creator Privacy Controls
 - [ ] Add NSFW mode toggle with age-gated access and verification
