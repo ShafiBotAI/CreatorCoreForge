@@ -23,6 +23,8 @@ vault system. It is written in SwiftUI and will expand to additional platforms.
 - **Scene memory simulator** for replaying chapters in different moods
 - **Multi-cast audiobook generation** via `MultiCastAudiobookGenerator`
 - **Immersive dramatized production** with `DramatizedAudiobookProducer`
+- **Dashboard** tab with usage analytics and achievements
+- **Highlighted reading** during playback
 
 
 When Stealth Vault is enabled in the Settings screen, downloaded audio is

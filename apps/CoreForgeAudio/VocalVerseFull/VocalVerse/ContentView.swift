@@ -4,12 +4,14 @@ import SwiftUI
 struct ContentView: View {
     @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding = false
     @StateObject private var library = LibraryModel()
+    @StateObject private var usage = UsageStats()
 
     var body: some View {
         Group {
             if hasSeenOnboarding {
                 MainTabView()
                     .environmentObject(library)
+                    .environmentObject(usage)
                     .transition(.opacity)
             } else {
                 OnboardingView(hasSeenOnboarding: $hasSeenOnboarding)
@@ -22,9 +24,15 @@ struct ContentView: View {
 
 struct MainTabView: View {
     @EnvironmentObject var library: LibraryModel
+    @EnvironmentObject var usage: UsageStats
 
     var body: some View {
         TabView {
+            DashboardView()
+                .environmentObject(usage)
+                .tabItem {
+                    Label("Dashboard", systemImage: "chart.bar")
+                }
             LibraryView()
                 .environmentObject(library)
                 .tabItem {
@@ -32,15 +40,18 @@ struct MainTabView: View {
                 }
             ImportView()
                 .environmentObject(library)
+                .environmentObject(usage)
                 .tabItem {
                     Label("Import", systemImage: "square.and.arrow.down")
                 }
             PlayerView()
                 .environmentObject(library)
+                .environmentObject(usage)
                 .tabItem {
                     Label("Player", systemImage: "play.circle")
                 }
             SettingsView()
+                .environmentObject(usage)
                 .tabItem {
                     Label("Settings", systemImage: "gearshape")
                 }

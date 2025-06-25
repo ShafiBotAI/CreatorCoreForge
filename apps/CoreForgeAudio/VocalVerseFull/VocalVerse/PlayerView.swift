@@ -6,10 +6,14 @@ import AVFoundation
 
 struct PlayerView: View {
     @EnvironmentObject var library: LibraryModel
+    @EnvironmentObject var usage: UsageStats
 #if canImport(AVFoundation)
-    @State private var synthesizer = AVSpeechSynthesizer()
+    @StateObject private var highlighter = SpeechHighlighter()
 #endif
     @State private var isSpeaking = false
+#if canImport(AVFoundation)
+    @State private var playStart: Date?
+#endif
 
     var body: some View {
         Group {
@@ -18,8 +22,13 @@ struct PlayerView: View {
                     Text(chapter.title)
                         .font(.title)
                     ScrollView {
-                        Text(chapter.text)
-                            .padding()
+                        if #available(iOS 15.0, *) {
+                            Text(highlightedText(for: chapter.text))
+                                .padding()
+                        } else {
+                            Text(chapter.text)
+                                .padding()
+                        }
                     }
                     Button(isSpeaking ? "Pause" : "Play") {
                         toggleSpeech(text: chapter.text)
@@ -36,14 +45,35 @@ struct PlayerView: View {
 
 #if canImport(AVFoundation)
     private func toggleSpeech(text: String) {
-        if synthesizer.isSpeaking {
-            synthesizer.pauseSpeaking(at: .immediate)
+        if highlighter.isSpeaking {
+            highlighter.pause()
+            if let start = playStart {
+                usage.addListeningTime(Date().timeIntervalSince(start))
+            }
+            playStart = nil
             isSpeaking = false
         } else {
-            let utterance = AVSpeechUtterance(string: text)
-            synthesizer.speak(utterance)
+            playStart = Date()
+            highlighter.onFinish = {
+                if let start = playStart {
+                    usage.addListeningTime(Date().timeIntervalSince(start))
+                }
+                playStart = nil
+                isSpeaking = false
+            }
+            highlighter.speak(text)
             isSpeaking = true
         }
+    }
+
+    @available(iOS 15.0, *)
+    private func highlightedText(for text: String) -> AttributedString {
+        var attr = AttributedString(text)
+        if let range = highlighter.highlightRange,
+           let strRange = Range(range, in: attr) {
+            attr[strRange].backgroundColor = .yellow
+        }
+        return attr
     }
 #else
     private func toggleSpeech(text: String) {}
