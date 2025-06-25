@@ -56,6 +56,10 @@ struct MainTabView: View {
                 .tabItem {
                     Label("Player", systemImage: "play.circle")
                 }
+            FavoritesView()
+                .tabItem {
+                    Label("Favorites", systemImage: "star")
+                }
             SettingsView()
                 .environmentObject(usage)
                 .tabItem {
