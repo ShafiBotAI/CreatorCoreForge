@@ -192,7 +192,6 @@ Key points from `README.md`:
 - [x] Enable prologue/epilogue special treatment (visual tone, transitions)
 - [x] Highlight symbols and metaphors for optional artistic visuals
 - [x] Store parsing configuration profiles for series consistency
-
 - [x] Offer real-time preview of parsed scene map before rendering
 - [x] Sync parsed book structure with audio narration framework
 - [x] Validate scene continuity and chronology from source text
@@ -248,6 +247,7 @@ Key points from `README.md`:
 - [x] Track render time estimates and optimize batch processing queue
 - [x] Tag visual rhythm speed (slow visual poetry vs fast action montage)
 
+
 ### Phase 4 – Memory Engine, Continuity, and Multibook Visual Sync
 - [x] Persist character visuals across multiple books, including costume and evolution
 - [x] Maintain memory of key visual motifs and use them in flashbacks or callouts
@@ -288,6 +288,7 @@ Key points from `README.md`:
 - [x] Track render time estimates and optimize batch processing queue
 - [x] Tag visual rhythm speed (slow visual poetry vs fast action montage)
 
+
 -### Phase 4 – Memory Engine, Continuity, and Multibook Visual Sync
 - [x] Persist character visuals across multiple books, including costume and evolution
 - [x] Maintain memory of key visual motifs and use them in flashbacks or callouts
@@ -318,6 +319,26 @@ Key points from `README.md`:
 - [x] Store alternate visual outcomes for the same chapter/scene
 - [x] Display visual multiverse map with branches and connections
 - [x] Allow creators to preview all timeline outcomes in side-by-side mode
+
+- [ ] Enable auto-generation of visual variations for key choice points
+- [ ] Sync visual changes with multiverse-aware voice and FX layers
+- [ ] Recommend color palette and lighting changes based on timeline branch
+- [ ] Track viewer navigation across different visual storylines
+- [ ] Highlight multiverse divergence points in scene editing panel
+- [ ] Store and lock multiverse visual states for version tracking
+- [ ] Provide toggle to collapse alternate scenes into one for export
+- [ ] Create parallel visual identities for characters (e.g., Hero vs Villain versions)
+- [ ] Match branching logic with alternate soundtracks and FX profiles
+- [ ] Offer predictive timeline generator based on character decisions
+- [ ] Generate recap videos per timeline path for audience immersion
+- [ ] Support layered rendering (shared visuals + unique overlays)
+- [ ] Build continuity checker across timelines for style cohesion
+- [ ] Visualize alternate emotional arcs using heatmap overlays
+- [ ] Allow creator-defined "main" timeline and secondary forks
+- [ ] Embed multiverse state in exported metadata for reuse
+- [ ] Detect and flag conflicts when characters appear in multiple branches simultaneously
+- [ ] Enable AI director mode to guide scene transitions across branches
+=======
 - [x] Enable auto-generation of visual variations for key choice points
 - [x] Sync visual changes with multiverse-aware voice and FX layers
 - [x] Recommend color palette and lighting changes based on timeline branch
@@ -336,6 +357,7 @@ Key points from `README.md`:
 - [x] Embed multiverse state in exported metadata for reuse
 - [x] Detect and flag conflicts when characters appear in multiple branches simultaneously
 - [x] Enable AI director mode to guide scene transitions across branches
+
 
 ### Phase 6 – Export Options, Platform Sync & Creator Subscription Features
 - [x] Export rendered video in MP4, MOV, and WebM formats with selectable quality levels
