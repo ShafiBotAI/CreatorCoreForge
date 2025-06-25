@@ -2,6 +2,12 @@ import Foundation
 #if canImport(AVFoundation)
 import AVFoundation
 #endif
+
+
+// SoundEffectManager.swift
+// CoreForge Audio
+
+
 #if canImport(Combine)
 import Combine
 #endif

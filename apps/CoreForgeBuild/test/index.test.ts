@@ -53,14 +53,14 @@ import { ParseHistory } from '../services/ParseHistory';
   bus.emitGenerated('react', '<div />');
   assert.strictEqual(generated, '<div />');
 
-  const diff = new DiffService();
-
-  const diffOutput = diff.diff('a', 'b');
-  assert(diffOutput.includes('-a'));
 
   const bridge = new (await import('../services/PreviewBridge')).PreviewBridge(bus);
   bus.emitParsed(parsed);
   assert(bridge.getCode().includes('<h1>'));
+
+  const diff = new DiffService();
+  const diffOutput = diff.diff('a', 'b');
+  assert(diffOutput.includes('-a'));
 
   const sugg = new UISuggestionService();
   assert(sugg.suggestNext([{ type: "header", props: { text: "Login" } }]).length > 0);
@@ -92,7 +92,7 @@ import { ParseHistory } from '../services/ParseHistory';
 
   // multilingual prompt parsing
   const parsedEs = parser.parse('hola inicio');
-  assert.strictEqual(parsedEs.language, 'en');
+  assert.strictEqual(parsedEs.language, 'es');
 
   // pattern recognition
   const patternParsed = parser.parse('Onboarding flow with tabbed menu');
@@ -125,7 +125,6 @@ import { ParseHistory } from '../services/ParseHistory';
   const { AuthScaffolder } = await import('../services/AuthScaffolder');
   const authSnippet = new AuthScaffolder().scaffold('jwt');
   assert(authSnippet.includes('JWT'));
-
   const { ModuleGenerator } = await import('../services/ModuleGenerator');
   const modules = new ModuleGenerator().generate(parsed.layout);
   assert.strictEqual(modules.length > 0, true);
@@ -153,6 +152,37 @@ import { ParseHistory } from '../services/ParseHistory';
   const warnings = new CodeValidator().validate('var a = 1');
   assert(warnings.length === 1);
 
+  const { RepoLinkService } = await import('../services/RepoLinkService');
+  const repoSvc = new RepoLinkService();
+  repoSvc.add('p1', { name: 'origin', url: 'https://example.com', provider: 'github' });
+  assert.strictEqual(repoSvc.list('p1').length, 1);
+
+  const { ChangeLogService } = await import('../services/ChangeLogService');
+  const cl = new ChangeLogService();
+  cl.log('p1', 'init');
+  assert(cl.getLog('p1').includes('init'));
+
+  const { APIAccessLogger } = await import('../services/APIAccessLogger');
+  const apiLog = new APIAccessLogger();
+  apiLog.record('p1', 'u1', '/v1');
+  assert.strictEqual(apiLog.list('p1').length, 1);
+
+  const { AICopilotChat } = await import('../services/AICopilotChat');
+  const chat = new AICopilotChat();
+  assert(chat.ask('why').includes('approach'));
+
+  const { TestCaseGenerator } = await import('../services/TestCaseGenerator');
+  const tcg = new TestCaseGenerator();
+  assert.strictEqual(tcg.generate('foo').length, 2);
+
+  const { DocGenerator } = await import('../services/DocGenerator');
+  const docGen = new DocGenerator();
+  docGen.generate('Sample', 'Example');
+
+
   console.log('CoreForgeBuild tests passed');
   require('./collaboration.test');
+  require("./autoupdater.test");
+  require('./pluginmanager.test');
+  require('./advanced.test');
 })();

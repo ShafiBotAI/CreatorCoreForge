@@ -37,4 +37,19 @@ final class BuildImprovementEngineTests: XCTestCase {
         let engine = BuildImprovementEngine()
         XCTAssertTrue(engine.validateCompliance(at: dir.path))
     }
+
+    func testOptimizationScoreAndUsageTracker() throws {
+        let dir = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
+        try FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
+        let file = dir.appendingPathComponent("Sample.swift")
+        try "// TODO".write(to: file, atomically: true, encoding: .utf8)
+        let engine = BuildImprovementEngine()
+        let score = engine.optimizationScore(for: dir.path)
+        XCTAssertLessThan(score, 1)
+        engine.recordAIUsage(feature: "test")
+        engine.recordAIUsage(feature: "test")
+        engine.recordAIUsage(feature: "test")
+        engine.recordAIUsage(feature: "test")
+        XCTAssertFalse(engine.usageOptimizationTips().isEmpty)
+    }
 }

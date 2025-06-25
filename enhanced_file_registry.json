@@ -15,6 +15,7 @@
     "apps/CoreForgeBuild/services/VoicePromptParser.ts",
     "Sources/CreatorCoreForge/BuildBridge.swift",
     "Tests/CreatorCoreForgeTests/BuildBridgeTests.swift",
-    "open_tasks_registry.json"
+    "open_tasks_registry.json",
+    "AGENTS.md"
   ]
 }

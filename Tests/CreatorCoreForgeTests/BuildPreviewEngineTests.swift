@@ -52,4 +52,19 @@ final class BuildPreviewEngineTests: XCTestCase {
         engine.setDeveloperConsole(enabled: false)
         XCTAssertFalse(engine.isDeveloperConsoleEnabled())
     }
+
+    func testHotkeyTriggersAndQAChecklist() {
+        let engine = BuildPreviewEngine.shared
+        _ = engine.triggerHotkey("F1")
+        engine.injectQAChecklist(["a", "b"])
+        XCTAssertTrue(engine.currentLogs().contains { $0.contains("Hotkey") })
+        XCTAssertEqual(engine.currentQAChecklist().count, 2)
+    }
+
+    func testBackgroundTestsAndValidationHelpers() {
+        let engine = BuildPreviewEngine.shared
+        XCTAssertTrue(engine.runBackgroundTests(cases: ["one"]))
+        XCTAssertTrue(engine.scanFormFields(["name"]))
+        XCTAssertTrue(engine.checkColorContrast(ratio: 5.0))
+    }
 }

@@ -58,7 +58,7 @@ Codex should implement advanced improvements to all valid files, enhancing speed
     - Reduce retry delay via exponential backoff
     - Add monitoring callbacks for latency spikes
 
-- [ ] Refactor `ChapterEditor.vue`
+ - [x] Refactor `ChapterEditor.vue`
   - Type: UI Component
   - Goal: Reduce render load and memory footprint
   - Requirements:

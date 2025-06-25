@@ -50,15 +50,13 @@ export class PromptParser {
     const flowTags = Array.from(new Set(flows.flat()));
     const patterns = this.recognizePatterns(normalized);
     const conditionals = this.parseConditionals(normalized);
-    return { language: 'en', layout, flows, flowTags, patterns, conditionals };
+    return { language: detected, layout, flows, flowTags, patterns, conditionals };
   }
 
   /**
    * Very naive language detection. Defaults to 'en'.
    */
   private detectLanguage(text: string): string {
-
-    // check translation dictionaries for common words first
 
     const lower = text.toLowerCase();
     for (const [lang, dict] of Object.entries(this.translations)) {
@@ -69,7 +67,6 @@ export class PromptParser {
       }
     }
 
-    // fall back to regex-based detection
 
     for (const [lang, regex] of Object.entries(this.languages)) {
       if (regex.test(text)) {

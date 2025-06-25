@@ -8,4 +8,10 @@ final class PluginBuilderTests: XCTestCase {
         XCTAssertTrue(text.contains("Demo"))
         XCTAssertTrue(text.contains("Test"))
     }
+
+    func testIntegratedPluginAddsDocs() {
+        let builder = PluginBuilder()
+        let text = builder.createIntegratedPlugin(name: "Demo", features: ["A"]) 
+        XCTAssertTrue(text.contains("Documentation"))
+    }
 }

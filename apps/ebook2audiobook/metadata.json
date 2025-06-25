@@ -1,0 +1,9 @@
+{
+  "app_name": "ebook2audiobook",
+  "version": "1.0.0",
+  "bundle_id": "com.creatorcoreforge.ebook2audiobook",
+  "keywords": ["ebook", "tts", "audio", "converter"],
+  "developer": "CreatorCoreForge",
+  "category": "Books & Reference",
+  "platforms": ["Linux", "Windows", "macOS"]
+}

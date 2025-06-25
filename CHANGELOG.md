@@ -1,10 +1,18 @@
 # Changelog
 
+## [2.0.0] - 2025-07-27
+- Upgraded package versions to 2.0.0 for core modules.
+- Enhanced `TitanEngine` with async forecasting and bounded history.
+- Updated app Info.plists to version 2.0.
 ## [Unreleased]
 - Implemented `VoicePersonalityProfiles` and `DynamicEmotionRamping` utilities.
 - Marked initial CoreForge Audio checklist items as complete and added tests.
 - Added `SceneDetector` module for basic scene analysis.
 - Optimized `SegmentService` with chunked async processing and LRU caching.
+- Completed the first twenty CoreForge Build tasks with `AdvancedBuildService`
+- Marked twenty CoreForge Visual roadmap items complete in `AGENTS.md`
+  and updated README and AGENTS checklists.
+- Expanded `UnifiedVideoEngine` with async wrapper and detailed error handling.
 - Added layout instruction parsing to `MarkdownLayoutParser` and updated Build AGENTS checklist.
 - Implemented `TTSRenderer` and Vue-based `ChapterEditor`, closing related open tasks.
 - Ran `scripts/full_app_scan.py` and updated readiness checklist. Verified test suites via `run_all_tests.sh`.

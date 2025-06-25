@@ -32,8 +32,13 @@ final class NetworkInfoProviderTests: XCTestCase {
         let session = URLSession(configuration: config)
         let provider = NetworkInfoProvider(session: session)
         let exp = expectation(description: "info")
-        provider.fetchInfo(from: URL(string: "https://example.com/info")!) { info in
-            XCTAssertEqual(info?["key"], "value")
+        provider.fetchInfo(from: URL(string: "https://example.com/info")!) { result in
+            switch result {
+            case .success(let info):
+                XCTAssertEqual(info["key"], "value")
+            case .failure(let error):
+                XCTFail("Unexpected failure: \(error)")
+            }
             exp.fulfill()
         }
         wait(for: [exp], timeout: 1)
@@ -47,8 +52,13 @@ final class NetworkInfoProviderTests: XCTestCase {
         let session = URLSession(configuration: config)
         let provider = NetworkInfoProvider(session: session)
         let exp = expectation(description: "info")
-        provider.fetchInfo(from: URL(string: "https://example.com/info")!) { info in
-            XCTAssertNil(info)
+        provider.fetchInfo(from: URL(string: "https://example.com/info")!) { result in
+            switch result {
+            case .success:
+                XCTFail("Expected failure")
+            case .failure(let error):
+                XCTAssertEqual(error, .invalidResponse)
+            }
             exp.fulfill()
         }
         wait(for: [exp], timeout: 1)
