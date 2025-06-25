@@ -342,7 +342,8 @@ The following components are planned across all apps but are still works in prog
 - [x] Shared `AutoUpdater.swift` module
 - [x] Programmatically generated `.pbxproj` project files
 - [x] App Store assets (`AppIcon.appiconset`, LaunchScreens)
-- [ ] Final production UI polish
+- [x] Final production UI polish
+-    - All apps now share a consistent color scheme and refined icons.
 - [x] `.dmg` and `.exe` installers following `.ipa` builds
 
 Run `./scripts/generate_pbxproj.sh` to generate missing Xcode project files for

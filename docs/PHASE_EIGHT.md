@@ -152,7 +152,7 @@ Only a subset of those features are shown below for brevity.
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
 - [x] VideoEffectsPipeline
-- [ ] Adaptive scene completion
+- [x] Adaptive scene completion
 
 - [x] AR/VR playback
 - [x] Quantum reality switcher
@@ -167,8 +167,8 @@ Only a subset of those features are shown below for brevity.
 - [x] SubtitleGenerator
 - [x] RenderAnalyticsDashboard
 
-- [ ] CrossPlatformVideoGenerator
-- [ ] FrameInterpolationService
+- [x] CrossPlatformVideoGenerator
+- [x] FrameInterpolationService
 
 - [ ] AR/VR playback
 - [ ] Quantum reality switcher
