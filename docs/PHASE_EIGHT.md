@@ -25,37 +25,37 @@ Only a subset of those features are shown below for brevity.
 - [x] SoundLayerEngine
 - [x] ChapterAnalyticsService
 - [x] UserAnnotations
-- [ ] VoiceControlService integration
-- [ ] AdaptiveMusicGenerator
-- [ ] CommunityReviews
-- [ ] AudioSearchIndex
-- [ ] ProfanityFilter
-- [ ] VoiceCloneShare
-- [ ] DynamicChapterTransitions
-- [ ] HeatmapAnalytics
-- [ ] VersionedExports
-- [ ] ReplayAnalyticsService
-- [ ] SleepReadMode
-- [ ] EmotionShiftTracker
-- [ ] VoiceReviewSystem
-- [ ] AutoCastingEngine
-- [ ] PronunciationEditor
-- [ ] NarrationScheduler
-- [ ] SpatialAudioSupport
-- [ ] EmotionPacingEditor
-- [ ] SmartAmbientMixer
-- [ ] AutoRemixMode
-- [ ] AccessibilityOutput
-- [ ] WatchSyncService
-- [ ] VoicePolls
-- [ ] HeartRateAdaptiveAudio
-- [ ] UnlockableVoiceSkins
-- [ ] PersonalizedGreetingService
-- [ ] AdvancedTimelineEditor
-- [ ] BrailleOutputService
-- [ ] PronunciationDictionary
-- [ ] CrossPlatformVideoGenerator
-- [ ] UniversalVideoGenerator
+- [x] VoiceControlService integration
+- [x] AdaptiveMusicGenerator
+- [x] CommunityReviews
+- [x] AudioSearchIndex
+- [x] ProfanityFilter
+- [x] VoiceCloneShare
+- [x] DynamicChapterTransitions
+- [x] HeatmapAnalytics
+- [x] VersionedExports
+- [x] ReplayAnalyticsService
+- [x] SleepReadMode
+- [x] EmotionShiftTracker
+- [x] VoiceReviewSystem
+- [x] AutoCastingEngine
+- [x] PronunciationEditor
+- [x] NarrationScheduler
+- [x] SpatialAudioSupport
+- [x] EmotionPacingEditor
+- [x] SmartAmbientMixer
+- [x] AutoRemixMode
+- [x] AccessibilityOutput
+- [x] WatchSyncService
+- [x] VoicePolls
+- [x] HeartRateAdaptiveAudio
+- [x] UnlockableVoiceSkins
+- [x] PersonalizedGreetingService
+- [x] AdvancedTimelineEditor
+- [x] BrailleOutputService
+- [x] PronunciationDictionary
+- [x] CrossPlatformVideoGenerator
+- [x] UniversalVideoGenerator
 - [x] UnifiedAudioEngine
 - [x] UnifiedVideoEngine
 - [x] AdaptiveLearningEngine
@@ -152,7 +152,7 @@ Only a subset of those features are shown below for brevity.
 - [x] DocVideoScanner
 - [x] BookScanAnalyzer
 - [x] VideoEffectsPipeline
-- [ ] Adaptive scene completion
+- [x] Adaptive scene completion
 
 - [x] AR/VR playback
 - [x] Quantum reality switcher
@@ -167,8 +167,8 @@ Only a subset of those features are shown below for brevity.
 - [x] SubtitleGenerator
 - [x] RenderAnalyticsDashboard
 
-- [ ] CrossPlatformVideoGenerator
-- [ ] FrameInterpolationService
+- [x] CrossPlatformVideoGenerator
+- [x] FrameInterpolationService
 
 - [ ] AR/VR playback
 - [ ] Quantum reality switcher

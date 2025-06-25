@@ -8,6 +8,7 @@ function blobFromSamples(samples: number[]): Blob {
 test('compress attenuates samples above threshold', async () => {
   const processor = new AudioProcessor();
   const input = blobFromSamples([0.2, 0.8, -0.9]);
+
   const out = await processor.compress(input, {
     threshold: 0.5,
     ratio: 2,
@@ -40,4 +41,11 @@ test('attack smoothing delays full compression', async () => {
   const imm = new Float32Array(await immediate.arrayBuffer());
   const slw = new Float32Array(await slow.arrayBuffer());
   expect(slw[0]).toBeGreaterThan(imm[0]);
+=======
+  const out = await processor.compress(input, 0.5, 2);
+  const data = new Float32Array(await out.arrayBuffer());
+  expect(data[0]).toBeCloseTo(0.2);
+  expect(data[1]).toBeCloseTo(0.5 + (0.8 - 0.5) / 2);
+  expect(data[2]).toBeCloseTo(-(0.5 + (0.9 - 0.5) / 2));
+
 });

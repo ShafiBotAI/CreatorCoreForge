@@ -1,25 +1,57 @@
 import Foundation
 
-/// Lightweight forecasting engine using an exponential moving average.
+/// Errors that can occur when forecasting prices.
+public enum TitanError: Error {
+    case noData
+}
+
+/// Adaptive forecasting engine using an exponential moving average.
 public final class TitanEngine {
     private var history: [Double] = []
     private let smoothing: Double
+    private let maxHistory: Int
+    private let queue = DispatchQueue(label: "TradeMindAI.TitanEngine")
 
-    public init(smoothing: Double = 0.3) {
+    public init(smoothing: Double = 0.3, maxHistory: Int = 100) {
         self.smoothing = smoothing
+        self.maxHistory = maxHistory
     }
 
+    /// Record a new price entry and keep history within bounds.
     public func log(price: Double) {
-        history.append(price)
+        queue.sync {
+            history.append(price)
+            if history.count > maxHistory {
+                history.removeFirst(history.count - maxHistory)
+            }
+        }
+    }
+
+    /// Clear all recorded prices.
+    public func reset() {
+        queue.sync { history.removeAll() }
     }
 
     /// Returns the next predicted value using EMA of the logged prices.
     public func forecastNext() -> Double? {
-        guard !history.isEmpty else { return nil }
-        var ema = history[0]
-        for value in history.dropFirst() {
-            ema = smoothing * value + (1 - smoothing) * ema
+        queue.sync {
+            guard !history.isEmpty else { return nil }
+            var ema = history[0]
+            for value in history.dropFirst() {
+                ema = smoothing * value + (1 - smoothing) * ema
+            }
+            return ema
         }
-        return ema
+    }
+
+    /// Asynchronously compute the next forecast.
+    public func forecastAsync(completion: @escaping (Result<Double, Error>) -> Void) {
+        queue.async {
+            if let value = self.forecastNext() {
+                completion(.success(value))
+            } else {
+                completion(.failure(TitanError.noData))
+            }
+        }
     }
 }

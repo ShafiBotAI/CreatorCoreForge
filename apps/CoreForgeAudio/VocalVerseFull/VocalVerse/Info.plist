@@ -8,9 +8,9 @@
     <key>CFBundleName</key>
     <string>CoreForge Audio</string>
     <key>CFBundleVersion</key>
-    <string>1</string>
+    <string>2</string>
     <key>CFBundleShortVersionString</key>
-    <string>1.0</string>
+    <string>2.0</string>
     <key>UILaunchStoryboardName</key>
     <string>LaunchScreen</string>
     <key>NSMicrophoneUsageDescription</key>

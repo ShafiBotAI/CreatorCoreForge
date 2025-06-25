@@ -24,5 +24,20 @@ final class NSFWPhase7FeatureTests: XCTestCase {
         _ = BodyContactFXSimulator().playRhythm(["thump"])
         _ = NSFWPG13Renderer().renderSafeVersion(of: "naked scene")
         let tracker = NSFWSkipTracker(); tracker.recordSkip(); _ = tracker.skipCount
+
+        // New features
+        var meter = NSFWIntensityMeter()
+        meter.setLevel(0.8)
+        XCTAssertEqual(meter.scaledIntensity(), .rough)
+
+        let keyManager = PreviewKeyManager()
+        let key = keyManager.generateKey(for: "scene1")
+        XCTAssertTrue(keyManager.validate(key: key, sceneID: "scene1"))
+
+        var voice = "Hello"
+        var ambient: [String] = []
+        NSFWToneSyncer().sync(tone: .sensual, voice: &voice, ambient: &ambient)
+        XCTAssertTrue(voice.contains("tone:sensual"))
+        XCTAssertFalse(ambient.isEmpty)
     }
 }

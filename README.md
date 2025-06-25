@@ -1,5 +1,6 @@
 # 🔥 CreatorCoreForge
 
+**Current Major Version:** 2.0.0
 **CreatorCoreForge** is a suite of next-generation AI-powered creative, productivity, health, and monetization applications. Built for creators, entrepreneurs, educators, and enterprises, this platform empowers users to generate world-class audio, video, books, mental health experiences, financial strategies, and content—with no external API dependencies.
 
 ---
@@ -341,7 +342,8 @@ The following components are planned across all apps but are still works in prog
 - [x] Shared `AutoUpdater.swift` module
 - [x] Programmatically generated `.pbxproj` project files
 - [x] App Store assets (`AppIcon.appiconset`, LaunchScreens)
-- [ ] Final production UI polish
+- [x] Final production UI polish
+-    - All apps now share a consistent color scheme and refined icons.
 - [x] `.dmg` and `.exe` installers following `.ipa` builds
 
 Run `./scripts/generate_pbxproj.sh` to generate missing Xcode project files for
