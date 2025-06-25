@@ -5,7 +5,9 @@ export interface Collaborator {
 
 export class TeamSyncManager {
   private members = new Map<string, Collaborator>();
+
   private history: { user: string; message: string }[] = [];
+=======
 
   addMember(user: Collaborator) {
     this.members.set(user.id, user);
@@ -14,6 +16,7 @@ export class TeamSyncManager {
   removeMember(id: string) {
     this.members.delete(id);
   }
+
 
   setRole(id: string, role: string) {
     const m = this.members.get(id);

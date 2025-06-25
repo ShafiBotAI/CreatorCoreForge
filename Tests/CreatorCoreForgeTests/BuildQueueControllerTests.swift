@@ -10,6 +10,7 @@ final class BuildQueueControllerTests: XCTestCase {
         XCTAssertEqual(controller.pending, 0)
     }
 
+
     func testRunAll() {
         let controller = BuildQueueController()
         controller.enqueue { "one" }
@@ -18,4 +19,5 @@ final class BuildQueueControllerTests: XCTestCase {
         XCTAssertEqual(results, ["one", "two"])
         XCTAssertEqual(controller.pending, 0)
     }
+
 }

@@ -22,12 +22,14 @@ public final class BuildQueueController {
         return task?()
     }
 
+
     /// Run all queued tasks sequentially and return their outputs.
     public func runAll() -> [String] {
         var results: [String] = []
         while let next = runNext() { results.append(next) }
         return results
     }
+
 
     /// Cancel all pending tasks.
     public func cancelAll() {

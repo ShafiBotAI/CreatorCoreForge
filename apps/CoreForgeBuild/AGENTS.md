@@ -129,6 +129,27 @@ Key points from `README.md`:
 - [x] Auto-generate logic for forms (login, register, contact, checkout) with state handling
 - [x] Provide real-time data binding across frontend inputs and backend models
 - [x] Detect required fields, validations, and error states from prompt
+
+- [x] Bind input types to UI components with proper attributes (e.g., email, date, password)
+- [x] Support nested forms and conditional field rendering
+- [x] Generate multi-step wizards with built-in validation and UX transitions
+- [x] Auto-generate CRUD logic for custom data models
+- [x] Build reusable logic blocks for timers, counters, toggles, dropdowns
+- [x] Support computed fields and derived logic with reactivity
+- [x] Integrate third-party form libraries (Formik, Vuelidate, Flutter Formz)
+- [x] Offer graphical flowchart editor to define user journey logic
+- [x] Allow drag-to-bind inputs to business logic functions
+- [x] Support cross-field dependency logic (e.g., field B disabled unless A is checked)
+- [x] Provide inline preview of logic execution and data flow per form
+- [x] Visualize errors/warnings in code preview panel with highlights
+- [ ] Enable clipboard-to-form parser (paste field list to generate full form)
+- [ ] Store reusable form blueprints in Creator library
+- [ ] Implement smart save states with form session memory
+- [ ] Generate confirmation dialogs and UI state management for success/error flows
+- [ ] Integrate basic analytics hooks (field abandon rate, success funnel)
+- [ ] Support internationalization/localization of form labels and error messages
+- [ ] Export forms as standalone React/Vue components or JSON schema
+=======
  - [x] Bind input types to UI components with proper attributes (e.g., email, date, password)
  - [x] Support nested forms and conditional field rendering
  - [x] Generate multi-step wizards with built-in validation and UX transitions
@@ -148,6 +169,7 @@ Key points from `README.md`:
  - [x] Integrate basic analytics hooks (field abandon rate, success funnel)
  - [x] Support internationalization/localization of form labels and error messages
  - [x] Export forms as standalone React/Vue components or JSON schema
+
 
 ### Phase 4 – Plugin System, Marketplace, and Custom Code Injection
  - [x] Enable AI-generated plugin templates with automatic integration

@@ -9,33 +9,62 @@ export interface TTSOptions {
   pitch?: number;
 }
 
+export interface TTSRendererConfig {
+  /** Number of segments processed concurrently */
+  concurrency?: number;
+  /** Callback triggered when a render exceeds 50ms */
+  onLatencySpike?: (latency: number, segment: TTSSegment) => void;
+}
+
 export class TTSRenderer {
-  private queue: TTSSegment[] = [];
-  private processing = false;
+  private queue: { seg: TTSSegment; opt?: TTSOptions }[] = [];
+  private active = 0;
+  private readonly concurrency: number;
+  private readonly config: TTSRendererConfig;
+
+  constructor(config: TTSRendererConfig = {}) {
+    this.concurrency = config.concurrency ?? 1;
+    this.config = config;
+  }
 
   enqueue(segment: TTSSegment, options?: TTSOptions): void {
-    this.queue.push(segment);
-    if (!this.processing) {
-      this.processNext(options);
-    }
+    this.queue.push({ seg: segment, opt: options });
+    this.process();
   }
 
   isIdle(): boolean {
-    return !this.processing && this.queue.length === 0;
+    return this.queue.length === 0 && this.active === 0;
   }
 
-  private async processNext(options?: TTSOptions): Promise<void> {
-    const seg = this.queue.shift();
-    if (!seg) {
-      this.processing = false;
-      return;
+  private process(): void {
+    while (this.active < this.concurrency && this.queue.length > 0) {
+      const { seg, opt } = this.queue.shift()!;
+      this.active++;
+      this.renderWithRetry(seg, opt).finally(() => {
+        this.active--;
+        this.process();
+      });
     }
-    this.processing = true;
-    await this.renderSegment(seg);
-    this.processing = false;
-    this.processNext(options);
   }
 
+  private async renderWithRetry(
+    segment: TTSSegment,
+    options?: TTSOptions,
+    attempt = 0
+  ): Promise<void> {
+    const start = Date.now();
+    try {
+      await this.renderSegment(segment, options);
+      const latency = Date.now() - start;
+      if (latency > 50 && this.config.onLatencySpike) {
+        this.config.onLatencySpike(latency, segment);
+      }
+    } catch {
+      const delay = Math.min(1000, Math.pow(2, attempt) * 50);
+      await new Promise((r) => setTimeout(r, delay));
+      return this.renderWithRetry(segment, options, attempt + 1);
+    }
+  }
 
   async renderSegment(segment: TTSSegment, options?: TTSOptions): Promise<void> {
     const { renderSegment } = await import('./ttsService');

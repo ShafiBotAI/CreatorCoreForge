@@ -15,6 +15,9 @@ from generated.CoreForgeAudio.VoiceAwarePacing import voiceawarepacing
 from generated.CoreForgeAudio.ToneConsistencyChecker import toneconsistencychecker
 from generated.CoreForgeAudio.ConflictFXEnhancer import conflictfxenhancer
 from generated.CoreForgeAudio.MoodColorCoder import moodcolorcoder
+from generated.CoreForgeAudio.Implement_ambient_crossfade_logic_between_chapters_and_locations import (
+    implement_ambient_crossfade,
+)
 
 
 def _tone(freq=440, dur=200):
@@ -31,6 +34,12 @@ def test_cross_scene_fx_linking():
     b = _tone(880, 200)
     out = crossscenefxlinking(a, b, crossfade_ms=50)
     assert len(out) == len(a) + len(b) - 50
+
+def test_implement_ambient_crossfade():
+    a = _tone(440, 200)
+    b = _tone(660, 200)
+    out = implement_ambient_crossfade(a, b, crossfade_ms=75)
+    assert len(out) == len(a) + len(b) - 75
 
 def test_scene_density_tuner():
     tone = _tone()

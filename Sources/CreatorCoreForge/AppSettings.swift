@@ -1,4 +1,11 @@
 import Foundation
+
+public enum AudioQuality: String, CaseIterable {
+    case low
+    case standard
+    case high
+}
+
 #if canImport(Combine)
 import Combine
 
@@ -9,6 +16,7 @@ public final class AppSettings: ObservableObject {
     @Published public var allowNSFW: Bool
     @Published public var offlineMode: Bool
     @Published public var performance: PerformanceMode
+    @Published public var audioQuality: AudioQuality
 
     private let defaults: UserDefaults
 
@@ -22,6 +30,12 @@ public final class AppSettings: ObservableObject {
         } else {
             self.performance = .standard
         }
+        if let qRaw = defaults.string(forKey: "CF_audioQuality"),
+           let q = AudioQuality(rawValue: qRaw) {
+            self.audioQuality = q
+        } else {
+            self.audioQuality = .standard
+        }
     }
 
     /// Persist the current settings to user defaults.
@@ -29,6 +43,7 @@ public final class AppSettings: ObservableObject {
         defaults.set(allowNSFW, forKey: "CF_allowNSFW")
         defaults.set(offlineMode, forKey: "CF_offlineMode")
         defaults.set(performance.rawValue, forKey: "CF_performanceMode")
+        defaults.set(audioQuality.rawValue, forKey: "CF_audioQuality")
     }
 }
 #else
@@ -39,6 +54,7 @@ public final class AppSettings {
     public var allowNSFW: Bool
     public var offlineMode: Bool
     public var performance: PerformanceMode
+    public var audioQuality: AudioQuality
 
     private let defaults: UserDefaults
 
@@ -52,12 +68,19 @@ public final class AppSettings {
         } else {
             self.performance = .standard
         }
+        if let qRaw = defaults.string(forKey: "CF_audioQuality"),
+           let q = AudioQuality(rawValue: qRaw) {
+            self.audioQuality = q
+        } else {
+            self.audioQuality = .standard
+        }
     }
 
     public func save() {
         defaults.set(allowNSFW, forKey: "CF_allowNSFW")
         defaults.set(offlineMode, forKey: "CF_offlineMode")
         defaults.set(performance.rawValue, forKey: "CF_performanceMode")
+        defaults.set(audioQuality.rawValue, forKey: "CF_audioQuality")
     }
 }
 #endif
