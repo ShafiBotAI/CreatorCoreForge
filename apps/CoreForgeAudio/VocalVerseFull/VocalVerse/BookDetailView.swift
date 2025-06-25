@@ -48,16 +48,16 @@ struct BookDetailView: View {
     }
 
     private func extractCharacters(from book: Book) -> [String] {
-        // Very naive character detection placeholder
-        var set = Set<String>()
+        var counts: [String: Int] = [:]
         for chapter in book.chapters {
-            chapter.text.split(separator: " ").forEach { word in
-                if word.hasPrefix("@") {
-                    set.insert(String(word.dropFirst()))
-                }
+            let tokens = chapter.text.split { !$0.isLetter }
+            for token in tokens {
+                let word = String(token)
+                guard word.first?.isUppercase == true, word.count > 1 else { continue }
+                counts[word, default: 0] += 1
             }
         }
-        return Array(set)
+        return counts.filter { $0.value > 1 }.map { $0.key }
     }
 }
 #endif

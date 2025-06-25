@@ -30,6 +30,10 @@ public final class VisualMemoryManager {
     public private(set) var characterArcs: [String: [Int: CharacterVisualState]] = [:]
     public private(set) var lockedCharacters: Set<String> = []
     public private(set) var sceneForks: [SceneKey: [String: SceneKey]] = [:]
+    public private(set) var enabledDashboards: Set<String> = []
+    public private(set) var sceneAudioMap: [SceneKey: Double] = [:]
+    public private(set) var memoryGraphIntegrated = false
+    public private(set) var handoffHistory: [String] = []
 
     public init() {}
 
@@ -65,7 +69,8 @@ public final class VisualMemoryManager {
 
     /// Enable dashboard for multiple books.
     public func enableDashboard(for books: [String]) -> [String] {
-        return books
+        for b in books { enabledDashboards.insert(b) }
+        return Array(enabledDashboards)
     }
 
     /// Record a character's visual state at a scene index.
@@ -79,7 +84,13 @@ public final class VisualMemoryManager {
     }
 
     /// Cross reference a scene with the audio timeline (placeholder).
-    public func crossReference(scene: SceneKey, audioStart: Double) -> Bool { true }
+    public func crossReference(scene: SceneKey, audioStart: Double) -> Bool {
+        if let existing = sceneAudioMap[scene] {
+            return abs(existing - audioStart) < 0.01
+        }
+        sceneAudioMap[scene] = audioStart
+        return true
+    }
 
     /// Compare two visual states for inconsistencies.
     public func checkInconsistency(_ current: CharacterVisualState, _ previous: CharacterVisualState) -> [String] {
@@ -101,19 +112,41 @@ public final class VisualMemoryManager {
     }
 
     /// Placeholder for highlighting callbacks to past scenes.
-    public func highlightCallback(scene: SceneKey) -> SceneKey { scene }
+    public func highlightCallback(scene: SceneKey) -> SceneKey {
+        SceneKey(book: scene.book, index: max(scene.index - 1, 0))
+    }
 
     /// Generate a recap montage (placeholder).
-    public func generateRecapMontage(for scenes: [SceneKey]) -> [SceneKey] { scenes }
+    public func generateRecapMontage(for scenes: [SceneKey]) -> [SceneKey] {
+        guard !scenes.isEmpty else { return [] }
+        if scenes.count <= 3 { return scenes }
+        let mid = scenes.count / 2
+        return [scenes.first!, scenes[mid], scenes.last!]
+    }
 
     /// Integrate memory graphs (placeholder).
-    public func integrateMemoryGraph() {}
+    public func integrateMemoryGraph() {
+        memoryGraphIntegrated = true
+    }
 
     /// Detect recurring visual cues (placeholder).
-    public func detectRecurringVisualCues(in scenes: [SceneKey]) -> [SceneKey] { scenes }
+    public func detectRecurringVisualCues(in scenes: [SceneKey]) -> [SceneKey] {
+        var freq: [String: Int] = [:]
+        for key in scenes {
+            for fx in fxHistory[key] ?? [] {
+                freq[fx, default: 0] += 1
+            }
+        }
+        let recurring = Set(freq.filter { $0.value > 1 }.map { $0.key })
+        return scenes.filter { key in
+            (fxHistory[key]?.contains { recurring.contains($0) }) ?? false
+        }
+    }
 
     /// Handoff memory to another account (placeholder).
-    public func handoffMemory(to account: String) {}
+    public func handoffMemory(to account: String) {
+        handoffHistory.append(account)
+    }
 
     /// Create a scene fork with a tag.
     public func createSceneFork(original: SceneKey, tag: String) -> SceneKey {

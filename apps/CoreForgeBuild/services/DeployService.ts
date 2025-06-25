@@ -9,10 +9,12 @@ export interface DeployOptions {
  * simplified placeholder for a real CI/CD pipeline.
  */
 export class DeployService {
+  lastDeployment?: string;
   deploy(dir: string, opts: DeployOptions = {}): string {
     if (opts.nsfw && !process.env.ALLOW_NSFW) {
       throw new Error('NSFW content not allowed');
     }
+    this.lastDeployment = opts.cloud ? `cloud:${dir}` : dir;
     return opts.cloud ? `https://cloud.example.com/${dir}` : dir;
   }
 }
