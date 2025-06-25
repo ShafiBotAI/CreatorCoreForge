@@ -1,4 +1,13 @@
 import Foundation
+#if canImport(Combine)
+import Combine
+#else
+public protocol ObservableObject {}
+@propertyWrapper public struct Published<Value> {
+    public var wrappedValue: Value
+    public init(wrappedValue: Value) { self.wrappedValue = wrappedValue }
+}
+#endif
 
 /// Stores user-selected favorite voices for quick access.
 public final class FavoriteVoiceService: ObservableObject {

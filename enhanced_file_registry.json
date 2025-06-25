@@ -16,6 +16,8 @@
     "Sources/CreatorCoreForge/BuildBridge.swift",
     "Tests/CreatorCoreForgeTests/BuildBridgeTests.swift",
     "open_tasks_registry.json",
-    "AGENTS.md"
+    "AGENTS.md",
+    "Sources/CreatorCoreForge/HeroSpotlightBackground.swift",
+    "Tests/CreatorCoreForgeTests/HeroSpotlightBackgroundTests.swift"
   ]
 }
