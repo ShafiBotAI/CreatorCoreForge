@@ -39,3 +39,4 @@
 - Further optimized lens flare detection loops and added TTL-based eviction to `CacheService`.
 - Implemented `multitrack_export` utility and `VoiceApprovalWorkflow` helpers for CoreForge Audio.
 
+- Added HeroSpotlightBackground utility and accompanying tests.

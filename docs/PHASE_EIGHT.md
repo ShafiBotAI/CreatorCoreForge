@@ -170,17 +170,17 @@ Only a subset of those features are shown below for brevity.
 - [x] CrossPlatformVideoGenerator
 - [x] FrameInterpolationService
 
-- [ ] AR/VR playback
-- [ ] Quantum reality switcher
+- [x] AR/VR playback
+- [x] Quantum reality switcher
 
-- [ ] Hero spotlight background (wide format)
-- [ ] TimelineEditor
-- [ ] ColorGradingEngine
-- [ ] BranchingPathsUI
-- [ ] FaceTrackerService
-- [ ] CrowdSimulator
-- [ ] Export360VR
-- [ ] CameraStabilizer
+- [x] Hero spotlight background (wide format)
+- [x] TimelineEditor
+- [x] ColorGradingEngine
+- [x] BranchingPathsUI
+- [x] FaceTrackerService
+- [x] CrowdSimulator
+- [x] Export360VR
+- [x] CameraStabilizer
 - [ ] WatermarkService
 - [ ] SubtitleGenerator
 - [ ] RenderAnalyticsDashboard

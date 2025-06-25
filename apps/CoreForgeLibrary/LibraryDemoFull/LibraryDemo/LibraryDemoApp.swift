@@ -10,4 +10,9 @@ struct LibraryDemoApp: App {
         }
     }
 }
+#else
+@main
+struct LibraryDemoAppMain {
+    static func main() {}
+}
 #endif
