@@ -8,11 +8,15 @@ let package = Package(
         .macOS(.v10_15)
     ],
     products: [
-        .library(name: "CreatorCoreForge", targets: ["CreatorCoreForge"])
+        .library(name: "CreatorCoreForge", targets: ["CreatorCoreForge"]),
+        .executable(name: "LibraryDemoApp", targets: ["LibraryDemoApp"])
     ],
     dependencies: [],
     targets: [
         .target(name: "CreatorCoreForge", path: "Sources/CreatorCoreForge"),
+        .executableTarget(name: "LibraryDemoApp",
+                          path: "apps/CoreForgeLibrary/LibraryDemoFull/LibraryDemo",
+                          exclude: ["Info.plist"]),
         .testTarget(name: "CreatorCoreForgeTests", dependencies: ["CreatorCoreForge"], path: "Tests/CreatorCoreForgeTests")
     ]
 )
