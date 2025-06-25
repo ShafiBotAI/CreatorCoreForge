@@ -52,6 +52,17 @@ public final class InputBindingEngine {
         watchers[field, default: []].append(action)
     }
 
+    /// Bind a dependency so that a dependent field is cleared when the primary condition fails.
+    public func bindDependency(primary: String, dependent: String, condition: @escaping (String) -> Bool) {
+        addWatcher(for: primary) { [weak self] value in
+            guard let self = self else { return }
+            if !condition(value) {
+                self.values[dependent] = ""
+                self.triggerWatchers(for: dependent)
+            }
+        }
+    }
+
     /// Trigger watchers for a particular field.
     private func triggerWatchers(for field: String) {
         let val = values[field] ?? ""

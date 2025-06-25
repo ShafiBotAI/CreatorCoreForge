@@ -248,6 +248,47 @@ Key points from `README.md`:
 - [x] Tag visual rhythm speed (slow visual poetry vs fast action montage)
 
 
+### Phase 4 – Memory Engine, Continuity, and Multibook Visual Sync
+- [x] Persist character visuals across multiple books, including costume and evolution
+- [x] Maintain memory of key visual motifs and use them in flashbacks or callouts
+- [x] Store visual timeline of each character’s age, look, and setting impact
+- [x] Flag continuity errors in casting, color palette, or background reuse
+- [x] Allow timeline shifting to accommodate prequels and sequels
+- [x] Sync character visual memory with voice tone evolution
+- [x] Store FX history (e.g., specific lightning type for trauma scene)
+- [x] Reuse location models and scene layouts for consistency across chapters/books
+- [x] Auto-recommend filters and FX based on prior book rendering
+- [x] Tag series-specific visual themes (e.g., "gold light = safety")
+- [x] Enable multibook project dashboard to track consistency
+- [x] Visual arc timeline for each character (first appearance to final scene)
+- [x] Adapt framing techniques based on memory weight (e.g., past = faded, current = vivid)
+- [x] Cross-reference visual scene files with narration or audio timeline
+- [x] Alert creators to inconsistencies in character hairstyle, outfit, or body type
+- [x] Recommend background reuse based on memory location detection
+- [x] Provide character memory "lock" toggle to prevent style drift
+- [x] Highlight visual callbacks to past books/scenes in creator view
+- [x] Allow AI assistant to generate recap montage from memory visuals
+- [x] Integrate memory graphs into multiverse and branch visualizers
+- [x] Detect and annotate recurring visual cues across book entries
+- [x] Support visual memory handoff to other creator accounts or teams
+- [x] Enable cutaway logic for interior vs exterior visual blending
+- [x] Simulate mood via hue shifting and saturation overlays
+- [x] Support dynamic shadows and ambient occlusion for realism
+- [x] Trigger visual filters (noir, dream, sepia, neon) based on scene metadata
+- [x] Identify high-impact moments and render with frame-by-frame detail
+- [x] Support 16:9, vertical, and square rendering formats
+- [x] Enable "live panel" layout for comic/manga-style visual composition
+- [x] Add blur, shake, or light flash FX for dramatic or horror moments
+- [x] Sync scene tone to ambient background FX audio
+- [x] Store FX template libraries per genre for reuse
+- [x] Allow creator to preview FX before rendering full scenes
+- [x] Provide toggle between high-quality and quick-preview render settings
+- [x] Visualize FX layering structure for post-editing
+- [x] Integrate facial motion tracking for emotional match rendering
+- [x] Track render time estimates and optimize batch processing queue
+- [x] Tag visual rhythm speed (slow visual poetry vs fast action montage)
+
+
 -### Phase 4 – Memory Engine, Continuity, and Multibook Visual Sync
 - [x] Persist character visuals across multiple books, including costume and evolution
 - [x] Maintain memory of key visual motifs and use them in flashbacks or callouts
@@ -278,6 +319,7 @@ Key points from `README.md`:
 - [x] Store alternate visual outcomes for the same chapter/scene
 - [x] Display visual multiverse map with branches and connections
 - [x] Allow creators to preview all timeline outcomes in side-by-side mode
+
 - [ ] Enable auto-generation of visual variations for key choice points
 - [ ] Sync visual changes with multiverse-aware voice and FX layers
 - [ ] Recommend color palette and lighting changes based on timeline branch
@@ -296,99 +338,118 @@ Key points from `README.md`:
 - [ ] Embed multiverse state in exported metadata for reuse
 - [ ] Detect and flag conflicts when characters appear in multiple branches simultaneously
 - [ ] Enable AI director mode to guide scene transitions across branches
+=======
+- [x] Enable auto-generation of visual variations for key choice points
+- [x] Sync visual changes with multiverse-aware voice and FX layers
+- [x] Recommend color palette and lighting changes based on timeline branch
+- [x] Track viewer navigation across different visual storylines
+- [x] Highlight multiverse divergence points in scene editing panel
+- [x] Store and lock multiverse visual states for version tracking
+- [x] Provide toggle to collapse alternate scenes into one for export
+- [x] Create parallel visual identities for characters (e.g., Hero vs Villain versions)
+- [x] Match branching logic with alternate soundtracks and FX profiles
+- [x] Offer predictive timeline generator based on character decisions
+- [x] Generate recap videos per timeline path for audience immersion
+- [x] Support layered rendering (shared visuals + unique overlays)
+- [x] Build continuity checker across timelines for style cohesion
+- [x] Visualize alternate emotional arcs using heatmap overlays
+- [x] Allow creator-defined "main" timeline and secondary forks
+- [x] Embed multiverse state in exported metadata for reuse
+- [x] Detect and flag conflicts when characters appear in multiple branches simultaneously
+- [x] Enable AI director mode to guide scene transitions across branches
+
 
 ### Phase 6 – Export Options, Platform Sync & Creator Subscription Features
-- [ ] Export rendered video in MP4, MOV, and WebM formats with selectable quality levels
-- [ ] Allow vertical, square, and widescreen aspect ratio export options
-- [ ] Include thumbnail and cover art generation from key frames
-- [ ] Auto-generate subtitle tracks synced with voice and visuals
-- [ ] Embed chapter metadata and timeline jump points for playback platforms
-- [ ] Export to YouTube, TikTok, and Instagram Reels via platform integrations
-- [ ] Sync export state with cloud and local storage
-- [ ] Track export history by book, scene, and version
-- [ ] Bundle FX, character, and voice layers for full scene archives
-- [ ] Offer watermarking and brand tagging options
-- [ ] Enable multi-resolution export for preview vs final render
-- [ ] Gate export privileges by subscription tier (e.g., 4K = Creator+ only)
-- [ ] Support batch export queue with export profile presets
-- [ ] Auto-optimize exports for bandwidth-constrained environments
-- [ ] Enable NSFW-safe export modes (blur, replace, censor layers)
-- [ ] Support creator-stamped end credits or intro overlays
-- [ ] Track subscription credits and export quota by user
-- [ ] Allow in-app purchases for one-time HD or commercial use licenses
-- [ ] Provide DRM encoding option for IP-protected outputs
-- [ ] Sync exported files across devices with user authentication
-- [ ] Offer creator-branded export template themes (logos, font, outro)
-- [ ] Generate trailer versions from book-to-video projects automatically
+- [x] Export rendered video in MP4, MOV, and WebM formats with selectable quality levels
+- [x] Allow vertical, square, and widescreen aspect ratio export options
+- [x] Include thumbnail and cover art generation from key frames
+- [x] Auto-generate subtitle tracks synced with voice and visuals
+- [x] Embed chapter metadata and timeline jump points for playback platforms
+- [x] Export to YouTube, TikTok, and Instagram Reels via platform integrations
+- [x] Sync export state with cloud and local storage
+- [x] Track export history by book, scene, and version
+- [x] Bundle FX, character, and voice layers for full scene archives
+- [x] Offer watermarking and brand tagging options
+- [x] Enable multi-resolution export for preview vs final render
+- [x] Gate export privileges by subscription tier (e.g., 4K = Creator+ only)
+- [x] Support batch export queue with export profile presets
+- [x] Auto-optimize exports for bandwidth-constrained environments
+- [x] Enable NSFW-safe export modes (blur, replace, censor layers)
+- [x] Support creator-stamped end credits or intro overlays
+- [x] Track subscription credits and export quota by user
+- [x] Allow in-app purchases for one-time HD or commercial use licenses
+- [x] Provide DRM encoding option for IP-protected outputs
+- [x] Sync exported files across devices with user authentication
+- [x] Offer creator-branded export template themes (logos, font, outro)
+- [x] Generate trailer versions from book-to-video projects automatically
 
 ### Phase 7 – NSFW Visual Modes, Content Filtering, and Creator Privacy Controls
-- [ ] Add NSFW mode toggle with age-gated access and verification
-- [ ] Provide separate rendering logic for explicit vs suggestive visual scenes
-- [ ] Allow per-character NSFW permissions and tone preferences
-- [ ] Tag and index NSFW scenes for optional inclusion/exclusion in exports
-- [ ] Offer NSFW visual FX library (shadows, fog, body simulation overlays)
-- [ ] Blur or censor sensitive body areas based on creator control
-- [ ] Support dual rendering: NSFW and Safe version from same scene
-- [ ] Enable private-only scene generation with encrypted preview keys
-- [ ] Provide intensity control slider for visual eroticism or violence
-- [ ] Sync NSFW tone with voice and ambient FX layers
-- [ ] Allow creator notes to guide scene rendering boundaries
-- [ ] Embed NSFW warning overlays for early scene detection
-- [ ] Generate parallel safe-for-stream scenes with auto-adaptation
-- [ ] Store NSFW render settings as presets for series/genre
-- [ ] Offer Creator dashboard to review flagged or reported NSFW content
-- [ ] Filter NSFW content in search, preview, and trailer modes
-- [ ] Apply scene tone validator to suggest safe/NSFW rating per visual sequence
-- [ ] Hide NSFW rendering options in shared/public projects
-- [ ] Tag NSFW export files with proper disclaimers and auto-locks
-- [ ] Provide customizable NSFW cover and thumbnail censor options
-- [ ] Track NSFW render usage and tie to creator subscription tier
-- [ ] Integrate NSFW content filter toggle for viewers and collaborators
+- [x] Add NSFW mode toggle with age-gated access and verification
+- [x] Provide separate rendering logic for explicit vs suggestive visual scenes
+- [x] Allow per-character NSFW permissions and tone preferences
+- [x] Tag and index NSFW scenes for optional inclusion/exclusion in exports
+- [x] Offer NSFW visual FX library (shadows, fog, body simulation overlays)
+- [x] Blur or censor sensitive body areas based on creator control
+- [x] Support dual rendering: NSFW and Safe version from same scene
+- [x] Enable private-only scene generation with encrypted preview keys
+- [x] Provide intensity control slider for visual eroticism or violence
+- [x] Sync NSFW tone with voice and ambient FX layers
+- [x] Allow creator notes to guide scene rendering boundaries
+- [x] Embed NSFW warning overlays for early scene detection
+- [x] Generate parallel safe-for-stream scenes with auto-adaptation
+- [x] Store NSFW render settings as presets for series/genre
+- [x] Offer Creator dashboard to review flagged or reported NSFW content
+- [x] Filter NSFW content in search, preview, and trailer modes
+- [x] Apply scene tone validator to suggest safe/NSFW rating per visual sequence
+- [x] Hide NSFW rendering options in shared/public projects
+- [x] Tag NSFW export files with proper disclaimers and auto-locks
+- [x] Provide customizable NSFW cover and thumbnail censor options
+- [x] Track NSFW render usage and tie to creator subscription tier
+- [x] Integrate NSFW content filter toggle for viewers and collaborators
 
 ### Phase 8 – Multilingual Support, Cultural Adaptation & Cross-Book Scene Logic
-- [ ] Translate full scripts while preserving pacing, emotion, and visual tags
-- [ ] Detect primary and secondary languages from book text or user input
-- [ ] Sync translated dialogue with lip-sync adjustments per language
-- [ ] Swap visual context (e.g., setting, symbols) to match cultural norms
-- [ ] Match voiceover tone with cultural delivery style (e.g., reserved vs expressive)
-- [ ] Enable dual-language subtitle overlay with toggles
-- [ ] Provide audio language toggle mid-playback (bilingual view mode)
-- [ ] Auto-swap text signage or props in scene to match target language
-- [ ] Save cultural localization settings for franchise or series consistency
-- [ ] Detect idioms and replace with native-equivalent visual cues
-- [ ] Allow creator review of language-adapted visuals before rendering
-- [ ] Flag content sensitive to region/culture for modification options
-- [ ] Support accent-based visual/voice region overlays (UK vs US)
-- [ ] Offer export options for localized versions per country
-- [ ] Recommend artistic adjustments based on visual symbolism norms
-- [ ] Translate creator notes and project metadata for global collaboration
-- [ ] Provide multilingual visual cue glossary with usage examples
-- [ ] Preserve scene framing consistency across languages
-- [ ] Embed language metadata in export files for platform distribution
-- [ ] Enable automatic rendering of multiple language versions at once
-- [ ] Support multi-book narrative sync for localized arcs
-- [ ] Cross-link translated memory arcs and character expressions over series
+- [x] Translate full scripts while preserving pacing, emotion, and visual tags
+- [x] Detect primary and secondary languages from book text or user input
+- [x] Sync translated dialogue with lip-sync adjustments per language
+- [x] Swap visual context (e.g., setting, symbols) to match cultural norms
+- [x] Match voiceover tone with cultural delivery style (e.g., reserved vs expressive)
+- [x] Enable dual-language subtitle overlay with toggles
+- [x] Provide audio language toggle mid-playback (bilingual view mode)
+- [x] Auto-swap text signage or props in scene to match target language
+- [x] Save cultural localization settings for franchise or series consistency
+- [x] Detect idioms and replace with native-equivalent visual cues
+- [x] Allow creator review of language-adapted visuals before rendering
+- [x] Flag content sensitive to region/culture for modification options
+- [x] Support accent-based visual/voice region overlays (UK vs US)
+- [x] Offer export options for localized versions per country
+- [x] Recommend artistic adjustments based on visual symbolism norms
+- [x] Translate creator notes and project metadata for global collaboration
+- [x] Provide multilingual visual cue glossary with usage examples
+- [x] Preserve scene framing consistency across languages
+- [x] Embed language metadata in export files for platform distribution
+- [x] Enable automatic rendering of multiple language versions at once
+- [x] Support multi-book narrative sync for localized arcs
+- [x] Cross-link translated memory arcs and character expressions over series
 
-### Phase 9 – Full-Cast Mastering, Scene Intelligence & Creator Studio Tools
-- [ ] Export each character's voice and animation to separate tracks for post-editing
-- [ ] Provide DAW-compatible multitrack timelines with labeled scene markers
-- [ ] Enable facial motion layer export for animator sync
-- [ ] Allow lip sync intensity control and timing nudge tools
-- [ ] Build emotion heatmap across chapters to guide visual tone
-- [ ] Auto-tag scene rhythm (slow burn, montage, high-speed) for rendering optimization
-- [ ] Sync character spotlighting and focus shifts with narration peaks
-- [ ] Offer sandbox playback with per-layer mute/toggle options
-- [ ] Allow real-time override of generated framing or pacing
-- [ ] Provide "Director Mode" for manual camera and FX control
-- [ ] Add timeline scrubber with visual peaks and dialog markers
-- [ ] Visualize tone deviation and intensity spikes for debugging
-- [ ] Enable AI suggestions for retiming scene flow or voice cadence
-- [ ] Store creator-defined presets for framing, color grade, and cut style
-- [ ] Allow version comparison mode between two scene outputs
-- [ ] Offer creator commentary overlay mode during video review
-- [ ] Export scene reports including tone maps, keyframes, and alt takes
-- [ ] Support beta tools: voice fingerprint preview, animation merge tester
-- [ ] Bundle scene elements into shareable .cvsx format (CoreForge Scene Exchange)
-- [ ] Provide Creator Control Panel for full preview/edit of visual/audio logic
-- [ ] Enable collaborative comments and timeline feedback from teams
-- [ ] Simulate full-cast rehearsal playback for pacing checks and scene balance
+- [x] Export each character's voice and animation to separate tracks for post-editing
+- [x] Provide DAW-compatible multitrack timelines with labeled scene markers
+- [x] Enable facial motion layer export for animator sync
+- [x] Allow lip sync intensity control and timing nudge tools
+- [x] Build emotion heatmap across chapters to guide visual tone
+- [x] Auto-tag scene rhythm (slow burn, montage, high-speed) for rendering optimization
+- [x] Sync character spotlighting and focus shifts with narration peaks
+- [x] Offer sandbox playback with per-layer mute/toggle options
+- [x] Allow real-time override of generated framing or pacing
+- [x] Provide "Director Mode" for manual camera and FX control
+- [x] Add timeline scrubber with visual peaks and dialog markers
+- [x] Visualize tone deviation and intensity spikes for debugging
+- [x] Enable AI suggestions for retiming scene flow or voice cadence
+- [x] Store creator-defined presets for framing, color grade, and cut style
+- [x] Allow version comparison mode between two scene outputs
+- [x] Offer creator commentary overlay mode during video review
+- [x] Export scene reports including tone maps, keyframes, and alt takes
+- [x] Support beta tools: voice fingerprint preview, animation merge tester
+- [x] Bundle scene elements into shareable .cvsx format (CoreForge Scene Exchange)
+- [x] Provide Creator Control Panel for full preview/edit of visual/audio logic
+- [x] Enable collaborative comments and timeline feedback from teams
+- [x] Simulate full-cast rehearsal playback for pacing checks and scene balance

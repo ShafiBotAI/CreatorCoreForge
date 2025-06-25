@@ -63,4 +63,11 @@ final class BuildPhase789Tests: XCTestCase {
         XCTAssertFalse(scanner.scan(code: "eval('hack')"))
         XCTAssertTrue(scanner.scan(code: "print('safe')"))
     }
+
+    func testCopilotAutocompleteAndComplexity() {
+        let copilot = AICoPilot()
+        XCTAssertEqual(copilot.autocomplete(for: "func test", styleGuide: "Swift"), "func test {}")
+        let big = Array(repeating: "line", count: 60).joined(separator: "\n")
+        XCTAssertFalse(copilot.complexityWarnings(in: big).isEmpty)
+    }
 }

@@ -5,6 +5,7 @@ public final class BuildImprovementEngine {
     private let security = SecurityScanner()
     private let compliance = ComplianceChecker()
     private let copilot = AICoPilot()
+    private let usageTracker = AIUsageTracker()
 
     public init() {}
 
@@ -64,9 +65,41 @@ public final class BuildImprovementEngine {
         return output
     }
 
+    /// Track usage of a particular AI feature for optimization reporting.
+    public func recordAIUsage(feature: String) {
+        usageTracker.record(feature: feature)
+    }
+
+    public func aiUsageReport() -> [String: Int] {
+        usageTracker.report()
+    }
+
+    public func usageOptimizationTips() -> [String] {
+        usageTracker.optimizationTips()
+    }
+
     /// Validate that required compliance docs exist for a project path.
     public func validateCompliance(at path: String) -> Bool {
         compliance.validatePrivacyDocs(at: path)
+    }
+
+    /// Calculate a naive optimization score based on issues found.
+    public func optimizationScore(for path: String) -> Double {
+        let issues = scanProject(at: path)
+        let base = max(1, issues.count)
+        return 1.0 / Double(base)
+    }
+
+    /// Compare generated app against simple platform guidelines and return warnings.
+    public func compareGuidelines(platform: String) -> [String] {
+        var warnings: [String] = []
+        if platform.lowercased().contains("ios") {
+            warnings.append("Ensure usage description strings are provided")
+        }
+        if platform.lowercased().contains("android") {
+            warnings.append("Check target SDK version")
+        }
+        return warnings
     }
 }
 

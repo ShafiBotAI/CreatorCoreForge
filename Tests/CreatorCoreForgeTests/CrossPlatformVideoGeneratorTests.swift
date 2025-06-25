@@ -5,6 +5,7 @@ final class CrossPlatformVideoGeneratorTests: XCTestCase {
     func testGenerate() {
         let generator = CrossPlatformVideoGenerator()
         let frames = ["a", "b"]
-        XCTAssertEqual(generator.generate(frames: frames), frames)
+        let clip = generator.generate(frames: frames, platform: .iOS)
+        XCTAssertEqual(clip.frames, frames)
     }
 }

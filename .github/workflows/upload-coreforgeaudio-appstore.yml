@@ -1,27 +1,14 @@
-name: Upload Apps to App Store Connect
+name: Upload CoreForge Audio to App Store
 
 on:
   workflow_dispatch:
 
 jobs:
-  build-and-upload:
+  build_and_deliver:
     runs-on: macos-latest
 
-    strategy:
-      matrix:
-        app:
-          - name: CoreForge Audio
-            path: apps/CoreForgeAudio
-            scheme: CoreForgeAudio
-          - name: CoreForge Visual
-            path: apps/CoreForgeVisual
-            scheme: CoreForgeVisual
-          - name: CoreForge Writer
-            path: apps/CoreForgeWriter
-            scheme: CoreForgeWriter
-
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Set up Xcode
@@ -37,10 +24,12 @@ jobs:
       - name: Install Fastlane
         run: gem install fastlane
 
-      - name: Build and Deliver All Apps
+      - name: Build and Deliver CoreForge Audio
         env:
+          PROJECT_PATH: apps/CoreForgeAudio/CoreForgeAudio.xcodeproj
+          SCHEME: CoreForgeAudio
           APPSTORECONNECT_KEY_ID: ${{ secrets.APPSTORECONNECT_KEY_ID }}
           APPSTORECONNECT_ISSUER_ID: ${{ secrets.APPSTORECONNECT_ISSUER_ID }}
           APPSTORECONNECT_API_KEY: ${{ secrets.APPSTORECONNECT_API_KEY }}
           APPSTORECONNECT_TEAM_ID: ${{ secrets.APPSTORECONNECT_TEAM_ID }}
-        run: fastlane build_all && find build -name '*.ipa' -delete
+        run: fastlane build_and_deliver

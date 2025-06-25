@@ -401,10 +401,8 @@
 ==================================================
 
 📦 App: CoreForgeBuild
-✅ Implemented Features: 1
+✅ Implemented Features: 21
    - OfflineMP3Downloader (`apps/CoreForgeBuild/Desktop/main.js`)
-
-❌ Missing or Incomplete Features: 34
    - App idea generator based on trends (Codex)
    - UI builder using Figma/code templates (Codex)
    - Build Codex writes Swift, Kotlin, Python, Unity, JS (Codex)
@@ -425,6 +423,8 @@
    - Figma-driven UI builder
    - Auto bundler for all platforms
    - Debugging assistant
+
+❌ Missing or Incomplete Features: 14
    - VideoEffectsPipeline
    - AudioEffectsPipeline
    - HighQualityVoiceLibrary

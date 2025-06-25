@@ -86,6 +86,22 @@ public struct NSFWIntensityMeter {
     public init(level: Double = 0.5) {
         self.level = max(0.0, min(1.0, level))
     }
+
+    /// Update the current level using a slider-style value between 0 and 1.
+    public mutating func setLevel(_ value: Double) {
+        self.level = max(0.0, min(1.0, value))
+    }
+
+    /// Map the current level to a discrete intensity used by `NSFWContentManager`.
+    public func scaledIntensity() -> NSFWContentManager.NSFWIntensity {
+        switch level {
+        case ..<0.25: return .off
+        case ..<0.5: return .softcore
+        case ..<0.75: return .sensual
+        case ..<0.9: return .rough
+        default: return .hardcore
+        }
+    }
 }
 
 /// Blend text with a sub-tone tag for genre flexibility.

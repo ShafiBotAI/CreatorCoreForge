@@ -128,7 +128,7 @@
 
 ### ⚙️ Settings Panel
 - [x] Style picker (anime, noir, fantasy, etc.)
-- [ ] NSFW mode toggle (off by default)
+ - [x] NSFW mode toggle (off by default)
  - [x] Developer console toggle (Creator tier)
 
 ---

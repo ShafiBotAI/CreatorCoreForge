@@ -1,4 +1,10 @@
-export type Role = 'Owner' | 'Admin' | 'Developer' | 'Viewer';
+export type Role =
+  | 'Owner'
+  | 'Admin'
+  | 'Developer'
+  | 'Reviewer'
+  | 'Viewer'
+  | 'Guest';
 
 export interface Collaborator {
   id: string;

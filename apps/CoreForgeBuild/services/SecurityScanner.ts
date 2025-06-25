@@ -13,4 +13,16 @@ export class SecurityScanner {
     }
     return warnings;
   }
+  scanInputs(fields: string[]): string[] {
+    const issues: string[] = [];
+    for (const f of fields) {
+      if (/password/i.test(f) && !/type=\"password\"/.test(f)) {
+        issues.push('Password field should use type="password"');
+      }
+      if (/onerror=/.test(f)) {
+        issues.push('Potential XSS vulnerability in input');
+      }
+    }
+    return issues;
+  }
 }

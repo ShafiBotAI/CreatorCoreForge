@@ -1,6 +1,6 @@
 {
   "name": "coreforge-build",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "type": "commonjs",
   "main": "dist/index.js",
   "scripts": {
@@ -21,6 +21,7 @@
     "diff": "^5.2.0",
     "qrcode": "^1.5.3",
     "react": "^18.3.1",
-    "wav-decoder": "^1.1.0"
+    "wav-decoder": "^1.1.0",
+    "archiver": "^5.3.2"
   }
 }

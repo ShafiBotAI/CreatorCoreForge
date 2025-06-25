@@ -152,7 +152,37 @@ import { ParseHistory } from '../services/ParseHistory';
   const warnings = new CodeValidator().validate('var a = 1');
   assert(warnings.length === 1);
 
+  const { RepoLinkService } = await import('../services/RepoLinkService');
+  const repoSvc = new RepoLinkService();
+  repoSvc.add('p1', { name: 'origin', url: 'https://example.com', provider: 'github' });
+  assert.strictEqual(repoSvc.list('p1').length, 1);
+
+  const { ChangeLogService } = await import('../services/ChangeLogService');
+  const cl = new ChangeLogService();
+  cl.log('p1', 'init');
+  assert(cl.getLog('p1').includes('init'));
+
+  const { APIAccessLogger } = await import('../services/APIAccessLogger');
+  const apiLog = new APIAccessLogger();
+  apiLog.record('p1', 'u1', '/v1');
+  assert.strictEqual(apiLog.list('p1').length, 1);
+
+  const { AICopilotChat } = await import('../services/AICopilotChat');
+  const chat = new AICopilotChat();
+  assert(chat.ask('why').includes('approach'));
+
+  const { TestCaseGenerator } = await import('../services/TestCaseGenerator');
+  const tcg = new TestCaseGenerator();
+  assert.strictEqual(tcg.generate('foo').length, 2);
+
+  const { DocGenerator } = await import('../services/DocGenerator');
+  const docGen = new DocGenerator();
+  docGen.generate('Sample', 'Example');
+
 
   console.log('CoreForgeBuild tests passed');
   require('./collaboration.test');
+  require("./autoupdater.test");
+  require('./pluginmanager.test');
+  require('./advanced.test');
 })();
