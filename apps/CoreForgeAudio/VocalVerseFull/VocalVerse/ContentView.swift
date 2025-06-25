@@ -5,17 +5,18 @@ struct ContentView: View {
     @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding = false
     @StateObject private var library = LibraryModel()
     @StateObject private var usage = UsageStats()
+    @Namespace private var ns
 
     var body: some View {
         Group {
             if hasSeenOnboarding {
-                MainTabView()
+                MainTabView(namespace: ns)
                     .environmentObject(library)
                     .environmentObject(usage)
-                    .transition(.opacity)
+                    .transition(.scale)
             } else {
-                OnboardingView(hasSeenOnboarding: $hasSeenOnboarding)
-                    .transition(.opacity)
+                OnboardingView(hasSeenOnboarding: $hasSeenOnboarding, namespace: ns)
+                    .transition(.scale)
             }
         }
         .animation(.easeInOut, value: hasSeenOnboarding)
@@ -23,6 +24,7 @@ struct ContentView: View {
 }
 
 struct MainTabView: View {
+    var namespace: Namespace.ID
     @EnvironmentObject var library: LibraryModel
     @EnvironmentObject var usage: UsageStats
 
@@ -33,7 +35,7 @@ struct MainTabView: View {
                 .tabItem {
                     Label("Dashboard", systemImage: "chart.bar")
                 }
-            LibraryView()
+            LibraryView(namespace: namespace)
                 .environmentObject(library)
                 .tabItem {
                     Label("Library", systemImage: "books.vertical")

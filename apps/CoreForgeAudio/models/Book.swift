@@ -9,6 +9,7 @@ struct Book: Identifiable, Codable {
     var chapters: [Chapter]
     var progress: Double
     var lastOpened: Date?
+    var isDownloaded: Bool
 
     init(id: UUID = UUID(),
          title: String,
@@ -16,7 +17,8 @@ struct Book: Identifiable, Codable {
          coverImage: String? = nil,
          chapters: [Chapter] = [],
          progress: Double = 0,
-         lastOpened: Date? = nil) {
+         lastOpened: Date? = nil,
+         isDownloaded: Bool = false) {
         self.id = id
         self.title = title
         self.author = author
@@ -24,6 +26,7 @@ struct Book: Identifiable, Codable {
         self.chapters = chapters
         self.progress = progress
         self.lastOpened = lastOpened
+        self.isDownloaded = isDownloaded
     }
 }
 
