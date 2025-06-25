@@ -25,6 +25,10 @@ struct MainTabView: View {
                 .tabItem {
                     Label("Library", systemImage: "books.vertical")
                 }
+            ImportView()
+                .tabItem {
+                    Label("Import", systemImage: "square.and.arrow.down")
+                }
             PlayerView()
                 .tabItem {
                     Label("Player", systemImage: "play.circle")
