@@ -15,4 +15,20 @@ public struct ExportManager {
     public func validate(path: String) -> Bool {
         FileManager.default.fileExists(atPath: path)
     }
+
+    /// Detect common export blockers like missing login screen or icons.
+    public func detectBlockers(projectFiles: [String]) -> [String] {
+        var issues: [String] = []
+        let lowercased = projectFiles.map { $0.lowercased() }
+        if !lowercased.contains(where: { $0.contains("login") }) {
+            issues.append("missing login screen")
+        }
+        if !lowercased.contains(where: { $0.contains("icon") }) {
+            issues.append("missing app icon")
+        }
+        if !lowercased.contains(where: { $0.contains("validation") }) {
+            issues.append("no validation logic found")
+        }
+        return issues
+    }
 }
