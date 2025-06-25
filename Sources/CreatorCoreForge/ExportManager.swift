@@ -22,7 +22,9 @@ public struct ExportManager {
         var issues: [String] = []
         if screens == 0 { issues.append("no screens defined") }
         if !logicValid { issues.append("logic validation failed") }
-=======
+        return issues
+    }
+
     /// Detect common export blockers like missing login screen or icons.
     public func detectBlockers(projectFiles: [String]) -> [String] {
         var issues: [String] = []
