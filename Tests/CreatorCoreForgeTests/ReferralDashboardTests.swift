@@ -15,5 +15,6 @@ final class ReferralDashboardTests: XCTestCase {
         XCTAssertTrue(summary.contains("1"))
         XCTAssertTrue(summary.contains(code2))
         XCTAssertTrue(summary.contains("2"))
+        XCTAssertTrue(summary.contains("Terms:"))
     }
 }

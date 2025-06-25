@@ -16,4 +16,12 @@ final class ReferralProgramTests: XCTestCase {
         program.updateTerms("New terms")
         XCTAssertEqual(program.currentInfo().terms, "New terms")
     }
+
+    func testPerAppTerms() {
+        let program = ReferralProgram()
+        program.updateTerms("App A terms", forApp: "AppA")
+        XCTAssertEqual(program.currentInfo(forApp: "AppA").terms, "App A terms")
+        // Default terms should remain unchanged
+        XCTAssertEqual(program.currentInfo().terms, "Standard referral rewards apply.")
+    }
 }
