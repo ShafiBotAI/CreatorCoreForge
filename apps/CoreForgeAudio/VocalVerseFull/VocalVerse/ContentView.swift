@@ -38,11 +38,11 @@ struct MainTabView: View {
                 .tabItem {
                     Label("Library", systemImage: "books.vertical")
                 }
-            KindleView()
+            ConnectView()
                 .environmentObject(library)
                 .environmentObject(usage)
                 .tabItem {
-                    Label("Kindle", systemImage: "book.fill")
+                    Label("Connect", systemImage: "link")
                 }
             ImportView()
                 .environmentObject(library)
