@@ -8,7 +8,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             if let user = loggedInUser {
-                LibraryView(userID: user)
+                LibraryView()
                     .navigationTitle("Library")
             } else if showSignUp {
                 SignUpView { email, password in
