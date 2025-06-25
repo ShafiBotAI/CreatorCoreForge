@@ -1,17 +1,18 @@
 <template>
   <div class="chapter-editor" @scroll="onScroll">
-    <div
+    <ChapterItem
       v-for="chapter in visibleChapters"
       :key="chapter.id"
-      class="chapter"
-    >
-      <textarea v-model="chapter.text" @input="onEdit(chapter)" />
-    </div>
+      :chapter="chapter"
+      :onEdit="onEdit"
+    />
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, watch } from 'vue';
+import { defineComponent, ref, watch, computed } from 'vue';
+import ChapterItem from './components/ChapterItem.vue';
+import { debounce } from './utils/debounce';
 
 export interface Chapter {
   id: number;
@@ -29,32 +30,40 @@ export default defineComponent({
   setup(props) {
     const start = ref(0);
     const size = 20;
-    const visibleChapters = ref(props.chapters.slice(0, size));
+    const visibleChapters = computed(() =>
+      props.chapters.slice(start.value, start.value + size)
+    );
 
     function onScroll(e: Event) {
       const target = e.target as HTMLElement;
       start.value = Math.floor(target.scrollTop / 100);
-      visibleChapters.value = props.chapters.slice(start.value, start.value + size);
     }
 
-    function onEdit(_chapter: Chapter) {
-      // Debounce or emit save events here
+    const emitEdit = debounce((chapter: Chapter) => {
+      // placeholder for emit or API save
+    }, 300);
+
+    function onEdit(chapter: Chapter) {
+      emitEdit(chapter);
     }
 
     watch(
       () => props.chapters,
       () => {
-        visibleChapters.value = props.chapters.slice(start.value, start.value + size);
+        if (start.value + size > props.chapters.length) {
+          start.value = Math.max(0, props.chapters.length - size);
+        }
       }
     );
 
-    return { visibleChapters, onScroll, onEdit };
+    return { visibleChapters, onScroll, onEdit, ChapterItem };
   }
 });
 </script>
 
 <style scoped>
-.chapter {
-  margin-bottom: 1rem;
+.chapter-editor {
+  overflow-y: auto;
+  max-height: 600px;
 }
 </style>
