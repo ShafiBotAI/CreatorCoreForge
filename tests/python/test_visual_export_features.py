@@ -1,5 +1,6 @@
 import sys
 from pathlib import Path
+import pytest
 sys.path.append(str(Path(__file__).resolve().parents[2]))
 
 from collections import deque
@@ -24,6 +25,7 @@ from generated.CoreForgeVisual.Provide_DRM_encoding_option_for_IP_protected_outp
 from generated.CoreForgeVisual.Sync_exported_files_across_devices_with_user_authentication import sync_exported_files
 from generated.CoreForgeVisual.Offer_creator_branded_export_template_themes_logos_font_outro import offer_creator_branded
 from generated.CoreForgeVisual.Generate_trailer_versions_from_book_to_video_projects_automatically import generate_trailer_versions
+from generated.CoreForgeVisual.UnifiedVideoEngine import unified_video_engine
 
 
 def test_thumbnails():
@@ -118,3 +120,9 @@ def test_creator_branded():
 
 def test_trailer():
     assert generate_trailer_versions(100.0, 0.2) == 20.0
+
+
+def test_unified_video_engine_missing_dep(tmp_path):
+    with pytest.raises(RuntimeError):
+        unified_video_engine([str(tmp_path / "a.mp4")], str(tmp_path / "out.mp4"))
+

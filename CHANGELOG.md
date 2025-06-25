@@ -12,6 +12,7 @@
 - Completed the first twenty CoreForge Build tasks with `AdvancedBuildService`
 - Marked twenty CoreForge Visual roadmap items complete in `AGENTS.md`
   and updated README and AGENTS checklists.
+- Expanded `UnifiedVideoEngine` with async wrapper and detailed error handling.
 - Added layout instruction parsing to `MarkdownLayoutParser` and updated Build AGENTS checklist.
 - Implemented `TTSRenderer` and Vue-based `ChapterEditor`, closing related open tasks.
 - Ran `scripts/full_app_scan.py` and updated readiness checklist. Verified test suites via `run_all_tests.sh`.
