@@ -18,6 +18,7 @@ public final class NSFWContentManager: ObservableObject {
     ]
 
     @Published public var unlocked: Bool = false
+    @Published public var ageVerified: Bool = false
     @Published public var nsfwSceneLog: [NSFWScene] = []
     @Published public var contentIntensity: NSFWIntensity = .softcore
     @Published public var contentMode: NSFWContentMode = .slow
@@ -39,10 +40,16 @@ public final class NSFWContentManager: ObservableObject {
     }
 
     public func unlock(with promoCode: String) {
+        guard ageVerified else { return }
         if promoCode.lowercased() == "creatoraccess" {
             unlocked = true
             consentTracker.logConsent(userID: "local", consent: true)
         }
+    }
+
+    /// Verify user age for NSFW access.
+    public func verifyAge(_ age: Int) {
+        ageVerified = age >= ContentPolicyManager.ageLimit
     }
 
     public func logConsent(userID: String, consent: Bool) {
@@ -116,6 +123,7 @@ public final class NSFWContentManager {
     ]
 
     public var unlocked: Bool = false
+    public var ageVerified: Bool = false
     public var nsfwSceneLog: [NSFWScene] = []
     public var contentIntensity: NSFWIntensity = .softcore
     public var contentMode: NSFWContentMode = .slow
@@ -137,10 +145,16 @@ public final class NSFWContentManager {
     }
 
     public func unlock(with promoCode: String) {
+        guard ageVerified else { return }
         if promoCode.lowercased() == "creatoraccess" {
             unlocked = true
             consentTracker.logConsent(userID: "local", consent: true)
         }
+    }
+
+    /// Verify user age for NSFW access.
+    public func verifyAge(_ age: Int) {
+        ageVerified = age >= ContentPolicyManager.ageLimit
     }
 
     public func logConsent(userID: String, consent: Bool) {
