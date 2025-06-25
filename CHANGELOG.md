@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.0.0] - 2025-07-27
+- Upgraded package versions to 2.0.0 for core modules.
+- Enhanced `TitanEngine` with async forecasting and bounded history.
+- Updated app Info.plists to version 2.0.
 ## [Unreleased]
 - Implemented `VoicePersonalityProfiles` and `DynamicEmotionRamping` utilities.
 - Marked initial CoreForge Audio checklist items as complete and added tests.

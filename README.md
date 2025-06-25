@@ -1,5 +1,6 @@
 # 🔥 CreatorCoreForge
 
+**Current Major Version:** 2.0.0
 **CreatorCoreForge** is a suite of next-generation AI-powered creative, productivity, health, and monetization applications. Built for creators, entrepreneurs, educators, and enterprises, this platform empowers users to generate world-class audio, video, books, mental health experiences, financial strategies, and content—with no external API dependencies.
 
 ---
