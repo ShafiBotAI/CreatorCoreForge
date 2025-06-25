@@ -1,4 +1,6 @@
 export class AdvancedBuildService {
+  private marketplace: string[] = [];
+  private enterpriseEnabled = false;
   initializeBackend(type: 'firebase' | 'custom' = 'custom'): string {
     if (type === 'firebase') {
       return 'Firebase backend initialized';
@@ -36,7 +38,7 @@ export class AdvancedBuildService {
   }
 
   setupMarketplace(): void {
-    /* placeholder for plugin marketplace */
+    this.marketplace = [];
   }
 
   validateCodeExport(): string[] {
@@ -44,7 +46,7 @@ export class AdvancedBuildService {
   }
 
   enableEnterpriseControls(): void {
-    /* enterprise settings placeholder */
+    this.enterpriseEnabled = true;
   }
 
   buildMacro(name: string, actions: string[]): string {
