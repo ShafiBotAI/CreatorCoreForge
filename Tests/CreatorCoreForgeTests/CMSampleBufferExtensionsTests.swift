@@ -29,8 +29,8 @@ final class CMSampleBufferExtensionsTests: XCTestCase {
         XCTAssertEqual(output, pixel)
     }
     #else
-    func testToPixelBuffer() {
-        XCTAssertTrue(true)
+    func testToPixelBuffer() throws {
+        throw XCTSkip("AVFoundation not available on this platform")
     }
     #endif
 }
