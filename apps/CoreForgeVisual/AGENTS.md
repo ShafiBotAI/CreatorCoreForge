@@ -425,9 +425,9 @@ Key points from `README.md`:
 - [x] Store creator-defined presets for framing, color grade, and cut style
 - [x] Allow version comparison mode between two scene outputs
 - [x] Offer creator commentary overlay mode during video review
-- [ ] Export scene reports including tone maps, keyframes, and alt takes
-- [ ] Support beta tools: voice fingerprint preview, animation merge tester
-- [ ] Bundle scene elements into shareable .cvsx format (CoreForge Scene Exchange)
-- [ ] Provide Creator Control Panel for full preview/edit of visual/audio logic
-- [ ] Enable collaborative comments and timeline feedback from teams
-- [ ] Simulate full-cast rehearsal playback for pacing checks and scene balance
+- [x] Export scene reports including tone maps, keyframes, and alt takes
+- [x] Support beta tools: voice fingerprint preview, animation merge tester
+- [x] Bundle scene elements into shareable .cvsx format (CoreForge Scene Exchange)
+- [x] Provide Creator Control Panel for full preview/edit of visual/audio logic
+- [x] Enable collaborative comments and timeline feedback from teams
+- [x] Simulate full-cast rehearsal playback for pacing checks and scene balance
