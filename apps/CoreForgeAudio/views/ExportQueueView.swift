@@ -19,4 +19,18 @@ struct ExportQueueView: View {
         .navigationTitle("Export Queue")
     }
 }
+
+#if DEBUG
+struct ExportQueueView_Previews: PreviewProvider {
+    class DummyManager: ExportQueueManager {
+        override var pendingCount: Int { 2 }
+    }
+
+    static var previews: some View {
+        NavigationView {
+            ExportQueueView(manager: DummyManager())
+        }
+    }
+}
+#endif
 #endif

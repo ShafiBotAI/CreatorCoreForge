@@ -37,4 +37,17 @@ struct SearchView: View {
         .padding()
     }
 }
+
+#if DEBUG
+struct SearchView_Previews: PreviewProvider {
+    @State static var query = ""
+    @State static var sort = "Title"
+    @State static var filters: Set<String> = []
+    static var previews: some View {
+        SearchView(query: $query, sort: $sort, filters: $filters)
+            .padding()
+            .previewLayout(.sizeThatFits)
+    }
+}
+#endif
 #endif

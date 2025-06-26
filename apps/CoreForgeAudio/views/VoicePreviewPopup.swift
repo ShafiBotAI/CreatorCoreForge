@@ -39,4 +39,14 @@ struct VoicePreviewPopup: View {
 #endif
     }
 }
+
+#if DEBUG
+struct VoicePreviewPopup_Previews: PreviewProvider {
+    @State static var presented = true
+    static var previews: some View {
+        VoicePreviewPopup(audioURL: URL(fileURLWithPath: "/dev/null"), isPresented: $presented)
+            .previewLayout(.sizeThatFits)
+    }
+}
+#endif
 #endif

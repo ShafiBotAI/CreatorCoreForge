@@ -1,7 +1,11 @@
 import Foundation
+#if canImport(Combine)
+import Combine
+#endif
 
 /// Manages onboarding and tutorial steps for all apps.
-public final class OnboardingManager {
+
+public final class OnboardingManager: ObservableObject {
     public struct Step: OptionSet {
         public let rawValue: Int
         public init(rawValue: Int) { self.rawValue = rawValue }
@@ -14,6 +18,7 @@ public final class OnboardingManager {
 
     private let key = "OnboardingSteps"
     private let store: UserDefaults
+    @Published
     private var steps: Step
 
     public init(store: UserDefaults = .standard) {

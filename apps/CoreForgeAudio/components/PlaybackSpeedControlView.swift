@@ -40,4 +40,16 @@ struct PlaybackSpeedControlView: View {
         }
     }
 }
+
+#if DEBUG
+struct PlaybackSpeedControlView_Previews: PreviewProvider {
+    @State static var speed = PlaybackSpeed.one.rawValue
+    @State static var voice = "Default"
+    static var previews: some View {
+        PlaybackSpeedControlView(speed: $speed, voice: $voice)
+            .padding()
+            .previewLayout(.sizeThatFits)
+    }
+}
+#endif
 #endif

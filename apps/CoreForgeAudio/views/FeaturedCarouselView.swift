@@ -46,4 +46,16 @@ struct FeaturedCarouselView: View {
         }
     }
 }
+
+#if DEBUG
+struct FeaturedCarouselView_Previews: PreviewProvider {
+    static var previews: some View {
+        FeaturedCarouselView(books: [
+            Book(title: "Sample", author: "A"),
+            Book(title: "Sample 2", author: "B")
+        ])
+        .environmentObject(LibraryModel())
+    }
+}
+#endif
 #endif

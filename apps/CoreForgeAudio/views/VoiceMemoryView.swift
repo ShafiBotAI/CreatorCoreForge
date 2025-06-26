@@ -25,4 +25,13 @@ struct VoiceMemoryView: View {
         }
     }
 }
+
+#if DEBUG
+struct VoiceMemoryView_Previews: PreviewProvider {
+    static var previews: some View {
+        VoiceMemoryView()
+            .previewLayout(.sizeThatFits)
+    }
+}
+#endif
 #endif
