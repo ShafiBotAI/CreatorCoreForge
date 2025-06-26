@@ -30,4 +30,8 @@ struct ProfileTierCardView: View {
         .shadow(radius: AppTheme.shadowRadius)
     }
 }
+
+#Preview {
+    ProfileTierCardView(userName: "User", tier: "Free", upgradeAction: {})
+}
 #endif

@@ -34,4 +34,9 @@ struct ChapterProgressView: View {
         .shadow(radius: AppTheme.shadowRadius)
     }
 }
+
+#Preview {
+    ChapterProgressView(showPlayer: .constant(false))
+        .environmentObject(LibraryModel())
+}
 #endif

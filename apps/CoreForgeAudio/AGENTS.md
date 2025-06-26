@@ -586,22 +586,22 @@ Key points from `README.md`:
  - [x] `PlaybackSpeedControlView.swift` – Speed picker (1x–5x).
  - [x] `VoicePickerView.swift` – Dropdown for active narration voice.
  - [x] `SwipePreviewHandler.swift` – Tap-and-hold or swipe to preview voices.
-- [ ] `ChapterProgressView.swift` – Visual tiles for in-progress chapters.
-- [ ] Add `.matchedGeometryEffect` for MiniPlayer → PlayerView transition.
+ - [x] `ChapterProgressView.swift` – Visual tiles for in-progress chapters.
+ - [x] Add `.matchedGeometryEffect` for MiniPlayer → PlayerView transition.
 
 ### 📚 LIBRARY DASHBOARD ENHANCEMENTS
 
-- [ ] `FavoritesCarouselView.swift` – Row for user-tagged favorite books.
-- [ ] `ContinueListeningView.swift` – Displays paused books or last 3 played.
-- [ ] `RecentlyImportedView.swift` – Latest EPUB/PDF/TXT added to library.
-- [ ] `DownloadsManagerView.swift` – Shows offline-only content + space usage.
-- [ ] Add sort/filter chips to `SearchView` (Favorites, Downloaded, Unplayed).
+ - [x] `FavoritesCarouselView.swift` – Row for user-tagged favorite books.
+ - [x] `ContinueListeningView.swift` – Displays paused books or last 3 played.
+ - [x] `RecentlyImportedView.swift` – Latest EPUB/PDF/TXT added to library.
+ - [x] `DownloadsManagerView.swift` – Shows offline-only content + space usage.
+ - [x] Add sort/filter chips to `SearchView` (Favorites, Downloaded, Unplayed).
 
 ### 👤 USER INSIGHTS & PROFILE
 
-- [ ] `ProfileTierCardView.swift` – Shows current plan, upgrade CTA, avatar.
-- [ ] `ListeningStatsView.swift` – Listening streaks, hours, completions.
-- [ ] Add alert badge if streak is broken or goal achieved.
+ - [x] `ProfileTierCardView.swift` – Shows current plan, upgrade CTA, avatar.
+ - [x] `ListeningStatsView.swift` – Listening streaks, hours, completions.
+ - [x] Add alert badge if streak is broken or goal achieved.
 
 ### 🛡 MONETIZATION & TIER ACCESS
 

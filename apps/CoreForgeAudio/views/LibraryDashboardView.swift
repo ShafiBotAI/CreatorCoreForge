@@ -23,6 +23,10 @@ struct LibraryDashboardView: View {
                     ProfileTierCardView(userName: "User", tier: usage.subscriptionTier) {
                         // Navigate to subscription management (placeholder)
                     }
+                    ContinueListeningView()
+                        .environmentObject(library)
+                    RecentlyImportedView()
+                        .environmentObject(library)
                     ListeningStatsView(
                         hoursThisWeek: usage.totalListeningTime / 3600,
                         dailyStreak: 3,
@@ -30,14 +34,11 @@ struct LibraryDashboardView: View {
                         chaptersPlayed: library.books.flatMap { $0.chapters }.count
                     )
                     if !library.favoriteBooks.isEmpty {
-                        VStack(alignment: .leading) {
-                            Text("Favorites")
-                                .font(.headline)
-                                .padding(.horizontal)
-                            FeaturedCarouselView(books: library.favoriteBooks)
-                                .environmentObject(library)
-                        }
+                        FavoritesCarouselView()
+                            .environmentObject(library)
                     }
+                    DownloadsManagerView()
+                        .environmentObject(library)
                     ChapterProgressView(showPlayer: $showPlayer)
                         .environmentObject(library)
                 }
