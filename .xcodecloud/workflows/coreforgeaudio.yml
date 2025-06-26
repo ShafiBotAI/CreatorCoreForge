@@ -1,0 +1,18 @@
+version: 1.0
+identifier: com.creatorcoreforge.audio
+workflows:
+  build_and_test:
+    name: CoreForgeAudio CI
+    triggers:
+      - type: pull_request
+      - type: commit
+        branches: [ main ]
+    environment:
+      xcodeVersion: 15.0
+    actions:
+      - build:
+          project: apps/CoreForgeAudio/CoreForgeAudio.xcodeproj
+          scheme: CoreForgeAudio
+      - test:
+          project: apps/CoreForgeAudio/CoreForgeAudio.xcodeproj
+          scheme: CoreForgeAudio
