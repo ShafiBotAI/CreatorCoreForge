@@ -59,16 +59,16 @@ For each open task, Codex should:
 
 ## 🧪 Step 3: Validation
 
-- [ ] Run unit and integration tests for all created or updated files
-- [ ] Confirm output accuracy with test case assertions
-- [ ] Add updated files to GitHub commits with changelog
-- [ ] Track files in `enhanced_file_registry.json`
+ - [x] Run unit and integration tests for all created or updated files
+ - [x] Confirm output accuracy with test case assertions
+ - [x] Add updated files to GitHub commits with changelog
+ - [x] Track files in `enhanced_file_registry.json`
 
 ---
 
 ## 📦 Step 4: Final Review
 
-- [ ] Ensure every open Codex task has a completed file
-- [ ] Confirm all generated files meet App Store & platform export requirements
-- [ ] Mark tasks complete in all related markdowns and registry logs
+ - [x] Ensure every open Codex task has a completed file
+ - [x] Confirm all generated files meet App Store & platform export requirements
+ - [x] Mark tasks complete in all related markdowns and registry logs
 

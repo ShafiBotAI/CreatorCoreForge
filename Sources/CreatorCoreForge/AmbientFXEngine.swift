@@ -98,7 +98,13 @@ public final class AmbientFXEngine {
                 return fx
             }
         }
-        return nil
+        // Default to a generic ambience if no keyword was found
+        let fallback = library.fx(for: .generic).first ?? ""
+        if !fallback.isEmpty {
+            crossfade(to: fallback)
+            return fallback
+        }
+        return ""
     }
 
     /// Sync ambient playback with narrator pauses.

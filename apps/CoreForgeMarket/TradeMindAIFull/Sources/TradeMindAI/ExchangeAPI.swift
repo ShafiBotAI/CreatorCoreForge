@@ -38,6 +38,47 @@ public final class ExchangeAPI {
         }.resume()
     }
 
+    public func fetchPrice(pair: String, completion: @escaping (Result<Double, Error>) -> Void) {
+        var request = URLRequest(url: baseURL.appendingPathComponent("price/\(pair)"))
+        if let key = apiKey { request.addValue(key, forHTTPHeaderField: "X-API-Key") }
+        sign(request: &request)
+        session.dataTask(with: request) { data, _, error in
+            if let error = error {
+                completion(.failure(error))
+                return
+            }
+            guard let data = data,
+                  let obj = try? JSONDecoder().decode([String: Double].self, from: data),
+                  let price = obj["price"] else {
+                completion(.failure(NSError(domain: "ExchangeAPI", code: -1)))
+                return
+            }
+            completion(.success(price))
+        }.resume()
+    }
+
+    public func placeOrder(pair: String, side: String, amount: Double, completion: @escaping (Result<String, Error>) -> Void) {
+        var request = URLRequest(url: baseURL.appendingPathComponent("order"))
+        request.httpMethod = "POST"
+        let body = ["pair": pair, "side": side, "amount": amount]
+        request.httpBody = try? JSONEncoder().encode(body)
+        if let key = apiKey { request.addValue(key, forHTTPHeaderField: "X-API-Key") }
+        sign(request: &request)
+        session.dataTask(with: request) { data, _, error in
+            if let error = error {
+                completion(.failure(error))
+                return
+            }
+            guard let data = data,
+                  let obj = try? JSONDecoder().decode([String: String].self, from: data),
+                  let id = obj["id"] else {
+                completion(.failure(NSError(domain: "ExchangeAPI", code: -1)))
+                return
+            }
+            completion(.success(id))
+        }.resume()
+    }
+
     private func sign(request: inout URLRequest) {
         guard let key = apiKey else { return }
         let timestamp = String(Int(Date().timeIntervalSince1970))

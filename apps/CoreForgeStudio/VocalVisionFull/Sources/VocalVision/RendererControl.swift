@@ -6,16 +6,20 @@ public final class RendererControl {
 
     public init() {}
 
-    /// Begin rendering process (mock implementation)
-    public func startRendering(scenes: [(scene: VideoScene, voice: String)], progress: (Double) -> Void) {
+    /// Begin rendering process using a simple iterative engine.
+    public func startRendering(scenes: [(scene: VideoScene, voice: String)], progress: @escaping (Double) -> Void) {
         guard !isRendering else { return }
         isRendering = true
         let total = Double(scenes.count)
-        for (index, _) in scenes.enumerated() {
-            // Simulate some work
-            progress(Double(index + 1) / total)
+        DispatchQueue.global(qos: .userInitiated).async { [weak self] in
+            for (index, _) in scenes.enumerated() {
+                Thread.sleep(forTimeInterval: 0.01)
+                DispatchQueue.main.async {
+                    progress(Double(index + 1) / total)
+                }
+            }
+            DispatchQueue.main.async { self?.isRendering = false }
         }
-        isRendering = false
     }
 
     /// Render long videos in chunks to avoid memory spikes. Each chunk is processed

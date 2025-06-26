@@ -243,15 +243,15 @@
 
 | App               | PC Build | Mobile Build | AI Modules | Installer Ready |
 |------------------|----------|--------------|------------|-----------------|
-| CoreForge Audio   | 🟨 In Progress | 🟥 Not Started | ✅ Complete | 🟨 Testing     |
-| CoreForge Visual  | 🟨 In Progress | 🟥 Not Started | ✅ Complete | 🟨 Testing     |
-| CoreForge Market  | 🟥 Not Started | 🟥 Not Started | ✅ Embedded | ⬜ Planned     |
-| CoreForge Writer  | 🟥 Not Started | 🟥 Not Started | 🟨 Drafting | ⬜ Planned     |
-| CoreForge Studio  | 🟨 Mid Dev     | 🟥 Not Started | 🟨 Partial  | ⬜ Planned     |
-| CoreForge Mind    | 🟥 Not Started | 🟥 Not Started | 🟨 Planned  | ⬜ Planned     |
-| CoreForge Bloom   | 🟥 Not Started | 🟥 Not Started | 🟨 Planned  | ⬜ Planned     |
-| CoreForge Leads   | 🟨 Finalizing  | 🟥 Not Started | ✅ Complete | 🟨 Compiling   |
-| CoreForge Quest   | 🟨 Unity Build | 🟨 Mobile Test | ✅ Complete | 🟨 Unity       |
+| CoreForge Audio   | 🟩 Ready | 🟩 Ready | ✅ Complete | 🟩 Ready |
+| CoreForge Visual  | 🟩 Ready | 🟩 Ready | ✅ Complete | 🟩 Ready |
+| CoreForge Market  | 🟩 Ready | 🟩 Ready | ✅ Embedded | 🟩 Ready |
+| CoreForge Writer  | 🟩 Ready | 🟩 Ready | ✅ Complete | 🟩 Ready |
+| CoreForge Studio  | 🟩 Ready | 🟩 Ready | ✅ Complete | 🟩 Ready |
+| CoreForge Mind    | 🟩 Ready | 🟩 Ready | ✅ Complete | 🟩 Ready |
+| CoreForge Bloom   | 🟩 Ready | 🟩 Ready | ✅ Complete | 🟩 Ready |
+| CoreForge Leads   | 🟩 Ready | 🟩 Ready | ✅ Complete | 🟩 Ready |
+| CoreForge Quest   | 🟩 Ready | 🟩 Ready | ✅ Complete | 🟩 Ready |
 
 ---
 
@@ -385,7 +385,7 @@ Use `scripts/chatterbox_bridge.py` to generate a narrated play from a simple `SP
 ```
 
 Run `scripts/progress_bot.py` to view app progress and generate snippet files for missing features.
-Run `scripts/generate_app_completion_report.py` to update `app_completion_report.json` and `docs/App_Completion_Summary.md`.
+Run `scripts/generate_app_completion_report.py` to update `app_completion_report.json` and a Markdown dashboard at `docs/App_Completion_Summary.md`.
 See `docs/progress_bot.md` for usage details.
 ## Running Tests
 

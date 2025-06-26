@@ -142,34 +142,13 @@ Key points from `README.md`:
 - [x] Support cross-field dependency logic (e.g., field B disabled unless A is checked)
 - [x] Provide inline preview of logic execution and data flow per form
 - [x] Visualize errors/warnings in code preview panel with highlights
-- [ ] Enable clipboard-to-form parser (paste field list to generate full form)
-- [ ] Store reusable form blueprints in Creator library
-- [ ] Implement smart save states with form session memory
-- [ ] Generate confirmation dialogs and UI state management for success/error flows
-- [ ] Integrate basic analytics hooks (field abandon rate, success funnel)
-- [ ] Support internationalization/localization of form labels and error messages
-- [ ] Export forms as standalone React/Vue components or JSON schema
-=======
- - [x] Bind input types to UI components with proper attributes (e.g., email, date, password)
- - [x] Support nested forms and conditional field rendering
- - [x] Generate multi-step wizards with built-in validation and UX transitions
- - [x] Auto-generate CRUD logic for custom data models
- - [x] Build reusable logic blocks for timers, counters, toggles, dropdowns
- - [x] Support computed fields and derived logic with reactivity
- - [x] Integrate third-party form libraries (Formik, Vuelidate, Flutter Formz)
- - [x] Offer graphical flowchart editor to define user journey logic
- - [x] Allow drag-to-bind inputs to business logic functions
- - [x] Support cross-field dependency logic (e.g., field B disabled unless A is checked)
- - [x] Provide inline preview of logic execution and data flow per form
- - [x] Visualize errors/warnings in code preview panel with highlights
- - [x] Enable clipboard-to-form parser (paste field list to generate full form)
- - [x] Store reusable form blueprints in Creator library
- - [x] Implement smart save states with form session memory
- - [x] Generate confirmation dialogs and UI state management for success/error flows
- - [x] Integrate basic analytics hooks (field abandon rate, success funnel)
- - [x] Support internationalization/localization of form labels and error messages
- - [x] Export forms as standalone React/Vue components or JSON schema
-
+- [x] Enable clipboard-to-form parser (paste field list to generate full form)
+- [x] Store reusable form blueprints in Creator library
+- [x] Implement smart save states with form session memory
+- [x] Generate confirmation dialogs and UI state management for success/error flows
+- [x] Integrate basic analytics hooks (field abandon rate, success funnel)
+- [x] Support internationalization/localization of form labels and error messages
+- [x] Export forms as standalone React/Vue components or JSON schema
 
 ### Phase 4 – Plugin System, Marketplace, and Custom Code Injection
  - [x] Enable AI-generated plugin templates with automatic integration
@@ -314,3 +293,130 @@ Key points from `README.md`:
 - [x] Alert if export lacks privacy policy, TOS, or user consent prompts
 - [x] Recommend CDN or image optimization rules for live performance
 - [x] Output a final "pass/fail" matrix for all deployment targets
+## UI/UX Completion Checklist
+
+### \ud83d\udee0 Build Dashboard
+- [x] `AppDashboardView.swift` \u2013 Hub for generated and saved app projects.
+- [x] `NewAppFromPromptView.swift` \u2013 Start app from Codex prompt.
+- [x] `ProjectQuickActionsBar.swift` \u2013 Buttons: Duplicate, Export, Delete, Open.
+
+### \ud83c\udfa8 Drag & Drop UI Designer
+- [x] `UIDesignerCanvasView.swift` \u2013 Central visual app builder.
+- [x] `ComponentSidebarView.swift` \u2013 All draggable elements (forms, navs, media).
+- [x] `PreviewSimulatorView.swift` \u2013 Preview iOS, Android, Web, macOS formats.
+
+### \ud83e\udde0 Codex Agent & Logic Control
+- [x] `CodexAgentPanel.swift` \u2013 List of Codex tasks and active states.
+- [x] `AppLogicEditor.swift` \u2013 Low-code editor for if/then and data flow.
+- [x] `ComponentMarketplaceView.swift` \u2013 Drop-in integrations, paid modules.
+
+### \u2699\ufe0f Build + Export Tools
+- [x] `BuildPipelineStatusView.swift` \u2013 Real-time feedback + log stream.
+- [x] `ExportAppBundleView.swift` \u2013 Export IPA / EXE / APK / DMG.
+- [x] `BuildCreditDisplayView.swift` \u2013 Monthly usage / available credits.
+
+### \ud83d\udcbe Account & Licensing
+- [x] `PlanTierOverviewView.swift` \u2013 Compare Free, Pro, and Enterprise features.
+- [x] `UnlockWithPromoView.swift` \u2013 Enter and redeem access codes.
+- [x] `WhiteLabelManagerView.swift` \u2013 Rebrand output and generate branded installers.
+
+# agents.md — CoreForge App Production Readiness Checklist (All Apps)
+
+## 🎯 Objective:
+Ensure that CoreForge Audio, Visual, and Build are 100% functionally complete, stable, and production-ready for App Store, Play Store, and desktop/web deployment.
+
+---
+
+## ✅ Functional Completion
+
+- [ ] All Codex agents, core views, and managers are implemented and verified
+- [ ] All planned app features are present and testable
+- [ ] Onboarding flow fully functional and launches only once
+- [ ] All views support dynamic resizing and device rotation (where applicable)
+- [ ] All modules contain full `#Preview` support for SwiftUI
+
+---
+
+## ✅ Navigation & Routing
+
+- [ ] App launches into the correct root view
+- [ ] Tab navigation works across all platforms and all tabs retain state
+- [ ] Deep linking / modal sheets / view stacks work and return correctly
+
+---
+
+## ✅ UI Consistency & Branding
+
+- [ ] CoreForge theme (`primaryGradient`, `ultraThinMaterial`, `cornerRadius`) applied globally
+- [ ] All app icons in `.appiconset` are exported and installed
+- [ ] Light/Dark mode support implemented using semantic colors
+- [ ] Launch screen matches brand gradient and app name
+- [ ] Splash logo displays properly on all platforms
+
+---
+
+## ✅ Feature Stability
+
+- [ ] Playback system works with custom voices and ambient FX (CoreForge Audio)
+- [ ] Scene generation renders and exports correctly (CoreForge Visual)
+- [ ] Apps generate and export .ipa/.apk/.exe/.dmg correctly (CoreForge Build)
+- [ ] NSFW gating logic functions securely and consistently across all platforms
+- [ ] Subscription features are unlocked, gated, and revertable correctly
+- [ ] Import, export, build, and generate features persist across sessions
+
+---
+
+## ✅ Monetization & Subscriptions
+
+- [ ] All IAP options work (NSFW, export credits, Creator/Enterprise plans)
+- [ ] Subscription upgrades properly unlock features
+- [ ] Promo codes (e.g., `CREATORACCESS`, `VISIONBETA`) unlock and persist
+- [ ] Credit consumption reflects usage in UI (audio, video, app builds)
+- [ ] Price tiers and usage logic reflected in `SubscriptionManager.swift`
+
+---
+
+## ✅ User Data & Preferences
+
+- [ ] User preferences stored with `@AppStorage` and load correctly
+- [ ] Offline content support in each app (audio, video, app saves)
+- [ ] Download manager UI present where needed
+- [ ] NSFW preference gated behind user age/plan
+
+---
+
+## ✅ Export & Distribution
+
+- [ ] All export options (audio, video, builds) functional with local save
+- [ ] Auto-upload toggles functional and route to correct platforms (Visual only)
+- [ ] Local output directory support or Share Sheet UI on mobile
+
+---
+
+## ✅ Developer & GitHub Integration
+
+- [ ] Each app folder includes:
+    - `agents.md`
+    - `README.md`
+    - `baseline_requirements.md`
+    - `FEATURES-CODEX-COMPLETE.md`
+- [ ] All GitHub secrets and PATs tested and working for CI/CD
+- [ ] `.ipa`, `.apk`, `.dmg`, `.exe`, and `web` versions confirmed working and uploaded
+
+---
+
+## ✅ QA Testing + Launch Readiness
+
+- [ ] All modules unit tested
+- [ ] All flows tested manually on iOS and Android simulators
+- [ ] Zipped bundles for each app uploaded to Google Drive
+- [ ] App Store / TestFlight metadata (`AppIcon`, screenshots, description) ready
+- [ ] Apps pass Xcode and Android Studio validation
+
+---
+
+## ✅ Final Go-Live
+
+- [ ] GitHub repo tagged as production ready
+- [ ] App uploaded to App Store Connect + Play Store internal testing
+- [ ] Announce launch with press kit + onboarding video

@@ -8,6 +8,7 @@ struct KindleView: View {
     @EnvironmentObject var usage: UsageStats
     private let service = KindleService()
     @State private var books: [KindleBook] = []
+    @State private var loading = false
 
     var body: some View {
         NavigationView {
@@ -19,16 +20,27 @@ struct KindleView: View {
                     }
                     Spacer()
                     Button("Download") {
-                        let newBook = service.download(book: book)
-                        library.addBook(newBook)
-                        usage.recordImport()
+                        service.download(book: book) { newBook in
+                            if let newBook = newBook {
+                                DispatchQueue.main.async {
+                                    library.addBook(newBook)
+                                    usage.recordImport()
+                                }
+                            }
+                        }
                     }
                     .buttonStyle(.bordered)
                 }
             }
             .navigationTitle("Kindle")
             .onAppear {
-                books = service.fetchAvailableBooks()
+                loading = true
+                service.fetchAvailableBooks { result in
+                    DispatchQueue.main.async {
+                        books = result
+                        loading = false
+                    }
+                }
             }
         }
     }
