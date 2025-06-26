@@ -4,10 +4,8 @@ import CreatorCoreForge
 
 /// Combined profile and settings view.
 struct SettingsProfileView: View {
-    @AppStorage("autoScroll") private var autoScroll = false
-    @AppStorage("wifiOnly") private var wifiOnly = true
-    @AppStorage("selectedVoice") private var selectedVoice = "Default"
     @EnvironmentObject var usage: UsageStats
+    @EnvironmentObject var prefs: UserPreferences
 
     var body: some View {
         NavigationView {
@@ -16,13 +14,13 @@ struct SettingsProfileView: View {
                     SubscriptionStatusCard(tier: usage.subscriptionTier)
                 }
                 Section("Voice") {
-                    VoicePreviewAndPreferences(selected: $selectedVoice)
+                    VoicePreviewAndPreferences(selected: $prefs.selectedVoice)
                 }
                 Section("Reading") {
-                    AutoScrollToggleView(isOn: $autoScroll)
+                    AutoScrollToggleView(isOn: $prefs.autoScroll)
                 }
                 Section("Offline") {
-                    OfflineDownloadSettingsView(wifiOnly: $wifiOnly)
+                    OfflineDownloadSettingsView(wifiOnly: $prefs.wifiOnly)
                 }
                 Section("Appearance") {
                     DarkModeSwitcherView()
@@ -36,5 +34,6 @@ struct SettingsProfileView: View {
 #Preview {
     SettingsProfileView()
         .environmentObject(UsageStats())
+        .environmentObject(UserPreferences.shared)
 }
 #endif
