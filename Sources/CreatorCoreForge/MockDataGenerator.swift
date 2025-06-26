@@ -13,6 +13,9 @@ public struct MockDataGenerator {
                 data[field.name] = "password"
             case .number:
                 data[field.name] = "123"
+            case .date:
+                let formatter = ISO8601DateFormatter()
+                data[field.name] = formatter.string(from: Date())
             case .text:
                 data[field.name] = field.name.capitalized
             }

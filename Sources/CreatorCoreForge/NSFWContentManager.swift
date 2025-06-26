@@ -135,6 +135,7 @@ public final class NSFWContentManager {
     public var nsfwSceneLog: [NSFWScene] = []
     public var contentIntensity: NSFWIntensity = .softcore
     public var contentMode: NSFWContentMode = .slow
+    public var viewerFilterEnabled: Bool = false
 
     public enum NSFWIntensity: String, Codable, CaseIterable {
         case off, softcore, sensual, rough, hardcore
@@ -210,6 +211,10 @@ public final class NSFWContentManager {
 
     public func setMode(_ mode: NSFWContentMode) {
         self.contentMode = mode
+    }
+
+    public func setViewerFilter(enabled: Bool) {
+        viewerFilterEnabled = enabled
     }
 
     public func isSceneAllowed(_ intensity: NSFWIntensity) -> Bool {
