@@ -250,16 +250,16 @@ This document details all AI agent capabilities, engine modules, and next-genera
 - [x] Enable private-only scene generation with encrypted preview keys
 - [x] Provide intensity control slider for visual eroticism or violence
 - [x] Sync NSFW tone with voice and ambient FX layers
-- [ ] Allow creator notes to guide scene rendering boundaries
-- [ ] Embed NSFW warning overlays for early scene detection
-- [ ] Generate parallel safe-for-stream scenes with auto-adaptation
-- [ ] Store NSFW render settings as presets for series/genre
-- [ ] Offer Creator dashboard to review flagged or reported NSFW content
-- [ ] Filter NSFW content in search, preview, and trailer modes
-- [ ] Apply scene tone validator to suggest safe/NSFW rating per visual sequence
-- [ ] Hide NSFW rendering options in shared/public projects
-- [ ] Tag NSFW export files with proper disclaimers and auto-locks
-- [ ] Provide customizable NSFW cover and thumbnail censor options
+ - [x] Allow creator notes to guide scene rendering boundaries
+ - [x] Embed NSFW warning overlays for early scene detection
+ - [x] Generate parallel safe-for-stream scenes with auto-adaptation
+ - [x] Store NSFW render settings as presets for series/genre
+ - [x] Offer Creator dashboard to review flagged or reported NSFW content
+ - [x] Filter NSFW content in search, preview, and trailer modes
+ - [x] Apply scene tone validator to suggest safe/NSFW rating per visual sequence
+ - [x] Hide NSFW rendering options in shared/public projects
+ - [x] Tag NSFW export files with proper disclaimers and auto-locks
+ - [x] Provide customizable NSFW cover and thumbnail censor options
 - [ ] Track NSFW render usage and tie to creator subscription tier
 - [ ] Integrate NSFW content filter toggle for viewers and collaborators
 
