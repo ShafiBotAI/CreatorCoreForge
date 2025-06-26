@@ -26,6 +26,10 @@ vault system. It is written in SwiftUI and will expand to additional platforms.
 - **Dashboard** tab with usage analytics and achievements
 - **Favorite Voices** tab for quickly selecting preferred voices
 - **Highlighted reading** during playback
+- **Advanced offline TTS** via the bundled `ebook2audiobook` pipeline (XTTSv2,
+  Bark, Vits and more) with support for 1110+ languages and optional voice
+  cloning
+- **Custom TTS model uploads** to further improve voice fidelity
 
 
 When Stealth Vault is enabled in the Settings screen, downloaded audio is
@@ -41,6 +45,16 @@ queue and an eBook–to–audio converter that complement the app's own classes.
 For advanced conversions using the Python pipeline, run `../../scripts/ebook2audiobook_bridge.py MyBook.epub`.
 To polish training samples, run `services/voice_cleaner.py AUDIO.wav` and use the resulting file in `VoiceTrainer`.
 You can also turn a dialogue script into audio using `../../scripts/chatterbox_bridge.py script.txt` once your Chatterbox API endpoint is configured.
+
+## ebook2audiobook Integration
+
+This repository bundles a snapshot of the open source
+[`ebook2audiobook`](../ebook2audiobook) project under `apps/ebook2audiobook`.
+It provides a CPU/GPU narration pipeline capable of handling over 1110
+languages and optional voice cloning. Install its Python requirements and run
+`scripts/ebook2audiobook_bridge.py` to convert entire eBooks offline. The
+pipeline works on machines with as little as **4GB RAM** (8GB recommended) and
+supports custom TTS model uploads for higher quality results.
 
 
 ## Building (iOS)
