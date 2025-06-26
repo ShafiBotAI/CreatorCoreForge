@@ -6,7 +6,7 @@
   objects = {
 
 /* Begin PBXGroup section */
-    111111111111111111111113 = {
+    2885A420832448908C6F293D = {
       isa = PBXGroup;
       children = (
       );
@@ -15,17 +15,17 @@
 /* End PBXGroup section */
 
 /* Begin PBXProject section */
-    111111111111111111111111 /* Project object */ = {
+    7A6B23775ABA45A1A95F1DFB /* Project object */ = {
       isa = PBXProject;
       attributes = {
         LastUpgradeCheck = 1600;
         ORGANIZATIONNAME = "";
       };
-      buildConfigurationList = 111111111111111111111112 /* Build configuration list for PBXProject */;
+      buildConfigurationList = C5D20EED9F07466EBEE99532 /* Build configuration list for PBXProject */;
       compatibilityVersion = "Xcode 16.0";
       developmentRegion = en;
       hasScannedForEncodings = 0;
-      mainGroup = 111111111111111111111113;
+      mainGroup = 2885A420832448908C6F293D;
       targets = (
       );
       projectDirPath = "";
@@ -34,13 +34,13 @@
 /* End PBXProject section */
 
 /* Begin XCBuildConfiguration section */
-    111111111111111111111114 /* Debug */ = {
+    DB987022C8064E81BA77A0A2 /* Debug */ = {
       isa = XCBuildConfiguration;
       buildSettings = {
       };
       name = Debug;
     };
-    111111111111111111111115 /* Release */ = {
+    93EF09502216429290090CCC /* Release */ = {
       isa = XCBuildConfiguration;
       buildSettings = {
       };
@@ -49,11 +49,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-    111111111111111111111112 /* Build configuration list for PBXProject */ = {
+    C5D20EED9F07466EBEE99532 /* Build configuration list for PBXProject */ = {
       isa = XCConfigurationList;
       buildConfigurations = (
-        111111111111111111111114 /* Debug */,
-        111111111111111111111115 /* Release */,
+        DB987022C8064E81BA77A0A2 /* Debug */,
+        93EF09502216429290090CCC /* Release */,
       );
       defaultConfigurationIsVisible = 0;
       defaultConfigurationName = Release;
@@ -61,5 +61,5 @@
 /* End XCConfigurationList section */
 
   };
-  rootObject = 111111111111111111111111 /* Project object */;
+  rootObject = 7A6B23775ABA45A1A95F1DFB /* Project object */;
 }
