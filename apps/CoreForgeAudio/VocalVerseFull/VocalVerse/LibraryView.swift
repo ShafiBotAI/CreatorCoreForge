@@ -7,9 +7,15 @@ import CreatorCoreForge
 =======
 /// Modern dashboard-style library inspired by Speechify.
 
+/// Home library screen with featured carousel and sectioned book list.
 struct LibraryView: View {
     var namespace: Namespace.ID
     @EnvironmentObject var library: LibraryModel
+    @State private var showImporter = false
+
+    private var gradient: LinearGradient {
+        LinearGradient(colors: [.blue, .purple], startPoint: .topLeading, endPoint: .bottomTrailing)
+    }
 
     @State private var showImporter = false
 
@@ -39,6 +45,8 @@ struct LibraryView: View {
                             }
                             .padding(.horizontal)
                         }
+<<<<<<< codex/create-swiftui-dashboard-for-coreforge-audio
+=======
 =======
     @EnvironmentObject var usage: UsageStats
 
@@ -59,6 +67,7 @@ struct LibraryView: View {
                     SearchView(query: $query, sort: $sort, filters: $filters)
                     ProfileTierCardView(userName: "User", tier: usage.subscriptionTier) {
                         // Navigate to subscription view (placeholder)
+>>>>>>> main
                     }
                     ListeningStatsView(hoursThisWeek: usage.totalListeningTime / 3600,
                                        dailyStreak: 3,
@@ -70,6 +79,17 @@ struct LibraryView: View {
                     dashboardSection("Favorites", books: library.books)
                     chaptersProgressSection()
                 }
+                .background(gradient.ignoresSafeArea())
+
+                Button(action: { showImporter = true }) {
+                    Image(systemName: "plus")
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.white.opacity(0.25))
+                        .clipShape(Circle())
+                        .shadow(color: .white, radius: 4)
+                }
+                .padding()
             }
             if let book = library.currentBook, let chapter = library.currentChapter {
                 if showPlayer {
@@ -129,6 +149,10 @@ struct LibraryView: View {
                 .padding(.horizontal)
 
             }
+        }
+        .sheet(isPresented: $showImporter) {
+            ImportView()
+                .environmentObject(library)
         }
         .sheet(isPresented: $showImporter) {
             ImportView()
