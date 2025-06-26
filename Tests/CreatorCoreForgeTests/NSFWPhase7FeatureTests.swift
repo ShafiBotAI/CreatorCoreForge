@@ -17,7 +17,7 @@ final class NSFWPhase7FeatureTests: XCTestCase {
         let fxLib = NSFWFXLibraryManager(); fxLib.upload("fx1")
         _ = NSFWTransitionManager()
         _ = NSFWScopeGuard().hasAccess()
-        let history = NSFWUsageHistory(); history.record(scene: "A")
+        let history = NSFWUsageHistory(); history.record(scene: "A", plan: .creator)
         _ = NSFWModerationFlagger().flag("unsafe text")
         _ = NSFWSafetyDetector().isSafe("safe text")
         let dash = NSFWRatingsDashboard(); dash.rate(scene: "A", score: 5)
