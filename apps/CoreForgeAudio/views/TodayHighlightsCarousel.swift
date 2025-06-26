@@ -17,7 +17,13 @@ struct TodayHighlightsCarousel: View {
                         Rectangle()
                             .fill(AppTheme.primaryGradient)
                             .frame(width: 120, height: 160)
-                            .overlay(Text(book.title).font(.caption).foregroundColor(.white).padding(4), alignment: .bottomLeading)
+                            .overlay(
+                                Text(book.title)
+                                    .font(.caption)
+                                    .foregroundColor(.primary)
+                                    .padding(4),
+                                alignment: .bottomLeading
+                            )
                             .cornerRadius(8)
                     }
                 }

@@ -14,7 +14,10 @@ struct ProfileTierCardView: View {
                 Circle()
                     .fill(AppTheme.primaryGradient)
                     .frame(width: 50, height: 50)
-                    .overlay(Text(String(userName.prefix(1))).foregroundColor(.white))
+                    .overlay(
+                        Text(String(userName.prefix(1)))
+                            .foregroundColor(.primary)
+                    )
                 VStack(alignment: .leading) {
                     Text(userName)
                     Text(tier).font(.caption).foregroundColor(.secondary)

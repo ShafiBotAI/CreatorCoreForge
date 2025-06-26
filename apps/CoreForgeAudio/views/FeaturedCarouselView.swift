@@ -30,8 +30,8 @@ struct FeaturedCarouselView: View {
                                     }
                                     Spacer()
                                     Text(book.title)
-                                        .font(.caption)
-                                        .foregroundColor(.white)
+                                    .font(.caption)
+                                    .foregroundColor(.primary)
                                 }
                                 .padding(4),
                                 alignment: .bottom

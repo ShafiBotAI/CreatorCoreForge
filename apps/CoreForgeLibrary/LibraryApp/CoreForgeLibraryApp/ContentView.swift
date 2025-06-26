@@ -19,6 +19,7 @@ struct ContentView: View {
                 }
                 .navigationTitle("Sign Up")
                 .toolbar { Button("Login") { showSignUp = false } }
+                .transition(.opacity)
             } else {
                 LoginView { email, password in
                     // Mock auth success
@@ -26,8 +27,10 @@ struct ContentView: View {
                 }
                 .navigationTitle("Login")
                 .toolbar { Button("Sign Up") { showSignUp = true } }
+                .transition(.opacity)
             }
         }
+        .animation(.easeInOut, value: showSignUp)
     }
 }
 

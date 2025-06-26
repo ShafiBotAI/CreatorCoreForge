@@ -22,26 +22,33 @@ struct LibraryView: View {
     var body: some View {
         ZStack(alignment: .bottom) {
             ScrollView {
-                VStack(spacing: 20) {
-                    FeaturedCarouselView(books: featured)
-                    SearchView(query: $query, sort: $sort, filters: $filters)
-                    ProfileTierCardView(userName: "Demo User", tier: "Free") {}
-                    ListeningStatsView(hoursThisWeek: 2.5, dailyStreak: 3, booksFinished: 1, chaptersPlayed: 5)
-                    dashboardSection("Continue Listening", books: continueListening)
-                    dashboardSection("Recommended For You", books: recommended)
-                    dashboardSection("Recently Added", books: recent)
-                    dashboardSection("Favorites", books: favorites)
-                    chaptersProgressSection()
+                if featured.isEmpty && continueListening.isEmpty && recommended.isEmpty && recent.isEmpty && favorites.isEmpty {
+                    EmptyStateView(systemImage: "books.vertical", message: "Your library is empty")
+                } else {
+                    VStack(spacing: 20) {
+                        FeaturedCarouselView(books: featured)
+                        SearchView(query: $query, sort: $sort, filters: $filters)
+                        ProfileTierCardView(userName: "Demo User", tier: "Free") {}
+                        ListeningStatsView(hoursThisWeek: 2.5, dailyStreak: 3, booksFinished: 1, chaptersPlayed: 5)
+                        dashboardSection("Continue Listening", books: continueListening)
+                        dashboardSection("Recommended For You", books: recommended)
+                        dashboardSection("Recently Added", books: recent)
+                        dashboardSection("Favorites", books: favorites)
+                        chaptersProgressSection()
+                    }
                 }
             }
             if let book = currentBook, let chapter = currentChapter {
                 if showPlayer {
                     PlayerView(isPresented: $showPlayer, book: book, chapter: chapter)
-                        .transition(.move(edge: .bottom))
-                        .background(Color(.systemBackground))
+                        .transition(.scale)
+                        .background(AppTheme.cardMaterial)
+                        .cornerRadius(AppTheme.cornerRadius)
+                        .shadow(radius: AppTheme.shadowRadius)
                 } else {
                     MiniPlayerView(book: book, chapter: chapter, isExpanded: $showPlayer)
                         .padding()
+                        .transition(.opacity)
                 }
             }
         }

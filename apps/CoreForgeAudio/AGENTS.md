@@ -613,10 +613,10 @@ Key points from `README.md`:
 ### 🖌 VISUAL POLISH & RESPONSIVENESS
 
  - [x] Expand `Theme.swift` – Apply consistent gradient + corner radius + shadows.
-- [ ] Apply `.ultraThinMaterial` to all content cards.
-- [ ] Add `.transition(.scale)` or `.opacity` to card actions and modals.
-- [ ] Audit all UI for dark mode readiness with semantic SwiftUI colors.
-- [ ] Add empty state visuals (Library, Stats, Player) using branded illustration.
+ - [x] Apply `.ultraThinMaterial` to all content cards.
+ - [x] Add `.transition(.scale)` or `.opacity` to card actions and modals.
+ - [x] Audit all UI for dark mode readiness with semantic SwiftUI colors.
+ - [x] Add empty state visuals (Library, Stats, Player) using branded illustration.
 
 ### 📁 DIRECTORY STRUCTURE EXTENSIONS
 ```

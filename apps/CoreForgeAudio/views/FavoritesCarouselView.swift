@@ -17,7 +17,7 @@ struct FavoritesCarouselView: View {
                             .overlay(
                                 Text(book.title)
                                     .font(.caption)
-                                    .foregroundColor(.white)
+                                    .foregroundColor(.primary)
                                     .padding(4),
                                 alignment: .bottomLeading
                             )
