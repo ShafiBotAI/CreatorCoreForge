@@ -147,8 +147,8 @@ Key points from `README.md`:
 - [x] Implement smart save states with form session memory
 - [x] Generate confirmation dialogs and UI state management for success/error flows
 - [x] Integrate basic analytics hooks (field abandon rate, success funnel)
-- [ ] Support internationalization/localization of form labels and error messages
-- [ ] Export forms as standalone React/Vue components or JSON schema
+- [x] Support internationalization/localization of form labels and error messages
+- [x] Export forms as standalone React/Vue components or JSON schema
 
 ### Phase 4 – Plugin System, Marketplace, and Custom Code Injection
  - [x] Enable AI-generated plugin templates with automatic integration
@@ -296,9 +296,9 @@ Key points from `README.md`:
 ## UI/UX Completion Checklist
 
 ### \ud83d\udee0 Build Dashboard
-- [ ] `AppDashboardView.swift` \u2013 Hub for generated and saved app projects.
-- [ ] `NewAppFromPromptView.swift` \u2013 Start app from Codex prompt.
-- [ ] `ProjectQuickActionsBar.swift` \u2013 Buttons: Duplicate, Export, Delete, Open.
+- [x] `AppDashboardView.swift` \u2013 Hub for generated and saved app projects.
+- [x] `NewAppFromPromptView.swift` \u2013 Start app from Codex prompt.
+- [x] `ProjectQuickActionsBar.swift` \u2013 Buttons: Duplicate, Export, Delete, Open.
 
 ### \ud83c\udfa8 Drag & Drop UI Designer
 - [ ] `UIDesignerCanvasView.swift` \u2013 Central visual app builder.

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { parseClipboard } from '../services/ClipboardFormParser';
 import { formBlueprintLibrary } from '../services/FormBlueprintLibrary';
 import { analyticsService } from '../services/AnalyticsService';
+import { LocalizationService, Locale } from '../services/LocalizationService';
 
 export interface Field {
   name: string;
@@ -14,11 +15,14 @@ export interface FormBuilderEngineProps {
   onChange?: (fields: Field[]) => void;
   /** unique id to persist session state */
   formId?: string;
+  /** locale for built-in labels */
+  locale?: Locale;
 }
 
-export const FormBuilderEngine: React.FC<FormBuilderEngineProps> = ({ onChange, formId = 'default' }) => {
+export const FormBuilderEngine: React.FC<FormBuilderEngineProps> = ({ onChange, formId = 'default', locale = 'en' }) => {
   const sessionKey = `form_${formId}_fields`;
   const [fields, setFields] = useState<Field[]>([]);
+  const loc = new LocalizationService(locale);
 
   // restore from session
   useEffect(() => {
@@ -74,15 +78,15 @@ export const FormBuilderEngine: React.FC<FormBuilderEngineProps> = ({ onChange, 
     if (valid) {
       alert('Form saved');
     } else {
-      alert('Please complete all labels');
+      alert(loc.t('errorCompleteLabels'));
     }
   };
   return (
     <div onPaste={(e) => { e.preventDefault(); pasteFromClipboard(); }}>
-      <button onClick={addField}>Add Field</button>
-      <button onClick={pasteFromClipboard}>Paste Fields</button>
-      <button onClick={saveBlueprint}>Save Blueprint</button>
-      <button onClick={submit}>Submit</button>
+      <button onClick={addField}>{loc.t('addField')}</button>
+      <button onClick={pasteFromClipboard}>{loc.t('pasteFields')}</button>
+      <button onClick={saveBlueprint}>{loc.t('saveBlueprint')}</button>
+      <button onClick={submit}>{loc.t('submit')}</button>
       {fields.map((f, i) => (
         <div key={i}>
           <input
@@ -95,7 +99,7 @@ export const FormBuilderEngine: React.FC<FormBuilderEngineProps> = ({ onChange, 
             <option value="email">Email</option>
           </select>
           <label>
-            Required
+            {loc.t('required')}
             <input
               type="checkbox"
               checked={f.required}
