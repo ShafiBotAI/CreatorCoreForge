@@ -1,4 +1,5 @@
 import Foundation
+#if canImport(SwiftUI)
 import SwiftUI
 #if canImport(AVFoundation)
 import AVFoundation
@@ -50,3 +51,4 @@ final class LibraryModel: ObservableObject {
         currentChapter = chapter
     }
 }
+#endif
