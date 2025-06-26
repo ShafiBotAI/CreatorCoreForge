@@ -1,7 +1,7 @@
 #if canImport(SwiftUI)
 import SwiftUI
 
-/// ConnectView lists available ebook services such as Kindle or Apple Books.
+/// ConnectView lists available ebook services powered by public APIs.
 struct ConnectView: View {
     var body: some View {
         NavigationView {
