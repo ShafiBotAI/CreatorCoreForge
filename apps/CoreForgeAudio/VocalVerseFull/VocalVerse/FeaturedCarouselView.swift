@@ -8,7 +8,7 @@ struct FeaturedCarouselView: View {
 
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 16) {
+            LazyHStack(spacing: 16) {
                 ForEach(books) { book in
                     VStack(alignment: .leading) {
                         Rectangle()

@@ -17,6 +17,11 @@ struct VoiceConfig {
         Voice(id: "emma", name: "Emma")
     ]
 
+    /// Cached list of voice display names for UI components.
+    static var voiceNames: [String] {
+        voices.map { $0.name }
+    }
+
     static func addVoice(id: String, name: String) {
         guard !voices.contains(where: { $0.id == id }) else { return }
         voices.append(Voice(id: id, name: name))

@@ -28,9 +28,9 @@ struct LibraryView: View {
                     }
                     ListeningStatsView(hoursThisWeek: usage.totalListeningTime / 3600,
                                        dailyStreak: 3,
-                                       booksFinished: library.books.filter { $0.progress >= 1 }.count,
+                                       booksFinished: library.completedBooks.count,
                                        chaptersPlayed: library.books.flatMap { $0.chapters }.count)
-                    dashboardSection("Continue Listening", books: library.books.filter { $0.progress > 0 && $0.progress < 1 })
+                    dashboardSection("Continue Listening", books: library.inProgressBooks)
                     dashboardSection("Recommended For You", books: library.books)
                     dashboardSection("Recently Added", books: library.books)
                     dashboardSection("Favorites", books: library.books)
