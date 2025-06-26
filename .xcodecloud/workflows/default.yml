@@ -1,0 +1,16 @@
+version: 1.0
+identifier: ios-build
+name: CreatorCoreForge iOS Build
+trigger:
+  onCommit: {}
+  onPullRequest: {}
+environment:
+  xcode: "15.0"
+actions:
+  - action: build
+    scheme: CoreForgeStudio
+    configuration: Release
+    runTests: true
+    destination:
+      platform: iOS Simulator
+      name: iPhone 15
