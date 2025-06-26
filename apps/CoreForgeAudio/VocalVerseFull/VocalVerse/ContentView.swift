@@ -24,6 +24,8 @@ struct ContentView: View {
     }
 }
 
+
+=======
 struct MainTabView: View {
     var namespace: Namespace.ID
     @Binding var selection: Int
@@ -79,4 +81,5 @@ struct MainTabView: View {
         }
     }
 }
+
 #endif

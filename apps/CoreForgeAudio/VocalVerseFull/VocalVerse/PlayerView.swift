@@ -19,21 +19,30 @@ struct PlayerView: View {
     @State private var speed: Double = 1.0
     @State private var voice: String = VoiceConfig.voices.first?.name ?? "Default"
 
+    private var gradient: LinearGradient {
+        LinearGradient(colors: [.blue, .purple], startPoint: .topLeading, endPoint: .bottomTrailing)
+    }
+
     var body: some View {
         Group {
             if let chapter = library.currentChapter {
                 VStack(spacing: 20) {
                     Text(chapter.title)
                         .font(.title)
+                        .foregroundColor(.white)
                     ScrollView {
                         if #available(iOS 15.0, *) {
                             Text(highlightedText(for: chapter.text))
                                 .padding()
+                                .foregroundColor(.white)
                         } else {
                             Text(chapter.text)
                                 .padding()
+                                .foregroundColor(.white)
                         }
                     }
+                    WaveformView(isPlaying: $isSpeaking)
+                        .frame(height: 40)
                     Button(isSpeaking ? "Pause" : "Play") {
                         toggleSpeech(text: chapter.text)
                     }
@@ -41,10 +50,17 @@ struct PlayerView: View {
                     PlaybackSpeedControlView(speed: $speed, voice: $voice)
                 }
                 .padding()
+
+                .background(gradient.ignoresSafeArea())
+=======
                 .matchedGeometryEffect(id: "player", in: namespace)
+
             } else {
                 Text("Select a chapter from the Library")
                     .font(.headline)
+                    .foregroundColor(.white)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(gradient.ignoresSafeArea())
             }
         }
     }

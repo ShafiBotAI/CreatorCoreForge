@@ -8,7 +8,6 @@ function blobFromSamples(samples: number[]): Blob {
 test('compress attenuates samples above threshold', async () => {
   const processor = new AudioProcessor();
   const input = blobFromSamples([0.2, 0.8, -0.9]);
-
   const out = await processor.compress(input, {
     threshold: 0.5,
     ratio: 2,

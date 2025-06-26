@@ -2,10 +2,44 @@
 import SwiftUI
 import CreatorCoreForge
 
+
+/// Home library screen with featured carousel and sectioned book list.
+=======
 /// Modern dashboard-style library inspired by Speechify.
+
 struct LibraryView: View {
     var namespace: Namespace.ID
     @EnvironmentObject var library: LibraryModel
+
+    @State private var showImporter = false
+
+    private var gradient: LinearGradient {
+        LinearGradient(colors: [.blue, .purple], startPoint: .topLeading, endPoint: .bottomTrailing)
+    }
+
+    var body: some View {
+        NavigationView {
+            ZStack(alignment: .bottomTrailing) {
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 16) {
+                        BannerCarouselView()
+                            .frame(height: 160)
+                            .padding(.top)
+
+                        if !library.books.isEmpty {
+                            Text("My Books")
+                                .font(.title2)
+                                .bold()
+                                .padding(.horizontal)
+                                .foregroundColor(.white)
+                            VStack(spacing: 12) {
+                                ForEach(library.books) { book in
+                                    BookCardView(book: book)
+                                }
+                            }
+                            .padding(.horizontal)
+                        }
+=======
     @EnvironmentObject var usage: UsageStats
 
     @State private var query = ""
@@ -75,11 +109,30 @@ struct LibraryView: View {
                         library.currentBook = library.books.first
                         library.currentChapter = chapter
                         showPlayer = true
+
                     }
                     .buttonStyle(.bordered)
                 }
+
+                .background(gradient.ignoresSafeArea())
+
+                Button(action: { showImporter = true }) {
+                    Image(systemName: "plus")
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.white.opacity(0.25))
+                        .clipShape(Circle())
+                        .shadow(color: .white, radius: 4)
+                }
+                .padding()
+=======
                 .padding(.horizontal)
+
             }
+        }
+        .sheet(isPresented: $showImporter) {
+            ImportView()
+                .environmentObject(library)
         }
     }
 }
