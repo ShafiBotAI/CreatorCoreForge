@@ -6,7 +6,7 @@
   objects = {
 
 /* Begin PBXGroup section */
-    111111111111111111111113 = {
+    6B91E36E1B7845E0AE87D137 = {
       isa = PBXGroup;
       children = (
         222222222222222222222222 /* WhatIfCutsceneMode.swift */,
@@ -16,17 +16,17 @@
 /* End PBXGroup section */
 
 /* Begin PBXProject section */
-    111111111111111111111111 /* Project object */ = {
+    E2AB8A3F4A8340C6BBA09E99 /* Project object */ = {
       isa = PBXProject;
       attributes = {
         LastUpgradeCheck = 1600;
         ORGANIZATIONNAME = "";
       };
-      buildConfigurationList = 111111111111111111111112 /* Build configuration list for PBXProject */;
+      buildConfigurationList = 38C14D8FFAED49EC938E7EC8 /* Build configuration list for PBXProject */;
       compatibilityVersion = "Xcode 16.0";
       developmentRegion = en;
       hasScannedForEncodings = 0;
-      mainGroup = 111111111111111111111113;
+      mainGroup = 6B91E36E1B7845E0AE87D137;
       targets = (
       );
       projectDirPath = "";
@@ -35,13 +35,13 @@
 /* End PBXProject section */
 
 /* Begin XCBuildConfiguration section */
-    111111111111111111111114 /* Debug */ = {
+    C3AE42ED45C94B56B1CEDDAA /* Debug */ = {
       isa = XCBuildConfiguration;
       buildSettings = {
       };
       name = Debug;
     };
-    111111111111111111111115 /* Release */ = {
+    3456B5A2B6F54DDABCA5A1DE /* Release */ = {
       isa = XCBuildConfiguration;
       buildSettings = {
       };
@@ -50,11 +50,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-    111111111111111111111112 /* Build configuration list for PBXProject */ = {
+    38C14D8FFAED49EC938E7EC8 /* Build configuration list for PBXProject */ = {
       isa = XCConfigurationList;
       buildConfigurations = (
-        111111111111111111111114 /* Debug */,
-        111111111111111111111115 /* Release */,
+        C3AE42ED45C94B56B1CEDDAA /* Debug */,
+        3456B5A2B6F54DDABCA5A1DE /* Release */,
       );
       defaultConfigurationIsVisible = 0;
       defaultConfigurationName = Release;
@@ -62,5 +62,5 @@
 /* End XCConfigurationList section */
 
   };
-  rootObject = 111111111111111111111111 /* Project object */;
+  rootObject = E2AB8A3F4A8340C6BBA09E99 /* Project object */;
 }
