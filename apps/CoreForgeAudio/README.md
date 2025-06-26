@@ -41,6 +41,11 @@ queue and an eBook–to–audio converter that complement the app's own classes.
 For advanced conversions using the Python pipeline, run `../../scripts/ebook2audiobook_bridge.py MyBook.epub`.
 You can also turn a dialogue script into audio using `../../scripts/chatterbox_bridge.py script.txt` once your Chatterbox API endpoint is configured.
 
+Full details on the Python-based feature set live in
+[`../ebook2audiobook/FEATURES-CODEX-COMPLETE.md`](../ebook2audiobook/FEATURES-CODEX-COMPLETE.md).
+Install the optional pipeline as described in `DeveloperSetup.md` to unlock
+these advanced converters.
+
 
 ## Building (iOS)
 1. Open `CoreForgeAudio.xcodeproj` in Xcode.
