@@ -2,11 +2,11 @@
 
 CoreForge Audio is a voice-driven reader that supports offline playback and a secure
 vault system. It is written in SwiftUI and will expand to additional platforms.
-
 ## Key Features
+
  - **Voice assignment** for characters via `CharacterVoiceMapper`
  - **Voice variant creation** with `VoiceDNAForker`
-
+ - **Voice cleanup utility** via `voice_cleaner.py` for high-quality training
 - **Dark mode** and theme toggles
  - **Dark mode** and theme toggles via `ThemeManager`
 
@@ -39,6 +39,7 @@ Xcode and reference `Sources/CreatorCoreForge/CoreForgeAudio_MissingFeatures.swi
 for additional helper functions. These utilities provide an offline download
 queue and an eBook–to–audio converter that complement the app's own classes.
 For advanced conversions using the Python pipeline, run `../../scripts/ebook2audiobook_bridge.py MyBook.epub`.
+To polish training samples, run `services/voice_cleaner.py AUDIO.wav` and use the resulting file in `VoiceTrainer`.
 You can also turn a dialogue script into audio using `../../scripts/chatterbox_bridge.py script.txt` once your Chatterbox API endpoint is configured.
 
 
