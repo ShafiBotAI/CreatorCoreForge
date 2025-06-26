@@ -400,6 +400,12 @@ cd ../VisualLab && npm test
 cd .. && swift test
 ```
 
+For Python-based tests, install the required packages first:
+
+```bash
+pip install -r requirements.txt
+```
+
 If you encounter an `ENOTEMPTY` rename error during installation, the script
 removes any leftover `node_modules` directories and runs `npm ci` to ensure a
 fresh workspace. This guarantees `jest`, `ts-node`, and other dev tools are
