@@ -19,6 +19,17 @@ struct LibraryDashboardView: View {
                 VStack(spacing: 20) {
                     FeaturedCarouselView(books: library.books)
                     SearchView(query: $query, sort: $sort, filters: $filters)
+                    ProfileTierCardView(userName: "User", tier: usage.subscriptionTier) {
+                        // Navigate to subscription management (placeholder)
+                    }
+                    ListeningStatsView(
+                        hoursThisWeek: usage.totalListeningTime / 3600,
+                        dailyStreak: 3,
+                        booksFinished: library.completedBooks.count,
+                        chaptersPlayed: library.books.flatMap { $0.chapters }.count
+                    )
+                    ChapterProgressView(showPlayer: $showPlayer)
+                        .environmentObject(library)
                 }
             }
             if let book = library.currentBook, let chapter = library.currentChapter {
