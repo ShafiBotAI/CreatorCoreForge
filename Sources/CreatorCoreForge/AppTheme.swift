@@ -16,6 +16,15 @@ public enum AppTheme {
     public static var accentColor: Color {
         Color.purple
     }
+
+    /// Material for cards and popups.
+    public static var cardMaterial: Material { .ultraThinMaterial }
+
+    /// Standard corner radius for cards.
+    public static var cornerRadius: CGFloat { 12 }
+
+    /// Standard shadow radius for cards.
+    public static var shadowRadius: CGFloat { 4 }
 }
 #endif
 

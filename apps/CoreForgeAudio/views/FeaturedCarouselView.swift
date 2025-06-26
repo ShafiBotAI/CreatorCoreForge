@@ -5,6 +5,7 @@ import CreatorCoreForge
 /// Horizontal carousel showing featured books.
 struct FeaturedCarouselView: View {
     var books: [Book]
+    @EnvironmentObject var library: LibraryModel
 
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
@@ -21,6 +22,11 @@ struct FeaturedCarouselView: View {
                                             Image(systemName: "arrow.down.circle")
                                         }
                                         Spacer()
+                                        Button(action: { library.toggleFavorite(book: book) }) {
+                                            Image(systemName: book.isFavorite ? "heart.fill" : "heart")
+                                                .foregroundColor(.red)
+                                        }
+                                        .buttonStyle(.plain)
                                     }
                                     Spacer()
                                     Text(book.title)
@@ -31,7 +37,9 @@ struct FeaturedCarouselView: View {
                                 alignment: .bottom
                             )
                     }
-                    .cornerRadius(8)
+                    .background(AppTheme.cardMaterial)
+                    .cornerRadius(AppTheme.cornerRadius)
+                    .shadow(radius: AppTheme.shadowRadius)
                 }
             }
             .padding(.horizontal)

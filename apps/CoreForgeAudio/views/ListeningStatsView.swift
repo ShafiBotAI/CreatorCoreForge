@@ -32,8 +32,9 @@ struct ListeningStatsView: View {
             }
         }
         .padding()
-        .background(Color.secondary.opacity(0.1))
-        .cornerRadius(12)
+        .background(AppTheme.cardMaterial)
+        .cornerRadius(AppTheme.cornerRadius)
+        .shadow(radius: AppTheme.shadowRadius)
     }
 }
 #endif

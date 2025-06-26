@@ -20,6 +20,11 @@ final class LibraryModel: ObservableObject {
         books.filter { $0.progress >= 1 }
     }
 
+    /// Books marked as favorites.
+    var favoriteBooks: [Book] {
+        books.filter { $0.isFavorite }
+    }
+
     init() {
         // Basic demo book used when the library is empty
         self.books = [
@@ -32,6 +37,12 @@ final class LibraryModel: ObservableObject {
 
     func addBook(_ book: Book) {
         books.append(book)
+    }
+
+    /// Toggle favorite state for a book.
+    func toggleFavorite(book: Book) {
+        guard let idx = books.firstIndex(where: { $0.id == book.id }) else { return }
+        books[idx].isFavorite.toggle()
     }
 
     func select(book: Book, chapter: Chapter? = nil) {
