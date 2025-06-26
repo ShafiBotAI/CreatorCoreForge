@@ -42,6 +42,11 @@ For advanced conversions using the Python pipeline, run `../../scripts/ebook2aud
 To polish training samples, run `services/voice_cleaner.py AUDIO.wav` and use the resulting file in `VoiceTrainer`.
 You can also turn a dialogue script into audio using `../../scripts/chatterbox_bridge.py script.txt` once your Chatterbox API endpoint is configured.
 
+Full details on the Python-based feature set live in
+[`../ebook2audiobook/FEATURES-CODEX-COMPLETE.md`](../ebook2audiobook/FEATURES-CODEX-COMPLETE.md).
+Install the optional pipeline as described in `DeveloperSetup.md` to unlock
+these advanced converters.
+
 
 ## Building (iOS)
 1. Open `CoreForgeAudio.xcodeproj` in Xcode.
