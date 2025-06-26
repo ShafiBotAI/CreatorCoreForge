@@ -7,7 +7,12 @@ This agent is responsible for building, validating, and maintaining all features
 - [x] End-to-end lead generation, scoring, enrichment, and CRM sync
 - [x] Persistent memory, custom agent builder, AI automation, and analytics
  - [x] Multi-platform support: iOS, Android, Web, PC, Mac
-- [x] Global languages, NSFW gating, offline, marketplace, affiliate features
+ - [x] Global languages, NSFW gating, offline, marketplace, affiliate features
+
+## Build
+Open `CoreForgeLeads.xcodeproj` in Xcode and select the **CoreForgeLeads** scheme.
+Verify that the `CreatorCoreForge` package is linked under Swift Packages and
+build the project to confirm framework connections.
 
 ---
 

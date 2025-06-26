@@ -7,7 +7,12 @@ This agent is responsible for building, validating, and maintaining every featur
 - [x] End-to-end AI writing studio (books, scripts, stories)
 - [x] Persistent character/world memory and creative DNA
  - [x] Support for iOS, Android, PC, macOS, Web
-- [x] Multilingual, NSFW gating, offline writing, community/marketplace
+ - [x] Multilingual, NSFW gating, offline writing, community/marketplace
+
+## Build
+Open `CoreForgeWriter.xcodeproj` in Xcode and select the **CoreForgeWriter** scheme.
+Add the local `CreatorCoreForge` package under Swift Packages and build to ensure
+framework connections.
 
 ---
 

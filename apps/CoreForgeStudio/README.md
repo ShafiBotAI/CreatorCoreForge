@@ -7,7 +7,12 @@ This agent is responsible for building, validating, and maintaining all features
 - [x] Full AI-powered multi-track audio/video production suite
 - [x] Persistent voice/scene memory, macro builder, team dashboard
  - [x] Support iOS, Android, PC, macOS, Web
-- [x] Multi-language, NSFW gating, offline-first, viral/social creator tools
+ - [x] Multi-language, NSFW gating, offline-first, viral/social creator tools
+
+## Build
+Open `CoreForgeStudio.xcodeproj` in Xcode and select the **CoreForgeStudio** scheme.
+Make sure the `CreatorCoreForge` package is linked under Swift Packages, then build
+to confirm framework connections.
 
 ---
 

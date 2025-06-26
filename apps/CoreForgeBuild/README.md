@@ -7,7 +7,12 @@ This agent is responsible for building, validating, and maintaining all features
 - [x] End-to-end drag-and-drop AI app builder, export to all platforms
 - [x] Persistent creative DNA, team and white label controls, template marketplace
 - [x] Multi-platform: iOS, Android, PC, Mac, Web
-- [x] Multilingual, NSFW gating, cloud/local deploy, CI/CD auto-update
+ - [x] Multilingual, NSFW gating, cloud/local deploy, CI/CD auto-update
+
+## Build
+Open `CoreForgeBuild.xcodeproj` in Xcode and select the **CoreForgeBuild** scheme.
+Ensure the local `CreatorCoreForge` Swift package is linked under Swift Packages,
+then build the project to validate framework connections.
 
 ---
 

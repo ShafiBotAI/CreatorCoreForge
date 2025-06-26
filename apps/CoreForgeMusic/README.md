@@ -18,8 +18,9 @@ in future releases.
 - **Share song preview videos** to social channels
 
 ## Building (Swift Package)
-1. Open `VerseForgeAIFull/Package.swift` in Xcode.
-2. Run the included unit tests with `swift test`.
+1. Open `CoreForgeMusic.xcodeproj` in Xcode and select the **CoreForgeMusic** scheme.
+2. Ensure the `CreatorCoreForge` package is linked under Swift Packages.
+3. Run the included unit tests with `swift test`.
 
 ## Offline Mode
 `USE_LOCAL_AI=1` enables offline operation through `LocalAIEnginePro`.
