@@ -568,3 +568,52 @@ Key points from `README.md`:
 - [x] Offer beta features: audio fingerprints for licensing, alternate casting previews
 - [x] AI-based performance coach to recommend enhancements after preview
 
+
+## CoreForge Audio UI Enhancements
+
+### Dashboard & Library Interface
+- [ ] `LibraryDashboardView.swift` – Main home screen layout with scrollable sections and mini player.
+- [ ] `FeaturedCarouselView.swift` – Top swipeable banner for featured content.
+- [ ] `MiniPlayerView.swift` – Fixed bottom control panel with playback and expand action.
+
+### Search & Discovery
+- [ ] `SearchView.swift` – Book/author/chapter search with filters and sort options.
+- [ ] `VoicePreviewPopup.swift` – Tap-and-hold voice preview overlay for characters.
+
+### Profile & Listening Insights
+- [ ] `ProfileTierCardView.swift` – Displays current plan, avatar, and upgrade button.
+- [ ] `ListeningStatsView.swift` – Weekly/monthly listening stats and achievements.
+- [ ] `ChapterProgressView.swift` – Tiles showing current in-progress chapters.
+
+### Playback Extensions
+- [ ] `PlaybackSpeedControlView.swift` – Allows speed selection and voice swapping.
+- [ ] Add `matchedGeometryEffect` to MiniPlayer → PlayerView transition.
+
+### Library Enhancements
+- [ ] Add download indicators to all book cards.
+- [ ] Add heart/favorite toggle to book items.
+- [ ] Add "Favorites" section to `LibraryDashboardView`.
+
+### Visual & Theming
+- [ ] Expand `Theme.swift` – Add gradient, blur, shadows, and standardized styling.
+- [ ] Apply `ultraThinMaterial` to all cards and overlays.
+- [ ] Implement light/dark mode compatibility using semantic SwiftUI colors.
+- [ ] Animate transitions between key views using `.transition` and `.animation`.
+
+### Output File Structure
+```
+Views/
+├── LibraryDashboardView.swift
+├── FeaturedCarouselView.swift
+├── MiniPlayerView.swift
+├── SearchView.swift
+├── ListeningStatsView.swift
+├── ProfileTierCardView.swift
+├── ChapterProgressView.swift
+Components/
+├── PlaybackSpeedControlView.swift
+├── VoicePreviewPopup.swift
+Theme/
+├── Theme.swift
+```
+
