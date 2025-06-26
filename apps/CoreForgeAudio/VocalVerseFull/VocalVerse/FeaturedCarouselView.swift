@@ -5,6 +5,8 @@ import CreatorCoreForge
 /// Horizontal carousel showing featured books.
 struct FeaturedCarouselView: View {
     var books: [Book]
+    @State private var showPreview = false
+    @State private var previewURL: URL?
 
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
@@ -34,22 +36,33 @@ struct FeaturedCarouselView: View {
                     .cornerRadius(8)
                     .contextMenu {
                         ForEach(book.chapters) { chapter in
-                            Button(chapter.title) {
-                                // Preview voice snippet placeholder
+                            if let url = chapter.audioURL {
+                                Button(chapter.title) {
+                                    previewURL = url
+                                    showPreview = true
+                                }
                             }
                         }
                     }
                     .swipeActions {
-                        Button {
-                            // play preview placeholder
-                        } label: {
-                            Label("Preview", systemImage: "play.fill")
+                        if let url = book.chapters.first?.audioURL {
+                            Button {
+                                previewURL = url
+                                showPreview = true
+                            } label: {
+                                Label("Preview", systemImage: "play.fill")
+                            }
+                            .tint(.green)
                         }
-                        .tint(.green)
                     }
                 }
             }
             .padding(.horizontal)
+        }
+        .sheet(isPresented: $showPreview) {
+            if let url = previewURL {
+                VoicePreviewPopup(audioURL: url, isPresented: $showPreview)
+            }
         }
     }
 }
