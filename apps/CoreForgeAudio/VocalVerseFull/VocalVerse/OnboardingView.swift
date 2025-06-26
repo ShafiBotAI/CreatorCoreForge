@@ -3,6 +3,7 @@ import SwiftUI
 
 struct OnboardingView: View {
     @Binding var hasSeenOnboarding: Bool
+    var namespace: Namespace.ID
     @State private var animate = false
 
     var body: some View {
@@ -42,6 +43,7 @@ struct OnboardingView: View {
             Button("Enter App") {
                 hasSeenOnboarding = true
             }
+            .matchedGeometryEffect(id: "start", in: namespace)
             .buttonStyle(.borderedProminent)
             .opacity(animate ? 1 : 0)
         }

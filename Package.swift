@@ -9,13 +9,14 @@ let package = Package(
     ],
     products: [
         .library(name: "CreatorCoreForge", targets: ["CreatorCoreForge"]),
-        .executable(name: "LibraryDemoApp", targets: ["LibraryDemoApp"])
+        .executable(name: "CoreForgeLibraryApp", targets: ["CoreForgeLibraryApp"])
     ],
     dependencies: [],
     targets: [
         .target(name: "CreatorCoreForge", path: "Sources/CreatorCoreForge"),
-        .executableTarget(name: "LibraryDemoApp",
-                          path: "apps/CoreForgeLibrary/LibraryDemoFull/LibraryDemo",
+        .executableTarget(name: "CoreForgeLibraryApp",
+                          dependencies: ["CreatorCoreForge"],
+                          path: "apps/CoreForgeLibrary/LibraryApp/CoreForgeLibraryApp",
                           exclude: ["Info.plist"]),
         .testTarget(name: "CreatorCoreForgeTests", dependencies: ["CreatorCoreForge"], path: "Tests/CreatorCoreForgeTests")
     ]

@@ -320,24 +320,24 @@ Key points from `README.md`:
 - [x] Display visual multiverse map with branches and connections
 - [x] Allow creators to preview all timeline outcomes in side-by-side mode
 
-- [ ] Enable auto-generation of visual variations for key choice points
-- [ ] Sync visual changes with multiverse-aware voice and FX layers
-- [ ] Recommend color palette and lighting changes based on timeline branch
-- [ ] Track viewer navigation across different visual storylines
-- [ ] Highlight multiverse divergence points in scene editing panel
-- [ ] Store and lock multiverse visual states for version tracking
-- [ ] Provide toggle to collapse alternate scenes into one for export
-- [ ] Create parallel visual identities for characters (e.g., Hero vs Villain versions)
-- [ ] Match branching logic with alternate soundtracks and FX profiles
-- [ ] Offer predictive timeline generator based on character decisions
-- [ ] Generate recap videos per timeline path for audience immersion
-- [ ] Support layered rendering (shared visuals + unique overlays)
-- [ ] Build continuity checker across timelines for style cohesion
-- [ ] Visualize alternate emotional arcs using heatmap overlays
-- [ ] Allow creator-defined "main" timeline and secondary forks
-- [ ] Embed multiverse state in exported metadata for reuse
-- [ ] Detect and flag conflicts when characters appear in multiple branches simultaneously
-- [ ] Enable AI director mode to guide scene transitions across branches
+- [x] Enable auto-generation of visual variations for key choice points
+- [x] Sync visual changes with multiverse-aware voice and FX layers
+- [x] Recommend color palette and lighting changes based on timeline branch
+- [x] Track viewer navigation across different visual storylines
+- [x] Highlight multiverse divergence points in scene editing panel
+- [x] Store and lock multiverse visual states for version tracking
+- [x] Provide toggle to collapse alternate scenes into one for export
+- [x] Create parallel visual identities for characters (e.g., Hero vs Villain versions)
+- [x] Match branching logic with alternate soundtracks and FX profiles
+- [x] Offer predictive timeline generator based on character decisions
+- [x] Generate recap videos per timeline path for audience immersion
+- [x] Support layered rendering (shared visuals + unique overlays)
+- [x] Build continuity checker across timelines for style cohesion
+- [x] Visualize alternate emotional arcs using heatmap overlays
+- [x] Allow creator-defined "main" timeline and secondary forks
+- [x] Embed multiverse state in exported metadata for reuse
+- [x] Detect and flag conflicts when characters appear in multiple branches simultaneously
+- [x] Enable AI director mode to guide scene transitions across branches
 =======
 - [x] Enable auto-generation of visual variations for key choice points
 - [x] Sync visual changes with multiverse-aware voice and FX layers
@@ -453,3 +453,151 @@ Key points from `README.md`:
 - [x] Provide Creator Control Panel for full preview/edit of visual/audio logic
 - [x] Enable collaborative comments and timeline feedback from teams
 - [x] Simulate full-cast rehearsal playback for pacing checks and scene balance
+
+## CoreForge Visual UI/UX Completion Checklist
+
+### 🧭 Project Dashboard
+
+- [x] `VisualDashboardView.swift` – Main workspace and navigation.
+- [x] `RecentProjectsCarousel.swift` – Recently opened/generated books or scenes.
+- [x] `CreateProjectButton.swift` – Prominent "+" to start a new book or scene.
+
+### 🎬 AI Scene Generation
+
+- [x] `SceneGeneratorView.swift` – UI to configure and preview AI-generated scenes.
+- [x] `VisualStylePicker.swift` – User can pick between Anime / Live-Action / Fantasy / Noir.
+- [x] `EmotionArcVisualizer.swift` – Graph UI for controlling scene emotional tone.
+
+### 🎙 Voice Assignment & Characters
+
+- [x] `CharacterVoiceAssignmentView.swift` – Map characters to voices.
+- [x] `VoiceToneController.swift` – Adjust tone, style, pacing by line or scene.
+- [x] `MultiverseMemoryManager.swift` – Maintain voice/character memory across projects.
+
+### 📤 Rendering & Exports
+
+- [x] `RenderPreviewView.swift` – Live playback of draft scenes.
+- [x] `AutoUploadPanel.swift` – Upload options for TikTok, YouTube, etc.
+- [x] `VideoExportCreditsView.swift` – Shows credit balance and plan status.
+
+### 🧑‍💼 Monetization & Access
+
+- [x] `CreatorAdminPanel.swift` – White label controls, affiliate management.
+- [x] `PromoCodeUnlockView.swift` – Unlock Creator Tier or Beta Access.
+- [x] `InAppPurchaseCenter.swift` – Purchase credits, NSFW, extra exports.
+
+### 🔒 NSFW + Filters
+
+- [x] `NSFWVisualToggle.swift` – Enable/disable adult content rendering.
+- [x] `SceneFilterChips.swift` – Tag-based filters (genre, tone, NSFW, etc).
+
+### 👤 Profile & Subscription
+
+
+- [ ] `VisualProfileCard.swift` – Tier badge, stats, avatar.
+- [ ] `SubscriptionPlanSelector.swift` – Manage subscription tier.
+
+# agents.md — CoreForge App Production Readiness Checklist (All Apps)
+
+## 🎯 Objective:
+Ensure that CoreForge Audio, Visual, and Build are 100% functionally complete, stable, and production-ready for App Store, Play Store, and desktop/web deployment.
+
+---
+
+## ✅ Functional Completion
+
+- [ ] All Codex agents, core views, and managers are implemented and verified
+- [ ] All planned app features are present and testable
+- [ ] Onboarding flow fully functional and launches only once
+- [ ] All views support dynamic resizing and device rotation (where applicable)
+- [ ] All modules contain full `#Preview` support for SwiftUI
+
+---
+
+## ✅ Navigation & Routing
+
+- [ ] App launches into the correct root view
+- [ ] Tab navigation works across all platforms and all tabs retain state
+- [ ] Deep linking / modal sheets / view stacks work and return correctly
+
+---
+
+## ✅ UI Consistency & Branding
+
+- [ ] CoreForge theme (`primaryGradient`, `ultraThinMaterial`, `cornerRadius`) applied globally
+- [ ] All app icons in `.appiconset` are exported and installed
+- [ ] Light/Dark mode support implemented using semantic colors
+- [ ] Launch screen matches brand gradient and app name
+- [ ] Splash logo displays properly on all platforms
+
+---
+
+## ✅ Feature Stability
+
+- [ ] Playback system works with custom voices and ambient FX (CoreForge Audio)
+- [ ] Scene generation renders and exports correctly (CoreForge Visual)
+- [ ] Apps generate and export .ipa/.apk/.exe/.dmg correctly (CoreForge Build)
+- [ ] NSFW gating logic functions securely and consistently across all platforms
+- [ ] Subscription features are unlocked, gated, and revertable correctly
+- [ ] Import, export, build, and generate features persist across sessions
+
+---
+
+## ✅ Monetization & Subscriptions
+
+- [ ] All IAP options work (NSFW, export credits, Creator/Enterprise plans)
+- [ ] Subscription upgrades properly unlock features
+- [ ] Promo codes (e.g., `CREATORACCESS`, `VISIONBETA`) unlock and persist
+- [ ] Credit consumption reflects usage in UI (audio, video, app builds)
+- [ ] Price tiers and usage logic reflected in `SubscriptionManager.swift`
+
+---
+
+## ✅ User Data & Preferences
+
+- [ ] User preferences stored with `@AppStorage` and load correctly
+- [ ] Offline content support in each app (audio, video, app saves)
+- [ ] Download manager UI present where needed
+- [ ] NSFW preference gated behind user age/plan
+
+---
+
+## ✅ Export & Distribution
+
+- [ ] All export options (audio, video, builds) functional with local save
+- [ ] Auto-upload toggles functional and route to correct platforms (Visual only)
+- [ ] Local output directory support or Share Sheet UI on mobile
+
+---
+
+## ✅ Developer & GitHub Integration
+
+- [ ] Each app folder includes:
+    - `agents.md`
+    - `README.md`
+    - `baseline_requirements.md`
+    - `FEATURES-CODEX-COMPLETE.md`
+- [ ] All GitHub secrets and PATs tested and working for CI/CD
+- [ ] `.ipa`, `.apk`, `.dmg`, `.exe`, and `web` versions confirmed working and uploaded
+
+---
+
+## ✅ QA Testing + Launch Readiness
+
+- [ ] All modules unit tested
+- [ ] All flows tested manually on iOS and Android simulators
+- [ ] Zipped bundles for each app uploaded to Google Drive
+- [ ] App Store / TestFlight metadata (`AppIcon`, screenshots, description) ready
+- [ ] Apps pass Xcode and Android Studio validation
+
+---
+
+## ✅ Final Go-Live
+
+- [ ] GitHub repo tagged as production ready
+- [ ] App uploaded to App Store Connect + Play Store internal testing
+- [ ] Announce launch with press kit + onboarding video
+=======
+- [x] `VisualProfileCard.swift` – Tier badge, stats, avatar.
+- [x] `SubscriptionPlanSelector.swift` – Manage subscription tier.
+

@@ -18,6 +18,8 @@
 - Ran `scripts/full_app_scan.py` and updated readiness checklist. Verified test suites via `run_all_tests.sh`.
 - Measured `full_app_scan.py` runtime (0.11s, ~14.7 MB) via new `measure_performance.py` and confirmed tests pass.
 - Added developer console toggle to `BuildPreviewEngine`.
+- Enhanced `TTSRenderer` with buffered queue processing, jittered backoff, and latency monitoring callbacks.
+- Added `MultiTrackProductionSuite` for simple audio/video track orchestration with unit tests.
 - Added `UnifiedAudioEngine` shared module and updated all app feature lists.
 - Added `UnifiedVideoEngine` and `AdaptiveLearningEngine` modules for cross-platform video rendering and adaptive learning.
 - Enhanced `AdaptiveLearningEngine` to track lesson completion timestamps.
@@ -39,3 +41,4 @@
 - Further optimized lens flare detection loops and added TTL-based eviction to `CacheService`.
 - Implemented `multitrack_export` utility and `VoiceApprovalWorkflow` helpers for CoreForge Audio.
 
+- Added HeroSpotlightBackground utility and accompanying tests.

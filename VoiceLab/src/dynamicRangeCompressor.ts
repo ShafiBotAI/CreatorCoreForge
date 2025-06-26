@@ -50,11 +50,15 @@ export class AudioProcessor {
     if (sampleRate <= 0) throw new Error('sampleRate must be > 0');
 
     const buffer = Buffer.from(await input.arrayBuffer());
+
     const samples = new Float32Array(
       buffer.buffer,
       buffer.byteOffset,
       Math.floor(buffer.byteLength / 4)
     );
+=======
+    const samples = new Float32Array(buffer.buffer, buffer.byteOffset, Math.floor(buffer.byteLength / 4));
+
 
     const attackCoef = attack > 0 ? Math.exp(-1 / (attack * sampleRate)) : 0;
     const releaseCoef = release > 0 ? Math.exp(-1 / (release * sampleRate)) : 0;

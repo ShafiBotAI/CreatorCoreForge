@@ -3,11 +3,16 @@ import Foundation
 import SwiftUI
 
 @main
-struct LibraryDemoApp: App {
+struct CoreForgeLibraryApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
     }
+}
+#else
+@main
+struct CoreForgeLibraryAppMain {
+    static func main() {}
 }
 #endif

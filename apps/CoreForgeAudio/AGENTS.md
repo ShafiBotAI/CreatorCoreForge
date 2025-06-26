@@ -568,3 +568,235 @@ Key points from `README.md`:
 - [x] Offer beta features: audio fingerprints for licensing, alternate casting previews
 - [x] AI-based performance coach to recommend enhancements after preview
 
+
+
+## CoreForge Audio UI Completion: Feature-Based Expansion
+### AI & AUDIO ENGINE FEATURES
+
+- [ ] `VoiceEmotionControlView.swift` – Add tone/emotion picker per character or chapter.
+- [ ] `VoiceMemoryView.swift` – Show persistent voice cast history across books.
+- [ ] `AmbientFXMixerView.swift` – Visual FX blend control per scene/book.
+- [ ] `NSFWToggleView.swift` – Add in-player and global toggle for NSFW mode.
+- [ ] `LanguageSelectorView.swift` – UI for per-book/per-chapter language choice.
+- [ ] `ExportQueueView.swift` – List view of recent and in-progress exports.
+
+### 🎧 PLAYBACK EXPERIENCE UPGRADES
+
+- [ ] `MiniPlayerView.swift` – Floating player for quick resume.
+- [ ] `PlaybackSpeedControlView.swift` – Speed picker (1x–5x).
+- [ ] `VoicePickerView.swift` – Dropdown for active narration voice.
+- [ ] `SwipePreviewHandler.swift` – Tap-and-hold or swipe to preview voices.
+- [ ] `ChapterProgressView.swift` – Visual tiles for in-progress chapters.
+- [ ] Add `.matchedGeometryEffect` for MiniPlayer → PlayerView transition.
+
+### 📚 LIBRARY DASHBOARD ENHANCEMENTS
+
+- [ ] `FavoritesCarouselView.swift` – Row for user-tagged favorite books.
+- [ ] `ContinueListeningView.swift` – Displays paused books or last 3 played.
+- [ ] `RecentlyImportedView.swift` – Latest EPUB/PDF/TXT added to library.
+- [ ] `DownloadsManagerView.swift` – Shows offline-only content + space usage.
+- [ ] Add sort/filter chips to `SearchView` (Favorites, Downloaded, Unplayed).
+
+### 👤 USER INSIGHTS & PROFILE
+
+- [ ] `ProfileTierCardView.swift` – Shows current plan, upgrade CTA, avatar.
+- [ ] `ListeningStatsView.swift` – Listening streaks, hours, completions.
+- [ ] Add alert badge if streak is broken or goal achieved.
+
+### 🛡 MONETIZATION & TIER ACCESS
+
+- [ ] `NSFWUnlockModal.swift` – Dialog shown if NSFW add-on not active.
+- [ ] `UpgradeBlockOverlay.swift` – Blocks gated features for Free users.
+- [ ] `AudioCreditStatusView.swift` – Shows remaining MP3 export credits.
+- [ ] `SubscriptionUpgradeView.swift` – Multi-plan selector for Creator/Enterprise.
+
+### 🖌 VISUAL POLISH & RESPONSIVENESS
+
+- [ ] Expand `Theme.swift` – Apply consistent gradient + corner radius + shadows.
+- [ ] Apply `.ultraThinMaterial` to all content cards.
+- [ ] Add `.transition(.scale)` or `.opacity` to card actions and modals.
+- [ ] Audit all UI for dark mode readiness with semantic SwiftUI colors.
+- [ ] Add empty state visuals (Library, Stats, Player) using branded illustration.
+
+### 📁 DIRECTORY STRUCTURE EXTENSIONS
+```
+Views/
+├── ContinueListeningView.swift
+├── DownloadsManagerView.swift
+├── RecentlyImportedView.swift
+├── ExportQueueView.swift
+├── FavoritesCarouselView.swift
+├── LanguageSelectorView.swift
+├── VoiceMemoryView.swift
+├── VoiceEmotionControlView.swift
+├── ListeningStatsView.swift
+├── ProfileTierCardView.swift
+├── SubscriptionUpgradeView.swift
+
+Components/
+├── PlaybackSpeedControlView.swift
+├── VoicePickerView.swift
+├── NSFWToggleView.swift
+├── SwipePreviewHandler.swift
+├── NSFWUnlockModal.swift
+├── UpgradeBlockOverlay.swift
+Theme/
+├── Theme.swift
+```
+
+---
+
+## ✅ Codex Instruction:
+Track and check off each component as it's generated, tested, and added to GitHub `/apps/CoreForgeAudio/Views/` or `/Components/` folder. Ensure all `.swift` files use `#Preview` blocks and follow `Theme.swift` visual conventions.
+
+=======
+## CoreForge Audio UI Enhancements
+
+### Dashboard & Library Interface
+- [x] `LibraryDashboardView.swift` – Main home screen layout with scrollable sections and mini player.
+- [x] `FeaturedCarouselView.swift` – Top swipeable banner for featured content.
+- [x] `MiniPlayerView.swift` – Fixed bottom control panel with playback and expand action.
+
+### Search & Discovery
+- [x] `SearchView.swift` – Book/author/chapter search with filters and sort options.
+- [x] `VoicePreviewPopup.swift` – Tap-and-hold voice preview overlay for characters.
+
+### Profile & Listening Insights
+- [x] `ProfileTierCardView.swift` – Displays current plan, avatar, and upgrade button.
+- [x] `ListeningStatsView.swift` – Weekly/monthly listening stats and achievements.
+- [x] `ChapterProgressView.swift` – Tiles showing current in-progress chapters.
+
+### Playback Extensions
+- [x] `PlaybackSpeedControlView.swift` – Allows speed selection and voice swapping.
+- [x] Add `matchedGeometryEffect` to MiniPlayer → PlayerView transition.
+
+### Library Enhancements
+- [x] Add download indicators to all book cards.
+- [x] Add heart/favorite toggle to book items.
+- [x] Add "Favorites" section to `LibraryDashboardView`.
+
+### Visual & Theming
+- [x] Expand `Theme.swift` – Add gradient, blur, shadows, and standardized styling.
+- [x] Apply `ultraThinMaterial` to all cards and overlays.
+- [x] Implement light/dark mode compatibility using semantic SwiftUI colors.
+- [x] Animate transitions between key views using `.transition` and `.animation`.
+
+### Output File Structure
+```
+Views/
+├── LibraryDashboardView.swift
+├── FeaturedCarouselView.swift
+├── MiniPlayerView.swift
+├── SearchView.swift
+├── ListeningStatsView.swift
+├── ProfileTierCardView.swift
+├── ChapterProgressView.swift
+Components/
+├── PlaybackSpeedControlView.swift
+├── VoicePreviewPopup.swift
+Theme/
+├── Theme.swift
+```
+
+
+# agents.md — CoreForge App Production Readiness Checklist (All Apps)
+
+## 🎯 Objective:
+Ensure that CoreForge Audio, Visual, and Build are 100% functionally complete, stable, and production-ready for App Store, Play Store, and desktop/web deployment.
+
+---
+
+## ✅ Functional Completion
+
+- [ ] All Codex agents, core views, and managers are implemented and verified
+- [ ] All planned app features are present and testable
+- [ ] Onboarding flow fully functional and launches only once
+- [ ] All views support dynamic resizing and device rotation (where applicable)
+- [ ] All modules contain full `#Preview` support for SwiftUI
+
+---
+
+## ✅ Navigation & Routing
+
+- [ ] App launches into the correct root view
+- [ ] Tab navigation works across all platforms and all tabs retain state
+- [ ] Deep linking / modal sheets / view stacks work and return correctly
+
+---
+
+## ✅ UI Consistency & Branding
+
+- [ ] CoreForge theme (`primaryGradient`, `ultraThinMaterial`, `cornerRadius`) applied globally
+- [ ] All app icons in `.appiconset` are exported and installed
+- [ ] Light/Dark mode support implemented using semantic colors
+- [ ] Launch screen matches brand gradient and app name
+- [ ] Splash logo displays properly on all platforms
+
+---
+
+## ✅ Feature Stability
+
+- [ ] Playback system works with custom voices and ambient FX (CoreForge Audio)
+- [ ] Scene generation renders and exports correctly (CoreForge Visual)
+- [ ] Apps generate and export .ipa/.apk/.exe/.dmg correctly (CoreForge Build)
+- [ ] NSFW gating logic functions securely and consistently across all platforms
+- [ ] Subscription features are unlocked, gated, and revertable correctly
+- [ ] Import, export, build, and generate features persist across sessions
+
+---
+
+## ✅ Monetization & Subscriptions
+
+- [ ] All IAP options work (NSFW, export credits, Creator/Enterprise plans)
+- [ ] Subscription upgrades properly unlock features
+- [ ] Promo codes (e.g., `CREATORACCESS`, `VISIONBETA`) unlock and persist
+- [ ] Credit consumption reflects usage in UI (audio, video, app builds)
+- [ ] Price tiers and usage logic reflected in `SubscriptionManager.swift`
+
+---
+
+## ✅ User Data & Preferences
+
+- [ ] User preferences stored with `@AppStorage` and load correctly
+- [ ] Offline content support in each app (audio, video, app saves)
+- [ ] Download manager UI present where needed
+- [ ] NSFW preference gated behind user age/plan
+
+---
+
+## ✅ Export & Distribution
+
+- [ ] All export options (audio, video, builds) functional with local save
+- [ ] Auto-upload toggles functional and route to correct platforms (Visual only)
+- [ ] Local output directory support or Share Sheet UI on mobile
+
+---
+
+## ✅ Developer & GitHub Integration
+
+- [ ] Each app folder includes:
+    - `agents.md`
+    - `README.md`
+    - `baseline_requirements.md`
+    - `FEATURES-CODEX-COMPLETE.md`
+- [ ] All GitHub secrets and PATs tested and working for CI/CD
+- [ ] `.ipa`, `.apk`, `.dmg`, `.exe`, and `web` versions confirmed working and uploaded
+
+---
+
+## ✅ QA Testing + Launch Readiness
+
+- [ ] All modules unit tested
+- [ ] All flows tested manually on iOS and Android simulators
+- [ ] Zipped bundles for each app uploaded to Google Drive
+- [ ] App Store / TestFlight metadata (`AppIcon`, screenshots, description) ready
+- [ ] Apps pass Xcode and Android Studio validation
+
+---
+
+## ✅ Final Go-Live
+
+- [ ] GitHub repo tagged as production ready
+- [ ] App uploaded to App Store Connect + Play Store internal testing
+- [ ] Announce launch with press kit + onboarding video
+

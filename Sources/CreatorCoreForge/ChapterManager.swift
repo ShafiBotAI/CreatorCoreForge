@@ -11,7 +11,10 @@ public final class ChapterManager {
     }
 
     public func chapter(at index: Int) -> String? {
-        guard chapters.indices.contains(index) else { return nil }
+        guard chapters.indices.contains(index) else {
+            // Fallback to the last available chapter when the index is out of bounds
+            return chapters.last
+        }
         return chapters[index]
     }
 }
