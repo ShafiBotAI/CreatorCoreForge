@@ -8,10 +8,14 @@ public final class CustomCodeInjector {
     /// Parses a snippet and returns a plugin when possible.
     /// Currently supports "replace:token=value" rule.
     public func plugin(from snippet: String) -> FusionEnginePlugin? {
-        guard snippet.hasPrefix("replace:") else { return nil }
+        guard snippet.hasPrefix("replace:") else {
+            return CodePlugin(name: "noop") { $0 } responseTransform: { $0 }
+        }
         let remainder = snippet.dropFirst("replace:".count)
         let parts = remainder.split(separator: "=", maxSplits: 1).map(String.init)
-        guard parts.count == 2 else { return nil }
+        guard parts.count == 2 else {
+            return CodePlugin(name: "noop") { $0 } responseTransform: { $0 }
+        }
         let token = parts[0]
         let value = parts[1]
         return CodePlugin(name: "replace-\(token)") { prompt in

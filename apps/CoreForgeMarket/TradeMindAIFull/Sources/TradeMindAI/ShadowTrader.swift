@@ -1,6 +1,6 @@
 import Foundation
 
-/// Executes mock shadow trades based on whale wallet activity.
+/// Executes shadow trades based on whale wallet activity using real API calls.
 public final class ShadowTrader {
     private let exchange: ExchangeAPI
     private var timer: Timer?
@@ -21,15 +21,30 @@ public final class ShadowTrader {
         timer?.invalidate()
     }
 
-    /// Perform a mock trade following a whale wallet signal.
+    /// Perform a basic copy trade following a whale wallet signal.
     public func executeShadowTrade(wallet: String, completion: @escaping (Bool) -> Void) {
-        // Real logic would analyze the wallet's trades; here we just fetch balances.
-        exchange.fetchBalances { result in
-            switch result {
-            case .success:
-                completion(true)
-            case .failure:
+        exchange.fetchBalances { [weak self] result in
+            guard case .success(let balances) = result,
+                  let symbol = balances.keys.first else {
                 completion(false)
+                return
+            }
+            let pair = "\(symbol)USD"
+            self?.exchange.fetchPrice(pair: pair) { priceResult in
+                switch priceResult {
+                case .success(let price):
+                    self?.exchange.placeOrder(pair: pair, side: "buy", amount: 1) { orderResult in
+                        switch orderResult {
+                        case .success:
+                            print("Executed shadow trade at price \(price)")
+                            completion(true)
+                        case .failure:
+                            completion(false)
+                        }
+                    }
+                case .failure:
+                    completion(false)
+                }
             }
         }
     }

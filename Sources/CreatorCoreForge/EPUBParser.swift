@@ -30,8 +30,8 @@ struct EPUBParser {
         var chapters: [Chapter] = []
         for (idx, path) in htmlPaths.enumerated() {
             let htmlURL = opfURL.deletingLastPathComponent().appendingPathComponent(path)
-            guard let data = try? Data(contentsOf: htmlURL),
-                  let text = extractText(data) else { continue }
+            guard let data = try? Data(contentsOf: htmlURL) else { continue }
+            let text = extractText(data)
             let title = "Chapter \(idx + 1)"
             chapters.append(Chapter(title: title, text: text, order: idx))
         }
@@ -54,8 +54,10 @@ struct EPUBParser {
         return handler.spine.compactMap { handler.manifest[$0] }
     }
 
-    private static func extractText(_ data: Data) -> String? {
-        guard var html = String(data: data, encoding: .utf8) else { return nil }
+    private static func extractText(_ data: Data) -> String {
+        // Attempt UTF-8 decoding first, then fall back to ISO Latin-1
+        guard var html = String(data: data, encoding: .utf8) ??
+                String(data: data, encoding: .isoLatin1) else { return "" }
         html = html.replacingOccurrences(of: "<[^>]+>", with: " ", options: .regularExpression)
         html = html.replacingOccurrences(of: "\\s+", with: " ", options: .regularExpression)
         return html.trimmingCharacters(in: .whitespacesAndNewlines)

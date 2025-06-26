@@ -156,9 +156,27 @@ public struct NSFWScopeGuard {
 /// Track NSFW usage history for tone consistency.
 public final class NSFWUsageHistory {
     private var counts: [String: Int] = [:]
+    private var planTotals: [SubscriptionManager.Plan: Int] = [:]
     public init() {}
-    public func record(scene: String) { counts[scene, default: 0] += 1 }
+
+    /// Record that a scene was rendered for the given plan.
+    public func record(scene: String, plan: SubscriptionManager.Plan) {
+        counts[scene, default: 0] += 1
+        planTotals[plan, default: 0] += 1
+    }
+
+    /// Retrieve how many times a specific scene was rendered.
     public func usage(for scene: String) -> Int { counts[scene, default: 0] }
+
+    /// Determine if the plan is within its NSFW render quota.
+    public func canRender(plan: SubscriptionManager.Plan, limit: Int = 50) -> Bool {
+        switch plan {
+        case .free:
+            return false
+        default:
+            return planTotals[plan, default: 0] < limit
+        }
+    }
 }
 
 /// Flag NSFW content for moderation review.

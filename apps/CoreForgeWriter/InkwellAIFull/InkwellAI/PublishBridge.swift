@@ -1,18 +1,22 @@
 import Foundation
 
 final class PublishBridge {
-    private let endpoint = URL(string: "https://publishing.example.com/upload")!
+    private let baseURL: URL
     private let session: URLSession
-    private let apiToken = "demo-token"
+    private let apiToken: String?
 
-    init(session: URLSession = .shared) {
+    init(baseURL: URL = URL(string: "https://publishing.example.com")!,
+         tokenKey: String = "PUBLISH_TOKEN",
+         session: URLSession = .shared) {
+        self.baseURL = baseURL
         self.session = session
+        self.apiToken = ProcessInfo.processInfo.environment[tokenKey]
     }
 
     func publish(book: String, completion: @escaping (Bool) -> Void) {
-        var request = URLRequest(url: endpoint)
+        var request = URLRequest(url: baseURL.appendingPathComponent("upload"))
         request.httpMethod = "POST"
-        request.addValue(apiToken, forHTTPHeaderField: "X-Auth")
+        if let token = apiToken { request.addValue(token, forHTTPHeaderField: "X-Auth") }
         request.httpBody = book.data(using: .utf8)
         session.dataTask(with: request) { _, response, _ in
             let success = (response as? HTTPURLResponse)?.statusCode == 200
@@ -21,7 +25,7 @@ final class PublishBridge {
     }
 
     func checkStatus(id: String, completion: @escaping (Bool) -> Void) {
-        guard let url = URL(string: "https://publishing.example.com/status/\(id)") else {
+        guard let url = URL(string: "status/\(id)", relativeTo: baseURL) else {
             completion(false)
             return
         }
@@ -32,7 +36,7 @@ final class PublishBridge {
     }
 
     func listDashboards(completion: @escaping ([String]) -> Void) {
-        guard let url = URL(string: "https://publishing.example.com/dashboards") else {
+        guard let url = URL(string: "dashboards", relativeTo: baseURL) else {
             completion([])
             return
         }
@@ -50,13 +54,13 @@ final class PublishBridge {
     /// Establish a connection to the publishing dashboard. Useful for verifying
     /// credentials before attempting uploads.
     func connect(completion: @escaping (Bool) -> Void) {
-        guard let url = URL(string: "https://publishing.example.com/connect") else {
+        guard let url = URL(string: "connect", relativeTo: baseURL) else {
             completion(false)
             return
         }
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
-        request.addValue(apiToken, forHTTPHeaderField: "X-Auth")
+        if let token = apiToken { request.addValue(token, forHTTPHeaderField: "X-Auth") }
         session.dataTask(with: request) { _, response, _ in
             let success = (response as? HTTPURLResponse)?.statusCode == 200
             completion(success)

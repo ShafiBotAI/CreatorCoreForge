@@ -26,6 +26,9 @@ public final class SceneAtmosphereBuilder {
         let filename = "atmo_\(mood.rawValue).caf"
         guard let url = Bundle.main.url(forResource: filename, withExtension: nil) else {
             print("\u{26A0}\u{FE0F} Atmosphere file not found: \(filename)")
+            if let generated = AdaptiveMusicGenerator().generate(mood: mood.rawValue) {
+                return try? AVAudioFile(forReading: generated)
+            }
             return nil
         }
 
@@ -34,6 +37,9 @@ public final class SceneAtmosphereBuilder {
             return file
         } catch {
             print("\u{26A0}\u{FE0F} Error loading atmosphere audio: \(error.localizedDescription)")
+            if let generated = AdaptiveMusicGenerator().generate(mood: mood.rawValue) {
+                return try? AVAudioFile(forReading: generated)
+            }
             return nil
         }
     }

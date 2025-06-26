@@ -29,12 +29,41 @@ public final class LeadMiner {
         return tally
     }
 
-    /// Append basic firmographic details to a lead (mock implementation)
+    /// Append basic firmographic details to a lead using Clearbit's autocomplete API.
     public func enrichLead(_ lead: Lead) -> Lead {
-        var enriched = lead
-        enriched.firmographics["size"] = "50-100"
-        enriched.firmographics["revenue"] = "$10M"
-        return enriched
+        let semaphore = DispatchSemaphore(value: 0)
+        var result = lead
+        enrichLead(lead) { enriched in
+            result = enriched
+            semaphore.signal()
+        }
+        semaphore.wait()
+        return result
+    }
+
+    public func enrichLead(_ lead: Lead, completion: @escaping (Lead) -> Void) {
+        guard let encoded = lead.company.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
+              let url = URL(string: "https://autocomplete.clearbit.com/v1/companies/suggest?query=\(encoded)") else {
+            completion(lead)
+            return
+        }
+        URLSession.shared.dataTask(with: url) { data, _, _ in
+            var enriched = lead
+            if let data = data,
+               let arr = try? JSONSerialization.jsonObject(with: data) as? [[String: Any]],
+               let first = arr.first {
+                if let name = first["name"] as? String {
+                    enriched.firmographics["name"] = name
+                }
+                if let domain = first["domain"] as? String {
+                    enriched.firmographics["domain"] = domain
+                }
+                if let logo = first["logo"] as? String {
+                    enriched.firmographics["logo"] = logo
+                }
+            }
+            completion(enriched)
+        }.resume()
     }
 
     /// Insert lead details into an outreach template

@@ -1,17 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>CoreForge Quest Desktop</title>
-  <script>
-    function launch() {
-      document.getElementById('status').textContent = 'Launcher active.';
-    }
-  </script>
-</head>
-<body>
-  <h1>CoreForge Quest</h1>
-  <p id="status">Desktop launcher ready.</p>
-  <button onclick="launch()">Launch</button>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CoreForge Quest Desktop</title>
+    <script>
+      function launch() {
+        document.getElementById('status').textContent = 'Launcher active.';
+      }
+
+      function autoSignIn() {
+        const stored = localStorage.getItem('cf_user');
+        if (stored) {
+          const user = JSON.parse(stored);
+          document.getElementById('welcome').textContent = `Welcome \${user.email}`;
+          document.getElementById('signup').style.display = 'none';
+        }
+      }
+
+      function register(evt) {
+        evt.preventDefault();
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const dob = document.getElementById('dob').value;
+        localStorage.setItem('cf_user', JSON.stringify({ email, password, dob }));
+        document.getElementById('welcome').textContent = `Welcome \${email}`;
+        document.getElementById('signup').style.display = 'none';
+      }
+
+      window.addEventListener('DOMContentLoaded', autoSignIn);
+    </script>
+  </head>
+  <body>
+    <h1>CoreForge Quest</h1>
+    <p id="status">Desktop launcher ready.</p>
+    <div id="signup">
+      <form onsubmit="register(event)">
+        <input id="email" placeholder="Email" required />
+        <input id="password" type="password" placeholder="Password" required />
+        <input id="dob" type="date" required />
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+    <p id="welcome"></p>
+    <button onclick="launch()">Launch</button>
+  </body>
 </html>
