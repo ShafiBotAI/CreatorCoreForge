@@ -325,11 +325,11 @@ Key points from `README.md`:
 - [x] Recommend color palette and lighting changes based on timeline branch
 - [x] Track viewer navigation across different visual storylines
 - [x] Highlight multiverse divergence points in scene editing panel
-- [ ] Store and lock multiverse visual states for version tracking
-- [ ] Provide toggle to collapse alternate scenes into one for export
-- [ ] Create parallel visual identities for characters (e.g., Hero vs Villain versions)
-- [ ] Match branching logic with alternate soundtracks and FX profiles
-- [ ] Offer predictive timeline generator based on character decisions
+- [x] Store and lock multiverse visual states for version tracking
+- [x] Provide toggle to collapse alternate scenes into one for export
+- [x] Create parallel visual identities for characters (e.g., Hero vs Villain versions)
+- [x] Match branching logic with alternate soundtracks and FX profiles
+- [x] Offer predictive timeline generator based on character decisions
 - [ ] Generate recap videos per timeline path for audience immersion
 - [ ] Support layered rendering (shared visuals + unique overlays)
 - [ ] Build continuity checker across timelines for style cohesion
