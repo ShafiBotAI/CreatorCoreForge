@@ -22,7 +22,7 @@ public final class AIUsageTracker {
             if value > 3 {
                 return "Consider creating shared helper for \(key)"
             }
-            return nil
+            return "No suggestion"
         }
     }
 }

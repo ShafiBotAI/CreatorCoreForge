@@ -34,4 +34,18 @@ public final class AutoTranslateService {
                            audioURL: chapter.audioURL)
         }
     }
+
+    /// Translate a full script while preserving pacing markers like `[beat]` or
+    /// `<emotion>` tags.
+    public func translateScriptPreservingTags(_ script: String, to code: String) -> String {
+        let components = script.split(separator: " ")
+        let translated = components.map { token -> String in
+            if token.hasPrefix("[") || token.hasPrefix("<") {
+                return String(token)
+            } else {
+                return translate(String(token), to: code)
+            }
+        }
+        return translated.joined(separator: " ")
+    }
 }

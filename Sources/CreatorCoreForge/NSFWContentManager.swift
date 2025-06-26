@@ -22,6 +22,7 @@ public final class NSFWContentManager: ObservableObject {
     @Published public var nsfwSceneLog: [NSFWScene] = []
     @Published public var contentIntensity: NSFWIntensity = .softcore
     @Published public var contentMode: NSFWContentMode = .slow
+    @Published public var viewerFilterEnabled: Bool = false
 
     public enum NSFWIntensity: String, Codable, CaseIterable {
         case off, softcore, sensual, rough, hardcore
@@ -99,8 +100,15 @@ public final class NSFWContentManager: ObservableObject {
         self.contentMode = mode
     }
 
+    public func setViewerFilter(enabled: Bool) {
+        viewerFilterEnabled = enabled
+    }
+
     public func isSceneAllowed(_ intensity: NSFWIntensity) -> Bool {
         guard unlocked else { return false }
+        if viewerFilterEnabled && intensity != .off {
+            return false
+        }
         let levels = NSFWIntensity.allCases
         guard let currentIndex = levels.firstIndex(of: contentIntensity),
               let sceneIndex = levels.firstIndex(of: intensity) else {
@@ -206,6 +214,9 @@ public final class NSFWContentManager {
 
     public func isSceneAllowed(_ intensity: NSFWIntensity) -> Bool {
         guard unlocked else { return false }
+        if viewerFilterEnabled && intensity != .off {
+            return false
+        }
         let levels = NSFWIntensity.allCases
         guard let currentIndex = levels.firstIndex(of: contentIntensity),
               let sceneIndex = levels.firstIndex(of: intensity) else {
