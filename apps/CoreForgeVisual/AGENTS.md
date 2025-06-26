@@ -460,25 +460,25 @@ Key points from `README.md`:
 
 - [x] `VisualDashboardView.swift` – Main workspace and navigation.
 - [x] `RecentProjectsCarousel.swift` – Recently opened/generated books or scenes.
-- [ ] `CreateProjectButton.swift` – Prominent "+" to start a new book or scene.
+- [x] `CreateProjectButton.swift` – Prominent "+" to start a new book or scene.
 
 ### 🎬 AI Scene Generation
 
-- [ ] `SceneGeneratorView.swift` – UI to configure and preview AI-generated scenes.
-- [ ] `VisualStylePicker.swift` – User can pick between Anime / Live-Action / Fantasy / Noir.
-- [ ] `EmotionArcVisualizer.swift` – Graph UI for controlling scene emotional tone.
+- [x] `SceneGeneratorView.swift` – UI to configure and preview AI-generated scenes.
+- [x] `VisualStylePicker.swift` – User can pick between Anime / Live-Action / Fantasy / Noir.
+- [x] `EmotionArcVisualizer.swift` – Graph UI for controlling scene emotional tone.
 
 ### 🎙 Voice Assignment & Characters
 
-- [ ] `CharacterVoiceAssignmentView.swift` – Map characters to voices.
-- [ ] `VoiceToneController.swift` – Adjust tone, style, pacing by line or scene.
-- [ ] `MultiverseMemoryManager.swift` – Maintain voice/character memory across projects.
+- [x] `CharacterVoiceAssignmentView.swift` – Map characters to voices.
+- [x] `VoiceToneController.swift` – Adjust tone, style, pacing by line or scene.
+- [x] `MultiverseMemoryManager.swift` – Maintain voice/character memory across projects.
 
 ### 📤 Rendering & Exports
 
-- [ ] `RenderPreviewView.swift` – Live playback of draft scenes.
-- [ ] `AutoUploadPanel.swift` – Upload options for TikTok, YouTube, etc.
-- [ ] `VideoExportCreditsView.swift` – Shows credit balance and plan status.
+- [x] `RenderPreviewView.swift` – Live playback of draft scenes.
+- [x] `AutoUploadPanel.swift` – Upload options for TikTok, YouTube, etc.
+- [x] `VideoExportCreditsView.swift` – Shows credit balance and plan status.
 
 ### 🧑‍💼 Monetization & Access
 
