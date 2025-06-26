@@ -16,7 +16,8 @@ public struct FormGenerator {
             return FormTemplate(name: "register", fields: [
                 FormField(name: "email", type: .email, required: true),
                 FormField(name: "password", type: .password, required: true),
-                FormField(name: "confirm", type: .password, required: true)
+                FormField(name: "confirm", type: .password, required: true),
+                FormField(name: "dob", type: .date, required: true)
             ])
         } else if lower.contains("checkout") {
             return FormTemplate(name: "checkout", fields: [
