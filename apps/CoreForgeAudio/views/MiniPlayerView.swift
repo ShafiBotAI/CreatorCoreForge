@@ -9,30 +9,42 @@ struct MiniPlayerView: View {
     var namespace: Namespace.ID
     @Binding var isExpanded: Bool
     @State private var isPlaying = false
-    @State private var speed: Double = 1.0
-    @State private var voice: String = VoiceConfig.voices.first?.name ?? "Default"
 
     var body: some View {
-        HStack {
-            VStack(alignment: .leading) {
-                Text(book.title)
+        Theme.card {
+            HStack {
+                Text(chapter.title.isEmpty ? book.title : chapter.title)
                     .font(.subheadline)
-                Text(chapter.title)
-                    .font(.caption)
-                    .foregroundColor(.secondary)
+                    .lineLimit(1)
+                Spacer()
+                Button(action: { isPlaying.toggle() }) {
+                    Image(systemName: isPlaying ? "pause.fill" : "play.fill")
+                        .imageScale(.medium)
+                        .foregroundColor(.primary)
+                }
             }
-            Spacer()
-            Button(action: { isPlaying.toggle() }) {
-                Image(systemName: isPlaying ? "pause.fill" : "play.fill")
-            }
-            PlaybackSpeedControlView(speed: $speed, voice: $voice)
+            .frame(maxWidth: .infinity)
         }
-        .padding()
         .background(AppTheme.primaryGradient)
-        .cornerRadius(12)
-        .shadow(radius: 4)
         .matchedGeometryEffect(id: "player", in: namespace)
         .onTapGesture { isExpanded = true }
     }
+}
+
+#Preview {
+    struct PreviewWrapper: View {
+        @Namespace var ns
+        @State var expanded = false
+
+        var body: some View {
+            MiniPlayerView(
+                book: Book(title: "Sample Book", author: "Author"),
+                chapter: Chapter(title: "Chapter 1", text: "Sample"),
+                namespace: ns,
+                isExpanded: $expanded
+            )
+        }
+    }
+    return PreviewWrapper()
 }
 #endif
