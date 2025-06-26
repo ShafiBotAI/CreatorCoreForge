@@ -19,4 +19,15 @@ struct VoiceEmotionControlView: View {
         }
     }
 }
+
+#if DEBUG
+struct VoiceEmotionControlView_Previews: PreviewProvider {
+    @State static var emotion = "Neutral"
+    static var previews: some View {
+        VoiceEmotionControlView(emotion: $emotion)
+            .padding()
+            .previewLayout(.sizeThatFits)
+    }
+}
+#endif
 #endif

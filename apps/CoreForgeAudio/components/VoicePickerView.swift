@@ -13,4 +13,15 @@ struct VoicePickerView: View {
         .pickerStyle(.menu)
     }
 }
+
+#if DEBUG
+struct VoicePickerView_Previews: PreviewProvider {
+    @State static var voice = "Default"
+    static var previews: some View {
+        VoicePickerView(voice: $voice)
+            .padding()
+            .previewLayout(.sizeThatFits)
+    }
+}
+#endif
 #endif

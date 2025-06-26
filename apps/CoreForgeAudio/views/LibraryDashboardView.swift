@@ -73,4 +73,14 @@ struct LibraryDashboardView: View {
         }
     }
 }
+
+#if DEBUG
+struct LibraryDashboardView_Previews: PreviewProvider {
+    static var previews: some View {
+        LibraryDashboardView()
+            .environmentObject(LibraryModel())
+            .environmentObject(UsageStats())
+    }
+}
+#endif
 #endif

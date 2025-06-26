@@ -15,6 +15,17 @@ struct SwipePreviewHandler: ViewModifier {
     }
 }
 
+#if DEBUG
+struct SwipePreviewHandler_Previews: PreviewProvider {
+    static var previews: some View {
+        Text("Preview")
+            .voicePreviewOnHold(audioURL: URL(fileURLWithPath: "/dev/null"))
+            .padding()
+            .previewLayout(.sizeThatFits)
+    }
+}
+#endif
+
 extension View {
     func voicePreviewOnHold(audioURL: URL) -> some View {
         modifier(SwipePreviewHandler(audioURL: audioURL))

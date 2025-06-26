@@ -1,9 +1,11 @@
 #if canImport(SwiftUI)
 import SwiftUI
+import CreatorCoreForge
 
 struct OnboardingView: View {
     @Binding var hasSeenOnboarding: Bool
     var namespace: Namespace.ID
+    @EnvironmentObject var onboarding: OnboardingManager
     @State private var animate = false
 
     var body: some View {
@@ -42,6 +44,7 @@ struct OnboardingView: View {
                 .opacity(animate ? 1 : 0)
             Button("Enter App") {
                 hasSeenOnboarding = true
+                onboarding.complete(.finished)
             }
             .matchedGeometryEffect(id: "start", in: namespace)
             .buttonStyle(.borderedProminent)
@@ -50,4 +53,15 @@ struct OnboardingView: View {
         .padding()
     }
 }
+
+#if DEBUG
+struct OnboardingView_Previews: PreviewProvider {
+    @State static var seen = false
+    @Namespace static var ns
+    static var previews: some View {
+        OnboardingView(hasSeenOnboarding: $seen, namespace: ns)
+            .environmentObject(OnboardingManager())
+    }
+}
+#endif
 #endif

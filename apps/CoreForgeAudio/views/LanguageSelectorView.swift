@@ -13,4 +13,15 @@ struct LanguageSelectorView: View {
         .pickerStyle(.menu)
     }
 }
+
+#if DEBUG
+struct LanguageSelectorView_Previews: PreviewProvider {
+    @State static var lang = "English"
+    static var previews: some View {
+        LanguageSelectorView(language: $lang)
+            .padding()
+            .previewLayout(.sizeThatFits)
+    }
+}
+#endif
 #endif

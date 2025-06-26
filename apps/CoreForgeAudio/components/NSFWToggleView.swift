@@ -13,4 +13,14 @@ struct NSFWToggleView: View {
         .padding(8)
     }
 }
+
+#if DEBUG
+struct NSFWToggleView_Previews: PreviewProvider {
+    static var previews: some View {
+        NSFWToggleView()
+            .padding()
+            .previewLayout(.sizeThatFits)
+    }
+}
+#endif
 #endif

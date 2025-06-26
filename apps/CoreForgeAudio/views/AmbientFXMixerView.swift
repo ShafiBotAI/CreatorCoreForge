@@ -15,4 +15,15 @@ struct AmbientFXMixerView: View {
         .cornerRadius(AppTheme.cornerRadius)
     }
 }
+
+#if DEBUG
+struct AmbientFXMixerView_Previews: PreviewProvider {
+    @State static var level = 0.5
+    static var previews: some View {
+        AmbientFXMixerView(level: $level)
+            .padding()
+            .previewLayout(.sizeThatFits)
+    }
+}
+#endif
 #endif
