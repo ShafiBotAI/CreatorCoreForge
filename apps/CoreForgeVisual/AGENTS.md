@@ -493,5 +493,111 @@ Key points from `README.md`:
 
 ### 👤 Profile & Subscription
 
+
+- [ ] `VisualProfileCard.swift` – Tier badge, stats, avatar.
+- [ ] `SubscriptionPlanSelector.swift` – Manage subscription tier.
+
+# agents.md — CoreForge App Production Readiness Checklist (All Apps)
+
+## 🎯 Objective:
+Ensure that CoreForge Audio, Visual, and Build are 100% functionally complete, stable, and production-ready for App Store, Play Store, and desktop/web deployment.
+
+---
+
+## ✅ Functional Completion
+
+- [ ] All Codex agents, core views, and managers are implemented and verified
+- [ ] All planned app features are present and testable
+- [ ] Onboarding flow fully functional and launches only once
+- [ ] All views support dynamic resizing and device rotation (where applicable)
+- [ ] All modules contain full `#Preview` support for SwiftUI
+
+---
+
+## ✅ Navigation & Routing
+
+- [ ] App launches into the correct root view
+- [ ] Tab navigation works across all platforms and all tabs retain state
+- [ ] Deep linking / modal sheets / view stacks work and return correctly
+
+---
+
+## ✅ UI Consistency & Branding
+
+- [ ] CoreForge theme (`primaryGradient`, `ultraThinMaterial`, `cornerRadius`) applied globally
+- [ ] All app icons in `.appiconset` are exported and installed
+- [ ] Light/Dark mode support implemented using semantic colors
+- [ ] Launch screen matches brand gradient and app name
+- [ ] Splash logo displays properly on all platforms
+
+---
+
+## ✅ Feature Stability
+
+- [ ] Playback system works with custom voices and ambient FX (CoreForge Audio)
+- [ ] Scene generation renders and exports correctly (CoreForge Visual)
+- [ ] Apps generate and export .ipa/.apk/.exe/.dmg correctly (CoreForge Build)
+- [ ] NSFW gating logic functions securely and consistently across all platforms
+- [ ] Subscription features are unlocked, gated, and revertable correctly
+- [ ] Import, export, build, and generate features persist across sessions
+
+---
+
+## ✅ Monetization & Subscriptions
+
+- [ ] All IAP options work (NSFW, export credits, Creator/Enterprise plans)
+- [ ] Subscription upgrades properly unlock features
+- [ ] Promo codes (e.g., `CREATORACCESS`, `VISIONBETA`) unlock and persist
+- [ ] Credit consumption reflects usage in UI (audio, video, app builds)
+- [ ] Price tiers and usage logic reflected in `SubscriptionManager.swift`
+
+---
+
+## ✅ User Data & Preferences
+
+- [ ] User preferences stored with `@AppStorage` and load correctly
+- [ ] Offline content support in each app (audio, video, app saves)
+- [ ] Download manager UI present where needed
+- [ ] NSFW preference gated behind user age/plan
+
+---
+
+## ✅ Export & Distribution
+
+- [ ] All export options (audio, video, builds) functional with local save
+- [ ] Auto-upload toggles functional and route to correct platforms (Visual only)
+- [ ] Local output directory support or Share Sheet UI on mobile
+
+---
+
+## ✅ Developer & GitHub Integration
+
+- [ ] Each app folder includes:
+    - `agents.md`
+    - `README.md`
+    - `baseline_requirements.md`
+    - `FEATURES-CODEX-COMPLETE.md`
+- [ ] All GitHub secrets and PATs tested and working for CI/CD
+- [ ] `.ipa`, `.apk`, `.dmg`, `.exe`, and `web` versions confirmed working and uploaded
+
+---
+
+## ✅ QA Testing + Launch Readiness
+
+- [ ] All modules unit tested
+- [ ] All flows tested manually on iOS and Android simulators
+- [ ] Zipped bundles for each app uploaded to Google Drive
+- [ ] App Store / TestFlight metadata (`AppIcon`, screenshots, description) ready
+- [ ] Apps pass Xcode and Android Studio validation
+
+---
+
+## ✅ Final Go-Live
+
+- [ ] GitHub repo tagged as production ready
+- [ ] App uploaded to App Store Connect + Play Store internal testing
+- [ ] Announce launch with press kit + onboarding video
+=======
 - [x] `VisualProfileCard.swift` – Tier badge, stats, avatar.
 - [x] `SubscriptionPlanSelector.swift` – Manage subscription tier.
+
