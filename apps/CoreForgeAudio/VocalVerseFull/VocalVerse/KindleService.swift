@@ -7,18 +7,43 @@ struct KindleBook: Identifiable {
     let downloadURL: URL?
 }
 
-/// Simple service that lists sample Kindle books and creates demo `Book` models
-/// when downloaded. In a real app this would connect to the Kindle API.
+/// Service that fetches public domain books from Project Gutenberg via the
+/// Gutendex API and converts them into `Book` models.
 final class KindleService {
-    func fetchAvailableBooks() -> [KindleBook] {
-        return [
-            KindleBook(title: "Alice in Wonderland", author: "Lewis Carroll",
-                       downloadURL: URL(string: "https://www.gutenberg.org/cache/epub/11/pg11.txt")),
-            KindleBook(title: "Pride and Prejudice", author: "Jane Austen",
-                       downloadURL: URL(string: "https://www.gutenberg.org/files/1342/1342-0.txt"))
-        ]
+    private struct GutenbergResponse: Decodable {
+        struct Result: Decodable {
+            struct Author: Decodable { let name: String }
+            let title: String
+            let authors: [Author]
+            let formats: [String: String]
+        }
+        let results: [Result]
     }
 
+    /// Fetch a list of available public domain books.
+    func fetchAvailableBooks() -> [KindleBook] {
+        guard let url = URL(string: "https://gutendex.com/books/?mime_type=text/plain&languages=en&copyright=false") else {
+            return []
+        }
+        var books: [KindleBook] = []
+        let semaphore = DispatchSemaphore(value: 0)
+        URLSession.shared.dataTask(with: url) { data, _, _ in
+            defer { semaphore.signal() }
+            guard let data = data,
+                  let response = try? JSONDecoder().decode(GutenbergResponse.self, from: data) else { return }
+            books = response.results.prefix(10).compactMap { result in
+                let author = result.authors.first?.name ?? "Unknown"
+                let urlString = result.formats["text/plain; charset=utf-8"] ?? result.formats["text/plain"]
+                return KindleBook(title: result.title,
+                                  author: author,
+                                  downloadURL: urlString.flatMap(URL.init))
+            }
+        }.resume()
+        _ = semaphore.wait(timeout: .now() + 10)
+        return books
+    }
+
+    /// Download the selected book text and split it into simple chapters.
     func download(book: KindleBook) -> Book {
         if let url = book.downloadURL,
            let text = try? String(contentsOf: url) {
@@ -28,10 +53,8 @@ final class KindleService {
             }
             return Book(title: book.title, author: book.author, chapters: chapters)
         }
-        let chapters = [
-            Chapter(title: "Chapter 1", text: "Sample text 1"),
-            Chapter(title: "Chapter 2", text: "Sample text 2")
-        ]
-        return Book(title: book.title, author: book.author, chapters: chapters)
+        return Book(title: book.title,
+                    author: book.author,
+                    chapters: [Chapter(title: "Chapter 1", text: "Unable to download")])
     }
 }
