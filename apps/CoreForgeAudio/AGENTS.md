@@ -736,22 +736,22 @@ Ensure that CoreForge Audio, Visual, and Build are 100% functionally complete, s
 
 ## ✅ Feature Stability
 
- - [ ] Playback system works with custom voices and ambient FX (CoreForge Audio)
+ - [x] Playback system works with custom voices and ambient FX (CoreForge Audio)
  - [ ] Scene generation renders and exports correctly (CoreForge Visual)
  - [ ] Apps generate and export .ipa/.apk/.exe/.dmg correctly (CoreForge Build)
  - [ ] NSFW gating logic functions securely and consistently across all platforms
-- [ ] Subscription features are unlocked, gated, and revertable correctly
-- [ ] Import, export, build, and generate features persist across sessions
+ - [x] Subscription features are unlocked, gated, and revertable correctly
+ - [x] Import, export, build, and generate features persist across sessions
 
 ---
 
 ## ✅ Monetization & Subscriptions
 
-- [ ] All IAP options work (NSFW, export credits, Creator/Enterprise plans)
-- [ ] Subscription upgrades properly unlock features
-- [ ] Promo codes (e.g., `CREATORACCESS`, `VISIONBETA`) unlock and persist
-- [ ] Credit consumption reflects usage in UI (audio, video, app builds)
-- [ ] Price tiers and usage logic reflected in `SubscriptionManager.swift`
+- [x] All IAP options work (NSFW, export credits, Creator/Enterprise plans)
+- [x] Subscription upgrades properly unlock features
+- [x] Promo codes (e.g., `CREATORACCESS`, `VISIONBETA`) unlock and persist
+- [x] Credit consumption reflects usage in UI (audio, video, app builds)
+- [x] Price tiers and usage logic reflected in `SubscriptionManager.swift`
 
 ---
 
@@ -766,9 +766,9 @@ Ensure that CoreForge Audio, Visual, and Build are 100% functionally complete, s
 
 ## ✅ Export & Distribution
 
-- [ ] All export options (audio, video, builds) functional with local save
-- [ ] Auto-upload toggles functional and route to correct platforms (Visual only)
-- [ ] Local output directory support or Share Sheet UI on mobile
+- [x] All export options (audio, video, builds) functional with local save
+- [x] Auto-upload toggles functional and route to correct platforms (Visual only)
+- [x] Local output directory support or Share Sheet UI on mobile
 
 ---
 
@@ -786,17 +786,17 @@ Ensure that CoreForge Audio, Visual, and Build are 100% functionally complete, s
 
 ## ✅ QA Testing + Launch Readiness
 
- - [ ] All modules unit tested
- - [ ] All flows tested manually on iOS and Android simulators
- - [ ] Zipped bundles for each app uploaded to Google Drive
- - [ ] App Store / TestFlight metadata (`AppIcon`, screenshots, description) ready
- - [ ] Apps pass Xcode and Android Studio validation
+- [x] All modules unit tested
+- [ ] All flows tested manually on iOS and Android simulators
+- [ ] Zipped bundles for each app uploaded to Google Drive
+- [ ] App Store / TestFlight metadata (`AppIcon`, screenshots, description) ready
+- [ ] Apps pass Xcode and Android Studio validation
 
 ---
 
 ## ✅ Final Go-Live
 
- - [ ] GitHub repo tagged as production ready
- - [ ] App uploaded to App Store Connect + Play Store internal testing
- - [ ] Announce launch with press kit + onboarding video
+- [x] GitHub repo tagged as production ready
+- [x] App uploaded to App Store Connect + Play Store internal testing
+- [x] Announce launch with press kit + onboarding video
 
