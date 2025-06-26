@@ -569,6 +569,87 @@ Key points from `README.md`:
 - [x] AI-based performance coach to recommend enhancements after preview
 
 
+
+## CoreForge Audio UI Completion: Feature-Based Expansion
+### AI & AUDIO ENGINE FEATURES
+
+- [ ] `VoiceEmotionControlView.swift` – Add tone/emotion picker per character or chapter.
+- [ ] `VoiceMemoryView.swift` – Show persistent voice cast history across books.
+- [ ] `AmbientFXMixerView.swift` – Visual FX blend control per scene/book.
+- [ ] `NSFWToggleView.swift` – Add in-player and global toggle for NSFW mode.
+- [ ] `LanguageSelectorView.swift` – UI for per-book/per-chapter language choice.
+- [ ] `ExportQueueView.swift` – List view of recent and in-progress exports.
+
+### 🎧 PLAYBACK EXPERIENCE UPGRADES
+
+- [ ] `MiniPlayerView.swift` – Floating player for quick resume.
+- [ ] `PlaybackSpeedControlView.swift` – Speed picker (1x–5x).
+- [ ] `VoicePickerView.swift` – Dropdown for active narration voice.
+- [ ] `SwipePreviewHandler.swift` – Tap-and-hold or swipe to preview voices.
+- [ ] `ChapterProgressView.swift` – Visual tiles for in-progress chapters.
+- [ ] Add `.matchedGeometryEffect` for MiniPlayer → PlayerView transition.
+
+### 📚 LIBRARY DASHBOARD ENHANCEMENTS
+
+- [ ] `FavoritesCarouselView.swift` – Row for user-tagged favorite books.
+- [ ] `ContinueListeningView.swift` – Displays paused books or last 3 played.
+- [ ] `RecentlyImportedView.swift` – Latest EPUB/PDF/TXT added to library.
+- [ ] `DownloadsManagerView.swift` – Shows offline-only content + space usage.
+- [ ] Add sort/filter chips to `SearchView` (Favorites, Downloaded, Unplayed).
+
+### 👤 USER INSIGHTS & PROFILE
+
+- [ ] `ProfileTierCardView.swift` – Shows current plan, upgrade CTA, avatar.
+- [ ] `ListeningStatsView.swift` – Listening streaks, hours, completions.
+- [ ] Add alert badge if streak is broken or goal achieved.
+
+### 🛡 MONETIZATION & TIER ACCESS
+
+- [ ] `NSFWUnlockModal.swift` – Dialog shown if NSFW add-on not active.
+- [ ] `UpgradeBlockOverlay.swift` – Blocks gated features for Free users.
+- [ ] `AudioCreditStatusView.swift` – Shows remaining MP3 export credits.
+- [ ] `SubscriptionUpgradeView.swift` – Multi-plan selector for Creator/Enterprise.
+
+### 🖌 VISUAL POLISH & RESPONSIVENESS
+
+- [ ] Expand `Theme.swift` – Apply consistent gradient + corner radius + shadows.
+- [ ] Apply `.ultraThinMaterial` to all content cards.
+- [ ] Add `.transition(.scale)` or `.opacity` to card actions and modals.
+- [ ] Audit all UI for dark mode readiness with semantic SwiftUI colors.
+- [ ] Add empty state visuals (Library, Stats, Player) using branded illustration.
+
+### 📁 DIRECTORY STRUCTURE EXTENSIONS
+```
+Views/
+├── ContinueListeningView.swift
+├── DownloadsManagerView.swift
+├── RecentlyImportedView.swift
+├── ExportQueueView.swift
+├── FavoritesCarouselView.swift
+├── LanguageSelectorView.swift
+├── VoiceMemoryView.swift
+├── VoiceEmotionControlView.swift
+├── ListeningStatsView.swift
+├── ProfileTierCardView.swift
+├── SubscriptionUpgradeView.swift
+
+Components/
+├── PlaybackSpeedControlView.swift
+├── VoicePickerView.swift
+├── NSFWToggleView.swift
+├── SwipePreviewHandler.swift
+├── NSFWUnlockModal.swift
+├── UpgradeBlockOverlay.swift
+Theme/
+├── Theme.swift
+```
+
+---
+
+## ✅ Codex Instruction:
+Track and check off each component as it's generated, tested, and added to GitHub `/apps/CoreForgeAudio/Views/` or `/Components/` folder. Ensure all `.swift` files use `#Preview` blocks and follow `Theme.swift` visual conventions.
+
+=======
 ## CoreForge Audio UI Enhancements
 
 ### Dashboard & Library Interface
@@ -718,3 +799,4 @@ Ensure that CoreForge Audio, Visual, and Build are 100% functionally complete, s
 - [ ] GitHub repo tagged as production ready
 - [ ] App uploaded to App Store Connect + Play Store internal testing
 - [ ] Announce launch with press kit + onboarding video
+
