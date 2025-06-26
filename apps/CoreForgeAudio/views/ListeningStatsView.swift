@@ -7,6 +7,7 @@ struct ListeningStatsView: View {
     var dailyStreak: Int
     var booksFinished: Int
     var chaptersPlayed: Int
+    var streakGoal: Int = 7
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
@@ -19,6 +20,13 @@ struct ListeningStatsView: View {
                 Text("Daily streak")
                 Spacer()
                 Text("\(dailyStreak) days")
+                if dailyStreak < streakGoal {
+                    Image(systemName: "exclamationmark.triangle.fill")
+                        .foregroundColor(.orange)
+                } else if dailyStreak >= streakGoal {
+                    Image(systemName: "checkmark.seal.fill")
+                        .foregroundColor(.green)
+                }
             }
             HStack {
                 Text("Books finished")
@@ -36,5 +44,9 @@ struct ListeningStatsView: View {
         .cornerRadius(AppTheme.cornerRadius)
         .shadow(radius: AppTheme.shadowRadius)
     }
+}
+
+#Preview {
+    ListeningStatsView(hoursThisWeek: 5, dailyStreak: 3, booksFinished: 2, chaptersPlayed: 10)
 }
 #endif
