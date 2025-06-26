@@ -27,8 +27,9 @@ struct VoicePreviewPopup: View {
             }
         }
         .padding()
-        .background(.ultraThinMaterial)
-        .cornerRadius(12)
+        .background(AppTheme.cardMaterial)
+        .cornerRadius(AppTheme.cornerRadius)
+        .shadow(radius: AppTheme.shadowRadius)
     }
 
     private func playPreview() {

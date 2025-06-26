@@ -18,6 +18,7 @@ struct LibraryDashboardView: View {
             ScrollView {
                 VStack(spacing: 20) {
                     FeaturedCarouselView(books: library.books)
+                        .environmentObject(library)
                     SearchView(query: $query, sort: $sort, filters: $filters)
                     ProfileTierCardView(userName: "User", tier: usage.subscriptionTier) {
                         // Navigate to subscription management (placeholder)
@@ -28,6 +29,15 @@ struct LibraryDashboardView: View {
                         booksFinished: library.completedBooks.count,
                         chaptersPlayed: library.books.flatMap { $0.chapters }.count
                     )
+                    if !library.favoriteBooks.isEmpty {
+                        VStack(alignment: .leading) {
+                            Text("Favorites")
+                                .font(.headline)
+                                .padding(.horizontal)
+                            FeaturedCarouselView(books: library.favoriteBooks)
+                                .environmentObject(library)
+                        }
+                    }
                     ChapterProgressView(showPlayer: $showPlayer)
                         .environmentObject(library)
                 }
@@ -45,6 +55,7 @@ struct LibraryDashboardView: View {
                 }
             }
         }
+        .animation(.spring(), value: showPlayer)
     }
 }
 #endif

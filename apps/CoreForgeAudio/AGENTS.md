@@ -590,15 +590,15 @@ Key points from `README.md`:
 - [x] Add `matchedGeometryEffect` to MiniPlayer → PlayerView transition.
 
 ### Library Enhancements
-- [ ] Add download indicators to all book cards.
-- [ ] Add heart/favorite toggle to book items.
-- [ ] Add "Favorites" section to `LibraryDashboardView`.
+- [x] Add download indicators to all book cards.
+- [x] Add heart/favorite toggle to book items.
+- [x] Add "Favorites" section to `LibraryDashboardView`.
 
 ### Visual & Theming
-- [ ] Expand `Theme.swift` – Add gradient, blur, shadows, and standardized styling.
-- [ ] Apply `ultraThinMaterial` to all cards and overlays.
-- [ ] Implement light/dark mode compatibility using semantic SwiftUI colors.
-- [ ] Animate transitions between key views using `.transition` and `.animation`.
+- [x] Expand `Theme.swift` – Add gradient, blur, shadows, and standardized styling.
+- [x] Apply `ultraThinMaterial` to all cards and overlays.
+- [x] Implement light/dark mode compatibility using semantic SwiftUI colors.
+- [x] Animate transitions between key views using `.transition` and `.animation`.
 
 ### Output File Structure
 ```

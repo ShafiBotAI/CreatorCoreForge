@@ -28,6 +28,10 @@ struct ChapterProgressView: View {
                 }
             }
         }
+        .padding()
+        .background(AppTheme.cardMaterial)
+        .cornerRadius(AppTheme.cornerRadius)
+        .shadow(radius: AppTheme.shadowRadius)
     }
 }
 #endif
