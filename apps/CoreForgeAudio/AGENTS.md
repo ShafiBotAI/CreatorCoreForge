@@ -739,7 +739,7 @@ Ensure that CoreForge Audio, Visual, and Build are 100% functionally complete, s
  - [x] Playback system works with custom voices and ambient FX (CoreForge Audio)
  - [ ] Scene generation renders and exports correctly (CoreForge Visual)
  - [ ] Apps generate and export .ipa/.apk/.exe/.dmg correctly (CoreForge Build)
- - [ ] NSFW gating logic functions securely and consistently across all platforms
+ - [x] NSFW gating logic functions securely and consistently across all platforms
  - [x] Subscription features are unlocked, gated, and revertable correctly
  - [x] Import, export, build, and generate features persist across sessions
 
@@ -757,10 +757,10 @@ Ensure that CoreForge Audio, Visual, and Build are 100% functionally complete, s
 
 ## ✅ User Data & Preferences
 
-- [ ] User preferences stored with `@AppStorage` and load correctly
-- [ ] Offline content support in each app (audio, video, app saves)
-- [ ] Download manager UI present where needed
-- [ ] NSFW preference gated behind user age/plan
+ - [x] User preferences stored with `@AppStorage` and load correctly
+ - [x] Offline content support in each app (audio, video, app saves)
+ - [x] Download manager UI present where needed
+ - [x] NSFW preference gated behind user age/plan
 
 ---
 

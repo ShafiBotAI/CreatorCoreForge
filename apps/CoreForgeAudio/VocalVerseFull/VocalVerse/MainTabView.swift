@@ -9,6 +9,8 @@ struct MainTabView: View {
     @State private var selection: Tab = .home
     @EnvironmentObject var library: LibraryModel
     @EnvironmentObject var usage: UsageStats
+    @EnvironmentObject var prefs: UserPreferences
+    @EnvironmentObject var offline: OfflineContentManager
 
     var body: some View {
         VStack(spacing: 0) {
@@ -34,14 +36,18 @@ struct MainTabView: View {
                 HomeDashboardView()
                     .environmentObject(library)
                     .environmentObject(usage)
+                    .environmentObject(prefs)
+                    .environmentObject(offline)
                     .tag(Tab.home)
                 LibraryView()
                     .environmentObject(library)
+                    .environmentObject(offline)
                     .tag(Tab.library)
                 AIExploreView()
                     .tag(Tab.ai)
                 SettingsProfileView()
                     .environmentObject(usage)
+                    .environmentObject(prefs)
                     .tag(Tab.settings)
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
