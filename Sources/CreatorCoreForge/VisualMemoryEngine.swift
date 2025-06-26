@@ -11,8 +11,8 @@ public final class VisualMemoryEngine {
         if let data = store.array(forKey: key) as? [String] {
             self.timeline = data.compactMap { entry in
                 let parts = entry.split(separator: "|", maxSplits: 1)
-                guard parts.count == 2 else { return nil }
-                return (String(parts[0]), String(parts[1]))
+                let second = parts.count == 2 ? String(parts[1]) : ""
+                return (String(parts[0]), second)
             }
         } else {
             self.timeline = []

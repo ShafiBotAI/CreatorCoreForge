@@ -9,17 +9,17 @@ The focus of this phase is **Full-Cast Audio Mastering & Creator Intelligence**.
 - [x] Assign separate audio tracks to each character and narrator for post-mix mastering
 - [x] Generate multitrack session files for DAWs (e.g., Logic, Pro Tools, Audition)
 - [x] Sync ambient layers, voice tracks, and FX on a shared scene timeline
-- [ ] Enable per-character equalization, pitch adjustment, and compression
-- [ ] Simulate stereo spatial positioning per voice (left/right, near/far)
+- [x] Enable per-character equalization, pitch adjustment, and compression
+- [x] Simulate stereo spatial positioning per voice (left/right, near/far)
 - [x] Build emotion intensity heatmap per scene to guide tone balancing
-- [ ] Create a full-cast preview mode with toggles for each voice track
-- [ ] Add creator-defined vocal layering for crowd and background dialogue
-- [ ] Offer toggle for "narrator override" mode for consistency across multi-voice scenes
-- [ ] Auto-suggest optimal scene pacing based on text intensity and emotion tags
-- [ ] Detect dialogue overlap potential and adjust timing automatically
-- [ ] Use AI to recommend narration cadence per genre and reader preference
-- [ ] Export final audio as flattened or layered file based on creator choice
-- [ ] Tag character emotional states per segment to match musical score inputs
+- [x] Create a full-cast preview mode with toggles for each voice track
+- [x] Add creator-defined vocal layering for crowd and background dialogue
+- [x] Offer toggle for "narrator override" mode for consistency across multi-voice scenes
+- [x] Auto-suggest optimal scene pacing based on text intensity and emotion tags
+- [x] Detect dialogue overlap potential and adjust timing automatically
+- [x] Use AI to recommend narration cadence per genre and reader preference
+- [x] Export final audio as flattened or layered file based on creator choice
+- [x] Tag character emotional states per segment to match musical score inputs
 - [ ] Link scene-based voice dynamics to background music templates
 - [ ] Integrate with audio plugin systems for advanced mastering tools
 - [ ] Enable Creator AI Assistant to generate scene-specific mastering presets

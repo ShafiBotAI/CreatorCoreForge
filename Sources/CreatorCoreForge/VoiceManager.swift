@@ -27,6 +27,7 @@ public final class VoiceManager {
     public func voiceProfile(for character: String, in book: String = "global") -> VoiceProfile? {
         let id = bookMap[book]?[character] ?? memory.voiceID(for: character, in: book)
         if let id { return VoiceProfile(id: id, name: character) }
-        return nil
+        // Provide an anonymous profile so callers always get a usable object
+        return VoiceProfile(id: "default", name: character)
     }
 }

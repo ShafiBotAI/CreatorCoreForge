@@ -16,3 +16,17 @@ public func generateSubtitles(from script: String) -> [Subtitle] {
         Subtitle(time: index, text: String(line))
     }
 }
+
+/// Generate paired subtitles in two languages for overlay display.
+public func generateDualLanguageSubtitles(base: String, translated: String) -> [(Subtitle, Subtitle)] {
+    let first = generateSubtitles(from: base)
+    let second = generateSubtitles(from: translated)
+    let count = max(first.count, second.count)
+    var result: [(Subtitle, Subtitle)] = []
+    for i in 0..<count {
+        let a = i < first.count ? first[i] : Subtitle(time: i, text: "")
+        let b = i < second.count ? second[i] : Subtitle(time: i, text: "")
+        result.append((a, b))
+    }
+    return result
+}

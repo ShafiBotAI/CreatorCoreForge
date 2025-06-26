@@ -260,18 +260,17 @@ This document details all AI agent capabilities, engine modules, and next-genera
  - [x] Hide NSFW rendering options in shared/public projects
  - [x] Tag NSFW export files with proper disclaimers and auto-locks
  - [x] Provide customizable NSFW cover and thumbnail censor options
-- [ ] Track NSFW render usage and tie to creator subscription tier
-- [ ] Integrate NSFW content filter toggle for viewers and collaborators
+- [x] Track NSFW render usage and tie to creator subscription tier
+- [x] Integrate NSFW content filter toggle for viewers and collaborators
 
-### Phase 8 – Multilingual Support, Cultural Adaptation & Cross-Book Scene Logic
-- [ ] Translate full scripts while preserving pacing, emotion, and visual tags
-- [ ] Detect primary and secondary languages from book text or user input
-- [ ] Sync translated dialogue with lip-sync adjustments per language
-- [ ] Swap visual context (e.g., setting, symbols) to match cultural norms
-- [ ] Match voiceover tone with cultural delivery style (e.g., reserved vs expressive)
-- [ ] Enable dual-language subtitle overlay with toggles
-- [ ] Provide audio language toggle mid-playback (bilingual view mode)
-- [ ] Auto-swap text signage or props in scene to match target language
+- [x] Translate full scripts while preserving pacing, emotion, and visual tags
+- [x] Detect primary and secondary languages from book text or user input
+- [x] Sync translated dialogue with lip-sync adjustments per language
+- [x] Swap visual context (e.g., setting, symbols) to match cultural norms
+- [x] Match voiceover tone with cultural delivery style (e.g., reserved vs expressive)
+- [x] Enable dual-language subtitle overlay with toggles
+- [x] Provide audio language toggle mid-playback (bilingual view mode)
+- [x] Auto-swap text signage or props in scene to match target language
 - [ ] Save cultural localization settings for franchise or series consistency
 - [ ] Detect idioms and replace with native-equivalent visual cues
 - [ ] Allow creator review of language-adapted visuals before rendering

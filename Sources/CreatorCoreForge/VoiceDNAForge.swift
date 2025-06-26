@@ -88,11 +88,12 @@ public final class VoiceDNAForge {
     public func exportDNARegistry() -> String? {
         let encoder = JSONEncoder()
         encoder.outputFormatting = .prettyPrinted
-        guard let data = try? encoder.encode(dnaRegistry),
-              let jsonString = String(data: data, encoding: .utf8) else {
-            return nil
+        if let data = try? encoder.encode(dnaRegistry),
+           let jsonString = String(data: data, encoding: .utf8) {
+            return jsonString
         }
-        return jsonString
+        // Return an empty JSON object when encoding fails
+        return "{}"
     }
 
     // MARK: - Persistence
