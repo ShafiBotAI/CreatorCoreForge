@@ -14,7 +14,7 @@ struct VoiceCastView: View {
             Form {
                 ForEach(characters, id: \.self) { name in
                     Picker(name, selection: Binding(
-                        get: { selections[name] ?? CharacterVoiceMemory.shared.voiceForCharacter(name)?.id ?? voices.first?.id ?? "" },
+                        get: { selections[name] ?? CharacterVoiceMemory.shared.voiceForCharacter(name).id ?? voices.first?.id ?? "" },
                         set: { selections[name] = $0 }
                     )) {
                         ForEach(voices, id: \.id) { voice in
