@@ -331,7 +331,7 @@ Ensure that CoreForge Audio, Visual, and Build are 100% functionally complete, s
 
 - [ ] All Codex agents, core views, and managers are implemented and verified
 - [ ] All planned app features are present and testable
-- [ ] Onboarding flow fully functional and launches only once
+- [x] Onboarding flow fully functional and launches only once
 - [ ] All views support dynamic resizing and device rotation (where applicable)
 - [ ] All modules contain full `#Preview` support for SwiftUI
 
@@ -339,15 +339,15 @@ Ensure that CoreForge Audio, Visual, and Build are 100% functionally complete, s
 
 ## ✅ Navigation & Routing
 
-- [ ] App launches into the correct root view
-- [ ] Tab navigation works across all platforms and all tabs retain state
-- [ ] Deep linking / modal sheets / view stacks work and return correctly
+- [x] App launches into the correct root view
+- [x] Tab navigation works across all platforms and all tabs retain state
+- [x] Deep linking / modal sheets / view stacks work and return correctly
 
 ---
 
 ## ✅ UI Consistency & Branding
 
-- [ ] CoreForge theme (`primaryGradient`, `ultraThinMaterial`, `cornerRadius`) applied globally
+- [x] CoreForge theme (`primaryGradient`, `ultraThinMaterial`, `cornerRadius`) applied globally
 - [ ] All app icons in `.appiconset` are exported and installed
 - [ ] Light/Dark mode support implemented using semantic colors
 - [ ] Launch screen matches brand gradient and app name
