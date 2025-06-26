@@ -1,11 +1,12 @@
 #if canImport(SwiftUI)
 import SwiftUI
+import CreatorCoreForge
 
 /// Top tabbed interface matching CoreForge branding.
 struct MainTabView: View {
-    enum Tab: Int, CaseIterable { case dashboard, library, connect, importBook, player, settings }
+    enum Tab: Int, CaseIterable { case home, library, ai, settings }
 
-    @State private var selection: Tab = .dashboard
+    @State private var selection: Tab = .home
     @EnvironmentObject var library: LibraryModel
     @EnvironmentObject var usage: UsageStats
 
@@ -27,30 +28,19 @@ struct MainTabView: View {
                 }
             }
             .padding(.vertical, 8)
-            .background(
-                LinearGradient(colors: [.blue, .purple], startPoint: .leading, endPoint: .trailing)
-            )
+            .background(AppTheme.primaryGradient)
 
             TabView(selection: $selection) {
-                DashboardView()
+                HomeDashboardView()
+                    .environmentObject(library)
                     .environmentObject(usage)
-                    .tag(Tab.dashboard)
+                    .tag(Tab.home)
                 LibraryView()
                     .environmentObject(library)
                     .tag(Tab.library)
-                ConnectView()
-                    .environmentObject(library)
-                    .environmentObject(usage)
-                    .tag(Tab.connect)
-                ImportView()
-                    .environmentObject(library)
-                    .environmentObject(usage)
-                    .tag(Tab.importBook)
-                PlayerView()
-                    .environmentObject(library)
-                    .environmentObject(usage)
-                    .tag(Tab.player)
-                SettingsView()
+                AIExploreView()
+                    .tag(Tab.ai)
+                SettingsProfileView()
                     .environmentObject(usage)
                     .tag(Tab.settings)
             }
@@ -60,22 +50,18 @@ struct MainTabView: View {
 
     private func icon(for tab: Tab) -> String {
         switch tab {
-        case .dashboard: return "chart.bar.fill"
+        case .home: return "house.fill"
         case .library: return "books.vertical.fill"
-        case .connect: return "link"
-        case .importBook: return "square.and.arrow.down"
-        case .player: return "play.circle.fill"
+        case .ai: return "sparkles"
         case .settings: return "gearshape.fill"
         }
     }
 
     private func title(for tab: Tab) -> String {
         switch tab {
-        case .dashboard: return "Dashboard"
+        case .home: return "Home"
         case .library: return "Library"
-        case .connect: return "Connect"
-        case .importBook: return "Import"
-        case .player: return "Player"
+        case .ai: return "AI"
         case .settings: return "Settings"
         }
     }
