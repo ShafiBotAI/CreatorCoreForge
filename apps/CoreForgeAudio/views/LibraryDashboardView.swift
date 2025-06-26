@@ -17,9 +17,12 @@ struct LibraryDashboardView: View {
     var body: some View {
         ZStack(alignment: .bottom) {
             ScrollView {
-                VStack(spacing: 20) {
-                    FeaturedCarouselView(books: library.books)
-                        .environmentObject(library)
+                if library.books.isEmpty {
+                    EmptyStateView(systemImage: "books.vertical", message: "Your library is empty")
+                } else {
+                    VStack(spacing: 20) {
+                        FeaturedCarouselView(books: library.books)
+                            .environmentObject(library)
                     SearchView(query: $query, sort: $sort, filters: $filters)
                     ProfileTierCardView(userName: "User", tier: usage.subscriptionTier) {
                         showUpgrade = true
@@ -40,8 +43,9 @@ struct LibraryDashboardView: View {
                     }
                     DownloadsManagerView()
                         .environmentObject(library)
-                    ChapterProgressView(showPlayer: $showPlayer)
-                        .environmentObject(library)
+                        ChapterProgressView(showPlayer: $showPlayer)
+                            .environmentObject(library)
+                    }
                 }
             }
             if let book = library.currentBook, let chapter = library.currentChapter {
@@ -49,15 +53,18 @@ struct LibraryDashboardView: View {
                     PlayerView(namespace: ns)
                         .environmentObject(library)
                         .environmentObject(usage)
-                        .transition(.move(edge: .bottom))
-                        .background(Color(.systemBackground))
+                        .transition(.scale)
+                        .background(AppTheme.cardMaterial)
+                        .cornerRadius(AppTheme.cornerRadius)
+                        .shadow(radius: AppTheme.shadowRadius)
                 } else {
                     MiniPlayerView(book: book, chapter: chapter, namespace: ns, isExpanded: $showPlayer)
                         .padding()
+                        .transition(.opacity)
                 }
             }
         }
-        .animation(.spring(), value: showPlayer)
+        .animation(.easeInOut, value: showPlayer)
         .sheet(isPresented: $showUpgrade) {
             SubscriptionUpgradeView { plan in
                 usage.subscriptionTier = plan.rawValue

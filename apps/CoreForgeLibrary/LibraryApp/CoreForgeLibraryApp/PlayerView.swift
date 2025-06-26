@@ -10,19 +10,27 @@ struct PlayerView: View {
     @State private var speed: Double = 1.0
 
     var body: some View {
-        VStack(spacing: 20) {
-            Text(chapter.title)
-                .font(.title)
-            ScrollView {
-                Text(chapter.text)
-                    .padding()
+        Group {
+            if chapter.text.isEmpty {
+                EmptyStateView(systemImage: "play.circle", message: "Select a chapter to play")
+            } else {
+                VStack(spacing: 20) {
+                    Text(chapter.title)
+                        .font(.title)
+                    ScrollView {
+                        Text(chapter.text)
+                            .padding()
+                    }
+                    PlaybackSpeedControlView(speed: $speed)
+                    Button("Close") { isPresented = false }
+                        .buttonStyle(.bordered)
+                }
             }
-            PlaybackSpeedControlView(speed: $speed)
-            Button("Close") { isPresented = false }
-                .buttonStyle(.bordered)
         }
         .padding()
-        .background(AppTheme.primaryGradient.opacity(0.1))
+        .background(AppTheme.cardMaterial)
+        .cornerRadius(AppTheme.cornerRadius)
+        .shadow(radius: AppTheme.shadowRadius)
     }
 }
 #endif

@@ -10,33 +10,39 @@ struct ListeningStatsView: View {
     var streakGoal: Int = 7
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            HStack {
-                Text("Hours this week")
-                Spacer()
-                Text(String(format: "%.1f", hoursThisWeek))
-            }
-            HStack {
-                Text("Daily streak")
-                Spacer()
-                Text("\(dailyStreak) days")
-                if dailyStreak < streakGoal {
-                    Image(systemName: "exclamationmark.triangle.fill")
-                        .foregroundColor(.orange)
-                } else if dailyStreak >= streakGoal {
-                    Image(systemName: "checkmark.seal.fill")
-                        .foregroundColor(.green)
+        Group {
+            if hoursThisWeek == 0 && dailyStreak == 0 && booksFinished == 0 && chaptersPlayed == 0 {
+                EmptyStateView(systemImage: "chart.bar", message: "No listening data yet")
+            } else {
+                VStack(alignment: .leading, spacing: 8) {
+                    HStack {
+                        Text("Hours this week")
+                        Spacer()
+                        Text(String(format: "%.1f", hoursThisWeek))
+                    }
+                    HStack {
+                        Text("Daily streak")
+                        Spacer()
+                        Text("\(dailyStreak) days")
+                        if dailyStreak < streakGoal {
+                            Image(systemName: "exclamationmark.triangle.fill")
+                                .foregroundColor(.orange)
+                        } else if dailyStreak >= streakGoal {
+                            Image(systemName: "checkmark.seal.fill")
+                                .foregroundColor(.green)
+                        }
+                    }
+                    HStack {
+                        Text("Books finished")
+                        Spacer()
+                        Text("\(booksFinished)")
+                    }
+                    HStack {
+                        Text("Chapters played")
+                        Spacer()
+                        Text("\(chaptersPlayed)")
+                    }
                 }
-            }
-            HStack {
-                Text("Books finished")
-                Spacer()
-                Text("\(booksFinished)")
-            }
-            HStack {
-                Text("Chapters played")
-                Spacer()
-                Text("\(chaptersPlayed)")
             }
         }
         .padding()
