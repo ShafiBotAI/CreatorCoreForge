@@ -453,3 +453,45 @@ Key points from `README.md`:
 - [x] Provide Creator Control Panel for full preview/edit of visual/audio logic
 - [x] Enable collaborative comments and timeline feedback from teams
 - [x] Simulate full-cast rehearsal playback for pacing checks and scene balance
+
+## CoreForge Visual UI/UX Completion Checklist
+
+### 🧭 Project Dashboard
+
+- [ ] `VisualDashboardView.swift` – Main workspace and navigation.
+- [ ] `RecentProjectsCarousel.swift` – Recently opened/generated books or scenes.
+- [ ] `CreateProjectButton.swift` – Prominent "+" to start a new book or scene.
+
+### 🎬 AI Scene Generation
+
+- [ ] `SceneGeneratorView.swift` – UI to configure and preview AI-generated scenes.
+- [ ] `VisualStylePicker.swift` – User can pick between Anime / Live-Action / Fantasy / Noir.
+- [ ] `EmotionArcVisualizer.swift` – Graph UI for controlling scene emotional tone.
+
+### 🎙 Voice Assignment & Characters
+
+- [ ] `CharacterVoiceAssignmentView.swift` – Map characters to voices.
+- [ ] `VoiceToneController.swift` – Adjust tone, style, pacing by line or scene.
+- [ ] `MultiverseMemoryManager.swift` – Maintain voice/character memory across projects.
+
+### 📤 Rendering & Exports
+
+- [ ] `RenderPreviewView.swift` – Live playback of draft scenes.
+- [ ] `AutoUploadPanel.swift` – Upload options for TikTok, YouTube, etc.
+- [ ] `VideoExportCreditsView.swift` – Shows credit balance and plan status.
+
+### 🧑‍💼 Monetization & Access
+
+- [ ] `CreatorAdminPanel.swift` – White label controls, affiliate management.
+- [ ] `PromoCodeUnlockView.swift` – Unlock Creator Tier or Beta Access.
+- [ ] `InAppPurchaseCenter.swift` – Purchase credits, NSFW, extra exports.
+
+### 🔒 NSFW + Filters
+
+- [ ] `NSFWVisualToggle.swift` – Enable/disable adult content rendering.
+- [ ] `SceneFilterChips.swift` – Tag-based filters (genre, tone, NSFW, etc).
+
+### 👤 Profile & Subscription
+
+- [ ] `VisualProfileCard.swift` – Tier badge, stats, avatar.
+- [ ] `SubscriptionPlanSelector.swift` – Manage subscription tier.
