@@ -317,5 +317,5 @@ Key points from `README.md`:
 
 ### \ud83d\udcbe Account & Licensing
 - [x] `PlanTierOverviewView.swift` \u2013 Compare Free, Pro, and Enterprise features.
-- [ ] `UnlockWithPromoView.swift` \u2013 Enter and redeem access codes.
-- [ ] `WhiteLabelManagerView.swift` \u2013 Rebrand output and generate branded installers.
+- [x] `UnlockWithPromoView.swift` \u2013 Enter and redeem access codes.
+- [x] `WhiteLabelManagerView.swift` \u2013 Rebrand output and generate branded installers.
