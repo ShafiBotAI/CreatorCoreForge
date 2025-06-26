@@ -12,6 +12,7 @@ struct LibraryDashboardView: View {
     @State private var sort = "Title"
     @State private var filters: Set<String> = []
     @State private var showPlayer = false
+    @State private var showUpgrade = false
 
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -21,7 +22,7 @@ struct LibraryDashboardView: View {
                         .environmentObject(library)
                     SearchView(query: $query, sort: $sort, filters: $filters)
                     ProfileTierCardView(userName: "User", tier: usage.subscriptionTier) {
-                        // Navigate to subscription management (placeholder)
+                        showUpgrade = true
                     }
                     ContinueListeningView()
                         .environmentObject(library)
@@ -57,6 +58,12 @@ struct LibraryDashboardView: View {
             }
         }
         .animation(.spring(), value: showPlayer)
+        .sheet(isPresented: $showUpgrade) {
+            SubscriptionUpgradeView { plan in
+                usage.subscriptionTier = plan.rawValue
+                showUpgrade = false
+            }
+        }
     }
 }
 #endif

@@ -4,10 +4,15 @@ import CreatorCoreForge
 
 /// Buttons for importing from various sources.
 struct ImportShortcutsPanel: View {
+    @State private var showMessage = false
+    @State private var message = ""
     var body: some View {
         HStack {
             ForEach(Source.allCases, id: \..self) { source in
-                Button(action: { /* placeholder */ }) {
+                Button(action: {
+                    message = "Import from \(source.title) coming soon"
+                    showMessage = true
+                }) {
                     VStack {
                         Image(systemName: source.icon)
                         Text(source.title).font(.caption2)
@@ -20,6 +25,9 @@ struct ImportShortcutsPanel: View {
         .background(AppTheme.cardMaterial)
         .cornerRadius(AppTheme.cornerRadius)
         .shadow(radius: AppTheme.shadowRadius)
+        .alert(message, isPresented: $showMessage) {
+            Button("OK", role: .cancel) {}
+        }
     }
 
     enum Source: CaseIterable {
