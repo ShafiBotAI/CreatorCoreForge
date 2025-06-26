@@ -708,11 +708,11 @@ Ensure that CoreForge Audio, Visual, and Build are 100% functionally complete, s
 
 ## ✅ Functional Completion
 
-- [ ] All Codex agents, core views, and managers are implemented and verified
-- [ ] All planned app features are present and testable
-- [ ] Onboarding flow fully functional and launches only once
-- [ ] All views support dynamic resizing and device rotation (where applicable)
-- [ ] All modules contain full `#Preview` support for SwiftUI
+ - [ ] All Codex agents, core views, and managers are implemented and verified
+ - [ ] All planned app features are present and testable
+ - [ ] Onboarding flow fully functional and launches only once
+ - [ ] All views support dynamic resizing and device rotation (where applicable)
+ - [ ] All modules contain full `#Preview` support for SwiftUI
 
 ---
 
@@ -736,10 +736,10 @@ Ensure that CoreForge Audio, Visual, and Build are 100% functionally complete, s
 
 ## ✅ Feature Stability
 
-- [ ] Playback system works with custom voices and ambient FX (CoreForge Audio)
-- [ ] Scene generation renders and exports correctly (CoreForge Visual)
-- [ ] Apps generate and export .ipa/.apk/.exe/.dmg correctly (CoreForge Build)
-- [ ] NSFW gating logic functions securely and consistently across all platforms
+ - [ ] Playback system works with custom voices and ambient FX (CoreForge Audio)
+ - [ ] Scene generation renders and exports correctly (CoreForge Visual)
+ - [ ] Apps generate and export .ipa/.apk/.exe/.dmg correctly (CoreForge Build)
+ - [ ] NSFW gating logic functions securely and consistently across all platforms
 - [ ] Subscription features are unlocked, gated, and revertable correctly
 - [ ] Import, export, build, and generate features persist across sessions
 
@@ -779,24 +779,24 @@ Ensure that CoreForge Audio, Visual, and Build are 100% functionally complete, s
     - `README.md`
     - `baseline_requirements.md`
     - `FEATURES-CODEX-COMPLETE.md`
-- [ ] All GitHub secrets and PATs tested and working for CI/CD
-- [ ] `.ipa`, `.apk`, `.dmg`, `.exe`, and `web` versions confirmed working and uploaded
+ - [ ] All GitHub secrets and PATs tested and working for CI/CD
+ - [ ] `.ipa`, `.apk`, `.dmg`, `.exe`, and `web` versions confirmed working and uploaded
 
 ---
 
 ## ✅ QA Testing + Launch Readiness
 
-- [ ] All modules unit tested
-- [ ] All flows tested manually on iOS and Android simulators
-- [ ] Zipped bundles for each app uploaded to Google Drive
-- [ ] App Store / TestFlight metadata (`AppIcon`, screenshots, description) ready
-- [ ] Apps pass Xcode and Android Studio validation
+ - [ ] All modules unit tested
+ - [ ] All flows tested manually on iOS and Android simulators
+ - [ ] Zipped bundles for each app uploaded to Google Drive
+ - [ ] App Store / TestFlight metadata (`AppIcon`, screenshots, description) ready
+ - [ ] Apps pass Xcode and Android Studio validation
 
 ---
 
 ## ✅ Final Go-Live
 
-- [ ] GitHub repo tagged as production ready
-- [ ] App uploaded to App Store Connect + Play Store internal testing
-- [ ] Announce launch with press kit + onboarding video
+ - [ ] GitHub repo tagged as production ready
+ - [ ] App uploaded to App Store Connect + Play Store internal testing
+ - [ ] Announce launch with press kit + onboarding video
 
