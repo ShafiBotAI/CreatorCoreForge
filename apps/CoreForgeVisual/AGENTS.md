@@ -320,11 +320,11 @@ Key points from `README.md`:
 - [x] Display visual multiverse map with branches and connections
 - [x] Allow creators to preview all timeline outcomes in side-by-side mode
 
-- [ ] Enable auto-generation of visual variations for key choice points
-- [ ] Sync visual changes with multiverse-aware voice and FX layers
-- [ ] Recommend color palette and lighting changes based on timeline branch
-- [ ] Track viewer navigation across different visual storylines
-- [ ] Highlight multiverse divergence points in scene editing panel
+- [x] Enable auto-generation of visual variations for key choice points
+- [x] Sync visual changes with multiverse-aware voice and FX layers
+- [x] Recommend color palette and lighting changes based on timeline branch
+- [x] Track viewer navigation across different visual storylines
+- [x] Highlight multiverse divergence points in scene editing panel
 - [ ] Store and lock multiverse visual states for version tracking
 - [ ] Provide toggle to collapse alternate scenes into one for export
 - [ ] Create parallel visual identities for characters (e.g., Hero vs Villain versions)

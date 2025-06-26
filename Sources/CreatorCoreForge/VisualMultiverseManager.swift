@@ -22,6 +22,7 @@ public final class VisualMultiverseManager {
     public static let shared = VisualMultiverseManager()
 
     private var outcomes: [UUID: VisualOutcome] = [:]
+    private var layerSync: [UUID: (voices: [String], fx: [String])] = [:]
 
     public init() {}
 
@@ -60,5 +61,39 @@ public final class VisualMultiverseManager {
     /// Clear all stored outcomes.
     public func clearAll() {
         outcomes.removeAll()
+        layerSync.removeAll()
+    }
+
+    /// Automatically generate visual outcomes from a list of choices.
+    @discardableResult
+    public func autoGenerateVariations(sceneID: String,
+                                       choices: [String],
+                                       project: String) -> [VisualOutcome] {
+        var results: [VisualOutcome] = []
+        for choice in choices {
+            let frame = "\(sceneID)_\(choice.replacingOccurrences(of: " ", with: "_"))"
+            let outcome = addOutcome(sceneID: sceneID,
+                                     description: choice,
+                                     frames: [frame],
+                                     project: project)
+            results.append(outcome)
+        }
+        return results
+    }
+
+    /// Link voice and FX layers to a visual outcome.
+    public func syncLayers(outcomeID: UUID, voices: [String], fx: [String]) {
+        layerSync[outcomeID] = (voices, fx)
+    }
+
+    /// Retrieve synced layers for an outcome.
+    public func layers(for outcomeID: UUID) -> (voices: [String], fx: [String])? {
+        layerSync[outcomeID]
+    }
+
+    /// Return scene IDs that have more than one outcome (divergence points).
+    public func divergencePoints(project: String) -> [String] {
+        let map = multiverseMap(for: project)
+        return map.filter { $0.value > 1 }.map { $0.key }
     }
 }
