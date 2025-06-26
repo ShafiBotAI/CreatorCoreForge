@@ -15,6 +15,7 @@ let package = Package(
     targets: [
         .target(name: "CreatorCoreForge", path: "Sources/CreatorCoreForge"),
         .executableTarget(name: "LibraryDemoApp",
+                          dependencies: ["CreatorCoreForge"],
                           path: "apps/CoreForgeLibrary/LibraryDemoFull/LibraryDemo",
                           exclude: ["Info.plist"]),
         .testTarget(name: "CreatorCoreForgeTests", dependencies: ["CreatorCoreForge"], path: "Tests/CreatorCoreForgeTests")

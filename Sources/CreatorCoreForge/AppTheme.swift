@@ -11,6 +11,11 @@ public enum AppTheme {
             endPoint: .bottomTrailing
         )
     }
+
+    /// Accent color used for icons and interactive elements.
+    public static var accentColor: Color {
+        Color.purple
+    }
 }
 #endif
 
