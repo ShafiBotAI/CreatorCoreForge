@@ -5,6 +5,7 @@ import CreatorCoreForge
 /// Lists downloaded books and shows space usage.
 struct DownloadsManagerView: View {
     @EnvironmentObject var library: LibraryModel
+    @EnvironmentObject var offline: OfflineContentManager
     @State private var storageUsed: Double = 0
 
     private var downloaded: [Book] {
@@ -34,7 +35,9 @@ struct DownloadsManagerView: View {
                 .padding(.horizontal)
             }
         }
-        .onAppear { storageUsed = Double(downloaded.count) * 50 }
+        .onAppear {
+            storageUsed = Double(offline.downloaded.count) * 50
+        }
         .padding(.vertical)
         .background(AppTheme.cardMaterial)
         .cornerRadius(AppTheme.cornerRadius)
@@ -45,5 +48,6 @@ struct DownloadsManagerView: View {
 #Preview {
     DownloadsManagerView()
         .environmentObject(LibraryModel())
+        .environmentObject(OfflineContentManager(library: LibraryModel()))
 }
 #endif
