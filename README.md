@@ -300,6 +300,7 @@ using the `build_all` lane. Configure `APPSTORECONNECT_*` secrets in your
 repository so the workflow can authenticate with App Store Connect. You can also
 manually trigger `upload-testflight.yml` from the Actions tab when a one-off
 build is ready for distribution.
+Xcode Cloud workflows are defined under `.xcodecloud/workflows` and can be configured directly in Xcode. See `docs/XcodeCloudSetup.md` for details.
 
 For production releases, trigger `upload-appstore.yml` which uses the
 `build_all` lane to build every iOS project and submit the resulting
