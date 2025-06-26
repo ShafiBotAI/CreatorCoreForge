@@ -3,7 +3,7 @@ import Foundation
 import SwiftUI
 
 @main
-struct LibraryDemoApp: App {
+struct CoreForgeLibraryApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
@@ -12,7 +12,7 @@ struct LibraryDemoApp: App {
 }
 #else
 @main
-struct LibraryDemoAppMain {
+struct CoreForgeLibraryAppMain {
     static func main() {}
 }
 #endif
