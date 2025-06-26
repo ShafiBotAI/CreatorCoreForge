@@ -50,21 +50,8 @@ export class AudioProcessor {
     if (attack < 0 || release < 0) throw new Error('attack/release must be >= 0');
     if (sampleRate <= 0) throw new Error('sampleRate must be > 0');
 
-=======
-export class AudioProcessor {
-  async compress(
-    input: AudioBlob,
-    threshold = 0.6,
-    ratio = 4
-  ): Promise<AudioBlob> {
-
     const buffer = Buffer.from(await input.arrayBuffer());
-    const samples = new Float32Array(
-      buffer.buffer,
-      buffer.byteOffset,
-      Math.floor(buffer.byteLength / 4)
-    );
-
+    const samples = new Float32Array(buffer.buffer, buffer.byteOffset, Math.floor(buffer.byteLength / 4));
 
     const attackCoef = attack > 0 ? Math.exp(-1 / (attack * sampleRate)) : 0;
     const releaseCoef = release > 0 ? Math.exp(-1 / (release * sampleRate)) : 0;
@@ -85,17 +72,6 @@ export class AudioProcessor {
         gain = desiredGain + diff * releaseCoef;
       }
       samples[i] *= gain * makeupGain;
-    }
-
-=======
-    for (let i = 0; i < samples.length; i++) {
-      const s = samples[i];
-      const abs = Math.abs(s);
-      if (abs > threshold) {
-        const sign = Math.sign(s);
-        const excess = abs - threshold;
-        samples[i] = sign * (threshold + excess / ratio);
-      }
     }
 
     return new Blob([samples.buffer], { type: input.type || 'application/octet-stream' });
