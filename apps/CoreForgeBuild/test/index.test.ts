@@ -185,4 +185,5 @@ import { ParseHistory } from '../services/ParseHistory';
   require("./autoupdater.test");
   require('./pluginmanager.test');
   require('./advanced.test');
+  require('./formbuilder.test');
 })();
