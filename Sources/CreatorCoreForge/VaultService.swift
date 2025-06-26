@@ -22,7 +22,10 @@ public final class VaultService {
     }
 
     public func loadAudio(bookId: String, nsfw: Bool = false) -> Data? {
-        guard let url = manager.retrieve(named: bookId, nsfw: nsfw) else { return nil }
-        return try? Data(contentsOf: url)
+        if let url = manager.retrieve(named: bookId, nsfw: nsfw) {
+            return try? Data(contentsOf: url)
+        }
+        // Return empty data when the file is missing so playback can continue
+        return Data()
     }
 }

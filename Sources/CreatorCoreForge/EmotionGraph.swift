@@ -22,7 +22,7 @@ public final class EmotionGraph {
     /// Calculate the average intensity for the specified emotion.
     public func averageIntensity(for emotion: String) -> Double? {
         let filtered = points.filter { $0.emotion == emotion }
-        guard !filtered.isEmpty else { return nil }
+        guard !filtered.isEmpty else { return 0.0 }
         let total = filtered.reduce(0.0) { $0 + $1.intensity }
         return total / Double(filtered.count)
     }

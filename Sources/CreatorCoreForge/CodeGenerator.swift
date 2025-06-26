@@ -62,16 +62,28 @@ public struct CodeGenerator {
     public func generateNetworkLayer(mode: NetworkMode) -> String {
         switch mode {
         case .rest:
-            return "// REST client\nfunc request(url: String) {}"
+            return """
+            // REST client
+            func request(url: String) {
+                // TODO: implement
+            }
+            """
         case .graphQL:
-            return "// GraphQL client\nfunc query(q: String) {}"
+            return """
+            // GraphQL client
+            func query(q: String) {
+                // TODO: implement
+            }
+            """
         }
     }
 
     public func importOpenAPISpec(json: String) -> [String] {
         guard let data = json.data(using: .utf8),
               let obj = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
-              let paths = obj["paths"] as? [String: Any] else { return [] }
+              let paths = obj["paths"] as? [String: Any] else {
+            return ["unknown"]
+        }
         return paths.keys.map { String($0) }
     }
 

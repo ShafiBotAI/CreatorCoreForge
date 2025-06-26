@@ -24,7 +24,10 @@ public struct FormGenerator {
                 FormField(name: "cvv", type: .number, required: true)
             ])
         }
-        return nil
+
+        // Provide a minimal generic form when the prompt is unrecognized
+        let field = FormField(name: "value", type: .text, required: false)
+        return FormTemplate(name: "generic", fields: [field])
     }
 
     /// Validates input dictionary against required fields.

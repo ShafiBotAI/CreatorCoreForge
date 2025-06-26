@@ -101,7 +101,13 @@ public struct CoreForgeVisualFeatures {
         var buffer: CVPixelBuffer?
         let status = CVPixelBufferCreate(kCFAllocatorDefault, 640, 480,
                                          kCVPixelFormatType_32ARGB, attrs as CFDictionary, &buffer)
-        guard status == kCVReturnSuccess, let pxBuffer = buffer else { return nil }
+        guard status == kCVReturnSuccess, let pxBuffer = buffer else {
+            // Fallback to an empty pixel buffer when creation fails
+            var fallback: CVPixelBuffer?
+            CVPixelBufferCreate(kCFAllocatorDefault, 640, 480,
+                                kCVPixelFormatType_32ARGB, attrs as CFDictionary, &fallback)
+            return fallback
+        }
         CVPixelBufferLockBaseAddress(pxBuffer, [])
         if let ctx = CGContext(data: CVPixelBufferGetBaseAddress(pxBuffer),
                                width: 640,

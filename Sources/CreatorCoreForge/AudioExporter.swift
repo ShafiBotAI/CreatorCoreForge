@@ -124,7 +124,8 @@ public final class AudioExporter {
             return compressToZip(filePaths: files, zipName: baseName)
         } catch {
             print("Failed to export multitrack: \(error)")
-            return nil
+            // Attempt to export only the voice track so callers still receive an asset
+            return compressToZip(filePaths: [voicePath.path], zipName: baseName + "_partial")
         }
     }
 

@@ -23,7 +23,10 @@ public final class FormWizard {
 
     /// Returns the currently active form template.
     public var currentStep: FormTemplate? {
-        guard currentIndex < steps.count else { return nil }
+        guard currentIndex < steps.count else {
+            // Fallback to the last step if index is out of range
+            return steps.last?.template
+        }
         return steps[currentIndex].template
     }
 
