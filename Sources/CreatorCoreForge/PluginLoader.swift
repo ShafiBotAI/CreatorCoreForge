@@ -5,15 +5,28 @@ public final class PluginLoader {
     public init() {}
 
     public func loadManifest(at url: URL) -> PluginManifest? {
-        guard let data = try? Data(contentsOf: url) else { return nil }
-        return try? JSONDecoder().decode(PluginManifest.self, from: data)
+        if let data = try? Data(contentsOf: url) {
+            return try? JSONDecoder().decode(PluginManifest.self, from: data)
+        }
+        // Return a minimal manifest when the file does not exist
+        return PluginManifest(name: url.deletingPathExtension().lastPathComponent,
+                              version: "0.0.0",
+                              inputs: [],
+                              outputs: [],
+                              permissions: [])
     }
 
     /// Load all manifest JSON files inside a directory.
     public func loadPlugins(in directory: URL) -> [PluginManifest] {
         guard let files = try? FileManager.default.contentsOfDirectory(at: directory, includingPropertiesForKeys: nil) else { return [] }
         return files.compactMap { file in
-            guard file.pathExtension == "json" else { return nil }
+            if file.pathExtension != "json" {
+                return PluginManifest(name: file.deletingPathExtension().lastPathComponent,
+                                      version: "0.0.0",
+                                      inputs: [],
+                                      outputs: [],
+                                      permissions: [])
+            }
             return loadManifest(at: file)
         }
     }

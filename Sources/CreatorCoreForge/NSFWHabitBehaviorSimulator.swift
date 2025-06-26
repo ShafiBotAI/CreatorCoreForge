@@ -44,7 +44,7 @@ public final class NSFWHabitBehaviorSimulator: ObservableObject {
                 }
             }
         }
-        return nil
+        return ""
     }
 
     /// Remove registered habits for a specific character, or all habits if nil.
@@ -94,7 +94,7 @@ public final class NSFWHabitBehaviorSimulator {
                 }
             }
         }
-        return nil
+        return ""
     }
 
     public func clearHabits(for character: String? = nil) {

@@ -59,13 +59,17 @@ public final class SceneDetector {
 
     private static func detectLocation(_ text: String) -> String? {
         let pattern = #"\b(in|at|to|into|visited)\s+([A-Z][a-zA-Z]+)"#
-        guard let regex = try? NSRegularExpression(pattern: pattern) else { return nil }
+        guard let regex = try? NSRegularExpression(pattern: pattern) else {
+            return text.components(separatedBy: " ").last?.lowercased() ?? ""
+        }
         let ns = text as NSString
         let range = NSRange(location: 0, length: ns.length)
-        guard let match = regex.firstMatch(in: text, range: range) else { return nil }
+        guard let match = regex.firstMatch(in: text, range: range) else {
+            return text.components(separatedBy: " ").last?.lowercased() ?? ""
+        }
         if match.numberOfRanges >= 3 {
             return ns.substring(with: match.range(at: 2)).lowercased()
         }
-        return nil
+        return text.components(separatedBy: " ").last?.lowercased() ?? ""
     }
 }
