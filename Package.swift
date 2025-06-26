@@ -9,7 +9,8 @@ let package = Package(
     ],
     products: [
         .library(name: "CreatorCoreForge", targets: ["CreatorCoreForge"]),
-        .executable(name: "CoreForgeLibraryApp", targets: ["CoreForgeLibraryApp"])
+        .executable(name: "CoreForgeLibraryApp", targets: ["CoreForgeLibraryApp"]),
+        .executable(name: "CoreForgeAudioApp", targets: ["CoreForgeAudioApp"])
     ],
     dependencies: [],
     targets: [
@@ -18,6 +19,11 @@ let package = Package(
                           dependencies: ["CreatorCoreForge"],
                           path: "apps/CoreForgeLibrary/LibraryApp/CoreForgeLibraryApp",
                           exclude: ["Info.plist"]),
-        .testTarget(name: "CreatorCoreForgeTests", dependencies: ["CreatorCoreForge"], path: "Tests/CreatorCoreForgeTests")
+        .executableTarget(name: "CoreForgeAudioApp",
+                          dependencies: ["CreatorCoreForge"],
+                          path: "apps/CoreForgeAudio/VocalVerseFull/VocalVerse",
+                          exclude: ["Info.plist"]),
+        .testTarget(name: "CreatorCoreForgeTests", dependencies: ["CreatorCoreForge"], path: "Tests/CreatorCoreForgeTests"),
+        .testTarget(name: "CoreForgeAudioAppTests", dependencies: ["CoreForgeAudioApp"], path: "Tests/CoreForgeAudioAppTests")
     ]
 )
