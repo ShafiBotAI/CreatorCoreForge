@@ -9,6 +9,14 @@ final class FormGeneratorTests: XCTestCase {
         XCTAssertEqual(form?.fields.count, 2)
     }
 
+    func testGeneratesRegisterFormWithDOB() {
+        let gen = FormGenerator()
+        let form = gen.generateForm(from: "register")
+        XCTAssertEqual(form?.name, "register")
+        XCTAssertEqual(form?.fields.count, 4)
+        XCTAssertTrue(form!.fields.contains(where: { $0.name == "dob" && $0.type == .date }))
+    }
+
     func testValidation() {
         let gen = FormGenerator()
         let form = gen.generateForm(from: "login")!
