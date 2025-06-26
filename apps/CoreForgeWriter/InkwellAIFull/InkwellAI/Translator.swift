@@ -1,9 +1,16 @@
 import Foundation
 
-/// Very basic text translator used for demos.
+/// Convenience wrapper around `TranslationService`.
 struct Translator {
-    static func translate(_ text: String, to language: String) -> String {
-        guard language.lowercased() != "english" else { return text }
-        return "[\(language)] " + text
+    private static let service = TranslationService()
+
+    static func translate(_ text: String,
+                          to language: String,
+                          completion: @escaping (Result<String, Error>) -> Void) {
+        guard language.lowercased() != "english" else {
+            completion(.success(text))
+            return
+        }
+        service.translate(text, to: language, completion: completion)
     }
 }
