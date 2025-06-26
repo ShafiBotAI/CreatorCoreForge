@@ -581,13 +581,13 @@ Key points from `README.md`:
 - [x] `VoicePreviewPopup.swift` – Tap-and-hold voice preview overlay for characters.
 
 ### Profile & Listening Insights
-- [ ] `ProfileTierCardView.swift` – Displays current plan, avatar, and upgrade button.
-- [ ] `ListeningStatsView.swift` – Weekly/monthly listening stats and achievements.
-- [ ] `ChapterProgressView.swift` – Tiles showing current in-progress chapters.
+- [x] `ProfileTierCardView.swift` – Displays current plan, avatar, and upgrade button.
+- [x] `ListeningStatsView.swift` – Weekly/monthly listening stats and achievements.
+- [x] `ChapterProgressView.swift` – Tiles showing current in-progress chapters.
 
 ### Playback Extensions
-- [ ] `PlaybackSpeedControlView.swift` – Allows speed selection and voice swapping.
-- [ ] Add `matchedGeometryEffect` to MiniPlayer → PlayerView transition.
+- [x] `PlaybackSpeedControlView.swift` – Allows speed selection and voice swapping.
+- [x] Add `matchedGeometryEffect` to MiniPlayer → PlayerView transition.
 
 ### Library Enhancements
 - [ ] Add download indicators to all book cards.
