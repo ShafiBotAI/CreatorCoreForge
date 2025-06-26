@@ -30,6 +30,7 @@ struct MiniPlayerView: View {
         .padding()
         .background(AppTheme.primaryGradient)
         .cornerRadius(12)
+        .shadow(radius: 4)
         .matchedGeometryEffect(id: "player", in: namespace)
         .onTapGesture { isExpanded = true }
     }

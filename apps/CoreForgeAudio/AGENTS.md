@@ -573,19 +573,19 @@ Key points from `README.md`:
 ## CoreForge Audio UI Completion: Feature-Based Expansion
 ### AI & AUDIO ENGINE FEATURES
 
-- [ ] `VoiceEmotionControlView.swift` – Add tone/emotion picker per character or chapter.
-- [ ] `VoiceMemoryView.swift` – Show persistent voice cast history across books.
-- [ ] `AmbientFXMixerView.swift` – Visual FX blend control per scene/book.
-- [ ] `NSFWToggleView.swift` – Add in-player and global toggle for NSFW mode.
-- [ ] `LanguageSelectorView.swift` – UI for per-book/per-chapter language choice.
-- [ ] `ExportQueueView.swift` – List view of recent and in-progress exports.
+ - [x] `VoiceEmotionControlView.swift` – Add tone/emotion picker per character or chapter.
+ - [x] `VoiceMemoryView.swift` – Show persistent voice cast history across books.
+ - [x] `AmbientFXMixerView.swift` – Visual FX blend control per scene/book.
+ - [x] `NSFWToggleView.swift` – Add in-player and global toggle for NSFW mode.
+ - [x] `LanguageSelectorView.swift` – UI for per-book/per-chapter language choice.
+ - [x] `ExportQueueView.swift` – List view of recent and in-progress exports.
 
 ### 🎧 PLAYBACK EXPERIENCE UPGRADES
 
-- [ ] `MiniPlayerView.swift` – Floating player for quick resume.
-- [ ] `PlaybackSpeedControlView.swift` – Speed picker (1x–5x).
-- [ ] `VoicePickerView.swift` – Dropdown for active narration voice.
-- [ ] `SwipePreviewHandler.swift` – Tap-and-hold or swipe to preview voices.
+ - [x] `MiniPlayerView.swift` – Floating player for quick resume.
+ - [x] `PlaybackSpeedControlView.swift` – Speed picker (1x–5x).
+ - [x] `VoicePickerView.swift` – Dropdown for active narration voice.
+ - [x] `SwipePreviewHandler.swift` – Tap-and-hold or swipe to preview voices.
 - [ ] `ChapterProgressView.swift` – Visual tiles for in-progress chapters.
 - [ ] Add `.matchedGeometryEffect` for MiniPlayer → PlayerView transition.
 
