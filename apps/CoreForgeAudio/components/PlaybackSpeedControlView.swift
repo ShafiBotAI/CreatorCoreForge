@@ -11,6 +11,10 @@ struct PlaybackSpeedControlView: View {
         case oneTwentyFive = 1.25
         case oneFifty = 1.5
         case two = 2.0
+        case twoFifty = 2.5
+        case three = 3.0
+        case four = 4.0
+        case five = 5.0
     }
 
     private let voices = VoiceConfig.voiceNames

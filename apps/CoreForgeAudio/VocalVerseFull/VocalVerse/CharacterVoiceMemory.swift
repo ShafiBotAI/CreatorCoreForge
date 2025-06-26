@@ -30,4 +30,9 @@ final class CharacterVoiceMemory {
     private func persist() {
         UserDefaults.standard.set(assignments, forKey: userDefaultsKey)
     }
+
+    /// Return all stored character to voice ID assignments.
+    func allAssignments() -> [String: String] {
+        assignments
+    }
 }
