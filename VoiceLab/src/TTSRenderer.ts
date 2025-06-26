@@ -12,28 +12,55 @@ export interface TTSOptions {
 export interface TTSRendererConfig {
   /** Number of segments processed concurrently */
   concurrency?: number;
-  /** Callback triggered when a render exceeds 50ms */
+  /** Callback triggered when a render exceeds the latency threshold */
   onLatencySpike?: (latency: number, segment: TTSSegment) => void;
+  /** Threshold in ms for latency spike monitoring */
+  latencyThreshold?: number;
+  /** Base delay for retry logic */
+  baseRetryDelay?: number;
+  /** Maximum backoff delay */
+  maxRetryDelay?: number;
 }
 
 export class TTSRenderer {
   private queue: { seg: TTSSegment; opt?: TTSOptions }[] = [];
   private active = 0;
   private readonly concurrency: number;
-  private readonly config: TTSRendererConfig;
+  private readonly config: {
+    onLatencySpike?: (latency: number, segment: TTSSegment) => void;
+    latencyThreshold: number;
+    baseRetryDelay: number;
+    maxRetryDelay: number;
+  };
+  private scheduled = false;
 
   constructor(config: TTSRendererConfig = {}) {
     this.concurrency = config.concurrency ?? 1;
-    this.config = config;
+    this.config = {
+      onLatencySpike: config.onLatencySpike,
+      latencyThreshold: config.latencyThreshold ?? 50,
+      baseRetryDelay: config.baseRetryDelay ?? 50,
+      maxRetryDelay: config.maxRetryDelay ?? 1000,
+    };
   }
 
   enqueue(segment: TTSSegment, options?: TTSOptions): void {
     this.queue.push({ seg: segment, opt: options });
-    this.process();
+    this.schedule();
   }
 
   isIdle(): boolean {
     return this.queue.length === 0 && this.active === 0;
+  }
+
+  private schedule(): void {
+    if (!this.scheduled) {
+      this.scheduled = true;
+      setImmediate(() => {
+        this.scheduled = false;
+        this.process();
+      });
+    }
   }
 
   private process(): void {
@@ -56,12 +83,19 @@ export class TTSRenderer {
     try {
       await this.renderSegment(segment, options);
       const latency = Date.now() - start;
-      if (latency > 50 && this.config.onLatencySpike) {
+      if (
+        latency > this.config.latencyThreshold &&
+        this.config.onLatencySpike
+      ) {
         this.config.onLatencySpike(latency, segment);
       }
     } catch {
-      const delay = Math.min(1000, Math.pow(2, attempt) * 50);
-      await new Promise((r) => setTimeout(r, delay));
+      const jitter = Math.random() * this.config.baseRetryDelay;
+      const delay = Math.min(
+        this.config.maxRetryDelay,
+        this.config.baseRetryDelay * Math.pow(2, attempt)
+      );
+      await new Promise((r) => setTimeout(r, delay + jitter));
       return this.renderWithRetry(segment, options, attempt + 1);
     }
   }
