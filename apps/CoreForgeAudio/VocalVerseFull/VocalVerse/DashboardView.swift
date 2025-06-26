@@ -4,6 +4,7 @@ import SwiftUI
 /// Displays usage metrics, subscription status, and achievements.
 struct DashboardView: View {
     @EnvironmentObject var usage: UsageStats
+    @Binding var tabSelection: Int
 
     var body: some View {
         NavigationView {
@@ -43,6 +44,18 @@ struct DashboardView: View {
                 }
             }
             .navigationTitle("Dashboard")
+            .toolbar {
+                Menu {
+                    Button("Library") { tabSelection = 1 }
+                    Button("Connect") { tabSelection = 2 }
+                    Button("Import") { tabSelection = 3 }
+                    Button("Player") { tabSelection = 4 }
+                    Button("Favorites") { tabSelection = 5 }
+                    Button("Settings") { tabSelection = 6 }
+                } label: {
+                    Image(systemName: "ellipsis.circle")
+                }
+            }
         }
     }
 
