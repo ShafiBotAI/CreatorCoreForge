@@ -10,6 +10,16 @@ final class LibraryModel: ObservableObject {
     @Published var currentBook: Book?
     @Published var currentChapter: Chapter?
 
+    /// Cached list of books the user has started but not finished.
+    var inProgressBooks: [Book] {
+        books.filter { $0.progress > 0 && $0.progress < 1 }
+    }
+
+    /// Cached list of fully listened books.
+    var completedBooks: [Book] {
+        books.filter { $0.progress >= 1 }
+    }
+
     init() {
         // Basic demo book used when the library is empty
         self.books = [

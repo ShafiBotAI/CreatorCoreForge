@@ -5,15 +5,22 @@ import SwiftUI
 struct PlaybackSpeedControlView: View {
     @Binding var speed: Double
     @Binding var voice: String
-    private let speeds: [Double] = [1.0, 1.25, 1.5, 2.0]
-    private let voices = VoiceConfig.voices.map { $0.name }
+
+    enum PlaybackSpeed: Double, CaseIterable {
+        case one = 1.0
+        case oneTwentyFive = 1.25
+        case oneFifty = 1.5
+        case two = 2.0
+    }
+
+    private let voices = VoiceConfig.voiceNames
 
     var body: some View {
         HStack {
             Menu {
-                ForEach(speeds, id: \.self) { value in
-                    Button("\(value, specifier: "%.2gx")") {
-                        speed = value
+                ForEach(PlaybackSpeed.allCases, id: \.rawValue) { value in
+                    Button("\(value.rawValue, specifier: "%.2gx")") {
+                        speed = value.rawValue
                     }
                 }
             } label: {
