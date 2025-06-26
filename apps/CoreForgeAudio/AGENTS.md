@@ -572,13 +572,13 @@ Key points from `README.md`:
 ## CoreForge Audio UI Enhancements
 
 ### Dashboard & Library Interface
-- [ ] `LibraryDashboardView.swift` – Main home screen layout with scrollable sections and mini player.
-- [ ] `FeaturedCarouselView.swift` – Top swipeable banner for featured content.
-- [ ] `MiniPlayerView.swift` – Fixed bottom control panel with playback and expand action.
+- [x] `LibraryDashboardView.swift` – Main home screen layout with scrollable sections and mini player.
+- [x] `FeaturedCarouselView.swift` – Top swipeable banner for featured content.
+- [x] `MiniPlayerView.swift` – Fixed bottom control panel with playback and expand action.
 
 ### Search & Discovery
-- [ ] `SearchView.swift` – Book/author/chapter search with filters and sort options.
-- [ ] `VoicePreviewPopup.swift` – Tap-and-hold voice preview overlay for characters.
+- [x] `SearchView.swift` – Book/author/chapter search with filters and sort options.
+- [x] `VoicePreviewPopup.swift` – Tap-and-hold voice preview overlay for characters.
 
 ### Profile & Listening Insights
 - [ ] `ProfileTierCardView.swift` – Displays current plan, avatar, and upgrade button.
