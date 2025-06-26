@@ -17,9 +17,15 @@ final class CharacterVoiceMemory {
         persist()
     }
 
-    func voiceForCharacter(_ character: String) -> Voice? {
-        guard let id = assignments[character.lowercased()] else { return nil }
-        return VoiceConfig.voices.first { $0.id == id }
+    /// Return the assigned voice for a given character. If no explicit
+    /// assignment exists, fall back to the default voice so callers never
+    /// receive `nil`.
+    func voiceForCharacter(_ character: String) -> Voice {
+        if let id = assignments[character.lowercased()],
+           let voice = VoiceConfig.voices.first(where: { $0.id == id }) {
+            return voice
+        }
+        return VoiceConfig.voices.first ?? Voice(id: "default", name: "Default")
     }
 
     func clearAll() {
