@@ -28,9 +28,13 @@ struct VoiceConfig {
     }
 }
 
-// Register newly added voice
-VoiceConfig.addVoice(id: "athena", name: "Athena")
-VoiceConfig.addVoice(id: "zeus", name: "Zeus")
-VoiceConfig.addVoice(id: "ultra", name: "UltraAI")
-VoiceConfig.addVoice(id: "aisynth", name: "AiSynth")
-VoiceConfig.addVoice(id: "hermes", name: "Hermes")
+// Register newly added voices when used within the app.
+extension VoiceConfig {
+    static func registerDefaultVoices() {
+        addVoice(id: "athena", name: "Athena")
+        addVoice(id: "zeus", name: "Zeus")
+        addVoice(id: "ultra", name: "UltraAI")
+        addVoice(id: "aisynth", name: "AiSynth")
+        addVoice(id: "hermes", name: "Hermes")
+    }
+}
