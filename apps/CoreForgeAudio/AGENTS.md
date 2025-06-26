@@ -605,14 +605,14 @@ Key points from `README.md`:
 
 ### 🛡 MONETIZATION & TIER ACCESS
 
-- [ ] `NSFWUnlockModal.swift` – Dialog shown if NSFW add-on not active.
-- [ ] `UpgradeBlockOverlay.swift` – Blocks gated features for Free users.
-- [ ] `AudioCreditStatusView.swift` – Shows remaining MP3 export credits.
-- [ ] `SubscriptionUpgradeView.swift` – Multi-plan selector for Creator/Enterprise.
+ - [x] `NSFWUnlockModal.swift` – Dialog shown if NSFW add-on not active.
+ - [x] `UpgradeBlockOverlay.swift` – Blocks gated features for Free users.
+ - [x] `AudioCreditStatusView.swift` – Shows remaining MP3 export credits.
+ - [x] `SubscriptionUpgradeView.swift` – Multi-plan selector for Creator/Enterprise.
 
 ### 🖌 VISUAL POLISH & RESPONSIVENESS
 
-- [ ] Expand `Theme.swift` – Apply consistent gradient + corner radius + shadows.
+ - [x] Expand `Theme.swift` – Apply consistent gradient + corner radius + shadows.
 - [ ] Apply `.ultraThinMaterial` to all content cards.
 - [ ] Add `.transition(.scale)` or `.opacity` to card actions and modals.
 - [ ] Audit all UI for dark mode readiness with semantic SwiftUI colors.
