@@ -20,13 +20,13 @@ The focus of this phase is **Full-Cast Audio Mastering & Creator Intelligence**.
 - [x] Use AI to recommend narration cadence per genre and reader preference
 - [x] Export final audio as flattened or layered file based on creator choice
 - [x] Tag character emotional states per segment to match musical score inputs
-- [ ] Link scene-based voice dynamics to background music templates
-- [ ] Integrate with audio plugin systems for advanced mastering tools
-- [ ] Enable Creator AI Assistant to generate scene-specific mastering presets
-- [ ] Provide auto-mix-and-export mode for rapid prototyping
-- [ ] Build creator dashboard for real-time monitoring of voice quality and performance
-- [ ] Visualize voice dominance per chapter using waveform or tone charts
-- [ ] Offer beta features: audio fingerprints for licensing, alternate casting previews
-- [ ] AI-based performance coach to recommend enhancements after preview
+- [x] Link scene-based voice dynamics to background music templates
+- [x] Integrate with audio plugin systems for advanced mastering tools
+- [x] Enable Creator AI Assistant to generate scene-specific mastering presets
+- [x] Provide auto-mix-and-export mode for rapid prototyping
+- [x] Build creator dashboard for real-time monitoring of voice quality and performance
+- [x] Visualize voice dominance per chapter using waveform or tone charts
+- [x] Offer beta features: audio fingerprints for licensing, alternate casting previews
+- [x] AI-based performance coach to recommend enhancements after preview
 
 Use this checklist to track progress as Phase 9 capabilities are developed.
