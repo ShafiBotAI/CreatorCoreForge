@@ -2,23 +2,23 @@
 import SwiftUI
 import CreatorCoreForge
 
-/// Fun reader tools placeholder row.
+/// Fun reader tools row to access voice mashups.
 struct ExploreWidgetRow: View {
-    @State private var showAlert = false
+    @State private var showMashup = false
     var body: some View {
         HStack {
             Image(systemName: "sparkles")
             Text("Voice Mashups")
             Spacer()
-            Button("Try") { showAlert = true }
+            Button("Try") { showMashup = true }
                 .buttonStyle(.borderedProminent)
         }
         .padding()
         .background(AppTheme.cardMaterial)
         .cornerRadius(AppTheme.cornerRadius)
         .shadow(radius: AppTheme.shadowRadius)
-        .alert("Coming Soon", isPresented: $showAlert) {
-            Button("OK", role: .cancel) {}
+        .sheet(isPresented: $showMashup) {
+            NavigationView { VoiceMashupView() }
         }
     }
 }
