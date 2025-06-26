@@ -482,16 +482,16 @@ Key points from `README.md`:
 
 ### 🧑‍💼 Monetization & Access
 
-- [ ] `CreatorAdminPanel.swift` – White label controls, affiliate management.
-- [ ] `PromoCodeUnlockView.swift` – Unlock Creator Tier or Beta Access.
-- [ ] `InAppPurchaseCenter.swift` – Purchase credits, NSFW, extra exports.
+- [x] `CreatorAdminPanel.swift` – White label controls, affiliate management.
+- [x] `PromoCodeUnlockView.swift` – Unlock Creator Tier or Beta Access.
+- [x] `InAppPurchaseCenter.swift` – Purchase credits, NSFW, extra exports.
 
 ### 🔒 NSFW + Filters
 
-- [ ] `NSFWVisualToggle.swift` – Enable/disable adult content rendering.
-- [ ] `SceneFilterChips.swift` – Tag-based filters (genre, tone, NSFW, etc).
+- [x] `NSFWVisualToggle.swift` – Enable/disable adult content rendering.
+- [x] `SceneFilterChips.swift` – Tag-based filters (genre, tone, NSFW, etc).
 
 ### 👤 Profile & Subscription
 
-- [ ] `VisualProfileCard.swift` – Tier badge, stats, avatar.
-- [ ] `SubscriptionPlanSelector.swift` – Manage subscription tier.
+- [x] `VisualProfileCard.swift` – Tier badge, stats, avatar.
+- [x] `SubscriptionPlanSelector.swift` – Manage subscription tier.
