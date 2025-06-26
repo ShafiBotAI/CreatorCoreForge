@@ -34,6 +34,7 @@ public final class PlaybackManager {
     private var isPlaying = false
     /// Playback speed multiplier. Range: 0.5x - 10x. Defaults to 1x.
     private var playbackSpeed: Double = 1.0
+    private(set) var currentLanguage: SupportedLanguage = .english
 
     public init() {}
 
@@ -117,6 +118,12 @@ public final class PlaybackManager {
     public func setPlaybackSpeed(_ speed: Double) {
         playbackSpeed = min(max(speed, 0.5), 10.0)
         print("⏩ Playback speed set to \(playbackSpeed)x")
+    }
+
+    /// Change the audio language mid-playback.
+    public func setAudioLanguage(_ language: SupportedLanguage) {
+        currentLanguage = language
+        print("🌐 Audio language changed to \(language.rawValue)")
     }
 }
 
