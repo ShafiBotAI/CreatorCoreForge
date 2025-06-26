@@ -22,46 +22,4 @@ struct ContentView: View {
     }
 }
 
-struct MainTabView: View {
-    @EnvironmentObject var library: LibraryModel
-    @EnvironmentObject var usage: UsageStats
-
-    var body: some View {
-        TabView {
-            DashboardView()
-                .environmentObject(usage)
-                .tabItem {
-                    Label("Dashboard", systemImage: "chart.bar")
-                }
-            LibraryView()
-                .environmentObject(library)
-                .tabItem {
-                    Label("Library", systemImage: "books.vertical")
-                }
-            ConnectView()
-                .environmentObject(library)
-                .environmentObject(usage)
-                .tabItem {
-                    Label("Connect", systemImage: "link")
-                }
-            ImportView()
-                .environmentObject(library)
-                .environmentObject(usage)
-                .tabItem {
-                    Label("Import", systemImage: "square.and.arrow.down")
-                }
-            PlayerView()
-                .environmentObject(library)
-                .environmentObject(usage)
-                .tabItem {
-                    Label("Player", systemImage: "play.circle")
-                }
-            SettingsView()
-                .environmentObject(usage)
-                .tabItem {
-                    Label("Settings", systemImage: "gearshape")
-                }
-        }
-    }
-}
 #endif
