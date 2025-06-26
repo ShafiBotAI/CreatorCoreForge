@@ -301,21 +301,21 @@ Key points from `README.md`:
 - [x] `ProjectQuickActionsBar.swift` \u2013 Buttons: Duplicate, Export, Delete, Open.
 
 ### \ud83c\udfa8 Drag & Drop UI Designer
-- [ ] `UIDesignerCanvasView.swift` \u2013 Central visual app builder.
-- [ ] `ComponentSidebarView.swift` \u2013 All draggable elements (forms, navs, media).
-- [ ] `PreviewSimulatorView.swift` \u2013 Preview iOS, Android, Web, macOS formats.
+- [x] `UIDesignerCanvasView.swift` \u2013 Central visual app builder.
+- [x] `ComponentSidebarView.swift` \u2013 All draggable elements (forms, navs, media).
+- [x] `PreviewSimulatorView.swift` \u2013 Preview iOS, Android, Web, macOS formats.
 
 ### \ud83e\udde0 Codex Agent & Logic Control
-- [ ] `CodexAgentPanel.swift` \u2013 List of Codex tasks and active states.
-- [ ] `AppLogicEditor.swift` \u2013 Low-code editor for if/then and data flow.
-- [ ] `ComponentMarketplaceView.swift` \u2013 Drop-in integrations, paid modules.
+- [x] `CodexAgentPanel.swift` \u2013 List of Codex tasks and active states.
+- [x] `AppLogicEditor.swift` \u2013 Low-code editor for if/then and data flow.
+- [x] `ComponentMarketplaceView.swift` \u2013 Drop-in integrations, paid modules.
 
 ### \u2699\ufe0f Build + Export Tools
-- [ ] `BuildPipelineStatusView.swift` \u2013 Real-time feedback + log stream.
-- [ ] `ExportAppBundleView.swift` \u2013 Export IPA / EXE / APK / DMG.
-- [ ] `BuildCreditDisplayView.swift` \u2013 Monthly usage / available credits.
+- [x] `BuildPipelineStatusView.swift` \u2013 Real-time feedback + log stream.
+- [x] `ExportAppBundleView.swift` \u2013 Export IPA / EXE / APK / DMG.
+- [x] `BuildCreditDisplayView.swift` \u2013 Monthly usage / available credits.
 
 ### \ud83d\udcbe Account & Licensing
-- [ ] `PlanTierOverviewView.swift` \u2013 Compare Free, Pro, and Enterprise features.
+- [x] `PlanTierOverviewView.swift` \u2013 Compare Free, Pro, and Enterprise features.
 - [ ] `UnlockWithPromoView.swift` \u2013 Enter and redeem access codes.
 - [ ] `WhiteLabelManagerView.swift` \u2013 Rebrand output and generate branded installers.
