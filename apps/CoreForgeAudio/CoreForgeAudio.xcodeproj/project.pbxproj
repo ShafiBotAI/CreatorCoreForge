@@ -6,7 +6,9 @@
         objects = {
 
 /* Begin PBXBuildFile section */
-                CD42256A1CA646AFBD098586 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 914B903C34594C48B093C37B /* Info.plist */; };
+               CD42256A1CA646AFBD098586 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 914B903C34594C48B093C37B /* Info.plist */; };
+               F80817FC0AAB4EFCB3379478 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4559F8F6112A481AB7A7C08F /* Assets.xcassets */; };
+               AD86C8B7AD4C4961A422771B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64A68DB39F77442C88BE9B39 /* LaunchScreen.storyboard */; };
                 3035B9C1B0414FF1B2DE6D24 /* AdaptiveReasoner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D87F17F9404DD9AFFCB1AD /* AdaptiveReasoner.swift */; };
                 6729EA2BCA09402B8A614ACB /* AgeVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA6467ED088414B8082646E /* AgeVerificationView.swift */; };
                 B1DEEF36D1E9435FA42AE7BD /* AppleBooksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4537F39C5947EA9416784D /* AppleBooksService.swift */; };
@@ -60,7 +62,9 @@
 /* Begin PBXFileReference section */
                 E02E020F26944937A89871CC /* CoreForgeAudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreForgeAudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
                 E6E016DDC2564352B2F8D1AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-                914B903C34594C48B093C37B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+               914B903C34594C48B093C37B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+               4559F8F6112A481AB7A7C08F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+               64A68DB39F77442C88BE9B39 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
                 87D87F17F9404DD9AFFCB1AD /* AdaptiveReasoner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AdaptiveReasoner.swift; sourceTree = "<group>"; };
                 9EA6467ED088414B8082646E /* AgeVerificationView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AgeVerificationView.swift; sourceTree = "<group>"; };
                 0B4537F39C5947EA9416784D /* AppleBooksService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppleBooksService.swift; sourceTree = "<group>"; };
@@ -181,7 +185,9 @@
                                 5481AEFBD50F4D2B9830A918 /* VoiceConfig.swift */,
                                 BE7C5E7568174DAB8D4892CA /* VoiceHistory.swift */,
                                 F7F5E32AA7284C6DBAF717F1 /* WaveformView.swift */,
-                                914B903C34594C48B093C37B /* Info.plist */,
+                               914B903C34594C48B093C37B /* Info.plist */,
+                               4559F8F6112A481AB7A7C08F /* Assets.xcassets */,
+                               64A68DB39F77442C88BE9B39 /* LaunchScreen.storyboard */,
                         );
                         name = CoreForgeAudio;
                         path = VocalVerseFull/VocalVerse;
@@ -263,7 +269,9 @@
                         isa = PBXResourcesBuildPhase;
                         buildActionMask = 2147483647;
                         files = (
-                                CD42256A1CA646AFBD098586 /* Info.plist in Resources */,
+                               CD42256A1CA646AFBD098586 /* Info.plist in Resources */,
+                               F80817FC0AAB4EFCB3379478 /* Assets.xcassets in Resources */,
+                               AD86C8B7AD4C4961A422771B /* LaunchScreen.storyboard in Resources */,
                         );
                         runOnlyForDeploymentPostprocessing = 0;
                 };
