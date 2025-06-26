@@ -16,8 +16,11 @@ export async function saveToVault(bookId: string, audio: Blob) {
   localStorage.setItem(prefix + bookId, encode(buf));
 }
 
-export async function loadFromVault(bookId: string): Promise<Blob | null> {
+export async function loadFromVault(bookId: string): Promise<Blob> {
   const data = localStorage.getItem(prefix + bookId);
-  if (!data) return null;
+  if (!data) {
+    // Return an empty blob so callers always receive a Blob instance
+    return new Blob();
+  }
   return new Blob([decode(data)]);
 }
