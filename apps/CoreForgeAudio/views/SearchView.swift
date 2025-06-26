@@ -25,7 +25,7 @@ struct SearchView: View {
                         let isSelected = filters.contains(option)
                         Text(option)
                             .padding(8)
-                            .background(isSelected ? AppTheme.primaryGradient : Color.secondary.opacity(0.2))
+                            .background(isSelected ? Theme.primaryGradient : Color.secondary.opacity(0.2))
                             .cornerRadius(8)
                             .onTapGesture {
                                 if isSelected { filters.remove(option) } else { filters.insert(option) }
@@ -38,16 +38,18 @@ struct SearchView: View {
     }
 }
 
-#if DEBUG
-struct SearchView_Previews: PreviewProvider {
-    @State static var query = ""
-    @State static var sort = "Title"
-    @State static var filters: Set<String> = []
-    static var previews: some View {
-        SearchView(query: $query, sort: $sort, filters: $filters)
-            .padding()
-            .previewLayout(.sizeThatFits)
+#Preview {
+    struct PreviewWrapper: View {
+        @State var query = ""
+        @State var sort = "Title"
+        @State var filters: Set<String> = []
+        var body: some View {
+            SearchView(query: $query, sort: $sort, filters: $filters)
+                .padding()
+                .previewLayout(.sizeThatFits)
+        }
     }
+    return PreviewWrapper()
 }
 #endif
 #endif

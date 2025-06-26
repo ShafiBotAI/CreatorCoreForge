@@ -1,3 +1,5 @@
+import Foundation
+#if canImport(SwiftUI)
 import SwiftUI
 
 /// Shared user preference storage using `@AppStorage`.
@@ -23,3 +25,4 @@ final class UserPreferences: ObservableObject {
         return Calendar.current.dateComponents([.year], from: date, to: Date()).year ?? 0
     }
 }
+#endif
