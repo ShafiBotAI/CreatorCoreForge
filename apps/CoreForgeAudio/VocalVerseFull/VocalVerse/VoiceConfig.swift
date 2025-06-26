@@ -14,7 +14,12 @@ struct VoiceConfig {
         Voice(id: "storyteller", name: "Storyteller"),
         Voice(id: "assistant", name: "Assistant"),
         Voice(id: "morgan", name: "Morgan"),
-        Voice(id: "emma", name: "Emma")
+        Voice(id: "emma", name: "Emma"),
+        Voice(id: "athena", name: "Athena"),
+        Voice(id: "zeus", name: "Zeus"),
+        Voice(id: "ultra", name: "UltraAI"),
+        Voice(id: "aisynth", name: "AiSynth"),
+        Voice(id: "hermes", name: "Hermes")
     ]
 
     /// Cached list of voice display names for UI components.
@@ -28,9 +33,3 @@ struct VoiceConfig {
     }
 }
 
-// Register newly added voice
-VoiceConfig.addVoice(id: "athena", name: "Athena")
-VoiceConfig.addVoice(id: "zeus", name: "Zeus")
-VoiceConfig.addVoice(id: "ultra", name: "UltraAI")
-VoiceConfig.addVoice(id: "aisynth", name: "AiSynth")
-VoiceConfig.addVoice(id: "hermes", name: "Hermes")

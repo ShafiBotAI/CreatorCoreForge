@@ -14,20 +14,22 @@ struct VoiceEmotionControlView: View {
         } label: {
             Label(emotion, systemImage: "face.smiling")
                 .padding(8)
-                .background(AppTheme.cardMaterial)
-                .cornerRadius(AppTheme.cornerRadius)
+                .background(Theme.cardMaterial)
+                .cornerRadius(Theme.cornerRadius)
         }
     }
 }
 
-#if DEBUG
-struct VoiceEmotionControlView_Previews: PreviewProvider {
-    @State static var emotion = "Neutral"
-    static var previews: some View {
-        VoiceEmotionControlView(emotion: $emotion)
-            .padding()
-            .previewLayout(.sizeThatFits)
+#Preview {
+    struct PreviewWrapper: View {
+        @State var emotion = "Neutral"
+        var body: some View {
+            VoiceEmotionControlView(emotion: $emotion)
+                .padding()
+                .previewLayout(.sizeThatFits)
+        }
     }
+    return PreviewWrapper()
 }
 #endif
 #endif

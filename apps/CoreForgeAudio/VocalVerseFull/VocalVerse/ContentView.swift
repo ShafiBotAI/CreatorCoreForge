@@ -33,17 +33,14 @@ struct ContentView: View {
                     .environmentObject(onboarding)
                     .environmentObject(prefs)
                     .transition(.scale)
-}
-
-#if DEBUG
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-            .environmentObject(UserPreferences.shared)
-    }
-}
-#endif
+            }
         }
         .animation(.easeInOut, value: hasSeenOnboarding)
     }
+}
+
+#Preview {
+    ContentView()
+        .environmentObject(UserPreferences.shared)
+}
 #endif

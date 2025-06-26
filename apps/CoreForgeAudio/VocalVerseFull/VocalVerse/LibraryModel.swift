@@ -1,5 +1,7 @@
 import Foundation
-import SwiftUI
+#if canImport(Combine)
+import Combine
+#endif
 #if canImport(AVFoundation)
 import AVFoundation
 #endif
