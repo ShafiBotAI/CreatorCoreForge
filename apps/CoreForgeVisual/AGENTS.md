@@ -330,14 +330,14 @@ Key points from `README.md`:
 - [x] Create parallel visual identities for characters (e.g., Hero vs Villain versions)
 - [x] Match branching logic with alternate soundtracks and FX profiles
 - [x] Offer predictive timeline generator based on character decisions
-- [ ] Generate recap videos per timeline path for audience immersion
-- [ ] Support layered rendering (shared visuals + unique overlays)
-- [ ] Build continuity checker across timelines for style cohesion
-- [ ] Visualize alternate emotional arcs using heatmap overlays
-- [ ] Allow creator-defined "main" timeline and secondary forks
-- [ ] Embed multiverse state in exported metadata for reuse
-- [ ] Detect and flag conflicts when characters appear in multiple branches simultaneously
-- [ ] Enable AI director mode to guide scene transitions across branches
+- [x] Generate recap videos per timeline path for audience immersion
+- [x] Support layered rendering (shared visuals + unique overlays)
+- [x] Build continuity checker across timelines for style cohesion
+- [x] Visualize alternate emotional arcs using heatmap overlays
+- [x] Allow creator-defined "main" timeline and secondary forks
+- [x] Embed multiverse state in exported metadata for reuse
+- [x] Detect and flag conflicts when characters appear in multiple branches simultaneously
+- [x] Enable AI director mode to guide scene transitions across branches
 =======
 - [x] Enable auto-generation of visual variations for key choice points
 - [x] Sync visual changes with multiverse-aware voice and FX layers
@@ -458,8 +458,8 @@ Key points from `README.md`:
 
 ### 🧭 Project Dashboard
 
-- [ ] `VisualDashboardView.swift` – Main workspace and navigation.
-- [ ] `RecentProjectsCarousel.swift` – Recently opened/generated books or scenes.
+- [x] `VisualDashboardView.swift` – Main workspace and navigation.
+- [x] `RecentProjectsCarousel.swift` – Recently opened/generated books or scenes.
 - [ ] `CreateProjectButton.swift` – Prominent "+" to start a new book or scene.
 
 ### 🎬 AI Scene Generation
