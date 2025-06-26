@@ -390,15 +390,20 @@ Run `scripts/generate_app_completion_report.py` to update `app_completion_report
 See `docs/progress_bot.md` for usage details.
 ## Running Tests
 
-Install Node dependencies for the labs before running the test suites:
+Install Node dependencies for the labs before running the test suites.
+Use the helper script to perform a clean install across all workspaces:
 
 ```bash
-cd VoiceLab && npm install && npm test
-cd ../VisualLab && npm install && npm test
+./scripts/clean_install.sh
+cd VoiceLab && npm test
+cd ../VisualLab && npm test
 cd .. && swift test
 ```
 
-This ensures `jest`, `ts-node`, and other dev tools are available.
+If you encounter an `ENOTEMPTY` rename error during installation, the script
+removes any leftover `node_modules` directories and runs `npm ci` to ensure a
+fresh workspace. This guarantees `jest`, `ts-node`, and other dev tools are
+available.
 
 
 ## CI/CD
