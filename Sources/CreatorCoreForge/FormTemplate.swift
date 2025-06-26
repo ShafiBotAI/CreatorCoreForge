@@ -7,6 +7,7 @@ public struct FormField: Codable, Equatable {
         case password
         case email
         case number
+        case date
     }
     public var name: String
     public var type: FieldType
