@@ -1,6 +1,5 @@
 // !$*UTF8*$!
 {
-
 	archiveVersion = 1;
 	classes = {
 	};
@@ -9,35 +8,176 @@
 
 /* Begin PBXBuildFile section */
 		03E3D15D04E5907F7946F913 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78215C0DB2EA5F27FEA64AC9 /* Foundation.framework */; };
+		04474B709D56B48E82C8F87C /* FirebaseFirestore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039B46E88D0CDBEAB5E107B7 /* FirebaseFirestore.framework */; };
+		0606448B81A92A089C206E8A /* VideoExportCreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3240C6B857B901674CDC5B /* VideoExportCreditsView.swift */; };
+		078844F2947C9470A462E910 /* MultiverseMemoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322A4B2298B0C33C5CE8F199 /* MultiverseMemoryManager.swift */; };
+		08294A2F832FD2B02E93F65A /* VisualMemoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BD47259A72B58163CB91E7 /* VisualMemoryManager.swift */; };
 		11205FCC47C3A2140439E32C /* VideoShareManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32E9D948634B636F3909256 /* VideoShareManager.swift */; };
-		1403F5E2D8CAB8393DC4E45C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8E245642341B439C64DC27A /* Info.plist */; };
+		1403F5E2D8CAB8393DC4E45C /* LoreForgeAIFull/LoreForgeAI/Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8E245642341B439C64DC27A /* LoreForgeAIFull/LoreForgeAI/Info.plist */; };
+		1489429D804EB72120FE1A95 /* AdaptiveAISceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA24DDBA29A41CD9F8BE168 /* AdaptiveAISceneManager.swift */; };
+		16654F5F89EA672173CB4C0C /* AutoUploadPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96174EB4A9E9906FD368F6EA /* AutoUploadPanel.swift */; };
+		1A1A491DB9DD0EDEE70CB2ED /* UploadScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F4CE295EDF3B86DC737E6 /* UploadScheduler.swift */; };
+		1A3E4DC8AE735C010A3349FF /* CoreForgeVisualApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0664BABAFE9A4E7FD5C19D4 /* CoreForgeVisualApp.swift */; };
 		20F6B740B41D0C72E5FA4342 /* LangSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49C0C413A5CCF1FD38E167A /* LangSelector.swift */; };
+		22E144E58A7E6DC5CD89B93E /* prompts.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CF7416ABF73FCDE9F3802C6 /* prompts.json */; };
+		23D148B0A392082347C8CA26 /* ContentPolicyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC648A79D5B44FEFCD4DC6D /* ContentPolicyManager.swift */; };
+		25EC43E58BBF415D81930165 /* FirebaseAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84AD4013963CA18BBD806B6D /* FirebaseAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2A3829037A84220F1B740FE2 /* ContentPolicyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AEFDB2B6E64BB6F3EAEFE3 /* ContentPolicyManager.swift */; };
+		2CC24B1F933D5D6F093B206D /* ElevenLabsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8C4EA0AB6610C7DED04324 /* ElevenLabsService.swift */; };
+		2D8E4E21A5E4984C06870874 /* SecureStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9438BB6358A59D90C4F86 /* SecureStore.swift */; };
+		2E574B308124817BE2BE215C /* ViralEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA54BD9A4BDDD26A38F2A1F /* ViralEngine.swift */; };
+		34B343E4A686727608257B22 /* SceneGeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB744249B193C8DAE4C2DAD /* SceneGeneratorView.swift */; };
+		3E354D9988AEF326DB0162AB /* Security.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8C4A8F8E4A926289724DFB /* Security.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3F474D60A88E708E1D9E847E /* VisualOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA04B25A553C4785EDCCF08 /* VisualOnboardingView.swift */; };
+		495E4BFC9908181D81B5619C /* PromptTemplateLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3845A0A849F62E34D3F27C /* PromptTemplateLoader.swift */; };
+		4C974BE8B758154A38D67643 /* CreditEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F884D629DA0767D20271942 /* CreditEngine.swift */; };
+		5124436D8D1EF520D9EDEECF /* RecapEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFA43C7A2AAF518729EFC79 /* RecapEngine.swift */; };
 		55E609C5E08C87BC3395301A /* RenderConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4BADB2F9A07DD30E44CDFF /* RenderConfig.swift */; };
+		5A684CCD8C65957CFA3CC9D8 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2E4A3AA6D771530BA22B8E /* RootView.swift */; };
+		5B5E45F2BDF21AFD576AAE2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05F942F6862F7D238A034C50 /* Assets.xcassets */; };
+		5C0443D8935F97E83946F9D8 /* VoiceToneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25543E199A93A0B98053032 /* VoiceToneController.swift */; };
+		5E3D42C0AF9560B17B3F24A0 /* LangSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0444DC1B9CC2A6F1A67C345 /* LangSelector.swift */; };
+		6137443DB3DBD752F68169B1 /* RecentProjectsCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7531458AA4FF8FB569E65F8B /* RecentProjectsCarousel.swift */; };
+		615B400CB7DF4D1FCF96E4BC /* RenderConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2849E191297B24CAF9D0EC /* RenderConfig.swift */; };
+		615E473AA97F260BDA239A12 /* FirebaseFirestore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 039B46E88D0CDBEAB5E107B7 /* FirebaseFirestore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		65BE4905A7921AD4734EEB19 /* AITrendDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40404D3AA91EA336142E86AD /* AITrendDetector.swift */; };
+		75604DF1B3C01E17D943E206 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B92144C8AAB30C2934DB2C74 /* LaunchScreen.storyboard */; };
+		777448689D079169565E271E /* SubtitleToRecapTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731A468DA43CF29283D0F644 /* SubtitleToRecapTool.swift */; };
 		77FA2EDD21447A42A6A5E2CD /* AdaptiveReasoner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2B3C842D613171C76204B3 /* AdaptiveReasoner.swift */; };
+		78104F72B9A62CEF87F25A46 /* CharacterStatTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BD4CEEBECDBDFB07B11C8C /* CharacterStatTracker.swift */; };
+		7E334653889172A0F4C4B0EA /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B2464E8F875CA7582772BD /* FirebaseService.swift */; };
 		7FB2B1DFAACBD66ABF92C589 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C9C3013442B1BFD45CA405 /* OpenAIService.swift */; };
-               85E82BACF8D9237932D2F774 /* CoreForgeVisualApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC93FD96D7B2D8B3E156A06 /* CoreForgeVisualApp.swift */; };
+		80134ECA94D03017C2D76511 /* CharacterRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37645AAAAD482BC80A6C982 /* CharacterRecognizer.swift */; };
+		81184872998CBE08617CB2FC /* VisualProfileCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E48F3B20E0792CFF7638A /* VisualProfileCard.swift */; };
+		81B342B0B21FFC760CA2972D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8C4A8F8E4A926289724DFB /* Security.framework */; };
+		85E82BACF8D9237932D2F774 /* CoreForgeVisualApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC93FD96D7B2D8B3E156A06 /* CoreForgeVisualApp.swift */; };
+		8B2148A7836DA06057975463 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36F24902930F8BDA5128C477 /* FirebaseCore.framework */; };
+		8EE5473EAF11ED8043EC8090 /* EmotionArcVisualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944913AD837A63DFD62A3B /* EmotionArcVisualizer.swift */; };
+		932F467AB7938B0C85D34ADE /* FirebaseStorage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7F8043C096BA624179955E44 /* FirebaseStorage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		947649E5B106929C21274A30 /* FirebaseCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 36F24902930F8BDA5128C477 /* FirebaseCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		95E341F186381C0A14B05A76 /* FirebaseStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F8043C096BA624179955E44 /* FirebaseStorage.framework */; };
+		976A44108435882BF6911482 /* VisualDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FE4D2FAE13D4C284B74765 /* VisualDashboardView.swift */; };
+		9B0F46C48B967068BAC41DC8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3948C79757F58FCA590F30 /* ContentView.swift */; };
+		9CD5465A84046627ECF56B4A /* NSFWPermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5C468184E41033A85D55DF /* NSFWPermissionManager.swift */; };
+		9E194B63A486D26030D1542A /* LoreCompressionTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAE421A91107E7AAF1302FB /* LoreCompressionTool.swift */; };
+		A3FA4EB9A75D185523C337F4 /* CreateProjectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949946779E34F1F177C18685 /* CreateProjectButton.swift */; };
 		A6BCAFC0926B9C887F64E49E /* RecapEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0770B5F655F58730B763A1 /* RecapEngine.swift */; };
 		AB771314EDE7D77B73C20B20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD170866BC06317B40969A9E /* ContentView.swift */; };
+		AD774225BD3C25BF65F2D1E9 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AD4013963CA18BBD806B6D /* FirebaseAuth.framework */; };
+		AE6D4D028B90101A6C48F592 /* NSFWPermissionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28414E72BF81B481E0B3FB68 /* NSFWPermissionEngine.swift */; };
+		B52F4756B52B679908BED175 /* CharacterVoiceAssignmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08A401F8A8C053389E4BB8C /* CharacterVoiceAssignmentView.swift */; };
+		BF7B4561BF52DBDA05C6B4E8 /* SwiftUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8A4B69A5BC6BB31D60DE8D /* SwiftUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C052432F863622E1F8E59A1A /* SchedulerDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7F4F458EB4C6BE3CE3E78F /* SchedulerDashboard.swift */; };
+		C4364E99AC05167BBEA8849D /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8A4B69A5BC6BB31D60DE8D /* SwiftUI.framework */; };
+		CCA440E39EC4BD4A125ECEA8 /* EbookImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4424FBDA8087FB5F501F72F /* EbookImporter.swift */; };
+		CD6046649B21B46E486711D2 /* VisualStylePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF34AAB94C3D98012A22FAA /* VisualStylePicker.swift */; };
+		CDAF402FBF51BF21205335C6 /* PromptSceneEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519042AC8E742CF920E78E1C /* PromptSceneEditorView.swift */; };
+		CF164B559DCF53FC26BF216A /* SubscriptionPlanSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2B4CD1B8B104948619A203 /* SubscriptionPlanSelector.swift */; };
+		D7194B77BD2D42C8853A8B4E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D948494CBF76951D9582048F /* ProfileView.swift */; };
+		D84D4E1F9EC6125A2B32124B /* AniListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F64E3C8251A12EF67AD377 /* AniListAPI.swift */; };
+		D981435A89E4E379BCCC801B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9BE457CBFA4FD1CD7877A29 /* AVFoundation.framework */; };
 		E7049B9988297943D1F0C30A /* PromptTemplateLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A50EAE8982E8D5A19FDEA /* PromptTemplateLoader.swift */; };
+		E891423C93865FBB96990A84 /* RenderPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC894777B5ABCCD47D4A2001 /* RenderPreviewView.swift */; };
+		F23E4B1CBE3C9EACEBEB8A82 /* AVFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F9BE457CBFA4FD1CD7877A29 /* AVFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3344548AFCC32E24B048B57 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9574007A76B427E9935221A /* OpenAIService.swift */; };
+		F7DD4313942C1D68CF0E8359 /* IMDbAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75641A0A55CE944559705DA /* IMDbAPI.swift */; };
 		F8D7E878AF1FE1EC020A7597 /* ViralEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BFC6911C4E7321A0B7BDC2 /* ViralEngine.swift */; };
+		FA9F4949AD6D7054F19583BD /* PlotPredictionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228E4D399F517011FA9C6B92 /* PlotPredictionEngine.swift */; };
+		FD514FDFA9B88492B00F761E /* AdaptiveReasoner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C014FE9A04B23A8BA2C6076 /* AdaptiveReasoner.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		69DA4C689C5F3C38AA832AC8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F23E4B1CBE3C9EACEBEB8A82 /* AVFoundation.framework in Embed Frameworks */,
+				BF7B4561BF52DBDA05C6B4E8 /* SwiftUI.framework in Embed Frameworks */,
+				3E354D9988AEF326DB0162AB /* Security.framework in Embed Frameworks */,
+				25EC43E58BBF415D81930165 /* FirebaseAuth.framework in Embed Frameworks */,
+				947649E5B106929C21274A30 /* FirebaseCore.framework in Embed Frameworks */,
+				615E473AA97F260BDA239A12 /* FirebaseFirestore.framework in Embed Frameworks */,
+				932F467AB7938B0C85D34ADE /* FirebaseStorage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		039B46E88D0CDBEAB5E107B7 /* FirebaseFirestore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseFirestore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/FirebaseFirestore.framework; sourceTree = DEVELOPER_DIR; };
+		05F942F6862F7D238A034C50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		0A2849E191297B24CAF9D0EC /* RenderConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RenderConfig.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/RenderConfig.swift; sourceTree = SOURCE_ROOT; };
+		0C014FE9A04B23A8BA2C6076 /* AdaptiveReasoner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AdaptiveReasoner.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/AdaptiveReasoner.swift; sourceTree = SOURCE_ROOT; };
+		1EAE421A91107E7AAF1302FB /* LoreCompressionTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoreCompressionTool.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/LoreCompressionTool.swift; sourceTree = SOURCE_ROOT; };
+		228E4D399F517011FA9C6B92 /* PlotPredictionEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlotPredictionEngine.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/PlotPredictionEngine.swift; sourceTree = SOURCE_ROOT; };
+		28414E72BF81B481E0B3FB68 /* NSFWPermissionEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NSFWPermissionEngine.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/NSFWPermissionEngine.swift; sourceTree = SOURCE_ROOT; };
+		2FA04B25A553C4785EDCCF08 /* VisualOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VisualOnboardingView.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/UI/VisualOnboardingView.swift; sourceTree = SOURCE_ROOT; };
+		322A4B2298B0C33C5CE8F199 /* MultiverseMemoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MultiverseMemoryManager.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/MultiverseMemoryManager.swift; sourceTree = SOURCE_ROOT; };
+		36F24902930F8BDA5128C477 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/FirebaseCore.framework; sourceTree = DEVELOPER_DIR; };
+		39944913AD837A63DFD62A3B /* EmotionArcVisualizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EmotionArcVisualizer.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/UI/EmotionArcVisualizer.swift; sourceTree = SOURCE_ROOT; };
+		3C8A4B69A5BC6BB31D60DE8D /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/SwiftUI.framework; sourceTree = DEVELOPER_DIR; };
+		3D8C4A8F8E4A926289724DFB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		40404D3AA91EA336142E86AD /* AITrendDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AITrendDetector.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/AITrendDetector.swift; sourceTree = SOURCE_ROOT; };
+		4E8C4EA0AB6610C7DED04324 /* ElevenLabsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ElevenLabsService.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/ElevenLabsService.swift; sourceTree = SOURCE_ROOT; };
+		4F884D629DA0767D20271942 /* CreditEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreditEngine.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/CreditEngine.swift; sourceTree = SOURCE_ROOT; };
+		519042AC8E742CF920E78E1C /* PromptSceneEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PromptSceneEditorView.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/UI/PromptSceneEditorView.swift; sourceTree = SOURCE_ROOT; };
+		5CF7416ABF73FCDE9F3802C6 /* prompts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = prompts.json; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/prompts.json; sourceTree = SOURCE_ROOT; };
+		6CB744249B193C8DAE4C2DAD /* SceneGeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SceneGeneratorView.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/UI/SceneGeneratorView.swift; sourceTree = SOURCE_ROOT; };
+		6CC648A79D5B44FEFCD4DC6D /* ContentPolicyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentPolicyManager.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/ContentPolicyManager.swift; sourceTree = SOURCE_ROOT; };
+		6FF34AAB94C3D98012A22FAA /* VisualStylePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VisualStylePicker.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/UI/VisualStylePicker.swift; sourceTree = SOURCE_ROOT; };
 		7254B208B160BD0205C2C718 /* LoreForgeAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoreForgeAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		731A468DA43CF29283D0F644 /* SubtitleToRecapTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SubtitleToRecapTool.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/SubtitleToRecapTool.swift; sourceTree = SOURCE_ROOT; };
+		7531458AA4FF8FB569E65F8B /* RecentProjectsCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecentProjectsCarousel.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/UI/RecentProjectsCarousel.swift; sourceTree = SOURCE_ROOT; };
 		78215C0DB2EA5F27FEA64AC9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7E0770B5F655F58730B763A1 /* RecapEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RecapEngine.swift; sourceTree = "<group>"; };
+		7E2E4A3AA6D771530BA22B8E /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RootView.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/RootView.swift; sourceTree = SOURCE_ROOT; };
+		7F8043C096BA624179955E44 /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseStorage.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/FirebaseStorage.framework; sourceTree = DEVELOPER_DIR; };
+		84AD4013963CA18BBD806B6D /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/FirebaseAuth.framework; sourceTree = DEVELOPER_DIR; };
+		86A9438BB6358A59D90C4F86 /* SecureStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SecureStore.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/SecureStore.swift; sourceTree = SOURCE_ROOT; };
 		86C9C3013442B1BFD45CA405 /* OpenAIService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
+		8BA54BD9A4BDDD26A38F2A1F /* ViralEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViralEngine.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/ViralEngine.swift; sourceTree = SOURCE_ROOT; };
 		90BFC6911C4E7321A0B7BDC2 /* ViralEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViralEngine.swift; sourceTree = "<group>"; };
+		949946779E34F1F177C18685 /* CreateProjectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreateProjectButton.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/UI/CreateProjectButton.swift; sourceTree = SOURCE_ROOT; };
+		96174EB4A9E9906FD368F6EA /* AutoUploadPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AutoUploadPanel.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/UI/AutoUploadPanel.swift; sourceTree = SOURCE_ROOT; };
+		96FE4D2FAE13D4C284B74765 /* VisualDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VisualDashboardView.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/UI/VisualDashboardView.swift; sourceTree = SOURCE_ROOT; };
+		99BD47259A72B58163CB91E7 /* VisualMemoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VisualMemoryManager.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/VisualMemoryManager.swift; sourceTree = SOURCE_ROOT; };
+		99F64E3C8251A12EF67AD377 /* AniListAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AniListAPI.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/AniListAPI.swift; sourceTree = SOURCE_ROOT; };
+		9CA24DDBA29A41CD9F8BE168 /* AdaptiveAISceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AdaptiveAISceneManager.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/AdaptiveAISceneManager.swift; sourceTree = SOURCE_ROOT; };
+		9CFA43C7A2AAF518729EFC79 /* RecapEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecapEngine.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/RecapEngine.swift; sourceTree = SOURCE_ROOT; };
+		A37645AAAAD482BC80A6C982 /* CharacterRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterRecognizer.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/CharacterRecognizer.swift; sourceTree = SOURCE_ROOT; };
+		A75641A0A55CE944559705DA /* IMDbAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IMDbAPI.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/IMDbAPI.swift; sourceTree = SOURCE_ROOT; };
+		AA3948C79757F58FCA590F30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/ContentView.swift; sourceTree = SOURCE_ROOT; };
+		AA5C468184E41033A85D55DF /* NSFWPermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NSFWPermissionManager.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/NSFWPermissionManager.swift; sourceTree = SOURCE_ROOT; };
+		AC894777B5ABCCD47D4A2001 /* RenderPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RenderPreviewView.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/UI/RenderPreviewView.swift; sourceTree = SOURCE_ROOT; };
+		AE7F4F458EB4C6BE3CE3E78F /* SchedulerDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SchedulerDashboard.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/UI/SchedulerDashboard.swift; sourceTree = SOURCE_ROOT; };
+		B08A401F8A8C053389E4BB8C /* CharacterVoiceAssignmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterVoiceAssignmentView.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/UI/CharacterVoiceAssignmentView.swift; sourceTree = SOURCE_ROOT; };
+		B0BD4CEEBECDBDFB07B11C8C /* CharacterStatTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterStatTracker.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/CharacterStatTracker.swift; sourceTree = SOURCE_ROOT; };
+		B4424FBDA8087FB5F501F72F /* EbookImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EbookImporter.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/EbookImporter.swift; sourceTree = SOURCE_ROOT; };
 		B49C0C413A5CCF1FD38E167A /* LangSelector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LangSelector.swift; sourceTree = "<group>"; };
-		B8E245642341B439C64DC27A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = LoreForgeAIFull/LoreForgeAI/Info.plist; sourceTree = "<group>"; };
+		B8E245642341B439C64DC27A /* LoreForgeAIFull/LoreForgeAI/Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = LoreForgeAIFull/LoreForgeAI/Info.plist; sourceTree = "<group>"; };
+		B92144C8AAB30C2934DB2C74 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = None; name = LaunchScreen.storyboard; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		BC2B4CD1B8B104948619A203 /* SubscriptionPlanSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SubscriptionPlanSelector.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/UI/SubscriptionPlanSelector.swift; sourceTree = SOURCE_ROOT; };
 		BD170866BC06317B40969A9E /* ContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BE2B3C842D613171C76204B3 /* AdaptiveReasoner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AdaptiveReasoner.swift; sourceTree = "<group>"; };
+		BF3240C6B857B901674CDC5B /* VideoExportCreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VideoExportCreditsView.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/UI/VideoExportCreditsView.swift; sourceTree = SOURCE_ROOT; };
+		C0664BABAFE9A4E7FD5C19D4 /* CoreForgeVisualApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoreForgeVisualApp.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/CoreForgeVisualApp.swift; sourceTree = SOURCE_ROOT; };
 		C7AEFDB2B6E64BB6F3EAEFE3 /* ContentPolicyManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContentPolicyManager.swift; sourceTree = "<group>"; };
-               CBC93FD96D7B2D8B3E156A06 /* CoreForgeVisualApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CoreForgeVisualApp.swift; sourceTree = "<group>"; };
+		CB3845A0A849F62E34D3F27C /* PromptTemplateLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PromptTemplateLoader.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/PromptTemplateLoader.swift; sourceTree = SOURCE_ROOT; };
+		CBC93FD96D7B2D8B3E156A06 /* CoreForgeVisualApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CoreForgeVisualApp.swift; sourceTree = "<group>"; };
 		CC4BADB2F9A07DD30E44CDFF /* RenderConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RenderConfig.swift; sourceTree = "<group>"; };
+		D25543E199A93A0B98053032 /* VoiceToneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VoiceToneController.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/VoiceToneController.swift; sourceTree = SOURCE_ROOT; };
 		D32E9D948634B636F3909256 /* VideoShareManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VideoShareManager.swift; sourceTree = "<group>"; };
+		D43E48F3B20E0792CFF7638A /* VisualProfileCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VisualProfileCard.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/UI/VisualProfileCard.swift; sourceTree = SOURCE_ROOT; };
+		D948494CBF76951D9582048F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileView.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/UI/ProfileView.swift; sourceTree = SOURCE_ROOT; };
+		F0444DC1B9CC2A6F1A67C345 /* LangSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LangSelector.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/LangSelector.swift; sourceTree = SOURCE_ROOT; };
+		F0B2464E8F875CA7582772BD /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirebaseService.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/FirebaseService.swift; sourceTree = SOURCE_ROOT; };
+		F43F4CE295EDF3B86DC737E6 /* UploadScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UploadScheduler.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/UploadScheduler.swift; sourceTree = SOURCE_ROOT; };
 		F82A50EAE8982E8D5A19FDEA /* PromptTemplateLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PromptTemplateLoader.swift; sourceTree = "<group>"; };
+		F9574007A76B427E9935221A /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OpenAIService.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/OpenAIService.swift; sourceTree = SOURCE_ROOT; };
+		F9BE457CBFA4FD1CD7877A29 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +186,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				03E3D15D04E5907F7946F913 /* Foundation.framework in Frameworks */,
+				D981435A89E4E379BCCC801B /* AVFoundation.framework in Frameworks */,
+				C4364E99AC05167BBEA8849D /* SwiftUI.framework in Frameworks */,
+				81B342B0B21FFC760CA2972D /* Security.framework in Frameworks */,
+				AD774225BD3C25BF65F2D1E9 /* FirebaseAuth.framework in Frameworks */,
+				8B2148A7836DA06057975463 /* FirebaseCore.framework in Frameworks */,
+				04474B709D56B48E82C8F87C /* FirebaseFirestore.framework in Frameworks */,
+				95E341F186381C0A14B05A76 /* FirebaseStorage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,14 +206,64 @@
 				C7AEFDB2B6E64BB6F3EAEFE3 /* ContentPolicyManager.swift */,
 				BD170866BC06317B40969A9E /* ContentView.swift */,
 				B49C0C413A5CCF1FD38E167A /* LangSelector.swift */,
-                               CBC93FD96D7B2D8B3E156A06 /* CoreForgeVisualApp.swift */,
+				CBC93FD96D7B2D8B3E156A06 /* CoreForgeVisualApp.swift */,
 				86C9C3013442B1BFD45CA405 /* OpenAIService.swift */,
 				F82A50EAE8982E8D5A19FDEA /* PromptTemplateLoader.swift */,
 				7E0770B5F655F58730B763A1 /* RecapEngine.swift */,
 				CC4BADB2F9A07DD30E44CDFF /* RenderConfig.swift */,
 				D32E9D948634B636F3909256 /* VideoShareManager.swift */,
 				90BFC6911C4E7321A0B7BDC2 /* ViralEngine.swift */,
-				B8E245642341B439C64DC27A /* Info.plist */,
+				B8E245642341B439C64DC27A /* LoreForgeAIFull/LoreForgeAI/Info.plist */,
+				AA5C468184E41033A85D55DF /* NSFWPermissionManager.swift */,
+				A37645AAAAD482BC80A6C982 /* CharacterRecognizer.swift */,
+				228E4D399F517011FA9C6B92 /* PlotPredictionEngine.swift */,
+				4F884D629DA0767D20271942 /* CreditEngine.swift */,
+				40404D3AA91EA336142E86AD /* AITrendDetector.swift */,
+				99F64E3C8251A12EF67AD377 /* AniListAPI.swift */,
+				1EAE421A91107E7AAF1302FB /* LoreCompressionTool.swift */,
+				8BA54BD9A4BDDD26A38F2A1F /* ViralEngine.swift */,
+				A75641A0A55CE944559705DA /* IMDbAPI.swift */,
+				6CC648A79D5B44FEFCD4DC6D /* ContentPolicyManager.swift */,
+				F0444DC1B9CC2A6F1A67C345 /* LangSelector.swift */,
+				28414E72BF81B481E0B3FB68 /* NSFWPermissionEngine.swift */,
+				99BD47259A72B58163CB91E7 /* VisualMemoryManager.swift */,
+				F0B2464E8F875CA7582772BD /* FirebaseService.swift */,
+				9CFA43C7A2AAF518729EFC79 /* RecapEngine.swift */,
+				4E8C4EA0AB6610C7DED04324 /* ElevenLabsService.swift */,
+				86A9438BB6358A59D90C4F86 /* SecureStore.swift */,
+				9CA24DDBA29A41CD9F8BE168 /* AdaptiveAISceneManager.swift */,
+				CB3845A0A849F62E34D3F27C /* PromptTemplateLoader.swift */,
+				C0664BABAFE9A4E7FD5C19D4 /* CoreForgeVisualApp.swift */,
+				B0BD4CEEBECDBDFB07B11C8C /* CharacterStatTracker.swift */,
+				F43F4CE295EDF3B86DC737E6 /* UploadScheduler.swift */,
+				0C014FE9A04B23A8BA2C6076 /* AdaptiveReasoner.swift */,
+				B4424FBDA8087FB5F501F72F /* EbookImporter.swift */,
+				AA3948C79757F58FCA590F30 /* ContentView.swift */,
+				0A2849E191297B24CAF9D0EC /* RenderConfig.swift */,
+				731A468DA43CF29283D0F644 /* SubtitleToRecapTool.swift */,
+				7E2E4A3AA6D771530BA22B8E /* RootView.swift */,
+				F9574007A76B427E9935221A /* OpenAIService.swift */,
+				322A4B2298B0C33C5CE8F199 /* MultiverseMemoryManager.swift */,
+				D25543E199A93A0B98053032 /* VoiceToneController.swift */,
+				BF3240C6B857B901674CDC5B /* VideoExportCreditsView.swift */,
+				B08A401F8A8C053389E4BB8C /* CharacterVoiceAssignmentView.swift */,
+				AC894777B5ABCCD47D4A2001 /* RenderPreviewView.swift */,
+				D948494CBF76951D9582048F /* ProfileView.swift */,
+				96FE4D2FAE13D4C284B74765 /* VisualDashboardView.swift */,
+				949946779E34F1F177C18685 /* CreateProjectButton.swift */,
+				2FA04B25A553C4785EDCCF08 /* VisualOnboardingView.swift */,
+				D43E48F3B20E0792CFF7638A /* VisualProfileCard.swift */,
+				7531458AA4FF8FB569E65F8B /* RecentProjectsCarousel.swift */,
+				6CB744249B193C8DAE4C2DAD /* SceneGeneratorView.swift */,
+				BC2B4CD1B8B104948619A203 /* SubscriptionPlanSelector.swift */,
+				96174EB4A9E9906FD368F6EA /* AutoUploadPanel.swift */,
+				39944913AD837A63DFD62A3B /* EmotionArcVisualizer.swift */,
+				519042AC8E742CF920E78E1C /* PromptSceneEditorView.swift */,
+				AE7F4F458EB4C6BE3CE3E78F /* SchedulerDashboard.swift */,
+				6FF34AAB94C3D98012A22FAA /* VisualStylePicker.swift */,
+				B92144C8AAB30C2934DB2C74 /* LaunchScreen.storyboard */,
+				05F942F6862F7D238A034C50 /* Assets.xcassets */,
+				5CF7416ABF73FCDE9F3802C6 /* prompts.json */,
 			);
 			name = LoreForgeAI;
 			path = LoreForgeAIFull/LoreForgeAI;
@@ -84,6 +281,13 @@
 			isa = PBXGroup;
 			children = (
 				78215C0DB2EA5F27FEA64AC9 /* Foundation.framework */,
+				F9BE457CBFA4FD1CD7877A29 /* AVFoundation.framework */,
+				3C8A4B69A5BC6BB31D60DE8D /* SwiftUI.framework */,
+				3D8C4A8F8E4A926289724DFB /* Security.framework */,
+				84AD4013963CA18BBD806B6D /* FirebaseAuth.framework */,
+				36F24902930F8BDA5128C477 /* FirebaseCore.framework */,
+				039B46E88D0CDBEAB5E107B7 /* FirebaseFirestore.framework */,
+				7F8043C096BA624179955E44 /* FirebaseStorage.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -115,6 +319,7 @@
 				B3F8E42676093896AF20A5B0 /* Sources */,
 				652A4D2D468D22B258E3230E /* Frameworks */,
 				CE621441A8E21523FDC7098F /* Resources */,
+				69DA4C689C5F3C38AA832AC8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,7 +362,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1403F5E2D8CAB8393DC4E45C /* Info.plist in Resources */,
+				1403F5E2D8CAB8393DC4E45C /* LoreForgeAIFull/LoreForgeAI/Info.plist in Resources */,
+				75604DF1B3C01E17D943E206 /* LaunchScreen.storyboard in Resources */,
+				5B5E45F2BDF21AFD576AAE2A /* Assets.xcassets in Resources */,
+				22E144E58A7E6DC5CD89B93E /* prompts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,13 +380,60 @@
 				2A3829037A84220F1B740FE2 /* ContentPolicyManager.swift in Sources */,
 				AB771314EDE7D77B73C20B20 /* ContentView.swift in Sources */,
 				20F6B740B41D0C72E5FA4342 /* LangSelector.swift in Sources */,
-                               85E82BACF8D9237932D2F774 /* CoreForgeVisualApp.swift in Sources */,
+				85E82BACF8D9237932D2F774 /* CoreForgeVisualApp.swift in Sources */,
 				7FB2B1DFAACBD66ABF92C589 /* OpenAIService.swift in Sources */,
 				E7049B9988297943D1F0C30A /* PromptTemplateLoader.swift in Sources */,
 				A6BCAFC0926B9C887F64E49E /* RecapEngine.swift in Sources */,
 				55E609C5E08C87BC3395301A /* RenderConfig.swift in Sources */,
 				11205FCC47C3A2140439E32C /* VideoShareManager.swift in Sources */,
 				F8D7E878AF1FE1EC020A7597 /* ViralEngine.swift in Sources */,
+				9CD5465A84046627ECF56B4A /* NSFWPermissionManager.swift in Sources */,
+				80134ECA94D03017C2D76511 /* CharacterRecognizer.swift in Sources */,
+				FA9F4949AD6D7054F19583BD /* PlotPredictionEngine.swift in Sources */,
+				4C974BE8B758154A38D67643 /* CreditEngine.swift in Sources */,
+				65BE4905A7921AD4734EEB19 /* AITrendDetector.swift in Sources */,
+				D84D4E1F9EC6125A2B32124B /* AniListAPI.swift in Sources */,
+				9E194B63A486D26030D1542A /* LoreCompressionTool.swift in Sources */,
+				2E574B308124817BE2BE215C /* ViralEngine.swift in Sources */,
+				F7DD4313942C1D68CF0E8359 /* IMDbAPI.swift in Sources */,
+				23D148B0A392082347C8CA26 /* ContentPolicyManager.swift in Sources */,
+				5E3D42C0AF9560B17B3F24A0 /* LangSelector.swift in Sources */,
+				AE6D4D028B90101A6C48F592 /* NSFWPermissionEngine.swift in Sources */,
+				08294A2F832FD2B02E93F65A /* VisualMemoryManager.swift in Sources */,
+				7E334653889172A0F4C4B0EA /* FirebaseService.swift in Sources */,
+				5124436D8D1EF520D9EDEECF /* RecapEngine.swift in Sources */,
+				2CC24B1F933D5D6F093B206D /* ElevenLabsService.swift in Sources */,
+				2D8E4E21A5E4984C06870874 /* SecureStore.swift in Sources */,
+				1489429D804EB72120FE1A95 /* AdaptiveAISceneManager.swift in Sources */,
+				495E4BFC9908181D81B5619C /* PromptTemplateLoader.swift in Sources */,
+				1A3E4DC8AE735C010A3349FF /* CoreForgeVisualApp.swift in Sources */,
+				78104F72B9A62CEF87F25A46 /* CharacterStatTracker.swift in Sources */,
+				1A1A491DB9DD0EDEE70CB2ED /* UploadScheduler.swift in Sources */,
+				FD514FDFA9B88492B00F761E /* AdaptiveReasoner.swift in Sources */,
+				CCA440E39EC4BD4A125ECEA8 /* EbookImporter.swift in Sources */,
+				9B0F46C48B967068BAC41DC8 /* ContentView.swift in Sources */,
+				615B400CB7DF4D1FCF96E4BC /* RenderConfig.swift in Sources */,
+				777448689D079169565E271E /* SubtitleToRecapTool.swift in Sources */,
+				5A684CCD8C65957CFA3CC9D8 /* RootView.swift in Sources */,
+				F3344548AFCC32E24B048B57 /* OpenAIService.swift in Sources */,
+				078844F2947C9470A462E910 /* MultiverseMemoryManager.swift in Sources */,
+				5C0443D8935F97E83946F9D8 /* VoiceToneController.swift in Sources */,
+				0606448B81A92A089C206E8A /* VideoExportCreditsView.swift in Sources */,
+				B52F4756B52B679908BED175 /* CharacterVoiceAssignmentView.swift in Sources */,
+				E891423C93865FBB96990A84 /* RenderPreviewView.swift in Sources */,
+				D7194B77BD2D42C8853A8B4E /* ProfileView.swift in Sources */,
+				976A44108435882BF6911482 /* VisualDashboardView.swift in Sources */,
+				A3FA4EB9A75D185523C337F4 /* CreateProjectButton.swift in Sources */,
+				3F474D60A88E708E1D9E847E /* VisualOnboardingView.swift in Sources */,
+				81184872998CBE08617CB2FC /* VisualProfileCard.swift in Sources */,
+				6137443DB3DBD752F68169B1 /* RecentProjectsCarousel.swift in Sources */,
+				34B343E4A686727608257B22 /* SceneGeneratorView.swift in Sources */,
+				CF164B559DCF53FC26BF216A /* SubscriptionPlanSelector.swift in Sources */,
+				16654F5F89EA672173CB4C0C /* AutoUploadPanel.swift in Sources */,
+				8EE5473EAF11ED8043EC8090 /* EmotionArcVisualizer.swift in Sources */,
+				CDAF402FBF51BF21205335C6 /* PromptSceneEditorView.swift in Sources */,
+				C052432F863622E1F8E59A1A /* SchedulerDashboard.swift in Sources */,
+				CD6046649B21B46E486711D2 /* VisualStylePicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,5 +610,4 @@
 /* End XCConfigurationList section */
 	};
 	rootObject = 97A0B521B38FBF87B285BBD9 /* Project object */;
-
 }
