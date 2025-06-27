@@ -158,7 +158,7 @@
 		B4424FBDA8087FB5F501F72F /* EbookImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EbookImporter.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/EbookImporter.swift; sourceTree = SOURCE_ROOT; };
 		B49C0C413A5CCF1FD38E167A /* LangSelector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LangSelector.swift; sourceTree = "<group>"; };
 		B8E245642341B439C64DC27A /* LoreForgeAIFull/LoreForgeAI/Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = LoreForgeAIFull/LoreForgeAI/Info.plist; sourceTree = "<group>"; };
-		B92144C8AAB30C2934DB2C74 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = None; name = LaunchScreen.storyboard; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+               B92144C8AAB30C2934DB2C74 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		BC2B4CD1B8B104948619A203 /* SubscriptionPlanSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SubscriptionPlanSelector.swift; path = apps/CoreForgeVisual/LoreForgeAIFull/LoreForgeAI/UI/SubscriptionPlanSelector.swift; sourceTree = SOURCE_ROOT; };
 		BD170866BC06317B40969A9E /* ContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BE2B3C842D613171C76204B3 /* AdaptiveReasoner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AdaptiveReasoner.swift; sourceTree = "<group>"; };
@@ -443,6 +443,7 @@
 		0764020AED42A7C50AF88CF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADERMAP_STYLE = FLAT;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -504,6 +505,7 @@
 		7FCECF11A47B8FF05ED72383 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADERMAP_STYLE = FLAT;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -520,6 +522,7 @@
 		BC838B91A01FE61F9B051815 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADERMAP_STYLE = FLAT;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -535,6 +538,7 @@
 		C8D46281F38AD33AF2934724 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADERMAP_STYLE = FLAT;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
