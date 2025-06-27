@@ -1,21 +1,57 @@
 /**
- * Very lightweight AI co-pilot stub for Phase 8.
- * Analyzes code strings and returns simple suggestions
- * for refactoring or improvements.
+ * AI Copilot service used by CoreForge Build.
+ * This started as a small stub but now performs
+ * a few real static analysis passes using the
+ * TypeScript compiler API.
  */
+import * as ts from 'typescript';
+
 export class AICopilotService {
+  private parse(code: string): ts.SourceFile {
+    return ts.createSourceFile('tmp.ts', code, ts.ScriptTarget.Latest, true);
+  }
+
+  private visitFunctions(file: ts.SourceFile, cb: (fn: ts.FunctionLikeDeclaration, span: number) => void) {
+    const visit = (node: ts.Node) => {
+      if (ts.isFunctionLike(node)) {
+        const span = file.getLineAndCharacterOfPosition(node.end).line -
+          file.getLineAndCharacterOfPosition(node.pos).line;
+        cb(node, span);
+      }
+      ts.forEachChild(node, visit);
+    };
+    ts.forEachChild(file, visit);
+  }
+
   suggestRefactor(code: string): string[] {
     const suggestions: string[] = [];
-    const lines = code.split(/\r?\n/);
-    if (lines.length > 50) {
-      suggestions.push('Function is quite long; consider breaking it into smaller parts.');
-    }
+    const file = this.parse(code);
+
+    this.visitFunctions(file, (fn, span) => {
+      if (span > 50) {
+        const name = (fn.name && ts.isIdentifier(fn.name)) ? fn.name.text : 'anonymous';
+        suggestions.push(`Function ${name} is quite long; consider breaking it into smaller parts.`);
+      }
+      if (fn.parameters.length > 5) {
+        const name = (fn.name && ts.isIdentifier(fn.name)) ? fn.name.text : 'anonymous';
+        suggestions.push(`Function ${name} has many parameters; consider refactoring.`);
+      }
+    });
+
     if (/eval\(/.test(code)) {
       suggestions.push('Avoid using eval for security reasons.');
     }
-    if (/function\s+\w+\([^)]*\)\s*{[^}]*await[^}]*await/.test(code)) {
+
+    let asyncAwaitCount = 0;
+    const checkAsync = (node: ts.Node) => {
+      if (ts.isAwaitExpression(node)) asyncAwaitCount++;
+      ts.forEachChild(node, checkAsync);
+    };
+    ts.forEachChild(file, checkAsync);
+    if (asyncAwaitCount > 1 && /forEach\s*\(/.test(code)) {
       suggestions.push('Mixed async flow detected; review for proper await usage.');
     }
+
     return suggestions;
   }
   annotate(code: string): string {
@@ -52,7 +88,17 @@ export class AICopilotService {
   }
 
   generateTests(name: string): string[] {
-    return [`${name} should succeed`, `${name} should fail gracefully`];
+    const file = this.parse(name);
+    const tests: string[] = [];
+    const add = (node: ts.Node) => {
+      if (ts.isFunctionLike(node) && node.name && ts.isIdentifier(node.name)) {
+        const fn = node.name.text;
+        tests.push(`it('${fn} works', () => {\n  const result = ${fn}();\n});`);
+      }
+      ts.forEachChild(node, add);
+    };
+    ts.forEachChild(file, add);
+    return tests.length ? tests : [`${name} should succeed`, `${name} should fail gracefully`];
   }
 
   detectAntiPatterns(code: string): string[] {
@@ -84,7 +130,14 @@ export class AICopilotService {
 
   securityHints(code: string): string[] {
     const { SecurityScanner } = require('./SecurityScanner');
-    return new SecurityScanner().scan(code);
+    const base = new SecurityScanner().scan(code);
+    if (/child_process\.exec\(/.test(code)) {
+      base.push('Usage of child_process.exec can be dangerous');
+    }
+    if (/https?:\/\/[^\s]*@/.test(code)) {
+      base.push('Possible credential leak in URL');
+    }
+    return base;
   }
 
   asyncHint(code: string): string {

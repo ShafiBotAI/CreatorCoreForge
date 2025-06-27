@@ -1,24 +1,44 @@
 import Foundation
 import CreatorCoreForge
+#if canImport(NaturalLanguage)
+import NaturalLanguage
+#endif
 
-/// Simple AI-based voice assignment stub.
-/// Assigns a voice ID based on length and mood keywords.
+/// Voice assignment engine used by the audio app.
+/// Leverages NaturalLanguage sentiment analysis when available
+/// to choose a voice that matches the text mood.
 struct VoiceAssigner {
     static func assignVoice(for text: String) -> Voice {
-        // Prefer user's favorite voice if one exists
         if let favID = FavoriteVoiceService.shared.favorites.first,
            let fav = VoiceConfig.voices.first(where: { $0.id == favID }) {
             return fav
         }
-        // Basic heuristics: choose narrator for long text, celebrity for keywords
+
+        #if canImport(NaturalLanguage)
+        if #available(iOS 12.0, macOS 10.14, *) {
+            let analyzer = NLSentimentAnalyzer()
+            if let score = try? analyzer.predictedSentiment(for: text) {
+                switch score {
+                case .positive:
+                    if let v = VoiceConfig.voices.first(where: { $0.id == "athena" }) { return v }
+                case .negative:
+                    if let v = VoiceConfig.voices.first(where: { $0.id == "zeus" }) { return v }
+                default:
+                    break
+                }
+            }
+        }
+        #endif
+
+        if text.count > 200 {
+            return Voice(id: "narrator", name: "Narrator")
+        }
+
         let lowercased = text.lowercased()
         if lowercased.contains("wow") || lowercased.contains("incredible") {
             return Voice(id: "celebrity", name: "Celebrity")
         }
-        if text.count > 200 {
-            return Voice(id: "narrator", name: "Narrator")
-        }
-        // Default voice
+
         return VoiceConfig.voices.first ?? Voice(id: "default", name: "Default")
     }
 }
