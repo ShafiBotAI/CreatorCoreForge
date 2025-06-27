@@ -2,7 +2,7 @@ from pydub import AudioSegment
 import subprocess
 import sys
 from pathlib import Path
-from typing import Iterable
+
 
 
 def normalize_volume(path: str, target_dbfs: float = -20.0) -> AudioSegment:
@@ -23,9 +23,16 @@ def convert_ebook_to_audio(ebook_path: str, output_dir: str = "output") -> None:
         Directory where audio files will be written.
     """
 
+    src = Path(ebook_path)
+    if not src.is_file():
+        raise FileNotFoundError(src)
+
+    out_dir = Path(output_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
+
     repo_root = Path(__file__).resolve().parents[2]
     script = repo_root / "scripts" / "ebook2audiobook_bridge.py"
-    subprocess.run([sys.executable, str(script), ebook_path, "-o", output_dir], check=True)
+    subprocess.run([sys.executable, str(script), str(src), "-o", str(out_dir)], check=True)
 
 
 def advanced_normalize_wav_file(input_file: str, output_file: str) -> None:
@@ -49,8 +56,12 @@ def advanced_normalize_wav_file(input_file: str, output_file: str) -> None:
 
 
 def advanced_normalize_wav_folder(folder_path: str) -> None:
-    """Normalize all WAV files in ``folder_path`` using ``advanced_normalize_wav_file``."""
-    for path in Path(folder_path).rglob("*.wav"):
+    """Normalize all WAV files in ``folder_path`` using :func:`advanced_normalize_wav_file`."""
+    folder = Path(folder_path)
+    if not folder.is_dir():
+        raise FileNotFoundError(folder_path)
+
+    for path in folder.rglob("*.wav"):
         tmp_file = path.with_suffix(".tmp.wav")
         advanced_normalize_wav_file(str(path), str(tmp_file))
         Path(tmp_file).replace(path)
@@ -67,8 +78,12 @@ def convert_folder_to_audio(folder_path: str, output_base_dir: str = "output") -
     output_base_dir: str, optional
         Base directory where per-book audio folders will be created.
     """
+    folder = Path(folder_path)
+    if not folder.is_dir():
+        raise FileNotFoundError(folder_path)
+
     ebook_exts = {".epub", ".pdf", ".txt", ".docx"}
-    for ebook in Path(folder_path).iterdir():
+    for ebook in folder.iterdir():
         if ebook.suffix.lower() in ebook_exts:
             out_dir = Path(output_base_dir) / ebook.stem
             out_dir.mkdir(parents=True, exist_ok=True)
