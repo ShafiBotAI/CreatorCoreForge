@@ -11,19 +11,21 @@ struct AmbientFXMixerView: View {
             Slider(value: $level, in: 0...1)
         }
         .padding()
-        .background(AppTheme.cardMaterial)
-        .cornerRadius(AppTheme.cornerRadius)
+        .background(Theme.cardMaterial)
+        .cornerRadius(Theme.cornerRadius)
     }
 }
 
-#if DEBUG
-struct AmbientFXMixerView_Previews: PreviewProvider {
-    @State static var level = 0.5
-    static var previews: some View {
-        AmbientFXMixerView(level: $level)
-            .padding()
-            .previewLayout(.sizeThatFits)
+#Preview {
+    struct PreviewWrapper: View {
+        @State var level = 0.5
+        var body: some View {
+            AmbientFXMixerView(level: $level)
+                .padding()
+                .previewLayout(.sizeThatFits)
+        }
     }
+    return PreviewWrapper()
 }
 #endif
 #endif

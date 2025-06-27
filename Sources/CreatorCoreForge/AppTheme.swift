@@ -6,7 +6,7 @@ public enum AppTheme {
     /// Primary gradient used across backgrounds.
     public static var primaryGradient: LinearGradient {
         LinearGradient(
-            colors: [Color.purple, Color.blue],
+            colors: [Color.accentColor, Color.accentColor.opacity(0.7)],
             startPoint: .topLeading,
             endPoint: .bottomTrailing
         )
@@ -14,17 +14,38 @@ public enum AppTheme {
 
     /// Accent color used for icons and interactive elements.
     public static var accentColor: Color {
-        Color.purple
+        Color.accentColor
     }
 
     /// Material for cards and popups.
-    public static var cardMaterial: Material { .ultraThinMaterial }
+    public static var cardMaterial: Material { .regularMaterial }
 
     /// Standard corner radius for cards.
-    public static var cornerRadius: CGFloat { 12 }
+    public static var cornerRadius: CGFloat { 8 }
 
     /// Standard shadow radius for cards.
+
     public static var shadowRadius: CGFloat { 4 }
+
+    /// Foreground color that adapts to light/dark mode.
+    public static var foregroundColor: Color {
+        #if os(iOS) || os(macOS) || os(tvOS) || os(watchOS)
+        return Color(.label)
+        #else
+        return Color.primary
+        #endif
+    }
+
+    /// Secondary text color that adapts to light/dark mode.
+    public static var secondaryColor: Color {
+        #if os(iOS) || os(macOS) || os(tvOS) || os(watchOS)
+        return Color(.secondaryLabel)
+        #else
+        return Color.secondary
+        #endif
+    }
+    public static var shadowRadius: CGFloat { 2 }
+
 }
 #endif
 

@@ -5,6 +5,7 @@ import CreatorCoreForge
 /// Lists downloaded books and shows space usage.
 struct DownloadsManagerView: View {
     @EnvironmentObject var library: LibraryModel
+    @EnvironmentObject var offline: OfflineContentManager
     @State private var storageUsed: Double = 0
 
     private var downloaded: [Book] {
@@ -27,7 +28,11 @@ struct DownloadsManagerView: View {
                     Text(book.title)
                     Spacer()
                     Button("Remove") {
+
                         library.removeDownloaded(book: book)
+=======
+                        offline.remove(book: book)
+
                         storageUsed = calculateStorage()
                     }
                     .buttonStyle(.bordered)
@@ -35,7 +40,16 @@ struct DownloadsManagerView: View {
                 .padding(.horizontal)
             }
         }
+
         .onAppear { storageUsed = calculateStorage() }
+=======
+
+        .onAppear { storageUsed = calculateStorage() }
+=======
+        .onAppear {
+            storageUsed = Double(offline.downloaded.count) * 50
+        }
+
         .padding(.vertical)
         .background(AppTheme.cardMaterial)
         .cornerRadius(AppTheme.cornerRadius)
@@ -44,6 +58,7 @@ struct DownloadsManagerView: View {
 
     private func calculateStorage() -> Double {
         var bytes: Int64 = 0
+
         for book in downloaded {
             for chapter in book.chapters {
                 if let url = chapter.audioURL,
@@ -51,6 +66,12 @@ struct DownloadsManagerView: View {
                    let size = attrs[.size] as? NSNumber {
                     bytes += size.int64Value
                 }
+=======
+        for url in offline.downloaded {
+            if let attrs = try? FileManager.default.attributesOfItem(atPath: url.path),
+               let size = attrs[.size] as? NSNumber {
+                bytes += size.int64Value
+
             }
         }
         return Double(bytes) / 1_048_576
@@ -60,5 +81,6 @@ struct DownloadsManagerView: View {
 #Preview {
     DownloadsManagerView()
         .environmentObject(LibraryModel())
+        .environmentObject(OfflineContentManager(library: LibraryModel()))
 }
 #endif

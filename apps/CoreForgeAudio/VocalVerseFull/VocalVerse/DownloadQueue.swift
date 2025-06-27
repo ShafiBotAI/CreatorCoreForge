@@ -1,7 +1,6 @@
 import Foundation
 #if canImport(Combine)
 import Combine
-#endif
 
 /// Manages queued downloads for offline content retrieval. When a
 /// `StealthVaultManager` is provided, downloaded files are stored in the
@@ -89,11 +88,13 @@ final class DownloadQueue: ObservableObject {
         downloads[url] = task
     }
 }
+#endif
 
 #if canImport(FoundationNetworking)
 import FoundationNetworking
 #endif
 
+#if canImport(Combine)
 extension URLSession {
     /// Helper publisher for a simple file download.
     fileprivate func downloadTaskPublisher(for url: URL) -> AnyPublisher<URL, URLError> {
@@ -116,3 +117,4 @@ extension URLSession {
         return subject.handleEvents(receiveCancel: { task.cancel() }).eraseToAnyPublisher()
     }
 }
+#endif

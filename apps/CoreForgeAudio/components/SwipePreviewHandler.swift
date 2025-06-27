@@ -15,14 +15,11 @@ struct SwipePreviewHandler: ViewModifier {
     }
 }
 
-#if DEBUG
-struct SwipePreviewHandler_Previews: PreviewProvider {
-    static var previews: some View {
-        Text("Preview")
-            .voicePreviewOnHold(audioURL: URL(fileURLWithPath: "/dev/null"))
-            .padding()
-            .previewLayout(.sizeThatFits)
-    }
+#Preview {
+    Text("Preview")
+        .voicePreviewOnHold(audioURL: URL(fileURLWithPath: "/dev/null"))
+        .padding()
+        .previewLayout(.sizeThatFits)
 }
 #endif
 

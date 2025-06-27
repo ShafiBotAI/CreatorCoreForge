@@ -54,9 +54,9 @@ struct LibraryDashboardView: View {
                         .environmentObject(library)
                         .environmentObject(usage)
                         .transition(.scale)
-                        .background(AppTheme.cardMaterial)
-                        .cornerRadius(AppTheme.cornerRadius)
-                        .shadow(radius: AppTheme.shadowRadius)
+                        .background(Theme.cardMaterial)
+                        .cornerRadius(Theme.cornerRadius)
+                        .shadow(radius: Theme.shadowRadius)
                 } else {
                     MiniPlayerView(book: book, chapter: chapter, namespace: ns, isExpanded: $showPlayer)
                         .padding()
@@ -74,13 +74,9 @@ struct LibraryDashboardView: View {
     }
 }
 
-#if DEBUG
-struct LibraryDashboardView_Previews: PreviewProvider {
-    static var previews: some View {
-        LibraryDashboardView()
-            .environmentObject(LibraryModel())
-            .environmentObject(UsageStats())
-    }
+#Preview {
+    LibraryDashboardView()
+        .environmentObject(LibraryModel())
+        .environmentObject(UsageStats())
 }
-#endif
 #endif
