@@ -249,7 +249,6 @@
 			children = (
 				926B8404AEC2407194F9608C /* Products */,
 				AD9B641A97DA464A874215CC /* Frameworks */,
-				AE5B95FBEDD144C2A2A1D4BB /* CoreForgeAudio */,
 				9EAE4266BA09AE286325F4BD /* Theme.swift */,
 				763A463AA99FBDCBD0A725CA /* AskBookAIView.swift */,
 				089942A985E2F00BEFD10E92 /* AutoScrollToggleView.swift */,
