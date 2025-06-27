@@ -25,3 +25,32 @@ def convert_ebook_to_audio(ebook_path: str, output_dir: str = "output") -> None:
     repo_root = Path(__file__).resolve().parents[2]
     script = repo_root / "scripts" / "ebook2audiobook_bridge.py"
     subprocess.run([sys.executable, str(script), ebook_path, "-o", output_dir], check=True)
+
+
+def advanced_normalize_wav_file(input_file: str, output_file: str) -> None:
+    """Apply advanced normalization using ffmpeg filters from ebook2audiobook."""
+    ffmpeg_cmd = [
+        "ffmpeg", "-i", input_file,
+        "-af",
+        "agate=threshold=-25dB:ratio=1.4:attack=10:release=250,"
+        "afftdn=nf=-70,"
+        "acompressor=threshold=-20dB:ratio=2:attack=80:release=200:makeup=1dB,"
+        "loudnorm=I=-16:TP=-3:LRA=7:linear=true,"
+        "equalizer=f=250:t=q:w=2:g=-3,"
+        "equalizer=f=150:t=q:w=2:g=2,"
+        "equalizer=f=3000:t=q:w=2:g=3,"
+        "equalizer=f=5500:t=q:w=2:g=-4,"
+        "equalizer=f=9000:t=q:w=2:g=-2,"
+        "highpass=f=63",
+        "-y", output_file,
+    ]
+    subprocess.run(ffmpeg_cmd, check=True)
+
+
+def advanced_normalize_wav_folder(folder_path: str) -> None:
+    """Normalize all WAV files in ``folder_path`` using ``advanced_normalize_wav_file``."""
+    for path in Path(folder_path).rglob("*.wav"):
+        tmp_file = path.with_suffix(".tmp.wav")
+        advanced_normalize_wav_file(str(path), str(tmp_file))
+        Path(tmp_file).replace(path)
+

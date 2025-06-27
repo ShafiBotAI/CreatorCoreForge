@@ -42,6 +42,9 @@ For advanced conversions using the Python pipeline, call
 `convert_ebook_to_audio("MyBook.epub")` from `audio_utils.py` or run
 `../../scripts/ebook2audiobook_bridge.py MyBook.epub`.
 To polish training samples, run `services/voice_cleaner.py AUDIO.wav` and use the resulting file in `VoiceTrainer`.
+For final mastering you can call `advanced_normalize_wav_file` or
+`advanced_normalize_wav_folder` from `audio_utils.py` to apply the
+ebook2audiobook FFmpeg pipeline for consistent levels and tone.
 You can also turn a dialogue script into audio using `../../scripts/chatterbox_bridge.py script.txt` once your Chatterbox API endpoint is configured.
 
 Full details on the Python-based feature set live in
