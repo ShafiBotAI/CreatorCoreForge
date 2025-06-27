@@ -14,7 +14,12 @@ struct VoiceConfig {
         Voice(id: "storyteller", name: "Storyteller"),
         Voice(id: "assistant", name: "Assistant"),
         Voice(id: "morgan", name: "Morgan"),
-        Voice(id: "emma", name: "Emma")
+        Voice(id: "emma", name: "Emma"),
+        Voice(id: "athena", name: "Athena"),
+        Voice(id: "zeus", name: "Zeus"),
+        Voice(id: "ultra", name: "UltraAI"),
+        Voice(id: "aisynth", name: "AiSynth"),
+        Voice(id: "hermes", name: "Hermes")
     ]
 
     /// Cached list of voice display names for UI components.
@@ -28,6 +33,7 @@ struct VoiceConfig {
     }
 }
 
+
 // Register newly added voices when used within the app.
 extension VoiceConfig {
     static func registerDefaultVoices() {
@@ -38,3 +44,4 @@ extension VoiceConfig {
         addVoice(id: "hermes", name: "Hermes")
     }
 }
+

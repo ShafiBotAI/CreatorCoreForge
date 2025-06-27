@@ -1,13 +1,24 @@
 import SwiftUI
 
+/// Displays active Codex tasks and their statuses.
 struct CodexAgentPanel: View {
+    @StateObject private var manager = CodexTaskManager()
+
     var body: some View {
-        Text("Codex Agent Panel")
+        List {
+            ForEach(manager.tasks) { task in
+                HStack {
+                    Text(task.title)
+                    Spacer()
+                    Text(task.status)
+                        .foregroundColor(task.status == "running" ? .green : .secondary)
+                }
+            }
+        }
+        .listStyle(.insetGrouped)
     }
 }
 
-struct CodexAgentPanel_Previews: PreviewProvider {
-    static var previews: some View {
-        CodexAgentPanel()
-    }
+#Preview {
+    CodexAgentPanel()
 }

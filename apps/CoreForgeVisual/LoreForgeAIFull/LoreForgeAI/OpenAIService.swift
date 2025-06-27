@@ -45,8 +45,7 @@ final class OpenAIService {
     }
 
     func sendPrompt(_ prompt: String, completion: @escaping (Result<String, Error>) -> Void) {
-        var attempt = 0
-        func makeRequest() {
+        @Sendable func makeRequest(_ attempt: Int) {
             var request = URLRequest(url: baseURL.appendingPathComponent("chat/completions"))
             request.httpMethod = "POST"
             request.addValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
@@ -60,8 +59,7 @@ final class OpenAIService {
             let task = self.session.dataTask(with: request) { data, response, error in
                 if let error = error {
                     if attempt < self.retries {
-                        attempt += 1
-                        makeRequest()
+                        makeRequest(attempt + 1)
                     } else {
                         completion(.failure(error))
                     }
@@ -80,7 +78,7 @@ final class OpenAIService {
             }
             task.resume()
         }
-        makeRequest()
+        makeRequest(0)
     }
 
     func sendEmbeddingRequest(text: String, completion: @escaping (Result<[Double], Error>) -> Void) {

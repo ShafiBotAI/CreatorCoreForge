@@ -28,7 +28,7 @@ public final class DocumentParser {
 
     private func parseDocx(url: URL) throws -> String {
         let process = Process()
-        process.launchPath = "/usr/bin/unzip"
+        process.executableURL = URL(fileURLWithPath: "/usr/bin/unzip")
         process.arguments = ["-p", url.path, "word/document.xml"]
         let pipe = Pipe()
         process.standardOutput = pipe

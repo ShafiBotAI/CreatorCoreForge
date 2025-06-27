@@ -69,7 +69,6 @@ def check_and_install_requirements(file_path):
                 error = f'{package} is missing.'
                 print(error)
                 missing_packages.append(package)
-                pass
         if missing_packages:
             msg = '\nInstalling missing packages...\n'
             print(msg)

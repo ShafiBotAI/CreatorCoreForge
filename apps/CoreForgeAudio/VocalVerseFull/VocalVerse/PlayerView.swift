@@ -9,6 +9,7 @@ struct PlayerView: View {
     var namespace: Namespace.ID
     @EnvironmentObject var library: LibraryModel
     @EnvironmentObject var usage: UsageStats
+    @EnvironmentObject var prefs: UserPreferences
 #if canImport(AVFoundation)
     @StateObject private var highlighter = SpeechHighlighter()
 #endif
@@ -18,10 +19,6 @@ struct PlayerView: View {
 #endif
     @State private var speed: Double = 1.0
     @State private var voice: String = VoiceConfig.voices.first?.name ?? "Default"
-
-    private var gradient: LinearGradient {
-        LinearGradient(colors: [.blue, .purple], startPoint: .topLeading, endPoint: .bottomTrailing)
-    }
 
     private var gradient: LinearGradient {
         LinearGradient(colors: [.blue, .purple], startPoint: .topLeading, endPoint: .bottomTrailing)
@@ -54,12 +51,7 @@ struct PlayerView: View {
                     PlaybackSpeedControlView(speed: $speed, voice: $voice)
                 }
                 .padding()
-
                 .background(gradient.ignoresSafeArea())
-=======
-
-                .background(gradient.ignoresSafeArea())
-=======
                 .matchedGeometryEffect(id: "player", in: namespace)
 
 
@@ -75,6 +67,10 @@ struct PlayerView: View {
 
 #if canImport(AVFoundation)
     private func toggleSpeech(text: String) {
+        guard ContentPolicyManager.isAllowed(text: text, nsfw: prefs.nsfwEnabled, age: prefs.age) else {
+            isSpeaking = false
+            return
+        }
         if highlighter.isSpeaking {
             highlighter.pause()
             if let start = playStart {

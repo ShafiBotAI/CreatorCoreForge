@@ -309,18 +309,8 @@
   },
   "CoreForgeAudio": {
     "missing_dirs": [],
-    "missing_file_types": [
-      ".ts",
-      ".py",
-      ".tsx"
-    ],
-    "incomplete_files": [
-      {
-        "file": "Desktop/package-lock.json",
-        "line": 1414,
-        "snippet": "\"minipass\": \"^7.1.2\","
-      }
-    ]
+    "missing_file_types": [],
+    "incomplete_files": []
   },
   "CoreForgeMind": {
     "missing_dirs": [

@@ -14,14 +14,16 @@ struct VoicePickerView: View {
     }
 }
 
-#if DEBUG
-struct VoicePickerView_Previews: PreviewProvider {
-    @State static var voice = "Default"
-    static var previews: some View {
-        VoicePickerView(voice: $voice)
-            .padding()
-            .previewLayout(.sizeThatFits)
+#Preview {
+    struct PreviewWrapper: View {
+        @State var voice = "Default"
+        var body: some View {
+            VoicePickerView(voice: $voice)
+                .padding()
+                .previewLayout(.sizeThatFits)
+        }
     }
+    return PreviewWrapper()
 }
 #endif
 #endif

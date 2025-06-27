@@ -2,11 +2,11 @@
 
 CoreForge Audio is a voice-driven reader that supports offline playback and a secure
 vault system. It is written in SwiftUI and will expand to additional platforms.
-
 ## Key Features
+
  - **Voice assignment** for characters via `CharacterVoiceMapper`
  - **Voice variant creation** with `VoiceDNAForker`
-
+ - **Voice cleanup utility** via `voice_cleaner.py` for high-quality training
 - **Dark mode** and theme toggles
  - **Dark mode** and theme toggles via `ThemeManager`
 
@@ -27,6 +27,16 @@ vault system. It is written in SwiftUI and will expand to additional platforms.
 - **Favorite Voices** tab for quickly selecting preferred voices
 - **Highlighted reading** during playback
 
+- **Advanced offline TTS** via the bundled `ebook2audiobook` pipeline (XTTSv2,
+  Bark, Vits and more) with support for 1110+ languages and optional voice
+  cloning
+- **Custom TTS model uploads** to further improve voice fidelity
+=======
+- **Batch ebook conversion** via `convert_folder_to_audio` or
+  `scripts/ebook2audiobook_batch.py`
+- **Advanced voice extraction** with `voice_cleaner.py --extract` for
+  noise-free training samples
+
 
 When Stealth Vault is enabled in the Settings screen, downloaded audio is
 stored in a hidden directory so it won't appear in the Files app.
@@ -38,8 +48,32 @@ you notice missing playback or export features, ensure the package is linked in
 Xcode and reference `Sources/CreatorCoreForge/CoreForgeAudio_MissingFeatures.swift`
 for additional helper functions. These utilities provide an offline download
 queue and an eBook–to–audio converter that complement the app's own classes.
-For advanced conversions using the Python pipeline, run `../../scripts/ebook2audiobook_bridge.py MyBook.epub`.
+For advanced conversions using the Python pipeline, call
+`convert_ebook_to_audio("MyBook.epub")` from `audio_utils.py` or run
+`../../scripts/ebook2audiobook_bridge.py MyBook.epub`.
+To polish training samples, run `services/voice_cleaner.py AUDIO.wav` and use the resulting file in `VoiceTrainer`.
+For final mastering you can call `advanced_normalize_wav_file` or
+`advanced_normalize_wav_folder` from `audio_utils.py` to apply the
+ebook2audiobook FFmpeg pipeline for consistent levels and tone.
+Use `convert_folder_to_audio` to process an entire directory of ebooks, and
+`voice_cleaner.py --extract` to generate clean voice models.
 You can also turn a dialogue script into audio using `../../scripts/chatterbox_bridge.py script.txt` once your Chatterbox API endpoint is configured.
+
+
+## ebook2audiobook Integration
+
+This repository bundles a snapshot of the open source
+[`ebook2audiobook`](../ebook2audiobook) project under `apps/ebook2audiobook`.
+It provides a CPU/GPU narration pipeline capable of handling over 1110
+languages and optional voice cloning. Install its Python requirements and run
+`scripts/ebook2audiobook_bridge.py` to convert entire eBooks offline. The
+pipeline works on machines with as little as **4GB RAM** (8GB recommended) and
+supports custom TTS model uploads for higher quality results.
+=======
+Full details on the Python-based feature set live in
+[`../ebook2audiobook/FEATURES-CODEX-COMPLETE.md`](../ebook2audiobook/FEATURES-CODEX-COMPLETE.md).
+Install the optional pipeline as described in `DeveloperSetup.md` to unlock
+these advanced converters.
 
 
 ## Building (iOS)

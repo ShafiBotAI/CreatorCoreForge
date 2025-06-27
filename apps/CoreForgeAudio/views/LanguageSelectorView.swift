@@ -14,14 +14,16 @@ struct LanguageSelectorView: View {
     }
 }
 
-#if DEBUG
-struct LanguageSelectorView_Previews: PreviewProvider {
-    @State static var lang = "English"
-    static var previews: some View {
-        LanguageSelectorView(language: $lang)
-            .padding()
-            .previewLayout(.sizeThatFits)
+#Preview {
+    struct PreviewWrapper: View {
+        @State var lang = "English"
+        var body: some View {
+            LanguageSelectorView(language: $lang)
+                .padding()
+                .previewLayout(.sizeThatFits)
+        }
     }
+    return PreviewWrapper()
 }
 #endif
 #endif

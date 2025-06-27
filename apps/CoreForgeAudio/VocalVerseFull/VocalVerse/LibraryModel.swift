@@ -1,6 +1,12 @@
 import Foundation
+
 #if canImport(SwiftUI)
 import SwiftUI
+=======
+#if canImport(Combine)
+import Combine
+#endif
+
 #if canImport(AVFoundation)
 import AVFoundation
 #endif
@@ -26,29 +32,51 @@ final class LibraryModel: ObservableObject {
         books.filter { $0.isFavorite }
     }
 
+    private let storeKey = "CF_LibraryBooks"
+    private let defaults = UserDefaults.standard
+
     init() {
-        // Basic demo book used when the library is empty
-        self.books = [
-            Book(title: "Sample Adventure", author: "A. Author", chapters: [
-                Chapter(title: "Intro", text: "@Hero begins the journey."),
-                Chapter(title: "Conflict", text: "@Villain appears in town.")
-            ])
-        ]
+        if let data = defaults.data(forKey: storeKey),
+           let decoded = try? JSONDecoder().decode([Book].self, from: data) {
+            self.books = decoded
+        } else {
+            self.books = [
+                Book(title: "Sample Adventure", author: "A. Author", chapters: [
+                    Chapter(title: "Intro", text: "@Hero begins the journey."),
+                    Chapter(title: "Conflict", text: "@Villain appears in town.")
+                ])
+            ]
+        }
     }
 
     func addBook(_ book: Book) {
         books.append(book)
+        save()
     }
 
     /// Toggle favorite state for a book.
     func toggleFavorite(book: Book) {
         guard let idx = books.firstIndex(where: { $0.id == book.id }) else { return }
         books[idx].isFavorite.toggle()
+        save()
     }
 
     func select(book: Book, chapter: Chapter? = nil) {
         currentBook = book
         currentChapter = chapter
+    }
+
+    /// Mark a book as downloaded and persist the update.
+    func markDownloaded(book: Book) {
+        guard let idx = books.firstIndex(where: { $0.id == book.id }) else { return }
+        books[idx].isDownloaded = true
+        save()
+    }
+
+    private func save() {
+        if let data = try? JSONEncoder().encode(books) {
+            defaults.set(data, forKey: storeKey)
+        }
     }
 }
 #endif

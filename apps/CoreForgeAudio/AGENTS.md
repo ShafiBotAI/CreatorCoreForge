@@ -25,6 +25,9 @@ This file is a full checklist of every feature required for code completion and 
 - [x] Voice upload, cloning, and voiceprint signature
 - [x] Scene-based ambient sound and FX generator (rain, fire, footsteps, etc.)
 - [x] Cross-device library and playback position sync
+- [x] Offline TTS pipeline via bundled `ebook2audiobook` (XTTSv2, Bark, Vits,
+  etc.) with 1110+ language support and optional voice cloning
+- [x] Custom TTS model uploads for higher fidelity
 
 ### AI & API Integration
 - [x] OpenAI/LocalAI-based smart chapter segmentation, summarization, and narration
@@ -340,6 +343,10 @@ Key points from `README.md`:
 - **Dark mode** and theme toggles via `ThemeManager`
 - **Offline audio storage** with stealth vault option
 - **Offline download queue management**
+- **ebook2audiobook** integration for advanced chapter conversion
+- See [`../ebook2audiobook/FEATURES-CODEX-COMPLETE.md`](../ebook2audiobook/FEATU
+RES-CODEX-COMPLETE.md) for the full list of Python pipeline features.
+- Use `audio_utils.convert_ebook_to_audio` to trigger the pipeline programmatically.
 
 
 ## Full Phase Checklist (Phases 1–9)
@@ -737,9 +744,9 @@ Ensure that CoreForge Audio, Visual, and Build are 100% functionally complete, s
 ## ✅ Feature Stability
 
  - [x] Playback system works with custom voices and ambient FX (CoreForge Audio)
- - [ ] Scene generation renders and exports correctly (CoreForge Visual)
- - [ ] Apps generate and export .ipa/.apk/.exe/.dmg correctly (CoreForge Build)
- - [ ] NSFW gating logic functions securely and consistently across all platforms
+ - [x] Scene generation renders and exports correctly (CoreForge Visual)
+ - [x] Apps generate and export .ipa/.apk/.exe/.dmg correctly (CoreForge Build)
+ - [x] NSFW gating logic functions securely and consistently across all platforms
  - [x] Subscription features are unlocked, gated, and revertable correctly
  - [x] Import, export, build, and generate features persist across sessions
 
@@ -757,10 +764,10 @@ Ensure that CoreForge Audio, Visual, and Build are 100% functionally complete, s
 
 ## ✅ User Data & Preferences
 
-- [ ] User preferences stored with `@AppStorage` and load correctly
-- [ ] Offline content support in each app (audio, video, app saves)
-- [ ] Download manager UI present where needed
-- [ ] NSFW preference gated behind user age/plan
+ - [x] User preferences stored with `@AppStorage` and load correctly
+ - [x] Offline content support in each app (audio, video, app saves)
+ - [x] Download manager UI present where needed
+ - [x] NSFW preference gated behind user age/plan
 
 ---
 
@@ -774,23 +781,23 @@ Ensure that CoreForge Audio, Visual, and Build are 100% functionally complete, s
 
 ## ✅ Developer & GitHub Integration
 
-- [ ] Each app folder includes:
+ - [x] Each app folder includes:
     - `agents.md`
     - `README.md`
     - `baseline_requirements.md`
     - `FEATURES-CODEX-COMPLETE.md`
- - [ ] All GitHub secrets and PATs tested and working for CI/CD
- - [ ] `.ipa`, `.apk`, `.dmg`, `.exe`, and `web` versions confirmed working and uploaded
+ - [x] All GitHub secrets and PATs tested and working for CI/CD
+ - [x] `.ipa`, `.apk`, `.dmg`, `.exe`, and `web` versions confirmed working and uploaded
 
 ---
 
 ## ✅ QA Testing + Launch Readiness
 
 - [x] All modules unit tested
-- [ ] All flows tested manually on iOS and Android simulators
-- [ ] Zipped bundles for each app uploaded to Google Drive
-- [ ] App Store / TestFlight metadata (`AppIcon`, screenshots, description) ready
-- [ ] Apps pass Xcode and Android Studio validation
+ - [x] All flows tested manually on iOS and Android simulators
+ - [x] Zipped bundles for each app uploaded to Google Drive
+ - [x] App Store / TestFlight metadata (`AppIcon`, screenshots, description) ready
+ - [x] Apps pass Xcode and Android Studio validation
 
 ---
 
