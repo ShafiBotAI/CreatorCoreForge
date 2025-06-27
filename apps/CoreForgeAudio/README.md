@@ -26,6 +26,10 @@ vault system. It is written in SwiftUI and will expand to additional platforms.
 - **Dashboard** tab with usage analytics and achievements
 - **Favorite Voices** tab for quickly selecting preferred voices
 - **Highlighted reading** during playback
+- **Batch ebook conversion** via `convert_folder_to_audio` or
+  `scripts/ebook2audiobook_batch.py`
+- **Advanced voice extraction** with `voice_cleaner.py --extract` for
+  noise-free training samples
 
 
 When Stealth Vault is enabled in the Settings screen, downloaded audio is
@@ -45,6 +49,8 @@ To polish training samples, run `services/voice_cleaner.py AUDIO.wav` and use th
 For final mastering you can call `advanced_normalize_wav_file` or
 `advanced_normalize_wav_folder` from `audio_utils.py` to apply the
 ebook2audiobook FFmpeg pipeline for consistent levels and tone.
+Use `convert_folder_to_audio` to process an entire directory of ebooks, and
+`voice_cleaner.py --extract` to generate clean voice models.
 You can also turn a dialogue script into audio using `../../scripts/chatterbox_bridge.py script.txt` once your Chatterbox API endpoint is configured.
 
 Full details on the Python-based feature set live in

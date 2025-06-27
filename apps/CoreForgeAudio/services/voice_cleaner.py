@@ -10,7 +10,7 @@ from __future__ import annotations
 
 import os
 import subprocess
-from typing import Optional
+from pathlib import Path
 
 from pydub import AudioSegment
 from shutil import which
@@ -72,14 +72,44 @@ def clean_voice_sample(input_file: str, output_dir: str, sample_rate: int = 2400
     os.remove(tmp_wav)
     return cleaned_path
 
+
+def extract_and_clean_voice(input_file: str, output_dir: str, sample_rate: int = 24000) -> str:
+    """Extract vocals from ``input_file`` using ebook2audiobook's ``VoiceExtractor``
+    and return the normalized WAV path.
+
+    This requires the optional ebook2audiobook dependencies to be installed.
+    """
+    try:
+        from apps.ebook2audiobook.lib.classes.voice_extractor import VoiceExtractor
+        from apps.ebook2audiobook.lib.models import XTTSv2, models
+    except Exception as exc:  # noqa: BLE001
+        raise ImportError("ebook2audiobook modules unavailable") from exc
+
+    session = {
+        "tts_engine": XTTSv2,
+        "fine_tuned": "internal",
+        "voice_dir": output_dir,
+    }
+    models_dir = Path(__file__).resolve().parents[2] / "apps" / "ebook2audiobook" / "models"
+    voice_name = Path(input_file).stem
+    extractor = VoiceExtractor(session, str(models_dir), input_file, voice_name)
+    success, _ = extractor.extract_voice()
+    if not success:
+        raise RuntimeError("Voice extraction failed")
+    return os.path.join(output_dir, f"{voice_name}_24000.wav")
+
 if __name__ == "__main__":
     import argparse
 
-    parser = argparse.ArgumentParser(description="Clean a voice sample for training")
+    parser = argparse.ArgumentParser(description="Clean or extract a voice sample for training")
     parser.add_argument("input", help="Path to the source audio file")
     parser.add_argument("-o", "--output", default="voice_output", help="Directory for cleaned file")
     parser.add_argument("-r", "--rate", type=int, default=24000, help="Output sample rate")
+    parser.add_argument("--extract", action="store_true", help="Use ebook2audiobook VoiceExtractor")
     args = parser.parse_args()
 
-    out = clean_voice_sample(args.input, args.output, args.rate)
+    if args.extract:
+        out = extract_and_clean_voice(args.input, args.output, args.rate)
+    else:
+        out = clean_voice_sample(args.input, args.output, args.rate)
     print(f"Cleaned voice saved to {out}")
