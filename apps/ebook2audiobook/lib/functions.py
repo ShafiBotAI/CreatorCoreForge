@@ -877,10 +877,10 @@ def get_vram():
         info = nvmlDeviceGetMemoryInfo(handle)
         vram = info.total
         return int(vram // (1024 ** 3))  # Convert to GB
-    except ImportError:
-        pass
+    except ImportError as e:
+        print(f'pynvml not available: {e}')
     except Exception as e:
-        pass
+        print(f'GPU detection failed: {e}')
     # AMD (Windows)
     if os_name == "Windows":
         try:
@@ -891,7 +891,7 @@ def get_vram():
             if vram_values:
                 return int(vram_values[0] // (1024 ** 3))
         except Exception as e:
-            pass
+            print(f'Windows GPU query failed: {e}')
     # AMD (Linux)
     if os_name == "Linux":
         try:
@@ -900,7 +900,7 @@ def get_vram():
             if output.stdout.strip().isdigit():
                 return int(output.stdout.strip()) // 1024
         except Exception as e:
-            pass
+            print(f'Linux GPU query failed: {e}')
     # Intel (Linux Only)
     intel_vram_paths = [
         "/sys/kernel/debug/dri/0/i915_vram_total",  # Intel dedicated GPUs
@@ -913,7 +913,7 @@ def get_vram():
                     vram = int(f.read().strip()) // (1024 ** 3)
                     return vram
             except Exception as e:
-                pass
+                print(f'Reading {path} failed: {e}')
     # macOS (OpenGL Alternative)
     if os_name == "Darwin":
         try:
@@ -921,10 +921,10 @@ def get_vram():
             from OpenGL.GLX import GLX_RENDERER_VIDEO_MEMORY_MB_MESA
             vram = int(glGetIntegerv(GLX_RENDERER_VIDEO_MEMORY_MB_MESA) // 1024)
             return vram
-        except ImportError:
-            pass
+        except ImportError as e:
+            print(f'OpenGL query failed: {e}')
         except Exception as e:
-            pass
+            print(f'macOS GPU detection error: {e}')
     msg = 'Could not detect GPU VRAM Capacity!'
     return 0
 
