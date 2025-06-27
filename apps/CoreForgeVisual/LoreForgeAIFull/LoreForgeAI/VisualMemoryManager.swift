@@ -1,6 +1,6 @@
 import Foundation
 
-public struct CharacterVisualState: Equatable {
+public struct CharacterVisualState: Codable, Equatable {
     public var hairstyle: String
     public var outfit: String
     public var mood: String
@@ -11,13 +11,22 @@ public struct CharacterVisualState: Equatable {
     }
 }
 
-public struct SceneKey: Hashable {
+public struct SceneKey: Codable, Hashable {
     public var book: String
     public var index: Int
     public init(book: String, index: Int) {
         self.book = book
         self.index = index
     }
+}
+
+public struct VisualMemorySnapshot: Codable {
+    public let timelineShift: [String: Int]
+    public let characterVoiceTone: [String: String]
+    public let fxHistory: [SceneKey: [String]]
+    public let locationModels: [String: String]
+    public let seriesThemes: [String]
+    public let characterArcs: [String: [Int: CharacterVisualState]]
 }
 
 /// Manages visual memory across books and scenes.
@@ -32,6 +41,8 @@ public final class VisualMemoryManager {
     public private(set) var sceneForks: [SceneKey: [String: SceneKey]] = [:]
     public private(set) var enabledDashboards: Set<String> = []
     public private(set) var sceneAudioMap: [SceneKey: Double] = [:]
+    private var callbacks: [SceneKey: SceneKey] = [:]
+    public private(set) var memoryGraph: [SceneKey: [SceneKey]] = [:]
     public private(set) var memoryGraphIntegrated = false
     public private(set) var handoffHistory: [String] = []
 
@@ -83,10 +94,12 @@ public final class VisualMemoryManager {
         return weight > 0.5 ? "close" : "wide"
     }
 
-    /// Cross reference a scene with the audio timeline (placeholder).
+    /// Cross reference a scene with the audio timeline.
+    /// Returns true if the value was recorded or updated.
     public func crossReference(scene: SceneKey, audioStart: Double) -> Bool {
+        guard audioStart >= 0 else { return false }
         if let existing = sceneAudioMap[scene] {
-            return abs(existing - audioStart) < 0.01
+            if abs(existing - audioStart) <= 0.1 { return false }
         }
         sceneAudioMap[scene] = audioStart
         return true
@@ -111,9 +124,14 @@ public final class VisualMemoryManager {
         lockedCharacters.insert(character)
     }
 
-    /// Placeholder for highlighting callbacks to past scenes.
+    /// Record a callback relationship between scenes.
+    public func recordCallback(from: SceneKey, to: SceneKey) {
+        callbacks[from] = to
+    }
+
+    /// Retrieve a callback scene for highlighting.
     public func highlightCallback(scene: SceneKey) -> SceneKey {
-        SceneKey(book: scene.book, index: max(scene.index - 1, 0))
+        callbacks[scene] ?? SceneKey(book: scene.book, index: max(scene.index - 1, 0))
     }
 
     /// Generate a recap montage (placeholder).
@@ -124,8 +142,22 @@ public final class VisualMemoryManager {
         return [scenes.first!, scenes[mid], scenes.last!]
     }
 
-    /// Integrate memory graphs (placeholder).
+    /// Build a simple memory graph of scene relationships.
     public func integrateMemoryGraph() {
+        memoryGraph = [:]
+        for (char, arc) in characterArcs {
+            let sorted = arc.keys.sorted()
+            for i in 0..<(sorted.count - 1) {
+                let from = SceneKey(book: char, index: sorted[i])
+                let to = SceneKey(book: char, index: sorted[i + 1])
+                memoryGraph[from, default: []].append(to)
+            }
+        }
+        for (from, forks) in sceneForks {
+            for (_, to) in forks {
+                memoryGraph[from, default: []].append(to)
+            }
+        }
         memoryGraphIntegrated = true
     }
 
@@ -143,21 +175,40 @@ public final class VisualMemoryManager {
         }
     }
 
-    /// Handoff memory to another account (placeholder).
-    public func handoffMemory(to account: String) {
-        handoffHistory.append(account)
+    /// Export a snapshot of current memory for account transfer.
+    @discardableResult
+    public func handoffMemory(to account: String) -> URL? {
+        let snapshot = VisualMemorySnapshot(
+            timelineShift: timelineShift,
+            characterVoiceTone: characterVoiceTone,
+            fxHistory: fxHistory,
+            locationModels: locationModels,
+            seriesThemes: Array(seriesThemes),
+            characterArcs: characterArcs)
+        let url = FileManager.default.temporaryDirectory
+            .appendingPathComponent("memory-\(account).json")
+        do {
+            let data = try JSONEncoder().encode(snapshot)
+            try data.write(to: url)
+            handoffHistory.append(account)
+            return url
+        } catch {
+            return nil
+        }
     }
 
     /// Create a scene fork with a tag.
     public func createSceneFork(original: SceneKey, tag: String) -> SceneKey {
         let fork = SceneKey(book: original.book, index: original.index)
         sceneForks[original, default: [:]][tag] = fork
+        memoryGraph[original, default: []].append(fork)
         return fork
     }
 
     /// Store an alternate outcome for a scene.
     public func storeAlternateOutcome(for key: SceneKey, outcomeTag: String) {
         sceneForks[key, default: [:]][outcomeTag] = key
+        memoryGraph[key, default: []].append(key)
     }
 }
 
