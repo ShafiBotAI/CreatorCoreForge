@@ -56,25 +56,25 @@
         5FD7A452323D48C09CB7B7B6 = {
             isa = PBXGroup;
             children = (
-                                8E1B042D895840158309B769 /* AppDashboardView.swift */
-                1B84ADD46AC14DEEB5230076 /* AppLogicEditor.swift */
-                A88AE7401A2E497E82D07971 /* BuildCreditDisplayView.swift */
-                D7C6773B5C05447EB141A981 /* BuildPipelineStatusView.swift */
-                6D547C3C54D34F7988E38609 /* BuildQuotaMeterView.swift */
-                776DCADB352443059E2E928C /* CodexAgentPanel.swift */
-                1B0176472AE243D7A5025C34 /* ComponentMarketplaceView.swift */
-                B97ACF79C0D441B09A9257BD /* ComponentSidebarView.swift */
-                F3C8E6C728F94E1BB8615041 /* ContentView.swift */
-                977F41098AD14CC3A27F39F8 /* CoreForgeBuildApp.swift */
-                679A34677EFF450784AFE205 /* ExportAppBundleView.swift */
-                1121F12CB68543399EF79FF5 /* MainTabView.swift */
-                8D686EBA28AC46E5B788ACF2 /* NewAppFromPromptView.swift */
-                7C3A96EA9FF14D55B6D65410 /* OnboardingView.swift */
-                1C1D2B61C3444D86AFF9CDD7 /* PlanTierOverviewView.swift */
-                B6855C95B8B74848849093AA /* PreviewSimulatorView.swift */
-                FD58C0CC7C284439BF0F09D4 /* ProjectQuickActionsBar.swift */
-                66C9C5DEAEAB45F59EA4E7D8 /* UIDesignerCanvasView.swift */
-                10BF339662454B5AA1AD5A76 /* UnlockWithPromoView.swift */
+                                8E1B042D895840158309B769 /* AppDashboardView.swift */,
+                1B84ADD46AC14DEEB5230076 /* AppLogicEditor.swift */,
+                A88AE7401A2E497E82D07971 /* BuildCreditDisplayView.swift */,
+                D7C6773B5C05447EB141A981 /* BuildPipelineStatusView.swift */,
+                6D547C3C54D34F7988E38609 /* BuildQuotaMeterView.swift */,
+                776DCADB352443059E2E928C /* CodexAgentPanel.swift */,
+                1B0176472AE243D7A5025C34 /* ComponentMarketplaceView.swift */,
+                B97ACF79C0D441B09A9257BD /* ComponentSidebarView.swift */,
+                F3C8E6C728F94E1BB8615041 /* ContentView.swift */,
+                977F41098AD14CC3A27F39F8 /* CoreForgeBuildApp.swift */,
+                679A34677EFF450784AFE205 /* ExportAppBundleView.swift */,
+                1121F12CB68543399EF79FF5 /* MainTabView.swift */,
+                8D686EBA28AC46E5B788ACF2 /* NewAppFromPromptView.swift */,
+                7C3A96EA9FF14D55B6D65410 /* OnboardingView.swift */,
+                1C1D2B61C3444D86AFF9CDD7 /* PlanTierOverviewView.swift */,
+                B6855C95B8B74848849093AA /* PreviewSimulatorView.swift */,
+                FD58C0CC7C284439BF0F09D4 /* ProjectQuickActionsBar.swift */,
+                66C9C5DEAEAB45F59EA4E7D8 /* UIDesignerCanvasView.swift */,
+                10BF339662454B5AA1AD5A76 /* UnlockWithPromoView.swift */,
                 45EFD4E37B33417387139425 /* WhiteLabelManagerView.swift */,
                 DCDBACD153094AA1AC7DB772 /* CoreForgeBuild.app */,
             );
@@ -87,25 +87,25 @@
             isa = PBXSourcesBuildPhase;
             buildActionMask = 2147483647;
             files = (
-                                5C12C412AE2142E39496C5A6 /* AppDashboardView.swift in Sources */
-                89476D5C5AA14C12850BB639 /* AppLogicEditor.swift in Sources */
-                3C26380330624E2A93E9EF48 /* BuildCreditDisplayView.swift in Sources */
-                AE9FE4FC27374E8481479406 /* BuildPipelineStatusView.swift in Sources */
-                8D79B5B0F40940B79E0100A4 /* BuildQuotaMeterView.swift in Sources */
-                BA05C724C22547E9A7DBC7C3 /* CodexAgentPanel.swift in Sources */
-                8DE9FE47DD5A48EB9C089797 /* ComponentMarketplaceView.swift in Sources */
-                54B06B854FB942F082260E43 /* ComponentSidebarView.swift in Sources */
-                A7B3575F396049FF8AA7F3E5 /* ContentView.swift in Sources */
-                EBAF6ACBDEAC4343AEBB50BA /* CoreForgeBuildApp.swift in Sources */
-                C8132D29F7C848BB92AA6DDB /* ExportAppBundleView.swift in Sources */
-                27E0DC0063E44EABB3B45260 /* MainTabView.swift in Sources */
-                1610A4BBB0224A6E92749F2D /* NewAppFromPromptView.swift in Sources */
-                65743087ADDC4419A68B88F3 /* OnboardingView.swift in Sources */
-                570CA80D69634074826C665D /* PlanTierOverviewView.swift in Sources */
-                428D0AEAC6304CF6B4210CC8 /* PreviewSimulatorView.swift in Sources */
-                B8BD8944DABE4658B67937FD /* ProjectQuickActionsBar.swift in Sources */
-                0A37ABDB6435467BA2BD7C4E /* UIDesignerCanvasView.swift in Sources */
-                F1FCB269385A486E9E557577 /* UnlockWithPromoView.swift in Sources */
+                                5C12C412AE2142E39496C5A6 /* AppDashboardView.swift in Sources */,
+                89476D5C5AA14C12850BB639 /* AppLogicEditor.swift in Sources */,
+                3C26380330624E2A93E9EF48 /* BuildCreditDisplayView.swift in Sources */,
+                AE9FE4FC27374E8481479406 /* BuildPipelineStatusView.swift in Sources */,
+                8D79B5B0F40940B79E0100A4 /* BuildQuotaMeterView.swift in Sources */,
+                BA05C724C22547E9A7DBC7C3 /* CodexAgentPanel.swift in Sources */,
+                8DE9FE47DD5A48EB9C089797 /* ComponentMarketplaceView.swift in Sources */,
+                54B06B854FB942F082260E43 /* ComponentSidebarView.swift in Sources */,
+                A7B3575F396049FF8AA7F3E5 /* ContentView.swift in Sources */,
+                EBAF6ACBDEAC4343AEBB50BA /* CoreForgeBuildApp.swift in Sources */,
+                C8132D29F7C848BB92AA6DDB /* ExportAppBundleView.swift in Sources */,
+                27E0DC0063E44EABB3B45260 /* MainTabView.swift in Sources */,
+                1610A4BBB0224A6E92749F2D /* NewAppFromPromptView.swift in Sources */,
+                65743087ADDC4419A68B88F3 /* OnboardingView.swift in Sources */,
+                570CA80D69634074826C665D /* PlanTierOverviewView.swift in Sources */,
+                428D0AEAC6304CF6B4210CC8 /* PreviewSimulatorView.swift in Sources */,
+                B8BD8944DABE4658B67937FD /* ProjectQuickActionsBar.swift in Sources */,
+                0A37ABDB6435467BA2BD7C4E /* UIDesignerCanvasView.swift in Sources */,
+                F1FCB269385A486E9E557577 /* UnlockWithPromoView.swift in Sources */,
                 F3DCAC49845346E98ACA6809 /* WhiteLabelManagerView.swift in Sources */,
             );
             runOnlyForDeploymentPostprocessing = 0;
