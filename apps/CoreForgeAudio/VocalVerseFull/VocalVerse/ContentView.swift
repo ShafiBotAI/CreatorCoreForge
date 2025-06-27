@@ -25,7 +25,6 @@ struct ContentView: View {
 
     var body: some View {
         Group {
-
             if showSplash {
                 WelcomeSplashView { showSplash = false }
                     .transition(.opacity)
@@ -41,33 +40,18 @@ struct ContentView: View {
                         ForgotPasswordView { }
                     }
             } else if hasSeenOnboarding || onboarding.isCompleted(.finished) {
-=======
-            if hasSeenOnboarding {
-
                 MainTabView(namespace: ns, selection: $selectedTab)
                     .environmentObject(library)
                     .environmentObject(usage)
-
                     .environmentObject(onboarding)
                     .environmentObject(prefs)
-                    .environmentObject(offlineManager)
-
-                    .transition(.scale)
-            } else {
-                OnboardingView(hasSeenOnboarding: $hasSeenOnboarding, namespace: ns)
-=======
-                    .environmentObject(onboarding)
-                    .environmentObject(prefs)
-
-                    .transition(.scale)
-=======
                     .environmentObject(offlineManager)
                     .transition(.scale)
             } else {
                 OnboardingView(hasSeenOnboarding: $hasSeenOnboarding, namespace: ns)
                     .environmentObject(onboarding)
                     .environmentObject(prefs)
-
+                    .environmentObject(offlineManager)
                     .transition(.scale)
             }
         }
