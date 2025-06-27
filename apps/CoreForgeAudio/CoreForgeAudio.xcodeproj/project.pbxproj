@@ -486,6 +486,7 @@
 		12B96CE7502B4AC6BFCCD520 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADERMAP_STYLE = FLAT;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VocalVerseFull/VocalVerse/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -500,12 +501,14 @@
 		1BE41F6384E94C55A5A59794 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADERMAP_STYLE = FLAT;
 			};
 			name = Release;
 		};
 		BB1E019F8FB6495593CA4D0E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADERMAP_STYLE = FLAT;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VocalVerseFull/VocalVerse/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -521,6 +524,7 @@
 		CEEA65B9E61B4765A995FCDE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADERMAP_STYLE = FLAT;
 			};
 			name = Debug;
 		};
