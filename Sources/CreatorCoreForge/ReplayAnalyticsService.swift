@@ -10,7 +10,7 @@ public final class ReplayAnalyticsService {
     }
 
     public func stats(for line: String) -> ReplayAnalytics.Stats {
-        analytics.stats(for: line)
+        return analytics.stats(for: line)
     }
 
     public func reset() {
