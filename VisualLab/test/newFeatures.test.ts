@@ -89,6 +89,9 @@ assert.deepStrictEqual(detectCharacters('Alice meets Bob.'), ['Alice','Bob']);
 assert.strictEqual(matchLocationToTemplate('Old Castle Tower'), 'castle');
 assert.deepStrictEqual(generateStoryboard(['a','b'])[1], { index: 1, text: 'b' });
 assert.strictEqual(detectBookFormat('novel.epub'), 'epub');
+assert.strictEqual(detectBookFormat('chapter.docx'), 'docx');
+assert.strictEqual(detectBookFormat('notes.md'), 'markdown');
+assert.strictEqual(detectBookFormat('image.png'), 'unknown');
 assert.deepStrictEqual(mergeScenes(['a','b','c'],1), ['a','b c']);
 
 console.log('New features tests passed');
