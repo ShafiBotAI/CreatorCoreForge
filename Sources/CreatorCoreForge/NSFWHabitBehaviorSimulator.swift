@@ -44,7 +44,7 @@ public final class NSFWHabitBehaviorSimulator: ObservableObject {
                 }
             }
         }
-        return ""
+        return nil
     }
 
     /// Remove registered habits for a specific character, or all habits if nil.
