@@ -12,6 +12,8 @@ struct SettingsView: View {
     @State private var showAgeSheet = false
     @State private var inputPIN = ""
     @State private var showIncorrectAlert = false
+    @AppStorage("isLoggedIn") private var isLoggedIn = false
+    @State private var showRegister = false
 
     private let voices = VoiceConfig.voices.map { $0.name }
 
@@ -43,6 +45,14 @@ struct SettingsView: View {
                     Button("Change PIN") { showPinPrompt = true }
                     Toggle("Stealth Vault", isOn: $stealthMode)
                 }
+                if !isLoggedIn {
+                    Section(header: Text("Account")) {
+                        Text("Create an account to sync your library across devices.")
+                            .font(.caption)
+                        Button("Create Account") { showRegister = true }
+                            .buttonStyle(GlowingButtonStyle())
+                    }
+                }
             }
             .navigationTitle("Settings")
             .alert("Incorrect PIN", isPresented: $showIncorrectAlert) {
@@ -58,6 +68,9 @@ struct SettingsView: View {
             }
             .sheet(isPresented: $showPinPrompt) {
                 PinEntryView(pin: $inputPIN, onDone: handlePinEntry)
+            }
+            .sheet(isPresented: $showRegister) {
+                RegisterView { isLoggedIn = true }
             }
         }
     }

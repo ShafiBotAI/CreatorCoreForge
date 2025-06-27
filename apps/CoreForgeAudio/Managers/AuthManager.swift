@@ -36,6 +36,14 @@ final class AuthManager: ObservableObject {
         completion(.success(()))
     }
 
+    /// Continue without an account using the free plan.
+    func signInAnonymously(completion: @escaping () -> Void) {
+        storedEmail = ""
+        activePlan = .free
+        isLoggedIn = true
+        completion()
+    }
+
     /// Simulate sending a password reset email.
     func resetPassword(email: String, completion: @escaping (Error?) -> Void) {
         completion(nil)

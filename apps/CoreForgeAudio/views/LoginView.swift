@@ -34,6 +34,12 @@ struct LoginView: View {
                 .font(.caption)
             Button("Register") { onRegister() }
                 .font(.caption)
+            Button("Continue as Guest") {
+                AuthManager.shared.signInAnonymously {
+                    onSuccess()
+                }
+            }
+            .font(.caption)
             Spacer()
         }
         .padding()
