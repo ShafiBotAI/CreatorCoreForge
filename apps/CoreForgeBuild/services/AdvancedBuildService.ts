@@ -1,6 +1,7 @@
 export class AdvancedBuildService {
   private marketplace: string[] = [];
   private enterpriseEnabled = false;
+  private analytics: Record<string, number> = {};
   initializeBackend(type: 'firebase' | 'custom' = 'custom'): string {
     if (type === 'firebase') {
       return 'Firebase backend initialized';
@@ -9,28 +10,45 @@ export class AdvancedBuildService {
   }
 
   setupCICDPipeline(): boolean {
-    // Pretend to set up CI/CD scripts
-    return true;
+    const fs = require('fs');
+    const dir = '.github/workflows';
+    try {
+      if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+      const path = `${dir}/build.yml`;
+      if (!fs.existsSync(path)) {
+        fs.writeFileSync(
+          path,
+          'name: build\n\non: [push]\njobs:\n  build:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v3\n      - run: npm ci && npm test'
+        );
+      }
+      return true;
+    } catch {
+      return false;
+    }
   }
 
-  trackUIUXFlows(): void {
-    /* analytics stub */
+  trackUIUXFlows(flow: string): void {
+    this.analytics[flow] = (this.analytics[flow] || 0) + 1;
   }
 
   enforceSecurityAndPrivacy(): void {
-    /* role-based access stub */
+    if (!process.env.SECURE_MODE) {
+      throw new Error('SECURE_MODE env not set');
+    }
   }
 
   optimizePerformance(): void {
-    /* performance profiling stub */
+    if (global.gc) {
+      global.gc();
+    }
   }
 
   configureGitHubActions(): void {
-    /* setup workflow stub */
+    this.setupCICDPipeline();
   }
 
   manageAssetPipeline(): void {
-    /* process template/plugin assets */
+    this.marketplace = this.marketplace.filter((m) => m.trim().length > 0);
   }
 
   enableQuantumHybridMode(): void {
