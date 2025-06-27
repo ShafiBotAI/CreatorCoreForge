@@ -86,29 +86,47 @@ class Coqui:
                 checkpoint_path = hf_hub_download(repo_id=hf_repo, filename=f"{hf_sub}{models[self.session['tts_engine']][self.session['fine_tuned']]['files'][1]}", cache_dir=self.cache_dir)
                 vocab_path = hf_hub_download(repo_id=hf_repo, filename=f"{hf_sub}{models[self.session['tts_engine']][self.session['fine_tuned']]['files'][2]}", cache_dir=self.cache_dir)
                 tts = self._load_checkpoint(tts_engine=self.session['tts_engine'], key=self.tts_key, checkpoint_path=checkpoint_path, config_path=config_path, vocab_path=vocab_path, device=self.session['device'])
-        elif self.session['tts_engine'] == BARK:      
+        elif self.session['tts_engine'] == BARK:
+            self.params[BARK]['sample_rate'] = models[BARK][self.session['fine_tuned']]['samplerate']
             if self.session['custom_model'] is not None:
-                msg = f"{self.session['tts_engine']} custom model not implemented yet!"
-                print(msg)
-                return False
+                custom_dir = os.path.join(self.session['custom_model_dir'], self.session['tts_engine'], self.session['custom_model'])
+                required = [os.path.join(custom_dir, f) for f in default_bark_settings['files']]
+                if all(os.path.exists(p) for p in required):
+                    self.tts_key = f"{self.session['tts_engine']}-{self.session['custom_model']}"
+                    checkpoint_dir = custom_dir
+                    tts = self._load_checkpoint(tts_engine=self.session['tts_engine'], key=self.tts_key, checkpoint_dir=checkpoint_dir, device=self.session['device'])
+                else:
+                    msg = f"{self.session['tts_engine']} custom model files missing in {custom_dir}!"
+                    print(msg)
+                    return False
             else:
-                self.params[BARK]['sample_rate'] = models[BARK][self.session['fine_tuned']]['samplerate']
                 hf_repo = models[self.session['tts_engine']][self.session['fine_tuned']]['repo']
                 hf_sub = models[self.session['tts_engine']][self.session['fine_tuned']]['sub']
                 text_model_path = hf_hub_download(repo_id=hf_repo, filename=f"{hf_sub}{models[self.session['tts_engine']][self.session['fine_tuned']]['files'][0]}", cache_dir=self.cache_dir)
-                coarse_model_path = hf_hub_download(repo_id=hf_repo, filename=f"{hf_sub}{models[self.session['tts_engine']][self.session['fine_tuned']]['files'][1]}", cache_dir=self.cache_dir)
-                fine_model_path = hf_hub_download(repo_id=hf_repo, filename=f"{hf_sub}{models[self.session['tts_engine']][self.session['fine_tuned']]['files'][2]}", cache_dir=self.cache_dir)
+                _ = hf_hub_download(repo_id=hf_repo, filename=f"{hf_sub}{models[self.session['tts_engine']][self.session['fine_tuned']]['files'][1]}", cache_dir=self.cache_dir)
+                _ = hf_hub_download(repo_id=hf_repo, filename=f"{hf_sub}{models[self.session['tts_engine']][self.session['fine_tuned']]['files'][2]}", cache_dir=self.cache_dir)
                 checkpoint_dir = os.path.dirname(text_model_path)
                 tts = self._load_checkpoint(tts_engine=self.session['tts_engine'], key=self.tts_key, checkpoint_dir=checkpoint_dir, device=self.session['device'])
         elif self.session['tts_engine'] == VITS:
             if self.session['custom_model'] is not None:
-                msg = f"{self.session['tts_engine']} custom model not implemented yet!"
-                print(msg)     
-                return False
+                custom_dir = os.path.join(self.session['custom_model_dir'], self.session['tts_engine'], self.session['custom_model'])
+                config_path = os.path.join(custom_dir, default_vits_settings['files'][0])
+                checkpoint_path = os.path.join(custom_dir, default_vits_settings['files'][1])
+                vocab_path = os.path.join(custom_dir, default_vits_settings['files'][2])
+                if all(os.path.exists(p) for p in [config_path, checkpoint_path, vocab_path]):
+                    self.tts_key = f"{self.session['tts_engine']}-{self.session['custom_model']}"
+                    self.params[VITS]['sample_rate'] = default_vits_settings['samplerate']
+                    tts = self._load_checkpoint(tts_engine=self.session['tts_engine'], key=self.tts_key,
+                                               checkpoint_path=checkpoint_path, config_path=config_path,
+                                               vocab_path=vocab_path, device=self.session['device'])
+                else:
+                    msg = f"{self.session['tts_engine']} custom model files missing in {custom_dir}!"
+                    print(msg)
+                    return False
             else:
                 iso_dir = language_tts[self.session['tts_engine']][self.session['language']]
                 sub_dict = models[self.session['tts_engine']][self.session['fine_tuned']]['sub']
-                sub = next((key for key, lang_list in sub_dict.items() if iso_dir in lang_list), None)  
+                sub = next((key for key, lang_list in sub_dict.items() if iso_dir in lang_list), None)
                 if sub is not None:
                     self.params[VITS]['sample_rate'] = models[VITS][self.session['fine_tuned']]['samplerate'][sub]
                     model_path = models[self.session['tts_engine']][self.session['fine_tuned']]['repo'].replace("[lang_iso1]", iso_dir).replace("[xxx]", sub)
@@ -125,12 +143,22 @@ class Coqui:
                     print(msg)
                     return False
         elif self.session['tts_engine'] == FAIRSEQ:
+            self.params[FAIRSEQ]['sample_rate'] = models[FAIRSEQ][self.session['fine_tuned']]['samplerate']
             if self.session['custom_model'] is not None:
-                msg = f"{self.session['tts_engine']} custom model not implemented yet!"
-                print(msg)
-                return False
+                custom_dir = os.path.join(self.session['custom_model_dir'], self.session['tts_engine'], self.session['custom_model'])
+                config_path = os.path.join(custom_dir, default_fairseq_settings['files'][0])
+                checkpoint_path = os.path.join(custom_dir, default_fairseq_settings['files'][1])
+                vocab_path = os.path.join(custom_dir, default_fairseq_settings['files'][2])
+                if all(os.path.exists(p) for p in [config_path, checkpoint_path, vocab_path]):
+                    self.tts_key = f"{self.session['tts_engine']}-{self.session['custom_model']}"
+                    tts = self._load_checkpoint(tts_engine=self.session['tts_engine'], key=self.tts_key,
+                                               checkpoint_path=checkpoint_path, config_path=config_path,
+                                               vocab_path=vocab_path, device=self.session['device'])
+                else:
+                    msg = f"{self.session['tts_engine']} custom model files missing in {custom_dir}!"
+                    print(msg)
+                    return False
             else:
-                self.params[FAIRSEQ]['sample_rate'] = models[FAIRSEQ][self.session['fine_tuned']]['samplerate']
                 model_path = models[self.session['tts_engine']][self.session['fine_tuned']]['repo'].replace("[lang]", self.session['language'])
                 self.tts_key = model_path
                 tts = self._load_api(self.tts_key, model_path, self.session['device'])
@@ -140,9 +168,21 @@ class Coqui:
                     tts_vc = self._load_api(self.tts_vc_key, default_vc_model, self.session['device'])
         elif self.session['tts_engine'] == TACOTRON2:
             if self.session['custom_model'] is not None:
-                msg = f"{self.session['tts_engine']} custom model not implemented yet!"
-                print(msg)     
-                return False
+                custom_dir = os.path.join(self.session['custom_model_dir'], self.session['tts_engine'], self.session['custom_model'])
+                config_path = os.path.join(custom_dir, default_tacotron_settings['files'][0])
+                checkpoint_path = os.path.join(custom_dir, default_tacotron_settings['files'][1])
+                voc_config = os.path.join(custom_dir, default_tacotron_settings['files'][2])
+                voc_model = os.path.join(custom_dir, default_tacotron_settings['files'][3])
+                if all(os.path.exists(p) for p in [config_path, checkpoint_path, voc_config, voc_model]):
+                    self.tts_key = f"{self.session['tts_engine']}-{self.session['custom_model']}"
+                    self.params[TACOTRON2]['sample_rate'] = default_tacotron_settings['samplerate']
+                    tts = self._load_checkpoint(tts_engine=self.session['tts_engine'], key=self.tts_key,
+                                               checkpoint_path=checkpoint_path, config_path=config_path,
+                                               vocab_path=voc_config, device=self.session['device'])
+                else:
+                    msg = f"{self.session['tts_engine']} custom model files missing in {custom_dir}!"
+                    print(msg)
+                    return False
             else:
                 iso_dir = language_tts[self.session['tts_engine']][self.session['language']]
                 sub_dict = models[self.session['tts_engine']][self.session['fine_tuned']]['sub']
@@ -166,12 +206,21 @@ class Coqui:
                     print(msg)
                     return False
         elif self.session['tts_engine'] == YOURTTS:
+            self.params[YOURTTS]['sample_rate'] = models[YOURTTS][self.session['fine_tuned']]['samplerate']
             if self.session['custom_model'] is not None:
-                msg = f"{self.session['tts_engine']} custom model not implemented yet!"
-                print(msg)
-                return False
+                custom_dir = os.path.join(self.session['custom_model_dir'], self.session['tts_engine'], self.session['custom_model'])
+                config_path = os.path.join(custom_dir, default_yourtts_settings['files'][0])
+                checkpoint_path = os.path.join(custom_dir, default_yourtts_settings['files'][1])
+                if all(os.path.exists(p) for p in [config_path, checkpoint_path]):
+                    self.tts_key = f"{self.session['tts_engine']}-{self.session['custom_model']}"
+                    tts = self._load_checkpoint(tts_engine=self.session['tts_engine'], key=self.tts_key,
+                                               checkpoint_path=checkpoint_path, config_path=config_path,
+                                               device=self.session['device'])
+                else:
+                    msg = f"{self.session['tts_engine']} custom model files missing in {custom_dir}!"
+                    print(msg)
+                    return False
             else:
-                self.params[YOURTTS]['sample_rate'] = models[YOURTTS][self.session['fine_tuned']]['samplerate']
                 model_path = models[self.session['tts_engine']][self.session['fine_tuned']]['repo']
                 tts = self._load_api(self.tts_key, model_path, self.session['device'])
         return (loaded_tts.get(self.tts_key) or {}).get('engine', False)
