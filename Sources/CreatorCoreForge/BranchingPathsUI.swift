@@ -6,10 +6,14 @@ public struct BranchOption: Equatable {
     public init(id: String) { self.id = id }
 }
 
-/// Stub UI helper that returns the option identifiers for display.
+/// Simple helper that produces numbered labels for branching path options.
 public struct BranchingPathsUI {
     public init() {}
+
+    /// Render options as numbered strings suitable for display in a menu.
     public func render(options: [BranchOption]) -> [String] {
-        options.map { $0.id }
+        options.enumerated().map { index, opt in
+            "\(index + 1). \(opt.id)"
+        }
     }
 }
