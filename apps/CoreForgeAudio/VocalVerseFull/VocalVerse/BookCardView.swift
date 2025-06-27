@@ -40,4 +40,9 @@ struct BookCardView: View {
         }
     }
 }
+
+#Preview {
+    BookCardView(book: Book(title: "Sample", author: "Author", chapters: []))
+        .environmentObject(LibraryModel())
+}
 #endif

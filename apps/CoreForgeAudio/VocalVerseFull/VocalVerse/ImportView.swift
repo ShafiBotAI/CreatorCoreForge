@@ -34,4 +34,10 @@ struct ImportView: View {
         }
     }
 }
+
+#Preview {
+    ImportView()
+        .environmentObject(LibraryModel())
+        .environmentObject(UsageStats())
+}
 #endif
