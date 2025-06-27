@@ -91,4 +91,9 @@ assert.deepStrictEqual(generateStoryboard(['a','b'])[1], { index: 1, text: 'b' }
 assert.strictEqual(detectBookFormat('novel.epub'), 'epub');
 assert.deepStrictEqual(mergeScenes(['a','b','c'],1), ['a','b c']);
 
+import { SignLanguageService } from '../src/index.ts';
+const sign = new SignLanguageService();
+const overlay = await sign.generateOverlay(new Blob([Buffer.from('hello')]));
+assert.ok(overlay.frames.length > 0);
+
 console.log('New features tests passed');
