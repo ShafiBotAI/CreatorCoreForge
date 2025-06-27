@@ -1,10 +1,8 @@
 #if canImport(SwiftUI)
 import SwiftUI
-import CreatorCoreForge
 
 struct ContentView: View {
     @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding = false
-    @StateObject private var onboarding = OnboardingManager()
     @StateObject private var library = LibraryModel()
     @StateObject private var usage = UsageStats()
     @StateObject private var prefs = UserPreferences.shared
@@ -20,10 +18,15 @@ struct ContentView: View {
 
     var body: some View {
         Group {
-            if hasSeenOnboarding || onboarding.isCompleted(.finished) {
+            if hasSeenOnboarding {
                 MainTabView(namespace: ns, selection: $selectedTab)
                     .environmentObject(library)
                     .environmentObject(usage)
+
+                    .transition(.scale)
+            } else {
+                OnboardingView(hasSeenOnboarding: $hasSeenOnboarding, namespace: ns)
+=======
                     .environmentObject(onboarding)
                     .environmentObject(prefs)
                     .environmentObject(offlineManager)
@@ -32,6 +35,7 @@ struct ContentView: View {
                 OnboardingView(hasSeenOnboarding: $hasSeenOnboarding, namespace: ns)
                     .environmentObject(onboarding)
                     .environmentObject(prefs)
+
                     .transition(.scale)
             }
         }

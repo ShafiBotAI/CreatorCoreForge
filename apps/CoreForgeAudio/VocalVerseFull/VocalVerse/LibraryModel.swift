@@ -1,7 +1,12 @@
 import Foundation
+
+#if canImport(SwiftUI)
+import SwiftUI
+=======
 #if canImport(Combine)
 import Combine
 #endif
+
 #if canImport(AVFoundation)
 import AVFoundation
 #endif
@@ -74,3 +79,4 @@ final class LibraryModel: ObservableObject {
         }
     }
 }
+#endif
