@@ -45,4 +45,10 @@ struct KindleView: View {
         }
     }
 }
+
+#Preview {
+    KindleView()
+        .environmentObject(LibraryModel())
+        .environmentObject(UsageStats())
+}
 #endif

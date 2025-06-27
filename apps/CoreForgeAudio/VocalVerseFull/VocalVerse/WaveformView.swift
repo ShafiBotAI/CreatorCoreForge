@@ -30,4 +30,8 @@ struct WaveformView: View {
         }
     }
 }
+
+#Preview {
+    WaveformView(isPlaying: .constant(true))
+}
 #endif

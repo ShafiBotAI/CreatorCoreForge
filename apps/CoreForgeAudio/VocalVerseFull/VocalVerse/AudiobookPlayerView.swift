@@ -111,4 +111,8 @@ struct AudiobookPlayerView: View {
     }
 #endif
 }
+
+#Preview {
+    AudiobookPlayerView(url: URL(fileURLWithPath: "/tmp/sample.mp3"))
+}
 #endif

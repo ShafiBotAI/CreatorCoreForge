@@ -31,4 +31,12 @@ struct AppleBooksView: View {
         }
     }
 }
+
+#Preview {
+    NavigationView {
+        AppleBooksView()
+            .environmentObject(LibraryModel())
+            .environmentObject(UsageStats())
+    }
+}
 #endif

@@ -39,4 +39,8 @@ struct AgeVerificationView: View {
         }
     }
 }
+
+#Preview {
+    AgeVerificationView(isPresented: .constant(true)) { _ in }
+}
 #endif
