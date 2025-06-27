@@ -30,6 +30,11 @@ public final class VisualMemoryEngine {
         timeline.filter { $0.project == project }.map { $0.frame }
     }
 
+    /// Return the most recently added frame for the given project.
+    public func lastFrame(for project: String) -> String? {
+        frames(for: project).last
+    }
+
     /// Combine frames from all projects in the order they were added.
     public func allFramesTimeline() -> [String] {
         timeline.map { $0.frame }
@@ -38,6 +43,12 @@ public final class VisualMemoryEngine {
     /// Clear all stored frames.
     public func clear() {
         timeline.removeAll()
+        persist()
+    }
+
+    /// Remove all frames associated with a specific project.
+    public func removeFrames(for project: String) {
+        timeline.removeAll { $0.project == project }
         persist()
     }
 
