@@ -30,26 +30,21 @@ public final class AmbientFXEngine {
 
     /// Crossfade from the current ambience to a new one.
     /// The fade is performed asynchronously so playback is not blocked.
-    public func crossfade(to name: String, duration: TimeInterval = 1.0) {
+    @MainActor
+    public func crossfade(to name: String, duration: TimeInterval = 1.0) async {
         #if canImport(AVFoundation)
         let previous = manager.currentAmbience
         guard previous != name else { return }
         manager.playAmbience(named: name)
-        Task.detached { [manager] in
-            let steps = max(1, Int(duration * 10))
-            let interval = duration / Double(steps)
-            for i in 0...steps {
-                let progress = Float(i) / Float(steps)
-                try? await Task.sleep(nanoseconds: UInt64(interval * 1_000_000_000))
-                DispatchQueue.main.async {
-                    manager.setVolume(for: previous, volume: 1 - progress)
-                    manager.setVolume(for: name, volume: progress)
-                }
-            }
-            DispatchQueue.main.async {
-                manager.stopEffect(named: previous)
-            }
+        let steps = max(1, Int(duration * 10))
+        let interval = duration / Double(steps)
+        for i in 0...steps {
+            let progress = Float(i) / Float(steps)
+            try? await Task.sleep(nanoseconds: UInt64(interval * 1_000_000_000))
+            manager.setVolume(for: previous, volume: 1 - progress)
+            manager.setVolume(for: name, volume: progress)
         }
+        manager.stopEffect(named: previous)
         #else
         manager.playAmbience(named: name)
         #endif
@@ -94,14 +89,14 @@ public final class AmbientFXEngine {
         for (keyword, category) in map {
             if line.contains(keyword) {
                 let fx = library.fx(for: category).first ?? ""
-                crossfade(to: fx)
+                Task { await crossfade(to: fx) }
                 return fx
             }
         }
         // Default to a generic ambience if no keyword was found
         let fallback = library.fx(for: .generic).first ?? ""
         if !fallback.isEmpty {
-            crossfade(to: fallback)
+            Task { await crossfade(to: fallback) }
             return fallback
         }
         return ""

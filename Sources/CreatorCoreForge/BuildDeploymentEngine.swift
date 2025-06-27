@@ -55,7 +55,7 @@ public final class BuildDeploymentEngine {
         for path in paths {
             let compressed = path + ".compressed"
             // Simulate compression by writing an empty file.
-            FileManager.default.createFile(atPath: compressed, contents: Data(), attributes: nil)
+            _ = FileManager.default.createFile(atPath: compressed, contents: Data(), attributes: nil)
             output.append(compressed)
             deployHistory.append("Compressed asset: \(path)")
         }

@@ -25,6 +25,9 @@ This file is a full checklist of every feature required for code completion and 
 - [x] Voice upload, cloning, and voiceprint signature
 - [x] Scene-based ambient sound and FX generator (rain, fire, footsteps, etc.)
 - [x] Cross-device library and playback position sync
+- [x] Offline TTS pipeline via bundled `ebook2audiobook` (XTTSv2, Bark, Vits,
+  etc.) with 1110+ language support and optional voice cloning
+- [x] Custom TTS model uploads for higher fidelity
 
 ### AI & API Integration
 - [x] OpenAI/LocalAI-based smart chapter segmentation, summarization, and narration
@@ -340,6 +343,10 @@ Key points from `README.md`:
 - **Dark mode** and theme toggles via `ThemeManager`
 - **Offline audio storage** with stealth vault option
 - **Offline download queue management**
+- **ebook2audiobook** integration for advanced chapter conversion
+- See [`../ebook2audiobook/FEATURES-CODEX-COMPLETE.md`](../ebook2audiobook/FEATU
+RES-CODEX-COMPLETE.md) for the full list of Python pipeline features.
+- Use `audio_utils.convert_ebook_to_audio` to trigger the pipeline programmatically.
 
 
 ## Full Phase Checklist (Phases 1–9)

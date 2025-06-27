@@ -17,4 +17,15 @@ This document outlines the minimal setup required to build and run **CoreForge A
 2. Open `CoreForgeAudio.xcodeproj` and build the **CoreForgeAudio** scheme.
 3. Execute `npm test` from the repo root to ensure shared packages pass.
 
+4. Install Python packages from `apps/ebook2audiobook/requirements.txt` to use
+   the offline conversion pipeline.
+
+## Hardware
+- Minimum 4GB RAM (8GB recommended) when running the bundled
+  `ebook2audiobook` tools.
+=======
+4. (Optional) run `pip install -r ../ebook2audiobook/requirements.txt` to use
+   the Python ebook2audiobook features exposed by `audio_utils.convert_ebook_to_audio`.
+
+
 These requirements align with the repo-wide AGENTS checklist and provide a baseline for all contributors.

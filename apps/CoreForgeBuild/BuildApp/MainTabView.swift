@@ -15,10 +15,10 @@ struct MainTabView: View {
                     Button(action: { selection = tab }) {
                         VStack {
                             Image(systemName: icon(for: tab))
-                                .foregroundColor(.white)
+                                .foregroundColor(AppTheme.foregroundColor)
                             Text(title(for: tab))
                                 .font(.caption2)
-                                .foregroundColor(.white.opacity(selection == tab ? 1 : 0.7))
+                                .foregroundColor(AppTheme.foregroundColor.opacity(selection == tab ? 1 : 0.7))
                         }
                         .frame(maxWidth: .infinity)
                     }
