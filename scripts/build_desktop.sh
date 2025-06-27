@@ -44,13 +44,11 @@ for APP in "${APPS[@]}"; do
       TARGETS="--win"
       ;;
     Linux*)
+      TARGETS="--linux"
       if command -v wine >/dev/null 2>&1; then
-        TARGETS="--win"
+        TARGETS="$TARGETS --win"
       else
-        echo "Unsupported platform $PLATFORM. Skipping build."
-        popd >/dev/null
-        echo "-----"
-        continue
+        echo "wine not found; Windows build skipped."
       fi
       ;;
     *)
