@@ -1,4 +1,7 @@
 #if canImport(Combine)
+#if canImport(SwiftUI)
+import SwiftUI
+#endif
 import Foundation
 
 #if canImport(FirebaseAuth)
@@ -20,6 +23,10 @@ import FirebaseAuth
 #if canImport(FirebaseAuth) && canImport(Combine)
 final class AuthManager: ObservableObject {
     static let shared = AuthManager()
+
+#if canImport(SwiftUI)
+    @AppStorage("isLoggedIn") private var isLoggedIn: Bool = false
+#endif
 
     @Published private(set) var currentUser: User?
 
@@ -49,6 +56,9 @@ final class AuthManager: ObservableObject {
                 let user = try await signUp(email: email,
                                            password: password,
                                            displayName: displayName)
+                #if canImport(SwiftUI)
+                isLoggedIn = true
+                #endif
                 completion(.success(user))
             } catch {
                 completion(.failure(error))
@@ -60,6 +70,9 @@ final class AuthManager: ObservableObject {
         Task {
             do {
                 let user = try await signIn(email: email, password: password)
+                #if canImport(SwiftUI)
+                isLoggedIn = true
+                #endif
                 completion(.success(user))
             } catch {
                 completion(.failure(error))
@@ -71,6 +84,9 @@ final class AuthManager: ObservableObject {
         Task {
             do {
                 let user = try await signIn(email: email, password: password, dob: dob)
+                #if canImport(SwiftUI)
+                isLoggedIn = true
+                #endif
                 completion(.success(user))
             } catch {
                 completion(.failure(error))
@@ -82,6 +98,9 @@ final class AuthManager: ObservableObject {
         Task {
             do {
                 let user = try await signIn(email: email, password: password, code: code)
+                #if canImport(SwiftUI)
+                isLoggedIn = true
+                #endif
                 completion(.success(user))
             } catch {
                 completion(.failure(error))
@@ -113,6 +132,9 @@ final class AuthManager: ObservableObject {
         }
         try await user.sendEmailVerification()
         currentUser = user
+        #if canImport(SwiftUI)
+        isLoggedIn = true
+        #endif
         return user
     }
 
@@ -128,6 +150,9 @@ final class AuthManager: ObservableObject {
             throw NSError(domain: "Auth", code: -3, userInfo: [NSLocalizedDescriptionKey: "User is underage"])
         }
         currentUser = user
+        #if canImport(SwiftUI)
+        isLoggedIn = true
+        #endif
         return user
     }
 
@@ -137,6 +162,9 @@ final class AuthManager: ObservableObject {
         guard code == "000000" else {
             throw NSError(domain: "Auth", code: -4, userInfo: [NSLocalizedDescriptionKey: "Invalid code"])
         }
+        #if canImport(SwiftUI)
+        isLoggedIn = true
+        #endif
         return user
     }
 
@@ -144,6 +172,9 @@ final class AuthManager: ObservableObject {
         Task {
             do {
                 let user = try await signInAnonymously()
+                #if canImport(SwiftUI)
+                isLoggedIn = true
+                #endif
                 completion(.success(user))
             } catch {
                 completion(.failure(error))
@@ -156,12 +187,18 @@ final class AuthManager: ObservableObject {
         let authResult = try await Auth.auth().signInAnonymously()
         let user = authResult.user
         currentUser = user
+        #if canImport(SwiftUI)
+        isLoggedIn = true
+        #endif
         return user
     }
 
     func signOut() throws {
         try Auth.auth().signOut()
         currentUser = nil
+        #if canImport(SwiftUI)
+        isLoggedIn = false
+        #endif
     }
 }
 
@@ -198,6 +235,10 @@ final class AuthManager: ObservableObject {
 
     static let shared = AuthManager()
 
+#if canImport(SwiftUI)
+    @AppStorage("isLoggedIn") private var isLoggedIn: Bool = false
+#endif
+
     @Published private(set) var currentUser: User?
 
     private init() {}
@@ -257,6 +298,9 @@ final class AuthManager: ObservableObject {
     }
 
     func signOut() throws {
+        #if canImport(SwiftUI)
+        isLoggedIn = false
+        #endif
         throw AuthError.unavailable
     }
 
@@ -281,6 +325,10 @@ final class AuthManager {
     }
 
     static let shared = AuthManager()
+
+#if canImport(SwiftUI)
+    @AppStorage("isLoggedIn") private var isLoggedIn: Bool = false
+#endif
 
     private(set) var currentUser: User?
 
@@ -314,6 +362,9 @@ final class AuthManager {
     }
 
     func signOut() throws {
+        #if canImport(SwiftUI)
+        isLoggedIn = false
+        #endif
         throw AuthError.unavailable
     }
 
