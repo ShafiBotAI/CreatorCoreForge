@@ -71,6 +71,9 @@ final class LibraryModel: ObservableObject {
         currentChapter = chapter
     }
 
+
+    /// Remove downloaded audio for a book and update library state.
+=======
     /// Mark a book as downloaded and persist the update.
     func markDownloaded(book: Book) {
         guard let idx = books.firstIndex(where: { $0.id == book.id }) else { return }
@@ -80,6 +83,7 @@ final class LibraryModel: ObservableObject {
 
 
     /// Remove downloaded audio for a book and persist the update.
+
     func removeDownloaded(book: Book) {
         guard let idx = books.firstIndex(where: { $0.id == book.id }) else { return }
         for chapterIndex in books[idx].chapters.indices {
@@ -89,6 +93,8 @@ final class LibraryModel: ObservableObject {
             }
         }
         books[idx].isDownloaded = false
+
+=======
         save()
     }
 
@@ -97,6 +103,7 @@ final class LibraryModel: ObservableObject {
         if let data = try? JSONEncoder().encode(books) {
             defaults.set(data, forKey: storeKey)
         }
+
     }
 }
 #endif
