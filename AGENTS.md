@@ -271,16 +271,16 @@ This document details all AI agent capabilities, engine modules, and next-genera
 - [x] Enable dual-language subtitle overlay with toggles
 - [x] Provide audio language toggle mid-playback (bilingual view mode)
 - [x] Auto-swap text signage or props in scene to match target language
-- [ ] Save cultural localization settings for franchise or series consistency
-- [ ] Detect idioms and replace with native-equivalent visual cues
-- [ ] Allow creator review of language-adapted visuals before rendering
-- [ ] Flag content sensitive to region/culture for modification options
-- [ ] Support accent-based visual/voice region overlays (UK vs US)
-- [ ] Offer export options for localized versions per country
-- [ ] Recommend artistic adjustments based on visual symbolism norms
-- [ ] Translate creator notes and project metadata for global collaboration
-- [ ] Provide multilingual visual cue glossary with usage examples
-- [ ] Preserve scene framing consistency across languages
+- [x] Save cultural localization settings for franchise or series consistency
+- [x] Detect idioms and replace with native-equivalent visual cues
+- [x] Allow creator review of language-adapted visuals before rendering
+- [x] Flag content sensitive to region/culture for modification options
+- [x] Support accent-based visual/voice region overlays (UK vs US)
+- [x] Offer export options for localized versions per country
+- [x] Recommend artistic adjustments based on visual symbolism norms
+- [x] Translate creator notes and project metadata for global collaboration
+- [x] Provide multilingual visual cue glossary with usage examples
+- [x] Preserve scene framing consistency across languages
 - [ ] Embed language metadata in export files for platform distribution
 - [ ] Enable automatic rendering of multiple language versions at once
 - [ ] Support multi-book narrative sync for localized arcs
