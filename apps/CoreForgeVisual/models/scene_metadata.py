@@ -1,5 +1,17 @@
+from dataclasses import dataclass, asdict
+from typing import List, Optional
+import json
+
+@dataclass
 class SceneMetadata:
-    """Placeholder model for scene metadata."""
-    def __init__(self, scene_id: int, description: str):
-        self.scene_id = scene_id
-        self.description = description
+    scene_id: int
+    description: str
+    tags: Optional[List[str]] = None
+
+    def to_json(self) -> str:
+        return json.dumps(asdict(self))
+
+    @staticmethod
+    def from_json(data: str) -> "SceneMetadata":
+        payload = json.loads(data)
+        return SceneMetadata(**payload)
