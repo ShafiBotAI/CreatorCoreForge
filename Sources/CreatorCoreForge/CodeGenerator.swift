@@ -63,16 +63,42 @@ public struct CodeGenerator {
         switch mode {
         case .rest:
             return """
-            // REST client
-            func request(url: String) {
-                // TODO: implement
+            import Foundation
+
+            class RestClient {
+                func request(url: String, completion: @escaping (Result<Data, Error>) -> Void) {
+                    guard let url = URL(string: url) else {
+                        completion(.failure(URLError(.badURL)))
+                        return
+                    }
+                    URLSession.shared.dataTask(with: url) { data, _, error in
+                        if let error = error {
+                            completion(.failure(error))
+                        } else {
+                            completion(.success(data ?? Data()))
+                        }
+                    }.resume()
+                }
             }
             """
         case .graphQL:
             return """
-            // GraphQL client
-            func query(q: String) {
-                // TODO: implement
+            import Foundation
+
+            class GraphQLClient {
+                func query(_ q: String, endpoint: URL, completion: @escaping (Result<Data, Error>) -> Void) {
+                    var request = URLRequest(url: endpoint)
+                    request.httpMethod = "POST"
+                    request.httpBody = try? JSONSerialization.data(withJSONObject: ["query": q])
+                    request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+                    URLSession.shared.dataTask(with: request) { data, _, error in
+                        if let error = error {
+                            completion(.failure(error))
+                        } else {
+                            completion(.success(data ?? Data()))
+                        }
+                    }.resume()
+                }
             }
             """
         }
