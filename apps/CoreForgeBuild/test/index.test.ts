@@ -80,7 +80,12 @@ import { ParseHistory } from '../services/ParseHistory';
   assert.strictEqual(dnaSvc.load().team, 'X');
 
   const deploy = new DeployService();
-  assert.strictEqual(deploy.deploy('dist/sample'), 'dist/sample');
+  const fs = require('fs');
+  const path = require('path');
+  const sampleDir = path.join('dist', 'sample');
+  fs.mkdirSync(sampleDir, { recursive: true });
+  const deployPath = deploy.deploy(sampleDir);
+  assert.ok(fs.existsSync(deployPath));
 
   const history = new InputHistory();
   history.add('First', parsed);

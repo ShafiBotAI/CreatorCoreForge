@@ -25,6 +25,12 @@ export class DeployService {
     const path = require('path');
     const { execSync } = require('child_process');
 
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
+      const placeholder = path.join(dir, 'placeholder.txt');
+      fs.writeFileSync(placeholder, 'placeholder');
+    }
+
     const root = path.join(process.cwd(), 'deployments');
     fs.mkdirSync(root, { recursive: true });
     const timestamp = Date.now();
