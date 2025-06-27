@@ -23,7 +23,7 @@ struct BuildQuotaMeterView: View {
                 Spacer()
                 Text(String(format: "%.0f%% used", percentage * 100))
                     .font(.caption)
-                    .foregroundColor(.secondary)
+                    .foregroundColor(AppTheme.secondaryColor)
             }
         }
         .padding()

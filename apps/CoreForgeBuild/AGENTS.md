@@ -329,7 +329,7 @@ Ensure that CoreForge Audio, Visual, and Build are 100% functionally complete, s
 
 ## ✅ Functional Completion
 
-- [ ] All Codex agents, core views, and managers are implemented and verified
+ - [x] All Codex agents, core views, and managers are implemented and verified
 - [ ] All planned app features are present and testable
 - [x] Onboarding flow fully functional and launches only once
 - [ ] All views support dynamic resizing and device rotation (where applicable)
@@ -349,7 +349,7 @@ Ensure that CoreForge Audio, Visual, and Build are 100% functionally complete, s
 
 - [x] CoreForge theme (`primaryGradient`, `ultraThinMaterial`, `cornerRadius`) applied globally
 - [ ] All app icons in `.appiconset` are exported and installed
-- [ ] Light/Dark mode support implemented using semantic colors
+- [x] Light/Dark mode support implemented using semantic colors
 - [ ] Launch screen matches brand gradient and app name
 - [ ] Splash logo displays properly on all platforms
 
