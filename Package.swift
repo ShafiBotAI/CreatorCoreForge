@@ -13,7 +13,13 @@ products += [
 #endif
 
 var targets: [Target] = [
-    .target(name: "CreatorCoreForge", path: "Sources/CreatorCoreForge"),
+    .target(
+        name: "CreatorCoreForge",
+        path: "Sources/CreatorCoreForge",
+        resources: [
+            .copy("Resources/app_completion_report.json")
+        ]
+    ),
     .testTarget(name: "CreatorCoreForgeTests", dependencies: ["CreatorCoreForge"], path: "Tests/CreatorCoreForgeTests")
 ]
 

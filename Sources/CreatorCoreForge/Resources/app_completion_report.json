@@ -1,0 +1,77 @@
+{
+  "CoreForgeQuest": {
+    "done": 5,
+    "total": 6,
+    "percent_complete": 83.3
+  },
+  "CoreForgeVoiceLab": {
+    "done": 5,
+    "total": 6,
+    "percent_complete": 83.3
+  },
+  "CoreForgeLeads": {
+    "done": 32,
+    "total": 37,
+    "percent_complete": 86.5
+  },
+  "CoreForgeStudio": {
+    "done": 38,
+    "total": 70,
+    "percent_complete": 54.3
+  },
+  "CoreForgeWriter": {
+    "done": 39,
+    "total": 73,
+    "percent_complete": 53.4
+  },
+  "CoreForgeMarket": {
+    "done": 32,
+    "total": 57,
+    "percent_complete": 56.1
+  },
+  "CoreForgeVisual": {
+    "done": 331,
+    "total": 349,
+    "percent_complete": 94.8
+  },
+  "CoreForgeMind": {
+    "done": 5,
+    "total": 6,
+    "percent_complete": 83.3
+  },
+  "CoreForgeDNA": {
+    "done": 6,
+    "total": 6,
+    "percent_complete": 100.0
+  },
+  "CoreForgeMusic": {
+    "done": 29,
+    "total": 30,
+    "percent_complete": 96.7
+  },
+  "CoreForgeLearn": {
+    "done": 6,
+    "total": 6,
+    "percent_complete": 100.0
+  },
+  "CoreForgeAudio": {
+    "done": 453,
+    "total": 453,
+    "percent_complete": 100.0
+  },
+  "CoreForgeBuild": {
+    "done": 259,
+    "total": 266,
+    "percent_complete": 97.4
+  },
+  "CoreForgeBloom": {
+    "done": 5,
+    "total": 6,
+    "percent_complete": 83.3
+  },
+  "CoreForgeLibrary": {
+    "done": 2,
+    "total": 2,
+    "percent_complete": 100.0
+  }
+}
