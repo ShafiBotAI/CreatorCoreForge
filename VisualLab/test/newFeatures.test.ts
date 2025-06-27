@@ -17,7 +17,9 @@ import React from 'react';
 import assert from 'node:assert';
 
 const svc = new ARService();
-await svc.previewScene({ id: '1' });
+await svc.registerModel('cube', Buffer.from('m'));
+const overlays = await svc.previewScene({ id: '1' });
+assert.strictEqual(overlays.length, 1);
 
 const gpu = new GPUVideoRenderer();
 const clip = await gpu.render([], { width: 100, height: 100 });
