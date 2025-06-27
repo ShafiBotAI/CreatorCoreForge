@@ -341,8 +341,11 @@
 			name = CoreForgeAudio;
 			productName = CoreForgeAudio;
 			productReference = E02E020F26944937A89871CC /* CoreForgeAudio.app */;
-			productType = "com.apple.product-type.application";
-		};
+                        productType = "com.apple.product-type.application";
+                        packageProductDependencies = (
+                                AA0011223344556677889902 /* CreatorCoreForge */,
+                        );
+                };
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -550,6 +553,24 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-	};
-	rootObject = 7DA13769B4924EBB818522CE /* Project object */;
+/* Begin XCRemoteSwiftPackageReference section */
+                AA0011223344556677889901 /* XCRemoteSwiftPackageReference "CreatorCoreForge" */ = {
+                        isa = XCRemoteSwiftPackageReference;
+                        repositoryURL = "";
+                        requirement = {
+                                kind = localPackage;
+                                path = "../../";
+                        };
+                };
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+                AA0011223344556677889902 /* CreatorCoreForge */ = {
+                        isa = XCSwiftPackageProductDependency;
+                        package = AA0011223344556677889901 /* XCRemoteSwiftPackageReference "CreatorCoreForge" */;
+                        productName = CreatorCoreForge;
+                };
+/* End XCSwiftPackageProductDependency section */
+        };
+        rootObject = 7DA13769B4924EBB818522CE /* Project object */;
 }
