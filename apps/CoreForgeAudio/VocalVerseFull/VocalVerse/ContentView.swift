@@ -1,11 +1,12 @@
 #if canImport(SwiftUI)
 import SwiftUI
-import CreatorCoreForge
 
 struct ContentView: View {
     @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding = false
+
     @AppStorage("isLoggedIn") private var isLoggedIn = false
     @StateObject private var onboarding = OnboardingManager()
+
     @StateObject private var library = LibraryModel()
     @StateObject private var usage = UsageStats()
     @StateObject private var prefs = UserPreferences.shared
@@ -24,6 +25,7 @@ struct ContentView: View {
 
     var body: some View {
         Group {
+
             if showSplash {
                 WelcomeSplashView { showSplash = false }
                     .transition(.opacity)
@@ -39,17 +41,33 @@ struct ContentView: View {
                         ForgotPasswordView { }
                     }
             } else if hasSeenOnboarding || onboarding.isCompleted(.finished) {
+=======
+            if hasSeenOnboarding {
+
                 MainTabView(namespace: ns, selection: $selectedTab)
                     .environmentObject(library)
                     .environmentObject(usage)
+
                     .environmentObject(onboarding)
                     .environmentObject(prefs)
+                    .environmentObject(offlineManager)
+
+                    .transition(.scale)
+            } else {
+                OnboardingView(hasSeenOnboarding: $hasSeenOnboarding, namespace: ns)
+=======
+                    .environmentObject(onboarding)
+                    .environmentObject(prefs)
+
+                    .transition(.scale)
+=======
                     .environmentObject(offlineManager)
                     .transition(.scale)
             } else {
                 OnboardingView(hasSeenOnboarding: $hasSeenOnboarding, namespace: ns)
                     .environmentObject(onboarding)
                     .environmentObject(prefs)
+
                     .transition(.scale)
             }
         }

@@ -16,7 +16,7 @@ struct WhiteLabelManagerView: View {
             }
             if let statusMessage = statusMessage {
                 Text(statusMessage)
-                    .foregroundColor(.green)
+                    .foregroundColor(AppTheme.accentColor)
             }
         }
     }

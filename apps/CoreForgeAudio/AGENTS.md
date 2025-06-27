@@ -25,6 +25,9 @@ This file is a full checklist of every feature required for code completion and 
 - [x] Voice upload, cloning, and voiceprint signature
 - [x] Scene-based ambient sound and FX generator (rain, fire, footsteps, etc.)
 - [x] Cross-device library and playback position sync
+- [x] Offline TTS pipeline via bundled `ebook2audiobook` (XTTSv2, Bark, Vits,
+  etc.) with 1110+ language support and optional voice cloning
+- [x] Custom TTS model uploads for higher fidelity
 
 ### AI & API Integration
 - [x] OpenAI/LocalAI-based smart chapter segmentation, summarization, and narration
