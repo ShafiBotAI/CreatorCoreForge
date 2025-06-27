@@ -2,6 +2,7 @@ from pydub import AudioSegment
 import subprocess
 import sys
 from pathlib import Path
+from typing import Iterable
 
 
 def normalize_volume(path: str, target_dbfs: float = -20.0) -> AudioSegment:
@@ -53,4 +54,23 @@ def advanced_normalize_wav_folder(folder_path: str) -> None:
         tmp_file = path.with_suffix(".tmp.wav")
         advanced_normalize_wav_file(str(path), str(tmp_file))
         Path(tmp_file).replace(path)
+
+
+def convert_folder_to_audio(folder_path: str, output_base_dir: str = "output") -> None:
+    """Convert every supported ebook in ``folder_path`` to audio using
+    :func:`convert_ebook_to_audio`.
+
+    Parameters
+    ----------
+    folder_path: str
+        Directory containing ebook files.
+    output_base_dir: str, optional
+        Base directory where per-book audio folders will be created.
+    """
+    ebook_exts = {".epub", ".pdf", ".txt", ".docx"}
+    for ebook in Path(folder_path).iterdir():
+        if ebook.suffix.lower() in ebook_exts:
+            out_dir = Path(output_base_dir) / ebook.stem
+            out_dir.mkdir(parents=True, exist_ok=True)
+            convert_ebook_to_audio(str(ebook), str(out_dir))
 
