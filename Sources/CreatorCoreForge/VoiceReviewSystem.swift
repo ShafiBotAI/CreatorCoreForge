@@ -35,7 +35,7 @@ public final class VoiceReviewSystem {
 
     /// Return all reviews for a voice.
     public func allReviews(for name: String) -> [Review] {
-        reviews[name] ?? []
+        return reviews[name] ?? []
     }
 
     /// Remove all stored reviews.
