@@ -22,6 +22,10 @@ for web_dir in apps/*/Web; do
   if [ -f "$web_dir/package.json" ]; then
     echo "Building Web app in $web_dir"
     (cd "$web_dir" && npm install && npm run build)
+    if grep -q 'build:pwa' "$web_dir/package.json"; then
+      echo "Building PWA in $web_dir"
+      (cd "$web_dir" && npm run build:pwa)
+    fi
     echo "-----"
   fi
 done
@@ -39,5 +43,11 @@ fi
 if [ -d extensions/edge ]; then
   echo "Building Edge add-on"
   (cd extensions/edge && npm install && npm run build)
+fi
+
+# Run next-gen builder if available
+if command -v quantum-builder >/dev/null 2>&1; then
+  echo "Running quantum-builder for advanced targets"
+  quantum-builder build --all
 fi
 

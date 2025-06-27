@@ -34,8 +34,10 @@ This script performs the following actions when the necessary tools are availabl
 1. **iOS** – invokes Fastlane to build every Xcode project under `apps/`.
 2. **Android** – runs `./gradlew assembleRelease` for any Android projects.
 3. **Web** – executes `npm install` and `npm run build` for each `Web` directory.
-4. **Desktop** – calls `build_desktop.sh` for macOS and Windows installers.
-5. **Chrome/Edge** – builds browser extensions when `extensions/chrome` or `extensions/edge` exist.
+4. **Desktop** – calls `build_desktop.sh` for macOS, Windows, and Linux installers.
+5. **PWA** – runs `npm run build:pwa` when the script is defined in a `Web` project.
+6. **Chrome/Edge** – builds browser extensions when `extensions/chrome` or `extensions/edge` exist.
+7. **Next‑Gen** – invokes `quantum-builder` for advanced targets when available.
 
 ## Continuous Integration
 A GitHub Actions workflow (`desktop-build.yml`) is provided to automate the process. Trigger the workflow manually or on push. It executes the build script on both `macos-latest` and `windows-latest` runners.
