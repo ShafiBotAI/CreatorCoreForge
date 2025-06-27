@@ -343,6 +343,10 @@ Key points from `README.md`:
 - **Dark mode** and theme toggles via `ThemeManager`
 - **Offline audio storage** with stealth vault option
 - **Offline download queue management**
+- **ebook2audiobook** integration for advanced chapter conversion
+- See [`../ebook2audiobook/FEATURES-CODEX-COMPLETE.md`](../ebook2audiobook/FEATU
+RES-CODEX-COMPLETE.md) for the full list of Python pipeline features.
+- Use `audio_utils.convert_ebook_to_audio` to trigger the pipeline programmatically.
 
 
 ## Full Phase Checklist (Phases 1–9)

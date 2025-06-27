@@ -24,10 +24,6 @@ struct PlayerView: View {
         LinearGradient(colors: [.blue, .purple], startPoint: .topLeading, endPoint: .bottomTrailing)
     }
 
-    private var gradient: LinearGradient {
-        LinearGradient(colors: [.blue, .purple], startPoint: .topLeading, endPoint: .bottomTrailing)
-    }
-
     var body: some View {
         Group {
             if let chapter = library.currentChapter {
@@ -55,12 +51,7 @@ struct PlayerView: View {
                     PlaybackSpeedControlView(speed: $speed, voice: $voice)
                 }
                 .padding()
-
                 .background(gradient.ignoresSafeArea())
-=======
-
-                .background(gradient.ignoresSafeArea())
-=======
                 .matchedGeometryEffect(id: "player", in: namespace)
 
 

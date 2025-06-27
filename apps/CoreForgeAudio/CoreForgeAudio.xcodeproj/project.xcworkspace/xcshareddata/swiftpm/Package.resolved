@@ -1,0 +1,13 @@
+{
+  "pins" : [
+    {
+      "identity" : "creatorcoreforge",
+      "kind" : "local",
+      "location" : "../../",
+      "state" : {
+        "revision" : ""
+      }
+    }
+  ],
+  "version" : 2
+}

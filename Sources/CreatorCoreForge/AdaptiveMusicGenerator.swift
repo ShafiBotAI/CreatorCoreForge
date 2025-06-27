@@ -61,7 +61,7 @@ public final class AdaptiveMusicGenerator {
             let fallback = FileManager.default.temporaryDirectory
                 .appendingPathComponent("fallback_\(UUID().uuidString)")
                 .appendingPathExtension("wav")
-            FileManager.default.createFile(atPath: fallback.path, contents: Data(), attributes: nil)
+            _ = FileManager.default.createFile(atPath: fallback.path, contents: Data(), attributes: nil)
             return fallback
         }
     }

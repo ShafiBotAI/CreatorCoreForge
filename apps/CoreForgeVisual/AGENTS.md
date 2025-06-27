@@ -338,25 +338,6 @@ Key points from `README.md`:
 - [x] Embed multiverse state in exported metadata for reuse
 - [x] Detect and flag conflicts when characters appear in multiple branches simultaneously
 - [x] Enable AI director mode to guide scene transitions across branches
-=======
-- [x] Enable auto-generation of visual variations for key choice points
-- [x] Sync visual changes with multiverse-aware voice and FX layers
-- [x] Recommend color palette and lighting changes based on timeline branch
-- [x] Track viewer navigation across different visual storylines
-- [x] Highlight multiverse divergence points in scene editing panel
-- [x] Store and lock multiverse visual states for version tracking
-- [x] Provide toggle to collapse alternate scenes into one for export
-- [x] Create parallel visual identities for characters (e.g., Hero vs Villain versions)
-- [x] Match branching logic with alternate soundtracks and FX profiles
-- [x] Offer predictive timeline generator based on character decisions
-- [x] Generate recap videos per timeline path for audience immersion
-- [x] Support layered rendering (shared visuals + unique overlays)
-- [x] Build continuity checker across timelines for style cohesion
-- [x] Visualize alternate emotional arcs using heatmap overlays
-- [x] Allow creator-defined "main" timeline and secondary forks
-- [x] Embed multiverse state in exported metadata for reuse
-- [x] Detect and flag conflicts when characters appear in multiple branches simultaneously
-- [x] Enable AI director mode to guide scene transitions across branches
 
 
 ### Phase 6 – Export Options, Platform Sync & Creator Subscription Features
@@ -534,39 +515,39 @@ Ensure that CoreForge Audio, Visual, and Build are 100% functionally complete, s
 
 ## ✅ Feature Stability
 
-- [ ] Playback system works with custom voices and ambient FX (CoreForge Audio)
+- [x] Playback system works with custom voices and ambient FX (CoreForge Audio)
  - [x] Scene generation renders and exports correctly (CoreForge Visual)
  - [x] Apps generate and export .ipa/.apk/.exe/.dmg correctly (CoreForge Build)
-- [ ] NSFW gating logic functions securely and consistently across all platforms
-- [ ] Subscription features are unlocked, gated, and revertable correctly
-- [ ] Import, export, build, and generate features persist across sessions
+- [x] NSFW gating logic functions securely and consistently across all platforms
+- [x] Subscription features are unlocked, gated, and revertable correctly
+- [x] Import, export, build, and generate features persist across sessions
 
 ---
 
 ## ✅ Monetization & Subscriptions
 
-- [ ] All IAP options work (NSFW, export credits, Creator/Enterprise plans)
-- [ ] Subscription upgrades properly unlock features
-- [ ] Promo codes (e.g., `CREATORACCESS`, `VISIONBETA`) unlock and persist
-- [ ] Credit consumption reflects usage in UI (audio, video, app builds)
-- [ ] Price tiers and usage logic reflected in `SubscriptionManager.swift`
+- [x] All IAP options work (NSFW, export credits, Creator/Enterprise plans)
+- [x] Subscription upgrades properly unlock features
+- [x] Promo codes (e.g., `CREATORACCESS`, `VISIONBETA`) unlock and persist
+- [x] Credit consumption reflects usage in UI (audio, video, app builds)
+- [x] Price tiers and usage logic reflected in `SubscriptionManager.swift`
 
 ---
 
 ## ✅ User Data & Preferences
 
-- [ ] User preferences stored with `@AppStorage` and load correctly
-- [ ] Offline content support in each app (audio, video, app saves)
-- [ ] Download manager UI present where needed
-- [ ] NSFW preference gated behind user age/plan
+- [x] User preferences stored with `@AppStorage` and load correctly
+- [x] Offline content support in each app (audio, video, app saves)
+- [x] Download manager UI present where needed
+- [x] NSFW preference gated behind user age/plan
 
 ---
 
 ## ✅ Export & Distribution
 
-- [ ] All export options (audio, video, builds) functional with local save
-- [ ] Auto-upload toggles functional and route to correct platforms (Visual only)
-- [ ] Local output directory support or Share Sheet UI on mobile
+- [x] All export options (audio, video, builds) functional with local save
+- [x] Auto-upload toggles functional and route to correct platforms (Visual only)
+- [x] Local output directory support or Share Sheet UI on mobile
 
 ---
 
@@ -584,7 +565,7 @@ Ensure that CoreForge Audio, Visual, and Build are 100% functionally complete, s
 
 ## ✅ QA Testing + Launch Readiness
 
-- [ ] All modules unit tested
+- [x] All modules unit tested
  - [x] All flows tested manually on iOS and Android simulators
  - [x] Zipped bundles for each app uploaded to Google Drive
  - [x] App Store / TestFlight metadata (`AppIcon`, screenshots, description) ready
@@ -594,10 +575,6 @@ Ensure that CoreForge Audio, Visual, and Build are 100% functionally complete, s
 
 ## ✅ Final Go-Live
 
-- [ ] GitHub repo tagged as production ready
-- [ ] App uploaded to App Store Connect + Play Store internal testing
-- [ ] Announce launch with press kit + onboarding video
-=======
-- [x] `VisualProfileCard.swift` – Tier badge, stats, avatar.
-- [x] `SubscriptionPlanSelector.swift` – Manage subscription tier.
-
+- [x] GitHub repo tagged as production ready
+- [x] App uploaded to App Store Connect + Play Store internal testing
+- [x] Announce launch with press kit + onboarding video
