@@ -27,9 +27,9 @@ struct VoicePreviewPopup: View {
             }
         }
         .padding()
-        .background(AppTheme.cardMaterial)
-        .cornerRadius(AppTheme.cornerRadius)
-        .shadow(radius: AppTheme.shadowRadius)
+        .background(Theme.cardMaterial)
+        .cornerRadius(Theme.cornerRadius)
+        .shadow(radius: Theme.shadowRadius)
     }
 
     private func playPreview() {
@@ -40,13 +40,15 @@ struct VoicePreviewPopup: View {
     }
 }
 
-#if DEBUG
-struct VoicePreviewPopup_Previews: PreviewProvider {
-    @State static var presented = true
-    static var previews: some View {
-        VoicePreviewPopup(audioURL: URL(fileURLWithPath: "/dev/null"), isPresented: $presented)
-            .previewLayout(.sizeThatFits)
+#Preview {
+    struct PreviewWrapper: View {
+        @State var presented = true
+        var body: some View {
+            VoicePreviewPopup(audioURL: URL(fileURLWithPath: "/dev/null"), isPresented: $presented)
+                .previewLayout(.sizeThatFits)
+        }
     }
+    return PreviewWrapper()
 }
 #endif
 #endif

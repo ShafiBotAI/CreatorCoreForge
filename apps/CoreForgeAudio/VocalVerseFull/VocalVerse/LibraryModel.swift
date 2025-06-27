@@ -1,7 +1,17 @@
 import Foundation
+
 #if canImport(Combine)
 import Combine
 #endif
+=======
+
+#if canImport(SwiftUI)
+import SwiftUI
+=======
+#if canImport(Combine)
+import Combine
+#endif
+
 #if canImport(AVFoundation)
 import AVFoundation
 #endif
@@ -68,6 +78,7 @@ final class LibraryModel: ObservableObject {
         save()
     }
 
+
     /// Remove downloaded audio for a book and persist the update.
     func removeDownloaded(book: Book) {
         guard let idx = books.firstIndex(where: { $0.id == book.id }) else { return }
@@ -81,9 +92,11 @@ final class LibraryModel: ObservableObject {
         save()
     }
 
+
     private func save() {
         if let data = try? JSONEncoder().encode(books) {
             defaults.set(data, forKey: storeKey)
         }
     }
 }
+#endif

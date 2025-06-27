@@ -36,7 +36,13 @@ struct DownloadsManagerView: View {
                 .padding(.horizontal)
             }
         }
+
         .onAppear { storageUsed = calculateStorage() }
+=======
+        .onAppear {
+            storageUsed = Double(offline.downloaded.count) * 50
+        }
+
         .padding(.vertical)
         .background(AppTheme.cardMaterial)
         .cornerRadius(AppTheme.cornerRadius)

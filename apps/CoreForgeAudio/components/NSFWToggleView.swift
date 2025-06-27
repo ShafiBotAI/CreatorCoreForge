@@ -14,13 +14,10 @@ struct NSFWToggleView: View {
     }
 }
 
-#if DEBUG
-struct NSFWToggleView_Previews: PreviewProvider {
-    static var previews: some View {
-        NSFWToggleView()
-            .padding()
-            .previewLayout(.sizeThatFits)
-    }
+#Preview {
+    NSFWToggleView()
+        .padding()
+        .previewLayout(.sizeThatFits)
 }
 #endif
 #endif

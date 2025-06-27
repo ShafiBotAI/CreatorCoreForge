@@ -37,4 +37,5 @@ final class OfflineContentManager: ObservableObject {
         }
         library.removeDownloaded(book: book)
     }
+
 }

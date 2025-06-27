@@ -17,7 +17,7 @@ struct UnlockWithPromoView: View {
             .buttonStyle(.borderedProminent)
             if let message = message {
                 Text(message)
-                    .foregroundColor(.green)
+                    .foregroundColor(AppTheme.accentColor)
             }
         }
         .padding()

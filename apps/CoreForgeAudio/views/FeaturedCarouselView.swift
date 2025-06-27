@@ -13,7 +13,7 @@ struct FeaturedCarouselView: View {
                 ForEach(books) { book in
                     VStack(alignment: .leading) {
                         Rectangle()
-                            .fill(AppTheme.primaryGradient)
+                            .fill(Theme.primaryGradient)
                             .frame(width: 120, height: 160)
                             .overlay(
                                 VStack(alignment: .leading) {
@@ -37,9 +37,9 @@ struct FeaturedCarouselView: View {
                                 alignment: .bottom
                             )
                     }
-                    .background(AppTheme.cardMaterial)
-                    .cornerRadius(AppTheme.cornerRadius)
-                    .shadow(radius: AppTheme.shadowRadius)
+                    .background(Theme.cardMaterial)
+                    .cornerRadius(Theme.cornerRadius)
+                    .shadow(radius: Theme.shadowRadius)
                 }
             }
             .padding(.horizontal)
@@ -47,15 +47,11 @@ struct FeaturedCarouselView: View {
     }
 }
 
-#if DEBUG
-struct FeaturedCarouselView_Previews: PreviewProvider {
-    static var previews: some View {
-        FeaturedCarouselView(books: [
-            Book(title: "Sample", author: "A"),
-            Book(title: "Sample 2", author: "B")
-        ])
-        .environmentObject(LibraryModel())
-    }
+#Preview {
+    FeaturedCarouselView(books: [
+        Book(title: "Sample", author: "A"),
+        Book(title: "Sample 2", author: "B")
+    ])
+    .environmentObject(LibraryModel())
 }
-#endif
 #endif

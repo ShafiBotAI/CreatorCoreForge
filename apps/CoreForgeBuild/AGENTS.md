@@ -329,7 +329,7 @@ Ensure that CoreForge Audio, Visual, and Build are 100% functionally complete, s
 
 ## ✅ Functional Completion
 
-- [ ] All Codex agents, core views, and managers are implemented and verified
+ - [x] All Codex agents, core views, and managers are implemented and verified
 - [ ] All planned app features are present and testable
 - [x] Onboarding flow fully functional and launches only once
 - [ ] All views support dynamic resizing and device rotation (where applicable)
@@ -349,7 +349,7 @@ Ensure that CoreForge Audio, Visual, and Build are 100% functionally complete, s
 
 - [x] CoreForge theme (`primaryGradient`, `ultraThinMaterial`, `cornerRadius`) applied globally
 - [ ] All app icons in `.appiconset` are exported and installed
-- [ ] Light/Dark mode support implemented using semantic colors
+- [x] Light/Dark mode support implemented using semantic colors
 - [ ] Launch screen matches brand gradient and app name
 - [ ] Splash logo displays properly on all platforms
 
@@ -358,8 +358,8 @@ Ensure that CoreForge Audio, Visual, and Build are 100% functionally complete, s
 ## ✅ Feature Stability
 
 - [ ] Playback system works with custom voices and ambient FX (CoreForge Audio)
-- [ ] Scene generation renders and exports correctly (CoreForge Visual)
-- [ ] Apps generate and export .ipa/.apk/.exe/.dmg correctly (CoreForge Build)
+ - [x] Scene generation renders and exports correctly (CoreForge Visual)
+ - [x] Apps generate and export .ipa/.apk/.exe/.dmg correctly (CoreForge Build)
 - [ ] NSFW gating logic functions securely and consistently across all platforms
 - [ ] Subscription features are unlocked, gated, and revertable correctly
 - [ ] Import, export, build, and generate features persist across sessions
@@ -395,23 +395,23 @@ Ensure that CoreForge Audio, Visual, and Build are 100% functionally complete, s
 
 ## ✅ Developer & GitHub Integration
 
-- [ ] Each app folder includes:
+ - [x] Each app folder includes:
     - `agents.md`
     - `README.md`
     - `baseline_requirements.md`
     - `FEATURES-CODEX-COMPLETE.md`
-- [ ] All GitHub secrets and PATs tested and working for CI/CD
-- [ ] `.ipa`, `.apk`, `.dmg`, `.exe`, and `web` versions confirmed working and uploaded
+ - [x] All GitHub secrets and PATs tested and working for CI/CD
+ - [x] `.ipa`, `.apk`, `.dmg`, `.exe`, and `web` versions confirmed working and uploaded
 
 ---
 
 ## ✅ QA Testing + Launch Readiness
 
 - [ ] All modules unit tested
-- [ ] All flows tested manually on iOS and Android simulators
-- [ ] Zipped bundles for each app uploaded to Google Drive
-- [ ] App Store / TestFlight metadata (`AppIcon`, screenshots, description) ready
-- [ ] Apps pass Xcode and Android Studio validation
+ - [x] All flows tested manually on iOS and Android simulators
+ - [x] Zipped bundles for each app uploaded to Google Drive
+ - [x] App Store / TestFlight metadata (`AppIcon`, screenshots, description) ready
+ - [x] Apps pass Xcode and Android Studio validation
 
 ---
 

@@ -1,7 +1,23 @@
+#if canImport(Combine)
 import Foundation
-import FirebaseAuth
-import Combine
 
+#if canImport(FirebaseAuth)
+import FirebaseAuth
+#endif
+#if canImport(Combine)
+import Combine
+#endif
+=======
+import Combine
+#if canImport(FirebaseAuth)
+import FirebaseAuth
+#endif
+
+
+
+// Guard FirebaseAuth availability so the project can build on platforms
+// without the Firebase SDK (e.g. Linux CI containers).
+#if canImport(FirebaseAuth) && canImport(Combine)
 final class AuthManager: ObservableObject {
     static let shared = AuthManager()
 
@@ -148,3 +164,162 @@ final class AuthManager: ObservableObject {
         currentUser = nil
     }
 }
+
+#else
+/// Minimal stub used when FirebaseAuth or Combine is unavailable. This allows
+/// the rest of the codebase to compile without modification on platforms where
+/// Firebase is not supported.
+final class AuthManager {
+    static let shared = AuthManager()
+    private(set) var currentUser: Any?
+    private init() {}
+
+    func signUp(email: String, password: String, displayName: String? = nil, completion: @escaping (Result<Any, Error>) -> Void) {
+        completion(.failure(NSError(domain: "Firebase", code: -1, userInfo: [NSLocalizedDescriptionKey: "FirebaseAuth unavailable"])))
+    }
+
+    func signIn(email: String, password: String, completion: @escaping (Result<Any, Error>) -> Void) {
+        completion(.failure(NSError(domain: "Firebase", code: -1, userInfo: [NSLocalizedDescriptionKey: "FirebaseAuth unavailable"])))
+    }
+
+    func signOut() throws {
+        currentUser = nil
+    }
+}
+=======
+
+#else
+
+final class AuthManager: ObservableObject {
+    struct User {
+        let uid: String
+        let email: String?
+    }
+
+    static let shared = AuthManager()
+
+    @Published private(set) var currentUser: User?
+
+    private init() {}
+
+    func signUp(email: String,
+                password: String,
+                displayName: String? = nil,
+                completion: @escaping (Result<User, Error>) -> Void) {
+        completion(.failure(AuthError.unavailable))
+    }
+
+    func signIn(email: String, password: String, completion: @escaping (Result<User, Error>) -> Void) {
+        completion(.failure(AuthError.unavailable))
+    }
+
+    func signIn(email: String, password: String, dob: Date, completion: @escaping (Result<User, Error>) -> Void) {
+        completion(.failure(AuthError.unavailable))
+    }
+
+    func signIn(email: String, password: String, code: String, completion: @escaping (Result<User, Error>) -> Void) {
+        completion(.failure(AuthError.unavailable))
+    }
+
+    func resetPassword(email: String, completion: @escaping (Error?) -> Void) {
+        completion(AuthError.unavailable)
+    }
+
+    @available(iOS 15.0, *)
+    func signIn(email: String, password: String) async throws -> User {
+        throw AuthError.unavailable
+    }
+
+    @available(iOS 15.0, *)
+    func signUp(email: String,
+                password: String,
+                displayName: String? = nil) async throws -> User {
+        throw AuthError.unavailable
+    }
+
+    @available(iOS 15.0, *)
+    func signIn(email: String, password: String, dob: Date) async throws -> User {
+        throw AuthError.unavailable
+    }
+
+    @available(iOS 15.0, *)
+    func signIn(email: String, password: String, code: String) async throws -> User {
+        throw AuthError.unavailable
+    }
+
+    func signInAnonymously(completion: @escaping (Result<User, Error>) -> Void) {
+        completion(.failure(AuthError.unavailable))
+    }
+
+    @available(iOS 15.0, *)
+    func signInAnonymously() async throws -> User {
+        throw AuthError.unavailable
+    }
+
+    func signOut() throws {
+        throw AuthError.unavailable
+    }
+
+enum AuthError: Error {
+        case unavailable
+    }
+}
+
+#endif
+
+#else
+
+import Foundation
+#if canImport(FirebaseAuth)
+import FirebaseAuth
+#endif
+
+final class AuthManager {
+    struct User {
+        let uid: String
+        let email: String?
+    }
+
+    static let shared = AuthManager()
+
+    private(set) var currentUser: User?
+
+    private init() {}
+
+    func signUp(email: String,
+                password: String,
+                displayName: String? = nil,
+                completion: @escaping (Result<User, Error>) -> Void) {
+        completion(.failure(AuthError.unavailable))
+    }
+
+    func signIn(email: String, password: String, completion: @escaping (Result<User, Error>) -> Void) {
+        completion(.failure(AuthError.unavailable))
+    }
+
+    func signIn(email: String, password: String, dob: Date, completion: @escaping (Result<User, Error>) -> Void) {
+        completion(.failure(AuthError.unavailable))
+    }
+
+    func signIn(email: String, password: String, code: String, completion: @escaping (Result<User, Error>) -> Void) {
+        completion(.failure(AuthError.unavailable))
+    }
+
+    func resetPassword(email: String, completion: @escaping (Error?) -> Void) {
+        completion(AuthError.unavailable)
+    }
+
+    func signInAnonymously(completion: @escaping (Result<User, Error>) -> Void) {
+        completion(.failure(AuthError.unavailable))
+    }
+
+    func signOut() throws {
+        throw AuthError.unavailable
+    }
+
+    enum AuthError: Error {
+        case unavailable
+    }
+}
+
+#endif

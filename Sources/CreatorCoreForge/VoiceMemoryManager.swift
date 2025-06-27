@@ -6,10 +6,21 @@ public final class VoiceMemoryManager {
     private let key = "VoiceMemoryAssignments"
     private var assignments: [String: String] = [:] // series|character -> voiceID
 
-    private init() {
-        if let saved = UserDefaults.standard.dictionary(forKey: key) as? [String: String] {
+    private let userDefaults: UserDefaults
+    private let fileManager: FileManager
+    private let fileURL: URL
+
+    public init(userDefaults: UserDefaults = .standard,
+                directory: URL? = nil,
+                fileManager: FileManager = .default) {
+        self.userDefaults = userDefaults
+        self.fileManager = fileManager
+        let dir = directory ?? fileManager.urls(for: .documentDirectory, in: .userDomainMask).first!
+        self.fileURL = dir.appendingPathComponent("voice_memory.json")
+        if let saved = userDefaults.dictionary(forKey: key) as? [String: String] {
             assignments = saved
         }
+        loadFromDisk()
     }
 
     public func assign(voiceID: String, to character: String, in series: String) {
@@ -46,7 +57,19 @@ public final class VoiceMemoryManager {
     }
 
     private func persist() {
-        UserDefaults.standard.set(assignments, forKey: key)
+        userDefaults.set(assignments, forKey: key)
+        if let data = try? JSONSerialization.data(withJSONObject: assignments, options: []) {
+            try? fileManager.createDirectory(at: fileURL.deletingLastPathComponent(), withIntermediateDirectories: true)
+            try? data.write(to: fileURL, options: .atomic)
+        }
+    }
+
+    private func loadFromDisk() {
+        guard let data = try? Data(contentsOf: fileURL),
+              let obj = try? JSONSerialization.jsonObject(with: data) as? [String: String] else { return }
+        for (key, value) in obj {
+            assignments[key] = value
+        }
     }
 
     private static func mapKey(series: String, character: String) -> String {
