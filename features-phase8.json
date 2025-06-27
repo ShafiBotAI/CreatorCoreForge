@@ -111,6 +111,8 @@
       "ProAudioPipeline",
       "AdaptiveAudioEngine",
       "AdvancedAudioModule",
+      "Ebook2AudiobookIntegration",
+      "CustomTTSModelUpload",
       "QuantumAudioManager"
     ],
     "CoreForgeVisual": [
