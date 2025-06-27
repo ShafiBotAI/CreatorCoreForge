@@ -421,8 +421,12 @@ For iOS builds in Xcode Cloud, see [docs/XcodeCloud.md](docs/XcodeCloud.md) and 
 
 
 ## Fetching n8n Workflow Engine
-
 Use `./scripts/fetch_n8n.sh` to clone or update the [n8n](https://github.com/n8n-io/n8n) automation engine under `external/n8n`. Review the license printed at the end of the script before integrating it into your projects.
+
+## Fetching Audiobookshelf Tools
+Use `./scripts/fetch_audiobookshelf.sh` to clone or update the [audiobookshelf](https://github.com/advplyr/audiobookshelf) server under `external/audiobookshelf`. Review the license printed at the end of the script before experimenting locally.
+
+
 
 
 After fetching the repository, you can leverage VoiceLab's `runN8nAssistant` helper to experiment with n8n-inspired AI workflows locally.
