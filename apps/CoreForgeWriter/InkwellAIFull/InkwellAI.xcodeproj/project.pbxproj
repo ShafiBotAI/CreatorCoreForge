@@ -37,12 +37,14 @@
     5A6A01CF77F24A558405C619 /* Debug */ = {
       isa = XCBuildConfiguration;
       buildSettings = {
+      	HEADERMAP_STYLE = FLAT;
       };
       name = Debug;
     };
     5C98D547339E4E4CBD9FCB2E /* Release */ = {
       isa = XCBuildConfiguration;
       buildSettings = {
+      	HEADERMAP_STYLE = FLAT;
       };
       name = Release;
     };

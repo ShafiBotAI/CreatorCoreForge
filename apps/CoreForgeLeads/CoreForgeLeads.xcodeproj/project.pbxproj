@@ -37,12 +37,14 @@
     59E919DBD302469995E62F0C /* Debug */ = {
       isa = XCBuildConfiguration;
       buildSettings = {
+      	HEADERMAP_STYLE = FLAT;
       };
       name = Debug;
     };
     F121A82193064072A8DDCC86 /* Release */ = {
       isa = XCBuildConfiguration;
       buildSettings = {
+      	HEADERMAP_STYLE = FLAT;
       };
       name = Release;
     };

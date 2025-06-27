@@ -165,11 +165,13 @@
         A77BA35D31574FC0B2FB8BCD /* Debug */ = {
             isa = XCBuildConfiguration;
             buildSettings = { };
+            	HEADERMAP_STYLE = FLAT;
             name = Debug;
         };
         CC3C9D9A11B5485F880EF08C /* Release */ = {
             isa = XCBuildConfiguration;
             buildSettings = { };
+            	HEADERMAP_STYLE = FLAT;
             name = Release;
         };
 /* End XCBuildConfiguration section */

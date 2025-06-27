@@ -37,12 +37,14 @@
     C8541DC68F804084BB37950A /* Debug */ = {
       isa = XCBuildConfiguration;
       buildSettings = {
+      	HEADERMAP_STYLE = FLAT;
       };
       name = Debug;
     };
     C24DA1E24EFB4A4DAE4361CE /* Release */ = {
       isa = XCBuildConfiguration;
       buildSettings = {
+      	HEADERMAP_STYLE = FLAT;
       };
       name = Release;
     };
