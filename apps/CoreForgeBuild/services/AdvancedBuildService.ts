@@ -2,6 +2,8 @@ export class AdvancedBuildService {
   private marketplace: string[] = [];
   private enterpriseEnabled = false;
   private analytics: Record<string, number> = {};
+  private quantumHybrid = false;
+  private uiFinalized = false;
   initializeBackend(type: 'firebase' | 'custom' = 'custom'): string {
     if (type === 'firebase') {
       return 'Firebase backend initialized';
@@ -48,11 +50,12 @@ export class AdvancedBuildService {
   }
 
   manageAssetPipeline(): void {
-    this.marketplace = this.marketplace.filter((m) => m.trim().length > 0);
+    // remove empty entries and deduplicate
+    this.marketplace = Array.from(new Set(this.marketplace.filter((m) => m.trim().length > 0)));
   }
 
   enableQuantumHybridMode(): void {
-    /* toggle for quantum/hybrid AI */
+    this.quantumHybrid = true;
   }
 
   setupMarketplace(): void {
@@ -60,7 +63,12 @@ export class AdvancedBuildService {
   }
 
   validateCodeExport(): string[] {
-    return [];
+    const fs = require('fs');
+    const issues: string[] = [];
+    if (!fs.existsSync('dist')) {
+      issues.push('dist directory missing');
+    }
+    return issues;
   }
 
   enableEnterpriseControls(): void {
@@ -72,7 +80,7 @@ export class AdvancedBuildService {
   }
 
   trackViralLaunch(): void {
-    /* analytics stub */
+    this.analytics['viralLaunch'] = (this.analytics['viralLaunch'] || 0) + 1;
   }
 
   enforceNSFWGating(allowed: boolean): boolean {
@@ -92,11 +100,11 @@ export class AdvancedBuildService {
   }
 
   runAssetTests(): boolean {
-    return true;
+    return this.marketplace.every((m) => m.endsWith('.zip') || m.endsWith('.tar'));
   }
 
   finalizeUI(): void {
-    /* final UI polish stub */
+    this.uiFinalized = true;
   }
 
   exportISO(dir: string): string {
