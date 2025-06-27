@@ -7,7 +7,7 @@ public struct ExportManager {
     /// Export an app bundle for the given platform into the output directory.
     public func export(platform: String, output: String) -> String {
         let path = URL(fileURLWithPath: output).appendingPathComponent("\(platform).bundle").path
-        FileManager.default.createFile(atPath: path, contents: Data(), attributes: nil)
+        _ = FileManager.default.createFile(atPath: path, contents: Data(), attributes: nil)
         return path
     }
 
