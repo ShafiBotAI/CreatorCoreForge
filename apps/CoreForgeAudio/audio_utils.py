@@ -1,12 +1,25 @@
-from pydub import AudioSegment
+from __future__ import annotations
+
+"""Utility helpers for audio processing within CoreForge Audio."""
+
+from pathlib import Path
 import subprocess
 import sys
-from pathlib import Path
+from shutil import which
 
+from pydub import AudioSegment
+from tqdm import tqdm
+
+
+def _ensure_ffmpeg() -> None:
+    """Ensure ``ffmpeg`` exists in PATH, raising ``FileNotFoundError`` if not."""
+    if which("ffmpeg") is None:
+        raise FileNotFoundError("ffmpeg executable not found in PATH")
 
 
 def normalize_volume(path: str, target_dbfs: float = -20.0) -> AudioSegment:
     """Return audio normalized to a target volume."""
+    _ensure_ffmpeg()
     audio = AudioSegment.from_file(path)
     change = target_dbfs - audio.dBFS
     return audio.apply_gain(change)
@@ -23,6 +36,8 @@ def convert_ebook_to_audio(ebook_path: str, output_dir: str = "output") -> None:
         Directory where audio files will be written.
     """
 
+    _ensure_ffmpeg()
+
     src = Path(ebook_path)
     if not src.is_file():
         raise FileNotFoundError(src)
@@ -32,11 +47,15 @@ def convert_ebook_to_audio(ebook_path: str, output_dir: str = "output") -> None:
 
     repo_root = Path(__file__).resolve().parents[2]
     script = repo_root / "scripts" / "ebook2audiobook_bridge.py"
+    if not script.is_file():
+        raise FileNotFoundError(script)
+
     subprocess.run([sys.executable, str(script), str(src), "-o", str(out_dir)], check=True)
 
 
 def advanced_normalize_wav_file(input_file: str, output_file: str) -> None:
     """Apply advanced normalization using ffmpeg filters from ebook2audiobook."""
+    _ensure_ffmpeg()
     ffmpeg_cmd = [
         "ffmpeg", "-i", input_file,
         "-af",
@@ -61,7 +80,8 @@ def advanced_normalize_wav_folder(folder_path: str) -> None:
     if not folder.is_dir():
         raise FileNotFoundError(folder_path)
 
-    for path in folder.rglob("*.wav"):
+    wav_files = list(folder.rglob("*.wav"))
+    for path in tqdm(wav_files, desc="Normalizing", unit="file"):
         tmp_file = path.with_suffix(".tmp.wav")
         advanced_normalize_wav_file(str(path), str(tmp_file))
         Path(tmp_file).replace(path)
@@ -83,9 +103,9 @@ def convert_folder_to_audio(folder_path: str, output_base_dir: str = "output") -
         raise FileNotFoundError(folder_path)
 
     ebook_exts = {".epub", ".pdf", ".txt", ".docx"}
-    for ebook in folder.iterdir():
-        if ebook.suffix.lower() in ebook_exts:
-            out_dir = Path(output_base_dir) / ebook.stem
-            out_dir.mkdir(parents=True, exist_ok=True)
-            convert_ebook_to_audio(str(ebook), str(out_dir))
+    ebooks = [e for e in folder.iterdir() if e.suffix.lower() in ebook_exts]
+    for ebook in tqdm(ebooks, desc="Converting", unit="book"):
+        out_dir = Path(output_base_dir) / ebook.stem
+        out_dir.mkdir(parents=True, exist_ok=True)
+        convert_ebook_to_audio(str(ebook), str(out_dir))
 
