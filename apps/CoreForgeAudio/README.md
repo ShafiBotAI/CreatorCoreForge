@@ -38,7 +38,9 @@ you notice missing playback or export features, ensure the package is linked in
 Xcode and reference `Sources/CreatorCoreForge/CoreForgeAudio_MissingFeatures.swift`
 for additional helper functions. These utilities provide an offline download
 queue and an eBook–to–audio converter that complement the app's own classes.
-For advanced conversions using the Python pipeline, run `../../scripts/ebook2audiobook_bridge.py MyBook.epub`.
+For advanced conversions using the Python pipeline, call
+`convert_ebook_to_audio("MyBook.epub")` from `audio_utils.py` or run
+`../../scripts/ebook2audiobook_bridge.py MyBook.epub`.
 To polish training samples, run `services/voice_cleaner.py AUDIO.wav` and use the resulting file in `VoiceTrainer`.
 You can also turn a dialogue script into audio using `../../scripts/chatterbox_bridge.py script.txt` once your Chatterbox API endpoint is configured.
 
