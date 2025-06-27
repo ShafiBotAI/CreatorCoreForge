@@ -6,7 +6,7 @@ struct VoiceMemoryView: View {
     @State private var assignments: [(String, String)] = []
 
     var body: some View {
-        List(assignments, id: \..0) { character, voice in
+        List(assignments, id: \.0) { character, voice in
             HStack {
                 Text(character.capitalized)
                 Spacer()
@@ -30,5 +30,4 @@ struct VoiceMemoryView: View {
     VoiceMemoryView()
         .previewLayout(.sizeThatFits)
 }
-#endif
 #endif

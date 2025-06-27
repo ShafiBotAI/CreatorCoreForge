@@ -8,7 +8,7 @@ struct LanguageSelectorView: View {
 
     var body: some View {
         Picker("Language", selection: $language) {
-            ForEach(languages, id: \..self) { Text($0) }
+            ForEach(languages, id: \.self) { Text($0) }
         }
         .pickerStyle(.menu)
     }
@@ -25,5 +25,4 @@ struct LanguageSelectorView: View {
     }
     return PreviewWrapper()
 }
-#endif
 #endif

@@ -21,8 +21,6 @@ struct SwipePreviewHandler: ViewModifier {
         .padding()
         .previewLayout(.sizeThatFits)
 }
-#endif
-
 extension View {
     func voicePreviewOnHold(audioURL: URL) -> some View {
         modifier(SwipePreviewHandler(audioURL: audioURL))

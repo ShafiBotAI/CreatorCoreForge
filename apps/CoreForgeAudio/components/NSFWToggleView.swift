@@ -20,4 +20,3 @@ struct NSFWToggleView: View {
         .previewLayout(.sizeThatFits)
 }
 #endif
-#endif

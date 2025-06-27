@@ -12,13 +12,13 @@ struct VoiceMashupView: View {
         Form {
             Section("Voice 1") {
                 Picker("Voice 1", selection: $voiceA) {
-                    ForEach(VoiceConfig.voiceNames, id: \..self) { Text($0) }
+                    ForEach(VoiceConfig.voiceNames, id: \.self) { Text($0) }
                 }
                 .pickerStyle(.menu)
             }
             Section("Voice 2") {
                 Picker("Voice 2", selection: $voiceB) {
-                    ForEach(VoiceConfig.voiceNames, id: \..self) { Text($0) }
+                    ForEach(VoiceConfig.voiceNames, id: \.self) { Text($0) }
                 }
                 .pickerStyle(.menu)
             }

@@ -8,7 +8,7 @@ struct AskBookAIView: View {
 
     var body: some View {
         VStack {
-            List(responses, id: \..self) { Text($0) }
+            List(responses, id: \.self) { Text($0) }
             HStack {
                 TextField("Ask a question", text: $question)
                     .textFieldStyle(.roundedBorder)
