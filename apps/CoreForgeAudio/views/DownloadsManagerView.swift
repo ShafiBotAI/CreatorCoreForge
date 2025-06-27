@@ -28,20 +28,36 @@ struct DownloadsManagerView: View {
                     Text(book.title)
                     Spacer()
                     Button("Remove") {
-                        // Placeholder remove action
+                        offline.remove(book: book)
+                        storageUsed = calculateStorage()
                     }
                     .buttonStyle(.bordered)
                 }
                 .padding(.horizontal)
             }
         }
+
+        .onAppear { storageUsed = calculateStorage() }
+=======
         .onAppear {
             storageUsed = Double(offline.downloaded.count) * 50
         }
+
         .padding(.vertical)
         .background(AppTheme.cardMaterial)
         .cornerRadius(AppTheme.cornerRadius)
         .shadow(radius: AppTheme.shadowRadius)
+    }
+
+    private func calculateStorage() -> Double {
+        var bytes: Int64 = 0
+        for url in offline.downloaded {
+            if let attrs = try? FileManager.default.attributesOfItem(atPath: url.path),
+               let size = attrs[.size] as? NSNumber {
+                bytes += size.int64Value
+            }
+        }
+        return Double(bytes) / 1_048_576
     }
 }
 

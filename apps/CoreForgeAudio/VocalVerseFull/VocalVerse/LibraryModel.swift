@@ -1,5 +1,10 @@
 import Foundation
 
+#if canImport(Combine)
+import Combine
+#endif
+=======
+
 #if canImport(SwiftUI)
 import SwiftUI
 =======
@@ -72,6 +77,21 @@ final class LibraryModel: ObservableObject {
         books[idx].isDownloaded = true
         save()
     }
+
+
+    /// Remove downloaded audio for a book and persist the update.
+    func removeDownloaded(book: Book) {
+        guard let idx = books.firstIndex(where: { $0.id == book.id }) else { return }
+        for chapterIndex in books[idx].chapters.indices {
+            if let url = books[idx].chapters[chapterIndex].audioURL {
+                try? FileManager.default.removeItem(at: url)
+                books[idx].chapters[chapterIndex].audioURL = nil
+            }
+        }
+        books[idx].isDownloaded = false
+        save()
+    }
+
 
     private func save() {
         if let data = try? JSONEncoder().encode(books) {

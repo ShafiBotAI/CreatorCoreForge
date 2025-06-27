@@ -24,4 +24,18 @@ final class OfflineContentManager: ObservableObject {
         }
         queue.startDownloads()
     }
+
+    /// Remove all downloaded files for the given book.
+    func remove(book: Book) {
+        for chapter in book.chapters {
+            if let url = chapter.audioURL {
+                try? FileManager.default.removeItem(at: url)
+                if let idx = downloaded.firstIndex(of: url) {
+                    downloaded.remove(at: idx)
+                }
+            }
+        }
+        library.removeDownloaded(book: book)
+    }
+
 }

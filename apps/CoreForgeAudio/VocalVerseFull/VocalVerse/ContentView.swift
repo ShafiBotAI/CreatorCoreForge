@@ -23,12 +23,19 @@ struct ContentView: View {
                     .environmentObject(library)
                     .environmentObject(usage)
 
+                    .environmentObject(onboarding)
+                    .environmentObject(prefs)
+                    .environmentObject(offlineManager)
+
                     .transition(.scale)
             } else {
                 OnboardingView(hasSeenOnboarding: $hasSeenOnboarding, namespace: ns)
 =======
                     .environmentObject(onboarding)
                     .environmentObject(prefs)
+
+                    .transition(.scale)
+=======
                     .environmentObject(offlineManager)
                     .transition(.scale)
             } else {
