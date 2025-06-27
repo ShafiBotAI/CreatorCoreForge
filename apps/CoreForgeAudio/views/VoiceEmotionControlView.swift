@@ -8,7 +8,7 @@ struct VoiceEmotionControlView: View {
 
     var body: some View {
         Menu {
-            ForEach(emotions, id: \..self) { value in
+            ForEach(emotions, id: \.self) { value in
                 Button(value) { emotion = value }
             }
         } label: {
@@ -31,5 +31,4 @@ struct VoiceEmotionControlView: View {
     }
     return PreviewWrapper()
 }
-#endif
 #endif

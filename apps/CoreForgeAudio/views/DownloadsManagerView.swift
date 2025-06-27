@@ -28,11 +28,7 @@ struct DownloadsManagerView: View {
                     Text(book.title)
                     Spacer()
                     Button("Remove") {
-
-                        library.removeDownloaded(book: book)
-=======
                         offline.remove(book: book)
-
                         storageUsed = calculateStorage()
                     }
                     .buttonStyle(.bordered)
@@ -42,13 +38,6 @@ struct DownloadsManagerView: View {
         }
 
         .onAppear { storageUsed = calculateStorage() }
-=======
-
-        .onAppear { storageUsed = calculateStorage() }
-=======
-        .onAppear {
-            storageUsed = Double(offline.downloaded.count) * 50
-        }
 
         .padding(.vertical)
         .background(AppTheme.cardMaterial)
@@ -66,12 +55,11 @@ struct DownloadsManagerView: View {
                    let size = attrs[.size] as? NSNumber {
                     bytes += size.int64Value
                 }
-=======
+        }
         for url in offline.downloaded {
             if let attrs = try? FileManager.default.attributesOfItem(atPath: url.path),
                let size = attrs[.size] as? NSNumber {
                 bytes += size.int64Value
-
             }
         }
         return Double(bytes) / 1_048_576

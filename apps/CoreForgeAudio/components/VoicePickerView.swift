@@ -8,7 +8,7 @@ struct VoicePickerView: View {
 
     var body: some View {
         Picker("Voice", selection: $voice) {
-            ForEach(voices, id: \..self) { Text($0) }
+            ForEach(voices, id: \.self) { Text($0) }
         }
         .pickerStyle(.menu)
     }
@@ -25,5 +25,4 @@ struct VoicePickerView: View {
     }
     return PreviewWrapper()
 }
-#endif
 #endif

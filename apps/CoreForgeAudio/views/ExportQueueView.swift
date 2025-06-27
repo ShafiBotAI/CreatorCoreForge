@@ -13,7 +13,7 @@ struct ExportQueueView: View {
                 Text("\(manager.pendingCount) task(s) waiting")
             }
             Section(header: Text("Completed")) {
-                ForEach(completed, id: \..self) { item in Text(item) }
+                ForEach(completed, id: \.self) { item in Text(item) }
             }
         }
         .navigationTitle("Export Queue")
@@ -28,5 +28,4 @@ struct ExportQueueView: View {
         ExportQueueView(manager: DummyManager())
     }
 }
-#endif
 #endif

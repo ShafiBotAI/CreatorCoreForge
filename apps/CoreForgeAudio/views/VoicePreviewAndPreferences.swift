@@ -8,7 +8,7 @@ struct VoicePreviewAndPreferences: View {
 
     var body: some View {
         Picker("Voice", selection: $selected) {
-            ForEach(voices, id: \..self) { Text($0) }
+            ForEach(voices, id: \.self) { Text($0) }
         }
         .pickerStyle(.menu)
     }

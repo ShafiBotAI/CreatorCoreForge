@@ -8,7 +8,7 @@ struct ImportShortcutsPanel: View {
     @State private var message = ""
     var body: some View {
         HStack {
-            ForEach(Source.allCases, id: \..self) { source in
+            ForEach(Source.allCases, id: \.self) { source in
                 Button(action: {
                     message = "Import from \(source.title) coming soon"
                     showMessage = true

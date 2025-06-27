@@ -16,12 +16,12 @@ struct SearchView: View {
             TextField("Search", text: $query)
                 .textFieldStyle(.roundedBorder)
             Picker("Sort", selection: $sort) {
-                ForEach(sorts, id: \._self) { Text($0) }
+                ForEach(sorts, id: \.self) { Text($0) }
             }
             .pickerStyle(.segmented)
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
-                    ForEach(filterOptions, id: \._self) { option in
+                    ForEach(filterOptions, id: \.self) { option in
                         let isSelected = filters.contains(option)
                         Text(option)
                             .padding(8)
@@ -51,5 +51,4 @@ struct SearchView: View {
     }
     return PreviewWrapper()
 }
-#endif
 #endif
