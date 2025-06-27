@@ -27,6 +27,27 @@ vault system. It is written in SwiftUI and will expand to additional platforms.
 - **Favorite Voices** tab for quickly selecting preferred voices
 - **Highlighted reading** during playback
 
+
+### Additional Features from Audiobookshelf
+The following capabilities are inspired by the open-source
+[audiobookshelf](https://github.com/advplyr/audiobookshelf) project and
+are planned for future integration:
+ - **Stream all audio formats** on the fly
+ - **Podcast search and auto-download** support
+ - **Multi-user libraries** with custom permissions
+ - **Progress sync** across devices per user
+ - **Automatic library updates** without manual re-scans
+ - **Bulk drag-and-drop uploads** for books and podcasts
+ - **Metadata backup** with optional daily automation
+ - **Progressive Web App** (PWA) compatibility
+ - **Chromecast** casting on web and Android
+ - **Metadata fetch** and cover art lookup
+ - **Chapter editor** with Audnexus lookup
+ - **Merge audio files** into single `.m4b` outputs
+ - **Embed metadata** and cover images during export
+ - **Extended ebook support** (epub, pdf, cbr, cbz) with Kindle send
+ - **Open RSS feed** support for podcasts and audiobooks
+=======
 - **Advanced offline TTS** via the bundled `ebook2audiobook` pipeline (XTTSv2,
   Bark, Vits and more) with support for 1110+ languages and optional voice
   cloning
@@ -36,6 +57,7 @@ vault system. It is written in SwiftUI and will expand to additional platforms.
   `scripts/ebook2audiobook_batch.py`
 - **Advanced voice extraction** with `voice_cleaner.py --extract` for
   noise-free training samples
+
 
 
 When Stealth Vault is enabled in the Settings screen, downloaded audio is
