@@ -1,8 +1,17 @@
 import SwiftUI
 
 struct PlaceholderView: View {
+    @State private var exports = 0
+
     var body: some View {
-        Text("CoreForgeVisual Placeholder View")
+        VStack(spacing: 12) {
+            Text("CoreForge Visual")
+                .font(.title)
+            Button("Export Scene (\(exports))") {
+                exports += 1
+            }
+        }
+        .padding()
     }
 }
 
