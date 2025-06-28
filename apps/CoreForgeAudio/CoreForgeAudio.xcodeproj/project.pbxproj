@@ -1,4 +1,15 @@
 // !$*UTF8*$!
+/* CoreForge Audio Feature Summary:
+ - Immersive multi-character AI audiobook engine
+ - Voice cloning with persistent memory
+ - ePub/PDF/TXT import with chapter detection
+ - Scene-based ambient sound and FX generator
+ - Offline TTS pipeline and custom model uploads
+ - Real-time AI improviser with FusionEngine plugins
+ - Drag-and-drop builder for scenes and voices
+ - NSFW gating and parental controls
+ - Cross-device library sync and analytics
+Frameworks Required: AVFoundation, Combine, Security, SwiftUI, Foundation, FirebaseAuth, FirebaseCore, FirebaseFirestore, FirebaseStorage */
 {
 	archiveVersion = 1;
 	classes = {
@@ -105,9 +116,17 @@
 		F99D452C82475011A87BAAA4 /* ExploreWidgetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C304CC28F2230A8C777ADBF /* ExploreWidgetRow.swift */; };
 		FBF44B5AA5783A67DB3C091C /* QuickStartList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE549E385A3A776DCFF05D4 /* QuickStartList.swift */; };
 		FC3F4D3EA77A658163ACC4A2 /* VoicePreviewAndPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E64AD98D2C8C7F6486A42E /* VoicePreviewAndPreferences.swift */; };
-		FC9E4C6FB6E8CA6988009A6C /* SubscriptionUpgradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6F4DC598CB8BE1716186CA /* SubscriptionUpgradeView.swift */; };
-		FDC005A1C8A9485BA78E21B6 /* CoreForgeAudioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF39AE971FF4413DAAF3D496 /* CoreForgeAudioApp.swift */; };
-		FF3A42D6A3C65C624E1881CD /* OfflineContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C044309C12761AEB32C92E /* OfflineContentManager.swift */; };
+                FC9E4C6FB6E8CA6988009A6C /* SubscriptionUpgradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6F4DC598CB8BE1716186CA /* SubscriptionUpgradeView.swift */; };
+                FDC005A1C8A9485BA78E21B6 /* CoreForgeAudioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF39AE971FF4413DAAF3D496 /* CoreForgeAudioApp.swift */; };
+                FF3A42D6A3C65C624E1881CD /* OfflineContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C044309C12761AEB32C92E /* OfflineContentManager.swift */; };
+                54DFCE60029613E1F048B48F /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63074AEA92AEE539DF51B4B5 /* FirebaseAuth.framework */; };
+                3A67579AD721D452C52BB465 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A75529A1E40150EAA37E763 /* FirebaseCore.framework */; };
+                04DF3A73BE2982975399B7EC /* FirebaseFirestore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E3C7C225F62B5008E668686 /* FirebaseFirestore.framework */; };
+                D61F4B3952085E9EF6B03D8B /* FirebaseStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80460C06E1BA7BE45DCC1498 /* FirebaseStorage.framework */; };
+                DDF3C6CC03A156DA5CB0B74A /* FirebaseAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63074AEA92AEE539DF51B4B5 /* FirebaseAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+                E0DC7F2DFF28A871D8B6BF9F /* FirebaseCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A75529A1E40150EAA37E763 /* FirebaseCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+                3CC5DA4B90DACC3EFA2A3556 /* FirebaseFirestore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4E3C7C225F62B5008E668686 /* FirebaseFirestore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+                883C7A7A34187AB1C071DFE1 /* FirebaseStorage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 80460C06E1BA7BE45DCC1498 /* FirebaseStorage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -119,9 +138,13 @@
 			files = (
 				84B34B5B833B81178EDB1C09 /* AVFoundation.framework in Embed Frameworks */,
 				0D9E446FAFB0BFF5DAAD1FA3 /* Combine.framework in Embed Frameworks */,
-				890D47EE899A0B191800CFED /* SwiftUI.framework in Embed Frameworks */,
-				2EC946EF810EFDB240087648 /* Security.framework in Embed Frameworks */,
-			);
+                                890D47EE899A0B191800CFED /* SwiftUI.framework in Embed Frameworks */,
+                                2EC946EF810EFDB240087648 /* Security.framework in Embed Frameworks */,
+                                DDF3C6CC03A156DA5CB0B74A /* FirebaseAuth.framework in Embed Frameworks */,
+                                E0DC7F2DFF28A871D8B6BF9F /* FirebaseCore.framework in Embed Frameworks */,
+                                3CC5DA4B90DACC3EFA2A3556 /* FirebaseFirestore.framework in Embed Frameworks */,
+                                883C7A7A34187AB1C071DFE1 /* FirebaseStorage.framework in Embed Frameworks */,
+                        );
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,8 +247,12 @@
 		EFE34A1CA148FADFA4DBF3C8 /* TodayHighlightsCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TodayHighlightsCarousel.swift; path = apps/CoreForgeAudio/views/TodayHighlightsCarousel.swift; sourceTree = SOURCE_ROOT; };
 		F6B44FD9880C8C2BB6612BFB /* FavoritesCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FavoritesCarouselView.swift; path = apps/CoreForgeAudio/views/FavoritesCarouselView.swift; sourceTree = SOURCE_ROOT; };
 		F7F5E32AA7284C6DBAF717F1 /* WaveformView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VocalVerseFull/VocalVerse/WaveformView.swift; sourceTree = "<group>"; };
-		F82FAAD160BC4EEA967AD1F4 /* SearchView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = views/SearchView.swift; sourceTree = "<group>"; };
-		FA1C468A9671A629363D5CEC /* OfflineDownloadSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OfflineDownloadSettingsView.swift; path = apps/CoreForgeAudio/views/OfflineDownloadSettingsView.swift; sourceTree = SOURCE_ROOT; };
+                F82FAAD160BC4EEA967AD1F4 /* SearchView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = views/SearchView.swift; sourceTree = "<group>"; };
+                FA1C468A9671A629363D5CEC /* OfflineDownloadSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OfflineDownloadSettingsView.swift; path = apps/CoreForgeAudio/views/OfflineDownloadSettingsView.swift; sourceTree = SOURCE_ROOT; };
+                63074AEA92AEE539DF51B4B5 /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/FirebaseAuth.framework; sourceTree = DEVELOPER_DIR; };
+                8A75529A1E40150EAA37E763 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/FirebaseCore.framework; sourceTree = DEVELOPER_DIR; };
+                4E3C7C225F62B5008E668686 /* FirebaseFirestore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseFirestore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/FirebaseFirestore.framework; sourceTree = DEVELOPER_DIR; };
+                80460C06E1BA7BE45DCC1498 /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseStorage.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/FirebaseStorage.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,10 +262,14 @@
 			files = (
 				EB8CC81310864E66B3009939 /* Foundation.framework in Frameworks */,
 				12544CE3AE520C940C7619B4 /* AVFoundation.framework in Frameworks */,
-				99F34CC395B2D8FACD034B13 /* Combine.framework in Frameworks */,
-				337F44258D0BF7DD8B46CFAA /* SwiftUI.framework in Frameworks */,
-				DD304133A4B431FA15A519C9 /* Security.framework in Frameworks */,
-			);
+                                99F34CC395B2D8FACD034B13 /* Combine.framework in Frameworks */,
+                                337F44258D0BF7DD8B46CFAA /* SwiftUI.framework in Frameworks */,
+                                DD304133A4B431FA15A519C9 /* Security.framework in Frameworks */,
+                                54DFCE60029613E1F048B48F /* FirebaseAuth.framework in Frameworks */,
+                                3A67579AD721D452C52BB465 /* FirebaseCore.framework in Frameworks */,
+                                04DF3A73BE2982975399B7EC /* FirebaseFirestore.framework in Frameworks */,
+                                D61F4B3952085E9EF6B03D8B /* FirebaseStorage.framework in Frameworks */,
+                        );
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
@@ -298,14 +329,22 @@
 			);
 			sourceTree = "<group>";
 		};
-		91EF0A0073664B9BBFFAF0F7 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				E6E016DDC2564352B2F8D1AE /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
+                91EF0A0073664B9BBFFAF0F7 /* iOS */ = {
+                        isa = PBXGroup;
+                        children = (
+                                E6E016DDC2564352B2F8D1AE /* Foundation.framework */,
+                                DA1D45218946A589144DE281 /* AVFoundation.framework */,
+                                251E490A977F9D49EBE17D94 /* Combine.framework */,
+                                5781499582260E5F4E5C8D01 /* SwiftUI.framework */,
+                                E3164990BDA687D97FE0245A /* Security.framework */,
+                                63074AEA92AEE539DF51B4B5 /* FirebaseAuth.framework */,
+                                8A75529A1E40150EAA37E763 /* FirebaseCore.framework */,
+                                4E3C7C225F62B5008E668686 /* FirebaseFirestore.framework */,
+                                80460C06E1BA7BE45DCC1498 /* FirebaseStorage.framework */,
+                        );
+                        name = iOS;
+                        sourceTree = "<group>";
+                };
 		926B8404AEC2407194F9608C /* Products */ = {
 			isa = PBXGroup;
 			children = (

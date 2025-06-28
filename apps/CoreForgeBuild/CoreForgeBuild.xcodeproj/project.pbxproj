@@ -1,4 +1,15 @@
 // !$*UTF8*$!
+/* CoreForge Audio Feature Summary:
+ - Immersive multi-character AI audiobook engine
+ - Voice cloning with persistent memory
+ - ePub/PDF/TXT import with chapter detection
+ - Scene-based ambient sound and FX generator
+ - Offline TTS pipeline and custom model uploads
+ - Real-time AI improviser with FusionEngine plugins
+ - Drag-and-drop builder for scenes and voices
+ - NSFW gating and parental controls
+ - Cross-device library sync and analytics
+Frameworks Required: AVFoundation, Combine, Security, SwiftUI, Foundation, FirebaseAuth, FirebaseCore, FirebaseFirestore, FirebaseStorage */
 {
     archiveVersion = 1;
     objectVersion = 56;
