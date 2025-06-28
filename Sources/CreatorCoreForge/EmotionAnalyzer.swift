@@ -4,14 +4,24 @@ import Foundation
 public final class EmotionAnalyzer {
     public init() {}
 
-    /// Represents a detected emotion and its intensity.
+    /// Represents a detected emotion with rendering suggestions.
     public struct EmotionProfile {
         public let emotion: String
         public let intensity: Float
+        public let pitch: Float
+        public let speed: Float
+        public let volume: Float
 
-        public init(emotion: String, intensity: Float) {
+        public init(emotion: String,
+                    intensity: Float,
+                    pitch: Float = 1.0,
+                    speed: Float = 1.0,
+                    volume: Float = 1.0) {
             self.emotion = emotion
             self.intensity = intensity
+            self.pitch = pitch
+            self.speed = speed
+            self.volume = volume
         }
     }
 
@@ -51,6 +61,36 @@ public final class EmotionAnalyzer {
         }
 
         return EmotionProfile(emotion: emotion, intensity: intensity)
+    }
+
+    /// Return a detailed profile including pitch, speed, and volume hints.
+    public func detailedEmotion(for sentence: String) -> EmotionProfile {
+        let base = analyzeEmotion(from: sentence)
+        let emotion = classify(sentence: sentence)
+        var pitch: Float = 1.0
+        var speed: Float = 1.0
+        var volume: Float = 1.0
+
+        switch emotion {
+        case "excited":
+            pitch = 1.2; speed = 1.1; volume = 1.1
+        case "sad":
+            pitch = 0.9; speed = 0.9; volume = 0.8
+        case "angry":
+            pitch = 1.3; speed = 1.2; volume = 1.2
+        case "curious":
+            pitch = 1.1
+        case "hesitant":
+            speed = 0.95; pitch = 0.95
+        default:
+            break
+        }
+
+        return EmotionProfile(emotion: emotion,
+                              intensity: base.intensity,
+                              pitch: pitch,
+                              speed: speed,
+                              volume: volume)
     }
 
     /// Classify the overall emotion of a sentence.

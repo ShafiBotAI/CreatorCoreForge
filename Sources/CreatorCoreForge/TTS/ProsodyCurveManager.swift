@@ -11,4 +11,16 @@ public final class ProsodyCurveManager {
         if trimmed.hasSuffix("!") { return "burst" }
         return "fall"
     }
+
+    /// Returns indexes of words that appear emphasized using * or CAPS.
+    public func stressIndices(in sentence: String) -> [Int] {
+        let words = sentence.split(separator: " ")
+        var indices: [Int] = []
+        for (i, word) in words.enumerated() {
+            if word.contains("*") || word == word.uppercased() {
+                indices.append(i)
+            }
+        }
+        return indices
+    }
 }

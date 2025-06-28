@@ -15,10 +15,17 @@ public final class TTSEngine {
     public func synthesize(_ text: String, profile: VoiceProfile, completion: @escaping (Data?) -> Void) {
         let conv = conversation.apply(to: text)
         let sentences = conv.split(separator: ".").map { String($0).trimmingCharacters(in: .whitespaces) }.filter { !$0.isEmpty }
-        let withBreath = breathing.process(sentences: sentences).joined(separator: ". ")
-        _ = sentences.map { analyzer.classify(sentence: $0) }
-        _ = sentences.map { prosody.curveType(for: $0) }
-        voiceAI.synthesize(text: withBreath, with: profile) { result in
+
+        let profiles = sentences.map { analyzer.detailedEmotion(for: $0) }
+        let annotated = zip(sentences, profiles).map { sentence, em in
+            "<pitch=\(em.pitch)><speed=\(em.speed)><volume=\(em.volume)><curve=\(prosody.curveType(for: sentence))> \(sentence)"
+        }
+
+        let withBreath = breathing.process(sentences: annotated).joined(separator: ". ")
+
+        let avgIntensity = profiles.map { $0.intensity }.reduce(0, +) / Float(max(profiles.count, 1))
+
+        voiceAI.synthesize(text: withBreath, with: profile, emotionShift: Double(avgIntensity)) { result in
             switch result {
             case .success(let data):
                 completion(self.imperfection.apply(to: data))
