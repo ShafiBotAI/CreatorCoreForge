@@ -45,5 +45,30 @@ final class LocalVoiceAITests: XCTestCase {
         }
         wait(for: [expectation], timeout: 1)
     }
+
+    func testDepthAndScopeAffectOutput() {
+        let engine = LocalVoiceAI()
+        let defaultProfile = VoiceProfile(name: "Base")
+        let richProfile = VoiceProfile(name: "Rich", depth: 1.5, scope: 1.2)
+
+        let exp1 = expectation(description: "base")
+        var data1: Data?
+        engine.synthesize(text: "Hi", with: defaultProfile) { result in
+            if case .success(let d) = result { data1 = d }
+            exp1.fulfill()
+        }
+
+        let exp2 = expectation(description: "rich")
+        var data2: Data?
+        engine.synthesize(text: "Hi", with: richProfile) { result in
+            if case .success(let d) = result { data2 = d }
+            exp2.fulfill()
+        }
+
+        wait(for: [exp1, exp2], timeout: 1)
+        XCTAssertNotNil(data1)
+        XCTAssertNotNil(data2)
+        XCTAssertNotEqual(data1, data2)
+    }
 }
 
