@@ -40,4 +40,29 @@ final class RealisticVoiceoverEngineTests: XCTestCase {
         XCTAssertNotNil(data2)
         XCTAssertNotEqual(data1, data2)
     }
+
+    func testDepthScopeOverrides() {
+        let profile = VoiceProfile(name: "Base")
+        let segment = Segment(text: "Hi", voice: profile)
+        let engine = RealisticVoiceoverEngine()
+
+        let exp1 = expectation(description: "default")
+        var data1: Data?
+        engine.speak(segment) { result in
+            if case .success(let data) = result { data1 = data }
+            exp1.fulfill()
+        }
+
+        let exp2 = expectation(description: "override")
+        var data2: Data?
+        engine.speak(segment, depth: 1.5, scope: 1.2) { result in
+            if case .success(let data) = result { data2 = data }
+            exp2.fulfill()
+        }
+
+        wait(for: [exp1, exp2], timeout: 1)
+        XCTAssertNotNil(data1)
+        XCTAssertNotNil(data2)
+        XCTAssertNotEqual(data1, data2)
+    }
 }

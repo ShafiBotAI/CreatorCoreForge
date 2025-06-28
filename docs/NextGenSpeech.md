@@ -13,3 +13,15 @@ service.generate(text: "Hello world", profile: profile) { data in
 let result = service.recognize(Data("hello".utf8))
 print(result) // "hello"
 ```
+
+## Realistic Voiceover Engine
+
+`RealisticVoiceoverEngine.speak` now accepts optional `depth` and `scope` overrides so each line can be delivered with custom resonance and pitch range.
+
+```swift
+let engine = RealisticVoiceoverEngine()
+let segment = Segment(text: "Welcome back", voice: profile)
+engine.speak(segment, emotion: "happy", depth: 1.4, scope: 1.3) { result in
+    // handle `result`
+}
+```
