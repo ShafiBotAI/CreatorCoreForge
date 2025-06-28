@@ -9,6 +9,7 @@ Additional guides and phase planning documents for the CreatorCoreForge ecosyste
 
 - `SOUND_EFFECTS_DATABASE.md` – list of built-in sound effects categories and records.
 - `ModuleMigrationGuide.md` – updating projects to use shared Phase 8 modules.
+- `ReferralSystemMigrationGuide.md` – integrating the new referral tracking flow.
 - `audiobook_topics.csv` – reference list of audiobook development topics.
 - `NextGenSoundFX.md` – script usage for generating simple SFX
 - `NextGenAdaptiveMusic.md` – create short mood-based music loops
