@@ -5,9 +5,14 @@ public final class ConversationalLayer {
     public init() {}
 
     public func apply(to sentence: String) -> String {
-        if sentence.contains("\"") {
-            return "uh... " + sentence
+        var line = sentence
+        if Int.random(in: 0..<10) == 0 {
+            let options = ["uh...", "hmm...", "I mean—"]
+            line = "\(options.randomElement()!) " + line
         }
-        return sentence
+        if line.split(separator: " ").count > 8 {
+            line = "<speed=0.9> " + line + " <speed=0.8>"
+        }
+        return line
     }
 }
