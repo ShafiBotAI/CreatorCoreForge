@@ -29,6 +29,11 @@
 
       window.addEventListener('DOMContentLoaded', autoSignIn);
     </script>
+  <style>
+    body { margin:0; padding-bottom:60px; }
+    #footer-nav { position:fixed; bottom:0; left:0; right:0; background:#333; color:#fff; text-align:center; padding:10px; }
+    #footer-nav a { color:#fff; margin:0 10px; text-decoration:none; }
+  </style>
   </head>
   <body>
     <h1>CoreForge Music</h1>
@@ -43,5 +48,8 @@
     </div>
     <p id="welcome"></p>
     <button onclick="launch()">Launch</button>
+  <footer id="footer-nav">
+    <nav><a href="#">Home</a> | <a href="#">Features</a> | <a href="#">Contact</a></nav>
+  </footer>
   </body>
 </html>
