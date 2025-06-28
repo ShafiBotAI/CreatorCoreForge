@@ -16,4 +16,12 @@ final class EmotionAnalyzerTests: XCTestCase {
         XCTAssertEqual(profile.emotion, "angry")
         XCTAssertTrue(profile.intensity > 0.5)
     }
+
+    func testClassifySentence() {
+        let analyzer = EmotionAnalyzer()
+        XCTAssertEqual(analyzer.classify(sentence: "Wow!"), "excited")
+        XCTAssertEqual(analyzer.classify(sentence: "Is this real?"), "curious")
+        XCTAssertEqual(analyzer.classify(sentence: "I feel so sad"), "sad")
+        XCTAssertEqual(analyzer.classify(sentence: "Just a line"), "neutral")
+    }
 }
