@@ -27,6 +27,7 @@ public struct VisualMemorySnapshot: Codable {
     public let locationModels: [String: String]
     public let seriesThemes: [String]
     public let characterArcs: [String: [Int: CharacterVisualState]]
+    public let narratorVoice: String?
 }
 
 /// Manages visual memory across books and scenes.
@@ -45,6 +46,7 @@ public final class VisualMemoryManager {
     public private(set) var memoryGraph: [SceneKey: [SceneKey]] = [:]
     public private(set) var memoryGraphIntegrated = false
     public private(set) var handoffHistory: [String] = []
+    public private(set) var narratorVoice: String?
 
     public init() {}
 
@@ -88,6 +90,14 @@ public final class VisualMemoryManager {
     public func recordVisualArc(character: String, scene: Int, state: CharacterVisualState) {
         characterArcs[character, default: [:]][scene] = state
     }
+
+    /// Set the voice used for narration segments.
+    public func setNarratorVoice(_ voice: String) {
+        narratorVoice = voice
+    }
+
+    /// Retrieve the currently selected narrator voice.
+    public func getNarratorVoice() -> String? { narratorVoice }
 
     /// Suggest framing technique based on memory weight.
     public func adaptFraming(weight: Double) -> String {
@@ -184,7 +194,8 @@ public final class VisualMemoryManager {
             fxHistory: fxHistory,
             locationModels: locationModels,
             seriesThemes: Array(seriesThemes),
-            characterArcs: characterArcs)
+            characterArcs: characterArcs,
+            narratorVoice: narratorVoice)
         let url = FileManager.default.temporaryDirectory
             .appendingPathComponent("memory-\(account).json")
         do {

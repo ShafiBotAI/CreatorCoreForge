@@ -11,6 +11,7 @@ public final class CharacterVoiceMapper {
     private var knownCharacters: [String: String] = [:]
     private let availableVoices: [String]
     private var voiceIndex = 0
+    private var narratorVoice: String?
 
     /// Create a mapper with an optional custom list of voices.
     public init(voices: [String] = [
@@ -86,7 +87,11 @@ public final class CharacterVoiceMapper {
     /// Characters with more than 10 sentences will be passed to `manualSelector`
     /// for a custom voice choice. Others receive automatic round-robin voices.
     public func assignVoicesSelective(to ebookText: String,
+                                      narratorVoice: String? = nil,
                                       manualSelector: ((String, [String]) -> String?)? = nil) -> [CharacterVoiceMap] {
+        if let nv = narratorVoice {
+            setNarratorVoice(nv)
+        }
         let lines = ebookText.components(separatedBy: "\n")
         let separators = [":", " - ", " — "]
         var counts: [String: Int] = [:]
@@ -118,6 +123,10 @@ public final class CharacterVoiceMapper {
             knownCharacters[name] = voice
             results.append(CharacterVoiceMap(name: name, assignedVoice: voice))
         }
+        if let nv = narratorVoice ?? self.narratorVoice {
+            knownCharacters["Narrator"] = nv
+            results.append(CharacterVoiceMap(name: "Narrator", assignedVoice: nv))
+        }
         return results
     }
 
@@ -137,5 +146,16 @@ public final class CharacterVoiceMapper {
         for (name, voice) in knownCharacters {
             print("\(name): \(voice)")
         }
+    }
+
+    /// Manually set the voice used for narration segments.
+    public func setNarratorVoice(_ voice: String) {
+        narratorVoice = voice
+        knownCharacters["Narrator"] = voice
+    }
+
+    /// Retrieve the currently selected narrator voice, if any.
+    public func getNarratorVoice() -> String? {
+        narratorVoice
     }
 }
