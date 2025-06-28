@@ -25,7 +25,6 @@
     "CoreForgeAudio": [
       "UnifiedAudioEngine",
       "UnifiedVideoEngine",
-
       "AdaptiveLearningEngine",
       "LessonCompletionTimestamps",
       "Real-time emotion adaptation",
@@ -113,12 +112,12 @@
       "AdvancedAudioModule",
       "Ebook2AudiobookIntegration",
       "CustomTTSModelUpload",
-      "QuantumAudioManager"
+      "QuantumAudioManager",
+      "FreeSampleService"
     ],
     "CoreForgeVisual": [
       "UnifiedAudioEngine",
       "UnifiedVideoEngine",
-
       "AdaptiveLearningEngine",
       "Adaptive scene completion",
       "AR/VR playback",
@@ -169,7 +168,6 @@
       "AutomatedVisualSystem025",
       "EnhancedVisualInterface026",
       "VirtualVisualAnalyzer027",
-
       "IntegratedVisualWorkflow028",
       "ProVisualPipeline029",
       "AdaptiveVisualEngine030",
@@ -347,7 +345,6 @@
     "CoreForgeWriter": [
       "UnifiedAudioEngine",
       "UnifiedVideoEngine",
-
       "AdaptiveLearningEngine",
       "Memory pinning",
       "Quantum-choice plotting",
@@ -376,7 +373,6 @@
       "DynamicWriterToolkit014",
       "AutomatedWriterSystem015",
       "EnhancedWriterInterface016",
-
       "VirtualWriterAnalyzer017",
       "IntegratedWriterWorkflow018",
       "ProWriterPipeline019",
@@ -763,12 +759,10 @@
       "IntegratedStudioWorkflow198",
       "ProStudioPipeline199",
       "AdaptiveStudioEngine200"
-
     ],
     "CoreForgeMarket": [
       "UnifiedAudioEngine",
       "UnifiedVideoEngine",
-
       "AdaptiveLearningEngine",
       "Hybrid quantum trading engine",
       "Team trading and leaderboards",
@@ -985,7 +979,6 @@
     "CoreForgeBuild": [
       "UnifiedAudioEngine",
       "UnifiedVideoEngine",
-
       "AdaptiveLearningEngine",
       "Figma-driven UI builder",
       "Auto bundler for all platforms",
@@ -1202,7 +1195,6 @@
     "CoreForgeDNA": [
       "UnifiedAudioEngine",
       "UnifiedVideoEngine",
-
       "AdaptiveLearningEngine",
       "Real-time ensemble acting",
       "Quantum edit mode",
@@ -2021,7 +2013,6 @@
     "CoreForgeLeads": [
       "UnifiedAudioEngine",
       "UnifiedVideoEngine",
-
       "AdaptiveLearningEngine",
       "Marketplace credit system",
       "Global lead exchange",
@@ -2234,7 +2225,6 @@
       "IntegratedLeadsWorkflow198",
       "ProLeadsPipeline199",
       "AdaptiveLeadsEngine200"
-
     ],
     "CoreForgeLearn": [
       "UnifiedAudioEngine",
@@ -2639,10 +2629,9 @@
       "IntegratedQuestWorkflow198",
       "ProQuestPipeline199",
       "AdaptiveQuestEngine200"
-
     ]
-  }
-  ,"phase9Features": {
+  },
+  "phase9Features": {
     "CoreForgeAudio": [
       "Assign separate audio tracks to each character and narrator for post-mix mastering",
       "Generate multitrack session files for DAWs",

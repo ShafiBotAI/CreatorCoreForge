@@ -26,6 +26,7 @@ vault system. It is written in SwiftUI and will expand to additional platforms.
 - **Dashboard** tab with usage analytics and achievements
 - **Favorite Voices** tab for quickly selecting preferred voices
 - **Highlighted reading** during playback
+ - **Free 5-minute samples** with customizable voice and playback settings
 
 
 ### Additional Features from Audiobookshelf
