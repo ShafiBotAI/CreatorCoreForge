@@ -93,6 +93,7 @@
       "QuantumSceneLogic",
       "NeuralOptimizer",
       "CreditSystem",
+      "VoiceRevisionManager",
       "OfflineDownloadQueue",
       "ExportTools",
       "NSFWVoiceEngine",
