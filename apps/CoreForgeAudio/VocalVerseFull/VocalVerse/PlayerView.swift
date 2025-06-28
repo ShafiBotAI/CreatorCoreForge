@@ -10,6 +10,9 @@ struct PlayerView: View {
     @EnvironmentObject var library: LibraryModel
     @EnvironmentObject var usage: UsageStats
     @EnvironmentObject var prefs: UserPreferences
+#if canImport(SwiftUI)
+    @ObservedObject private var sub = SubscriptionManager.shared
+#endif
 #if canImport(AVFoundation)
     @StateObject private var highlighter = SpeechHighlighter()
 #endif
@@ -30,6 +33,9 @@ struct PlayerView: View {
                 VStack(spacing: 20) {
                     Text(chapter.title)
                         .font(.title)
+                        .foregroundColor(.white)
+                    Text("Credits: \(sub.creditsRemaining)")
+                        .font(.caption)
                         .foregroundColor(.white)
                     ScrollView {
                         if #available(iOS 15.0, *) {

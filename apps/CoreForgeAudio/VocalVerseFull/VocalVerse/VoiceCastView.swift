@@ -8,7 +8,16 @@ struct VoiceCastView: View {
     let series: String
     @State private var selections: [String: String] = [:]
 
-    private let voices = VoiceConfig.voices
+    @ObservedObject private var sub = SubscriptionManager.shared
+    private var voices: [Voice] {
+        if sub.tier == .enterprise || sub.tier == .authorPro {
+            return VoiceConfig.voices
+        } else {
+            return VoiceConfig.voices.filter { voice in
+                !["ultra", "aisynth", "hermes"].contains(voice.id)
+            }
+        }
+    }
 
     var body: some View {
         NavigationView {

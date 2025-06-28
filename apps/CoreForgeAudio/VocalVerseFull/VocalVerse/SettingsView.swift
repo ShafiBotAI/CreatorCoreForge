@@ -15,6 +15,8 @@ struct SettingsView: View {
     @AppStorage("isLoggedIn") private var isLoggedIn = false
     @State private var showRegister = false
 
+    @ObservedObject private var sub = SubscriptionManager.shared
+
     private let voices = VoiceConfig.voices.map { $0.name }
 
     var body: some View {
@@ -44,6 +46,21 @@ struct SettingsView: View {
                 Section(header: Text("Security")) {
                     Button("Change PIN") { showPinPrompt = true }
                     Toggle("Stealth Vault", isOn: $stealthMode)
+                }
+                Section(header: Text("Subscription")) {
+                    HStack {
+                        Text("Plan")
+                        Spacer()
+                        Text(sub.tier.displayName)
+                    }
+                    HStack {
+                        Text("Credits")
+                        Spacer()
+                        Text("\(sub.creditsRemaining)")
+                    }
+                    NavigationLink("Upgrade") {
+                        TierUpgradeView()
+                    }
                 }
                 if !isLoggedIn {
                     Section(header: Text("Account")) {

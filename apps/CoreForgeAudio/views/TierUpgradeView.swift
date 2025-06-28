@@ -1,38 +1,40 @@
 #if canImport(SwiftUI)
 import SwiftUI
-import CreatorCoreForge
 
-/// In-app tier selection modal.
+/// Allows upgrading the subscription tier with an annual toggle.
 struct TierUpgradeView: View {
-    @Binding var isPresented: Bool
-    @State private var selected: SubscriptionManager.Plan = .creator
-    var onUpgrade: (SubscriptionManager.Plan) -> Void
+    @State private var selectedPlan: SubscriptionManager.Plan = .creator
+    @State private var cycle: SubscriptionManager.BillingCycle = .monthly
+    @ObservedObject private var manager = SubscriptionManager.shared
+    @Environment(\.dismiss) private var dismiss
 
     var body: some View {
         VStack(spacing: 20) {
-            Picker("Plan", selection: $selected) {
-                Text("Creator").tag(SubscriptionManager.Plan.creator)
-                Text("Author").tag(SubscriptionManager.Plan.author)
-                Text("Enterprise").tag(SubscriptionManager.Plan.enterprise)
+            PricingView()
+                .frame(height: 300)
+            Picker("Plan", selection: $selectedPlan) {
+                ForEach(SubscriptionManager.Plan.allCases, id: \.self) { plan in
+                    Text(plan.displayName).tag(plan)
+                }
             }
-            .pickerStyle(.segmented)
-            Button("Upgrade") {
-                onUpgrade(selected)
-                isPresented = false
+            .pickerStyle(MenuPickerStyle())
+            Picker("Billing", selection: $cycle) {
+                ForEach(SubscriptionManager.BillingCycle.allCases, id: \.self) { c in
+                    Text(c.displayName).tag(c)
+                }
             }
-            .font(.headline)
-            .buttonStyle(GlowingButtonStyle())
+            .pickerStyle(SegmentedPickerStyle())
+            Button("Purchase") {
+                manager.select(plan: selectedPlan, cycle: cycle)
+                dismiss()
+            }
+            .buttonStyle(.borderedProminent)
         }
         .padding()
-        .background(Theme.cardMaterial)
-        .cornerRadius(Theme.cornerRadius)
-        .shadow(radius: Theme.shadowRadius)
     }
 }
 
 #Preview {
-    TierUpgradeView(isPresented: .constant(true)) { _ in }
-        .padding()
-        .background(Color.gray)
+    TierUpgradeView()
 }
 #endif
