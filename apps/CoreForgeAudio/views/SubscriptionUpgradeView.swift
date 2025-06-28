@@ -11,6 +11,7 @@ struct SubscriptionUpgradeView: View {
         VStack(spacing: 16) {
             Picker("Plan", selection: $selectedPlan) {
                 Text("Creator").tag(SubscriptionManager.Plan.creator)
+                Text("Author").tag(SubscriptionManager.Plan.author)
                 Text("Enterprise").tag(SubscriptionManager.Plan.enterprise)
             }
             .pickerStyle(.segmented)

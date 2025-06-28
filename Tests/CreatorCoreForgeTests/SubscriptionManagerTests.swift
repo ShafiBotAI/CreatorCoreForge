@@ -6,6 +6,7 @@ final class SubscriptionManagerTests: XCTestCase {
         let manager = SubscriptionManager()
         XCTAssertEqual(manager.price(for: .free), 0)
         XCTAssertEqual(manager.price(for: .creator), 9.99)
+        XCTAssertEqual(manager.price(for: .author), 14.99)
         XCTAssertEqual(manager.price(for: .enterprise), 29.99)
     }
 
@@ -15,6 +16,8 @@ final class SubscriptionManagerTests: XCTestCase {
         for _ in 0..<5 { manager.recordExport() }
         XCTAssertFalse(manager.canExport())
         manager.upgrade(to: .creator)
+        XCTAssertTrue(manager.canExport())
+        manager.upgrade(to: .author)
         XCTAssertTrue(manager.canExport())
         suite.removePersistentDomain(forName: "SubMgr")
     }
