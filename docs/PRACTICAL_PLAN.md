@@ -14,7 +14,7 @@ This document outlines a phased plan for implementing the key features across th
 2. **Chapter Detection** – add logic and GPT prompts to locate chapter boundaries in raw text.
 3. **Segment Service** – split chapters into narration-ready segments with semantic boundaries.
 4. **Voice Manager** – map segments to voice models and persist character mappings.
-5. **TTS Service** – interface with ElevenLabs or LocalVoiceAI to render audio, including retry logic.
+5. **TTS Service** – interface with ElevenLabs or LocalVoiceAI to render audio, including retry logic. Use `ElevenLabsClient.Options` to tune stability, similarity, and model ID for higher quality online output.
 6. **Ambient Mixer** – layer ambience and SFX with volume envelopes and 3D positioning.
 7. **NSFW Service** – detect explicit text, gate content, and enforce parental PIN checks.
 8. **Playback Engine** – implement basic `play`, `pause`, and `seek` controls with a simple React UI.
