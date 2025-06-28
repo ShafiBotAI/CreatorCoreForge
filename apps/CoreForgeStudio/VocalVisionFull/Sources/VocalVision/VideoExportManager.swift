@@ -24,7 +24,7 @@ public final class VideoExportManager {
                        progress: @escaping (Double) -> Void,
                        completion: @escaping (URL?) -> Void) {
         let scenes = sceneGenerator.generateScenes(from: bookText)
-        _ = voiceMapper.assignVoices(to: bookText)
+        _ = voiceMapper.assignVoicesSelective(to: bookText)
         let voiced = caster.assignVoices(to: scenes)
         renderer.exportMultiHourVideo(scenes: voiced,
                                       to: outputURL,
@@ -46,7 +46,7 @@ public final class VideoExportManager {
                                           completion: @escaping (URL?) -> Void) {
         var metadata = ["unabridged": "3h"]
         let scenes = sceneGenerator.generateScenes(from: bookText)
-        _ = voiceMapper.assignVoices(to: bookText)
+        _ = voiceMapper.assignVoicesSelective(to: bookText)
         let voiced = caster.assignVoices(to: scenes)
         renderer.exportMultiHourVideo(scenes: voiced,
                                      to: outputURL,
@@ -74,7 +74,7 @@ public final class VideoExportManager {
             completion(nil)
             return
         }
-        _ = voiceMapper.assignVoices(to: bookText)
+        _ = voiceMapper.assignVoicesSelective(to: bookText)
         let voiced = caster.assignVoices(to: highlights)
         renderer.exportMultiHourVideo(scenes: voiced,
                                      to: outputURL,

@@ -82,6 +82,45 @@ public final class CharacterVoiceMapper {
         return results
     }
 
+    /// Assign voices by analyzing how many sentences each character speaks.
+    /// Characters with more than 10 sentences will be passed to `manualSelector`
+    /// for a custom voice choice. Others receive automatic round-robin voices.
+    public func assignVoicesSelective(to ebookText: String,
+                                      manualSelector: ((String, [String]) -> String?)? = nil) -> [CharacterVoiceMap] {
+        let lines = ebookText.components(separatedBy: "\n")
+        let separators = [":", " - ", " — "]
+        var counts: [String: Int] = [:]
+
+        for line in lines {
+            for sep in separators {
+                if line.contains(sep) {
+                    let components = line.components(separatedBy: sep)
+                    let name = components[0].trimmingCharacters(in: .whitespacesAndNewlines)
+                    guard !name.isEmpty else { break }
+                    let utterance = components.dropFirst().joined(separator: sep)
+                        .trimmingCharacters(in: .whitespacesAndNewlines)
+                    let sentenceCount = utterance.split { ".!?".contains($0) }.count
+                    counts[name, default: 0] += max(sentenceCount, 1)
+                    break
+                }
+            }
+        }
+
+        var results: [CharacterVoiceMap] = []
+        for name in counts.keys.sorted() {
+            let count = counts[name] ?? 0
+            let voice: String
+            if count > 10, let chosen = manualSelector?(name, availableVoices) {
+                voice = chosen
+            } else {
+                voice = getNextVoice()
+            }
+            knownCharacters[name] = voice
+            results.append(CharacterVoiceMap(name: name, assignedVoice: voice))
+        }
+        return results
+    }
+
     private func getNextVoice() -> String {
         let voice = availableVoices[voiceIndex % availableVoices.count]
         voiceIndex += 1
