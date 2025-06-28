@@ -5,9 +5,13 @@ final class SubscriptionManagerTests: XCTestCase {
     func testPlanPrices() {
         let manager = SubscriptionManager()
         XCTAssertEqual(manager.price(for: .free), 0)
-        XCTAssertEqual(manager.price(for: .creator), 9.99)
-        XCTAssertEqual(manager.price(for: .author), 14.99)
-        XCTAssertEqual(manager.price(for: .enterprise), 29.99)
+        XCTAssertEqual(manager.price(for: .creator), 19.99)
+        XCTAssertEqual(manager.price(for: .author), 99.99)
+        XCTAssertEqual(manager.price(for: .enterprise), 49.99)
+
+        XCTAssertEqual(manager.price(for: .creator, cycle: .annual), 179.91)
+        XCTAssertEqual(manager.price(for: .author, cycle: .annual), 899.91)
+        XCTAssertEqual(manager.price(for: .enterprise, cycle: .annual), 449.91)
     }
 
     func testExportLimits() {
