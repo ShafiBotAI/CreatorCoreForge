@@ -11,6 +11,8 @@ final class CreditStore: ObservableObject {
     @Published private(set) var history: [String]
     @Published var lastAdded: Int? = nil
 
+    @AppStorage("creditsEarnedFromReferral") private var referralTotal: Int = 0
+
     private let creditsKey = "CFACredits"
     private let historyKey = "CFACreditHistory"
     private let defaults: UserDefaults
@@ -22,9 +24,12 @@ final class CreditStore: ObservableObject {
     }
 
     /// Add credits and record a history entry.
-    func addCredits(_ amount: Int, reason: String) {
+    func addCredits(_ amount: Int, reason: String, referral: Bool = false) {
         credits += amount
         history.append("+\(amount) - \(reason)")
+        if referral {
+            referralTotal += amount
+        }
         lastAdded = amount
         persist()
     }
