@@ -42,7 +42,7 @@ struct BookCardView: View {
 }
 
 #Preview {
-    BookCardView(book: Book(title: "Sample", author: "Author", chapters: []))
+    BookCardView(book: Book(title: "Sample", author: "Author", series: nil, chapters: []))
         .environmentObject(LibraryModel())
 }
 #endif

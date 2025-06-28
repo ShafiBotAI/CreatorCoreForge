@@ -38,7 +38,7 @@ struct MiniPlayerView: View {
 
         var body: some View {
             MiniPlayerView(
-                book: Book(title: "Sample Book", author: "Author"),
+                book: Book(title: "Sample Book", author: "Author", series: nil),
                 chapter: Chapter(title: "Chapter 1", text: "Sample"),
                 namespace: ns,
                 isExpanded: $expanded

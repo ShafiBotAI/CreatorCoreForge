@@ -49,6 +49,6 @@ final class AppleBooksService {
         let chapters = paragraphs.enumerated().map { idx, str in
             Chapter(title: "Part \(idx + 1)", text: str.trimmingCharacters(in: .whitespacesAndNewlines))
         }
-        return Book(title: book.title, author: book.author, chapters: chapters)
+        return Book(title: book.title, author: book.author, series: nil, chapters: chapters)
     }
 }

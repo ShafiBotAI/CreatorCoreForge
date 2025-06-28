@@ -52,7 +52,7 @@ struct ImportShortcutsPanel: View {
             #if canImport(VisionKit)
             DocumentScannerView { text in
                 let chapter = Chapter(title: "Scan", text: text)
-                let book = Book(title: "Scanned Document", author: "", chapters: [chapter])
+                let book = Book(title: "Scanned Document", author: "", series: nil, chapters: [chapter])
                 library.addBook(book)
                 usage.recordImport()
             }
@@ -72,6 +72,7 @@ struct ImportShortcutsPanel: View {
                         let chapters = try await BookImporter.importBook(from: url)
                         let book = Book(title: url.deletingPathExtension().lastPathComponent,
                                         author: "",
+                                        series: nil,
                                         chapters: chapters)
                         library.addBook(book)
                         usage.recordImport()
@@ -129,7 +130,7 @@ struct ImportShortcutsPanel: View {
                 let (localURL, _) = try await URLSession.shared.download(from: remoteURL)
                 let chapters = try await BookImporter.importBook(from: localURL)
                 let title = remoteURL.deletingPathExtension().lastPathComponent
-                let book = Book(title: title, author: "", chapters: chapters)
+                let book = Book(title: title, author: "", series: nil, chapters: chapters)
                 library.addBook(book)
                 usage.recordImport()
             } catch {

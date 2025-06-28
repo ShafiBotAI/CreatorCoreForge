@@ -31,4 +31,18 @@ final class VoiceMemoryManagerTests: XCTestCase {
         manager = VoiceMemoryManager(userDefaults: UserDefaults(suiteName: UUID().uuidString)!, directory: tempDir)
         XCTAssertEqual(manager.voiceID(for: "Alice", in: "Saga"), "V1")
     }
+
+    func testSeriesAssignmentsRetrieval() {
+        let manager = VoiceMemoryManager.shared
+        manager.clear(series: "Epic")
+        manager.assign(voiceID: "VA", to: "Hero", in: "Epic")
+        manager.assign(voiceID: "VB", to: "Villain", in: "Epic")
+
+        let map = manager.assignments(for: "Epic")
+        XCTAssertEqual(map["Hero"], "VA")
+        XCTAssertEqual(map["Villain"], "VB")
+
+        let grouped = manager.allAssignments()
+        XCTAssertEqual(grouped["Epic"]?["Hero"], "VA")
+    }
 }

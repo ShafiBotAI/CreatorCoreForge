@@ -24,7 +24,7 @@ struct ImportView: View {
             case .success(let urls):
                 if let url = urls.first {
                     let chapters = EbookImporter().importEbook(from: url.path).map { Chapter(title: "Chapter", text: $0) }
-                    let book = Book(title: url.lastPathComponent, author: "", chapters: chapters)
+                    let book = Book(title: url.lastPathComponent, author: "", series: nil, chapters: chapters)
                     library.addBook(book)
                     usage.recordImport()
                 }
