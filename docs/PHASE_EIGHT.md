@@ -127,6 +127,7 @@ Only a subset of those features are shown below for brevity.
 - [x] QuantumSceneLogic
 - [x] NeuralOptimizer
 - [x] CreditSystem
+- [x] VoiceRevisionManager
 - [x] OfflineDownloadQueue
 - [x] ExportTools
 - [x] NSFWVoiceEngine

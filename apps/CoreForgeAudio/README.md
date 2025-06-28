@@ -22,6 +22,7 @@ vault system. It is written in SwiftUI and will expand to additional platforms.
 - **Audiobook compilation** with `AudiobookCompiler` for zipped exports
 - **Scene memory simulator** for replaying chapters in different moods
 - **Multi-cast audiobook generation** via `MultiCastAudiobookGenerator`
+- **VoiceRevisionManager** allows five full audiobook voice changes within the first 30 days
 - **Immersive dramatized production** with `DramatizedAudiobookProducer`
 - **Dashboard** tab with usage analytics and achievements
 - **Favorite Voices** tab for quickly selecting preferred voices

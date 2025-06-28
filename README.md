@@ -38,6 +38,7 @@
   - Downloadable audiobooks with bookmarkable playback
   - Audiobook export engine (MP3/WAV with zip packaging via `AudiobookCompiler`)
   - OfflineTTSCache for local voice caching
+  - VoiceRevisionManager allows up to five full audiobook voice revisions within 30 days
   - AnalyticsLogger for basic event tracking
   - PerformanceModeSelector to switch rendering presets
   - FusionVoiceController orchestrates LocalVoiceAI and emotion cues
