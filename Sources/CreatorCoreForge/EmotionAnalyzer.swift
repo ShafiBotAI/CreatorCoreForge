@@ -28,7 +28,9 @@ public final class EmotionAnalyzer {
     /// Analyze text and suggest a narration tone.
     public func recommendTone(for text: String) -> String {
         let lowered = text.lowercased()
-        if lowered.contains("excited") || lowered.contains("amazing") {
+        if lowered.contains("yeah right") || lowered.contains("as if") || lowered.contains("/s") {
+            return "sarcastic"
+        } else if lowered.contains("excited") || lowered.contains("amazing") {
             return "excited"
         } else if lowered.contains("sad") || lowered.contains("lost") {
             return "somber"
@@ -44,7 +46,10 @@ public final class EmotionAnalyzer {
         var emotion = "neutral"
         var intensity: Float = 0.0
 
-        if lowered.contains("excited") || lowered.contains("amazing") {
+        if lowered.contains("yeah right") || lowered.contains("as if") || lowered.contains("/s") {
+            emotion = "sarcastic"
+            intensity = 0.4
+        } else if lowered.contains("excited") || lowered.contains("amazing") {
             emotion = "excited"
             intensity = 0.5
         } else if lowered.contains("sad") || lowered.contains("lost") {
@@ -82,6 +87,8 @@ public final class EmotionAnalyzer {
             pitch = 1.1
         case "hesitant":
             speed = 0.95; pitch = 0.95
+        case "sarcastic":
+            speed = 1.05; pitch = 0.95
         default:
             break
         }
@@ -97,6 +104,9 @@ public final class EmotionAnalyzer {
     /// Very naive implementation using punctuation and keywords.
     public func classify(sentence: String) -> String {
         let lowered = sentence.lowercased()
+        if lowered.contains("yeah right") || lowered.contains("as if") || lowered.contains("/s") {
+            return "sarcastic"
+        }
         if lowered.contains("sad") { return "sad" }
         if lowered.contains("wow") || lowered.contains("!") { return "excited" }
         if lowered.contains("?") { return "curious" }

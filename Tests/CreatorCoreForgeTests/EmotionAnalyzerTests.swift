@@ -7,6 +7,7 @@ final class EmotionAnalyzerTests: XCTestCase {
         XCTAssertEqual(analyzer.recommendTone(for: "This is amazing!"), "excited")
         XCTAssertEqual(analyzer.recommendTone(for: "I am so sad"), "somber")
         XCTAssertEqual(analyzer.recommendTone(for: "He was furious"), "angry")
+        XCTAssertEqual(analyzer.recommendTone(for: "Yeah right"), "sarcastic")
         XCTAssertEqual(analyzer.recommendTone(for: "Just reading"), "calm")
     }
 
@@ -22,6 +23,7 @@ final class EmotionAnalyzerTests: XCTestCase {
         XCTAssertEqual(analyzer.classify(sentence: "Wow!"), "excited")
         XCTAssertEqual(analyzer.classify(sentence: "Is this real?"), "curious")
         XCTAssertEqual(analyzer.classify(sentence: "I feel so sad"), "sad")
+        XCTAssertEqual(analyzer.classify(sentence: "Yeah right."), "sarcastic")
         XCTAssertEqual(analyzer.classify(sentence: "Just a line"), "neutral")
     }
 }
