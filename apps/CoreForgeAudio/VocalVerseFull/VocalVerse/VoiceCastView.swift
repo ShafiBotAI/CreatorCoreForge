@@ -7,8 +7,10 @@ struct VoiceCastView: View {
     let characters: [String]
     let series: String
     @State private var selections: [String: String] = [:]
+    @AppStorage("isNSFWUnlocked") private var isNSFWUnlocked = false
 
     private let voices = VoiceConfig.voices
+    private let nsfwVoices: Set<String> = ["ultra", "aisynth"]
 
     var body: some View {
         NavigationView {
@@ -19,7 +21,9 @@ struct VoiceCastView: View {
                         set: { selections[name] = $0 }
                     )) {
                         ForEach(voices, id: \.id) { voice in
-                            Text(voice.name).tag(voice.id)
+                            Text(voice.name)
+                                .tag(voice.id)
+                                .disabled(nsfwVoices.contains(voice.id) && !isNSFWUnlocked)
                         }
                     }
                 }

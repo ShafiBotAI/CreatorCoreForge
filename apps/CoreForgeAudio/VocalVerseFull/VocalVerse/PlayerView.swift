@@ -10,6 +10,7 @@ struct PlayerView: View {
     @EnvironmentObject var library: LibraryModel
     @EnvironmentObject var usage: UsageStats
     @EnvironmentObject var prefs: UserPreferences
+    @AppStorage("isNSFWUnlocked") private var isNSFWUnlocked = false
 #if canImport(AVFoundation)
     @StateObject private var highlighter = SpeechHighlighter()
 #endif
@@ -67,7 +68,8 @@ struct PlayerView: View {
 
 #if canImport(AVFoundation)
     private func toggleSpeech(text: String) {
-        guard ContentPolicyManager.isAllowed(text: text, nsfw: prefs.nsfwEnabled, age: prefs.age) else {
+        let nsfwAllowed = prefs.nsfwEnabled && isNSFWUnlocked
+        guard ContentPolicyManager.isAllowed(text: text, nsfw: nsfwAllowed, age: prefs.age) else {
             isSpeaking = false
             return
         }

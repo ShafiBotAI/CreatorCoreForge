@@ -8,6 +8,7 @@ final class UserPreferences: ObservableObject {
     static let shared = UserPreferences()
 
     @AppStorage("nsfwEnabled") var nsfwEnabled: Bool = false
+    @AppStorage("isNSFWUnlocked") var isNSFWUnlocked: Bool = false
     @AppStorage("wifiOnly") var wifiOnly: Bool = true
     @AppStorage("autoScroll") var autoScroll: Bool = false
     @AppStorage("selectedVoice") var selectedVoice: String = "Default"

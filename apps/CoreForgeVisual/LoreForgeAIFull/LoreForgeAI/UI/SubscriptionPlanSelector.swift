@@ -7,11 +7,21 @@ enum SubscriptionTier: String, CaseIterable {
     case free
     case creator
     case enterprise
+    case author
 }
 
 #if canImport(SwiftUI)
 struct SubscriptionPlanSelector: View {
     @Binding var tier: SubscriptionTier
+
+    private var nsfwInfo: String {
+        switch tier {
+        case .free, .creator:
+            return "NSFW Mode requires Add-On"
+        case .enterprise, .author:
+            return "NSFW Mode Included"
+        }
+    }
 
     var body: some View {
         Picker("Plan", selection: $tier) {
@@ -20,6 +30,8 @@ struct SubscriptionPlanSelector: View {
             }
         }
         .pickerStyle(.segmented)
+        Text(nsfwInfo)
+            .font(.caption)
     }
 }
 
