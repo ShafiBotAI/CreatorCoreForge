@@ -3,15 +3,21 @@ import SwiftUI
 
 /// Displays persistent character to voice assignments across books.
 struct VoiceMemoryView: View {
-    @State private var assignments: [(String, String)] = []
+    @State private var assignments: [String: [(String, String)]] = [:]
 
     var body: some View {
-        List(assignments, id: \.0) { character, voice in
-            HStack {
-                Text(character.capitalized)
-                Spacer()
-                Text(voice)
-                    .foregroundColor(.secondary)
+        List {
+            ForEach(assignments.keys.sorted(), id: \.self) { series in
+                Section(header: Text(series.capitalized)) {
+                    ForEach(assignments[series]!, id: \.0) { character, voice in
+                        HStack {
+                            Text(character.capitalized)
+                            Spacer()
+                            Text(voice)
+                                .foregroundColor(.secondary)
+                        }
+                    }
+                }
             }
         }
         .onAppear(perform: loadAssignments)
@@ -19,10 +25,14 @@ struct VoiceMemoryView: View {
     }
 
     private func loadAssignments() {
-        assignments = CharacterVoiceMemory.shared.allAssignments().map { (char, voiceID) in
-            let name = VoiceConfig.voices.first { $0.id == voiceID }?.name ?? voiceID
-            return (char, name)
-        }
+        let all = CharacterVoiceMemory.shared.allAssignments()
+        assignments = Dictionary(uniqueKeysWithValues: all.map { series, map in
+            let entries = map.map { (char, id) in
+                let name = VoiceConfig.voices.first { $0.id == id }?.name ?? id
+                return (char, name)
+            }
+            return (series, entries)
+        })
     }
 }
 

@@ -21,7 +21,7 @@ final class LibraryModel: ObservableObject {
             self.books = decoded
         } else {
             self.books = [
-                Book(title: "Sample Adventure", author: "A. Author", chapters: [
+                Book(title: "Sample Adventure", author: "A. Author", series: "Demo Saga", chapters: [
                     Chapter(title: "Intro", text: "@Hero begins the journey."),
                     Chapter(title: "Conflict", text: "@Villain appears in town.")
                 ])

@@ -56,6 +56,30 @@ public final class VoiceMemoryManager {
         persist()
     }
 
+    /// Retrieve all voice assignments for a specific series.
+    /// - Parameter series: Series identifier used when assigning voices.
+    /// - Returns: Mapping of character names to voice IDs.
+    public func assignments(for series: String) -> [String: String] {
+        let prefix = series.lowercased() + "|"
+        var result: [String: String] = [:]
+        for (key, value) in assignments where key.hasPrefix(prefix) {
+            let character = String(key.dropFirst(prefix.count))
+            result[character] = value
+        }
+        return result
+    }
+
+    /// Retrieve all assignments grouped by series name.
+    public func allAssignments() -> [String: [String: String]] {
+        var grouped: [String: [String: String]] = [:]
+        for (key, value) in assignments {
+            let parts = key.split(separator: "|", maxSplits: 1).map(String.init)
+            guard parts.count == 2 else { continue }
+            grouped[parts[0], default: [:]][parts[1]] = value
+        }
+        return grouped
+    }
+
     private func persist() {
         userDefaults.set(assignments, forKey: key)
         if let data = try? JSONSerialization.data(withJSONObject: assignments, options: []) {

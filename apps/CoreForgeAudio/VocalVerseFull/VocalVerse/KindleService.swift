@@ -56,7 +56,7 @@ final class KindleService {
             let chapters = sections.enumerated().map { idx, str in
                 Chapter(title: "Section \(idx + 1)", text: str)
             }
-            completion(Book(title: book.title, author: book.author, chapters: chapters))
+            completion(Book(title: book.title, author: book.author, series: nil, chapters: chapters))
         }.resume()
     }
 }

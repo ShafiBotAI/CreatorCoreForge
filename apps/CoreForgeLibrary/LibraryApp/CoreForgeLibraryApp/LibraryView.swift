@@ -86,11 +86,11 @@ struct LibraryView: View {
 }
 
 private let demoBooks: [Book] = [
-    Book(title: "Sample Adventure", author: "A. Author", chapters: [
+    Book(title: "Sample Adventure", author: "A. Author", series: nil, chapters: [
         Chapter(title: "Intro", text: "Welcome to the adventure."),
         Chapter(title: "Conflict", text: "The story continues.")
     ]),
-    Book(title: "Mystery Night", author: "B. Writer", chapters: [
+    Book(title: "Mystery Night", author: "B. Writer", series: nil, chapters: [
         Chapter(title: "Start", text: "It was a dark night."),
         Chapter(title: "Clue", text: "A clue appears.")
     ])

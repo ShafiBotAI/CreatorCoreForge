@@ -43,7 +43,8 @@ struct BookDetailView: View {
             }
         }
         .sheet(isPresented: $showVoiceCast) {
-            VoiceCastView(characters: extractCharacters(from: book))
+            VoiceCastView(characters: extractCharacters(from: book),
+                          series: book.series ?? book.title)
         }
     }
 

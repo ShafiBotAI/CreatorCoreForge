@@ -49,8 +49,8 @@ struct FeaturedCarouselView: View {
 
 #Preview {
     FeaturedCarouselView(books: [
-        Book(title: "Sample", author: "A"),
-        Book(title: "Sample 2", author: "B")
+        Book(title: "Sample", author: "A", series: nil),
+        Book(title: "Sample 2", author: "B", series: nil)
     ])
     .environmentObject(LibraryModel())
 }
