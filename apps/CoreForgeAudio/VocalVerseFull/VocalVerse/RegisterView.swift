@@ -43,6 +43,7 @@ struct RegisterView: View {
             switch result {
             case .success:
                 SubscriptionManager().upgrade(to: selectedTier)
+                ReferralManager.shared.rewardReferrer(for: selectedTier)
                 onComplete()
             case .failure(let err):
                 error = err.localizedDescription

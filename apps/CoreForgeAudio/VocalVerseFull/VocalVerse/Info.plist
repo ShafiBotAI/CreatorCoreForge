@@ -37,5 +37,7 @@
             </dict>
         </dict>
     </dict>
+    <key>NSUserTrackingUsageDescription</key>
+    <string>Used for anonymized analytics to improve features.</string>
 </dict>
 </plist>

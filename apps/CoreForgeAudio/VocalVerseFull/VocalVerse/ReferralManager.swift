@@ -45,7 +45,7 @@ final class ReferralManager: ObservableObject {
         rewards[referralCode, default: 0] += bonus
         defaults.set(rewards, forKey: rewardsKey)
         lastReward = bonus
-        CreditStore.shared.addCredits(bonus, reason: "Referral reward")
+        CreditStore.shared.addCredits(bonus, reason: "Referral reward", referral: true)
     }
 
     /// Total credits earned for a specific referral code.
