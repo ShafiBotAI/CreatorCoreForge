@@ -9,6 +9,24 @@ public struct ElevenLabsClient {
     private let apiKey: String
     private let session: URLSession
 
+    /// Options for advanced synthesis quality tuning.
+    public struct Options {
+        /// Voice stability between 0 and 1.0.
+        public var stability: Double
+        /// Similarity boost between 0 and 1.0.
+        public var similarityBoost: Double
+        /// Optional model identifier, e.g. `eleven_multilingual_v2`.
+        public var modelID: String?
+
+        public init(stability: Double = 0.75,
+                    similarityBoost: Double = 0.75,
+                    modelID: String? = nil) {
+            self.stability = stability
+            self.similarityBoost = similarityBoost
+            self.modelID = modelID
+        }
+    }
+
     public init(apiKey: String = ProcessInfo.processInfo.environment["ELEVEN_API_KEY"] ?? "",
                 session: URLSession = .shared) {
         self.apiKey = apiKey
@@ -28,6 +46,19 @@ public struct ElevenLabsClient {
     /// Synthesize text to speech using a voice identifier.
     public func synthesize(text: String, voiceID: String, completion: @escaping (Result<Data, Error>) -> Void) {
         let body = try? JSONSerialization.data(withJSONObject: ["text": text])
+        request(endpoint: "text-to-speech/\(voiceID)", method: "POST", body: body, completion: completion)
+    }
+
+    /// Synthesize text with advanced quality options.
+    public func synthesize(text: String,
+                           voiceID: String,
+                           options: Options,
+                           completion: @escaping (Result<Data, Error>) -> Void) {
+        var payload: [String: Any] = ["text": text,
+                                      "voice_settings": ["stability": options.stability,
+                                                         "similarity_boost": options.similarityBoost]]
+        if let model = options.modelID { payload["model_id"] = model }
+        let body = try? JSONSerialization.data(withJSONObject: payload)
         request(endpoint: "text-to-speech/\(voiceID)", method: "POST", body: body, completion: completion)
     }
 
