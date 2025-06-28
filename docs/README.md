@@ -12,6 +12,7 @@ Additional guides and phase planning documents for the CreatorCoreForge ecosyste
 - `audiobook_topics.csv` – reference list of audiobook development topics.
 - `NextGenSoundFX.md` – script usage for generating simple SFX
 - `NextGenAdaptiveMusic.md` – create short mood-based music loops
+- `NextGenSpeech.md` – overview of offline speech synthesis and recognition
 - `AdaptiveDocScanner.md` – overview of the AI document scanner
 - `DocVideoScanner.md` – document and video scanning utilities
 - `progress_bot.py` – calculates app progress from `OPEN_TASKS.md` and optionally suggests code using OpenAI.
