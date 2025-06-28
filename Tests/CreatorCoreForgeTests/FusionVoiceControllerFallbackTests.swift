@@ -25,12 +25,27 @@ final class FusionVoiceControllerFallbackTests: XCTestCase {
         wait(for: [exp], timeout: 1)
     }
 
-    func testUsesRemoteWhenAvailable() {
+    func testUsesRemoteWhenConnected() {
+        NetworkMonitor.shared.setTestConnection(true)
+        AppSettings.shared.offlineMode = false
         let controller = FusionVoiceController(remoteRenderer: MockRenderer())
         let profile = VoiceProfile(name: "Test")
         let exp = expectation(description: "remote")
         controller.speak(text: "Hi", using: profile) { data in
             XCTAssertEqual(data, Data("remote".utf8))
+            exp.fulfill()
+        }
+        wait(for: [exp], timeout: 1)
+    }
+
+    func testFallsBackWhenOffline() {
+        NetworkMonitor.shared.setTestConnection(false)
+        AppSettings.shared.offlineMode = false
+        let controller = FusionVoiceController(remoteRenderer: MockRenderer())
+        let profile = VoiceProfile(name: "Test")
+        let exp = expectation(description: "local")
+        controller.speak(text: "Hi", using: profile) { data in
+            XCTAssertNotEqual(data, Data("remote".utf8))
             exp.fulfill()
         }
         wait(for: [exp], timeout: 1)

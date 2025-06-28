@@ -49,7 +49,10 @@ public final class FusionVoiceController {
             }
         }
 
-        if preferOnline, let renderer = remoteRenderer {
+        if preferOnline,
+           !AppSettings.shared.offlineMode,
+           NetworkMonitor.shared.isConnected,
+           let renderer = remoteRenderer {
             renderer.render(text: text, voiceID: profile.id) { [weak self] result in
                 guard let self = self else { completion(nil); return }
                 switch result {
