@@ -14,9 +14,10 @@ export class AICopilotService {
   private visitFunctions(file: ts.SourceFile, cb: (fn: ts.FunctionLikeDeclaration, span: number) => void) {
     const visit = (node: ts.Node) => {
       if (ts.isFunctionLike(node)) {
-        const span = file.getLineAndCharacterOfPosition(node.end).line -
+        const span =
+          file.getLineAndCharacterOfPosition(node.end).line -
           file.getLineAndCharacterOfPosition(node.pos).line;
-        cb(node, span);
+        cb(node as ts.FunctionLikeDeclaration, span);
       }
       ts.forEachChild(node, visit);
     };

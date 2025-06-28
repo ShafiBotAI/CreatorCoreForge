@@ -43,6 +43,7 @@
   - AnalyticsLogger for basic event tracking
   - PerformanceModeSelector to switch rendering presets
   - FusionVoiceController orchestrates LocalVoiceAI and emotion cues
+  - Adaptive online/offline TTS via ElevenLabsRenderer fallback
   - MultiCastAudiobookGenerator enables ensemble narration
   - DramatizedAudiobookProducer creates immersive dramatized audiobooks
   - Extra helpers in `Sources/CreatorCoreForge/CoreForgeAudio_MissingFeatures.swift`
