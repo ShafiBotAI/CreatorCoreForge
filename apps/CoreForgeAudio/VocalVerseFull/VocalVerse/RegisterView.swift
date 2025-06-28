@@ -23,6 +23,7 @@ struct RegisterView: View {
             Picker("Tier", selection: $selectedTier) {
                 Text("Free").tag(SubscriptionManager.Plan.free)
                 Text("Creator").tag(SubscriptionManager.Plan.creator)
+                Text("Author").tag(SubscriptionManager.Plan.author)
                 Text("Enterprise").tag(SubscriptionManager.Plan.enterprise)
             }
             .pickerStyle(.segmented)
@@ -38,7 +39,7 @@ struct RegisterView: View {
     }
 
     private func register() {
-        AuthManager.shared.signUp(email: email, password: password) { result in
+        AuthManager.shared.signUp(email: email, password: password, plan: selectedTier) { result in
             switch result {
             case .success:
                 SubscriptionManager().upgrade(to: selectedTier)

@@ -12,6 +12,7 @@ struct TierUpgradeView: View {
         VStack(spacing: 20) {
             Picker("Plan", selection: $selected) {
                 Text("Creator").tag(SubscriptionManager.Plan.creator)
+                Text("Author").tag(SubscriptionManager.Plan.author)
                 Text("Enterprise").tag(SubscriptionManager.Plan.enterprise)
             }
             .pickerStyle(.segmented)

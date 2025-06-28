@@ -23,6 +23,7 @@ struct RegisterView: View {
             Picker("Tier", selection: $selectedTier) {
                 Text("Free").tag(SubscriptionManager.Plan.free)
                 Text("Creator").tag(SubscriptionManager.Plan.creator)
+                Text("Author").tag(SubscriptionManager.Plan.author)
                 Text("Enterprise").tag(SubscriptionManager.Plan.enterprise)
             }
             .pickerStyle(.segmented)

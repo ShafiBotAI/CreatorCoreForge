@@ -28,7 +28,7 @@
 - **Use Case:** Audiobook generation, voice studio, narration platform
 - **Key Features:**
   - Voice cloning, multilingual support, emotion arcs
-  - NSFW toggle, narrator marketplace, book upload
+  - NSFW toggle, narrator marketplace, author book upload with downloadable audiobooks
   - Offline TTS, phoneme control, lipsync, stealth vault
   - VoiceTimbreModulator for customizable timbre profiles
   - MultiLanguageAccentNarrator enables multi-language and accent erotic narration
@@ -233,7 +233,7 @@
 
 ## 🔐 Licensing & Monetization
 
-- Creator, Pro, Enterprise, White Label tiers per app
+ - Creator, Author, Pro, Enterprise, White Label tiers per app
 - In-app credits, NSFW add-ons, voice packs, templates
 - Referral, affiliate, and creator monetization models included
 - Referral program customizable per app with cross-app referral dashboard

@@ -5,6 +5,7 @@ public final class SubscriptionManager {
     public enum Plan: String {
         case free
         case creator
+        case author
         case enterprise
     }
 
@@ -17,6 +18,7 @@ public final class SubscriptionManager {
     private static let tierInfo: [Plan: TierInfo] = [
         .free: TierInfo(price: 0, monthlyExports: 5),
         .creator: TierInfo(price: 9.99, monthlyExports: 50),
+        .author: TierInfo(price: 14.99, monthlyExports: 100),
         .enterprise: TierInfo(price: 29.99, monthlyExports: 500)
     ]
 
