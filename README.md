@@ -14,7 +14,7 @@
 
 ## 🔧 Technology Stack
 - LocalAIEngine Pro – local text engine with embeddings, summarization, and simple sentiment analysis
-- LocalVoiceAI Advanced Mode – offline voice cloning with emotion control
+- LocalVoiceAI Advanced Mode – offline voice cloning with emotion control, plus depth and scope modifiers for richer TTS
 - FusionEngine™ (modular adaptive AI framework)
 - QuantumConnector™ (real/simulated quantum support)
 - Electron.js (cross-platform PC builds)

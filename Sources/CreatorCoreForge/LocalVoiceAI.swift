@@ -8,11 +8,21 @@ public struct VoiceProfile: Codable, Equatable {
     public var name: String
     /// Base emotion for synthesis (e.g. "neutral", "happy").
     public var emotion: String
+    /// Depth multiplier for voice resonance.
+    public var depth: Double
+    /// Scope multiplier for voice pitch range.
+    public var scope: Double
 
-    public init(id: String = UUID().uuidString, name: String, emotion: String = "neutral") {
+    public init(id: String = UUID().uuidString,
+                name: String,
+                emotion: String = "neutral",
+                depth: Double = 1.0,
+                scope: Double = 1.0) {
         self.id = id
         self.name = name
         self.emotion = emotion
+        self.depth = depth
+        self.scope = scope
     }
 }
 
@@ -51,20 +61,27 @@ public final class LocalVoiceAI {
             var samples: [Int16] = []
             for ch in text.utf8 {
                 let baseFreq = 200.0 + Double(ch % 40) * 10.0
-                let freq = baseFreq + emotionShift * 5.0
-                samples += Self.sineWave(frequency: freq, duration: 0.05, sampleRate: sampleRate)
+                let freq = baseFreq * profile.scope + emotionShift * 5.0
+                samples += Self.sineWave(frequency: freq,
+                                        duration: 0.05,
+                                        sampleRate: sampleRate,
+                                        amplitude: 30000 * profile.depth)
             }
             let data = Self.encodeWAV(samples: samples, sampleRate: sampleRate)
             completion(.success(data))
         }
     }
 
-    private static func sineWave(frequency: Double, duration: Double, sampleRate: Int) -> [Int16] {
+    private static func sineWave(frequency: Double,
+                                 duration: Double,
+                                 sampleRate: Int,
+                                 amplitude: Double) -> [Int16] {
         let count = Int(Double(sampleRate) * duration)
+        let amp = max(min(amplitude, 32_000), 0)
         return (0..<count).map { i in
             let t = Double(i) / Double(sampleRate)
             let value = sin(2.0 * .pi * frequency * t)
-            return Int16(value * 30000)
+            return Int16(value * amp)
         }
     }
 
