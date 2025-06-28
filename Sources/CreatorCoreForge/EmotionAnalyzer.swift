@@ -52,4 +52,15 @@ public final class EmotionAnalyzer {
 
         return EmotionProfile(emotion: emotion, intensity: intensity)
     }
+
+    /// Classify the overall emotion of a sentence.
+    /// Very naive implementation using punctuation and keywords.
+    public func classify(sentence: String) -> String {
+        let lowered = sentence.lowercased()
+        if lowered.contains("sad") { return "sad" }
+        if lowered.contains("wow") || lowered.contains("!") { return "excited" }
+        if lowered.contains("?") { return "curious" }
+        if lowered.contains("...") || lowered.contains("-") { return "hesitant" }
+        return "neutral"
+    }
 }
