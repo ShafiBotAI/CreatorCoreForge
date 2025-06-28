@@ -45,4 +45,12 @@ final class CharacterVoiceMapperTests: XCTestCase {
         XCTAssertEqual(alice.assignedVoice, "Manual")
         XCTAssertEqual(bob.assignedVoice, "Auto1")
     }
+
+    func testNarratorVoiceAssignment() {
+        let mapper = CharacterVoiceMapper()
+        let result = mapper.assignVoicesSelective(to: "Alice: Hi.", narratorVoice: "Storyteller")
+        let narrator = result.first { $0.name == "Narrator" }!
+        XCTAssertEqual(narrator.assignedVoice, "Storyteller")
+        XCTAssertEqual(mapper.getNarratorVoice(), "Storyteller")
+    }
 }

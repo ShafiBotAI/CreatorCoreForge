@@ -30,5 +30,11 @@ final class VisualMemoryManagerTests: XCTestCase {
         XCTAssertTrue(issues.contains("mood"))
         XCTAssertFalse(issues.contains("outfit"))
     }
+
+    func testNarratorVoiceStorage() {
+        let manager = VisualMemoryManager()
+        manager.setNarratorVoice("Calm")
+        XCTAssertEqual(manager.getNarratorVoice(), "Calm")
+    }
 }
 
