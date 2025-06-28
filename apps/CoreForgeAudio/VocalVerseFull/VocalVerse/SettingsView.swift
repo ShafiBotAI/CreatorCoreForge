@@ -5,6 +5,7 @@ import CreatorCoreForge
 struct SettingsView: View {
     @AppStorage("selectedVoice") private var selectedVoice = "Default"
     @AppStorage("nsfwEnabled") private var nsfwEnabled = false
+    @AppStorage("isNSFWUnlocked") private var isNSFWUnlocked = false
     @AppStorage("parentalPIN") private var parentalPIN = "1234"
     @AppStorage("birthDate") private var birthDateString = ""
     @AppStorage("stealthMode") private var stealthMode = false
@@ -29,16 +30,24 @@ struct SettingsView: View {
                 }
 
                 Section(header: Text("Content")) {
-                    Toggle("Allow NSFW", isOn: Binding(
-                        get: { nsfwEnabled },
-                        set: { newValue in
-                            if newValue {
-                                showAgeSheet = true
-                            } else {
-                                nsfwEnabled = false
-                                NSFWSoundFXEngine.shared.stopAll()
+                    if isNSFWUnlocked {
+                        Toggle("Allow NSFW", isOn: Binding(
+                            get: { nsfwEnabled },
+                            set: { newValue in
+                                if newValue {
+                                    showAgeSheet = true
+                                } else {
+                                    nsfwEnabled = false
+                                    NSFWSoundFXEngine.shared.stopAll()
+                                }
+                            }))
+                    } else {
+                        Button("Unlock NSFW Mode ($4.99/month)") {
+                            NSFWAddonManager.shared.purchase { success in
+                                if success { isNSFWUnlocked = true }
                             }
-                        }))
+                        }
+                    }
                 }
 
                 Section(header: Text("Security")) {

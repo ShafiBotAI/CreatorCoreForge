@@ -21,4 +21,15 @@ final class SubscriptionManagerTests: XCTestCase {
         XCTAssertTrue(manager.canExport())
         suite.removePersistentDomain(forName: "SubMgr")
     }
+
+    func testNSFWUnlock() {
+        let suite = UserDefaults(suiteName: "SubMgrNSFW")!
+        var manager = SubscriptionManager(plan: .creator, userDefaults: suite)
+        XCTAssertFalse(manager.isNSFWUnlocked)
+        manager.unlockNSFW()
+        XCTAssertTrue(manager.isNSFWUnlocked)
+        manager.upgrade(to: .enterprise)
+        XCTAssertTrue(manager.isNSFWUnlocked)
+        suite.removePersistentDomain(forName: "SubMgrNSFW")
+    }
 }

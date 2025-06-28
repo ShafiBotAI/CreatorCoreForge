@@ -23,21 +23,31 @@ public final class SubscriptionManager {
     ]
 
     public private(set) var activePlan: Plan
+    public private(set) var isNSFWUnlocked: Bool
     private var exportsThisMonth: Int
     private let defaults: UserDefaults
     private let monthKey = "SubMgrMonth"
     private let exportKey = "SubMgrExports"
+    private let nsfwKey = "SubMgrNSFW"
 
     public init(plan: Plan = .free, userDefaults: UserDefaults = .standard) {
         self.activePlan = plan
         self.defaults = userDefaults
         self.exportsThisMonth = userDefaults.integer(forKey: exportKey)
+        self.isNSFWUnlocked = userDefaults.bool(forKey: nsfwKey)
+        if plan == .author || plan == .enterprise {
+            self.isNSFWUnlocked = true
+            userDefaults.set(true, forKey: nsfwKey)
+        }
         resetIfNeeded()
     }
 
     /// Upgrade the current subscription plan.
     public func upgrade(to plan: Plan) {
         activePlan = plan
+        if plan == .author || plan == .enterprise {
+            unlockNSFW()
+        }
     }
 
     /// Price for a specific plan.
@@ -63,6 +73,12 @@ public final class SubscriptionManager {
     public func canExport() -> Bool {
         resetIfNeeded()
         return exportsThisMonth < Self.tierInfo[activePlan]!.monthlyExports
+    }
+
+    /// Manually unlock NSFW access for the current user.
+    public func unlockNSFW() {
+        isNSFWUnlocked = true
+        defaults.set(true, forKey: nsfwKey)
     }
 
     private func resetIfNeeded() {
