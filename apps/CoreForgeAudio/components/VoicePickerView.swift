@@ -26,6 +26,7 @@ struct VoicePickerView: View {
                 Image(systemName: "chevron.down")
             }
         }
+        .onAppear { appFav.updateIfNeeded(for: Date()) }
     }
 
     private var appFavoriteNames: [String] {

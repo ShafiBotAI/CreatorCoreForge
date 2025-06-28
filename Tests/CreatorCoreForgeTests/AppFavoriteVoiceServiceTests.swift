@@ -17,4 +17,19 @@ final class AppFavoriteVoiceServiceTests: XCTestCase {
         XCTAssertEqual(service.dailyTopVoiceIDs.first, "v1")
         XCTAssertEqual(service.dailyTopVoiceIDs.count, 2)
     }
+
+    func testTopListLimitedToTen() {
+        let suite = UserDefaults(suiteName: "AppFavLimitTest")!
+        suite.removePersistentDomain(forName: "AppFavLimitTest")
+        let service = AppFavoriteVoiceService(store: suite)
+        for i in 0..<15 {
+            for _ in 0...i {
+                service.recordUsage(voiceID: "v\(i)")
+            }
+        }
+        let tomorrow = Calendar.current.date(byAdding: .day, value: 1, to: Date())!
+        _ = service.updateIfNeeded(for: tomorrow)
+        XCTAssertEqual(service.dailyTopVoiceIDs.count, 10)
+        XCTAssertEqual(service.dailyTopVoiceIDs.first, "v14")
+    }
 }
