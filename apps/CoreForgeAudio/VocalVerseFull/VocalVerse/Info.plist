@@ -7,6 +7,8 @@
     <string>com.creatorcoreforge.audio</string>
     <key>CFBundleName</key>
     <string>CoreForge Audio</string>
+    <key>CFBundleDisplayName</key>
+    <string>CoreForge Audio</string>
     <key>CFBundleVersion</key>
     <string>2</string>
     <key>CFBundleShortVersionString</key>
