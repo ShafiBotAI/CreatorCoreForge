@@ -15,4 +15,6 @@ This document outlines the minimal setup required to build and run **CoreForgeVi
 2. Open the project file or run `npm install`.
 3. Execute `npm test` or `swift test` to verify the build.
 
+## Baseline Tag
+- Ensure any new file, feature, or framework added to this app is also added to the `.xcodeproj` project file.
 These requirements align with the repo-wide AGENTS checklist and provide a baseline for all contributors.
