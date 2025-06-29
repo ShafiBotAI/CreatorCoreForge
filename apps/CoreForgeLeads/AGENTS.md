@@ -127,16 +127,16 @@ Key points from `README.md`:
  - [x] Feature 58: Lead marketplace to buy/sell verified leads by niche and intent
  - [x] Feature 59: Smart follow-up engine with multi-channel sequencing
  - [x] Feature 60: One-click CRM sync with HubSpot, Salesforce, Zoho, and Pipedrive
- - [ ] Feature 61: Lead generation Chrome extension for scraping any site or profile
- - [ ] Feature 62: AI-powered LinkedIn messaging assistant with tone optimization
- - [ ] Feature 63: Dynamic contact verification with bounce risk scoring
- - [ ] Feature 64: Voice message outreach tool with tone-matching AI suggestions
- - [ ] Feature 65: ABM (account-based marketing) playbook generator by vertical
- - [ ] Feature 66: AI-generated landing pages personalized per lead segment
- - [ ] Feature 67: Multivariate A/B test generator for CTAs, subject lines, and offers
- - [ ] Feature 68: Personalized lead videos using face swap and AI voice synthesis
- - [ ] Feature 69: Custom AI agents that outreach, qualify, and nurture leads autonomously
- - [ ] Feature 70: Smart timezone scheduler for global outreach efficiency
+ - [x] Feature 61: Lead generation Chrome extension for scraping any site or profile
+ - [x] Feature 62: AI-powered LinkedIn messaging assistant with tone optimization
+ - [x] Feature 63: Dynamic contact verification with bounce risk scoring
+ - [x] Feature 64: Voice message outreach tool with tone-matching AI suggestions
+ - [x] Feature 65: ABM (account-based marketing) playbook generator by vertical
+ - [x] Feature 66: AI-generated landing pages personalized per lead segment
+ - [x] Feature 67: Multivariate A/B test generator for CTAs, subject lines, and offers
+ - [x] Feature 68: Personalized lead videos using face swap and AI voice synthesis
+ - [x] Feature 69: Custom AI agents that outreach, qualify, and nurture leads autonomously
+ - [x] Feature 70: Smart timezone scheduler for global outreach efficiency
  - [ ] Feature 71: Creator monetization dashboard for reselling lead packs
  - [ ] Feature 72: Affiliate marketplace for white-label lead resellers
  - [ ] Feature 73: Gamified lead gen tools to increase opt-ins (wheel, quiz, etc.)
