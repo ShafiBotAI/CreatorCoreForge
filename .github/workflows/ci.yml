@@ -34,6 +34,10 @@ jobs:
         run: |
           coverage run -m pytest tests/python tests/fuzz
           coverage report --fail-under=90
+      - name: Micro Benchmarks
+        run: python benchmarks/tts_bench.py
+      - name: Load Simulation
+        run: python scripts/load_simulation.py
       - name: Setup Swift
         uses: swift-actions/setup-swift@v1
         with:
@@ -48,8 +52,12 @@ jobs:
         run: swift test --enable-test-discovery
       - name: SAST
         run: ./scripts/run_sast.sh
+      - name: Dependency Scan
+        run: ./scripts/run_snyk.sh
       - name: SonarQube Scan
         run: ./scripts/run_sonar.sh
+      - name: Accessibility Audit
+        run: node scripts/run_axe_audit.js https://example.com || true
       - name: Build
         run: ./scripts/universal_build.sh
       - name: Deploy

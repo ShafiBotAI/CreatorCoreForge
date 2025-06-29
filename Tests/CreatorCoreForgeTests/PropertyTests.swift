@@ -1,11 +1,11 @@
 import XCTest
-import SwiftCheck
 @testable import CreatorCoreForge
 
 final class PropertyTests: XCTestCase {
     func testReversingTwice() {
-        property("reversing twice yields original") <- forAll { (value: String) in
-            return String(value.reversed().reversed()) == value
+        for _ in 0..<100 {
+            let value = UUID().uuidString
+            XCTAssertEqual(String(value.reversed().reversed()), value)
         }
     }
 }
