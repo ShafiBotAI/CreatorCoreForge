@@ -41,7 +41,7 @@ jobs:
           coverage run -m pytest tests/python tests/fuzz
           coverage report --fail-under=90
       - name: Setup Swift
-        uses: swift-actions/setup-swift@v1
+        uses: swift-actions/setup-swift@v2
         with:
           swift-version: '5.7'
       - name: Swift Lint & Format
