@@ -2,7 +2,8 @@
 import SwiftUI
 import CreatorCoreForge
 
-/// Central entry point for daily usage showing goals and quick actions.
+/// Central entry point for daily usage showing goals and quick actions with
+/// optional background themes.
 struct HomeDashboardView: View {
     @EnvironmentObject var library: LibraryModel
     @EnvironmentObject var usage: UsageStats
@@ -13,25 +14,31 @@ struct HomeDashboardView: View {
     @State private var showUpgrade = false
     @State private var showExports = false
     @State private var showVoices = false
+    @State private var layoutMode: LayoutMode = .studio
+
+    enum LayoutMode: String, CaseIterable, Identifiable {
+        case studio, cinematic, zen
+        var id: String { rawValue }
+    }
 
     var body: some View {
         NavigationView {
-            ScrollView {
-                VStack(spacing: 16) {
-                    greetingSection
-                    DailyGoalCard(goalMinutes: dailyGoal, progress: Int(usage.totalListeningTime/60))
-                    AudioCreditStatusView(credits: subscription.creditsRemaining)
-                    ProfileTierCardView(userName: userName, tier: subscription.activePlan.rawValue.capitalized) {
-                        showUpgrade = true
-                    }
-                    QuickStartList(books: Array(library.books.prefix(3)))
-                    ImportShortcutsPanel()
-                    quickLinksSection
-                    TodayHighlightsCarousel(books: library.books)
+            VStack(spacing: 16) {
+                headerSection
+                layoutSelector
+                DailyGoalCard(goalMinutes: dailyGoal,
+                               progress: Int(usage.totalListeningTime/60))
+                AudioCreditStatusView(credits: subscription.creditsRemaining)
+                ProfileTierCardView(userName: userName,
+                                    tier: subscription.activePlan.rawValue.capitalized) {
+                    showUpgrade = true
                 }
-                .padding()
+                interactiveTiles
+                Spacer()
             }
+            .padding()
             .navigationTitle("Home")
+            .background(themeBackground)
             .sheet(isPresented: $showUpgrade) {
                 SubscriptionUpgradeView { plan in
                     subscription.upgrade(to: plan)
@@ -46,32 +53,89 @@ struct HomeDashboardView: View {
         }
     }
 
-    private var userName: String {
-        email.split(separator: "@").first.map(String.init) ?? "User"
-    }
-
-    private var greetingSection: some View {
+    private var headerSection: some View {
         HStack {
-            Text("Welcome back, \(userName)!")
-                .font(.title2)
-                .bold()
+            VStack(alignment: .leading) {
+                Text("Welcome back")
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+                Text(userName)
+                    .font(.largeTitle.bold())
+            }
             Spacer()
+            Button(action: { showVoices.toggle() }) {
+                Image(systemName: "speaker.wave.2")
+                    .font(.title2)
+            }
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
     }
 
-    private var quickLinksSection: some View {
-        HStack {
-            Button("Saved Voices") { showVoices = true }
-                .buttonStyle(.bordered)
-            Button("Export History") { showExports = true }
-                .buttonStyle(.bordered)
+    private var layoutSelector: some View {
+        Picker("Layout", selection: $layoutMode) {
+            ForEach(LayoutMode.allCases) { mode in
+                Text(mode.rawValue.capitalized).tag(mode)
+            }
         }
-        .padding()
-        .frame(maxWidth: .infinity)
-        .background(AppTheme.cardMaterial)
-        .cornerRadius(AppTheme.cornerRadius)
-        .shadow(radius: AppTheme.shadowRadius)
+        .pickerStyle(SegmentedPickerStyle())
+        .padding(.vertical, 8)
+    }
+
+    private var interactiveTiles: some View {
+        HStack(spacing: 12) {
+            DashboardTile(icon: "plus.circle", title: "New Book") {
+                library.startNewImport()
+            }
+            DashboardTile(icon: "music.note.list", title: "Customize Cast") {
+                showVoices.toggle()
+            }
+            DashboardTile(icon: "square.and.arrow.down", title: "Export Queue") {
+                showExports.toggle()
+            }
+        }
+    }
+
+    private var themeBackground: some View {
+        switch layoutMode {
+        case .studio:
+            return AnyView(Color.black.opacity(0.95))
+        case .cinematic:
+            return AnyView(LinearGradient(
+                gradient: Gradient(colors: [.blue, .purple]),
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            ))
+        case .zen:
+            return AnyView(Image("ZenBackdrop")
+                .resizable()
+                .scaledToFill()
+                .blur(radius: 8)
+                .opacity(0.7))
+        }
+    }
+
+    private var userName: String {
+        email.components(separatedBy: "@").first?.capitalized ?? "User"
+    }
+}
+
+struct DashboardTile: View {
+    let icon: String
+    let title: String
+    let action: () -> Void
+
+    var body: some View {
+        Button(action: action) {
+            VStack(spacing: 8) {
+                Image(systemName: icon)
+                    .font(.largeTitle)
+                Text(title)
+                    .font(.caption)
+            }
+            .padding()
+            .frame(maxWidth: .infinity)
+            .background(Color.secondary.opacity(0.15))
+            .cornerRadius(12)
+        }
     }
 }
 
