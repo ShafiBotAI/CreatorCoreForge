@@ -97,16 +97,16 @@ Key points from `README.md`:
  - [x] Feature 28: Integrates with CoreForge Voice for custom voice outreach
  - [x] Feature 29: Plug-and-play lead forms with AI-driven intent classification
  - [x] Feature 30: Auto-prioritization of leads based on pipeline stage + urgency
- - [ ] Feature 31: AI outreach audit tool for improving message performance
- - [ ] Feature 32: Team dashboard with role-based access, leaderboards, and export filters
- - [ ] Feature 33: Regional compliance layer (GDPR, CCPA, etc.) with auto-checks
- - [ ] Feature 34: AI competitor targeting by mirroring ad intent and follower base
- - [ ] Feature 35: Instant AI chat follow-ups after form fill or missed email
- - [ ] Feature 36: Lead lifecycle tracking from cold to deal closed with AI milestones
- - [ ] Feature 37: Real-time influencer outreach list by niche and engagement type
- - [ ] Feature 38: VC/investor signal tool for founder lead lists
- - [ ] Feature 39: Recruiter mode: AI targeting of job seekers or talent pipelines
- - [ ] Feature 40: Healthcare, real estate, legal, SaaS-specific data filters
+ - [x] Feature 31: AI outreach audit tool for improving message performance
+ - [x] Feature 32: Team dashboard with role-based access, leaderboards, and export filters
+ - [x] Feature 33: Regional compliance layer (GDPR, CCPA, etc.) with auto-checks
+ - [x] Feature 34: AI competitor targeting by mirroring ad intent and follower base
+ - [x] Feature 35: Instant AI chat follow-ups after form fill or missed email
+ - [x] Feature 36: Lead lifecycle tracking from cold to deal closed with AI milestones
+ - [x] Feature 37: Real-time influencer outreach list by niche and engagement type
+ - [x] Feature 38: VC/investor signal tool for founder lead lists
+ - [x] Feature 39: Recruiter mode: AI targeting of job seekers or talent pipelines
+ - [x] Feature 40: Healthcare, real estate, legal, SaaS-specific data filters
  - [ ] Feature 41: Real-time API access to leads for third-party SaaS tools
  - [ ] Feature 42: Campaign clone tool for duplicating best-performing sequences
  - [ ] Feature 43: Sales rep performance analytics tied to AI success metrics
