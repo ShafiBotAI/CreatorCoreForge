@@ -12,3 +12,6 @@ CreatorCoreForge has migrated from a trunk-based workflow to **GitHub Flow**. Al
 6. **Tag a release** from the `main` branch and publish binaries.
 
 This process keeps `main` stable and ensures each release is well tested and reviewed.
+
+## Current Release
+The repository is tagged **v2.0.0** which marks CoreForgeAudio as production ready.
