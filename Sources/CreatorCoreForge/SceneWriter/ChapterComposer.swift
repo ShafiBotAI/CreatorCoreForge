@@ -9,6 +9,11 @@ public final class ChapterComposer {
         scenes.map { $0.text }.joined(separator: "\n\n")
     }
 
+    /// Convenience wrapper to compile from a SceneManager's active scenes.
+    public func compile(from manager: SceneManager) -> String {
+        compile(scenes: manager.activeScenes())
+    }
+
     /// Export the chapter string to disk in the desired format.
     @discardableResult
     public func export(chapter: String, to url: URL) throws -> URL {

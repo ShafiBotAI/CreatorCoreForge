@@ -113,22 +113,22 @@ Key points from `README.md`:
 ### Modular Scene-Based Writing Mode (Phase 9)
 
 ## \U0001F4C2 `SceneWriterEngine.swift`
-- [ ] Implement `generateScene(prompt: String, memory: MemoryState) -> SceneDraft`
-- [ ] Support tone, POV, and emotion metadata for each scene
-- [ ] Store scenes as modular blocks with identifiers (SceneID, ChapterID)
+- [x] Implement `generateScene(prompt: String, memory: MemoryState) -> SceneDraft`
+- [x] Support tone, POV, and emotion metadata for each scene
+- [x] Store scenes as modular blocks with identifiers (SceneID, ChapterID)
 
 ## \U0001F4C2 `EmotionArcTracker.swift`
-- [ ] Visualize emotional flow across scenes (calm \u2192 rising tension \u2192 climax \u2192 resolution)
-- [ ] Allow manual tagging of scenes (e.g., betrayal, romance, twist)
-- [ ] AI recommendation for next emotional beat
+- [x] Visualize emotional flow across scenes (calm \u2192 rising tension \u2192 climax \u2192 resolution)
+- [x] Allow manual tagging of scenes (e.g., betrayal, romance, twist)
+- [x] AI recommendation for next emotional beat
 
 ## \U0001F4C2 `SceneManager.swift`
-- [ ] Enable nonlinear writing: reorder scenes, drag/drop, toggle active/inactive
-- [ ] Add “Alternate Scene” versions under same SceneID
-- [ ] Support “Pin this Scene” as core anchor point
+- [x] Enable nonlinear writing: reorder scenes, drag/drop, toggle active/inactive
+- [x] Add “Alternate Scene” versions under same SceneID
+- [x] Support “Pin this Scene” as core anchor point
 
 ## \U0001F4C2 `ChapterComposer.swift`
-- [ ] Compile selected scenes into a chapter preview
+- [x] Compile selected scenes into a chapter preview
 - [ ] Apply pacing checks, transitions, and AI summaries
 - [ ] Allow exporting chapter in `.txt`, `.epub`, `.json`, or storyboard format
 
