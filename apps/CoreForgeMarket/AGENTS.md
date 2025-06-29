@@ -221,26 +221,26 @@ Key points from `README.md`:
 + [x] Feature 98: Neural signal rebalance based on live volatility
 + [x] Feature 99: AI-matched mentors with your style via shadow portfolio comparison
 + [x] Feature 100: Live news whisper mode: AI whispers most critical info every 15 mins
-- [ ] Feature 101: Real-time sentiment analysis across Twitter, Reddit, and financial news
-- [ ] Feature 102: Whale wallet shadow trading and automatic pattern replication
-- [ ] Feature 103: Insider flow tracking with dark pool alert system
-- [ ] Feature 104: Titan Strategy Engine with adaptive multi-algo switching
-- [ ] Feature 105: Smart arbitrage scanner across crypto, forex, and stocks
-- [ ] Feature 106: AI-guided risk calibration based on user profile and goal
-- [ ] Feature 107: Event-based auto-trading (earnings, CPI, Fed meetings)
-- [ ] Feature 108: Predictive heatmaps for sectors, coins, and option chains
-- [ ] Feature 109: Auto-hedging recommendations using volatility sensors
-- [ ] Feature 110: Live market anomaly detector with strategy pivots
-- [ ] Feature 111: Self-learning trading bot with reinforcement feedback loop
-- [ ] Feature 112: Cross-platform broker integration (Robinhood, IBKR, Coinbase, etc.)
-- [ ] Feature 113: News-to-trade bot: generates ideas from real-time news headlines
-- [ ] Feature 114: AI backtesting engine with predictive model scoring
-- [ ] Feature 115: Visual strategy flowcharts for drag-and-drop trade logic
-- [ ] Feature 116: Voice command trade assistant with real-time AI feedback
-- [ ] Feature 117: Trading psychology AI advisor with habit tracking
-- [ ] Feature 118: Trade replay simulator to train decision-making under pressure
-- [ ] Feature 119: Multi-timeframe signal fusion (1-min to weekly)
-- [ ] Feature 120: Portfolio DNA visualizer to map risk clusters and diversity
+- [x] Feature 101: Real-time sentiment analysis across Twitter, Reddit, and financial news
+- [x] Feature 102: Whale wallet shadow trading and automatic pattern replication
+- [x] Feature 103: Insider flow tracking with dark pool alert system
+- [x] Feature 104: Titan Strategy Engine with adaptive multi-algo switching
+- [x] Feature 105: Smart arbitrage scanner across crypto, forex, and stocks
+- [x] Feature 106: AI-guided risk calibration based on user profile and goal
+- [x] Feature 107: Event-based auto-trading (earnings, CPI, Fed meetings)
+- [x] Feature 108: Predictive heatmaps for sectors, coins, and option chains
+- [x] Feature 109: Auto-hedging recommendations using volatility sensors
+- [x] Feature 110: Live market anomaly detector with strategy pivots
+- [x] Feature 111: Self-learning trading bot with reinforcement feedback loop
+- [x] Feature 112: Cross-platform broker integration (Robinhood, IBKR, Coinbase, etc.)
+- [x] Feature 113: News-to-trade bot: generates ideas from real-time news headlines
+- [x] Feature 114: AI backtesting engine with predictive model scoring
+- [x] Feature 115: Visual strategy flowcharts for drag-and-drop trade logic
+- [x] Feature 116: Voice command trade assistant with real-time AI feedback
+- [x] Feature 117: Trading psychology AI advisor with habit tracking
+- [x] Feature 118: Trade replay simulator to train decision-making under pressure
+- [x] Feature 119: Multi-timeframe signal fusion (1-min to weekly)
+- [x] Feature 120: Portfolio DNA visualizer to map risk clusters and diversity
 - [ ] Feature 121: Gamma exposure and option flow tracker with alerts
 - [ ] Feature 122: Market mood index derived from social + macro feeds
 - [ ] Feature 123: Chatbot that explains every executed trade in plain English
