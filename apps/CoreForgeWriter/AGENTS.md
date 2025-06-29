@@ -169,16 +169,16 @@ Key points from `README.md`:
 - [x] Feature 15: Visual scene composer with AI-generated descriptions and reference art
 - [x] Feature 16: Scene intensity scoring with crescendo and relief pattern tracking
 - [x] Feature 17: Multiverse timeline builder (alternate universe continuity maps)
-- [ ] Feature 18: Dynamic cast builder for ensemble and rotating POV books
-- [ ] Feature 19: Character growth tracker visualized over a story arc timeline
-- [ ] Feature 20: Tone adaptation tool: rewrite any chapter in noir, epic, or whimsical style
-- [ ] Feature 21: Mythology generator for fantasy worlds including gods, rituals, and legends
-- [ ] Feature 22: Recurring motif and symbol tracking across longform works
-- [ ] Feature 23: Auto-canon enforcer for serialized story coherence
-- [ ] Feature 24: AI-powered villain depth analyzer (sympathy, backstory, and flaw balance)
-- [ ] Feature 25: One-click AI storyboarding for video, audio, or comic adaptation
-- [ ] Feature 26: Lore hierarchy visualizer (map races → kingdoms → myth → artifacts)
-- [ ] Feature 27: Export-ready screenplay converter with character-cue tracking
+- [x] Feature 18: Dynamic cast builder for ensemble and rotating POV books
+- [x] Feature 19: Character growth tracker visualized over a story arc timeline
+- [x] Feature 20: Tone adaptation tool: rewrite any chapter in noir, epic, or whimsical style
+- [x] Feature 21: Mythology generator for fantasy worlds including gods, rituals, and legends
+- [x] Feature 22: Recurring motif and symbol tracking across longform works
+- [x] Feature 23: Auto-canon enforcer for serialized story coherence
+- [x] Feature 24: AI-powered villain depth analyzer (sympathy, backstory, and flaw balance)
+- [x] Feature 25: One-click AI storyboarding for video, audio, or comic adaptation
+- [x] Feature 26: Lore hierarchy visualizer (map races → kingdoms → myth → artifacts)
+- [x] Feature 27: Export-ready screenplay converter with character-cue tracking
 - [ ] Feature 28: Prose-to-dialogue converter with pacing-based speaker mapping
 - [ ] Feature 29: Interactive character interviews to deepen voice and dialogue
 - [ ] Feature 30: Scene breach alert: genre or world logic violations detection
