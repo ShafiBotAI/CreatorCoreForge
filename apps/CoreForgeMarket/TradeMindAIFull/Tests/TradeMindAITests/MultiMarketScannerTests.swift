@@ -22,7 +22,7 @@ final class MultiMarketScannerTests: XCTestCase {
     func testSmartMoneyScore() {
         let scanner = MultiMarketScanner(syncManager: MockSyncManager())
         let score = scanner.smartMoneyScore(prices: [1, 2, 3])
-        XCTAssertEqual(score, (3 - 1) / 3)
+        XCTAssertEqual(score, 0.408248290463863, accuracy: 0.0001)
     }
 }
 

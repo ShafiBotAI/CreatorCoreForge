@@ -7,14 +7,21 @@ public enum TitanError: Error {
 
 /// Adaptive forecasting engine using an exponential moving average.
 public final class TitanEngine {
+    public enum Algorithm {
+        case ema
+        case sma
+    }
+
     private var history: [Double] = []
     private let smoothing: Double
     private let maxHistory: Int
+    private let algorithm: Algorithm
     private let queue = DispatchQueue(label: "TradeMindAI.TitanEngine")
 
-    public init(smoothing: Double = 0.3, maxHistory: Int = 100) {
+    public init(smoothing: Double = 0.3, maxHistory: Int = 100, algorithm: Algorithm = .ema) {
         self.smoothing = smoothing
         self.maxHistory = maxHistory
+        self.algorithm = algorithm
     }
 
     /// Record a new price entry and keep history within bounds.
@@ -32,15 +39,21 @@ public final class TitanEngine {
         queue.sync { history.removeAll() }
     }
 
-    /// Returns the next predicted value using EMA of the logged prices.
+    /// Returns the next predicted value using the selected algorithm.
     public func forecastNext() -> Double? {
         queue.sync {
             guard !history.isEmpty else { return nil }
-            var ema = history[0]
-            for value in history.dropFirst() {
-                ema = smoothing * value + (1 - smoothing) * ema
+            switch algorithm {
+            case .ema:
+                var ema = history[0]
+                for value in history.dropFirst() {
+                    ema = smoothing * value + (1 - smoothing) * ema
+                }
+                return ema
+            case .sma:
+                let sum = history.reduce(0, +)
+                return sum / Double(history.count)
             }
-            return ema
         }
     }
 
