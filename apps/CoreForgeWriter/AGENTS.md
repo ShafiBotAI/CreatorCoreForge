@@ -279,26 +279,26 @@ Key points from `README.md`:
 - [x] Feature 125: One-click AI storyboarding for video, audio, or comic adaptation
 - [x] Feature 126: Lore hierarchy visualizer (map races → kingdoms → myth → artifacts)
 - [x] Feature 127: Export-ready screenplay converter with character-cue tracking
-- [ ] Feature 128: Prose-to-dialogue converter with pacing-based speaker mapping
-- [ ] Feature 129: Interactive character interviews to deepen voice and dialogue
-- [ ] Feature 130: Scene breach alert: genre or world logic violations detection
-- [ ] Feature 131: Offline creative sandbox with encrypted save options
-- [ ] Feature 132: Publishing simulator to preview metadata, blurbs, and mock sales
-- [ ] Feature 133: Self-publishing toolkit: ISBN, EPUB, PDF, MOBI auto-export
-- [ ] Feature 134: Fan mode: convert book into lore wiki structure
-- [ ] Feature 135: Time travel loop tracker with paradox alerts
-- [ ] Feature 136: Dream generator for surreal storytelling layers
-- [ ] Feature 137: AI-driven antagonist arc generator with redeemability scoring
-- [ ] Feature 138: Author branding toolkit: tone, themes, tagline consistency check
-- [ ] Feature 139: Voice dictation with emotion capture and ambient mode
-- [ ] Feature 140: Scene-by-scene reader poll system with live results dashboard
-- [ ] Feature 141: Choice-path story mode: branching scenes for interactive fiction
-- [ ] Feature 142: Smart rewrite engine to convert style (YA to adult, novel to script)
-- [ ] Feature 143: Multilingual scene generation with idiom and culture adaptation
-- [ ] Feature 144: Cover generator: AI-blended art and typography for publishing
-- [ ] Feature 145: Audiobook tone adjuster for CoreForge Audio export compatibility
-- [ ] Feature 146: One-click export to CoreForge Visual for full cinematic conversion
-- [ ] Feature 147: Multiverse export kit: visual, audio, and story metadata bundled
+- [x] Feature 128: Prose-to-dialogue converter with pacing-based speaker mapping
+- [x] Feature 129: Interactive character interviews to deepen voice and dialogue
+- [x] Feature 130: Scene breach alert: genre or world logic violations detection
+- [x] Feature 131: Offline creative sandbox with encrypted save options
+- [x] Feature 132: Publishing simulator to preview metadata, blurbs, and mock sales
+- [x] Feature 133: Self-publishing toolkit: ISBN, EPUB, PDF, MOBI auto-export
+- [x] Feature 134: Fan mode: convert book into lore wiki structure
+- [x] Feature 135: Time travel loop tracker with paradox alerts
+- [x] Feature 136: Dream generator for surreal storytelling layers
+- [x] Feature 137: AI-driven antagonist arc generator with redeemability scoring
+- [x] Feature 138: Author branding toolkit: tone, themes, tagline consistency check
+- [x] Feature 139: Voice dictation with emotion capture and ambient mode
+- [x] Feature 140: Scene-by-scene reader poll system with live results dashboard
+- [x] Feature 141: Choice-path story mode: branching scenes for interactive fiction
+- [x] Feature 142: Smart rewrite engine to convert style (YA to adult, novel to script)
+- [x] Feature 143: Multilingual scene generation with idiom and culture adaptation
+- [x] Feature 144: Cover generator: AI-blended art and typography for publishing
+- [x] Feature 145: Audiobook tone adjuster for CoreForge Audio export compatibility
+- [x] Feature 146: One-click export to CoreForge Visual for full cinematic conversion
+- [x] Feature 147: Multiverse export kit: visual, audio, and story metadata bundled
 - [ ] Feature 148: Beta reader simulator: critique generation by style archetype
 - [ ] Feature 149: Dynamic pacing visualizer with chapter and series overlays
 - [ ] Feature 150: Custom LLM tuning per author for ultra-consistent tone
