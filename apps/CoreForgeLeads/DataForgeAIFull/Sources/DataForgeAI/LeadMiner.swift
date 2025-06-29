@@ -65,8 +65,22 @@ public final class LeadMiner {
                     enriched.firmographics["logo"] = logo
                 }
             }
+            // Inject additional info such as funding and tech stack using a simple lookup
+            let extras = self.fetchAdditionalInfo(for: lead.company)
+            for (key, value) in extras {
+                enriched.firmographics[key] = value
+            }
             completion(enriched)
         }.resume()
+    }
+
+    /// Return stubbed additional info for a company.
+    private func fetchAdditionalInfo(for company: String) -> [String: String] {
+        let sample: [String: [String: String]] = [
+            "Acme": ["funding": "$5M", "tech": "Swift"],
+            "Beta": ["funding": "$10M", "tech": "Kotlin"]
+        ]
+        return sample[company] ?? [:]
     }
 
     /// Asynchronously enrich a lead using async/await.

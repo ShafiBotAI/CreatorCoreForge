@@ -25,8 +25,9 @@ final class NewFeaturesTests: XCTestCase {
     func testFollowUpEngine() {
         let engine = FollowUpEngine()
         let lead = Lead(name: "A", email: "a@a.com", company: "Acme", industry: "Tech", region: "US")
-        engine.schedule(lead: lead, at: Date(timeIntervalSinceNow: -60))
+        engine.schedule(lead: lead, channel: .sms, at: Date(timeIntervalSinceNow: -60))
         let due = engine.dueFollowUps()
         XCTAssertEqual(due.count, 1)
+        XCTAssertEqual(due.first?.1, .sms)
     }
 }

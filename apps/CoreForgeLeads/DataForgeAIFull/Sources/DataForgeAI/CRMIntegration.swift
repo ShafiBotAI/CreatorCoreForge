@@ -4,18 +4,40 @@ import FoundationNetworking
 #endif
 
 /// Minimal CRM integration helper for uploading leads to a remote service.
+public enum CRMService {
+    case hubSpot, salesforce, zoho, pipedrive, custom(URL)
+
+    var baseURL: URL {
+        switch self {
+        case .hubSpot:
+            return URL(string: "https://api.hubapi.com")!
+        case .salesforce:
+            return URL(string: "https://api.salesforce.com")!
+        case .zoho:
+            return URL(string: "https://www.zohoapis.com")!
+        case .pipedrive:
+            return URL(string: "https://api.pipedrive.com")!
+        case .custom(let url):
+            return url
+        }
+    }
+}
+
 public final class CRMIntegration {
     private let baseURL: URL
     private let session: URLSession
     private let apiKey: String?
 
-    public init(baseURL: URL = URL(string: "https://crm.example.com")!,
+    public init(service: CRMService = .custom(URL(string: "https://crm.example.com")!),
                 apiKey: String? = nil,
                 session: URLSession = .shared) {
-        self.baseURL = baseURL
+        self.baseURL = service.baseURL
         self.session = session
         self.apiKey = apiKey
     }
+
+    /// Exposed endpoint for testing purposes.
+    public var endpoint: URL { baseURL }
 
     /// Upload a single lead record. Completion returns true on HTTP 200.
     public func uploadLead(_ lead: Lead, completion: @escaping (Bool) -> Void) {

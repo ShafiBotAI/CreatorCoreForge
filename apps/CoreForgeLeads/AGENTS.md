@@ -167,16 +167,16 @@ Key points from `README.md`:
  - [x] Feature 98: AI Copilot Chat to assist SDRs with real-time reply crafting
  - [x] Feature 99: Voice-to-lead dictation tool with mobile field agent sync
  - [x] Feature 100: One-click transfer to CoreForge Market for financial/VC leads
- - [ ] Feature 101: Predictive lead scoring using behavioral signals and firmographics
- - [ ] Feature 102: AI email outreach generator tailored to tone, product, and industry
- - [ ] Feature 103: Live intent signal monitoring from LinkedIn, G2, Reddit, and Twitter
- - [ ] Feature 104: AI-driven ICP (ideal customer profile) builder with dynamic filters
- - [ ] Feature 105: Automatic lead enrichment with company data, funding, and tech stack
- - [ ] Feature 106: DF Signal Fusion™: merges 1st/2nd/3rd party signals into one score
- - [ ] Feature 107: Real-time job change and org shift alerts for decision-makers
- - [ ] Feature 108: Lead marketplace to buy/sell verified leads by niche and intent
- - [ ] Feature 109: Smart follow-up engine with multi-channel sequencing
- - [ ] Feature 110: One-click CRM sync with HubSpot, Salesforce, Zoho, and Pipedrive
+ - [x] Feature 101: Predictive lead scoring using behavioral signals and firmographics
+ - [x] Feature 102: AI email outreach generator tailored to tone, product, and industry
+ - [x] Feature 103: Live intent signal monitoring from LinkedIn, G2, Reddit, and Twitter
+ - [x] Feature 104: AI-driven ICP (ideal customer profile) builder with dynamic filters
+ - [x] Feature 105: Automatic lead enrichment with company data, funding, and tech stack
+ - [x] Feature 106: DF Signal Fusion™: merges 1st/2nd/3rd party signals into one score
+ - [x] Feature 107: Real-time job change and org shift alerts for decision-makers
+ - [x] Feature 108: Lead marketplace to buy/sell verified leads by niche and intent
+ - [x] Feature 109: Smart follow-up engine with multi-channel sequencing
+ - [x] Feature 110: One-click CRM sync with HubSpot, Salesforce, Zoho, and Pipedrive
  - [ ] Feature 111: Lead generation Chrome extension for scraping any site or profile
  - [ ] Feature 112: AI-powered LinkedIn messaging assistant with tone optimization
  - [ ] Feature 113: Dynamic contact verification with bounce risk scoring
