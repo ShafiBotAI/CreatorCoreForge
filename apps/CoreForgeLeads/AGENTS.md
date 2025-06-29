@@ -107,16 +107,16 @@ Key points from `README.md`:
  - [x] Feature 38: VC/investor signal tool for founder lead lists
  - [x] Feature 39: Recruiter mode: AI targeting of job seekers or talent pipelines
  - [x] Feature 40: Healthcare, real estate, legal, SaaS-specific data filters
- - [ ] Feature 41: Real-time API access to leads for third-party SaaS tools
- - [ ] Feature 42: Campaign clone tool for duplicating best-performing sequences
- - [ ] Feature 43: Sales rep performance analytics tied to AI success metrics
- - [ ] Feature 44: Automatic merge of duplicate leads with similarity score threshold
- - [ ] Feature 45: Global currency support and multi-language outreach templates
- - [ ] Feature 46: Outreach delay optimization based on lead inbox engagement pattern
- - [ ] Feature 47: DF Score Heatmap across all running campaigns
- - [ ] Feature 48: AI Copilot Chat to assist SDRs with real-time reply crafting
- - [ ] Feature 49: Voice-to-lead dictation tool with mobile field agent sync
- - [ ] Feature 50: One-click transfer to CoreForge Market for financial/VC leads
+ - [x] Feature 41: Real-time API access to leads for third-party SaaS tools
+ - [x] Feature 42: Campaign clone tool for duplicating best-performing sequences
+ - [x] Feature 43: Sales rep performance analytics tied to AI success metrics
+ - [x] Feature 44: Automatic merge of duplicate leads with similarity score threshold
+ - [x] Feature 45: Global currency support and multi-language outreach templates
+ - [x] Feature 46: Outreach delay optimization based on lead inbox engagement pattern
+ - [x] Feature 47: DF Score Heatmap across all running campaigns
+ - [x] Feature 48: AI Copilot Chat to assist SDRs with real-time reply crafting
+ - [x] Feature 49: Voice-to-lead dictation tool with mobile field agent sync
+ - [x] Feature 50: One-click transfer to CoreForge Market for financial/VC leads
  - [ ] Feature 51: Predictive lead scoring using behavioral signals and firmographics
  - [ ] Feature 52: AI email outreach generator tailored to tone, product, and industry
  - [ ] Feature 53: Live intent signal monitoring from LinkedIn, G2, Reddit, and Twitter
