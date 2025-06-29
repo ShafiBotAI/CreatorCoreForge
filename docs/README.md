@@ -16,6 +16,7 @@ Additional guides and phase planning documents for the CreatorCoreForge ecosyste
 - `NextGenSpeech.md` – overview of offline speech synthesis and recognition
 - `AdaptiveDocScanner.md` – overview of the AI document scanner
 - `DocVideoScanner.md` – document and video scanning utilities
+- `PhotoPageSorter.md` – reorder scanned page images using OCR
 - `progress_bot.py` – calculates app progress from `OPEN_TASKS.md` and optionally suggests code using OpenAI.
 - `progress_bot.md` – additional usage notes for the progress bot script
  - `auto_code_bot.py` – generates placeholder code files for missing features. It now includes an offline mode, a `--upgrade-placeholders` option, and writes timestamped snippets to language folders under `output/`.
