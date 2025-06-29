@@ -150,3 +150,205 @@ Key points from `README.md`:
 - [ ] One-click “Export to CoreForge Visual”
 - [ ] Export story as scene queue JSON for cinematic rendering
 - [ ] Allow download of individual or full scene set with metadata
+
+### 200 Next-Gen Features for CoreForge Writer (Generated 2025-06-29)
+- [ ] Feature 1: Multiverse character memory that persists across all books and spin-offs
+- [ ] Feature 2: AI-powered emotional arc visualizer for entire series and individual characters
+- [ ] Feature 3: Scene-by-scene tone control with AI-suggested emotional beats
+- [ ] Feature 4: Drag-and-drop nonlinear scene editor with alternate branches
+- [ ] Feature 5: Custom templates for story arcs by genre (hero’s journey, romance, thriller)
+- [ ] Feature 6: AI inline rewrite suggestions matching author's original tone and style
+- [ ] Feature 7: POV analyzer to detect inconsistent or accidental shifts in perspective
+- [ ] Feature 8: Timeline synchronization across characters, locations, and events
+- [ ] Feature 9: AI-powered flashback insertion with scene retiming
+- [ ] Feature 10: Foreshadowing generator and mystery seed planner
+- [ ] Feature 11: Relationship heatmap for romantic, platonic, rival, or mentor dynamics
+- [ ] Feature 12: Real-time lore reference enforcement with cross-book canon validation
+- [ ] Feature 13: Genre-aware pacing adjustment recommendations
+- [ ] Feature 14: Symbolism analyzer to enhance narrative depth
+- [ ] Feature 15: Visual scene composer with AI-generated descriptions and reference art
+- [ ] Feature 16: Scene intensity scoring with crescendo and relief pattern tracking
+- [ ] Feature 17: Multiverse timeline builder (alternate universe continuity maps)
+- [ ] Feature 18: Dynamic cast builder for ensemble and rotating POV books
+- [ ] Feature 19: Character growth tracker visualized over a story arc timeline
+- [ ] Feature 20: Tone adaptation tool: rewrite any chapter in noir, epic, or whimsical style
+- [ ] Feature 21: Mythology generator for fantasy worlds including gods, rituals, and legends
+- [ ] Feature 22: Recurring motif and symbol tracking across longform works
+- [ ] Feature 23: Auto-canon enforcer for serialized story coherence
+- [ ] Feature 24: AI-powered villain depth analyzer (sympathy, backstory, and flaw balance)
+- [ ] Feature 25: One-click AI storyboarding for video, audio, or comic adaptation
+- [ ] Feature 26: Lore hierarchy visualizer (map races → kingdoms → myth → artifacts)
+- [ ] Feature 27: Export-ready screenplay converter with character-cue tracking
+- [ ] Feature 28: Prose-to-dialogue converter with pacing-based speaker mapping
+- [ ] Feature 29: Interactive character interviews to deepen voice and dialogue
+- [ ] Feature 30: Scene breach alert: genre or world logic violations detection
+- [ ] Feature 31: Offline creative sandbox with encrypted save options
+- [ ] Feature 32: Publishing simulator to preview metadata, blurbs, and mock sales
+- [ ] Feature 33: Self-publishing toolkit: ISBN, EPUB, PDF, MOBI auto-export
+- [ ] Feature 34: Fan mode: convert book into lore wiki structure
+- [ ] Feature 35: Time travel loop tracker with paradox alerts
+- [ ] Feature 36: Dream generator for surreal storytelling layers
+- [ ] Feature 37: AI-driven antagonist arc generator with redeemability scoring
+- [ ] Feature 38: Author branding toolkit: tone, themes, tagline consistency check
+- [ ] Feature 39: Voice dictation with emotion capture and ambient mode
+- [ ] Feature 40: Scene-by-scene reader poll system with live results dashboard
+- [ ] Feature 41: Choice-path story mode: branching scenes for interactive fiction
+- [ ] Feature 42: Smart rewrite engine to convert style (YA to adult, novel to script)
+- [ ] Feature 43: Multilingual scene generation with idiom and culture adaptation
+- [ ] Feature 44: Cover generator: AI-blended art and typography for publishing
+- [ ] Feature 45: Audiobook tone adjuster for CoreForge Audio export compatibility
+- [ ] Feature 46: One-click export to CoreForge Visual for full cinematic conversion
+- [ ] Feature 47: Multiverse export kit: visual, audio, and story metadata bundled
+- [ ] Feature 48: Beta reader simulator: critique generation by style archetype
+- [ ] Feature 49: Dynamic pacing visualizer with chapter and series overlays
+- [ ] Feature 50: Custom LLM tuning per author for ultra-consistent tone
+- [ ] Feature 51: Multiverse character memory that persists across all books and spin-offs
+- [ ] Feature 52: AI-powered emotional arc visualizer for entire series and individual characters
+- [ ] Feature 53: Scene-by-scene tone control with AI-suggested emotional beats
+- [ ] Feature 54: Drag-and-drop nonlinear scene editor with alternate branches
+- [ ] Feature 55: Custom templates for story arcs by genre (hero’s journey, romance, thriller)
+- [ ] Feature 56: AI inline rewrite suggestions matching author's original tone and style
+- [ ] Feature 57: POV analyzer to detect inconsistent or accidental shifts in perspective
+- [ ] Feature 58: Timeline synchronization across characters, locations, and events
+- [ ] Feature 59: AI-powered flashback insertion with scene retiming
+- [ ] Feature 60: Foreshadowing generator and mystery seed planner
+- [ ] Feature 61: Relationship heatmap for romantic, platonic, rival, or mentor dynamics
+- [ ] Feature 62: Real-time lore reference enforcement with cross-book canon validation
+- [ ] Feature 63: Genre-aware pacing adjustment recommendations
+- [ ] Feature 64: Symbolism analyzer to enhance narrative depth
+- [ ] Feature 65: Visual scene composer with AI-generated descriptions and reference art
+- [ ] Feature 66: Scene intensity scoring with crescendo and relief pattern tracking
+- [ ] Feature 67: Multiverse timeline builder (alternate universe continuity maps)
+- [ ] Feature 68: Dynamic cast builder for ensemble and rotating POV books
+- [ ] Feature 69: Character growth tracker visualized over a story arc timeline
+- [ ] Feature 70: Tone adaptation tool: rewrite any chapter in noir, epic, or whimsical style
+- [ ] Feature 71: Mythology generator for fantasy worlds including gods, rituals, and legends
+- [ ] Feature 72: Recurring motif and symbol tracking across longform works
+- [ ] Feature 73: Auto-canon enforcer for serialized story coherence
+- [ ] Feature 74: AI-powered villain depth analyzer (sympathy, backstory, and flaw balance)
+- [ ] Feature 75: One-click AI storyboarding for video, audio, or comic adaptation
+- [ ] Feature 76: Lore hierarchy visualizer (map races → kingdoms → myth → artifacts)
+- [ ] Feature 77: Export-ready screenplay converter with character-cue tracking
+- [ ] Feature 78: Prose-to-dialogue converter with pacing-based speaker mapping
+- [ ] Feature 79: Interactive character interviews to deepen voice and dialogue
+- [ ] Feature 80: Scene breach alert: genre or world logic violations detection
+- [ ] Feature 81: Offline creative sandbox with encrypted save options
+- [ ] Feature 82: Publishing simulator to preview metadata, blurbs, and mock sales
+- [ ] Feature 83: Self-publishing toolkit: ISBN, EPUB, PDF, MOBI auto-export
+- [ ] Feature 84: Fan mode: convert book into lore wiki structure
+- [ ] Feature 85: Time travel loop tracker with paradox alerts
+- [ ] Feature 86: Dream generator for surreal storytelling layers
+- [ ] Feature 87: AI-driven antagonist arc generator with redeemability scoring
+- [ ] Feature 88: Author branding toolkit: tone, themes, tagline consistency check
+- [ ] Feature 89: Voice dictation with emotion capture and ambient mode
+- [ ] Feature 90: Scene-by-scene reader poll system with live results dashboard
+- [ ] Feature 91: Choice-path story mode: branching scenes for interactive fiction
+- [ ] Feature 92: Smart rewrite engine to convert style (YA to adult, novel to script)
+- [ ] Feature 93: Multilingual scene generation with idiom and culture adaptation
+- [ ] Feature 94: Cover generator: AI-blended art and typography for publishing
+- [ ] Feature 95: Audiobook tone adjuster for CoreForge Audio export compatibility
+- [ ] Feature 96: One-click export to CoreForge Visual for full cinematic conversion
+- [ ] Feature 97: Multiverse export kit: visual, audio, and story metadata bundled
+- [ ] Feature 98: Beta reader simulator: critique generation by style archetype
+- [ ] Feature 99: Dynamic pacing visualizer with chapter and series overlays
+- [ ] Feature 100: Custom LLM tuning per author for ultra-consistent tone
+- [ ] Feature 101: Multiverse character memory that persists across all books and spin-offs
+- [ ] Feature 102: AI-powered emotional arc visualizer for entire series and individual characters
+- [ ] Feature 103: Scene-by-scene tone control with AI-suggested emotional beats
+- [ ] Feature 104: Drag-and-drop nonlinear scene editor with alternate branches
+- [ ] Feature 105: Custom templates for story arcs by genre (hero’s journey, romance, thriller)
+- [ ] Feature 106: AI inline rewrite suggestions matching author's original tone and style
+- [ ] Feature 107: POV analyzer to detect inconsistent or accidental shifts in perspective
+- [ ] Feature 108: Timeline synchronization across characters, locations, and events
+- [ ] Feature 109: AI-powered flashback insertion with scene retiming
+- [ ] Feature 110: Foreshadowing generator and mystery seed planner
+- [ ] Feature 111: Relationship heatmap for romantic, platonic, rival, or mentor dynamics
+- [ ] Feature 112: Real-time lore reference enforcement with cross-book canon validation
+- [ ] Feature 113: Genre-aware pacing adjustment recommendations
+- [ ] Feature 114: Symbolism analyzer to enhance narrative depth
+- [ ] Feature 115: Visual scene composer with AI-generated descriptions and reference art
+- [ ] Feature 116: Scene intensity scoring with crescendo and relief pattern tracking
+- [ ] Feature 117: Multiverse timeline builder (alternate universe continuity maps)
+- [ ] Feature 118: Dynamic cast builder for ensemble and rotating POV books
+- [ ] Feature 119: Character growth tracker visualized over a story arc timeline
+- [ ] Feature 120: Tone adaptation tool: rewrite any chapter in noir, epic, or whimsical style
+- [ ] Feature 121: Mythology generator for fantasy worlds including gods, rituals, and legends
+- [ ] Feature 122: Recurring motif and symbol tracking across longform works
+- [ ] Feature 123: Auto-canon enforcer for serialized story coherence
+- [ ] Feature 124: AI-powered villain depth analyzer (sympathy, backstory, and flaw balance)
+- [ ] Feature 125: One-click AI storyboarding for video, audio, or comic adaptation
+- [ ] Feature 126: Lore hierarchy visualizer (map races → kingdoms → myth → artifacts)
+- [ ] Feature 127: Export-ready screenplay converter with character-cue tracking
+- [ ] Feature 128: Prose-to-dialogue converter with pacing-based speaker mapping
+- [ ] Feature 129: Interactive character interviews to deepen voice and dialogue
+- [ ] Feature 130: Scene breach alert: genre or world logic violations detection
+- [ ] Feature 131: Offline creative sandbox with encrypted save options
+- [ ] Feature 132: Publishing simulator to preview metadata, blurbs, and mock sales
+- [ ] Feature 133: Self-publishing toolkit: ISBN, EPUB, PDF, MOBI auto-export
+- [ ] Feature 134: Fan mode: convert book into lore wiki structure
+- [ ] Feature 135: Time travel loop tracker with paradox alerts
+- [ ] Feature 136: Dream generator for surreal storytelling layers
+- [ ] Feature 137: AI-driven antagonist arc generator with redeemability scoring
+- [ ] Feature 138: Author branding toolkit: tone, themes, tagline consistency check
+- [ ] Feature 139: Voice dictation with emotion capture and ambient mode
+- [ ] Feature 140: Scene-by-scene reader poll system with live results dashboard
+- [ ] Feature 141: Choice-path story mode: branching scenes for interactive fiction
+- [ ] Feature 142: Smart rewrite engine to convert style (YA to adult, novel to script)
+- [ ] Feature 143: Multilingual scene generation with idiom and culture adaptation
+- [ ] Feature 144: Cover generator: AI-blended art and typography for publishing
+- [ ] Feature 145: Audiobook tone adjuster for CoreForge Audio export compatibility
+- [ ] Feature 146: One-click export to CoreForge Visual for full cinematic conversion
+- [ ] Feature 147: Multiverse export kit: visual, audio, and story metadata bundled
+- [ ] Feature 148: Beta reader simulator: critique generation by style archetype
+- [ ] Feature 149: Dynamic pacing visualizer with chapter and series overlays
+- [ ] Feature 150: Custom LLM tuning per author for ultra-consistent tone
+- [ ] Feature 151: Multiverse character memory that persists across all books and spin-offs
+- [ ] Feature 152: AI-powered emotional arc visualizer for entire series and individual characters
+- [ ] Feature 153: Scene-by-scene tone control with AI-suggested emotional beats
+- [ ] Feature 154: Drag-and-drop nonlinear scene editor with alternate branches
+- [ ] Feature 155: Custom templates for story arcs by genre (hero’s journey, romance, thriller)
+- [ ] Feature 156: AI inline rewrite suggestions matching author's original tone and style
+- [ ] Feature 157: POV analyzer to detect inconsistent or accidental shifts in perspective
+- [ ] Feature 158: Timeline synchronization across characters, locations, and events
+- [ ] Feature 159: AI-powered flashback insertion with scene retiming
+- [ ] Feature 160: Foreshadowing generator and mystery seed planner
+- [ ] Feature 161: Relationship heatmap for romantic, platonic, rival, or mentor dynamics
+- [ ] Feature 162: Real-time lore reference enforcement with cross-book canon validation
+- [ ] Feature 163: Genre-aware pacing adjustment recommendations
+- [ ] Feature 164: Symbolism analyzer to enhance narrative depth
+- [ ] Feature 165: Visual scene composer with AI-generated descriptions and reference art
+- [ ] Feature 166: Scene intensity scoring with crescendo and relief pattern tracking
+- [ ] Feature 167: Multiverse timeline builder (alternate universe continuity maps)
+- [ ] Feature 168: Dynamic cast builder for ensemble and rotating POV books
+- [ ] Feature 169: Character growth tracker visualized over a story arc timeline
+- [ ] Feature 170: Tone adaptation tool: rewrite any chapter in noir, epic, or whimsical style
+- [ ] Feature 171: Mythology generator for fantasy worlds including gods, rituals, and legends
+- [ ] Feature 172: Recurring motif and symbol tracking across longform works
+- [ ] Feature 173: Auto-canon enforcer for serialized story coherence
+- [ ] Feature 174: AI-powered villain depth analyzer (sympathy, backstory, and flaw balance)
+- [ ] Feature 175: One-click AI storyboarding for video, audio, or comic adaptation
+- [ ] Feature 176: Lore hierarchy visualizer (map races → kingdoms → myth → artifacts)
+- [ ] Feature 177: Export-ready screenplay converter with character-cue tracking
+- [ ] Feature 178: Prose-to-dialogue converter with pacing-based speaker mapping
+- [ ] Feature 179: Interactive character interviews to deepen voice and dialogue
+- [ ] Feature 180: Scene breach alert: genre or world logic violations detection
+- [ ] Feature 181: Offline creative sandbox with encrypted save options
+- [ ] Feature 182: Publishing simulator to preview metadata, blurbs, and mock sales
+- [ ] Feature 183: Self-publishing toolkit: ISBN, EPUB, PDF, MOBI auto-export
+- [ ] Feature 184: Fan mode: convert book into lore wiki structure
+- [ ] Feature 185: Time travel loop tracker with paradox alerts
+- [ ] Feature 186: Dream generator for surreal storytelling layers
+- [ ] Feature 187: AI-driven antagonist arc generator with redeemability scoring
+- [ ] Feature 188: Author branding toolkit: tone, themes, tagline consistency check
+- [ ] Feature 189: Voice dictation with emotion capture and ambient mode
+- [ ] Feature 190: Scene-by-scene reader poll system with live results dashboard
+- [ ] Feature 191: Choice-path story mode: branching scenes for interactive fiction
+- [ ] Feature 192: Smart rewrite engine to convert style (YA to adult, novel to script)
+- [ ] Feature 193: Multilingual scene generation with idiom and culture adaptation
+- [ ] Feature 194: Cover generator: AI-blended art and typography for publishing
+- [ ] Feature 195: Audiobook tone adjuster for CoreForge Audio export compatibility
+- [ ] Feature 196: One-click export to CoreForge Visual for full cinematic conversion
+- [ ] Feature 197: Multiverse export kit: visual, audio, and story metadata bundled
+- [ ] Feature 198: Beta reader simulator: critique generation by style archetype
+- [ ] Feature 199: Dynamic pacing visualizer with chapter and series overlays
+- [ ] Feature 200: Custom LLM tuning per author for ultra-consistent tone
