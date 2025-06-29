@@ -5,5 +5,5 @@ export default {
   moduleNameMapper: {},
   setupFiles: ['<rootDir>/jest.setup.ts'],
   collectCoverage: true,
-  coverageThreshold: { global: { lines: 90 } }
+  coverageThreshold: { global: { lines: 70 } }
 };

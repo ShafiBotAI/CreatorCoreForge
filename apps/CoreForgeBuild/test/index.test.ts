@@ -193,4 +193,5 @@ import { ParseHistory } from '../services/ParseHistory';
   require('./formbuilder.test');
   require('./localization.test');
   require('./formexport.test');
+  require('./wcag.test');
 })();
