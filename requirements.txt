@@ -2,3 +2,4 @@
 pydub==0.25.1
 torch==2.2.2+cpu
 hypothesis==6.98.1
+coverage==7.5.0
