@@ -94,7 +94,7 @@ public final class NSFWHabitBehaviorSimulator {
                 }
             }
         }
-        return ""
+        return nil
     }
 
     public func clearHabits(for character: String? = nil) {

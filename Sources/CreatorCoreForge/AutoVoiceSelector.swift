@@ -40,14 +40,14 @@ public struct AutoVoiceSelector {
 
     private static func guessAccent(in text: String) -> MultiLanguageAccentNarrator.VoiceAccent {
         let lower = text.lowercased()
-        if lower.contains("british") || lower.contains("london") || lower.contains("england") {
-            return .british
-        }
         if lower.contains("french") || lower.contains("paris") || lower.contains("france") {
             return .french
         }
         if lower.contains("german") || lower.contains("berlin") || lower.contains("germany") {
             return .german
+        }
+        if lower.contains("british") || lower.contains("london") || lower.contains("england") {
+            return .british
         }
         if lower.contains("italian") || lower.contains("rome") || lower.contains("italy") {
             return .italian

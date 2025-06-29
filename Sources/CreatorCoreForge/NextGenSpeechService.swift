@@ -18,7 +18,8 @@ public final class NextGenSpeechService {
     /// Naively recognize speech from raw data. If the data is valid UTF-8, the
     /// decoded string is returned. Otherwise a simple loud/soft label is used.
     public func recognize(_ data: Data) -> String {
-        if let text = String(data: data, encoding: .utf8), !text.isEmpty {
+        if let text = String(data: data, encoding: .utf8),
+           text.rangeOfCharacter(from: .controlCharacters.inverted) != nil {
             return text
         }
         let avg = data.reduce(0) { $0 + Int($1) } / max(data.count, 1)
