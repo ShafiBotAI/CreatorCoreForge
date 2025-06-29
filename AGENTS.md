@@ -281,10 +281,10 @@ This document details all AI agent capabilities, engine modules, and next-genera
 - [x] Translate creator notes and project metadata for global collaboration
 - [x] Provide multilingual visual cue glossary with usage examples
 - [x] Preserve scene framing consistency across languages
-- [ ] Embed language metadata in export files for platform distribution
-- [ ] Enable automatic rendering of multiple language versions at once
-- [ ] Support multi-book narrative sync for localized arcs
-- [ ] Cross-link translated memory arcs and character expressions over series
+- [x] Embed language metadata in export files for platform distribution
+- [x] Enable automatic rendering of multiple language versions at once
+- [x] Support multi-book narrative sync for localized arcs
+- [x] Cross-link translated memory arcs and character expressions over series
 
 ### Phase 9 – Full-Cast Mastering, Scene Intelligence & Creator Studio Tools
 - [x] Export each character's voice and animation to separate tracks for post-editing
@@ -307,8 +307,8 @@ This document details all AI agent capabilities, engine modules, and next-genera
 - [x] Support beta tools: voice fingerprint preview, animation merge tester
 - [x] Bundle scene elements into shareable .cvsx format (CoreForge Scene Exchange)
 - [x] Provide Creator Control Panel for full preview/edit of visual/audio logic
-- [ ] Enable collaborative comments and timeline feedback from teams
-- [ ] Simulate full-cast rehearsal playback for pacing checks and scene balance
+- [x] Enable collaborative comments and timeline feedback from teams
+- [x] Simulate full-cast rehearsal playback for pacing checks and scene balance
 ---
 
 ## CoreForge Writer (Books, Scripts, Stories, Copy)
