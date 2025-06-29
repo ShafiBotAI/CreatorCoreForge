@@ -157,16 +157,16 @@ Key points from `README.md`:
  - [ ] Feature 88: VC/investor signal tool for founder lead lists
  - [ ] Feature 89: Recruiter mode: AI targeting of job seekers or talent pipelines
  - [ ] Feature 90: Healthcare, real estate, legal, SaaS-specific data filters
- - [ ] Feature 91: Real-time API access to leads for third-party SaaS tools
- - [ ] Feature 92: Campaign clone tool for duplicating best-performing sequences
- - [ ] Feature 93: Sales rep performance analytics tied to AI success metrics
- - [ ] Feature 94: Automatic merge of duplicate leads with similarity score threshold
- - [ ] Feature 95: Global currency support and multi-language outreach templates
- - [ ] Feature 96: Outreach delay optimization based on lead inbox engagement pattern
- - [ ] Feature 97: DF Score Heatmap across all running campaigns
- - [ ] Feature 98: AI Copilot Chat to assist SDRs with real-time reply crafting
- - [ ] Feature 99: Voice-to-lead dictation tool with mobile field agent sync
- - [ ] Feature 100: One-click transfer to CoreForge Market for financial/VC leads
+ - [x] Feature 91: Real-time API access to leads for third-party SaaS tools
+ - [x] Feature 92: Campaign clone tool for duplicating best-performing sequences
+ - [x] Feature 93: Sales rep performance analytics tied to AI success metrics
+ - [x] Feature 94: Automatic merge of duplicate leads with similarity score threshold
+ - [x] Feature 95: Global currency support and multi-language outreach templates
+ - [x] Feature 96: Outreach delay optimization based on lead inbox engagement pattern
+ - [x] Feature 97: DF Score Heatmap across all running campaigns
+ - [x] Feature 98: AI Copilot Chat to assist SDRs with real-time reply crafting
+ - [x] Feature 99: Voice-to-lead dictation tool with mobile field agent sync
+ - [x] Feature 100: One-click transfer to CoreForge Market for financial/VC leads
  - [ ] Feature 101: Predictive lead scoring using behavioral signals and firmographics
  - [ ] Feature 102: AI email outreach generator tailored to tone, product, and industry
  - [ ] Feature 103: Live intent signal monitoring from LinkedIn, G2, Reddit, and Twitter

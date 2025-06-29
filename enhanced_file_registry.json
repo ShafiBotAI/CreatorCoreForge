@@ -18,6 +18,17 @@
     "open_tasks_registry.json",
     "AGENTS.md",
     "Sources/CreatorCoreForge/HeroSpotlightBackground.swift",
-    "Tests/CreatorCoreForgeTests/HeroSpotlightBackgroundTests.swift"
+    "Tests/CreatorCoreForgeTests/HeroSpotlightBackgroundTests.swift",
+    "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/LeadsAPIService.swift",
+    "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/CampaignCloner.swift",
+    "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/SalesPerformanceAnalytics.swift",
+    "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/DuplicateLeadMerger.swift",
+    "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/GlobalCurrencySupport.swift",
+    "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/OutreachDelayOptimizer.swift",
+    "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/DFScoreHeatmap.swift",
+    "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/AICopilotChat.swift",
+    "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/VoiceLeadDictation.swift",
+    "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/MarketTransferService.swift",
+    "apps/CoreForgeLeads/DataForgeAIFull/Tests/DataForgeAITests/Feature91to100Tests.swift"
   ]
 }
