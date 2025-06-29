@@ -1520,6 +1520,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF6BECAF43DCC877C62E12C7 /* Build configuration list for PBXNativeTarget "CoreForgeAudioApp" */;
 			buildPhases = (
+                                ADA95B927A88C5E36AF4C26F /* SwiftLint */,
 				D6B5C26D797BAC58485B8291 /* Sources */,
 				C489D003A21DBBAAD52349C8 /* Frameworks */,
 				63E4AF0BB5FA50695E8D0774 /* Resources */,
@@ -2065,6 +2066,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+/* Begin PBXShellScriptBuildPhase section */
+                ADA95B927A88C5E36AF4C26F /* SwiftLint */ = {
+                        isa = PBXShellScriptBuildPhase;
+                        shellScript = "bash ${PROJECT_DIR}/scripts/run_swiftlint.sh";
+                        showEnvVarsInLog = 0;
+                };
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		0BDBD9C21DB1CC13B69D281F /* Release */ = {
