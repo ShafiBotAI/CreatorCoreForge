@@ -13,10 +13,11 @@ vault system. It is written in SwiftUI and will expand to additional platforms.
 - **Offline audio storage** with stealth vault option
 - **Offline download queue management**
 - **Sleep Read Mode** with fade-out timer
-- **Dynamic emotion cues** with `AIEmotionEngine`
-- **Import ePub, PDF, and TXT files** via `EbookImporter`
-- **Video sharing** to social networks
-- **NSFW content manager** to log and filter explicit scenes
+ - **Dynamic emotion cues** with `AIEmotionEngine`
+ - **Import ePub, PDF, and TXT files** via `EbookImporter`
+ - **Google and Apple account login support** for quick sign in
+ - **Video sharing** to social networks
+ - **NSFW content manager** to log and filter explicit scenes
 - **NSFW habit behavior simulator** for character-specific response sounds
 
 - **Audiobook compilation** with `AudiobookCompiler` for zipped exports
