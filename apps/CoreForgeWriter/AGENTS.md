@@ -147,18 +147,18 @@ Key points from `README.md`:
 - [x] Alternate endings tool: propose 3 paths per scene
 
 ## \U0001F501 Export + Cross-Platform Integration
-- [ ] One-click “Export to CoreForge Visual”
-- [ ] Export story as scene queue JSON for cinematic rendering
-- [ ] Allow download of individual or full scene set with metadata
+- [x] One-click “Export to CoreForge Visual”
+- [x] Export story as scene queue JSON for cinematic rendering
+- [x] Allow download of individual or full scene set with metadata
 
 ### 200 Next-Gen Features for CoreForge Writer (Generated 2025-06-29)
-- [ ] Feature 1: Multiverse character memory that persists across all books and spin-offs
-- [ ] Feature 2: AI-powered emotional arc visualizer for entire series and individual characters
-- [ ] Feature 3: Scene-by-scene tone control with AI-suggested emotional beats
-- [ ] Feature 4: Drag-and-drop nonlinear scene editor with alternate branches
-- [ ] Feature 5: Custom templates for story arcs by genre (hero’s journey, romance, thriller)
-- [ ] Feature 6: AI inline rewrite suggestions matching author's original tone and style
-- [ ] Feature 7: POV analyzer to detect inconsistent or accidental shifts in perspective
+- [x] Feature 1: Multiverse character memory that persists across all books and spin-offs
+- [x] Feature 2: AI-powered emotional arc visualizer for entire series and individual characters
+- [x] Feature 3: Scene-by-scene tone control with AI-suggested emotional beats
+- [x] Feature 4: Drag-and-drop nonlinear scene editor with alternate branches
+- [x] Feature 5: Custom templates for story arcs by genre (hero’s journey, romance, thriller)
+- [x] Feature 6: AI inline rewrite suggestions matching author's original tone and style
+- [x] Feature 7: POV analyzer to detect inconsistent or accidental shifts in perspective
 - [ ] Feature 8: Timeline synchronization across characters, locations, and events
 - [ ] Feature 9: AI-powered flashback insertion with scene retiming
 - [ ] Feature 10: Foreshadowing generator and mystery seed planner
