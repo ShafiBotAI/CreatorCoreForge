@@ -11,5 +11,12 @@
     "lint": "./scripts/run_eslint.sh",
     "format": "prettier --write '**/*.{ts,tsx,js,json,md}'",
     "coverage": "npm run coverage --workspaces"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "prettier": "^3.2.5",
+    "eslint-config-prettier": "^9.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0"
   }
 }

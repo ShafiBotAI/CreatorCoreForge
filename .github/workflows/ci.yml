@@ -18,6 +18,8 @@ jobs:
         run: npm ci
       - name: Lint JS
         run: ./scripts/run_eslint.sh
+      - name: TypeScript Type Checks
+        run: ./scripts/run_ts_type_checks.sh
       - name: Scaffold Jest Tests
         run: ./scripts/scaffold_jest_tests.sh src/index.ts || true
       - name: Run Jest
