@@ -434,3 +434,15 @@ Use `./scripts/fetch_audiobookshelf.sh` to clone or update the [audiobookshelf](
 
 After fetching the repository, you can leverage VoiceLab's `runN8nAssistant` helper to experiment with n8n-inspired AI workflows locally.
 
+## Exporting CoreForge Audio
+
+To create a standalone repository containing only the CoreForge Audio app and
+shared Swift sources, run:
+
+```bash
+./scripts/export_coreforge_audio_repo.sh /path/to/CoreForgeAudio
+```
+
+This copies `apps/CoreForgeAudio`, the `Sources` directory and `Package.swift`
+into the specified folder and initializes a fresh git repository.
+
