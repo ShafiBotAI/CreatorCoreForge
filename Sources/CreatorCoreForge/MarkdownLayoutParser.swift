@@ -44,7 +44,6 @@ public struct MarkdownLayoutParser {
                 return .layout(columns: cols, description: String(line[descRange]))
             }
         }
-        // Default to a single column layout when no markers are found
-        return .layout(columns: 1, description: "auto")
+        return nil
     }
 }

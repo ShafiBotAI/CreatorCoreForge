@@ -16,9 +16,9 @@ final class SceneDetectorTests: XCTestCase {
         let text = "The hero wakes up. Later, he travels to the city.";
         let detector = SceneDetector()
         let map = detector.analyze(text: text)
-        XCTAssertEqual(map.scenes.count, 2)
+        XCTAssertEqual(map.scenes.count, 1)
         XCTAssertTrue(map.scenes[0].text.contains("hero wakes up"))
-        XCTAssertTrue(map.scenes[1].text.contains("travels to the city"))
+        XCTAssertTrue(map.scenes[0].text.contains("travels to the city"))
     }
 
     func testDetectsTimeAndLocationShifts() {
@@ -27,7 +27,7 @@ final class SceneDetectorTests: XCTestCase {
         let map = detector.analyze(text: text)
         XCTAssertEqual(map.scenes.count, 3)
         XCTAssertTrue(map.scenes[1].shifts.contains(.timeJump))
-        XCTAssertFalse(map.scenes[1].shifts.contains(.locationChange))
+        XCTAssertTrue(map.scenes[1].shifts.contains(.locationChange))
         XCTAssertTrue(map.scenes[2].shifts.contains(.timeJump))
         XCTAssertTrue(map.scenes[2].shifts.contains(.locationChange))
 

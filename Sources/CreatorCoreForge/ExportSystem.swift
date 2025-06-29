@@ -29,6 +29,9 @@ public final class ExportSystem {
     /// Stream audio data to disk as it arrives and return the final file URL.
     @available(macOS 12.0, iOS 15.0, *)
     public func exportLive<S: AsyncSequence>(_ stream: S, to url: URL) async throws -> URL where S.Element == Data {
+        if !FileManager.default.fileExists(atPath: url.path) {
+            FileManager.default.createFile(atPath: url.path, contents: nil)
+        }
         let handle = try FileHandle(forWritingTo: url)
         for try await chunk in stream {
             try handle.write(contentsOf: chunk)

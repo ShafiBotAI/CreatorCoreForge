@@ -16,11 +16,7 @@ public final class NetworkMonitor {
     private var overrideActive = false
 
     public var isConnected: Bool {
-        #if canImport(Network)
         return _isConnected
-        #else
-        return true
-        #endif
     }
 
     /// Overrides the connection status for unit tests.

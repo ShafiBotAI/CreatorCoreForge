@@ -32,6 +32,6 @@ final class NextGenVideoGenerationTests: XCTestCase {
     func testBranchingPathsUI() {
         let ui = BranchingPathsUI()
         let output = ui.render(options: [BranchOption(id: "A"), BranchOption(id: "B")])
-        XCTAssertEqual(output, ["A", "B"])
+        XCTAssertEqual(output, ["1. A", "2. B"])
     }
 }

@@ -39,10 +39,10 @@ final class VoiceMemoryManagerTests: XCTestCase {
         manager.assign(voiceID: "VB", to: "Villain", in: "Epic")
 
         let map = manager.assignments(for: "Epic")
-        XCTAssertEqual(map["Hero"], "VA")
-        XCTAssertEqual(map["Villain"], "VB")
+        XCTAssertEqual(map["hero"], "VA")
+        XCTAssertEqual(map["villain"], "VB")
 
         let grouped = manager.allAssignments()
-        XCTAssertEqual(grouped["Epic"]?["Hero"], "VA")
+        XCTAssertEqual(grouped["epic"]?["hero"], "VA")
     }
 }

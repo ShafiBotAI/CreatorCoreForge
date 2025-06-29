@@ -16,11 +16,13 @@ final class CoreForgeAudioModulePresenceTests: XCTestCase {
     }
 
     func testMemoryEngine() {
-        let mem = MemoryEngine()
+        let suiteName = UUID().uuidString
+        let mem = MemoryEngine(character: CharacterMemoryEngine(), visual: VisualMemoryEngine(store: UserDefaults(suiteName: suiteName)!))
         mem.rememberTrait("mood", value: "happy", character: "Ann")
         XCTAssertEqual(mem.trait("mood", for: "Ann"), "happy")
         mem.addFrame("f1", project: "p1")
         XCTAssertEqual(mem.frames(for: "p1"), ["f1"])
+        UserDefaults().removePersistentDomain(forName: suiteName)
     }
 
     func testOfflineQueue() {
