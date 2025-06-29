@@ -65,4 +65,75 @@ final class WriterFeatureTests: XCTestCase {
         XCTAssertTrue(result.contains("Scene 1"))
         XCTAssertTrue(result.contains("Scene 2"))
     }
+
+    func testTimelineSynchronizer() {
+        let syncer = TimelineSynchronizer()
+        let result = syncer.synchronize(characters: ["A": [0]],
+                                        locations: ["X": [0]],
+                                        events: ["Start": [0]])
+        XCTAssertEqual(result[0]?.count, 3)
+    }
+
+    func testFlashbackEngine() {
+        var timeline: [SceneNode] = [
+            SceneNode(text: "One", tone: .neutral, characters: [], timestamp: 0),
+            SceneNode(text: "Two", tone: .neutral, characters: [], timestamp: 1)
+        ]
+        var engine = FlashbackEngine()
+        engine.insertFlashback(scene: SceneNode(text: "Past", tone: .neutral, characters: [], timestamp: 0),
+                               at: 1,
+                               timeline: &timeline)
+        XCTAssertEqual(timeline.count, 3)
+        XCTAssertTrue(timeline[1].text.hasPrefix("[Flashback]"))
+        XCTAssertEqual(timeline[2].timestamp, 2)
+    }
+
+    func testForeshadowingPlanner() {
+        let planner = ForeshadowingPlanner()
+        let hints = planner.generateSeeds(from: ["The hero will fall into darkness"])
+        XCTAssertTrue(hints.first?.contains("The hero will") ?? false)
+    }
+
+    func testRelationshipHeatmap() {
+        let map = RelationshipHeatmap()
+        map.record(.romantic, between: "A", and: "B")
+        map.record(.romantic, between: "A", and: "B")
+        XCTAssertEqual(map.strength(.romantic, pair: ("A", "B")), 2)
+    }
+
+    func testLoreReferenceEnforcer() {
+        let enforcer = LoreReferenceEnforcer()
+        let missing = enforcer.missingReferences(in: "The prophecy speaks", required: ["prophecy", "legend"])
+        XCTAssertEqual(missing, ["legend"])
+    }
+
+    func testPacingAdvisor() {
+        let advisor = PacingAdvisor()
+        let rec = advisor.recommend(wordCount: 300, genre: "thriller")
+        XCTAssertTrue(rec.contains("shortening"))
+    }
+
+    func testSymbolismAnalyzer() {
+        let analyzer = SymbolismAnalyzer()
+        let counts = analyzer.analyze(text: "The red sun sets", symbols: ["sun", "moon"])
+        XCTAssertEqual(counts["sun"], 1)
+    }
+
+    func testVisualSceneComposer() {
+        let composer = VisualSceneComposer()
+        let scene = composer.compose(from: "A dark forest under the moon")
+        XCTAssertTrue(scene.referenceArt.contains("AI Art"))
+    }
+
+    func testIntensityScorer() {
+        let scorer = IntensityScorer()
+        let value = scorer.score(sceneText: "Run! Run!!!")
+        XCTAssertGreaterThan(value, 0)
+    }
+
+    func testMultiverseTimelineBuilder() {
+        let builder = MultiverseTimelineBuilder()
+        let map = builder.build(base: ["A"], variants: [["B"]])
+        XCTAssertEqual(map["variant1"]?.first, "B")
+    }
 }

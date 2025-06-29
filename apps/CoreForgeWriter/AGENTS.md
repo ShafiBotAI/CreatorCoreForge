@@ -209,16 +209,16 @@ Key points from `README.md`:
 - [x] Feature 55: Custom templates for story arcs by genre (hero’s journey, romance, thriller)
 - [x] Feature 56: AI inline rewrite suggestions matching author's original tone and style
 - [x] Feature 57: POV analyzer to detect inconsistent or accidental shifts in perspective
-- [ ] Feature 58: Timeline synchronization across characters, locations, and events
-- [ ] Feature 59: AI-powered flashback insertion with scene retiming
-- [ ] Feature 60: Foreshadowing generator and mystery seed planner
-- [ ] Feature 61: Relationship heatmap for romantic, platonic, rival, or mentor dynamics
-- [ ] Feature 62: Real-time lore reference enforcement with cross-book canon validation
-- [ ] Feature 63: Genre-aware pacing adjustment recommendations
-- [ ] Feature 64: Symbolism analyzer to enhance narrative depth
-- [ ] Feature 65: Visual scene composer with AI-generated descriptions and reference art
-- [ ] Feature 66: Scene intensity scoring with crescendo and relief pattern tracking
-- [ ] Feature 67: Multiverse timeline builder (alternate universe continuity maps)
+- [x] Feature 58: Timeline synchronization across characters, locations, and events
+- [x] Feature 59: AI-powered flashback insertion with scene retiming
+- [x] Feature 60: Foreshadowing generator and mystery seed planner
+- [x] Feature 61: Relationship heatmap for romantic, platonic, rival, or mentor dynamics
+- [x] Feature 62: Real-time lore reference enforcement with cross-book canon validation
+- [x] Feature 63: Genre-aware pacing adjustment recommendations
+- [x] Feature 64: Symbolism analyzer to enhance narrative depth
+- [x] Feature 65: Visual scene composer with AI-generated descriptions and reference art
+- [x] Feature 66: Scene intensity scoring with crescendo and relief pattern tracking
+- [x] Feature 67: Multiverse timeline builder (alternate universe continuity maps)
 - [ ] Feature 68: Dynamic cast builder for ensemble and rotating POV books
 - [ ] Feature 69: Character growth tracker visualized over a story arc timeline
 - [ ] Feature 70: Tone adaptation tool: rewrite any chapter in noir, epic, or whimsical style
