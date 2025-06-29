@@ -179,16 +179,16 @@ Key points from `README.md`:
 - [x] Feature 25: One-click AI storyboarding for video, audio, or comic adaptation
 - [x] Feature 26: Lore hierarchy visualizer (map races → kingdoms → myth → artifacts)
 - [x] Feature 27: Export-ready screenplay converter with character-cue tracking
-- [ ] Feature 28: Prose-to-dialogue converter with pacing-based speaker mapping
-- [ ] Feature 29: Interactive character interviews to deepen voice and dialogue
-- [ ] Feature 30: Scene breach alert: genre or world logic violations detection
-- [ ] Feature 31: Offline creative sandbox with encrypted save options
-- [ ] Feature 32: Publishing simulator to preview metadata, blurbs, and mock sales
-- [ ] Feature 33: Self-publishing toolkit: ISBN, EPUB, PDF, MOBI auto-export
-- [ ] Feature 34: Fan mode: convert book into lore wiki structure
-- [ ] Feature 35: Time travel loop tracker with paradox alerts
-- [ ] Feature 36: Dream generator for surreal storytelling layers
-- [ ] Feature 37: AI-driven antagonist arc generator with redeemability scoring
+- [x] Feature 28: Prose-to-dialogue converter with pacing-based speaker mapping
+- [x] Feature 29: Interactive character interviews to deepen voice and dialogue
+- [x] Feature 30: Scene breach alert: genre or world logic violations detection
+- [x] Feature 31: Offline creative sandbox with encrypted save options
+- [x] Feature 32: Publishing simulator to preview metadata, blurbs, and mock sales
+- [x] Feature 33: Self-publishing toolkit: ISBN, EPUB, PDF, MOBI auto-export
+- [x] Feature 34: Fan mode: convert book into lore wiki structure
+- [x] Feature 35: Time travel loop tracker with paradox alerts
+- [x] Feature 36: Dream generator for surreal storytelling layers
+- [x] Feature 37: AI-driven antagonist arc generator with redeemability scoring
 - [ ] Feature 38: Author branding toolkit: tone, themes, tagline consistency check
 - [ ] Feature 39: Voice dictation with emotion capture and ambient mode
 - [ ] Feature 40: Scene-by-scene reader poll system with live results dashboard
