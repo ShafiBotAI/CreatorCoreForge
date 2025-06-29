@@ -161,16 +161,16 @@ Key points from `README.md`:
 - [x] Feature 38: Global news map: economic and war zones as signals
 - [x] Feature 39: AI-driven earnings preview forecasts
 - [x] Feature 40: Liquidity trap detector with exit suggestions
-- [ ] Feature 41: Cross-chain scanner for DeFi/NFT flipping opportunities
-- [ ] Feature 42: AI-generated newsletter for your portfolio strategy
-- [ ] Feature 43: AI-generated thumbnail + headline for trade ideas (for creators)
-- [ ] Feature 44: Tokenomics breakdown visualizer for crypto plays
-- [ ] Feature 45: Trade sharing as stories to Telegram, Discord, X
-- [ ] Feature 46: Auto-bundling of your trade strategies into courses or kits
-- [ ] Feature 47: Heatmap of whale movements in top 50 coins or stocks
-- [ ] Feature 48: Neural signal rebalance based on live volatility
-- [ ] Feature 49: AI-matched mentors with your style via shadow portfolio comparison
-- [ ] Feature 50: Live news whisper mode: AI whispers most critical info every 15 mins
+- [x] Feature 41: Cross-chain scanner for DeFi/NFT flipping opportunities
+- [x] Feature 42: AI-generated newsletter for your portfolio strategy
+- [x] Feature 43: AI-generated thumbnail + headline for trade ideas (for creators)
+- [x] Feature 44: Tokenomics breakdown visualizer for crypto plays
+- [x] Feature 45: Trade sharing as stories to Telegram, Discord, X
+- [x] Feature 46: Auto-bundling of your trade strategies into courses or kits
+- [x] Feature 47: Heatmap of whale movements in top 50 coins or stocks
+- [x] Feature 48: Neural signal rebalance based on live volatility
+- [x] Feature 49: AI-matched mentors with your style via shadow portfolio comparison
+- [x] Feature 50: Live news whisper mode: AI whispers most critical info every 15 mins
 - [ ] Feature 51: Real-time sentiment analysis across Twitter, Reddit, and financial news
 - [ ] Feature 52: Whale wallet shadow trading and automatic pattern replication
 - [ ] Feature 53: Insider flow tracking with dark pool alert system
