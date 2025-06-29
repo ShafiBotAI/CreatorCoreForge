@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: Install Node deps
+        run: npm ci
+      - name: Lint JS
+        run: ./scripts/run_eslint.sh
+      - name: Run Jest
+        run: npm test --workspaces
+      - name: Setup Swift
+        uses: swift-actions/setup-swift@v1
+        with:
+          swift-version: '5.7'
+      - name: Swift Lint & Format
+        run: ./scripts/run_swiftlint.sh
+      - name: Swift Type Checks
+        run: ./scripts/swift_type_checks.sh
+      - name: Swift Tests
+        run: swift test --enable-test-discovery
+      - name: SAST
+        run: ./scripts/run_sast.sh
+      - name: Build
+        run: ./scripts/universal_build.sh
+      - name: Deploy
+        if: github.ref == 'refs/heads/main' && success()
+        run: echo "Deploying..."

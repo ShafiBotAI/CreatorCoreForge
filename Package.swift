@@ -19,7 +19,7 @@ var targets: [PackageDescription.Target] = [
                 .copy("Resources/app_completion_report.json")
             ]),
     .testTarget(name: "CreatorCoreForgeTests",
-                dependencies: ["CreatorCoreForge"],
+                dependencies: ["CreatorCoreForge", "SwiftCheck"],
                 path: "Tests/CreatorCoreForgeTests")
 ]
 
@@ -56,6 +56,8 @@ let package = Package(
         .macOS(.v10_15)
     ],
     products: products,
-    dependencies: [],
+    dependencies: [
+        .package(url: "https://github.com/Quick/SwiftCheck.git", from: "0.12.0")
+    ],
     targets: targets
 )
