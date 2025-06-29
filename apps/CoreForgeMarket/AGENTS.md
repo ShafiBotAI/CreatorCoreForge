@@ -171,16 +171,16 @@ Key points from `README.md`:
 - [x] Feature 48: Neural signal rebalance based on live volatility
 - [x] Feature 49: AI-matched mentors with your style via shadow portfolio comparison
 - [x] Feature 50: Live news whisper mode: AI whispers most critical info every 15 mins
-- [ ] Feature 51: Real-time sentiment analysis across Twitter, Reddit, and financial news
-- [ ] Feature 52: Whale wallet shadow trading and automatic pattern replication
-- [ ] Feature 53: Insider flow tracking with dark pool alert system
-- [ ] Feature 54: Titan Strategy Engine with adaptive multi-algo switching
-- [ ] Feature 55: Smart arbitrage scanner across crypto, forex, and stocks
-- [ ] Feature 56: AI-guided risk calibration based on user profile and goal
-- [ ] Feature 57: Event-based auto-trading (earnings, CPI, Fed meetings)
-- [ ] Feature 58: Predictive heatmaps for sectors, coins, and option chains
-- [ ] Feature 59: Auto-hedging recommendations using volatility sensors
-- [ ] Feature 60: Live market anomaly detector with strategy pivots
+- [x] Feature 51: Real-time sentiment analysis across Twitter, Reddit, and financial news
+- [x] Feature 52: Whale wallet shadow trading and automatic pattern replication
+- [x] Feature 53: Insider flow tracking with dark pool alert system
+- [x] Feature 54: Titan Strategy Engine with adaptive multi-algo switching
+- [x] Feature 55: Smart arbitrage scanner across crypto, forex, and stocks
+- [x] Feature 56: AI-guided risk calibration based on user profile and goal
+- [x] Feature 57: Event-based auto-trading (earnings, CPI, Fed meetings)
+- [x] Feature 58: Predictive heatmaps for sectors, coins, and option chains
+- [x] Feature 59: Auto-hedging recommendations using volatility sensors
+- [x] Feature 60: Live market anomaly detector with strategy pivots
 - [ ] Feature 61: Self-learning trading bot with reinforcement feedback loop
 - [ ] Feature 62: Cross-platform broker integration (Robinhood, IBKR, Coinbase, etc.)
 - [ ] Feature 63: News-to-trade bot: generates ideas from real-time news headlines
