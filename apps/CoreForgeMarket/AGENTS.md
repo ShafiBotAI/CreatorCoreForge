@@ -131,16 +131,16 @@ Key points from `README.md`:
 - [x] Feature 8: Predictive heatmaps for sectors, coins, and option chains
 - [x] Feature 9: Auto-hedging recommendations using volatility sensors
 - [x] Feature 10: Live market anomaly detector with strategy pivots
-- [ ] Feature 11: Self-learning trading bot with reinforcement feedback loop
-- [ ] Feature 12: Cross-platform broker integration (Robinhood, IBKR, Coinbase, etc.)
-- [ ] Feature 13: News-to-trade bot: generates ideas from real-time news headlines
-- [ ] Feature 14: AI backtesting engine with predictive model scoring
-- [ ] Feature 15: Visual strategy flowcharts for drag-and-drop trade logic
-- [ ] Feature 16: Voice command trade assistant with real-time AI feedback
-- [ ] Feature 17: Trading psychology AI advisor with habit tracking
-- [ ] Feature 18: Trade replay simulator to train decision-making under pressure
-- [ ] Feature 19: Multi-timeframe signal fusion (1-min to weekly)
-- [ ] Feature 20: Portfolio DNA visualizer to map risk clusters and diversity
+- [x] Feature 11: Self-learning trading bot with reinforcement feedback loop
+- [x] Feature 12: Cross-platform broker integration (Robinhood, IBKR, Coinbase, etc.)
+- [x] Feature 13: News-to-trade bot: generates ideas from real-time news headlines
+- [x] Feature 14: AI backtesting engine with predictive model scoring
+- [x] Feature 15: Visual strategy flowcharts for drag-and-drop trade logic
+- [x] Feature 16: Voice command trade assistant with real-time AI feedback
+- [x] Feature 17: Trading psychology AI advisor with habit tracking
+- [x] Feature 18: Trade replay simulator to train decision-making under pressure
+- [x] Feature 19: Multi-timeframe signal fusion (1-min to weekly)
+- [x] Feature 20: Portfolio DNA visualizer to map risk clusters and diversity
 - [ ] Feature 21: Gamma exposure and option flow tracker with alerts
 - [ ] Feature 22: Market mood index derived from social + macro feeds
 - [ ] Feature 23: Chatbot that explains every executed trade in plain English
