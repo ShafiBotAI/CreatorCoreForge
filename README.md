@@ -416,7 +416,7 @@ available.
 
 
 ## CI/CD
-The repository uses GitHub Actions workflows for building, testing, and releasing the apps across platforms. See the files in [.github/workflows](./.github/workflows) for details.
+The repository uses GitHub Actions workflows for building, testing, and releasing the apps across platforms. See the files in [.github/workflows](./.github/workflows) for details. An **Issues** workflow automatically runs the Codex agent on new issues using GitHub Models.
 For iOS builds in Xcode Cloud, see [docs/XcodeCloud.md](docs/XcodeCloud.md) and the workflow template under `.xcodecloud/workflows`.
 
 

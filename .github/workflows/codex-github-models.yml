@@ -1,0 +1,26 @@
+name: Codex on GitHub Models
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  codex:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: read
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run Codex agent
+        uses: sgoedecke/codex-github-models@main
+        with:
+          # no secrets needed—uses GitHub Models
+          issue-number: ${{ github.event.issue.number }}
+
+      - name: Comment with results
+        run: echo "✅ Codex has processed this issue and proposed changes." \
+          | gh issue comment ${{ github.event.issue.number }} --repo ${{ github.repository }}
