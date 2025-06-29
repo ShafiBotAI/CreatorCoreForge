@@ -189,16 +189,16 @@ Key points from `README.md`:
 - [x] Feature 35: Time travel loop tracker with paradox alerts
 - [x] Feature 36: Dream generator for surreal storytelling layers
 - [x] Feature 37: AI-driven antagonist arc generator with redeemability scoring
-- [ ] Feature 38: Author branding toolkit: tone, themes, tagline consistency check
-- [ ] Feature 39: Voice dictation with emotion capture and ambient mode
-- [ ] Feature 40: Scene-by-scene reader poll system with live results dashboard
-- [ ] Feature 41: Choice-path story mode: branching scenes for interactive fiction
-- [ ] Feature 42: Smart rewrite engine to convert style (YA to adult, novel to script)
-- [ ] Feature 43: Multilingual scene generation with idiom and culture adaptation
-- [ ] Feature 44: Cover generator: AI-blended art and typography for publishing
-- [ ] Feature 45: Audiobook tone adjuster for CoreForge Audio export compatibility
-- [ ] Feature 46: One-click export to CoreForge Visual for full cinematic conversion
-- [ ] Feature 47: Multiverse export kit: visual, audio, and story metadata bundled
+- [x] Feature 38: Author branding toolkit: tone, themes, tagline consistency check
+- [x] Feature 39: Voice dictation with emotion capture and ambient mode
+- [x] Feature 40: Scene-by-scene reader poll system with live results dashboard
+- [x] Feature 41: Choice-path story mode: branching scenes for interactive fiction
+- [x] Feature 42: Smart rewrite engine to convert style (YA to adult, novel to script)
+- [x] Feature 43: Multilingual scene generation with idiom and culture adaptation
+- [x] Feature 44: Cover generator: AI-blended art and typography for publishing
+- [x] Feature 45: Audiobook tone adjuster for CoreForge Audio export compatibility
+- [x] Feature 46: One-click export to CoreForge Visual for full cinematic conversion
+- [x] Feature 47: Multiverse export kit: visual, audio, and story metadata bundled
 - [ ] Feature 48: Beta reader simulator: critique generation by style archetype
 - [ ] Feature 49: Dynamic pacing visualizer with chapter and series overlays
 - [ ] Feature 50: Custom LLM tuning per author for ultra-consistent tone
