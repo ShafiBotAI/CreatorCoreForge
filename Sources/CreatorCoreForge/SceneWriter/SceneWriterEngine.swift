@@ -2,7 +2,7 @@ import Foundation
 
 /// Represents a single scene draft with basic metadata.
 public struct SceneDraft: Codable, Identifiable {
-    public let id: UUID
+    public var id: UUID
     public let chapterID: UUID
     public var text: String
     public var tone: String
@@ -63,5 +63,29 @@ public final class SceneWriterEngine {
         extract("emotion", into: &emotion)
 
         return SceneDraft(chapterID: chapterID, text: text, tone: tone, pov: pov, emotion: emotion)
+    }
+
+    /// Build a scene from a structured smart prompt.
+    public func smartPrompt(sceneNumber: Int, character: String, event: String, memory: MemoryState) -> SceneDraft {
+        let base = "Scene \(sceneNumber): \(character) \(event)."
+        return generateScene(prompt: base, memory: memory)
+    }
+
+    /// Identify scenes that may drag based on word count.
+    public func pacingReview(scenes: [SceneDraft]) -> [UUID] {
+        let threshold = 200
+        return scenes.filter { $0.text.split(separator: " ").count > threshold }.map { $0.id }
+    }
+
+    /// Generate three alternate endings for a scene.
+    public func alternateEndings(for scene: SceneDraft) -> [SceneDraft] {
+        ["A", "B", "C"].map { suffix in
+            SceneDraft(id: UUID(),
+                       chapterID: scene.chapterID,
+                       text: scene.text + "\nEnding \(suffix).",
+                       tone: scene.tone,
+                       pov: scene.pov,
+                       emotion: scene.emotion)
+        }
     }
 }

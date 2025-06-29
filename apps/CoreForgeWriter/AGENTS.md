@@ -129,22 +129,22 @@ Key points from `README.md`:
 
 ## \U0001F4C2 `ChapterComposer.swift`
 - [x] Compile selected scenes into a chapter preview
-- [ ] Apply pacing checks, transitions, and AI summaries
-- [ ] Allow exporting chapter in `.txt`, `.epub`, `.json`, or storyboard format
+- [x] Apply pacing checks, transitions, and AI summaries
+- [x] Allow exporting chapter in `.txt`, `.epub`, `.json`, or storyboard format
 
 ## \U0001F4C2 `WritingSessionTracker.swift`
-- [ ] Log writing time per scene, word count, edit cycles
-- [ ] Generate heatmap of most active scenes
-- [ ] Suggest “stale” or untouched scenes for revisit
+- [x] Log writing time per scene, word count, edit cycles
+- [x] Generate heatmap of most active scenes
+- [x] Suggest “stale” or untouched scenes for revisit
 
 ## \U0001F4C2 `StoryMemory.swift`
-- [ ] Persist character facts, arcs, tone, relationships per scene
-- [ ] Integrate with multiverse memory model (link to CoreForge Visual)
+- [x] Persist character facts, arcs, tone, relationships per scene
+- [x] Integrate with multiverse memory model (link to CoreForge Visual)
 
 ## \U0001F9E0 AI Enhancement Features
-- [ ] Smart prompt: “Write Scene 5 where Character X finds out the secret”
-- [ ] AI pacing reviewer: recommends which scenes are dragging
-- [ ] Alternate endings tool: propose 3 paths per scene
+- [x] Smart prompt: “Write Scene 5 where Character X finds out the secret”
+- [x] AI pacing reviewer: recommends which scenes are dragging
+- [x] Alternate endings tool: propose 3 paths per scene
 
 ## \U0001F501 Export + Cross-Platform Integration
 - [ ] One-click “Export to CoreForge Visual”
