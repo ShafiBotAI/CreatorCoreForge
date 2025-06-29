@@ -109,3 +109,44 @@ Key points from `README.md`:
 - [x] Multilingual, NSFW gating, offline writing, community/marketplace
 - [x] Import/export PDF, ePub, TXT, Docx
 
+
+### Modular Scene-Based Writing Mode (Phase 9)
+
+## \U0001F4C2 `SceneWriterEngine.swift`
+- [ ] Implement `generateScene(prompt: String, memory: MemoryState) -> SceneDraft`
+- [ ] Support tone, POV, and emotion metadata for each scene
+- [ ] Store scenes as modular blocks with identifiers (SceneID, ChapterID)
+
+## \U0001F4C2 `EmotionArcTracker.swift`
+- [ ] Visualize emotional flow across scenes (calm \u2192 rising tension \u2192 climax \u2192 resolution)
+- [ ] Allow manual tagging of scenes (e.g., betrayal, romance, twist)
+- [ ] AI recommendation for next emotional beat
+
+## \U0001F4C2 `SceneManager.swift`
+- [ ] Enable nonlinear writing: reorder scenes, drag/drop, toggle active/inactive
+- [ ] Add “Alternate Scene” versions under same SceneID
+- [ ] Support “Pin this Scene” as core anchor point
+
+## \U0001F4C2 `ChapterComposer.swift`
+- [ ] Compile selected scenes into a chapter preview
+- [ ] Apply pacing checks, transitions, and AI summaries
+- [ ] Allow exporting chapter in `.txt`, `.epub`, `.json`, or storyboard format
+
+## \U0001F4C2 `WritingSessionTracker.swift`
+- [ ] Log writing time per scene, word count, edit cycles
+- [ ] Generate heatmap of most active scenes
+- [ ] Suggest “stale” or untouched scenes for revisit
+
+## \U0001F4C2 `StoryMemory.swift`
+- [ ] Persist character facts, arcs, tone, relationships per scene
+- [ ] Integrate with multiverse memory model (link to CoreForge Visual)
+
+## \U0001F9E0 AI Enhancement Features
+- [ ] Smart prompt: “Write Scene 5 where Character X finds out the secret”
+- [ ] AI pacing reviewer: recommends which scenes are dragging
+- [ ] Alternate endings tool: propose 3 paths per scene
+
+## \U0001F501 Export + Cross-Platform Integration
+- [ ] One-click “Export to CoreForge Visual”
+- [ ] Export story as scene queue JSON for cinematic rendering
+- [ ] Allow download of individual or full scene set with metadata
