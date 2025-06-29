@@ -80,6 +80,7 @@
       "BookScanAnalyzer",
       "DocumentParser",
       "OCRScanMode",
+      "PhotoPageSorter",
       "MultiCastAudiobookGenerator",
       "DramatizedAudiobookProducer",
       "BookImporter",
