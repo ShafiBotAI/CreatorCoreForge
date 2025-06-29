@@ -138,6 +138,42 @@ final class PracticalPlanFeatureTests: XCTestCase {
         XCTAssertEqual(scoring.score(leads: [1,3]), 2.0)
     }
 
+    func testLeadsOpenFeatures() {
+        var dashboard = CreatorMonetizationDashboard()
+        dashboard.recordSale(packs: 2)
+        XCTAssertEqual(dashboard.totalSales, 2)
+
+        var marketplace = AffiliateMarketplace()
+        marketplace.register(reseller: "R1")
+        XCTAssertEqual(marketplace.allResellers, ["R1"])
+
+        let gamified = GamifiedLeadGen()
+        XCTAssertNotNil(gamified.spinWheel(options: ["A", "B"]))
+
+        let heatmap = EmailHeatmapAnalyzer()
+        XCTAssertEqual(heatmap.averageOpenRate([0.5, 1.0]), 0.75, accuracy: 0.001)
+
+        let roi = CampaignROIPredictor()
+        XCTAssertEqual(roi.predictROI(spend: 10, revenue: 20), 1.0, accuracy: 0.001)
+
+        let seo = SEOSignalDetector()
+        XCTAssertTrue(seo.detect(from: "<title>t</title><meta>").contains("title"))
+
+        let lead = Lead(name: "A", email: "a@a.com", company: "A", industry: "tech", region: "us")
+        let dna = LeadDNAProfileBuilder()
+        XCTAssertEqual(dna.build(from: [lead])["tech"], 1)
+
+        let voice = VoiceOutreachIntegration()
+        XCTAssertEqual(voice.combine(text: "Hi", with: "bot"), "bot: Hi")
+
+        let classifier = LeadFormClassifier()
+        XCTAssertEqual(classifier.classify(fields: ["interest": "Buy now"]), "hot")
+
+        let prioritizer = LeadPrioritizer()
+        let prioritized = prioritizer.prioritize(leads: [lead], urgentEmails: ["a@a.com"])
+        XCTAssertEqual(prioritized.first?.email, "a@a.com")
+    }
+
     func testMindFeatures() {
         let journal = MoodJournal()
         journal.addEntry("I am sad")

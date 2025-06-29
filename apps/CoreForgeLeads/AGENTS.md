@@ -87,16 +87,16 @@ Key points from `README.md`:
  - [x] Feature 18: Personalized lead videos using face swap and AI voice synthesis
  - [x] Feature 19: Custom AI agents that outreach, qualify, and nurture leads autonomously
  - [x] Feature 20: Smart timezone scheduler for global outreach efficiency
- - [ ] Feature 21: Creator monetization dashboard for reselling lead packs
- - [ ] Feature 22: Affiliate marketplace for white-label lead resellers
- - [ ] Feature 23: Gamified lead gen tools to increase opt-ins (wheel, quiz, etc.)
- - [ ] Feature 24: Email heatmap analyzer for subject line and body performance
- - [ ] Feature 25: Campaign ROI predictor with lead quality forecasting
- - [ ] Feature 26: SEO signal detection from lead websites to match content strategy
- - [ ] Feature 27: Lead DNA™ profile builder for replicating high-performing prospects
- - [ ] Feature 28: Integrates with CoreForge Voice for custom voice outreach
- - [ ] Feature 29: Plug-and-play lead forms with AI-driven intent classification
- - [ ] Feature 30: Auto-prioritization of leads based on pipeline stage + urgency
+ - [x] Feature 21: Creator monetization dashboard for reselling lead packs
+ - [x] Feature 22: Affiliate marketplace for white-label lead resellers
+ - [x] Feature 23: Gamified lead gen tools to increase opt-ins (wheel, quiz, etc.)
+ - [x] Feature 24: Email heatmap analyzer for subject line and body performance
+ - [x] Feature 25: Campaign ROI predictor with lead quality forecasting
+ - [x] Feature 26: SEO signal detection from lead websites to match content strategy
+ - [x] Feature 27: Lead DNA™ profile builder for replicating high-performing prospects
+ - [x] Feature 28: Integrates with CoreForge Voice for custom voice outreach
+ - [x] Feature 29: Plug-and-play lead forms with AI-driven intent classification
+ - [x] Feature 30: Auto-prioritization of leads based on pipeline stage + urgency
  - [ ] Feature 31: AI outreach audit tool for improving message performance
  - [ ] Feature 32: Team dashboard with role-based access, leaderboards, and export filters
  - [ ] Feature 33: Regional compliance layer (GDPR, CCPA, etc.) with auto-checks
