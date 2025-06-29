@@ -1,6 +1,13 @@
 line_length: 120
 opt_in_rules:
   - fatal_error_message
+  - implicitly_unwrapped_optional
+  - force_cast
+  - force_try
+force_cast:
+  severity: error
+force_try:
+  severity: warning
 included:
   - Sources
   - apps
