@@ -9,3 +9,4 @@ __pycache__/
 *.pyc
 dist/
 tests/python/__pycache__/
+coverage/
