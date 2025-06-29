@@ -1,3 +1,4 @@
 --extra-index-url https://download.pytorch.org/whl/cpu
 pydub==0.25.1
 torch==2.2.2+cpu
+hypothesis==6.98.1

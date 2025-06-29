@@ -22,6 +22,14 @@ jobs:
         run: npm test --workspaces
       - name: Coverage
         run: npm run coverage
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Python deps
+        run: pip install -r requirements.txt
+      - name: Run Python Tests
+        run: pytest tests/python tests/fuzz
       - name: Setup Swift
         uses: swift-actions/setup-swift@v1
         with:
@@ -30,6 +38,8 @@ jobs:
         run: ./scripts/run_swiftlint.sh
       - name: Swift Type Checks
         run: ./scripts/swift_type_checks.sh
+      - name: Generate XCTest Stubs
+        run: python scripts/generate_xctest_stubs.py
       - name: Swift Tests
         run: swift test --enable-test-discovery
       - name: SAST
