@@ -259,26 +259,26 @@ Key points from `README.md`:
 - [x] Feature 105: Custom templates for story arcs by genre (hero’s journey, romance, thriller)
 - [x] Feature 106: AI inline rewrite suggestions matching author's original tone and style
 - [x] Feature 107: POV analyzer to detect inconsistent or accidental shifts in perspective
-- [ ] Feature 108: Timeline synchronization across characters, locations, and events
-- [ ] Feature 109: AI-powered flashback insertion with scene retiming
-- [ ] Feature 110: Foreshadowing generator and mystery seed planner
-- [ ] Feature 111: Relationship heatmap for romantic, platonic, rival, or mentor dynamics
-- [ ] Feature 112: Real-time lore reference enforcement with cross-book canon validation
-- [ ] Feature 113: Genre-aware pacing adjustment recommendations
-- [ ] Feature 114: Symbolism analyzer to enhance narrative depth
-- [ ] Feature 115: Visual scene composer with AI-generated descriptions and reference art
-- [ ] Feature 116: Scene intensity scoring with crescendo and relief pattern tracking
-- [ ] Feature 117: Multiverse timeline builder (alternate universe continuity maps)
-- [ ] Feature 118: Dynamic cast builder for ensemble and rotating POV books
-- [ ] Feature 119: Character growth tracker visualized over a story arc timeline
-- [ ] Feature 120: Tone adaptation tool: rewrite any chapter in noir, epic, or whimsical style
-- [ ] Feature 121: Mythology generator for fantasy worlds including gods, rituals, and legends
-- [ ] Feature 122: Recurring motif and symbol tracking across longform works
-- [ ] Feature 123: Auto-canon enforcer for serialized story coherence
-- [ ] Feature 124: AI-powered villain depth analyzer (sympathy, backstory, and flaw balance)
-- [ ] Feature 125: One-click AI storyboarding for video, audio, or comic adaptation
-- [ ] Feature 126: Lore hierarchy visualizer (map races → kingdoms → myth → artifacts)
-- [ ] Feature 127: Export-ready screenplay converter with character-cue tracking
+- [x] Feature 108: Timeline synchronization across characters, locations, and events
+- [x] Feature 109: AI-powered flashback insertion with scene retiming
+- [x] Feature 110: Foreshadowing generator and mystery seed planner
+- [x] Feature 111: Relationship heatmap for romantic, platonic, rival, or mentor dynamics
+- [x] Feature 112: Real-time lore reference enforcement with cross-book canon validation
+- [x] Feature 113: Genre-aware pacing adjustment recommendations
+- [x] Feature 114: Symbolism analyzer to enhance narrative depth
+- [x] Feature 115: Visual scene composer with AI-generated descriptions and reference art
+- [x] Feature 116: Scene intensity scoring with crescendo and relief pattern tracking
+- [x] Feature 117: Multiverse timeline builder (alternate universe continuity maps)
+- [x] Feature 118: Dynamic cast builder for ensemble and rotating POV books
+- [x] Feature 119: Character growth tracker visualized over a story arc timeline
+- [x] Feature 120: Tone adaptation tool: rewrite any chapter in noir, epic, or whimsical style
+- [x] Feature 121: Mythology generator for fantasy worlds including gods, rituals, and legends
+- [x] Feature 122: Recurring motif and symbol tracking across longform works
+- [x] Feature 123: Auto-canon enforcer for serialized story coherence
+- [x] Feature 124: AI-powered villain depth analyzer (sympathy, backstory, and flaw balance)
+- [x] Feature 125: One-click AI storyboarding for video, audio, or comic adaptation
+- [x] Feature 126: Lore hierarchy visualizer (map races → kingdoms → myth → artifacts)
+- [x] Feature 127: Export-ready screenplay converter with character-cue tracking
 - [ ] Feature 128: Prose-to-dialogue converter with pacing-based speaker mapping
 - [ ] Feature 129: Interactive character interviews to deepen voice and dialogue
 - [ ] Feature 130: Scene breach alert: genre or world logic violations detection
