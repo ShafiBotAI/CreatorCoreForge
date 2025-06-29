@@ -281,16 +281,16 @@ Key points from `README.md`:
 - [x] Feature 158: Predictive heatmaps for sectors, coins, and option chains
 - [x] Feature 159: Auto-hedging recommendations using volatility sensors
 - [x] Feature 160: Live market anomaly detector with strategy pivots
-- [ ] Feature 161: Self-learning trading bot with reinforcement feedback loop
-- [ ] Feature 162: Cross-platform broker integration (Robinhood, IBKR, Coinbase, etc.)
-- [ ] Feature 163: News-to-trade bot: generates ideas from real-time news headlines
-- [ ] Feature 164: AI backtesting engine with predictive model scoring
-- [ ] Feature 165: Visual strategy flowcharts for drag-and-drop trade logic
-- [ ] Feature 166: Voice command trade assistant with real-time AI feedback
-- [ ] Feature 167: Trading psychology AI advisor with habit tracking
-- [ ] Feature 168: Trade replay simulator to train decision-making under pressure
-- [ ] Feature 169: Multi-timeframe signal fusion (1-min to weekly)
-- [ ] Feature 170: Portfolio DNA visualizer to map risk clusters and diversity
+ - [x] Feature 161: Self-learning trading bot with reinforcement feedback loop
+ - [x] Feature 162: Cross-platform broker integration (Robinhood, IBKR, Coinbase, etc.)
+ - [x] Feature 163: News-to-trade bot: generates ideas from real-time news headlines
+ - [x] Feature 164: AI backtesting engine with predictive model scoring
+ - [x] Feature 165: Visual strategy flowcharts for drag-and-drop trade logic
+ - [x] Feature 166: Voice command trade assistant with real-time AI feedback
+ - [x] Feature 167: Trading psychology AI advisor with habit tracking
+ - [x] Feature 168: Trade replay simulator to train decision-making under pressure
+ - [x] Feature 169: Multi-timeframe signal fusion (1-min to weekly)
+ - [x] Feature 170: Portfolio DNA visualizer to map risk clusters and diversity
 - [ ] Feature 171: Gamma exposure and option flow tracker with alerts
 - [ ] Feature 172: Market mood index derived from social + macro feeds
 - [ ] Feature 173: Chatbot that explains every executed trade in plain English
