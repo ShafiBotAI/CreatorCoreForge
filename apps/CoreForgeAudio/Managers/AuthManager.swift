@@ -36,6 +36,9 @@ final class AuthManager: ObservableObject {
         }
     }
 
+    /// Email for the current user if available.
+    var email: String { storedEmail }
+
     /// Sign in with existing credentials.
     func signIn(email: String, password: String, completion: @escaping (Result<Void, Error>) -> Void) {
         let hash = Self.hash(password)
@@ -60,6 +63,22 @@ final class AuthManager: ObservableObject {
         storedEmail = email
         activePlan = plan
         storedUserID = UUID().uuidString
+        isLoggedIn = true
+        completion(.success(()))
+    }
+
+    /// Sign in using a Google account email. This is a stub for demo purposes.
+    func signInWithGoogle(email: String, completion: @escaping (Result<Void, Error>) -> Void) {
+        storedEmail = email
+        if storedUserID.isEmpty { storedUserID = UUID().uuidString }
+        isLoggedIn = true
+        completion(.success(()))
+    }
+
+    /// Sign in using an Apple ID email. This is a stub for demo purposes.
+    func signInWithApple(email: String, completion: @escaping (Result<Void, Error>) -> Void) {
+        storedEmail = email
+        if storedUserID.isEmpty { storedUserID = UUID().uuidString }
         isLoggedIn = true
         completion(.success(()))
     }

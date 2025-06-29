@@ -30,6 +30,18 @@ struct LoginView: View {
             Button("Sign In") { login() }
                 .font(.headline)
                 .buttonStyle(GlowingButtonStyle())
+            Button("Sign In with Google") {
+                AuthManager.shared.signInWithGoogle(email: "google@example.com") { _ in
+                    onSuccess()
+                }
+            }
+            .font(.caption)
+            Button("Sign In with Apple") {
+                AuthManager.shared.signInWithApple(email: "apple@example.com") { _ in
+                    onSuccess()
+                }
+            }
+            .font(.caption)
             Button("Forgot Password?", action: onForgot)
                 .font(.caption)
             Button("Register") { onRegister() }
