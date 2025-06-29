@@ -66,6 +66,16 @@ public final class LeadMiner {
         }.resume()
     }
 
+    /// Asynchronously enrich a lead using async/await.
+    @available(macOS 12, iOS 15, *)
+    public func enrichLead(_ lead: Lead) async -> Lead {
+        await withCheckedContinuation { continuation in
+            enrichLead(lead) { enriched in
+                continuation.resume(returning: enriched)
+            }
+        }
+    }
+
     /// Insert lead details into an outreach template
     public func autoPersonalizeScript(for lead: Lead, template: String) -> String {
         template

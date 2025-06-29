@@ -8,6 +8,7 @@ public struct LeadListing {
 
 public final class LeadMarketplace {
     private var listings: [String: [LeadListing]] = [:] // category -> listings
+    private var verifiedLeads: Set<String> = []
 
     public init() {}
 
@@ -25,5 +26,15 @@ public final class LeadMarketplace {
         let listing = arr.removeFirst()
         listings[category] = arr
         return listing
+    }
+
+    /// Mark a lead as verified in the marketplace.
+    public func verify(leadEmail: String) {
+        verifiedLeads.insert(leadEmail.lowercased())
+    }
+
+    /// Check if a lead is verified.
+    public func isVerified(email: String) -> Bool {
+        verifiedLeads.contains(email.lowercased())
     }
 }

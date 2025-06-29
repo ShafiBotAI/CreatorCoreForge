@@ -17,4 +17,19 @@ public final class EmailGenerator {
             }
         }
     }
+
+    /// Generate an email with custom tone and product focus.
+    public func generateEmail(to lead: Lead,
+                              persona: Persona,
+                              product: String,
+                              tone: String,
+                              completion: @escaping (String) -> Void) {
+        let prompt = "Compose a \(tone) email about \(product) for \(lead.name) at \(lead.company) targeting \(persona.description)."
+        service.sendPrompt(prompt) { result in
+            switch result {
+            case .success(let text): completion(text)
+            case .failure: completion("Unable to generate email")
+            }
+        }
+    }
 }

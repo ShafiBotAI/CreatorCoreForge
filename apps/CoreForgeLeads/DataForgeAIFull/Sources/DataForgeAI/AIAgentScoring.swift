@@ -30,4 +30,22 @@ public final class AIAgentScoring {
         if lead.region.lowercased().contains("us") { rate += 0.1 }
         return min(1.0, rate)
     }
+
+    /// Predictive lead score using weighted behavioral signals and firmographics.
+    /// - Parameters:
+    ///   - lead: Lead to score.
+    ///   - behaviorSignals: Dictionary of behavior signal weights.
+    /// - Returns: Score from 0-100.
+    public func predictiveScore(for lead: Lead,
+                                behaviorSignals: [String: Double]) -> Double {
+        var score = predictConversionRate(for: lead) * 100
+        for (_, value) in behaviorSignals {
+            score += value
+        }
+        if let sizeStr = lead.firmographics["size"],
+           let size = Double(sizeStr) {
+            score += min(size / 100.0, 10)
+        }
+        return min(score, 100)
+    }
 }
