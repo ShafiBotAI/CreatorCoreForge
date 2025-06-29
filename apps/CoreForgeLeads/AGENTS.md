@@ -177,16 +177,16 @@ Key points from `README.md`:
  - [x] Feature 108: Lead marketplace to buy/sell verified leads by niche and intent
  - [x] Feature 109: Smart follow-up engine with multi-channel sequencing
  - [x] Feature 110: One-click CRM sync with HubSpot, Salesforce, Zoho, and Pipedrive
- - [ ] Feature 111: Lead generation Chrome extension for scraping any site or profile
- - [ ] Feature 112: AI-powered LinkedIn messaging assistant with tone optimization
- - [ ] Feature 113: Dynamic contact verification with bounce risk scoring
- - [ ] Feature 114: Voice message outreach tool with tone-matching AI suggestions
- - [ ] Feature 115: ABM (account-based marketing) playbook generator by vertical
- - [ ] Feature 116: AI-generated landing pages personalized per lead segment
- - [ ] Feature 117: Multivariate A/B test generator for CTAs, subject lines, and offers
- - [ ] Feature 118: Personalized lead videos using face swap and AI voice synthesis
- - [ ] Feature 119: Custom AI agents that outreach, qualify, and nurture leads autonomously
- - [ ] Feature 120: Smart timezone scheduler for global outreach efficiency
+ - [x] Feature 111: Lead generation Chrome extension for scraping any site or profile
+ - [x] Feature 112: AI-powered LinkedIn messaging assistant with tone optimization
+ - [x] Feature 113: Dynamic contact verification with bounce risk scoring
+ - [x] Feature 114: Voice message outreach tool with tone-matching AI suggestions
+ - [x] Feature 115: ABM (account-based marketing) playbook generator by vertical
+ - [x] Feature 116: AI-generated landing pages personalized per lead segment
+ - [x] Feature 117: Multivariate A/B test generator for CTAs, subject lines, and offers
+ - [x] Feature 118: Personalized lead videos using face swap and AI voice synthesis
+ - [x] Feature 119: Custom AI agents that outreach, qualify, and nurture leads autonomously
+ - [x] Feature 120: Smart timezone scheduler for global outreach efficiency
  - [ ] Feature 121: Creator monetization dashboard for reselling lead packs
  - [ ] Feature 122: Affiliate marketplace for white-label lead resellers
  - [ ] Feature 123: Gamified lead gen tools to increase opt-ins (wheel, quiz, etc.)
