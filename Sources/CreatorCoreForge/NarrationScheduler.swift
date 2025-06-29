@@ -9,17 +9,17 @@ public final class NarrationScheduler {
 
     /// Schedule an action to execute at the given date.
     public func schedule(at date: Date, action: @escaping () -> Void) {
-        tasks[date] = action
+        queue.sync { tasks[date] = action }
         let delay = max(0, date.timeIntervalSinceNow)
-        queue.asyncAfter(deadline: .now() + delay) {
+        queue.asyncAfter(deadline: .now() + delay) { [weak self] in
             action()
-            self.tasks.removeValue(forKey: date)
+            self?.queue.sync { self?.tasks.removeValue(forKey: date) }
         }
     }
 
     /// Number of scheduled tasks.
-    public var pendingCount: Int { tasks.count }
+    public var pendingCount: Int { queue.sync { tasks.count } }
 
     /// Cancel all scheduled tasks.
-    public func cancelAll() { tasks.removeAll() }
+    public func cancelAll() { queue.sync { tasks.removeAll() } }
 }
