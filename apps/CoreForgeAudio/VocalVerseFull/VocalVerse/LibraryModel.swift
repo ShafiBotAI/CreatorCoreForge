@@ -6,6 +6,12 @@ import SwiftUI
 import Combine
 #endif
 
+/// Supported import sources for adding new books.
+enum ImportSource {
+    case kindle(KindleBook)
+    case file(URL)
+}
+
 /// Shared library model storing the user's books and playback state.
 final class LibraryModel: ObservableObject {
     @Published var books: [Book]
@@ -65,6 +71,31 @@ final class LibraryModel: ObservableObject {
         }
         books[idx].isDownloaded = false
         save()
+    }
+
+    /// Begin a new import flow using either a local file or a Kindle book.
+    /// The imported book is automatically added to the library and persisted.
+    /// - Parameters:
+    ///   - source: The import source (Kindle book metadata or local file URL).
+    ///   - usage: Optional usage tracker to record successful imports.
+    func startNewImport(from source: ImportSource, usage: UsageStats? = nil) {
+        switch source {
+        case .file(let url):
+            let chapters = EbookImporter().importEbook(from: url.path)
+                .map { Chapter(title: "Chapter", text: $0) }
+            let title = url.deletingPathExtension().lastPathComponent
+            let book = Book(title: title, author: "", series: nil, chapters: chapters)
+            addBook(book)
+            usage?.recordImport()
+        case .kindle(let kindleBook):
+            KindleService().download(book: kindleBook) { [weak self] newBook in
+                guard let self = self, let newBook = newBook else { return }
+                DispatchQueue.main.async {
+                    self.addBook(newBook)
+                    usage?.recordImport()
+                }
+            }
+        }
     }
 
     private func save() {
