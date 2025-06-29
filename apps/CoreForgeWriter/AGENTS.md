@@ -199,16 +199,16 @@ Key points from `README.md`:
 - [x] Feature 45: Audiobook tone adjuster for CoreForge Audio export compatibility
 - [x] Feature 46: One-click export to CoreForge Visual for full cinematic conversion
 - [x] Feature 47: Multiverse export kit: visual, audio, and story metadata bundled
-- [ ] Feature 48: Beta reader simulator: critique generation by style archetype
-- [ ] Feature 49: Dynamic pacing visualizer with chapter and series overlays
-- [ ] Feature 50: Custom LLM tuning per author for ultra-consistent tone
-- [ ] Feature 51: Multiverse character memory that persists across all books and spin-offs
-- [ ] Feature 52: AI-powered emotional arc visualizer for entire series and individual characters
-- [ ] Feature 53: Scene-by-scene tone control with AI-suggested emotional beats
-- [ ] Feature 54: Drag-and-drop nonlinear scene editor with alternate branches
-- [ ] Feature 55: Custom templates for story arcs by genre (hero’s journey, romance, thriller)
-- [ ] Feature 56: AI inline rewrite suggestions matching author's original tone and style
-- [ ] Feature 57: POV analyzer to detect inconsistent or accidental shifts in perspective
+- [x] Feature 48: Beta reader simulator: critique generation by style archetype
+- [x] Feature 49: Dynamic pacing visualizer with chapter and series overlays
+- [x] Feature 50: Custom LLM tuning per author for ultra-consistent tone
+- [x] Feature 51: Multiverse character memory that persists across all books and spin-offs
+- [x] Feature 52: AI-powered emotional arc visualizer for entire series and individual characters
+- [x] Feature 53: Scene-by-scene tone control with AI-suggested emotional beats
+- [x] Feature 54: Drag-and-drop nonlinear scene editor with alternate branches
+- [x] Feature 55: Custom templates for story arcs by genre (hero’s journey, romance, thriller)
+- [x] Feature 56: AI inline rewrite suggestions matching author's original tone and style
+- [x] Feature 57: POV analyzer to detect inconsistent or accidental shifts in perspective
 - [ ] Feature 58: Timeline synchronization across characters, locations, and events
 - [ ] Feature 59: AI-powered flashback insertion with scene retiming
 - [ ] Feature 60: Foreshadowing generator and mystery seed planner
