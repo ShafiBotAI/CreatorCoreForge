@@ -219,26 +219,26 @@ Key points from `README.md`:
 - [x] Feature 65: Visual scene composer with AI-generated descriptions and reference art
 - [x] Feature 66: Scene intensity scoring with crescendo and relief pattern tracking
 - [x] Feature 67: Multiverse timeline builder (alternate universe continuity maps)
-- [ ] Feature 68: Dynamic cast builder for ensemble and rotating POV books
-- [ ] Feature 69: Character growth tracker visualized over a story arc timeline
-- [ ] Feature 70: Tone adaptation tool: rewrite any chapter in noir, epic, or whimsical style
-- [ ] Feature 71: Mythology generator for fantasy worlds including gods, rituals, and legends
-- [ ] Feature 72: Recurring motif and symbol tracking across longform works
-- [ ] Feature 73: Auto-canon enforcer for serialized story coherence
-- [ ] Feature 74: AI-powered villain depth analyzer (sympathy, backstory, and flaw balance)
-- [ ] Feature 75: One-click AI storyboarding for video, audio, or comic adaptation
-- [ ] Feature 76: Lore hierarchy visualizer (map races → kingdoms → myth → artifacts)
-- [ ] Feature 77: Export-ready screenplay converter with character-cue tracking
-- [ ] Feature 78: Prose-to-dialogue converter with pacing-based speaker mapping
-- [ ] Feature 79: Interactive character interviews to deepen voice and dialogue
-- [ ] Feature 80: Scene breach alert: genre or world logic violations detection
-- [ ] Feature 81: Offline creative sandbox with encrypted save options
-- [ ] Feature 82: Publishing simulator to preview metadata, blurbs, and mock sales
-- [ ] Feature 83: Self-publishing toolkit: ISBN, EPUB, PDF, MOBI auto-export
-- [ ] Feature 84: Fan mode: convert book into lore wiki structure
-- [ ] Feature 85: Time travel loop tracker with paradox alerts
-- [ ] Feature 86: Dream generator for surreal storytelling layers
-- [ ] Feature 87: AI-driven antagonist arc generator with redeemability scoring
+- [x] Feature 68: Dynamic cast builder for ensemble and rotating POV books
+- [x] Feature 69: Character growth tracker visualized over a story arc timeline
+- [x] Feature 70: Tone adaptation tool: rewrite any chapter in noir, epic, or whimsical style
+- [x] Feature 71: Mythology generator for fantasy worlds including gods, rituals, and legends
+- [x] Feature 72: Recurring motif and symbol tracking across longform works
+- [x] Feature 73: Auto-canon enforcer for serialized story coherence
+- [x] Feature 74: AI-powered villain depth analyzer (sympathy, backstory, and flaw balance)
+- [x] Feature 75: One-click AI storyboarding for video, audio, or comic adaptation
+- [x] Feature 76: Lore hierarchy visualizer (map races → kingdoms → myth → artifacts)
+- [x] Feature 77: Export-ready screenplay converter with character-cue tracking
+- [x] Feature 78: Prose-to-dialogue converter with pacing-based speaker mapping
+- [x] Feature 79: Interactive character interviews to deepen voice and dialogue
+- [x] Feature 80: Scene breach alert: genre or world logic violations detection
+- [x] Feature 81: Offline creative sandbox with encrypted save options
+- [x] Feature 82: Publishing simulator to preview metadata, blurbs, and mock sales
+- [x] Feature 83: Self-publishing toolkit: ISBN, EPUB, PDF, MOBI auto-export
+- [x] Feature 84: Fan mode: convert book into lore wiki structure
+- [x] Feature 85: Time travel loop tracker with paradox alerts
+- [x] Feature 86: Dream generator for surreal storytelling layers
+- [x] Feature 87: AI-driven antagonist arc generator with redeemability scoring
 - [ ] Feature 88: Author branding toolkit: tone, themes, tagline consistency check
 - [ ] Feature 89: Voice dictation with emotion capture and ambient mode
 - [ ] Feature 90: Scene-by-scene reader poll system with live results dashboard
