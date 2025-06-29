@@ -241,26 +241,26 @@ Key points from `README.md`:
 - [x] Feature 118: Trade replay simulator to train decision-making under pressure
 - [x] Feature 119: Multi-timeframe signal fusion (1-min to weekly)
 - [x] Feature 120: Portfolio DNA visualizer to map risk clusters and diversity
-- [ ] Feature 121: Gamma exposure and option flow tracker with alerts
-- [ ] Feature 122: Market mood index derived from social + macro feeds
-- [ ] Feature 123: Chatbot that explains every executed trade in plain English
-- [ ] Feature 124: AI-generated trading journal with charts and narrative
-- [ ] Feature 125: Paper trading sandbox with clone-the-pro mode
-- [ ] Feature 126: Dynamic trailing stop-losses tuned by AI volatility sensing
-- [ ] Feature 127: Smart entry/exit AI with emotion-resistance scoring
-- [ ] Feature 128: NSFW token scanner (if 18+) for microcap degen alerts
-- [ ] Feature 129: AI trade coach that grades your decisions and timing
-- [ ] Feature 130: Trend shift early detection engine
-- [ ] Feature 131: Quant-style strategy builder using no-code tools
-- [ ] Feature 132: Auto-copy trading with adjustable risk filters
-- [ ] Feature 133: AI alerts: 'whale moved $10M', 'Fed speech in 5 mins', etc.
-- [ ] Feature 134: Price level clustering heatmap from historical data
-- [ ] Feature 135: Sentiment-weighted TA overlays
-- [ ] Feature 136: Smart tax-loss harvesting alerts
-- [ ] Feature 137: Trade emotion tracker (FOMO, fear, greed)
-- [ ] Feature 138: Global news map: economic and war zones as signals
-- [ ] Feature 139: AI-driven earnings preview forecasts
-- [ ] Feature 140: Liquidity trap detector with exit suggestions
++ [x] Feature 121: Gamma exposure and option flow tracker with alerts
++ [x] Feature 122: Market mood index derived from social + macro feeds
++ [x] Feature 123: Chatbot that explains every executed trade in plain English
++ [x] Feature 124: AI-generated trading journal with charts and narrative
++ [x] Feature 125: Paper trading sandbox with clone-the-pro mode
++ [x] Feature 126: Dynamic trailing stop-losses tuned by AI volatility sensing
++ [x] Feature 127: Smart entry/exit AI with emotion-resistance scoring
++ [x] Feature 128: NSFW token scanner (if 18+) for microcap degen alerts
++ [x] Feature 129: AI trade coach that grades your decisions and timing
++ [x] Feature 130: Trend shift early detection engine
++ [x] Feature 131: Quant-style strategy builder using no-code tools
++ [x] Feature 132: Auto-copy trading with adjustable risk filters
++ [x] Feature 133: AI alerts: 'whale moved $10M', 'Fed speech in 5 mins', etc.
++ [x] Feature 134: Price level clustering heatmap from historical data
++ [x] Feature 135: Sentiment-weighted TA overlays
++ [x] Feature 136: Smart tax-loss harvesting alerts
++ [x] Feature 137: Trade emotion tracker (FOMO, fear, greed)
++ [x] Feature 138: Global news map: economic and war zones as signals
++ [x] Feature 139: AI-driven earnings preview forecasts
++ [x] Feature 140: Liquidity trap detector with exit suggestions
 - [ ] Feature 141: Cross-chain scanner for DeFi/NFT flipping opportunities
 - [ ] Feature 142: AI-generated newsletter for your portfolio strategy
 - [ ] Feature 143: AI-generated thumbnail + headline for trade ideas (for creators)
