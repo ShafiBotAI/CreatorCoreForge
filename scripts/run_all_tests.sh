@@ -20,6 +20,7 @@ popd >/dev/null
 
 # run Swift tests only on macOS to avoid platform crashes
 if command -v swift >/dev/null; then
+    python scripts/generate_xctest_stubs.py
     if [[ "$(uname)" == "Darwin" ]]; then
         swift test
     else

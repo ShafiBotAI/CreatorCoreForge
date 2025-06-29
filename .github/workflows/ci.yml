@@ -20,6 +20,8 @@ jobs:
         run: ./scripts/run_eslint.sh
       - name: Run Jest
         run: npm test --workspaces
+      - name: Coverage
+        run: npm run coverage
       - name: Setup Swift
         uses: swift-actions/setup-swift@v1
         with:

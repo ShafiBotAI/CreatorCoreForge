@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 set -e
-swiftc -typecheck $(find Sources apps -name '*.swift')
+swiftc -warnings-as-errors -typecheck $(find Sources apps -name '*.swift')
