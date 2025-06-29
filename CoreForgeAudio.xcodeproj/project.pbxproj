@@ -388,7 +388,9 @@
 		CAA99742376AD302B6EF8519 /* SoundLayerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB8397BB4A0AD48935317E7 /* SoundLayerEngine.swift */; };
 		CAB4CC8D9581D9EF90D3312A /* AnimationDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F30C35756E870A3AEBCD593 /* AnimationDashboard.swift */; };
 		CABB53BB8469D46F56CEFAB5 /* OCRScanMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6418A4324EDFAD12529EC847 /* OCRScanMode.swift */; };
-		CB1B9773262EB025BA79FCAA /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E239EC118899F28C0A22D2A2 /* DashboardView.swift */; };
+               CB1B9773262EB025BA79FCAA /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E239EC118899F28C0A22D2A2 /* DashboardView.swift */; };
+               DC20416E17CC4787B9E323AF /* HomeDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC1DF2EA8BA4A67A7E4D155 /* HomeDashboardView.swift */; };
+               9D5B764C2D6D4F7492FC82A7 /* MainDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF755BE847684FB6BA0BE265 /* MainDashboardView.swift */; };
 		CBC0EEFEB7117A648D454E69 /* VoiceFXStackEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3667826427527849ABFD22FA /* VoiceFXStackEditor.swift */; };
 		CC7A53E1926F96648C7006E9 /* AudiobookPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0F4DB1369829F5204C91E5 /* AudiobookPlayerView.swift */; };
 		CD4F93D52871CABB4FE02BCB /* CommunityReviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AC16A130A2C7DD56B0A650 /* CommunityReviews.swift */; };
@@ -921,7 +923,9 @@
 		E18C38C02AF14F176063F3A1 /* VoiceForkManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VoiceForkManager.swift; path = Sources/CreatorCoreForge/VoiceForkManager.swift; sourceTree = "<group>"; };
 		E1FF61CD74066715BAE0549A /* CrossBookNarration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CrossBookNarration.swift; path = Sources/CreatorCoreForge/CrossBookNarration.swift; sourceTree = "<group>"; };
 		E210C8E620AC0CAD48EFA95B /* VoiceTimbreModulator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VoiceTimbreModulator.swift; path = Sources/CreatorCoreForge/VoiceTimbreModulator.swift; sourceTree = "<group>"; };
-		E239EC118899F28C0A22D2A2 /* DashboardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DashboardView.swift; path = apps/CoreForgeAudio/VocalVerseFull/VocalVerse/DashboardView.swift; sourceTree = "<group>"; };
+               E239EC118899F28C0A22D2A2 /* DashboardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DashboardView.swift; path = apps/CoreForgeAudio/VocalVerseFull/VocalVerse/DashboardView.swift; sourceTree = "<group>"; };
+               5CC1DF2EA8BA4A67A7E4D155 /* HomeDashboardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HomeDashboardView.swift; path = apps/CoreForgeAudio/views/HomeDashboardView.swift; sourceTree = SOURCE_ROOT; };
+               FF755BE847684FB6BA0BE265 /* MainDashboardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MainDashboardView.swift; path = apps/CoreForgeAudio/views/MainDashboardView.swift; sourceTree = SOURCE_ROOT; };
 		E24D75BDD390E8729F346721 /* NSFWMoodHeatmap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSFWMoodHeatmap.swift; path = Sources/CreatorCoreForge/NSFWMoodHeatmap.swift; sourceTree = "<group>"; };
 		E2D9DB76571383C7D6E4E3C3 /* CoreForgeAudio_MissingFeatures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreForgeAudio_MissingFeatures.swift; path = Sources/CreatorCoreForge/CoreForgeAudio_MissingFeatures.swift; sourceTree = "<group>"; };
 		E4D14474DF47A474AD3493AF /* AppIdeaGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppIdeaGenerator.swift; path = Sources/CreatorCoreForge/AppIdeaGenerator.swift; sourceTree = "<group>"; };
@@ -1010,9 +1014,11 @@
 				8B99F4C047A0376269AA27A5 /* ContentView.swift */,
 				427013E1DE2C713C0A784592 /* CoreForgeAudioApp.swift */,
 				5BC1F3482E6F4842815C9E84 /* CreditStore.swift */,
-				459EB67C128B19FE9EC18348 /* CreditsHistoryView.swift */,
-				E239EC118899F28C0A22D2A2 /* DashboardView.swift */,
-				6A0346F8BF557F425F0C2D43 /* DownloadQueue.swift */,
+                               459EB67C128B19FE9EC18348 /* CreditsHistoryView.swift */,
+                               E239EC118899F28C0A22D2A2 /* DashboardView.swift */,
+                               5CC1DF2EA8BA4A67A7E4D155 /* HomeDashboardView.swift */,
+                               FF755BE847684FB6BA0BE265 /* MainDashboardView.swift */,
+                               6A0346F8BF557F425F0C2D43 /* DownloadQueue.swift */,
 				1197097692EC4CC00A247E96 /* DownloadsView.swift */,
 				0023E73BFB52710BF1A285F7 /* EbookImporter.swift */,
 				3623341860254AD8951598FD /* ElevenLabsService.swift */,
@@ -1587,8 +1593,10 @@
 				F268A0F8E6724D580129CBD1 /* CoreForgeAudioApp.swift in Sources */,
 				47B3D019B8F084BFC0DEE478 /* CreditStore.swift in Sources */,
 				8877D4D1EC7E0FAF297D780A /* CreditsHistoryView.swift in Sources */,
-				CB1B9773262EB025BA79FCAA /* DashboardView.swift in Sources */,
-				66AFAAC47917CB7FB8AFB7D0 /* DownloadQueue.swift in Sources */,
+                               CB1B9773262EB025BA79FCAA /* DashboardView.swift in Sources */,
+                               DC20416E17CC4787B9E323AF /* HomeDashboardView.swift in Sources */,
+                               9D5B764C2D6D4F7492FC82A7 /* MainDashboardView.swift in Sources */,
+                               66AFAAC47917CB7FB8AFB7D0 /* DownloadQueue.swift in Sources */,
 				9F8A724FF65794205C55674A /* DownloadsView.swift in Sources */,
 				1B46A74636D5700A1A29CA8D /* EbookImporter.swift in Sources */,
 				ECBED3FAFE1AE89434F8BA61 /* ElevenLabsService.swift in Sources */,
