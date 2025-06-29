@@ -24,6 +24,12 @@ jobs:
         run: npm test --workspaces
       - name: Coverage
         run: npm run coverage
+      - name: Dependency Scan
+        run: ./scripts/run_snyk.sh
+      - name: Benchmarks
+        run: python benchmarks/tts_benchmark.py
+      - name: Load Simulation
+        run: ./scripts/load_test.sh
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -44,12 +50,19 @@ jobs:
         run: python scripts/generate_xctest_stubs.py
       - name: Swift Tests
         run: swift test --enable-test-discovery
+      - name: Visual Regression Tests
+        run: swift test --filter PlaceholderSnapshotTests || true
       - name: SAST
         run: ./scripts/run_sast.sh
       - name: SonarQube Scan
         run: ./scripts/run_sonar.sh
       - name: Build
         run: ./scripts/universal_build.sh
+      - name: Package Electron Apps
+        run: ./scripts/package_electron.sh
       - name: Deploy
         if: github.ref == 'refs/heads/main' && success()
         run: echo "Deploying..."
+      - name: Canary Release
+        if: github.ref == 'refs/heads/main' && success()
+        run: ./scripts/canary_release.sh

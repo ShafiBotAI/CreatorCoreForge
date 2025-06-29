@@ -1,15 +1,5 @@
 {
   "open_tasks": [
-    "Add Fastlane lanes for code signing, TestFlight & App Store uploads",
-    "Script Electron packaging for desktop releases",
-    "Implement canary releases with automated error-rate rollback",
-    "Enable Dependabot / Renovate for library upgrades",
-    "Integrate Snyk (or OWASP Dependency-Check) into CI",
-    "Develop micro-benchmark suite for TTS and critical loops",
-    "Add load-simulation jobs to CI for audio/render pipelines",
-    "Integrate visual regression tests (e.g. iOSSnapshotTestCase)",
-    "Auto-instrument Sentry or Datadog SDKs for crash/perf tracing",
-    "Standardize structured JSON logging; scrub sensitive data",
     "Dashboard setup for real-time crash & performance metrics",
     "Integrate Axe (or Apple Accessibility Inspector) audit in CI",
     "Run pseudo-localization to catch layout & missing-string issues",

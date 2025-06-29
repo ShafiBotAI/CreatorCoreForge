@@ -14,6 +14,7 @@ products.append(contentsOf: [
 
 var targets: [PackageDescription.Target] = [
     .target(name: "CreatorCoreForge",
+            dependencies: ["Sentry"],
             path: "Sources/CreatorCoreForge",
             resources: [
                 .copy("Resources/app_completion_report.json")
@@ -57,7 +58,8 @@ let package = Package(
     ],
     products: products,
     dependencies: [
-        .package(url: "https://github.com/Quick/SwiftCheck.git", from: "0.12.0")
+        .package(url: "https://github.com/Quick/SwiftCheck.git", from: "0.12.0"),
+        .package(url: "https://github.com/getsentry/sentry-cocoa.git", from: "8.22.0")
     ],
     targets: targets
 )
