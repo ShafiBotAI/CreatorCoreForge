@@ -299,26 +299,26 @@ Key points from `README.md`:
 - [x] Feature 145: Audiobook tone adjuster for CoreForge Audio export compatibility
 - [x] Feature 146: One-click export to CoreForge Visual for full cinematic conversion
 - [x] Feature 147: Multiverse export kit: visual, audio, and story metadata bundled
-- [ ] Feature 148: Beta reader simulator: critique generation by style archetype
-- [ ] Feature 149: Dynamic pacing visualizer with chapter and series overlays
-- [ ] Feature 150: Custom LLM tuning per author for ultra-consistent tone
-- [ ] Feature 151: Multiverse character memory that persists across all books and spin-offs
-- [ ] Feature 152: AI-powered emotional arc visualizer for entire series and individual characters
-- [ ] Feature 153: Scene-by-scene tone control with AI-suggested emotional beats
-- [ ] Feature 154: Drag-and-drop nonlinear scene editor with alternate branches
-- [ ] Feature 155: Custom templates for story arcs by genre (hero’s journey, romance, thriller)
-- [ ] Feature 156: AI inline rewrite suggestions matching author's original tone and style
-- [ ] Feature 157: POV analyzer to detect inconsistent or accidental shifts in perspective
-- [ ] Feature 158: Timeline synchronization across characters, locations, and events
-- [ ] Feature 159: AI-powered flashback insertion with scene retiming
-- [ ] Feature 160: Foreshadowing generator and mystery seed planner
-- [ ] Feature 161: Relationship heatmap for romantic, platonic, rival, or mentor dynamics
-- [ ] Feature 162: Real-time lore reference enforcement with cross-book canon validation
-- [ ] Feature 163: Genre-aware pacing adjustment recommendations
-- [ ] Feature 164: Symbolism analyzer to enhance narrative depth
-- [ ] Feature 165: Visual scene composer with AI-generated descriptions and reference art
-- [ ] Feature 166: Scene intensity scoring with crescendo and relief pattern tracking
-- [ ] Feature 167: Multiverse timeline builder (alternate universe continuity maps)
+- [x] Feature 148: Beta reader simulator: critique generation by style archetype
+- [x] Feature 149: Dynamic pacing visualizer with chapter and series overlays
+- [x] Feature 150: Custom LLM tuning per author for ultra-consistent tone
+- [x] Feature 151: Multiverse character memory that persists across all books and spin-offs
+- [x] Feature 152: AI-powered emotional arc visualizer for entire series and individual characters
+- [x] Feature 153: Scene-by-scene tone control with AI-suggested emotional beats
+- [x] Feature 154: Drag-and-drop nonlinear scene editor with alternate branches
+- [x] Feature 155: Custom templates for story arcs by genre (hero’s journey, romance, thriller)
+- [x] Feature 156: AI inline rewrite suggestions matching author's original tone and style
+- [x] Feature 157: POV analyzer to detect inconsistent or accidental shifts in perspective
+- [x] Feature 158: Timeline synchronization across characters, locations, and events
+- [x] Feature 159: AI-powered flashback insertion with scene retiming
+- [x] Feature 160: Foreshadowing generator and mystery seed planner
+- [x] Feature 161: Relationship heatmap for romantic, platonic, rival, or mentor dynamics
+- [x] Feature 162: Real-time lore reference enforcement with cross-book canon validation
+- [x] Feature 163: Genre-aware pacing adjustment recommendations
+- [x] Feature 164: Symbolism analyzer to enhance narrative depth
+- [x] Feature 165: Visual scene composer with AI-generated descriptions and reference art
+- [x] Feature 166: Scene intensity scoring with crescendo and relief pattern tracking
+- [x] Feature 167: Multiverse timeline builder (alternate universe continuity maps)
 - [ ] Feature 168: Dynamic cast builder for ensemble and rotating POV books
 - [ ] Feature 169: Character growth tracker visualized over a story arc timeline
 - [ ] Feature 170: Tone adaptation tool: rewrite any chapter in noir, epic, or whimsical style
