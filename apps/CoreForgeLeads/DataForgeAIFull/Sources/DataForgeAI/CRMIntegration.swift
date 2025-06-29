@@ -49,4 +49,11 @@ public final class CRMIntegration {
             completion(results)
         }
     }
+
+    /// Convenience helper to upload all leads and return true if all succeed.
+    public func syncAll(_ leads: [Lead], completion: @escaping (Bool) -> Void) {
+        uploadBatch(leads) { results in
+            completion(!results.contains(false))
+        }
+    }
 }

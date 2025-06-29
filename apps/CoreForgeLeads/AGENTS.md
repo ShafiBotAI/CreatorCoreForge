@@ -67,16 +67,16 @@ Key points from `README.md`:
 
 ## 200 Next-Gen Features for CoreForge Leads (Generated 2025-06-29)
 
- - [ ] Feature 1: Predictive lead scoring using behavioral signals and firmographics
- - [ ] Feature 2: AI email outreach generator tailored to tone, product, and industry
- - [ ] Feature 3: Live intent signal monitoring from LinkedIn, G2, Reddit, and Twitter
- - [ ] Feature 4: AI-driven ICP (ideal customer profile) builder with dynamic filters
- - [ ] Feature 5: Automatic lead enrichment with company data, funding, and tech stack
- - [ ] Feature 6: DF Signal Fusion™: merges 1st/2nd/3rd party signals into one score
- - [ ] Feature 7: Real-time job change and org shift alerts for decision-makers
- - [ ] Feature 8: Lead marketplace to buy/sell verified leads by niche and intent
- - [ ] Feature 9: Smart follow-up engine with multi-channel sequencing
- - [ ] Feature 10: One-click CRM sync with HubSpot, Salesforce, Zoho, and Pipedrive
+ - [x] Feature 1: Predictive lead scoring using behavioral signals and firmographics
+ - [x] Feature 2: AI email outreach generator tailored to tone, product, and industry
+ - [x] Feature 3: Live intent signal monitoring from LinkedIn, G2, Reddit, and Twitter
+ - [x] Feature 4: AI-driven ICP (ideal customer profile) builder with dynamic filters
+ - [x] Feature 5: Automatic lead enrichment with company data, funding, and tech stack
+ - [x] Feature 6: DF Signal Fusion™: merges 1st/2nd/3rd party signals into one score
+ - [x] Feature 7: Real-time job change and org shift alerts for decision-makers
+ - [x] Feature 8: Lead marketplace to buy/sell verified leads by niche and intent
+ - [x] Feature 9: Smart follow-up engine with multi-channel sequencing
+ - [x] Feature 10: One-click CRM sync with HubSpot, Salesforce, Zoho, and Pipedrive
  - [ ] Feature 11: Lead generation Chrome extension for scraping any site or profile
  - [ ] Feature 12: AI-powered LinkedIn messaging assistant with tone optimization
  - [ ] Feature 13: Dynamic contact verification with bounce risk scoring
