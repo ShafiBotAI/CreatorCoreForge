@@ -48,4 +48,9 @@ public final class ShadowTrader {
             }
         }
     }
+
+    /// Simple pattern replication that echoes previous trade sizes.
+    public func replicatePattern(_ pattern: [Double]) -> [Double] {
+        return pattern
+    }
 }

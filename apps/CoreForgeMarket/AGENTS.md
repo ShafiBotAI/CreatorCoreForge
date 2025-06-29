@@ -121,16 +121,16 @@ Key points from `README.md`:
 
 ## 200 Next-Gen Features (2025-06-29)
 
-- [ ] Feature 1: Real-time sentiment analysis across Twitter, Reddit, and financial news
-- [ ] Feature 2: Whale wallet shadow trading and automatic pattern replication
-- [ ] Feature 3: Insider flow tracking with dark pool alert system
-- [ ] Feature 4: Titan Strategy Engine with adaptive multi-algo switching
-- [ ] Feature 5: Smart arbitrage scanner across crypto, forex, and stocks
-- [ ] Feature 6: AI-guided risk calibration based on user profile and goal
-- [ ] Feature 7: Event-based auto-trading (earnings, CPI, Fed meetings)
-- [ ] Feature 8: Predictive heatmaps for sectors, coins, and option chains
-- [ ] Feature 9: Auto-hedging recommendations using volatility sensors
-- [ ] Feature 10: Live market anomaly detector with strategy pivots
+- [x] Feature 1: Real-time sentiment analysis across Twitter, Reddit, and financial news
+- [x] Feature 2: Whale wallet shadow trading and automatic pattern replication
+- [x] Feature 3: Insider flow tracking with dark pool alert system
+- [x] Feature 4: Titan Strategy Engine with adaptive multi-algo switching
+- [x] Feature 5: Smart arbitrage scanner across crypto, forex, and stocks
+- [x] Feature 6: AI-guided risk calibration based on user profile and goal
+- [x] Feature 7: Event-based auto-trading (earnings, CPI, Fed meetings)
+- [x] Feature 8: Predictive heatmaps for sectors, coins, and option chains
+- [x] Feature 9: Auto-hedging recommendations using volatility sensors
+- [x] Feature 10: Live market anomaly detector with strategy pivots
 - [ ] Feature 11: Self-learning trading bot with reinforcement feedback loop
 - [ ] Feature 12: Cross-platform broker integration (Robinhood, IBKR, Coinbase, etc.)
 - [ ] Feature 13: News-to-trade bot: generates ideas from real-time news headlines

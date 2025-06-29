@@ -60,7 +60,8 @@ public final class ExchangeAPI {
     public func placeOrder(pair: String, side: String, amount: Double, completion: @escaping (Result<String, Error>) -> Void) {
         var request = URLRequest(url: baseURL.appendingPathComponent("order"))
         request.httpMethod = "POST"
-        let body = ["pair": pair, "side": side, "amount": amount]
+        struct Order: Encodable { let pair: String; let side: String; let amount: Double }
+        let body = Order(pair: pair, side: side, amount: amount)
         request.httpBody = try? JSONEncoder().encode(body)
         if let key = apiKey { request.addValue(key, forHTTPHeaderField: "X-API-Key") }
         sign(request: &request)
