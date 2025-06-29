@@ -77,16 +77,16 @@ Key points from `README.md`:
  - [x] Feature 8: Lead marketplace to buy/sell verified leads by niche and intent
  - [x] Feature 9: Smart follow-up engine with multi-channel sequencing
  - [x] Feature 10: One-click CRM sync with HubSpot, Salesforce, Zoho, and Pipedrive
- - [ ] Feature 11: Lead generation Chrome extension for scraping any site or profile
- - [ ] Feature 12: AI-powered LinkedIn messaging assistant with tone optimization
- - [ ] Feature 13: Dynamic contact verification with bounce risk scoring
- - [ ] Feature 14: Voice message outreach tool with tone-matching AI suggestions
- - [ ] Feature 15: ABM (account-based marketing) playbook generator by vertical
- - [ ] Feature 16: AI-generated landing pages personalized per lead segment
- - [ ] Feature 17: Multivariate A/B test generator for CTAs, subject lines, and offers
- - [ ] Feature 18: Personalized lead videos using face swap and AI voice synthesis
- - [ ] Feature 19: Custom AI agents that outreach, qualify, and nurture leads autonomously
- - [ ] Feature 20: Smart timezone scheduler for global outreach efficiency
+ - [x] Feature 11: Lead generation Chrome extension for scraping any site or profile
+ - [x] Feature 12: AI-powered LinkedIn messaging assistant with tone optimization
+ - [x] Feature 13: Dynamic contact verification with bounce risk scoring
+ - [x] Feature 14: Voice message outreach tool with tone-matching AI suggestions
+ - [x] Feature 15: ABM (account-based marketing) playbook generator by vertical
+ - [x] Feature 16: AI-generated landing pages personalized per lead segment
+ - [x] Feature 17: Multivariate A/B test generator for CTAs, subject lines, and offers
+ - [x] Feature 18: Personalized lead videos using face swap and AI voice synthesis
+ - [x] Feature 19: Custom AI agents that outreach, qualify, and nurture leads autonomously
+ - [x] Feature 20: Smart timezone scheduler for global outreach efficiency
  - [ ] Feature 21: Creator monetization dashboard for reselling lead packs
  - [ ] Feature 22: Affiliate marketplace for white-label lead resellers
  - [ ] Feature 23: Gamified lead gen tools to increase opt-ins (wheel, quiz, etc.)

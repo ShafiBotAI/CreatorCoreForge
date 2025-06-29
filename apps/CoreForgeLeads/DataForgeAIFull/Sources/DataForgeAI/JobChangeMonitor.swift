@@ -1,4 +1,7 @@
 import Foundation
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 /// Monitors job change alerts for decision makers.
 public final class JobChangeMonitor {
