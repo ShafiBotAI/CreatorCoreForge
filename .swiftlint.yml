@@ -1,0 +1,11 @@
+opt_in_rules:
+  - force_unwrapping
+  - force_cast
+  - fatal_error_message
+  - unused_optional_binding
+
+included:
+  - Sources
+  - apps
+  - Tests
+
