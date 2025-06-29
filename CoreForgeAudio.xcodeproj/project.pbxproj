@@ -387,7 +387,8 @@
 		C9914A2C3374576717EDD8A8 /* ExperimentalFX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7417EBD61C3C8D8BBE5DA1CC /* ExperimentalFX.swift */; };
 		CAA99742376AD302B6EF8519 /* SoundLayerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB8397BB4A0AD48935317E7 /* SoundLayerEngine.swift */; };
 		CAB4CC8D9581D9EF90D3312A /* AnimationDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F30C35756E870A3AEBCD593 /* AnimationDashboard.swift */; };
-		CABB53BB8469D46F56CEFAB5 /* OCRScanMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6418A4324EDFAD12529EC847 /* OCRScanMode.swift */; };
+               CABB53BB8469D46F56CEFAB5 /* OCRScanMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6418A4324EDFAD12529EC847 /* OCRScanMode.swift */; };
+               736A8AD5609D34AC42EC7D36 /* PhotoPageSorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651DCF3C685DFCA6C40A5DCB /* PhotoPageSorter.swift */; };
                CB1B9773262EB025BA79FCAA /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E239EC118899F28C0A22D2A2 /* DashboardView.swift */; };
                DC20416E17CC4787B9E323AF /* HomeDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC1DF2EA8BA4A67A7E4D155 /* HomeDashboardView.swift */; };
                9D5B764C2D6D4F7492FC82A7 /* MainDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF755BE847684FB6BA0BE265 /* MainDashboardView.swift */; };
@@ -695,8 +696,9 @@
 		62BA2B64DB508D632FB96114 /* PluginLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PluginLoader.swift; path = Sources/CreatorCoreForge/PluginLoader.swift; sourceTree = "<group>"; };
 		6324FA4CA2BF4C4F43B85DCE /* prompts.json */ = {isa = PBXFileReference; includeInIndex = 1; name = prompts.json; path = apps/CoreForgeAudio/VocalVerseFull/VocalVerse/prompts.json; sourceTree = "<group>"; };
 		640CE93D2F0ED1998B5F88B6 /* SemanticSegmenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SemanticSegmenter.swift; path = Sources/CreatorCoreForge/SemanticSegmenter.swift; sourceTree = "<group>"; };
-		6418A4324EDFAD12529EC847 /* OCRScanMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OCRScanMode.swift; path = Sources/CreatorCoreForge/OCRScanMode.swift; sourceTree = "<group>"; };
-		64695E4714A6EA5A989A39DA /* WorldMemoryService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WorldMemoryService.swift; path = Sources/CreatorCoreForge/WorldMemoryService.swift; sourceTree = "<group>"; };
+                6418A4324EDFAD12529EC847 /* OCRScanMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OCRScanMode.swift; path = Sources/CreatorCoreForge/OCRScanMode.swift; sourceTree = "<group>"; };
+                651DCF3C685DFCA6C40A5DCB /* PhotoPageSorter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoPageSorter.swift; path = Sources/CreatorCoreForge/PhotoPageSorter.swift; sourceTree = "<group>"; };
+                64695E4714A6EA5A989A39DA /* WorldMemoryService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WorldMemoryService.swift; path = Sources/CreatorCoreForge/WorldMemoryService.swift; sourceTree = "<group>"; };
 		64D8465318B2DB2FA3F0A365 /* VoiceReactivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VoiceReactivity.swift; path = Sources/CreatorCoreForge/VoiceReactivity.swift; sourceTree = "<group>"; };
 		6504DE864796A7669332A703 /* PronunciationDictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PronunciationDictionary.swift; path = Sources/CreatorCoreForge/PronunciationDictionary.swift; sourceTree = "<group>"; };
 		654E8C9E07A92A5C533F7B53 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = apps/CoreForgeAudio/VocalVerseFull/VocalVerse/Assets.xcassets; sourceTree = "<group>"; };
@@ -1480,8 +1482,9 @@
 				A07EF8BE89459197D50EB1C6 /* VoiceTrainer.swift */,
 				D85114D6FD55C1EBD6CCD888 /* WatchSyncService.swift */,
 				E750817C5D453940CFE0FBC8 /* WatermarkService.swift */,
-				64695E4714A6EA5A989A39DA /* WorldMemoryService.swift */,
-				F95C843A8084D05B4FB215CE /* Book.swift */,
+                               64695E4714A6EA5A989A39DA /* WorldMemoryService.swift */,
+                               651DCF3C685DFCA6C40A5DCB /* PhotoPageSorter.swift */,
+                               F95C843A8084D05B4FB215CE /* Book.swift */,
 				AA328AEA3C24F926CA0F0671 /* UsageStats.swift */,
 			);
 			sourceTree = "<group>";
@@ -1910,8 +1913,9 @@
 				468B1244B5A18F369E24C396 /* ParentReportManager.swift in Sources */,
 				47893FBCED0C448FFBEBDC36 /* ParticleFXLayer.swift in Sources */,
 				57A1D93CF2F848499813B956 /* PerformanceModeSelector.swift in Sources */,
-				DE8AE8ED043E51202294DABC /* PersonalizedGreetingService.swift in Sources */,
-				FAF46C6D0F4B4AE4F7146535 /* PlaybackAnalytics.swift in Sources */,
+                               DE8AE8ED043E51202294DABC /* PersonalizedGreetingService.swift in Sources */,
+                               736A8AD5609D34AC42EC7D36 /* PhotoPageSorter.swift in Sources */,
+                               FAF46C6D0F4B4AE4F7146535 /* PlaybackAnalytics.swift in Sources */,
 				B473CD2896181C102B03F4DF /* PlaybackProgressSync.swift in Sources */,
 				49FD675FF708E635C8228900 /* PluginBuilder.swift in Sources */,
 				34CF03C5874E9D43431DB859 /* PluginDependencyGraph.swift in Sources */,
