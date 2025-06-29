@@ -3,6 +3,11 @@ fastlane_version "2.212.0"
 default_platform(:ios)
 
 platform :ios do
+  desc "Sync code signing certificates and profiles"
+  lane :codesign do
+    match(type: "appstore")
+  end
+
   desc "Build and upload to TestFlight"
   lane :build_and_upload do
     sh('../scripts/run_swiftlint.sh')
@@ -56,6 +61,33 @@ platform :ios do
       skip_metadata: true,
       ipa: "build/#{scheme}/#{scheme}.ipa"
     )
+  end
+
+  desc "Upload an existing IPA to TestFlight"
+  lane :testflight do |options|
+    api_key = {
+      key_id: ENV.fetch("APPSTORECONNECT_KEY_ID", ENV["APPSTORE_CONNECT_API_KEY_ID"]),
+      issuer_id: ENV.fetch("APPSTORECONNECT_ISSUER_ID", ENV["APPSTORE_CONNECT_API_KEY_ISSUER_ID"]),
+      key: ENV.fetch("APPSTORECONNECT_API_KEY", ENV["APPSTORE_CONNECT_API_KEY"])
+    }
+    pilot(api_key: api_key,
+          team_id: ENV.fetch("APPSTORECONNECT_TEAM_ID", ENV["APPSTORE_CONNECT_TEAM_ID"]),
+          skip_waiting_for_build_processing: true,
+          ipa: options[:ipa])
+  end
+
+  desc "Release an existing IPA to the App Store"
+  lane :appstore do |options|
+    api_key = {
+      key_id: ENV.fetch("APPSTORECONNECT_KEY_ID", ENV["APPSTORE_CONNECT_API_KEY_ID"]),
+      issuer_id: ENV.fetch("APPSTORECONNECT_ISSUER_ID", ENV["APPSTORE_CONNECT_API_KEY_ISSUER_ID"]),
+      key: ENV.fetch("APPSTORECONNECT_API_KEY", ENV["APPSTORE_CONNECT_API_KEY"])
+    }
+    upload_to_app_store(api_key: api_key,
+                        team_id: ENV.fetch("APPSTORECONNECT_TEAM_ID", ENV["APPSTORE_CONNECT_TEAM_ID"]),
+                        skip_screenshots: true,
+                        skip_metadata: true,
+                        ipa: options[:ipa])
   end
 
   desc "Build and upload all iOS apps"

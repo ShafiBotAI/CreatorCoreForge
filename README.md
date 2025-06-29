@@ -19,6 +19,8 @@
 - QuantumConnector™ (real/simulated quantum support)
 - Electron.js (cross-platform PC builds)
 - Swift (iOS), Kotlin (Android), Unity (Games)
+- Sentry SDK for crash reporting
+- Structured JSON logging utilities
 
 ---
 
@@ -303,6 +305,8 @@ using the `build_all` lane. Configure `APPSTORECONNECT_*` secrets in your
 repository so the workflow can authenticate with App Store Connect. You can also
 manually trigger `upload-testflight.yml` from the Actions tab when a one-off
 build is ready for distribution.
+Additional lanes now exist for `codesign`, `testflight` and `appstore` to
+handle certificate syncing and uploading prebuilt IPAs.
 Xcode Cloud workflows are defined under `.xcodecloud/workflows` and can be configured directly in Xcode. See `docs/XcodeCloudSetup.md` for details.
 
 For production releases, trigger `upload-appstore.yml` which uses the
@@ -445,4 +449,17 @@ shared Swift sources, run:
 
 This copies `apps/CoreForgeAudio`, the `Sources` directory and `Package.swift`
 into the specified folder and initializes a fresh git repository.
+
+## Benchmarks and Load Testing
+Run micro benchmarks with:
+
+```bash
+python benchmarks/tts_benchmark.py
+```
+
+Basic load simulation can be triggered via:
+
+```bash
+./scripts/load_test.sh
+```
 
