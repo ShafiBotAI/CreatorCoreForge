@@ -38,4 +38,14 @@ public final class SceneManager {
     public func pinScene(id: UUID) {
         pinnedSceneID = id
     }
+
+    /// Return only the active scenes in their current order.
+    public func activeScenes() -> [SceneDraft] {
+        scenes.filter { active.contains($0.id) }
+    }
+
+    /// Retrieve alternate drafts for a given scene.
+    public func alternateScenes(for sceneID: UUID) -> [SceneDraft] {
+        alternates[sceneID] ?? []
+    }
 }

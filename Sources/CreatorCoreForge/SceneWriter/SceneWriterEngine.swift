@@ -37,9 +37,31 @@ public final class SceneWriterEngine {
     public init() {}
 
     /// Generate a new scene draft using the provided prompt and memory.
-    /// The text is returned as-is while metadata defaults are applied.
+    /// Metadata can be supplied inline using `[tone:]`, `[pov:]`, and
+    /// `[emotion:]` tags which will be stripped from the resulting text.
     public func generateScene(prompt: String, memory: MemoryState) -> SceneDraft {
         let chapterID = memory.recentScenes.last?.chapterID ?? UUID()
-        return SceneDraft(chapterID: chapterID, text: prompt)
+
+        var tone = "neutral"
+        var pov = "third"
+        var emotion = "neutral"
+        var text = prompt
+
+        func extract(_ key: String, into variable: inout String) {
+            let pattern = "\\[" + key + ":(.*?)\\]"
+            guard let regex = try? NSRegularExpression(pattern: pattern) else { return }
+            let nsrange = NSRange(text.startIndex..<text.endIndex, in: text)
+            if let match = regex.firstMatch(in: text, range: nsrange),
+               let range = Range(match.range(at: 1), in: text) {
+                variable = String(text[range])
+                text = regex.stringByReplacingMatches(in: text, range: nsrange, withTemplate: "").trimmingCharacters(in: .whitespaces)
+            }
+        }
+
+        extract("tone", into: &tone)
+        extract("pov", into: &pov)
+        extract("emotion", into: &emotion)
+
+        return SceneDraft(chapterID: chapterID, text: text, tone: tone, pov: pov, emotion: emotion)
     }
 }

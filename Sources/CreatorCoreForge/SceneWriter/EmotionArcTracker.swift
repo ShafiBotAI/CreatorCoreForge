@@ -21,6 +21,11 @@ public final class EmotionArcTracker {
         order.compactMap { emotions[$0] }
     }
 
+    /// Provide a simple string visualization of the emotional flow.
+    public func visualizeFlow() -> String {
+        emotionalFlow().joined(separator: " -> ")
+    }
+
     /// Recommend the next emotional beat based on a simple arc cycle.
     public func recommendNextEmotion() -> String {
         let current = order.last.flatMap { emotions[$0] } ?? "calm"
