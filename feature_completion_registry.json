@@ -4,10 +4,20 @@
     "Tests/CreatorCoreForgeTests/RealTimeFeedManagerTests.swift",
     "Tests/CreatorCoreForgeTests/NetworkInfoProviderTests.swift",
     "Tests/CreatorCoreForgeTests/LibrarySyncTests.swift",
-    "Tests/CreatorCoreForgeTests/SocialMediaManagerTests.swift"
-  ,
+    "Tests/CreatorCoreForgeTests/SocialMediaManagerTests.swift",
     "VoiceLab/src/TTSRenderer.ts",
     "VoiceLab/src/ChapterEditor.vue",
-    "VoiceLab/test/ttsRenderer.test.ts"
+    "VoiceLab/test/ttsRenderer.test.ts",
+    "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/LeadsAPIService.swift",
+    "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/CampaignCloner.swift",
+    "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/SalesPerformanceAnalytics.swift",
+    "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/DuplicateLeadMerger.swift",
+    "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/GlobalCurrencySupport.swift",
+    "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/OutreachDelayOptimizer.swift",
+    "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/DFScoreHeatmap.swift",
+    "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/AICopilotChat.swift",
+    "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/VoiceLeadDictation.swift",
+    "apps/CoreForgeLeads/DataForgeAIFull/Sources/DataForgeAI/MarketTransferService.swift",
+    "apps/CoreForgeLeads/DataForgeAIFull/Tests/DataForgeAITests/Feature91to100Tests.swift"
   ]
 }
