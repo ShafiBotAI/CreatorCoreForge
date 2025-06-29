@@ -415,12 +415,10 @@
 ==================================================
 
 📦 App: CoreForgeWriter
-✅ Implemented Features: 3
+✅ Implemented Features: 23
    - Add new genre templates in `GenreConfig.swift`
    - Connect to publishing dashboard via `PublishBridge.swift`
    - OfflineMP3Downloader (`apps/CoreForgeWriter/InkwellAIFull/InkwellAI/SettingsView.swift`)
-
-❌ Missing or Incomplete Features: 70
    - Series-based memory for character/plot tracking
    - Bestseller structure engine (analyzes top 20 books) (Codex)
    - Multi-book support (up to 1000 pages) (Codex)
@@ -441,6 +439,8 @@
    - Build `.dmg` and `.exe` installers
    - Scene temperature dial for delivery mood (cold/neutral/hot)
    - AI trope detector and enhancer/breaker
+
+❌ Missing or Incomplete Features: 50
    - Meta writing mode (4th-wall awareness)
    - Book-to-song interlude generator
    - Dual-edit co-author editor with live AI collaboration
