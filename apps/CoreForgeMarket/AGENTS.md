@@ -201,16 +201,16 @@ Key points from `README.md`:
 - [x] Feature 78: NSFW token scanner (if 18+) for microcap degen alerts
 - [x] Feature 79: AI trade coach that grades your decisions and timing
 - [x] Feature 80: Trend shift early detection engine
-- [ ] Feature 81: Quant-style strategy builder using no-code tools
-- [ ] Feature 82: Auto-copy trading with adjustable risk filters
-- [ ] Feature 83: AI alerts: 'whale moved $10M', 'Fed speech in 5 mins', etc.
-- [ ] Feature 84: Price level clustering heatmap from historical data
-- [ ] Feature 85: Sentiment-weighted TA overlays
-- [ ] Feature 86: Smart tax-loss harvesting alerts
-- [ ] Feature 87: Trade emotion tracker (FOMO, fear, greed)
-- [ ] Feature 88: Global news map: economic and war zones as signals
-- [ ] Feature 89: AI-driven earnings preview forecasts
-- [ ] Feature 90: Liquidity trap detector with exit suggestions
+ - [x] Feature 81: Quant-style strategy builder using no-code tools
+ - [x] Feature 82: Auto-copy trading with adjustable risk filters
+ - [x] Feature 83: AI alerts: 'whale moved $10M', 'Fed speech in 5 mins', etc.
+ - [x] Feature 84: Price level clustering heatmap from historical data
+ - [x] Feature 85: Sentiment-weighted TA overlays
+ - [x] Feature 86: Smart tax-loss harvesting alerts
+ - [x] Feature 87: Trade emotion tracker (FOMO, fear, greed)
+ - [x] Feature 88: Global news map: economic and war zones as signals
+ - [x] Feature 89: AI-driven earnings preview forecasts
+ - [x] Feature 90: Liquidity trap detector with exit suggestions
 - [ ] Feature 91: Cross-chain scanner for DeFi/NFT flipping opportunities
 - [ ] Feature 92: AI-generated newsletter for your portfolio strategy
 - [ ] Feature 93: AI-generated thumbnail + headline for trade ideas (for creators)
