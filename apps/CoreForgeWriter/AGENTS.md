@@ -239,26 +239,26 @@ Key points from `README.md`:
 - [x] Feature 85: Time travel loop tracker with paradox alerts
 - [x] Feature 86: Dream generator for surreal storytelling layers
 - [x] Feature 87: AI-driven antagonist arc generator with redeemability scoring
-- [ ] Feature 88: Author branding toolkit: tone, themes, tagline consistency check
-- [ ] Feature 89: Voice dictation with emotion capture and ambient mode
-- [ ] Feature 90: Scene-by-scene reader poll system with live results dashboard
-- [ ] Feature 91: Choice-path story mode: branching scenes for interactive fiction
-- [ ] Feature 92: Smart rewrite engine to convert style (YA to adult, novel to script)
-- [ ] Feature 93: Multilingual scene generation with idiom and culture adaptation
-- [ ] Feature 94: Cover generator: AI-blended art and typography for publishing
-- [ ] Feature 95: Audiobook tone adjuster for CoreForge Audio export compatibility
-- [ ] Feature 96: One-click export to CoreForge Visual for full cinematic conversion
-- [ ] Feature 97: Multiverse export kit: visual, audio, and story metadata bundled
-- [ ] Feature 98: Beta reader simulator: critique generation by style archetype
-- [ ] Feature 99: Dynamic pacing visualizer with chapter and series overlays
-- [ ] Feature 100: Custom LLM tuning per author for ultra-consistent tone
-- [ ] Feature 101: Multiverse character memory that persists across all books and spin-offs
-- [ ] Feature 102: AI-powered emotional arc visualizer for entire series and individual characters
-- [ ] Feature 103: Scene-by-scene tone control with AI-suggested emotional beats
-- [ ] Feature 104: Drag-and-drop nonlinear scene editor with alternate branches
-- [ ] Feature 105: Custom templates for story arcs by genre (hero’s journey, romance, thriller)
-- [ ] Feature 106: AI inline rewrite suggestions matching author's original tone and style
-- [ ] Feature 107: POV analyzer to detect inconsistent or accidental shifts in perspective
+- [x] Feature 88: Author branding toolkit: tone, themes, tagline consistency check
+- [x] Feature 89: Voice dictation with emotion capture and ambient mode
+- [x] Feature 90: Scene-by-scene reader poll system with live results dashboard
+- [x] Feature 91: Choice-path story mode: branching scenes for interactive fiction
+- [x] Feature 92: Smart rewrite engine to convert style (YA to adult, novel to script)
+- [x] Feature 93: Multilingual scene generation with idiom and culture adaptation
+- [x] Feature 94: Cover generator: AI-blended art and typography for publishing
+- [x] Feature 95: Audiobook tone adjuster for CoreForge Audio export compatibility
+- [x] Feature 96: One-click export to CoreForge Visual for full cinematic conversion
+- [x] Feature 97: Multiverse export kit: visual, audio, and story metadata bundled
+- [x] Feature 98: Beta reader simulator: critique generation by style archetype
+- [x] Feature 99: Dynamic pacing visualizer with chapter and series overlays
+- [x] Feature 100: Custom LLM tuning per author for ultra-consistent tone
+- [x] Feature 101: Multiverse character memory that persists across all books and spin-offs
+- [x] Feature 102: AI-powered emotional arc visualizer for entire series and individual characters
+- [x] Feature 103: Scene-by-scene tone control with AI-suggested emotional beats
+- [x] Feature 104: Drag-and-drop nonlinear scene editor with alternate branches
+- [x] Feature 105: Custom templates for story arcs by genre (hero’s journey, romance, thriller)
+- [x] Feature 106: AI inline rewrite suggestions matching author's original tone and style
+- [x] Feature 107: POV analyzer to detect inconsistent or accidental shifts in perspective
 - [ ] Feature 108: Timeline synchronization across characters, locations, and events
 - [ ] Feature 109: AI-powered flashback insertion with scene retiming
 - [ ] Feature 110: Foreshadowing generator and mystery seed planner
