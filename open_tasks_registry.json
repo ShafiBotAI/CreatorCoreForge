@@ -1,15 +1,5 @@
 {
   "open_tasks": [
-    "Integrate SwiftLint & SwiftFormat into the iOS build pipeline",
-    "Configure ESLint & Prettier for all JS/React/Electron modules",
-    "Add non-nullable type checks and protocol-conformance validation",
-    "Embed SonarQube (or SwiftScan) SAST scans in PR checks",
-    "Auto-generate XCTest stubs from Swift interfaces",
-    "Scaffold Jest unit + integration tests for JS code",
-    "Create Cypress end-to-end test templates",
-    "Implement property-based & fuzz testing harnesses",
-    "Enforce \u226590% coverage threshold and fail CI builds if unmet",
-    "Build a GitHub Actions workflow: lint \u2192 tests \u2192 build \u2192 deploy",
     "Add Fastlane lanes for code signing, TestFlight & App Store uploads",
     "Script Electron packaging for desktop releases",
     "Implement canary releases with automated error-rate rollback",

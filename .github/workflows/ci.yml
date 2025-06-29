@@ -24,6 +24,14 @@ jobs:
         run: npm test --workspaces
       - name: Coverage
         run: npm run coverage
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Python deps
+        run: pip install -r requirements.txt
+      - name: Run Python Tests
+        run: pytest tests/python tests/fuzz
       - name: Setup Swift
         uses: swift-actions/setup-swift@v1
         with:
