@@ -9,6 +9,26 @@
     "Add git pre-commit hooks for lint, formatting & basic tests",
     "Configure Danger.js / Danger-Swift to enforce PR rules (tests, docs, coverage)",
     "On any lint/test failure, auto-create a GitHub Issue with logs",
-    "Integrate ChatOps to post build/test status & alerts into Slack"
+    "Integrate ChatOps to post build/test status & alerts into Slack",
+    "SceneSegmenter.segment(chapters:) -> [SceneClip]",
+    "Tag clips with sceneIndex, startLine, endLine, tone, transitionType",
+    "ClipRenderer.render(sceneClip:voiceMap:) -> RenderedClip",
+    "Support emotion injection, voice lipsync, ambient FX",
+    "Add retry logic for failed clip renders with clipID logging",
+    "Build ClipPreviewPanel UI with play, re-render, alternate scene",
+    "Overlay emotion arc and visual tags on each clip",
+    "CinematicCompiler.stitch(clips:) -> FinalVideo",
+    "Auto-insert transitions between clips (fade, zoom, cut, etc.)",
+    "Normalize voice tone and music across segments",
+    "Add watermark/creator tag if applicable",
+    "Add ExportMode.stitchClips to ExportSystem",
+    "Enable stitchClips mode: segment, queue renders, stitch",
+    "ExportQueueManager tracks clip status and cancel/retry",
+    "Show progress bar and preview final video during export",
+    "UserSettings.useClipStitching toggle (default ON)",
+    "Settings for minClipDuration and maxClipDuration (30-90 sec)",
+    "AI pacing advisor for scene breakpoints",
+    "Optional recap clip generator",
+    "Save clips as reusable social exports with hashtags"
   ]
 }

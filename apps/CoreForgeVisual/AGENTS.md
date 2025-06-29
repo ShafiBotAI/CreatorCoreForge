@@ -578,3 +578,25 @@ Ensure that CoreForge Audio, Visual, and Build are 100% functionally complete, s
 - [x] GitHub repo tagged as production ready
 - [x] App uploaded to App Store Connect + Play Store internal testing
 - [x] Announce launch with press kit + onboarding video
+
+### Phase 9 – Cinematic Clip Stitching Mode
+- [ ] `SceneSegmenter.segment(chapters:) -> [SceneClip]`
+- [ ] Tag clips with `sceneIndex`, `startLine`, `endLine`, `tone`, `transitionType`
+- [ ] `ClipRenderer.render(sceneClip:voiceMap:) -> RenderedClip`
+- [ ] Support emotion injection, voice lipsync, ambient FX
+- [ ] Add retry logic for failed clip renders with `clipID` logging
+- [ ] Build `ClipPreviewPanel.swift` with play button, re-render option, alternate scene button
+- [ ] Overlay emotion arc and visual tags per clip
+- [ ] `CinematicCompiler.stitch(clips:) -> FinalVideo`
+- [ ] Auto-insert transitions between clips (`fade`, `zoom`, `cut`, etc.)
+- [ ] Normalize voice tone and music across segments
+- [ ] Add watermark/creator tag if applicable
+- [ ] Add new mode `ExportMode.stitchClips`
+- [ ] If enabled: call `SceneSegmenter`, queue clip renders, stitch on completion
+- [ ] Track per-clip render status and allow cancel/retry
+- [ ] Show progress bar for total export with preview of final video
+- [ ] Add toggle: `useClipStitching = true` (default ON)
+- [ ] Add settings for `minClipDuration`, `maxClipDuration` (30–90 sec)
+- [ ] AI pacing advisor to suggest scene breakpoints
+- [ ] Optional recap clip generator between long time jumps
+- [ ] Save all clips as reusable social exports (titles, hashtags, thumbnails auto-generated)
