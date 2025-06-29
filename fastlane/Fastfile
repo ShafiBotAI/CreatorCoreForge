@@ -5,6 +5,7 @@ default_platform(:ios)
 platform :ios do
   desc "Build and upload to TestFlight"
   lane :build_and_upload do
+    sh('../scripts/run_swiftlint.sh')
     project_path = ENV["PROJECT_PATH"]
     scheme = ENV["SCHEME"]
     api_key = {
@@ -31,6 +32,7 @@ platform :ios do
 
   desc "Build and deliver to App Store Connect"
   lane :build_and_deliver do
+    sh('../scripts/run_swiftlint.sh')
     project_path = ENV["PROJECT_PATH"]
     scheme = ENV["SCHEME"]
     api_key = {
