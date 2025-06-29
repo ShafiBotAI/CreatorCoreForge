@@ -261,26 +261,26 @@ Key points from `README.md`:
 + [x] Feature 138: Global news map: economic and war zones as signals
 + [x] Feature 139: AI-driven earnings preview forecasts
 + [x] Feature 140: Liquidity trap detector with exit suggestions
-- [ ] Feature 141: Cross-chain scanner for DeFi/NFT flipping opportunities
-- [ ] Feature 142: AI-generated newsletter for your portfolio strategy
-- [ ] Feature 143: AI-generated thumbnail + headline for trade ideas (for creators)
-- [ ] Feature 144: Tokenomics breakdown visualizer for crypto plays
-- [ ] Feature 145: Trade sharing as stories to Telegram, Discord, X
-- [ ] Feature 146: Auto-bundling of your trade strategies into courses or kits
-- [ ] Feature 147: Heatmap of whale movements in top 50 coins or stocks
-- [ ] Feature 148: Neural signal rebalance based on live volatility
-- [ ] Feature 149: AI-matched mentors with your style via shadow portfolio comparison
-- [ ] Feature 150: Live news whisper mode: AI whispers most critical info every 15 mins
-- [ ] Feature 151: Real-time sentiment analysis across Twitter, Reddit, and financial news
-- [ ] Feature 152: Whale wallet shadow trading and automatic pattern replication
-- [ ] Feature 153: Insider flow tracking with dark pool alert system
-- [ ] Feature 154: Titan Strategy Engine with adaptive multi-algo switching
-- [ ] Feature 155: Smart arbitrage scanner across crypto, forex, and stocks
-- [ ] Feature 156: AI-guided risk calibration based on user profile and goal
-- [ ] Feature 157: Event-based auto-trading (earnings, CPI, Fed meetings)
-- [ ] Feature 158: Predictive heatmaps for sectors, coins, and option chains
-- [ ] Feature 159: Auto-hedging recommendations using volatility sensors
-- [ ] Feature 160: Live market anomaly detector with strategy pivots
+- [x] Feature 141: Cross-chain scanner for DeFi/NFT flipping opportunities
+- [x] Feature 142: AI-generated newsletter for your portfolio strategy
+- [x] Feature 143: AI-generated thumbnail + headline for trade ideas (for creators)
+- [x] Feature 144: Tokenomics breakdown visualizer for crypto plays
+- [x] Feature 145: Trade sharing as stories to Telegram, Discord, X
+- [x] Feature 146: Auto-bundling of your trade strategies into courses or kits
+- [x] Feature 147: Heatmap of whale movements in top 50 coins or stocks
+- [x] Feature 148: Neural signal rebalance based on live volatility
+- [x] Feature 149: AI-matched mentors with your style via shadow portfolio comparison
+- [x] Feature 150: Live news whisper mode: AI whispers most critical info every 15 mins
+- [x] Feature 151: Real-time sentiment analysis across Twitter, Reddit, and financial news
+- [x] Feature 152: Whale wallet shadow trading and automatic pattern replication
+- [x] Feature 153: Insider flow tracking with dark pool alert system
+- [x] Feature 154: Titan Strategy Engine with adaptive multi-algo switching
+- [x] Feature 155: Smart arbitrage scanner across crypto, forex, and stocks
+- [x] Feature 156: AI-guided risk calibration based on user profile and goal
+- [x] Feature 157: Event-based auto-trading (earnings, CPI, Fed meetings)
+- [x] Feature 158: Predictive heatmaps for sectors, coins, and option chains
+- [x] Feature 159: Auto-hedging recommendations using volatility sensors
+- [x] Feature 160: Live market anomaly detector with strategy pivots
 - [ ] Feature 161: Self-learning trading bot with reinforcement feedback loop
 - [ ] Feature 162: Cross-platform broker integration (Robinhood, IBKR, Coinbase, etc.)
 - [ ] Feature 163: News-to-trade bot: generates ideas from real-time news headlines
