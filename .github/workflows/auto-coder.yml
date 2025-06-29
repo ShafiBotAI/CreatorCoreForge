@@ -2,7 +2,7 @@ name: Auto-Coder
 
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '*/2 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -16,10 +16,10 @@ jobs:
           node-version: '18'
       - name: Install dependencies
         run: npm ci
-      - name: Run Codex Orchestrator
+      - name: Run Auto Code Bot
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: node scripts/codex-orchestrator.js
+        run: python scripts/auto_code_bot.py --upgrade-placeholders --complete-todos --complete-stubs
       - name: Push changes
         if: success()
         run: |

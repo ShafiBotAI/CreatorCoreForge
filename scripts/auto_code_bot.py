@@ -1,7 +1,7 @@
 import os
 import re
 import py_compile
-from typing import List
+from typing import List, Dict
 from datetime import datetime
 
 try:
@@ -11,6 +11,7 @@ except ImportError:
     OPENAI_AVAILABLE = False
 
 from feature_audit import scan_repo
+from stub_helper import scan_repo as scan_stubs, FILE_EXTS
 import argparse
 
 
@@ -26,6 +27,9 @@ def parse_tasks_file(path: str) -> List[str]:
     except Exception:
         pass
     return tasks
+
+
+TODO_PATTERN = re.compile(r"TODO[:\s]*(.*)", re.IGNORECASE)
 
 
 def offline_snippet(description: str, ext: str) -> str:
@@ -124,6 +128,78 @@ def language_from_extension(ext: str) -> str:
         ".kt": "kotlin",
     }
     return mapping.get(ext, "misc")
+
+
+def scan_todo_comments(repo_root: str) -> Dict[str, List[Dict[str, object]]]:
+    """Return mapping of file -> list of TODO comment info."""
+    results: Dict[str, List[Dict[str, object]]] = {}
+    for root, dirs, files in os.walk(repo_root):
+        if '.git' in dirs:
+            dirs.remove('.git')
+        for name in files:
+            ext = os.path.splitext(name)[1]
+            if ext in FILE_EXTS:
+                path = os.path.join(root, name)
+                try:
+                    with open(path, 'r', encoding='utf-8') as f:
+                        lines = f.readlines()
+                except Exception:
+                    continue
+                todos: List[Dict[str, object]] = []
+                for i, line in enumerate(lines, 1):
+                    m = TODO_PATTERN.search(line)
+                    if m:
+                        desc = m.group(1).strip() or 'implement logic'
+                        todos.append({'line': i, 'desc': desc})
+                if todos:
+                    results[os.path.relpath(path, repo_root)] = todos
+    return results
+
+
+def replace_todo_comments(repo_root: str) -> None:
+    todo_map = scan_todo_comments(repo_root)
+    for rel, items in todo_map.items():
+        path = os.path.join(repo_root, rel)
+        try:
+            with open(path, 'r', encoding='utf-8') as f:
+                lines = f.readlines()
+        except Exception:
+            continue
+        ext = os.path.splitext(path)[1]
+        offset = 0
+        for item in items:
+            idx = item['line'] - 1 + offset
+            desc = item['desc']
+            snippet = generate_snippet(desc, ext)
+            indent = re.match(r'\s*', lines[idx]).group(0)
+            snippet_lines = [indent + s + '\n' for s in snippet.splitlines()]
+            lines[idx:idx + 1] = snippet_lines
+            offset += len(snippet_lines) - 1
+        with open(path, 'w', encoding='utf-8') as f:
+            f.writelines(lines)
+
+
+def replace_stub_code(repo_root: str) -> None:
+    report = scan_stubs(repo_root)
+    for rel, detections in report.items():
+        path = os.path.join(repo_root, rel)
+        try:
+            with open(path, 'r', encoding='utf-8') as f:
+                lines = f.readlines()
+        except Exception:
+            continue
+        ext = os.path.splitext(path)[1]
+        offset = 0
+        for det in sorted(detections, key=lambda d: d['line']):
+            idx = det['line'] - 1 + offset
+            desc = det['type'].replace('_', ' ')
+            snippet = generate_snippet(desc, ext)
+            indent = re.match(r'\s*', lines[idx]).group(0)
+            snippet_lines = [indent + s + '\n' for s in snippet.splitlines()]
+            lines[idx:idx + 1] = snippet_lines
+            offset += len(snippet_lines) - 1
+        with open(path, 'w', encoding='utf-8') as f:
+            f.writelines(lines)
 
 
 def save_output_snippet(base_path: str, feature: str, ext: str, snippet: str) -> None:
@@ -271,6 +347,16 @@ if __name__ == "__main__":
         help="Replace existing placeholders in the generated folder using OpenAI",
     )
     parser.add_argument(
+        "--complete-todos",
+        action="store_true",
+        help="Replace TODO comments with generated code",
+    )
+    parser.add_argument(
+        "--complete-stubs",
+        action="store_true",
+        help="Replace simple stubs with generated code",
+    )
+    parser.add_argument(
         "--tasks-file",
         help="Optional text file containing additional tasks to generate code for",
     )
@@ -284,6 +370,11 @@ if __name__ == "__main__":
         upgrade_placeholders(os.path.join(repo, "generated"))
     else:
         create_files(repo, extra_tasks=extra)
+
+    if args.complete_todos:
+        replace_todo_comments(repo)
+    if args.complete_stubs:
+        replace_stub_code(repo)
 
     fix_repo_code(repo)
     print("Auto code generation complete. Check the 'generated' and 'output' folders.")
