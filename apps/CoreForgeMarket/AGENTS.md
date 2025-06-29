@@ -119,3 +119,205 @@ Key points from `README.md`:
 - **Chart screenshot analysis** for quick trend detection
 - **Multi-market scanner** with basic smart money metrics
 
+## 200 Next-Gen Features (2025-06-29)
+
+- [ ] Feature 1: Real-time sentiment analysis across Twitter, Reddit, and financial news
+- [ ] Feature 2: Whale wallet shadow trading and automatic pattern replication
+- [ ] Feature 3: Insider flow tracking with dark pool alert system
+- [ ] Feature 4: Titan Strategy Engine with adaptive multi-algo switching
+- [ ] Feature 5: Smart arbitrage scanner across crypto, forex, and stocks
+- [ ] Feature 6: AI-guided risk calibration based on user profile and goal
+- [ ] Feature 7: Event-based auto-trading (earnings, CPI, Fed meetings)
+- [ ] Feature 8: Predictive heatmaps for sectors, coins, and option chains
+- [ ] Feature 9: Auto-hedging recommendations using volatility sensors
+- [ ] Feature 10: Live market anomaly detector with strategy pivots
+- [ ] Feature 11: Self-learning trading bot with reinforcement feedback loop
+- [ ] Feature 12: Cross-platform broker integration (Robinhood, IBKR, Coinbase, etc.)
+- [ ] Feature 13: News-to-trade bot: generates ideas from real-time news headlines
+- [ ] Feature 14: AI backtesting engine with predictive model scoring
+- [ ] Feature 15: Visual strategy flowcharts for drag-and-drop trade logic
+- [ ] Feature 16: Voice command trade assistant with real-time AI feedback
+- [ ] Feature 17: Trading psychology AI advisor with habit tracking
+- [ ] Feature 18: Trade replay simulator to train decision-making under pressure
+- [ ] Feature 19: Multi-timeframe signal fusion (1-min to weekly)
+- [ ] Feature 20: Portfolio DNA visualizer to map risk clusters and diversity
+- [ ] Feature 21: Gamma exposure and option flow tracker with alerts
+- [ ] Feature 22: Market mood index derived from social + macro feeds
+- [ ] Feature 23: Chatbot that explains every executed trade in plain English
+- [ ] Feature 24: AI-generated trading journal with charts and narrative
+- [ ] Feature 25: Paper trading sandbox with clone-the-pro mode
+- [ ] Feature 26: Dynamic trailing stop-losses tuned by AI volatility sensing
+- [ ] Feature 27: Smart entry/exit AI with emotion-resistance scoring
+- [ ] Feature 28: NSFW token scanner (if 18+) for microcap degen alerts
+- [ ] Feature 29: AI trade coach that grades your decisions and timing
+- [ ] Feature 30: Trend shift early detection engine
+- [ ] Feature 31: Quant-style strategy builder using no-code tools
+- [ ] Feature 32: Auto-copy trading with adjustable risk filters
+- [ ] Feature 33: AI alerts: 'whale moved $10M', 'Fed speech in 5 mins', etc.
+- [ ] Feature 34: Price level clustering heatmap from historical data
+- [ ] Feature 35: Sentiment-weighted TA overlays
+- [ ] Feature 36: Smart tax-loss harvesting alerts
+- [ ] Feature 37: Trade emotion tracker (FOMO, fear, greed)
+- [ ] Feature 38: Global news map: economic and war zones as signals
+- [ ] Feature 39: AI-driven earnings preview forecasts
+- [ ] Feature 40: Liquidity trap detector with exit suggestions
+- [ ] Feature 41: Cross-chain scanner for DeFi/NFT flipping opportunities
+- [ ] Feature 42: AI-generated newsletter for your portfolio strategy
+- [ ] Feature 43: AI-generated thumbnail + headline for trade ideas (for creators)
+- [ ] Feature 44: Tokenomics breakdown visualizer for crypto plays
+- [ ] Feature 45: Trade sharing as stories to Telegram, Discord, X
+- [ ] Feature 46: Auto-bundling of your trade strategies into courses or kits
+- [ ] Feature 47: Heatmap of whale movements in top 50 coins or stocks
+- [ ] Feature 48: Neural signal rebalance based on live volatility
+- [ ] Feature 49: AI-matched mentors with your style via shadow portfolio comparison
+- [ ] Feature 50: Live news whisper mode: AI whispers most critical info every 15 mins
+- [ ] Feature 51: Real-time sentiment analysis across Twitter, Reddit, and financial news
+- [ ] Feature 52: Whale wallet shadow trading and automatic pattern replication
+- [ ] Feature 53: Insider flow tracking with dark pool alert system
+- [ ] Feature 54: Titan Strategy Engine with adaptive multi-algo switching
+- [ ] Feature 55: Smart arbitrage scanner across crypto, forex, and stocks
+- [ ] Feature 56: AI-guided risk calibration based on user profile and goal
+- [ ] Feature 57: Event-based auto-trading (earnings, CPI, Fed meetings)
+- [ ] Feature 58: Predictive heatmaps for sectors, coins, and option chains
+- [ ] Feature 59: Auto-hedging recommendations using volatility sensors
+- [ ] Feature 60: Live market anomaly detector with strategy pivots
+- [ ] Feature 61: Self-learning trading bot with reinforcement feedback loop
+- [ ] Feature 62: Cross-platform broker integration (Robinhood, IBKR, Coinbase, etc.)
+- [ ] Feature 63: News-to-trade bot: generates ideas from real-time news headlines
+- [ ] Feature 64: AI backtesting engine with predictive model scoring
+- [ ] Feature 65: Visual strategy flowcharts for drag-and-drop trade logic
+- [ ] Feature 66: Voice command trade assistant with real-time AI feedback
+- [ ] Feature 67: Trading psychology AI advisor with habit tracking
+- [ ] Feature 68: Trade replay simulator to train decision-making under pressure
+- [ ] Feature 69: Multi-timeframe signal fusion (1-min to weekly)
+- [ ] Feature 70: Portfolio DNA visualizer to map risk clusters and diversity
+- [ ] Feature 71: Gamma exposure and option flow tracker with alerts
+- [ ] Feature 72: Market mood index derived from social + macro feeds
+- [ ] Feature 73: Chatbot that explains every executed trade in plain English
+- [ ] Feature 74: AI-generated trading journal with charts and narrative
+- [ ] Feature 75: Paper trading sandbox with clone-the-pro mode
+- [ ] Feature 76: Dynamic trailing stop-losses tuned by AI volatility sensing
+- [ ] Feature 77: Smart entry/exit AI with emotion-resistance scoring
+- [ ] Feature 78: NSFW token scanner (if 18+) for microcap degen alerts
+- [ ] Feature 79: AI trade coach that grades your decisions and timing
+- [ ] Feature 80: Trend shift early detection engine
+- [ ] Feature 81: Quant-style strategy builder using no-code tools
+- [ ] Feature 82: Auto-copy trading with adjustable risk filters
+- [ ] Feature 83: AI alerts: 'whale moved $10M', 'Fed speech in 5 mins', etc.
+- [ ] Feature 84: Price level clustering heatmap from historical data
+- [ ] Feature 85: Sentiment-weighted TA overlays
+- [ ] Feature 86: Smart tax-loss harvesting alerts
+- [ ] Feature 87: Trade emotion tracker (FOMO, fear, greed)
+- [ ] Feature 88: Global news map: economic and war zones as signals
+- [ ] Feature 89: AI-driven earnings preview forecasts
+- [ ] Feature 90: Liquidity trap detector with exit suggestions
+- [ ] Feature 91: Cross-chain scanner for DeFi/NFT flipping opportunities
+- [ ] Feature 92: AI-generated newsletter for your portfolio strategy
+- [ ] Feature 93: AI-generated thumbnail + headline for trade ideas (for creators)
+- [ ] Feature 94: Tokenomics breakdown visualizer for crypto plays
+- [ ] Feature 95: Trade sharing as stories to Telegram, Discord, X
+- [ ] Feature 96: Auto-bundling of your trade strategies into courses or kits
+- [ ] Feature 97: Heatmap of whale movements in top 50 coins or stocks
+- [ ] Feature 98: Neural signal rebalance based on live volatility
+- [ ] Feature 99: AI-matched mentors with your style via shadow portfolio comparison
+- [ ] Feature 100: Live news whisper mode: AI whispers most critical info every 15 mins
+- [ ] Feature 101: Real-time sentiment analysis across Twitter, Reddit, and financial news
+- [ ] Feature 102: Whale wallet shadow trading and automatic pattern replication
+- [ ] Feature 103: Insider flow tracking with dark pool alert system
+- [ ] Feature 104: Titan Strategy Engine with adaptive multi-algo switching
+- [ ] Feature 105: Smart arbitrage scanner across crypto, forex, and stocks
+- [ ] Feature 106: AI-guided risk calibration based on user profile and goal
+- [ ] Feature 107: Event-based auto-trading (earnings, CPI, Fed meetings)
+- [ ] Feature 108: Predictive heatmaps for sectors, coins, and option chains
+- [ ] Feature 109: Auto-hedging recommendations using volatility sensors
+- [ ] Feature 110: Live market anomaly detector with strategy pivots
+- [ ] Feature 111: Self-learning trading bot with reinforcement feedback loop
+- [ ] Feature 112: Cross-platform broker integration (Robinhood, IBKR, Coinbase, etc.)
+- [ ] Feature 113: News-to-trade bot: generates ideas from real-time news headlines
+- [ ] Feature 114: AI backtesting engine with predictive model scoring
+- [ ] Feature 115: Visual strategy flowcharts for drag-and-drop trade logic
+- [ ] Feature 116: Voice command trade assistant with real-time AI feedback
+- [ ] Feature 117: Trading psychology AI advisor with habit tracking
+- [ ] Feature 118: Trade replay simulator to train decision-making under pressure
+- [ ] Feature 119: Multi-timeframe signal fusion (1-min to weekly)
+- [ ] Feature 120: Portfolio DNA visualizer to map risk clusters and diversity
+- [ ] Feature 121: Gamma exposure and option flow tracker with alerts
+- [ ] Feature 122: Market mood index derived from social + macro feeds
+- [ ] Feature 123: Chatbot that explains every executed trade in plain English
+- [ ] Feature 124: AI-generated trading journal with charts and narrative
+- [ ] Feature 125: Paper trading sandbox with clone-the-pro mode
+- [ ] Feature 126: Dynamic trailing stop-losses tuned by AI volatility sensing
+- [ ] Feature 127: Smart entry/exit AI with emotion-resistance scoring
+- [ ] Feature 128: NSFW token scanner (if 18+) for microcap degen alerts
+- [ ] Feature 129: AI trade coach that grades your decisions and timing
+- [ ] Feature 130: Trend shift early detection engine
+- [ ] Feature 131: Quant-style strategy builder using no-code tools
+- [ ] Feature 132: Auto-copy trading with adjustable risk filters
+- [ ] Feature 133: AI alerts: 'whale moved $10M', 'Fed speech in 5 mins', etc.
+- [ ] Feature 134: Price level clustering heatmap from historical data
+- [ ] Feature 135: Sentiment-weighted TA overlays
+- [ ] Feature 136: Smart tax-loss harvesting alerts
+- [ ] Feature 137: Trade emotion tracker (FOMO, fear, greed)
+- [ ] Feature 138: Global news map: economic and war zones as signals
+- [ ] Feature 139: AI-driven earnings preview forecasts
+- [ ] Feature 140: Liquidity trap detector with exit suggestions
+- [ ] Feature 141: Cross-chain scanner for DeFi/NFT flipping opportunities
+- [ ] Feature 142: AI-generated newsletter for your portfolio strategy
+- [ ] Feature 143: AI-generated thumbnail + headline for trade ideas (for creators)
+- [ ] Feature 144: Tokenomics breakdown visualizer for crypto plays
+- [ ] Feature 145: Trade sharing as stories to Telegram, Discord, X
+- [ ] Feature 146: Auto-bundling of your trade strategies into courses or kits
+- [ ] Feature 147: Heatmap of whale movements in top 50 coins or stocks
+- [ ] Feature 148: Neural signal rebalance based on live volatility
+- [ ] Feature 149: AI-matched mentors with your style via shadow portfolio comparison
+- [ ] Feature 150: Live news whisper mode: AI whispers most critical info every 15 mins
+- [ ] Feature 151: Real-time sentiment analysis across Twitter, Reddit, and financial news
+- [ ] Feature 152: Whale wallet shadow trading and automatic pattern replication
+- [ ] Feature 153: Insider flow tracking with dark pool alert system
+- [ ] Feature 154: Titan Strategy Engine with adaptive multi-algo switching
+- [ ] Feature 155: Smart arbitrage scanner across crypto, forex, and stocks
+- [ ] Feature 156: AI-guided risk calibration based on user profile and goal
+- [ ] Feature 157: Event-based auto-trading (earnings, CPI, Fed meetings)
+- [ ] Feature 158: Predictive heatmaps for sectors, coins, and option chains
+- [ ] Feature 159: Auto-hedging recommendations using volatility sensors
+- [ ] Feature 160: Live market anomaly detector with strategy pivots
+- [ ] Feature 161: Self-learning trading bot with reinforcement feedback loop
+- [ ] Feature 162: Cross-platform broker integration (Robinhood, IBKR, Coinbase, etc.)
+- [ ] Feature 163: News-to-trade bot: generates ideas from real-time news headlines
+- [ ] Feature 164: AI backtesting engine with predictive model scoring
+- [ ] Feature 165: Visual strategy flowcharts for drag-and-drop trade logic
+- [ ] Feature 166: Voice command trade assistant with real-time AI feedback
+- [ ] Feature 167: Trading psychology AI advisor with habit tracking
+- [ ] Feature 168: Trade replay simulator to train decision-making under pressure
+- [ ] Feature 169: Multi-timeframe signal fusion (1-min to weekly)
+- [ ] Feature 170: Portfolio DNA visualizer to map risk clusters and diversity
+- [ ] Feature 171: Gamma exposure and option flow tracker with alerts
+- [ ] Feature 172: Market mood index derived from social + macro feeds
+- [ ] Feature 173: Chatbot that explains every executed trade in plain English
+- [ ] Feature 174: AI-generated trading journal with charts and narrative
+- [ ] Feature 175: Paper trading sandbox with clone-the-pro mode
+- [ ] Feature 176: Dynamic trailing stop-losses tuned by AI volatility sensing
+- [ ] Feature 177: Smart entry/exit AI with emotion-resistance scoring
+- [ ] Feature 178: NSFW token scanner (if 18+) for microcap degen alerts
+- [ ] Feature 179: AI trade coach that grades your decisions and timing
+- [ ] Feature 180: Trend shift early detection engine
+- [ ] Feature 181: Quant-style strategy builder using no-code tools
+- [ ] Feature 182: Auto-copy trading with adjustable risk filters
+- [ ] Feature 183: AI alerts: 'whale moved $10M', 'Fed speech in 5 mins', etc.
+- [ ] Feature 184: Price level clustering heatmap from historical data
+- [ ] Feature 185: Sentiment-weighted TA overlays
+- [ ] Feature 186: Smart tax-loss harvesting alerts
+- [ ] Feature 187: Trade emotion tracker (FOMO, fear, greed)
+- [ ] Feature 188: Global news map: economic and war zones as signals
+- [ ] Feature 189: AI-driven earnings preview forecasts
+- [ ] Feature 190: Liquidity trap detector with exit suggestions
+- [ ] Feature 191: Cross-chain scanner for DeFi/NFT flipping opportunities
+- [ ] Feature 192: AI-generated newsletter for your portfolio strategy
+- [ ] Feature 193: AI-generated thumbnail + headline for trade ideas (for creators)
+- [ ] Feature 194: Tokenomics breakdown visualizer for crypto plays
+- [ ] Feature 195: Trade sharing as stories to Telegram, Discord, X
+- [ ] Feature 196: Auto-bundling of your trade strategies into courses or kits
+- [ ] Feature 197: Heatmap of whale movements in top 50 coins or stocks
+- [ ] Feature 198: Neural signal rebalance based on live volatility
+- [ ] Feature 199: AI-matched mentors with your style via shadow portfolio comparison
+- [ ] Feature 200: Live news whisper mode: AI whispers most critical info every 15 mins
