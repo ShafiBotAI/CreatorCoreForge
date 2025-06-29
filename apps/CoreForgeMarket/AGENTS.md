@@ -291,16 +291,16 @@ Key points from `README.md`:
  - [x] Feature 168: Trade replay simulator to train decision-making under pressure
  - [x] Feature 169: Multi-timeframe signal fusion (1-min to weekly)
  - [x] Feature 170: Portfolio DNA visualizer to map risk clusters and diversity
-- [ ] Feature 171: Gamma exposure and option flow tracker with alerts
-- [ ] Feature 172: Market mood index derived from social + macro feeds
-- [ ] Feature 173: Chatbot that explains every executed trade in plain English
-- [ ] Feature 174: AI-generated trading journal with charts and narrative
-- [ ] Feature 175: Paper trading sandbox with clone-the-pro mode
-- [ ] Feature 176: Dynamic trailing stop-losses tuned by AI volatility sensing
-- [ ] Feature 177: Smart entry/exit AI with emotion-resistance scoring
-- [ ] Feature 178: NSFW token scanner (if 18+) for microcap degen alerts
-- [ ] Feature 179: AI trade coach that grades your decisions and timing
-- [ ] Feature 180: Trend shift early detection engine
+ - [x] Feature 171: Gamma exposure and option flow tracker with alerts
+ - [x] Feature 172: Market mood index derived from social + macro feeds
+ - [x] Feature 173: Chatbot that explains every executed trade in plain English
+ - [x] Feature 174: AI-generated trading journal with charts and narrative
+ - [x] Feature 175: Paper trading sandbox with clone-the-pro mode
+ - [x] Feature 176: Dynamic trailing stop-losses tuned by AI volatility sensing
+ - [x] Feature 177: Smart entry/exit AI with emotion-resistance scoring
+ - [x] Feature 178: NSFW token scanner (if 18+) for microcap degen alerts
+ - [x] Feature 179: AI trade coach that grades your decisions and timing
+ - [x] Feature 180: Trend shift early detection engine
 - [ ] Feature 181: Quant-style strategy builder using no-code tools
 - [ ] Feature 182: Auto-copy trading with adjustable risk filters
 - [ ] Feature 183: AI alerts: 'whale moved $10M', 'Fed speech in 5 mins', etc.
