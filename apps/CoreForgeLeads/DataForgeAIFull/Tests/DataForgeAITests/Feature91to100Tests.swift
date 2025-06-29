@@ -1,4 +1,7 @@
 import XCTest
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 @testable import DataForgeAI
 
 final class Feature91to100Tests: XCTestCase {
