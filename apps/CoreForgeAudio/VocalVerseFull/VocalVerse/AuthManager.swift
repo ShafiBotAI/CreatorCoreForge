@@ -2,6 +2,9 @@ import Foundation
 #if canImport(SwiftUI)
 import SwiftUI
 #endif
+#if canImport(CryptoKit)
+import CryptoKit
+#endif
 
 /// Lightweight authentication manager used by the sample app.
 final class AuthManager: ObservableObject {
@@ -33,16 +36,27 @@ final class AuthManager: ObservableObject {
         }
     }
 
-    /// Sign in with an email and password. Always succeeds in this demo.
+    /// Sign in with an email and password.
     func signIn(email: String, password: String, completion: @escaping (Result<Void, Error>) -> Void) {
-        storedEmail = email
-        if storedUserID.isEmpty { storedUserID = UUID().uuidString }
-        isLoggedIn = true
-        completion(.success(()))
+        let hash = Self.hash(password)
+        if let stored = SecureStore.password(for: email), stored == hash {
+            storedEmail = email
+            if storedUserID.isEmpty { storedUserID = UUID().uuidString }
+            isLoggedIn = true
+            completion(.success(()))
+        } else {
+            completion(.failure(NSError(domain: "Auth", code: 1, userInfo: [NSLocalizedDescriptionKey: "Invalid credentials"])))
+        }
     }
 
     /// Register a new account and immediately log in.
     func signUp(email: String, password: String, plan: SubscriptionManager.Plan = .free, completion: @escaping (Result<Void, Error>) -> Void) {
+        guard SecureStore.password(for: email) == nil else {
+            completion(.failure(NSError(domain: "Auth", code: 2, userInfo: [NSLocalizedDescriptionKey: "User exists"])))
+            return
+        }
+        let hash = Self.hash(password)
+        _ = SecureStore.storePassword(hash, for: email)
         storedEmail = email
         activePlan = plan
         storedUserID = UUID().uuidString
@@ -61,6 +75,12 @@ final class AuthManager: ObservableObject {
 
     /// Simulate password reset via email.
     func resetPassword(email: String, completion: @escaping (Error?) -> Void) {
+        guard SecureStore.password(for: email) != nil else {
+            completion(NSError(domain: "Auth", code: 3, userInfo: [NSLocalizedDescriptionKey: "No such user"]))
+            return
+        }
+        let newHash = Self.hash(UUID().uuidString)
+        _ = SecureStore.storePassword(newHash, for: email)
         completion(nil)
     }
 
@@ -68,5 +88,15 @@ final class AuthManager: ObservableObject {
     func signOut() {
         isLoggedIn = false
         storedEmail = ""
+    }
+
+    /// Simple SHA256 helper used for password hashing.
+    private static func hash(_ str: String) -> String {
+#if canImport(CryptoKit)
+        let digest = SHA256.hash(data: Data(str.utf8))
+        return digest.compactMap { String(format: "%02x", $0) }.joined()
+#else
+        return String(str.reversed())
+#endif
     }
 }

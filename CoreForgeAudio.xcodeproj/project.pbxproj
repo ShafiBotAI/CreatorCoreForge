@@ -388,7 +388,9 @@
 		CAA99742376AD302B6EF8519 /* SoundLayerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB8397BB4A0AD48935317E7 /* SoundLayerEngine.swift */; };
 		CAB4CC8D9581D9EF90D3312A /* AnimationDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F30C35756E870A3AEBCD593 /* AnimationDashboard.swift */; };
 		CABB53BB8469D46F56CEFAB5 /* OCRScanMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6418A4324EDFAD12529EC847 /* OCRScanMode.swift */; };
-		CB1B9773262EB025BA79FCAA /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E239EC118899F28C0A22D2A2 /* DashboardView.swift */; };
+               CB1B9773262EB025BA79FCAA /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E239EC118899F28C0A22D2A2 /* DashboardView.swift */; };
+               DC20416E17CC4787B9E323AF /* HomeDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC1DF2EA8BA4A67A7E4D155 /* HomeDashboardView.swift */; };
+               9D5B764C2D6D4F7492FC82A7 /* MainDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF755BE847684FB6BA0BE265 /* MainDashboardView.swift */; };
 		CBC0EEFEB7117A648D454E69 /* VoiceFXStackEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3667826427527849ABFD22FA /* VoiceFXStackEditor.swift */; };
 		CC7A53E1926F96648C7006E9 /* AudiobookPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0F4DB1369829F5204C91E5 /* AudiobookPlayerView.swift */; };
 		CD4F93D52871CABB4FE02BCB /* CommunityReviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AC16A130A2C7DD56B0A650 /* CommunityReviews.swift */; };
@@ -605,7 +607,7 @@
 		36BA9C967CD920704EE6D678 /* AIStudioMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AIStudioMode.swift; path = Sources/CreatorCoreForge/AIStudioMode.swift; sourceTree = "<group>"; };
 		36D1B6F0AFC931E49E6F1E47 /* ChapterImporter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChapterImporter.swift; path = apps/CoreForgeAudio/VocalVerseFull/VocalVerse/ChapterImporter.swift; sourceTree = "<group>"; };
 		376C1336CCEF26F8F084EC47 /* AppTheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppTheme.swift; path = Sources/CreatorCoreForge/AppTheme.swift; sourceTree = "<group>"; };
-		380038B5F0E47EA932BA53B7 /* LoginView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = apps/CoreForgeAudio/VocalVerseFull/VocalVerse/LoginView.swift; sourceTree = "<group>"; };
+               380038B5F0E47EA932BA53B7 /* LoginView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = apps/CoreForgeAudio/views/LoginView.swift; sourceTree = SOURCE_ROOT; };
 		38CE09520864938898DC7DAF /* CoreForgeDNA_MissingFeatures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreForgeDNA_MissingFeatures.swift; path = Sources/CreatorCoreForge/CoreForgeDNA_MissingFeatures.swift; sourceTree = "<group>"; };
 		396D8689DCA55C3C01848D60 /* NetworkMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkMonitor.swift; path = Sources/CreatorCoreForge/NetworkMonitor.swift; sourceTree = "<group>"; };
 		39B06F23CDEF3916D1894050 /* ParticleFXLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParticleFXLayer.swift; path = Sources/CreatorCoreForge/ParticleFXLayer.swift; sourceTree = "<group>"; };
@@ -735,7 +737,7 @@
 		786D70D574E10326DB7E36D4 /* CoreForgeMarket_MissingFeatures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreForgeMarket_MissingFeatures.swift; path = Sources/CreatorCoreForge/CoreForgeMarket_MissingFeatures.swift; sourceTree = "<group>"; };
 		7889B0A0A744F2AD833993C6 /* NSFWHabitBehaviorSimulator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSFWHabitBehaviorSimulator.swift; path = Sources/CreatorCoreForge/NSFWHabitBehaviorSimulator.swift; sourceTree = "<group>"; };
 		78CA022C038682DA150D3BD8 /* DecoyScreenManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DecoyScreenManager.swift; path = Sources/CreatorCoreForge/DecoyScreenManager.swift; sourceTree = "<group>"; };
-		792D4FBDFF7FCDAF2D4DDB3E /* AuthManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthManager.swift; path = apps/CoreForgeAudio/VocalVerseFull/VocalVerse/AuthManager.swift; sourceTree = "<group>"; };
+               792D4FBDFF7FCDAF2D4DDB3E /* AuthManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthManager.swift; path = apps/CoreForgeAudio/Managers/AuthManager.swift; sourceTree = SOURCE_ROOT; };
 		79918570E9397486BF9530C7 /* SpatialAudioSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpatialAudioSupport.swift; path = Sources/CreatorCoreForge/SpatialAudioSupport.swift; sourceTree = "<group>"; };
 		79B20008621FCE7BD8867906 /* AccessibilityOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AccessibilityOutput.swift; path = Sources/CreatorCoreForge/AccessibilityOutput.swift; sourceTree = "<group>"; };
 		79FBFF611BD616EAF222B139 /* UserAnnotations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserAnnotations.swift; path = Sources/CreatorCoreForge/UserAnnotations.swift; sourceTree = "<group>"; };
@@ -789,7 +791,7 @@
 		950E8746CF5599F796355A08 /* UniversalMediaGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UniversalMediaGenerator.swift; path = Sources/CreatorCoreForge/UniversalMediaGenerator.swift; sourceTree = "<group>"; };
 		95504057F18EBC0A10BF3B69 /* CharacterPaletteManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CharacterPaletteManager.swift; path = Sources/CreatorCoreForge/CharacterPaletteManager.swift; sourceTree = "<group>"; };
 		9596E92BE97DBDFCB8B7A7AF /* AudioExportService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioExportService.swift; path = Sources/CreatorCoreForge/AudioExportService.swift; sourceTree = "<group>"; };
-		95F4FDA89478DA3C6805290E /* ForgotPasswordView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ForgotPasswordView.swift; path = apps/CoreForgeAudio/VocalVerseFull/VocalVerse/ForgotPasswordView.swift; sourceTree = "<group>"; };
+               95F4FDA89478DA3C6805290E /* ForgotPasswordView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ForgotPasswordView.swift; path = apps/CoreForgeAudio/views/ForgotPasswordView.swift; sourceTree = SOURCE_ROOT; };
 		95F69196BC094B0872D9D436 /* UnifiedAudioEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnifiedAudioEngine.swift; path = Sources/CreatorCoreForge/UnifiedAudioEngine.swift; sourceTree = "<group>"; };
 		9661BEED7C1139AC613B7D97 /* PluginSandbox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PluginSandbox.swift; path = Sources/CreatorCoreForge/PluginSandbox.swift; sourceTree = "<group>"; };
 		9708BFD495DAE889462BDEE8 /* FrameRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameRenderer.swift; path = Sources/CreatorCoreForge/FrameRenderer.swift; sourceTree = "<group>"; };
@@ -799,7 +801,7 @@
 		985643EA7FC1985EA392E4A4 /* NSFWSceneToggle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSFWSceneToggle.swift; path = Sources/CreatorCoreForge/NSFWSceneToggle.swift; sourceTree = "<group>"; };
 		98A76BF19D0DB57116A1329C /* MultilingualEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultilingualEngine.swift; path = Sources/CreatorCoreForge/MultilingualEngine.swift; sourceTree = "<group>"; };
 		99065F72F26B52517C3A0777 /* ExportTools.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExportTools.swift; path = Sources/CreatorCoreForge/ExportTools.swift; sourceTree = "<group>"; };
-		995F23AB0F2C71CC32D8E4F4 /* RegisterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegisterView.swift; path = apps/CoreForgeAudio/VocalVerseFull/VocalVerse/RegisterView.swift; sourceTree = "<group>"; };
+               995F23AB0F2C71CC32D8E4F4 /* RegisterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegisterView.swift; path = apps/CoreForgeAudio/views/RegisterView.swift; sourceTree = SOURCE_ROOT; };
 		9AE626FBE2C669B1B1FFDF34 /* SubtitleGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubtitleGenerator.swift; path = Sources/CreatorCoreForge/SubtitleGenerator.swift; sourceTree = "<group>"; };
 		9BB886D3C6FEDFDCB3799211 /* UnifiedVideoEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnifiedVideoEngine.swift; path = Sources/CreatorCoreForge/UnifiedVideoEngine.swift; sourceTree = "<group>"; };
 		9C1F3AA2B5EC90FC645A27AE /* CanonMemoryGraph.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CanonMemoryGraph.swift; path = Sources/CreatorCoreForge/CanonMemoryGraph.swift; sourceTree = "<group>"; };
@@ -921,7 +923,9 @@
 		E18C38C02AF14F176063F3A1 /* VoiceForkManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VoiceForkManager.swift; path = Sources/CreatorCoreForge/VoiceForkManager.swift; sourceTree = "<group>"; };
 		E1FF61CD74066715BAE0549A /* CrossBookNarration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CrossBookNarration.swift; path = Sources/CreatorCoreForge/CrossBookNarration.swift; sourceTree = "<group>"; };
 		E210C8E620AC0CAD48EFA95B /* VoiceTimbreModulator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VoiceTimbreModulator.swift; path = Sources/CreatorCoreForge/VoiceTimbreModulator.swift; sourceTree = "<group>"; };
-		E239EC118899F28C0A22D2A2 /* DashboardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DashboardView.swift; path = apps/CoreForgeAudio/VocalVerseFull/VocalVerse/DashboardView.swift; sourceTree = "<group>"; };
+               E239EC118899F28C0A22D2A2 /* DashboardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DashboardView.swift; path = apps/CoreForgeAudio/VocalVerseFull/VocalVerse/DashboardView.swift; sourceTree = "<group>"; };
+               5CC1DF2EA8BA4A67A7E4D155 /* HomeDashboardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HomeDashboardView.swift; path = apps/CoreForgeAudio/views/HomeDashboardView.swift; sourceTree = SOURCE_ROOT; };
+               FF755BE847684FB6BA0BE265 /* MainDashboardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MainDashboardView.swift; path = apps/CoreForgeAudio/views/MainDashboardView.swift; sourceTree = SOURCE_ROOT; };
 		E24D75BDD390E8729F346721 /* NSFWMoodHeatmap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSFWMoodHeatmap.swift; path = Sources/CreatorCoreForge/NSFWMoodHeatmap.swift; sourceTree = "<group>"; };
 		E2D9DB76571383C7D6E4E3C3 /* CoreForgeAudio_MissingFeatures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreForgeAudio_MissingFeatures.swift; path = Sources/CreatorCoreForge/CoreForgeAudio_MissingFeatures.swift; sourceTree = "<group>"; };
 		E4D14474DF47A474AD3493AF /* AppIdeaGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppIdeaGenerator.swift; path = Sources/CreatorCoreForge/AppIdeaGenerator.swift; sourceTree = "<group>"; };
@@ -1010,9 +1014,11 @@
 				8B99F4C047A0376269AA27A5 /* ContentView.swift */,
 				427013E1DE2C713C0A784592 /* CoreForgeAudioApp.swift */,
 				5BC1F3482E6F4842815C9E84 /* CreditStore.swift */,
-				459EB67C128B19FE9EC18348 /* CreditsHistoryView.swift */,
-				E239EC118899F28C0A22D2A2 /* DashboardView.swift */,
-				6A0346F8BF557F425F0C2D43 /* DownloadQueue.swift */,
+                               459EB67C128B19FE9EC18348 /* CreditsHistoryView.swift */,
+                               E239EC118899F28C0A22D2A2 /* DashboardView.swift */,
+                               5CC1DF2EA8BA4A67A7E4D155 /* HomeDashboardView.swift */,
+                               FF755BE847684FB6BA0BE265 /* MainDashboardView.swift */,
+                               6A0346F8BF557F425F0C2D43 /* DownloadQueue.swift */,
 				1197097692EC4CC00A247E96 /* DownloadsView.swift */,
 				0023E73BFB52710BF1A285F7 /* EbookImporter.swift */,
 				3623341860254AD8951598FD /* ElevenLabsService.swift */,
@@ -1587,8 +1593,10 @@
 				F268A0F8E6724D580129CBD1 /* CoreForgeAudioApp.swift in Sources */,
 				47B3D019B8F084BFC0DEE478 /* CreditStore.swift in Sources */,
 				8877D4D1EC7E0FAF297D780A /* CreditsHistoryView.swift in Sources */,
-				CB1B9773262EB025BA79FCAA /* DashboardView.swift in Sources */,
-				66AFAAC47917CB7FB8AFB7D0 /* DownloadQueue.swift in Sources */,
+                               CB1B9773262EB025BA79FCAA /* DashboardView.swift in Sources */,
+                               DC20416E17CC4787B9E323AF /* HomeDashboardView.swift in Sources */,
+                               9D5B764C2D6D4F7492FC82A7 /* MainDashboardView.swift in Sources */,
+                               66AFAAC47917CB7FB8AFB7D0 /* DownloadQueue.swift in Sources */,
 				9F8A724FF65794205C55674A /* DownloadsView.swift in Sources */,
 				1B46A74636D5700A1A29CA8D /* EbookImporter.swift in Sources */,
 				ECBED3FAFE1AE89434F8BA61 /* ElevenLabsService.swift in Sources */,

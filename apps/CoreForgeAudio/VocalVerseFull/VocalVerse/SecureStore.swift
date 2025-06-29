@@ -44,5 +44,15 @@ struct SecureStore {
         #else
         return false
         #endif
+
+    /// Retrieve a stored password hash for the given email.
+    static func password(for email: String) -> String? {
+        apiKey(named: "auth_\(email)")
+    }
+
+    /// Store a password hash in the Keychain under the email key.
+    @discardableResult
+    static func storePassword(_ hash: String, for email: String) -> Bool {
+        storeApiKey(hash, named: "auth_\(email)")
     }
 }
