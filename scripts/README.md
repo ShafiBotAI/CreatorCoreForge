@@ -12,3 +12,6 @@ Utility shell and Python scripts used for building projects and auditing feature
   can be run without errors. `pull_plugins.py` will try both `master` and `main`
   branches when downloading.
 
+- `export_coreforge_audio_repo.sh` – copy the CoreForge Audio app and shared
+  Swift sources into a standalone directory, optionally initializing a new git
+  repository.
