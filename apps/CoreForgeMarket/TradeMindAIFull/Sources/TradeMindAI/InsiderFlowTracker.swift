@@ -29,5 +29,21 @@ public final class InsiderFlowTracker {
             completion(forms)
         }.resume()
     }
-}
 
+    /// Fetch dark pool alerts for a ticker symbol.
+    public func fetchDarkPoolAlerts(ticker: String, completion: @escaping ([String]) -> Void) {
+        guard let url = URL(string: "https://darkpool.example.com/\(ticker)") else {
+            completion([])
+            return
+        }
+        session.dataTask(with: url) { data, _, _ in
+            guard let data = data,
+                  let obj = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+                  let alerts = obj["alerts"] as? [String] else {
+                completion([])
+                return
+            }
+            completion(alerts)
+        }.resume()
+    }
+}

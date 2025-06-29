@@ -25,4 +25,19 @@ public final class PortfolioRiskSimulator {
             }
         }
     }
+
+    public enum RiskProfile {
+        case conservative
+        case balanced
+        case aggressive
+    }
+
+    /// Simple mapping from profile to risk percentage.
+    public func recommendedRisk(for profile: RiskProfile) -> Double {
+        switch profile {
+        case .conservative: return 0.02
+        case .balanced: return 0.05
+        case .aggressive: return 0.1
+        }
+    }
 }
