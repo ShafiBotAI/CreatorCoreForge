@@ -339,11 +339,11 @@ Key points from `README.md`:
 - [x] Feature 185: Time travel loop tracker with paradox alerts
 - [x] Feature 186: Dream generator for surreal storytelling layers
 - [x] Feature 187: AI-driven antagonist arc generator with redeemability scoring
-- [ ] Feature 188: Author branding toolkit: tone, themes, tagline consistency check
-- [ ] Feature 189: Voice dictation with emotion capture and ambient mode
-- [ ] Feature 190: Scene-by-scene reader poll system with live results dashboard
-- [ ] Feature 191: Choice-path story mode: branching scenes for interactive fiction
-- [ ] Feature 192: Smart rewrite engine to convert style (YA to adult, novel to script)
+- [x] Feature 188: Author branding toolkit: tone, themes, tagline consistency check
+- [x] Feature 189: Voice dictation with emotion capture and ambient mode
+- [x] Feature 190: Scene-by-scene reader poll system with live results dashboard
+- [x] Feature 191: Choice-path story mode: branching scenes for interactive fiction
+- [x] Feature 192: Smart rewrite engine to convert style (YA to adult, novel to script)
 - [ ] Feature 193: Multilingual scene generation with idiom and culture adaptation
 - [ ] Feature 194: Cover generator: AI-blended art and typography for publishing
 - [ ] Feature 195: Audiobook tone adjuster for CoreForge Audio export compatibility
