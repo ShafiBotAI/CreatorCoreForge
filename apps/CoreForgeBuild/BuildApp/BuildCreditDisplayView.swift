@@ -6,8 +6,7 @@ struct BuildCreditDisplayView: View {
     }
 }
 
-struct BuildCreditDisplayView_Previews: PreviewProvider {
-    static var previews: some View {
-        BuildCreditDisplayView()
-    }
+
+#Preview {
+    BuildCreditDisplayView()
 }

@@ -14,3 +14,13 @@ class CodexTaskManager: ObservableObject {
         CodexTask(title: "Generate Code", status: "pending")
     ]
 }
+
+#Preview {
+    List(CodexTaskManager().tasks) { task in
+        HStack {
+            Text(task.title)
+            Spacer()
+            Text(task.status)
+        }
+    }
+}

@@ -33,4 +33,19 @@ final class SocialLoginTests: XCTestCase {
         }
         wait(for: [exp], timeout: 1)
     }
+
+    func testGoogleLoginRejectsInvalidEmail() {
+        let manager = AuthManager.shared
+        manager.signOut()
+        let exp = expectation(description: "bad")
+        manager.signInWithGoogle(email: "invalid") { result in
+            if case .failure = result {
+                XCTAssertTrue(true)
+            } else {
+                XCTFail("Should fail")
+            }
+            exp.fulfill()
+        }
+        wait(for: [exp], timeout: 1)
+    }
 }

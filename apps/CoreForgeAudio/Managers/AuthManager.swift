@@ -67,16 +67,29 @@ final class AuthManager: ObservableObject {
         completion(.success(()))
     }
 
-    /// Sign in using a Google account email. This is a stub for demo purposes.
+    /// Validate an email address using a simple pattern.
+    private func isValidEmail(_ email: String) -> Bool {
+        email.contains("@") && email.contains(".")
+    }
+
+    /// Sign in using a Google account email. Performs basic validation.
     func signInWithGoogle(email: String, completion: @escaping (Result<Void, Error>) -> Void) {
+        guard isValidEmail(email) else {
+            completion(.failure(NSError(domain: "Auth", code: 100, userInfo: [NSLocalizedDescriptionKey: "Invalid email"])))
+            return
+        }
         storedEmail = email
         if storedUserID.isEmpty { storedUserID = UUID().uuidString }
         isLoggedIn = true
         completion(.success(()))
     }
 
-    /// Sign in using an Apple ID email. This is a stub for demo purposes.
+    /// Sign in using an Apple ID email. Performs basic validation.
     func signInWithApple(email: String, completion: @escaping (Result<Void, Error>) -> Void) {
+        guard isValidEmail(email) else {
+            completion(.failure(NSError(domain: "Auth", code: 101, userInfo: [NSLocalizedDescriptionKey: "Invalid email"])))
+            return
+        }
         storedEmail = email
         if storedUserID.isEmpty { storedUserID = UUID().uuidString }
         isLoggedIn = true

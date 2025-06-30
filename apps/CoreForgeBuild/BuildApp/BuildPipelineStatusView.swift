@@ -6,8 +6,6 @@ struct BuildPipelineStatusView: View {
     }
 }
 
-struct BuildPipelineStatusView_Previews: PreviewProvider {
-    static var previews: some View {
-        BuildPipelineStatusView()
-    }
+#Preview {
+    BuildPipelineStatusView()
 }
