@@ -1,4 +1,4 @@
 # CoreForgeVisual views
 
 SwiftUI and React view implementations for various screens in the app.
-These files showcase prototypes such as `PlaceholderView.swift` used in early testing.
+These files include prototypes such as `DemoView.swift` used for early testing.

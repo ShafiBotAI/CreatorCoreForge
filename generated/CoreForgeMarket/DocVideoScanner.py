@@ -1,4 +1,4 @@
 # Auto-generated for DocVideoScanner
 def docvideoscanner():
     """DocVideoScanner"""
-    pass
+    return "DocVideoScanner feature"

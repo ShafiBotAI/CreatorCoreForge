@@ -4,7 +4,7 @@ import SwiftUI
 /// Users can compose multiple scene prompts, choose a rendering style,
 /// and export the resulting script to a temporary file. The previous
 /// placeholder button has been replaced with this functional example.
-struct PlaceholderView: View {
+struct DemoView: View {
     struct Scene: Identifiable {
         var id = UUID()
         var text: String
@@ -59,8 +59,8 @@ struct PlaceholderView: View {
     }
 }
 
-struct PlaceholderView_Previews: PreviewProvider {
+struct DemoView_Previews: PreviewProvider {
     static var previews: some View {
-        PlaceholderView()
+        DemoView()
     }
 }

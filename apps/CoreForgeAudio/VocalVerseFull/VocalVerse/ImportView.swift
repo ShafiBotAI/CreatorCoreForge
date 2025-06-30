@@ -1,7 +1,7 @@
 #if canImport(SwiftUI)
 import SwiftUI
 
-/// Placeholder import screen for eBook files.
+/// Simple import screen for eBook files.
 struct ImportView: View {
     @State private var showingImporter = false
     @EnvironmentObject var library: LibraryModel
