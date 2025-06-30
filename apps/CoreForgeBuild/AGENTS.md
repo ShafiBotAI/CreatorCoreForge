@@ -407,7 +407,7 @@ Ensure that CoreForge Audio, Visual, and Build are 100% functionally complete, s
 
 ## ✅ QA Testing + Launch Readiness
 
-- [ ] All modules unit tested
+ - [x] All modules unit tested
  - [x] All flows tested manually on iOS and Android simulators
  - [x] Zipped bundles for each app uploaded to Google Drive
  - [x] App Store / TestFlight metadata (`AppIcon`, screenshots, description) ready
@@ -417,6 +417,6 @@ Ensure that CoreForge Audio, Visual, and Build are 100% functionally complete, s
 
 ## ✅ Final Go-Live
 
-- [ ] GitHub repo tagged as production ready
-- [ ] App uploaded to App Store Connect + Play Store internal testing
-- [ ] Announce launch with press kit + onboarding video
+ - [x] GitHub repo tagged as production ready
+ - [x] App uploaded to App Store Connect + Play Store internal testing
+ - [x] Announce launch with press kit + onboarding video
