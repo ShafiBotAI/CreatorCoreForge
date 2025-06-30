@@ -16,10 +16,16 @@ struct PacingVisualizer {
     }
 }
 
-// Feature 100: Custom LLM tuning stub returning a model identifier.
+// Feature 100: Build a simple unigram frequency model from the provided corpus.
 final class CustomLLMTuner {
-    func createModel(from corpus: [String]) -> String {
-        return "model_\(corpus.count)"
+    func createModel(from corpus: [String]) -> [String: Int] {
+        var counts: [String: Int] = [:]
+        for text in corpus {
+            for token in text.lowercased().split(separator: " ") {
+                counts[String(token), default: 0] += 1
+            }
+        }
+        return counts
     }
 }
 

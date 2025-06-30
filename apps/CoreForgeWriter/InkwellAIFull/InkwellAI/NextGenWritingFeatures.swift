@@ -97,18 +97,42 @@ final class MultilingualSceneGenerator {
     }
 }
 
-// Feature 44: Cover generator stub returning image data.
+// Feature 44: Cover generator now outputs a simple SVG cover.
 final class CoverGenerator {
+    /// Generate a minimal SVG cover containing the title and author.
     func generateCover(title: String, author: String) -> Data {
-        let meta = "\(title)-\(author)".data(using: .utf8)!
-        return meta
+        let svg = """
+        <svg xmlns='http://www.w3.org/2000/svg' width='300' height='500'>
+            <rect width='100%' height='100%' fill='#f5f5f5'/>
+            <text x='50%' y='40%' dominant-baseline='middle' text-anchor='middle' font-size='24' fill='#333'>
+                \(title)
+            </text>
+            <text x='50%' y='60%' dominant-baseline='middle' text-anchor='middle' font-size='18' fill='#666'>
+                \(author)
+            </text>
+        </svg>
+        """
+        return Data(svg.utf8)
     }
 }
 
-// Feature 45: Audiobook tone adjuster placeholder.
+// Feature 45: Audiobook tone adjuster with basic byte manipulation.
 final class AudiobookToneAdjuster {
+    /// Adjust audio data by slightly modifying byte values based on tone.
+    /// This is a lightweight stand-in for real DSP processing.
     func adjust(audio: Data, tone: String) -> Data {
-        return audio + tone.data(using: .utf8)!
+        var bytes = [UInt8](audio)
+        for i in bytes.indices {
+            switch tone.lowercased() {
+            case "warm":
+                bytes[i] = UInt8(min(255, Int(bytes[i]) + 10))
+            case "dark":
+                bytes[i] = UInt8(max(0, Int(bytes[i]) - 10))
+            default:
+                continue
+            }
+        }
+        return Data(bytes)
     }
 }
 
