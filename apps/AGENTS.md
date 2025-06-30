@@ -3,7 +3,7 @@
 ## Directory: apps
 Purpose: Consolidate all CreatorCoreForge application packages
 
--### Tasks
+### Tasks
 - [x] Keep each subfolder in sync with master roadmap
 - [x] Maintain per-app AGENTS.md files
 - [x] Coordinate shared assets and templates
