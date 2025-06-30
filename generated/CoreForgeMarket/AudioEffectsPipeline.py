@@ -1,4 +1,4 @@
 # Auto-generated for AudioEffectsPipeline
 def audioeffectspipeline():
     """AudioEffectsPipeline"""
-    pass
+    return "AudioEffectsPipeline feature"

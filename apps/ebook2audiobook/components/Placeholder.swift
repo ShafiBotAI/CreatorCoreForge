@@ -1,7 +1,8 @@
 import Foundation
 
-public struct Placeholder {
+public struct StatusNotifier {
+    /// Returns a friendly greeting used in integration tests.
     public static func greet() -> String {
-        return "Hello from Swift"
+        "Conversion module ready"
     }
 }

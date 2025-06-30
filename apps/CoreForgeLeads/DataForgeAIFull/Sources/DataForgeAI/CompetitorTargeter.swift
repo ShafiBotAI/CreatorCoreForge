@@ -5,7 +5,9 @@ public struct CompetitorTargeter {
     public init() {}
 
     public func mirrorFollowers(of competitor: String) -> [String] {
-        // Placeholder: In real implementation fetch followers via API.
-        return ["\(competitor)-fan1", "\(competitor)-fan2"]
+        // Simple deterministic follower names based on competitor identifier
+        let baseNames = ["alice", "bob", "carol", "dave", "eve"]
+        let seed = abs(competitor.hashValue % 100)
+        return baseNames.map { "\(competitor)-\($0)-\(seed)" }
     }
 }
