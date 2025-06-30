@@ -344,11 +344,11 @@ Key points from `README.md`:
 - [x] Feature 190: Scene-by-scene reader poll system with live results dashboard
 - [x] Feature 191: Choice-path story mode: branching scenes for interactive fiction
 - [x] Feature 192: Smart rewrite engine to convert style (YA to adult, novel to script)
-- [ ] Feature 193: Multilingual scene generation with idiom and culture adaptation
-- [ ] Feature 194: Cover generator: AI-blended art and typography for publishing
-- [ ] Feature 195: Audiobook tone adjuster for CoreForge Audio export compatibility
-- [ ] Feature 196: One-click export to CoreForge Visual for full cinematic conversion
-- [ ] Feature 197: Multiverse export kit: visual, audio, and story metadata bundled
-- [ ] Feature 198: Beta reader simulator: critique generation by style archetype
-- [ ] Feature 199: Dynamic pacing visualizer with chapter and series overlays
-- [ ] Feature 200: Custom LLM tuning per author for ultra-consistent tone
+- [x] Feature 193: Multilingual scene generation with idiom and culture adaptation
+- [x] Feature 194: Cover generator: AI-blended art and typography for publishing
+- [x] Feature 195: Audiobook tone adjuster for CoreForge Audio export compatibility
+- [x] Feature 196: One-click export to CoreForge Visual for full cinematic conversion
+- [x] Feature 197: Multiverse export kit: visual, audio, and story metadata bundled
+- [x] Feature 198: Beta reader simulator: critique generation by style archetype
+- [x] Feature 199: Dynamic pacing visualizer with chapter and series overlays
+- [x] Feature 200: Custom LLM tuning per author for ultra-consistent tone
