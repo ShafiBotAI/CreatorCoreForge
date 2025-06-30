@@ -311,13 +311,13 @@ Key points from `README.md`:
  - [x] Feature 188: Global news map: economic and war zones as signals
  - [x] Feature 189: AI-driven earnings preview forecasts
  - [x] Feature 190: Liquidity trap detector with exit suggestions
-- [ ] Feature 191: Cross-chain scanner for DeFi/NFT flipping opportunities
-- [ ] Feature 192: AI-generated newsletter for your portfolio strategy
-- [ ] Feature 193: AI-generated thumbnail + headline for trade ideas (for creators)
-- [ ] Feature 194: Tokenomics breakdown visualizer for crypto plays
-- [ ] Feature 195: Trade sharing as stories to Telegram, Discord, X
-- [ ] Feature 196: Auto-bundling of your trade strategies into courses or kits
-- [ ] Feature 197: Heatmap of whale movements in top 50 coins or stocks
-- [ ] Feature 198: Neural signal rebalance based on live volatility
-- [ ] Feature 199: AI-matched mentors with your style via shadow portfolio comparison
-- [ ] Feature 200: Live news whisper mode: AI whispers most critical info every 15 mins
+- [x] Feature 191: Cross-chain scanner for DeFi/NFT flipping opportunities
+- [x] Feature 192: AI-generated newsletter for your portfolio strategy
+- [x] Feature 193: AI-generated thumbnail + headline for trade ideas (for creators)
+- [x] Feature 194: Tokenomics breakdown visualizer for crypto plays
+- [x] Feature 195: Trade sharing as stories to Telegram, Discord, X
+- [x] Feature 196: Auto-bundling of your trade strategies into courses or kits
+- [x] Feature 197: Heatmap of whale movements in top 50 coins or stocks
+- [x] Feature 198: Neural signal rebalance based on live volatility
+- [x] Feature 199: AI-matched mentors with your style via shadow portfolio comparison
+- [x] Feature 200: Live news whisper mode: AI whispers most critical info every 15 mins
