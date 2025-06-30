@@ -21,7 +21,7 @@
     "puppeteer": "^21.7.0"
   },
   "dependencies": {
-    "archiver": "^5.3.2",
+    "archiver": "^7.0.1",
     "axe-core": "^4.10.3",
     "diff": "^5.2.0",
     "qrcode": "^1.5.3",
