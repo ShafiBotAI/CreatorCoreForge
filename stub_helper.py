@@ -8,7 +8,8 @@ PATTERNS = [
     ("raise_not_implemented", r"raise\s+NotImplementedError"),
     ("throw_not_implemented", r"throw\s+new\s+Error\([^\)]*not implemented[^\)]*\)"),
     ("empty_braces_function", r"func\s+\w+\([^)]*\)\s*\{\s*\}"),
-    ("return_nil_or_null", r"return\s+(nil|null)\b"),
+    # Only flag a stub if the entire line is just `return nil` or `return null`.
+    ("return_nil_or_null", r"^\s*return\s+(nil|null)\s*$"),
     ("stub_comment", r"//\s*stub\b"),
 ]
 

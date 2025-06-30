@@ -204,7 +204,7 @@ public final class VisualMemoryManager {
             handoffHistory.append(account)
             return url
         } catch {
-            return nil
+            return nil // failed to save snapshot
         }
     }
 

@@ -22,6 +22,6 @@ struct SecureStore {
             return key
         }
         #endif
-        return nil
+        return nil // no key available
     }
 }

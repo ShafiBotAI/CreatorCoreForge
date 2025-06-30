@@ -35,7 +35,7 @@ final class IMDbAPI {
                 if let id = dict["id"] as? String, let l = dict["l"] as? String {
                     return IMDbMovie(id: id, title: l)
                 }
-                return nil
+                return nil // ignore if missing fields
             }
             completion(.success(movies))
         }.resume()
