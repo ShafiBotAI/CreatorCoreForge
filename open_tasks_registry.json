@@ -1,14 +1,3 @@
 {
-  "open_tasks": [
-    "Dashboard setup for real-time crash & performance metrics",
-    "Integrate Axe (or Apple Accessibility Inspector) audit in CI",
-    "Run pseudo-localization to catch layout & missing-string issues",
-    "Fail builds on missing localization keys",
-    "Leverage Codex to generate Javadoc/SwiftDoc stubs from signatures",
-    "Configure semantic-release to auto-publish changelogs from commits",
-    "Add git pre-commit hooks for lint, formatting & basic tests",
-    "Configure Danger.js / Danger-Swift to enforce PR rules (tests, docs, coverage)",
-    "On any lint/test failure, auto-create a GitHub Issue with logs",
-    "Integrate ChatOps to post build/test status & alerts into Slack"
-  ]
+  "open_tasks": []
 }

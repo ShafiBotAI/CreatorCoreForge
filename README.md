@@ -463,3 +463,11 @@ Basic load simulation can be triggered via:
 ./scripts/load_test.sh
 ```
 
+
+## Development
+To enable git hooks run:
+```
+git config core.hooksPath .githooks
+```
+This ensures lint, format and tests run before each commit.
+

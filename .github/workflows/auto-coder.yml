@@ -19,7 +19,30 @@ jobs:
       - name: Run Auto Code Bot
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: python scripts/auto_code_bot.py --upgrade-placeholders --complete-todos --complete-stubs
+        run: python scripts/auto_code_bot.py --upgrade-placeholders --complete-todos --complete-stubs 2>&1 | tee build.log
+      - name: Generate docs stubs
+        run: python scripts/generate_docs.py
+      - name: Accessibility audit
+        run: node scripts/accessibility_audit.js
+      - name: Pseudo-localization
+        run: node scripts/pseudo_localize.js
+      - name: Check localization keys
+        run: python scripts/check_localization_keys.py
+      - name: Run Danger checks
+        uses: danger/danger-js@11
+      - name: Release
+        if: github.ref == 'refs/heads/main'
+        run: npx semantic-release
+      - name: Notify Slack
+        if: always()
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        run: scripts/notify_slack.sh "Workflow ${{ job.status }}"
+      - name: Create failure issue
+        if: failure()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: scripts/issue_on_fail.sh build.log
       - name: Push changes
         if: success()
         run: |
