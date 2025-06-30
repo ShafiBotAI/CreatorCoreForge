@@ -10,8 +10,8 @@ services.
 - **Trading journal** with offline sentiment scoring
 - **Chart screenshot analysis** for quick trend detection
 - **Multi-market scanner** with basic smart money metrics
-- **Real-time sentiment heatmap** for journal entries
-- **Journal storage** via Firebase (stubbed)
+ - **Real-time sentiment heatmap** for journal entries
+ - **Journal storage** via local JSON archive with optional Firebase sync
 - **Video sharing** to social media accounts
 - **Auto-update checks** using the shared `AutoUpdater` module
 
