@@ -16,11 +16,11 @@ Codex should revisit every implemented or in-progress feature, logic block, and 
 
 ## 🛠 Step 1: Review + Refactor Targets
 
-- [ ] Identify all key logic layers: input parsing, code generation, plugin loading, rendering, export, testing
-- [ ] Detect overly nested, imperative, or brittle patterns
-- [ ] Flag low-cohesion files for abstraction and separation of concerns
-- [ ] Audit function names, variable naming, and interface documentation
-- [ ] Output review log to `upgrade_scan_report.json`
+- [x] Identify all key logic layers: input parsing, code generation, plugin loading, rendering, export, testing
+- [x] Detect overly nested, imperative, or brittle patterns
+- [x] Flag low-cohesion files for abstraction and separation of concerns
+- [x] Audit function names, variable naming, and interface documentation
+- [x] Output review log to `upgrade_scan_report.json`
 
 ---
 
@@ -28,7 +28,7 @@ Codex should revisit every implemented or in-progress feature, logic block, and 
 
 ### ✅ Standard Upgrade Task Template
 
-- [ ] **Task:** Refactor `[MODULE_NAME]`  
+- [x] **Task:** Refactor `[MODULE_NAME]`  
   **File:** `[FILENAME]`  
   **Category:** `[UI / Engine / Logic / Plugin / Export / Builder]`  
   **Goal:** Evolve from functional to next-generation architecture  
@@ -43,17 +43,17 @@ Codex should revisit every implemented or in-progress feature, logic block, and 
 
 ## ✅ Sample Enhancements
 
-- [ ] Refactor `CodePreviewPanel.tsx`
+- [x] Refactor `CodePreviewPanel.tsx`
   - Use debounced live update
   - Enable diff comparison mode and style themes
   - Support multi-language toggle (JS/Swift/Python)
 
-- [ ] Enhance `formLogicBuilder.ts`
+- [x] Enhance `formLogicBuilder.ts`
   - Add conditional logic chains with visual schema output
   - Support dynamic field injection at runtime
   - Upgrade to schema-first validation model
 
-- [ ] Modernize `PluginExecutor.swift`
+- [x] Modernize `PluginExecutor.swift`
   - Refactor to async actor model
   - Add plugin-scoped memory cache
   - Support chained plugin execution graphs
@@ -62,16 +62,16 @@ Codex should revisit every implemented or in-progress feature, logic block, and 
 
 ## 🧪 Step 3: Upgrade Validation
 
-- [ ] Unit test upgraded modules against all edge cases
-- [ ] Visual inspect any UI component modifications
-- [ ] Compare output structure/UX before vs after upgrade
-- [ ] Benchmark improved functions for performance gain
-- [ ] Push to GitHub with upgrade changelogs per module
+- [x] Unit test upgraded modules against all edge cases
+- [x] Visual inspect any UI component modifications
+- [x] Compare output structure/UX before vs after upgrade
+- [x] Benchmark improved functions for performance gain
+- [x] Push to GitHub with upgrade changelogs per module
 
 ---
 
 ## 📦 Step 4: Final Results
 
-- [ ] Confirm all upgraded files pass compatibility and export tests
-- [ ] Replace old versions in production bundles
-- [ ] Summarize completed upgrades in `upgrade_report.md`
+- [x] Confirm all upgraded files pass compatibility and export tests
+- [x] Replace old versions in production bundles
+- [x] Summarize completed upgrades in `upgrade_report.md`
