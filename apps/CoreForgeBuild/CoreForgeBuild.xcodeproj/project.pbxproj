@@ -6,114 +6,118 @@
     objects = {
 
 /* Begin PBXBuildFile section */
-        5C12C412AE2142E39496C5A6 /* AppDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1B042D895840158309B769 /* AppDashboardView.swift */; };
-        89476D5C5AA14C12850BB639 /* AppLogicEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B84ADD46AC14DEEB5230076 /* AppLogicEditor.swift */; };
-        3C26380330624E2A93E9EF48 /* BuildCreditDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88AE7401A2E497E82D07971 /* BuildCreditDisplayView.swift */; };
-        AE9FE4FC27374E8481479406 /* BuildPipelineStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6773B5C05447EB141A981 /* BuildPipelineStatusView.swift */; };
-        8D79B5B0F40940B79E0100A4 /* BuildQuotaMeterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D547C3C54D34F7988E38609 /* BuildQuotaMeterView.swift */; };
-        BA05C724C22547E9A7DBC7C3 /* CodexAgentPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DCADB352443059E2E928C /* CodexAgentPanel.swift */; };
-        8DE9FE47DD5A48EB9C089797 /* ComponentMarketplaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0176472AE243D7A5025C34 /* ComponentMarketplaceView.swift */; };
-        54B06B854FB942F082260E43 /* ComponentSidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97ACF79C0D441B09A9257BD /* ComponentSidebarView.swift */; };
-        A7B3575F396049FF8AA7F3E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C8E6C728F94E1BB8615041 /* ContentView.swift */; };
-        EBAF6ACBDEAC4343AEBB50BA /* CoreForgeBuildApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977F41098AD14CC3A27F39F8 /* CoreForgeBuildApp.swift */; };
-        C8132D29F7C848BB92AA6DDB /* ExportAppBundleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679A34677EFF450784AFE205 /* ExportAppBundleView.swift */; };
-        27E0DC0063E44EABB3B45260 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1121F12CB68543399EF79FF5 /* MainTabView.swift */; };
-        1610A4BBB0224A6E92749F2D /* NewAppFromPromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D686EBA28AC46E5B788ACF2 /* NewAppFromPromptView.swift */; };
-        65743087ADDC4419A68B88F3 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3A96EA9FF14D55B6D65410 /* OnboardingView.swift */; };
-        570CA80D69634074826C665D /* PlanTierOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1D2B61C3444D86AFF9CDD7 /* PlanTierOverviewView.swift */; };
-        428D0AEAC6304CF6B4210CC8 /* PreviewSimulatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6855C95B8B74848849093AA /* PreviewSimulatorView.swift */; };
-        B8BD8944DABE4658B67937FD /* ProjectQuickActionsBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD58C0CC7C284439BF0F09D4 /* ProjectQuickActionsBar.swift */; };
-        0A37ABDB6435467BA2BD7C4E /* UIDesignerCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C9C5DEAEAB45F59EA4E7D8 /* UIDesignerCanvasView.swift */; };
-        F1FCB269385A486E9E557577 /* UnlockWithPromoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BF339662454B5AA1AD5A76 /* UnlockWithPromoView.swift */; };
-        F3DCAC49845346E98ACA6809 /* WhiteLabelManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EFD4E37B33417387139425 /* WhiteLabelManagerView.swift */; };
+        2457834E73EA4BE988DD2E44 /* AppDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6937D672894FD7959DC146 /* AppDashboardView.swift */; };
+        D8F47DC9676542EE9A6191AD /* AppLogicEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DCC4915B0340098F9AA731 /* AppLogicEditor.swift */; };
+        856184460FB14F089736D13B /* BuildCreditDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8041413FE2BD4DCDAC94A9C3 /* BuildCreditDisplayView.swift */; };
+        FA12395C366042A7A98720FA /* BuildPipelineStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1084BFC2E8B64F8C964318D5 /* BuildPipelineStatusView.swift */; };
+        7A059C59A76741B198EEBA60 /* BuildQuotaMeterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F272EF55947D081302C55 /* BuildQuotaMeterView.swift */; };
+        F1DFE439551C4C22915A0227 /* CodexAgentPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B51BDAF784DC298E96EE5 /* CodexAgentPanel.swift */; };
+        EC7845675E0842A3AF2C10FE /* CodexTaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCC6285811C4849A8FAB8B4 /* CodexTaskManager.swift */; };
+        21FE81B38AC84B59AB16499C /* ComponentMarketplaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1497F0817D478BB9573B54 /* ComponentMarketplaceView.swift */; };
+        2ABA96940672413EB876EE1B /* ComponentSidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28B760EA7FE401D83854E0E /* ComponentSidebarView.swift */; };
+        4F1EE4B812C24F17A0754B32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380D6D4D6B284101A89708E3 /* ContentView.swift */; };
+        D3F6EF896FE347E8874C8A70 /* CoreForgeBuildApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC2F147E7674488BA4E5BCB /* CoreForgeBuildApp.swift */; };
+        9B0C46A91E76400B9332A576 /* ExportAppBundleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A331602181D44D15901D7A43 /* ExportAppBundleView.swift */; };
+        5ADDE4E952F04645A81E24B1 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF632843A634454B73B83E6 /* MainTabView.swift */; };
+        ED2723C9D11A4EB39F6FB239 /* NewAppFromPromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED770CBCF9A14BEE8CB29F07 /* NewAppFromPromptView.swift */; };
+        D84CEB84969C4D8DA831929E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B91F68B2C64FFCAF5E46DF /* OnboardingView.swift */; };
+        34F2AB27EDA24A198A9AE18C /* PlanTierOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D58BB530CB4EB9AC35D3A1 /* PlanTierOverviewView.swift */; };
+        E16F86F5E9C04C4CACCB6C6A /* PreviewSimulatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4D97C400FE4E51A65DE065 /* PreviewSimulatorView.swift */; };
+        65E5D7E70F44494FAE86ECC9 /* ProjectQuickActionsBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC736682D0994F578FB476E2 /* ProjectQuickActionsBar.swift */; };
+        58AC7BB6CDEC45C2B38267BC /* UIDesignerCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E88A9DCE8984B8DA892C58A /* UIDesignerCanvasView.swift */; };
+        17C6762E0B714FE6BB473600 /* UnlockWithPromoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2AFC231FD0423E9EC3ED21 /* UnlockWithPromoView.swift */; };
+        FB65259D76DB4E4C93C42E9B /* WhiteLabelManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E125D05EDFC4E63919BE9A5 /* WhiteLabelManagerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-        8E1B042D895840158309B769 /* AppDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDashboardView.swift; sourceTree = "<group>"; };
-        1B84ADD46AC14DEEB5230076 /* AppLogicEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogicEditor.swift; sourceTree = "<group>"; };
-        A88AE7401A2E497E82D07971 /* BuildCreditDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildCreditDisplayView.swift; sourceTree = "<group>"; };
-        D7C6773B5C05447EB141A981 /* BuildPipelineStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildPipelineStatusView.swift; sourceTree = "<group>"; };
-        6D547C3C54D34F7988E38609 /* BuildQuotaMeterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildQuotaMeterView.swift; sourceTree = "<group>"; };
-        776DCADB352443059E2E928C /* CodexAgentPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodexAgentPanel.swift; sourceTree = "<group>"; };
-        1B0176472AE243D7A5025C34 /* ComponentMarketplaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentMarketplaceView.swift; sourceTree = "<group>"; };
-        B97ACF79C0D441B09A9257BD /* ComponentSidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentSidebarView.swift; sourceTree = "<group>"; };
-        F3C8E6C728F94E1BB8615041 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-        977F41098AD14CC3A27F39F8 /* CoreForgeBuildApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreForgeBuildApp.swift; sourceTree = "<group>"; };
-        679A34677EFF450784AFE205 /* ExportAppBundleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportAppBundleView.swift; sourceTree = "<group>"; };
-        1121F12CB68543399EF79FF5 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
-        8D686EBA28AC46E5B788ACF2 /* NewAppFromPromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAppFromPromptView.swift; sourceTree = "<group>"; };
-        7C3A96EA9FF14D55B6D65410 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
-        1C1D2B61C3444D86AFF9CDD7 /* PlanTierOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanTierOverviewView.swift; sourceTree = "<group>"; };
-        B6855C95B8B74848849093AA /* PreviewSimulatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewSimulatorView.swift; sourceTree = "<group>"; };
-        FD58C0CC7C284439BF0F09D4 /* ProjectQuickActionsBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectQuickActionsBar.swift; sourceTree = "<group>"; };
-        66C9C5DEAEAB45F59EA4E7D8 /* UIDesignerCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDesignerCanvasView.swift; sourceTree = "<group>"; };
-        10BF339662454B5AA1AD5A76 /* UnlockWithPromoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockWithPromoView.swift; sourceTree = "<group>"; };
-        45EFD4E37B33417387139425 /* WhiteLabelManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteLabelManagerView.swift; sourceTree = "<group>"; };
-        DCDBACD153094AA1AC7DB772 /* CoreForgeBuild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = CoreForgeBuild.app; sourceTree = BUILT_PRODUCTS_DIR; };
+        AC6937D672894FD7959DC146 /* AppDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDashboardView.swift; sourceTree = "<group>"; };
+        46DCC4915B0340098F9AA731 /* AppLogicEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogicEditor.swift; sourceTree = "<group>"; };
+        8041413FE2BD4DCDAC94A9C3 /* BuildCreditDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildCreditDisplayView.swift; sourceTree = "<group>"; };
+        1084BFC2E8B64F8C964318D5 /* BuildPipelineStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildPipelineStatusView.swift; sourceTree = "<group>"; };
+        3D6F272EF55947D081302C55 /* BuildQuotaMeterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildQuotaMeterView.swift; sourceTree = "<group>"; };
+        044B51BDAF784DC298E96EE5 /* CodexAgentPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodexAgentPanel.swift; sourceTree = "<group>"; };
+        BBCC6285811C4849A8FAB8B4 /* CodexTaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodexTaskManager.swift; sourceTree = "<group>"; };
+        9F1497F0817D478BB9573B54 /* ComponentMarketplaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentMarketplaceView.swift; sourceTree = "<group>"; };
+        E28B760EA7FE401D83854E0E /* ComponentSidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentSidebarView.swift; sourceTree = "<group>"; };
+        380D6D4D6B284101A89708E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+        7FC2F147E7674488BA4E5BCB /* CoreForgeBuildApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreForgeBuildApp.swift; sourceTree = "<group>"; };
+        A331602181D44D15901D7A43 /* ExportAppBundleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportAppBundleView.swift; sourceTree = "<group>"; };
+        9FF632843A634454B73B83E6 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+        ED770CBCF9A14BEE8CB29F07 /* NewAppFromPromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAppFromPromptView.swift; sourceTree = "<group>"; };
+        A1B91F68B2C64FFCAF5E46DF /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+        04D58BB530CB4EB9AC35D3A1 /* PlanTierOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanTierOverviewView.swift; sourceTree = "<group>"; };
+        BB4D97C400FE4E51A65DE065 /* PreviewSimulatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewSimulatorView.swift; sourceTree = "<group>"; };
+        BC736682D0994F578FB476E2 /* ProjectQuickActionsBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectQuickActionsBar.swift; sourceTree = "<group>"; };
+        9E88A9DCE8984B8DA892C58A /* UIDesignerCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDesignerCanvasView.swift; sourceTree = "<group>"; };
+        CD2AFC231FD0423E9EC3ED21 /* UnlockWithPromoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockWithPromoView.swift; sourceTree = "<group>"; };
+        9E125D05EDFC4E63919BE9A5 /* WhiteLabelManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteLabelManagerView.swift; sourceTree = "<group>"; };
+        B4DE0228864F466386BCADA0 /* CoreForgeBuild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = CoreForgeBuild.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-        5FD7A452323D48C09CB7B7B6 = {
+        E5F8875115D64786B9166380 = {
             isa = PBXGroup;
             children = (
-                                8E1B042D895840158309B769 /* AppDashboardView.swift */,
-                1B84ADD46AC14DEEB5230076 /* AppLogicEditor.swift */,
-                A88AE7401A2E497E82D07971 /* BuildCreditDisplayView.swift */,
-                D7C6773B5C05447EB141A981 /* BuildPipelineStatusView.swift */,
-                6D547C3C54D34F7988E38609 /* BuildQuotaMeterView.swift */,
-                776DCADB352443059E2E928C /* CodexAgentPanel.swift */,
-                1B0176472AE243D7A5025C34 /* ComponentMarketplaceView.swift */,
-                B97ACF79C0D441B09A9257BD /* ComponentSidebarView.swift */,
-                F3C8E6C728F94E1BB8615041 /* ContentView.swift */,
-                977F41098AD14CC3A27F39F8 /* CoreForgeBuildApp.swift */,
-                679A34677EFF450784AFE205 /* ExportAppBundleView.swift */,
-                1121F12CB68543399EF79FF5 /* MainTabView.swift */,
-                8D686EBA28AC46E5B788ACF2 /* NewAppFromPromptView.swift */,
-                7C3A96EA9FF14D55B6D65410 /* OnboardingView.swift */,
-                1C1D2B61C3444D86AFF9CDD7 /* PlanTierOverviewView.swift */,
-                B6855C95B8B74848849093AA /* PreviewSimulatorView.swift */,
-                FD58C0CC7C284439BF0F09D4 /* ProjectQuickActionsBar.swift */,
-                66C9C5DEAEAB45F59EA4E7D8 /* UIDesignerCanvasView.swift */,
-                10BF339662454B5AA1AD5A76 /* UnlockWithPromoView.swift */,
-                45EFD4E37B33417387139425 /* WhiteLabelManagerView.swift */,
-                DCDBACD153094AA1AC7DB772 /* CoreForgeBuild.app */,
+                                AC6937D672894FD7959DC146 /* AppDashboardView.swift */
+                46DCC4915B0340098F9AA731 /* AppLogicEditor.swift */
+                8041413FE2BD4DCDAC94A9C3 /* BuildCreditDisplayView.swift */
+                1084BFC2E8B64F8C964318D5 /* BuildPipelineStatusView.swift */
+                3D6F272EF55947D081302C55 /* BuildQuotaMeterView.swift */
+                044B51BDAF784DC298E96EE5 /* CodexAgentPanel.swift */
+                BBCC6285811C4849A8FAB8B4 /* CodexTaskManager.swift */
+                9F1497F0817D478BB9573B54 /* ComponentMarketplaceView.swift */
+                E28B760EA7FE401D83854E0E /* ComponentSidebarView.swift */
+                380D6D4D6B284101A89708E3 /* ContentView.swift */
+                7FC2F147E7674488BA4E5BCB /* CoreForgeBuildApp.swift */
+                A331602181D44D15901D7A43 /* ExportAppBundleView.swift */
+                9FF632843A634454B73B83E6 /* MainTabView.swift */
+                ED770CBCF9A14BEE8CB29F07 /* NewAppFromPromptView.swift */
+                A1B91F68B2C64FFCAF5E46DF /* OnboardingView.swift */
+                04D58BB530CB4EB9AC35D3A1 /* PlanTierOverviewView.swift */
+                BB4D97C400FE4E51A65DE065 /* PreviewSimulatorView.swift */
+                BC736682D0994F578FB476E2 /* ProjectQuickActionsBar.swift */
+                9E88A9DCE8984B8DA892C58A /* UIDesignerCanvasView.swift */
+                CD2AFC231FD0423E9EC3ED21 /* UnlockWithPromoView.swift */
+                9E125D05EDFC4E63919BE9A5 /* WhiteLabelManagerView.swift */,
+                B4DE0228864F466386BCADA0 /* CoreForgeBuild.app */,
             );
             sourceTree = "<group>";
         };
 /* End PBXGroup section */
 
 /* Begin PBXSourcesBuildPhase section */
-        F53BB28E3EC548F889D87F9E = {
+        B365ED6B8098490ABC2F6126 = {
             isa = PBXSourcesBuildPhase;
             buildActionMask = 2147483647;
             files = (
-                                5C12C412AE2142E39496C5A6 /* AppDashboardView.swift in Sources */,
-                89476D5C5AA14C12850BB639 /* AppLogicEditor.swift in Sources */,
-                3C26380330624E2A93E9EF48 /* BuildCreditDisplayView.swift in Sources */,
-                AE9FE4FC27374E8481479406 /* BuildPipelineStatusView.swift in Sources */,
-                8D79B5B0F40940B79E0100A4 /* BuildQuotaMeterView.swift in Sources */,
-                BA05C724C22547E9A7DBC7C3 /* CodexAgentPanel.swift in Sources */,
-                8DE9FE47DD5A48EB9C089797 /* ComponentMarketplaceView.swift in Sources */,
-                54B06B854FB942F082260E43 /* ComponentSidebarView.swift in Sources */,
-                A7B3575F396049FF8AA7F3E5 /* ContentView.swift in Sources */,
-                EBAF6ACBDEAC4343AEBB50BA /* CoreForgeBuildApp.swift in Sources */,
-                C8132D29F7C848BB92AA6DDB /* ExportAppBundleView.swift in Sources */,
-                27E0DC0063E44EABB3B45260 /* MainTabView.swift in Sources */,
-                1610A4BBB0224A6E92749F2D /* NewAppFromPromptView.swift in Sources */,
-                65743087ADDC4419A68B88F3 /* OnboardingView.swift in Sources */,
-                570CA80D69634074826C665D /* PlanTierOverviewView.swift in Sources */,
-                428D0AEAC6304CF6B4210CC8 /* PreviewSimulatorView.swift in Sources */,
-                B8BD8944DABE4658B67937FD /* ProjectQuickActionsBar.swift in Sources */,
-                0A37ABDB6435467BA2BD7C4E /* UIDesignerCanvasView.swift in Sources */,
-                F1FCB269385A486E9E557577 /* UnlockWithPromoView.swift in Sources */,
-                F3DCAC49845346E98ACA6809 /* WhiteLabelManagerView.swift in Sources */,
+                                2457834E73EA4BE988DD2E44 /* AppDashboardView.swift in Sources */
+                D8F47DC9676542EE9A6191AD /* AppLogicEditor.swift in Sources */
+                856184460FB14F089736D13B /* BuildCreditDisplayView.swift in Sources */
+                FA12395C366042A7A98720FA /* BuildPipelineStatusView.swift in Sources */
+                7A059C59A76741B198EEBA60 /* BuildQuotaMeterView.swift in Sources */
+                F1DFE439551C4C22915A0227 /* CodexAgentPanel.swift in Sources */
+                EC7845675E0842A3AF2C10FE /* CodexTaskManager.swift in Sources */
+                21FE81B38AC84B59AB16499C /* ComponentMarketplaceView.swift in Sources */
+                2ABA96940672413EB876EE1B /* ComponentSidebarView.swift in Sources */
+                4F1EE4B812C24F17A0754B32 /* ContentView.swift in Sources */
+                D3F6EF896FE347E8874C8A70 /* CoreForgeBuildApp.swift in Sources */
+                9B0C46A91E76400B9332A576 /* ExportAppBundleView.swift in Sources */
+                5ADDE4E952F04645A81E24B1 /* MainTabView.swift in Sources */
+                ED2723C9D11A4EB39F6FB239 /* NewAppFromPromptView.swift in Sources */
+                D84CEB84969C4D8DA831929E /* OnboardingView.swift in Sources */
+                34F2AB27EDA24A198A9AE18C /* PlanTierOverviewView.swift in Sources */
+                E16F86F5E9C04C4CACCB6C6A /* PreviewSimulatorView.swift in Sources */
+                65E5D7E70F44494FAE86ECC9 /* ProjectQuickActionsBar.swift in Sources */
+                58AC7BB6CDEC45C2B38267BC /* UIDesignerCanvasView.swift in Sources */
+                17C6762E0B714FE6BB473600 /* UnlockWithPromoView.swift in Sources */
+                FB65259D76DB4E4C93C42E9B /* WhiteLabelManagerView.swift in Sources */,
             );
             runOnlyForDeploymentPostprocessing = 0;
         };
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXFrameworksBuildPhase section */
-        69C94C9D446C45EFB73DD612 = {
+        FD7410F677874D6683E9BCD3 = {
             isa = PBXFrameworksBuildPhase;
             buildActionMask = 2147483647;
             files = (
@@ -123,12 +127,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-        E670085608FC40689CA58018 /* CoreForgeBuild */ = {
+        578FF16EB24C4EA2B10818E9 /* CoreForgeBuild */ = {
             isa = PBXNativeTarget;
-            buildConfigurationList = AE394874B09243039EE456F8 /* Build configuration list for PBXNativeTarget "CoreForgeBuild" */;
+            buildConfigurationList = 1C2C95A5D50441C380DCA63C /* Build configuration list for PBXNativeTarget "CoreForgeBuild" */;
             buildPhases = (
-                F53BB28E3EC548F889D87F9E,
-                69C94C9D446C45EFB73DD612,
+                B365ED6B8098490ABC2F6126,
+                FD7410F677874D6683E9BCD3,
             );
             buildRules = (
             );
@@ -136,39 +140,39 @@
             );
             name = CoreForgeBuild;
             productName = CoreForgeBuild;
-            productReference = DCDBACD153094AA1AC7DB772 /* CoreForgeBuild.app */;
+            productReference = B4DE0228864F466386BCADA0 /* CoreForgeBuild.app */;
             productType = "com.apple.product-type.application";
         };
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-        76DE2368C3C245BDBF2CC58E /* Project object */ = {
+        836A43678F4940899A2E9666 /* Project object */ = {
             isa = PBXProject;
             attributes = {
                 LastUpgradeCheck = 1600;
                 ORGANIZATIONNAME = "";
             };
-            buildConfigurationList = 4D781E890F5743E191DF2E66 /* Build configuration list for PBXProject */;
+            buildConfigurationList = B07B019CE498455F83D9356B /* Build configuration list for PBXProject */;
             compatibilityVersion = "Xcode 16.0";
             developmentRegion = en;
             hasScannedForEncodings = 0;
-            mainGroup = 5FD7A452323D48C09CB7B7B6;
+            mainGroup = E5F8875115D64786B9166380;
             projectDirPath = "";
             projectRoot = "";
             targets = (
-                E670085608FC40689CA58018,
+                578FF16EB24C4EA2B10818E9,
             );
         };
 /* End PBXProject section */
 
 /* Begin XCBuildConfiguration section */
-        A77BA35D31574FC0B2FB8BCD /* Debug */ = {
+        36851491CE6443E8B31DDFCE /* Debug */ = {
             isa = XCBuildConfiguration;
             buildSettings = { };
             	HEADERMAP_STYLE = FLAT;
             name = Debug;
         };
-        CC3C9D9A11B5485F880EF08C /* Release */ = {
+        B731350B8710496B87C5378B /* Release */ = {
             isa = XCBuildConfiguration;
             buildSettings = { };
             	HEADERMAP_STYLE = FLAT;
@@ -177,20 +181,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-        AE394874B09243039EE456F8 /* Build configuration list for PBXNativeTarget "CoreForgeBuild" */ = {
+        1C2C95A5D50441C380DCA63C /* Build configuration list for PBXNativeTarget "CoreForgeBuild" */ = {
             isa = XCConfigurationList;
             buildConfigurations = (
-                A77BA35D31574FC0B2FB8BCD /* Debug */,
-                CC3C9D9A11B5485F880EF08C /* Release */,
+                36851491CE6443E8B31DDFCE /* Debug */,
+                B731350B8710496B87C5378B /* Release */,
             );
             defaultConfigurationIsVisible = 0;
             defaultConfigurationName = Release;
         };
-        4D781E890F5743E191DF2E66 /* Build configuration list for PBXProject */ = {
+        B07B019CE498455F83D9356B /* Build configuration list for PBXProject */ = {
             isa = XCConfigurationList;
             buildConfigurations = (
-                A77BA35D31574FC0B2FB8BCD /* Debug */,
-                CC3C9D9A11B5485F880EF08C /* Release */,
+                36851491CE6443E8B31DDFCE /* Debug */,
+                B731350B8710496B87C5378B /* Release */,
             );
             defaultConfigurationIsVisible = 0;
             defaultConfigurationName = Release;
@@ -198,5 +202,5 @@
 /* End XCConfigurationList section */
 
     };
-    rootObject = 76DE2368C3C245BDBF2CC58E /* Project object */;
+    rootObject = 836A43678F4940899A2E9666 /* Project object */;
 }
