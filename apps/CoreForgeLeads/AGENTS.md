@@ -207,16 +207,16 @@ Key points from `README.md`:
  - [x] Feature 138: VC/investor signal tool for founder lead lists
  - [x] Feature 139: Recruiter mode: AI targeting of job seekers or talent pipelines
  - [x] Feature 140: Healthcare, real estate, legal, SaaS-specific data filters
- - [ ] Feature 141: Real-time API access to leads for third-party SaaS tools
- - [ ] Feature 142: Campaign clone tool for duplicating best-performing sequences
- - [ ] Feature 143: Sales rep performance analytics tied to AI success metrics
- - [ ] Feature 144: Automatic merge of duplicate leads with similarity score threshold
- - [ ] Feature 145: Global currency support and multi-language outreach templates
- - [ ] Feature 146: Outreach delay optimization based on lead inbox engagement pattern
- - [ ] Feature 147: DF Score Heatmap across all running campaigns
- - [ ] Feature 148: AI Copilot Chat to assist SDRs with real-time reply crafting
- - [ ] Feature 149: Voice-to-lead dictation tool with mobile field agent sync
- - [ ] Feature 150: One-click transfer to CoreForge Market for financial/VC leads
+ - [x] Feature 141: Real-time API access to leads for third-party SaaS tools
+ - [x] Feature 142: Campaign clone tool for duplicating best-performing sequences
+ - [x] Feature 143: Sales rep performance analytics tied to AI success metrics
+ - [x] Feature 144: Automatic merge of duplicate leads with similarity score threshold
+ - [x] Feature 145: Global currency support and multi-language outreach templates
+ - [x] Feature 146: Outreach delay optimization based on lead inbox engagement pattern
+ - [x] Feature 147: DF Score Heatmap across all running campaigns
+ - [x] Feature 148: AI Copilot Chat to assist SDRs with real-time reply crafting
+ - [x] Feature 149: Voice-to-lead dictation tool with mobile field agent sync
+ - [x] Feature 150: One-click transfer to CoreForge Market for financial/VC leads
  - [ ] Feature 151: Predictive lead scoring using behavioral signals and firmographics
  - [ ] Feature 152: AI email outreach generator tailored to tone, product, and industry
  - [ ] Feature 153: Live intent signal monitoring from LinkedIn, G2, Reddit, and Twitter
