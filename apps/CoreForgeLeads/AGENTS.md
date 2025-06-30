@@ -197,16 +197,16 @@ Key points from `README.md`:
  - [x] Feature 128: Integrates with CoreForge Voice for custom voice outreach
  - [x] Feature 129: Plug-and-play lead forms with AI-driven intent classification
  - [x] Feature 130: Auto-prioritization of leads based on pipeline stage + urgency
- - [ ] Feature 131: AI outreach audit tool for improving message performance
- - [ ] Feature 132: Team dashboard with role-based access, leaderboards, and export filters
- - [ ] Feature 133: Regional compliance layer (GDPR, CCPA, etc.) with auto-checks
- - [ ] Feature 134: AI competitor targeting by mirroring ad intent and follower base
- - [ ] Feature 135: Instant AI chat follow-ups after form fill or missed email
- - [ ] Feature 136: Lead lifecycle tracking from cold to deal closed with AI milestones
- - [ ] Feature 137: Real-time influencer outreach list by niche and engagement type
- - [ ] Feature 138: VC/investor signal tool for founder lead lists
- - [ ] Feature 139: Recruiter mode: AI targeting of job seekers or talent pipelines
- - [ ] Feature 140: Healthcare, real estate, legal, SaaS-specific data filters
+ - [x] Feature 131: AI outreach audit tool for improving message performance
+ - [x] Feature 132: Team dashboard with role-based access, leaderboards, and export filters
+ - [x] Feature 133: Regional compliance layer (GDPR, CCPA, etc.) with auto-checks
+ - [x] Feature 134: AI competitor targeting by mirroring ad intent and follower base
+ - [x] Feature 135: Instant AI chat follow-ups after form fill or missed email
+ - [x] Feature 136: Lead lifecycle tracking from cold to deal closed with AI milestones
+ - [x] Feature 137: Real-time influencer outreach list by niche and engagement type
+ - [x] Feature 138: VC/investor signal tool for founder lead lists
+ - [x] Feature 139: Recruiter mode: AI targeting of job seekers or talent pipelines
+ - [x] Feature 140: Healthcare, real estate, legal, SaaS-specific data filters
  - [ ] Feature 141: Real-time API access to leads for third-party SaaS tools
  - [ ] Feature 142: Campaign clone tool for duplicating best-performing sequences
  - [ ] Feature 143: Sales rep performance analytics tied to AI success metrics
