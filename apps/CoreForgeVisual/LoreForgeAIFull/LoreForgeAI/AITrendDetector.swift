@@ -1,6 +1,6 @@
 import Foundation
 
-/// Early stub for the Virality Engine integration.
+/// Lightweight trend detector used by the Virality Engine.
 /// Scores content based on trending keywords and simple frequency analysis.
 final class AITrendDetector {
     private let trendingKeywords: Set<String>

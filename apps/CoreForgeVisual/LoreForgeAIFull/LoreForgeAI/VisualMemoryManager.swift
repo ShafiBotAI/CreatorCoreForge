@@ -144,7 +144,7 @@ public final class VisualMemoryManager {
         callbacks[scene] ?? SceneKey(book: scene.book, index: max(scene.index - 1, 0))
     }
 
-    /// Generate a recap montage (placeholder).
+    /// Generate a simple recap montage from the provided scenes.
     public func generateRecapMontage(for scenes: [SceneKey]) -> [SceneKey] {
         guard !scenes.isEmpty else { return [] }
         if scenes.count <= 3 { return scenes }
@@ -171,7 +171,7 @@ public final class VisualMemoryManager {
         memoryGraphIntegrated = true
     }
 
-    /// Detect recurring visual cues (placeholder).
+    /// Detect recurring visual cues using basic frequency counts.
     public func detectRecurringVisualCues(in scenes: [SceneKey]) -> [SceneKey] {
         var freq: [String: Int] = [:]
         for key in scenes {
