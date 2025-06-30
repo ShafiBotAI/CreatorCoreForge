@@ -16,10 +16,20 @@ struct DynamicPacingVisualizer {
     }
 }
 
-// Feature 150: Simple custom LLM tuning placeholder returning identifier.
+// Feature 150: Basic bigram model trainer for custom author LLM tuning.
 class AuthorLLMTuner {
-    func tune(withSamples samples: [String]) -> String {
-        return "authorLLM_\(samples.count)"
+    /// Train a lightweight bigram frequency model from sample text.
+    func tune(withSamples samples: [String]) -> [String: Int] {
+        var model: [String: Int] = [:]
+        for text in samples {
+            let words = text.lowercased().split(separator: " ")
+            guard words.count > 1 else { continue }
+            for i in 0..<(words.count - 1) {
+                let pair = "\(words[i]) \(words[i + 1])"
+                model[pair, default: 0] += 1
+            }
+        }
+        return model
     }
 }
 
